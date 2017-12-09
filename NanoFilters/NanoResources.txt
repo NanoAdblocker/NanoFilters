@@ -88,11 +88,14 @@ nano-setTimeout-booster.js-debugonly text/javascript
 		needle = needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 	}
 	needle = new RegExp(needle);
+	if ( isNaN(delay) ) {
+		delay = 1000;
+	}
 	if ( isNaN(boost) || boost < 0.01 ) {
 		boost = 0.1;
 	}
 	window.setTimeout = function(a, b) {
-		if ( (isNaN(delay) || b == delay) && needle.test(a.toString()) ) {
+		if ( b === delay && needle.test(a.toString()) ) {
 			b *= boost;
 		}
 		return z.apply(this, arguments);
@@ -115,11 +118,14 @@ nano-setInterval-booster.js-debugonly text/javascript
 		needle = needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 	}
 	needle = new RegExp(needle);
+	if ( isNaN(delay) ) {
+		delay = 1000;
+	}
 	if ( isNaN(boost) || boost < 0.01 ) {
 		boost = 0.1;
 	}
 	window.setInterval = function(a, b) {
-		if ( (isNaN(delay) || b == delay) && needle.test(a.toString()) ) {
+		if ( b === delay && needle.test(a.toString()) ) {
 			b *= boost;
 		}
 		return z.apply(this, arguments);

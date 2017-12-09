@@ -1,8 +1,9 @@
 # Special resources for Nano Adblocker
 # Same format as uBlock Origin's resources file
+# Everything should be prefixed with "nano-" to prevent name collision
 
 
-noopmp4-1s video/mp4;base64
+nano-noopmp4-1s video/mp4;base64
 AAAAHGZ0eXBNNFYgAAACAGlzb21pc28yYXZjMQAAAAhmcmVlAAAGF21kYXTeBAAAbGliZmFhYyAxLjI4
 AABCAJMgBDIARwAAArEGBf//rdxF6b3m2Ui3lizYINkj7u94MjY0IC0gY29yZSAxNDIgcjIgOTU2Yzhk
 OCAtIEguMjY0L01QRUctNCBBVkMgY29kZWMgLSBDb3B5bGVmdCAyMDAzLTIwMTQgLSBodHRwOi8vd3d3
@@ -68,4 +69,33 @@ ZHRhAAAAWm1ldGEAAAAAAAAAIWhkbHIAAAAAAAAAAG1kaXJhcHBsAAAAAAAAAAAAAAAALWlsc3QAAAAl
 qXRvbwAAAB1kYXRhAAAAAQAAAABMYXZmNTUuMzMuMTAw
 
 
-#
+nano-noopvast-2.0 text/xml
+<VAST version="2.0"></VAST>
+
+
+# Not ready for production!!
+nano-setTimeout-booster.js-debug text/javascript
+(function() {
+	var z = window.setTimeout,
+		needle = '{{1}}',
+		delay = parseInt('{{2}}', 10);
+		boost = parseInt('{{3}}', 10);
+	if ( needle === '' || needle === '{{1}}' ) {
+		needle = '.?';
+	} else if ( needle.slice(0,1) === '/' && needle.slice(-1) === '/' ) {
+		needle = needle.slice(1,-1);
+	} else {
+		needle = needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+	}
+	needle = new RegExp(needle);
+	if ( isNaN(boost) || boost < 0.01 ) {
+		boost = 0.1;
+	}
+	window.setTimeout = function(a, b) {
+		if ( (isNaN(delay) || b == delay) && needle.test(a.toString()) ) {
+			b *= boost;
+		}
+		return z.apply(this, arguments);
+	}.bind(window);
+})();
+

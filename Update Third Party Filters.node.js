@@ -47,10 +47,10 @@ const delay = (timeout = 1000) => {
         "NanoDefender.txt": "https://raw.githubusercontent.com/jspenguin2017/uBlockProtector/master/uBlockProtectorList.txt",
 
         "uBlockBase.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt",
-        "uBlockBadware.txt": "https://github.com/uBlockOrigin/uAssets/blob/master/filters/badware.txt",
+        "uBlockBadware.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt",
         "uBlockPrivacy.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt",
         "uBlockAbuse.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt",
-        "uBlockUnbreak.txt": "https://github.com/uBlockOrigin/uAssets/blob/master/filters/unbreak.txt",
+        "uBlockUnbreak.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt",
 
         "WarningRemoval.txt": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
         "EasyList.txt": "https://easylist-downloads.adblockplus.org/easylist.txt",

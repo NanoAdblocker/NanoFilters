@@ -74,16 +74,16 @@ nano-noopvast-2.0 text/xml
 
 
 # Not ready for production!!
-nano-setTimeout-booster.js-debug text/javascript
+nano-setTimeout-booster.js-debugonly text/javascript
 (function() {
 	var z = window.setTimeout,
 		needle = '{{1}}',
-		delay = parseInt('{{2}}', 10);
+		delay = parseInt('{{2}}', 10),
 		boost = parseInt('{{3}}', 10);
 	if ( needle === '' || needle === '{{1}}' ) {
 		needle = '.?';
-	} else if ( needle.slice(0,1) === '/' && needle.slice(-1) === '/' ) {
-		needle = needle.slice(1,-1);
+	} else if ( needle.charAt(0) === '/' && needle.slice(-1) === '/' ) {
+		needle = needle.slice(1, -1);
 	} else {
 		needle = needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 	}
@@ -92,6 +92,33 @@ nano-setTimeout-booster.js-debug text/javascript
 		boost = 0.1;
 	}
 	window.setTimeout = function(a, b) {
+		if ( (isNaN(delay) || b == delay) && needle.test(a.toString()) ) {
+			b *= boost;
+		}
+		return z.apply(this, arguments);
+	}.bind(window);
+})();
+
+
+# Not ready for production!!
+nano-setInterval-booster.js-debugonly text/javascript
+(function() {
+	var z = window.setInterval,
+		needle = '{{1}}',
+		delay = parseInt('{{2}}', 10),
+		boost = parseInt('{{3}}', 10);
+	if ( needle === '' || needle === '{{1}}' ) {
+		needle = '.?';
+	} else if ( needle.charAt(0) === '/' && needle.slice(-1) === '/' ) {
+		needle = needle.slice(1, -1);
+	} else {
+		needle = needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+	}
+	needle = new RegExp(needle);
+	if ( isNaN(boost) || boost < 0.01 ) {
+		boost = 0.1;
+	}
+	window.setInterval = function(a, b) {
 		if ( (isNaN(delay) || b == delay) && needle.test(a.toString()) ) {
 			b *= boost;
 		}

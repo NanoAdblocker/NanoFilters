@@ -73,7 +73,7 @@ nano-noopvast-2.0 text/xml
 <VAST version="2.0"></VAST>
 
 
-# Not ready for production!!
+# Not ready for production!! Use at your own risk!!
 nano-setTimeout-booster.js-debugonly text/javascript
 (function() {
 	var z = window.setTimeout,
@@ -103,7 +103,7 @@ nano-setTimeout-booster.js-debugonly text/javascript
 })();
 
 
-# Not ready for production!!
+# Not ready for production!! Use at your own risk!!
 nano-setInterval-booster.js-debugonly text/javascript
 (function() {
 	var z = window.setInterval,
@@ -130,5 +130,39 @@ nano-setInterval-booster.js-debugonly text/javascript
 		}
 		return z.apply(this, arguments);
 	}.bind(window);
+})();
+
+
+# Not ready for production!! Use at your own risk!!
+nano-define-readonly-property.js-debugonly text/javascript
+(function() {
+	var name = '{{1}}';
+	var data = '{{2}}';
+	if ( data === '' || data === '{{2}}' ) {
+		return;
+	}
+	var define = function(payload) {
+		// TODO 2017-12-09: What about deeper level?
+		try {
+			Object.defineProperty(window, name, {
+				configurable: false,
+				set: function() {
+					;
+				},
+				get: function() {
+					return payload;
+				}
+			});
+		} catch ( err ) { }
+	};
+	switch ( data ) {
+		case 'true':		return define(true);
+		case 'false':		return define(false);
+		case '1':		return define(1);
+		case '0':		return define(0);
+		case 'NaN':		return define(NaN);
+		case 'undefined':	return define(undefined);
+		default:		return;
+	}
 })();
 

@@ -24,7 +24,31 @@ const fetchOne = (input, output) => {
         https.request(url.parse(input), (res) => {
             res.pipe(output);
             res.on("end", resolve);
-        }).end();
+            res.on("error", reject);
+        }).on("error", reject).end();
+    });
+};
+/**
+ * Validate one filter, check if it is obviously wrong.
+ * @function
+ * @param {string} input - The path to the filter to check
+ * @return {Promise} The promise of this task.
+ */
+const validate = (input) => {
+    return new Promise((resolve, reject) => {
+        fs.readFile(input, "utf8", (err, data) => {
+            if (err) {
+                reject(err);
+            } else {
+                data = data.trim();
+                if (data.startsWith("<") && data.endsWith(">")) {
+                    console.error(input + " seems to be corrupted!");
+                    reject(new Error(input + " seems to be corrupted!"));
+                } else {
+                    resolve();
+                }
+            }
+        });
     });
 };
 /**
@@ -38,6 +62,10 @@ const delay = (timeout = 1000) => {
         setTimeout(resolve, timeout);
     });
 };
+
+process.on("unhandledRejection", (err) => {
+    throw err;
+});
 
 (async () => {
     const data = {
@@ -65,9 +93,12 @@ const delay = (timeout = 1000) => {
 
     for (let key in data) {
         console.log("Downloading " + data[key] + " to /ThirdParty/" + key + " ...");
-        await fetchOne(data[key], fs.createWriteStream(path.join("ThirdParty", key)));
+        const localPath = path.join("ThirdParty", key);
+        await fetchOne(data[key], fs.createWriteStream(localPath));
+        await validate(localPath);
         await delay();
     }
 
+    console.log();
     console.log("Done");
 })();

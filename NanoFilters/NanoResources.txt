@@ -82,9 +82,10 @@ nano-noopvast-3.0 text/xml
 
 # Echo a log when script snippets are injected so you can view them from the
 # console. This is for developers only, no arguments.
+# This is just temporary until Nano Logger can handle script snippets injection.
 nano-debug-hook.js application/javascript
 (function() {
-	console.warn('[Nano] Nano Debug Hook');
+	console.warn('[Nano] Script Snippets Debug Hook :: ' + location.href);
 })();
 
 

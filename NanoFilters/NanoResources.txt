@@ -74,8 +74,9 @@ nano-noopvast-2.0 text/xml
 
 
 # Not ready for production!! Use at your own risk!!
-nano-setTimeout-booster.js-debugonly text/javascript
+nano-setTimeout-booster.js-debugonly application/javascript
 (function() {
+	console.warn('[Nano] Scriptlet Debug Hook');
 	var z = window.setTimeout,
 		needle = '{{1}}',
 		delay = parseInt('{{2}}', 10),
@@ -104,8 +105,9 @@ nano-setTimeout-booster.js-debugonly text/javascript
 
 
 # Not ready for production!! Use at your own risk!!
-nano-setInterval-booster.js-debugonly text/javascript
+nano-setInterval-booster.js-debugonly application/javascript
 (function() {
+	console.warn('[Nano] Scriptlet Debug Hook');
 	var z = window.setInterval,
 		needle = '{{1}}',
 		delay = parseInt('{{2}}', 10),
@@ -134,8 +136,9 @@ nano-setInterval-booster.js-debugonly text/javascript
 
 
 # Not ready for production!! Use at your own risk!!
-nano-define-readonly-property.js-debugonly text/javascript
+nano-define-readonly-property.js-debugonly application/javascript
 (function() {
+	console.warn('[Nano] Scriptlet Debug Hook');
 	var name = '{{1}}';
 	var data = '{{2}}';
 	if ( data === '' || data === '{{2}}' ) {

@@ -1,6 +1,9 @@
-# Special resources for Nano Adblocker
+# Extra resources for Nano Adblocker
 # Same format as uBlock Origin's resources file
 # Everything should be prefixed with "nano-" to prevent name collision
+################################################################################
+### WARNING: Everything are still in debugging phase, use at your own risk!! ###
+################################################################################
 
 
 nano-noopmp4-1s video/mp4;base64
@@ -73,10 +76,13 @@ nano-noopvast-2.0 text/xml
 <VAST version="2.0"></VAST>
 
 
-# Not ready for production!! Use at your own risk!!
-nano-setTimeout-booster.js-debugonly application/javascript
+nano-noopvast-3.0 text/xml
+<VAST version="3.0"></VAST>
+
+
+nano-setTimeout-booster.js application/javascript
 (function() {
-	console.warn('[Nano] Script Snippet Debug Hook :: setTimeout-booster');
+	console.warn('[Nano] Script Snippet Injected :: setTimeout-booster');
 	var z = window.setTimeout,
 		needle = '{{1}}',
 		delay = parseInt('{{2}}', 10),
@@ -104,10 +110,9 @@ nano-setTimeout-booster.js-debugonly application/javascript
 })();
 
 
-# Not ready for production!! Use at your own risk!!
-nano-setInterval-booster.js-debugonly application/javascript
+nano-setInterval-booster.js application/javascript
 (function() {
-	console.warn('[Nano] Script Snippet Debug Hook :: setInterval-booster');
+	console.warn('[Nano] Script Snippet Injected :: setInterval-booster');
 	var z = window.setInterval,
 		needle = '{{1}}',
 		delay = parseInt('{{2}}', 10),
@@ -135,10 +140,9 @@ nano-setInterval-booster.js-debugonly application/javascript
 })();
 
 
-# Not ready for production!! Use at your own risk!!
-nano-define-readonly-property.js-debugonly application/javascript
+nano-define-readonly-property.js application/javascript
 (function() {
-	console.warn('[Nano] Script Snippet Debug Hook :: define-readonly-property');
+	console.warn('[Nano] Script Snippet Injected :: define-readonly-property');
 	var name = '{{1}}';
 	var data = '{{2}}';
 	if ( data === '' || data === '{{2}}' ) {
@@ -167,5 +171,22 @@ nano-define-readonly-property.js-debugonly application/javascript
 		case 'undefined':	return define(undefined);
 		default:		return;
 	}
+})();
+
+
+nano-make-bait-element.js application/javascript
+(function() {
+	console.warn('[Nano] Script Snippet Injected :: make-bait-element');
+	var identifier = '{{1}}';
+	var element = document.createElement('div');
+	if ( identifier.charAt(0) === '#' ) {
+		element.id = identifier.substring(1);
+	} else if ( identifier.charAt(0) === '.' ) {
+		element.className = identifier.substring(1);
+	} else {
+		return;
+	}
+	element.style.display = 'none';
+	document.documentElement.appendChild(element);
 })();
 

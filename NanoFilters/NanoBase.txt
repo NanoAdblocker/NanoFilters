@@ -1,3 +1,15 @@
 # Filters for Nano Adblocker
 
-# Coming soon! Timer bypassing, advanced redirect, and more!
+# https://github.com/jspenguin2017/uBlockProtector/issues/742
+@@||egarwolin.pl/static/js/ads.js$script,first-party
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/744
+# https://github.com/jspenguin2017/uBlockProtector/issues/745
+@@||blockergame.com^$generichide
+@@||blockersurvive.com^$generichide
+blockersurvive.com,blockergame.com##.ads > .ads-body > .ads-content > div
+blockersurvive.com,blockergame.com##.ads > .ads-body:style(background: initial !important;)
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/746
+||imasdk.googleapis.com/js/sdkloader/outstream.js$script,redirect=noopjs,domain=squadd.io
+squadd.io###mc-videoads-overlay

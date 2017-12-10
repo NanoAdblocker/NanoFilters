@@ -165,9 +165,6 @@ nano-define-readonly-property.js application/javascript
 	console.warn('[Nano] Script Snippet Injected :: define-readonly-property');
 	var name = '{{1}}';
 	var data = '{{2}}';
-	if ( data === '' || data === '{{2}}' ) {
-		return;
-	}
 	var define = function(payload) {
 		// TODO 2017-12-09: What about deeper level?
 		try {

@@ -190,3 +190,24 @@ nano-make-bait-element.js application/javascript
 	document.documentElement.appendChild(element);
 })();
 
+
+nano-remove-element-onready.js application/javascript
+(function() {
+	console.warn('[Nano] Script Snippet Injected :: remove-element-onready');
+	var selector = '{{1}}';
+	if ( selector === '' || selector === '{{1}}' ) {
+		return;
+	}
+	var remove = function() {
+		var elements = document.querySelectorAll(selector);
+		for ( let element of elements ) {
+			element.remove();
+		}
+	};
+	if ( document.readyState === 'interactive' || document.readyState === 'complete' ) {
+		remove();
+	} else {
+		window.addEventListener('DOMContentLoaded', remove);
+	}
+})();
+

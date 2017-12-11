@@ -94,7 +94,8 @@ nano-debug-hook.js application/javascript
 # defaults to match all.
 # delayMatcher - The delay matcher, an integer, defaults to 1000.
 # boostRatio - The delay multiplier when there is a match, 0.5 speeds up by
-# 2 times and 2 slows down by 2 times, defaults to 0.1 or speed up 10 times.
+# 2 times and 2 slows down by 2 times, defaults to 0.05 or speed up 20 times.
+# Speed up caps at 50 times.
 nano-setTimeout-booster.js application/javascript
 (function() {
 	var z = window.setTimeout,
@@ -112,8 +113,8 @@ nano-setTimeout-booster.js application/javascript
 	if ( isNaN(delay) ) {
 		delay = 1000;
 	}
-	if ( isNaN(boost) || boost < 0.01 ) {
-		boost = 0.1;
+	if ( isNaN(boost) || boost < 0.02 ) {
+		boost = 0.05;
 	}
 	window.setTimeout = function(a, b) {
 		if ( b === delay && needle.test(a.toString()) ) {
@@ -142,8 +143,8 @@ nano-setInterval-booster.js application/javascript
 	if ( isNaN(delay) ) {
 		delay = 1000;
 	}
-	if ( isNaN(boost) || boost < 0.01 ) {
-		boost = 0.1;
+	if ( isNaN(boost) || boost < 0.02 ) {
+		boost = 0.05;
 	}
 	window.setInterval = function(a, b) {
 		if ( b === delay && needle.test(a.toString()) ) {

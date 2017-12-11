@@ -17,7 +17,6 @@
 ! Do not visit those paths manually, my server will log your access but will not send a response.
 ! ===== MUST READ ===== MUST READ ===== MUST READ ===== MUST READ ===== MUST READ ===== MUST READ =====
 !
-jspenguin2017.github.io##script:inject(doubleclick.net/instream/ad_status.js)
 |https://jspenguin.com/uBlockProtector/Solutions/Blocked.php$important
 |https://jspenguin.com/uBlockProtector/Solutions/
 @@|https://jspenguin.com/uBlockProtector/Solutions/MoatFreeWheelJSPEM.js|$script
@@ -26,14 +25,13 @@ jspenguin2017.github.io##script:inject(doubleclick.net/instream/ad_status.js)
 @@|http://*.medianetworkinternational.com/js/advertisement.js*$script
 @@|https://imasdk.googleapis.com/js/sdkloader/ima3.js*$script
 @@|http://imasdk.googleapis.com/js/sdkloader/ima3.js*$script
-#@#script:inject(adfly-defuser.js)
 @@|http://*.v.fwmrm.net/ad/g/*$script,domain=ncaa.com|pga.com|q2.be|vtm.be|ruutu.fi|medialaancdn.be|medialaan.be
 @@|https://*.v.fwmrm.net/ad/g/*$script,domain=ncaa.com|pga.com|q2.be|vtm.be|ruutu.fi|medialaancdn.be|medialaan.be
 ||cbsnews.com/news/*/[object%20object]$image,redirect=1x1-transparent.gif
 ||cbsnews.com/news/*/undefined$image,redirect=1x1-transparent.gif
 ||imasdk.googleapis.com/js/sdkloader/ima3.js$script,important,domain=streamable.com|popcornflix.com|fox.com
-bild.de#@#script:inject(abort-on-property-read.js, de.bild.cmsKonfig.a.b.a)
 @@||ads-v-darwin.hulustream.com/published/*.mp4$domain=hulu.com
+bild.de#@#script:inject(abort-on-property-read.js, de.bild.cmsKonfig.a.b.a)
 ! Asking for permission does not have an enforced cooldown, can be exploited to make the permission request to be not refusable
 ! More information: https://github.com/uBlockOrigin/uAssets/issues/770
 ||authedmine.com^$important
@@ -532,7 +530,9 @@ fakeporn.tv##script:inject(abort-on-property-write.js, prPuShown)
 bigbtc.win##script:inject(abort-on-property-read.js, ad_block_test)
 @@||egarwolin.pl/static/js/ads.js$script,first-party
 @@||blockergame.com^$generichide
-blockersurvive.com,blockergame.com##.ads > #ads-body:style(height: 41px !important;)
+@@||blockersurvive.com^$generichide
+blockersurvive.com,blockergame.com##.ads > .ads-body > .ads-content > div
+blockersurvive.com,blockergame.com##.ads > .ads-body:style(background: initial !important;)
 ||imasdk.googleapis.com/js/sdkloader/outstream.js$script,redirect=noopjs,domain=squadd.io
 squadd.io###mc-videoads-overlay
 @@||lolalytics.com^$generichide
@@ -584,8 +584,6 @@ squadd.io###mc-videoads-overlay
 @@||wp.pl^$generichide
 @@||anonymousemail.me^$generichide
 @@||playstation.com^$generichide
-@@||blockergame.com^$generichide
-@@||blockersurvive.com^$generichide
 @@||imasdk.googleapis.com/js/sdkloader/outstream.js$script,domain=ovar.io
 @@||flashx1.tv/js/showad*.js$script
 @@||flashx1.tv/sidead.js$script

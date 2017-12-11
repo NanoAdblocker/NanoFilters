@@ -97,7 +97,6 @@ nano-debug-hook.js application/javascript
 # 2 times and 2 slows down by 2 times, defaults to 0.1 or speed up 10 times.
 nano-setTimeout-booster.js application/javascript
 (function() {
-	console.warn('[Nano] Script Snippet Injected :: setTimeout-booster');
 	var z = window.setTimeout,
 		needle = '{{1}}',
 		delay = parseInt('{{2}}', 10),
@@ -128,7 +127,6 @@ nano-setTimeout-booster.js application/javascript
 # Same as the last one except it is for setInterval instead of setTimeout.
 nano-setInterval-booster.js application/javascript
 (function() {
-	console.warn('[Nano] Script Snippet Injected :: setInterval-booster');
 	var z = window.setInterval,
 		needle = '{{1}}',
 		delay = parseInt('{{2}}', 10),
@@ -163,7 +161,7 @@ nano-setInterval-booster.js application/javascript
 # be one of: true, false, 1, 0, undefined, noopFunc
 nano-define-readonly-property.js application/javascript
 (function() {
-	console.warn('[Nano] Script Snippet Injected :: define-readonly-property');
+	console.warn('[Nano] Beta Script Snippet Injected :: define-readonly-property');
 	var name = '{{1}}';
 	var data = '{{2}}';
 	var define = function(payload) {
@@ -193,12 +191,11 @@ nano-define-readonly-property.js application/javascript
 
 
 # Insert an invisible elements onto the page, can be used to dodge baits,
-# not sure how useful this will be... 1 required argument.
+# 1 required argument.
 # identifier - An identifier, either an id or a class name. Like "#id" or
 # ".class"
 nano-make-bait-element.js application/javascript
 (function() {
-	console.warn('[Nano] Script Snippet Injected :: make-bait-element');
 	var identifier = '{{1}}';
 	var element = document.createElement('div');
 	if ( identifier.charAt(0) === '#' ) {
@@ -219,7 +216,7 @@ nano-make-bait-element.js application/javascript
 # pseudo-selectors are not supported.
 nano-remove-element-onready.js application/javascript
 (function() {
-	console.warn('[Nano] Script Snippet Injected :: remove-element-onready');
+	console.warn('[Nano] Beta Script Snippet Injected :: remove-element-onready');
 	var selector = '{{1}}';
 	if ( selector === '' || selector === '{{1}}' ) {
 		return;

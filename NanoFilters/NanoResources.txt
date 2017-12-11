@@ -1,9 +1,6 @@
 # Extra resources for Nano Adblocker
 # Same format as uBlock Origin's resources file
 # Everything should be prefixed with "nano-" to prevent name collision
-##########################################################################################
-### WARNING: Everything hare are still in debugging phase, they can change at any time ###
-##########################################################################################
 
 
 nano-noopmp4-1s video/mp4;base64
@@ -211,13 +208,11 @@ nano-make-bait-element.js application/javascript
 })();
 
 
-# Remove an element when the documents gets ready, not sure how useful this
-# will be... 1 required argument.
+# Remove an element when the documents gets ready, 1 required argument.
 # selector - The selector for elements to remove, must be a plain CSS selector,
 # pseudo-selectors are not supported.
 nano-remove-element-onready.js application/javascript
 (function() {
-	console.warn('[Nano] Beta Script Snippet Injected :: remove-element-onready');
 	var selector = '{{1}}';
 	if ( selector === '' || selector === '{{1}}' ) {
 		return;

@@ -23,3 +23,6 @@ squadd.io###mc-videoads-overlay
 
 # https://www.reddit.com/r/uBlockOrigin/comments/7imqbx/firefox_quantum_working_antiadblockkiller/?st=jb11d67n&sh=fa4df97d
 libgen.io##script:inject(setTimeout-defuser.js, ad blocking)
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/752
+wolframclient.net##script:inject(nano-remove-element-onready.js, [data-ad-client^="ca-pub-"])

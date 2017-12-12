@@ -1,6 +1,8 @@
 # Extra resources for Nano Adblocker
 # Same format as uBlock Origin's resources file
 # Everything should be prefixed with "nano-" to prevent name collision
+# However, collided names will always cause uBlock Origin's resources to be
+# overridden, and can be done purposefully when intervention is required
 
 
 nano-noopmp4-1s video/mp4;base64

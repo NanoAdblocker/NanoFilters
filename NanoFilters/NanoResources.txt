@@ -234,7 +234,7 @@ nano-remove-element-onready.js application/javascript
 
 
 # https://github.com/uBlockOrigin/uAssets/issues/881
-nano-hardware.info.js application/javascript
+nano-hardware-info.js application/javascript
 (function() {
 	if ( !document.cookie.includes('cookiebar=1') ) {
 		document.cookie = 'cookiebar=1; expires=Fri, 31 Dec 2099 23:59:59 GMT; path=/;';
@@ -244,7 +244,7 @@ nano-hardware.info.js application/javascript
 
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/390
-nano-vvvvid.it.js application/javascript
+nano-vvvvid-it.js application/javascript
 (function() {
 	// Based on KAADIVVVV
 	// License: https://github.com/Robotex/KAADIVVVV/blob/master/LICENSE

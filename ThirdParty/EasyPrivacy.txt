@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Checksum: MOLxEyIy1sP0NbPJfZBzqw
-! Version: 201712111331
+! Checksum: w4U01/H6VZk6s7t5CuDmOw
+! Version: 201712131601
 ! The contents of this filter list are fetched from the EasyPrivacy repository: https://github.com/easylist/easylist/tree/master/easyprivacy
 ! Title: EasyPrivacy
-! Last modified: 11 Dec 2017 13:31 UTC
+! Last modified: 13 Dec 2017 16:01 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -173,6 +173,7 @@
 .gatracking.js
 .gif?ad=
 .gif?event=
+.gif?hit_
 .gif?Log=$~xmlhttprequest
 .gif?pixels=
 .Google.Tracker.js
@@ -540,6 +541,7 @@
 /analyticstracking_
 /analyticstrain-
 /analyticsUnitaire?
+/analyticsUrlToDataMappings.
 /analyze.js
 /analyzer.gif?
 /analyzer2.
@@ -600,6 +602,8 @@
 /at.gif?
 /atapixel.js
 /atatus.js
+/athena.gif?
+/athenastgbeacon.
 /atlas_track.
 /atrk.gif?
 /atrk.js
@@ -614,6 +618,7 @@
 /audiweb.js
 /audsci.js
 /autotag.
+/autotrack.js
 /AutoTracker.js
 /aux/collect?
 /avant_sfpc_
@@ -946,6 +951,7 @@
 /contentiq.js
 /ContentTrackingCall.
 /control/tracking.php?
+/conversion_async.
 /convertro.js
 /cookie.crumb
 /cookie/visitor/*
@@ -1237,6 +1243,7 @@
 /fb-tracking.js
 /fbanalytics/*
 /fbcounter/*
+/fbevents-amd.js
 /fe/track/*
 /federated-analytics.
 /files/ga.js
@@ -1539,6 +1546,7 @@
 /i?e=*&page=*&cookie=
 /i?redir=*&page=*&cookie=
 /i?siteid=
+/i?stm=*&refr=*&url=
 /ics/2/pview.gif?
 /id?d_visid_ver=
 /iframe.tracker.js
@@ -1610,6 +1618,7 @@
 /index.php?_m=livesupport*&referrer=
 /index.track?
 /indextools.js
+/indraeventsapi.
 /inetlog.ru/*
 /info/picksel/*
 /informerStat?
@@ -1923,6 +1932,7 @@
 /mmclient.js
 /mmcore.js
 /mmetrix.mobi/*
+/mms.*/pv?
 /mngi/tracking/*
 /mnt/imp?
 /mobify_ga.gif
@@ -2098,6 +2108,7 @@
 /page_analytics.
 /page_counter.
 /page_imp;
+/pagead/conversion_
 /PageCount.php?
 /pageCounter.adp?
 /pagedot.gif?
@@ -2885,6 +2896,7 @@
 /track_views.
 /track_visit.
 /track_visit?
+/track_yt_vids.
 /trackad.
 /trackAdHit.
 /trackalyze/*$script
@@ -3679,6 +3691,7 @@ _mongo_stats/
 ||360tag.net^$third-party
 ||3dlivestats.com^$third-party
 ||3dstats.com^$third-party
+||3enm.com^$third-party
 ||3gl.net^$third-party
 ||40nuggets.com^$third-party
 ||44-trk-srv.com^$third-party
@@ -3701,6 +3714,7 @@ _mongo_stats/
 ||99counters.com^$third-party
 ||99stats.com^$third-party
 ||9nl.eu^$third-party
+||a-cast.jp^$third-party
 ||a-counters.com^$third-party
 ||a-pagerank.net^$third-party
 ||a013.com^$third-party
@@ -4690,6 +4704,7 @@ _mongo_stats/
 ||ixiaa.com^$third-party
 ||izea.com^$third-party
 ||izearanks.com^$third-party
+||janrain.xyz^$third-party
 ||jdoqocy.com^$third-party
 ||jimdo-stats.com^$third-party
 ||jirafe.com^$third-party
@@ -4720,6 +4735,7 @@ _mongo_stats/
 ||kitcode.net^$third-party
 ||klert.com^$third-party
 ||klldabck.com^$third-party
+||km-sea.net^$third-party
 ||knowlead.io^$third-party
 ||knowledgevine.net^$third-party
 ||komtrack.com^$third-party
@@ -5272,6 +5288,7 @@ _mongo_stats/
 ||rumanalytics.com^$third-party
 ||rumpelstiltskinhead.com^$third-party
 ||rztrkr.com^$third-party
+||s-onetag.com^$third-party
 ||s3s-main.net^$third-party
 ||sageanalyst.net^$third-party
 ||sajari.com^$third-party
@@ -5882,6 +5899,8 @@ _mongo_stats/
 ||zroitracker.com^$third-party
 ||ztsrv.com^$third-party
 ! Mining
+.cf^$third-party,websocket
+.cf^*.wasm$third-party
 .space^$third-party,websocket
 .space^*.wasm$third-party
 ://api.*/lib/native.wasm$third-party
@@ -5915,6 +5934,7 @@ _mongo_stats/
 ||coinhive-manager.com^$third-party
 ||coinhive-proxy.party^$third-party
 ||coinhive.com^$third-party
+||coinhive.com^$third-party,websocket
 ||coinhiveproxy.com^$third-party
 ||coinlab.biz^$third-party
 ||coinminerz.com^$third-party
@@ -5959,6 +5979,8 @@ _mongo_stats/
 ||secumine.net^$third-party
 ||siteverification.online^$third-party
 ||siteverification.site^$third-party
+||subloader.cf^$third-party
+||subloader.cf^$third-party,websocket
 ||supportxmr.com^$third-party
 ||webmine.cz^$third-party
 ||xbasfbno.info^$third-party
@@ -6559,7 +6581,8 @@ _mongo_stats/
 ||wstatslive.com^$third-party
 ||zt-dst.com^$third-party
 ! Japanese
-||a-cast.jp^$third-party
+||admatrix.jp^$third-party
+||analyticsip.net^$third-party
 ||bb-analytics.jp^$third-party
 ||beanscattering.jp^$third-party
 ||bigmining.com^$third-party
@@ -6569,21 +6592,26 @@ _mongo_stats/
 ||deteql.net^$third-party
 ||docodoco.jp^$third-party
 ||e-kaiseki.com^$third-party
+||ec-concier.com^$third-party
 ||ec-optimizer.com^$third-party
 ||eco-tag.jp^$third-party
 ||fout.jp^$third-party
 ||gmodmp.jp^$third-party
 ||hitgraph.jp^$third-party
 ||i2i.jp^$third-party
+||iogous.com^$third-party
 ||japanmetrix.jp^$third-party
 ||keyword-match.com^$third-party
+||marsflag.com^$third-party
 ||mobylog.jp^$third-party
 ||omiki.com^$third-party
 ||owldata.com^$third-party
+||pagoda56.com^$third-party
 ||research-artisan.com^$third-party
 ||rtoaster.jp^$third-party
 ||sibulla.com^$third-party
 ||socdm.com^$third-party
+||tgknt.com^$third-party
 ||trackfeed.com^$third-party
 ||ukw.jp^$third-party
 ||wonder-ma.com^$third-party
@@ -7196,6 +7224,7 @@ _mongo_stats/
 ||canvas-usage-v2.conduit-data.com^
 ||capture.bi.movideo.com/dc?
 ||capture.camify.com/dc?
+||capture.condenastdigital.com^
 ||carambo.la/analytics/
 ||carambo.la/logging/
 ||carl.pubsvs.com^
@@ -7383,6 +7412,7 @@ _mongo_stats/
 ||d1r27qvpjiaqj3.cloudfront.net^
 ||d1r55yzuc1b1bw.cloudfront.net^
 ||d1rgnfh960lz2b.cloudfront.net^
+||d1rnw04e6mc22h.cloudfront.net^
 ||d1ros97qkrwjf5.cloudfront.net^
 ||d1uanozc5el74n.cloudfront.net^
 ||d1wscoizcbxzhp.cloudfront.net^
@@ -7410,6 +7440,7 @@ _mongo_stats/
 ||d2xgf76oeu9pbh.cloudfront.net^
 ||d303e3cdddb4ded4b6ff495a7b496ed5.s3.amazonaws.com^
 ||d3135glefggiep.cloudfront.net^
+||d31bfnnwekbny6.cloudfront.net/customers/
 ||d33im0067v833a.cloudfront.net^
 ||d34ko97cxuv4p7.cloudfront.net^
 ||d36lvucg9kzous.cloudfront.net^
@@ -7586,6 +7617,7 @@ _mongo_stats/
 ||fastcounter.bcentral.com^
 ||fastcounter.onlinehoster.net^
 ||fastly.net/collect?
+||fastly.net/i?
 ||fbpixel.network.exchange^
 ||feed.informer.com/fdstats
 ||feedblitz.com/imp?$third-party
@@ -8362,6 +8394,7 @@ _mongo_stats/
 ||statsdev.treesd.com^
 ||statsrv.451.com^
 ||statt-collect.herokuapp.com^
+||stg-data-collector.playbuzz.com^
 ||stileproject.com/vhtk/
 ||streamads.com/view?
 ||su.addthis.com^
@@ -8469,6 +8502,7 @@ _mongo_stats/
 ||track.bannedcelebs.com^
 ||track.cafemomstatic.com^
 ||track.captivate.ai^
+||track.contently.com^
 ||track.did-it.com^
 ||track.digitalriver.com^
 ||track.dzloans.com^
@@ -8844,6 +8878,7 @@ _mongo_stats/
 ||lr-port.de/tracker/
 ||mapandroute.de/log.xhr?
 ||mastertag.kpcustomer.de^
+||mastertag.q-sis.de^
 ||mehrwertdienstekompetenz.de/cp/$third-party
 ||met.vgwort.de^
 ||mindwerk.net/zaehlpixel.php?
@@ -8867,6 +8902,7 @@ _mongo_stats/
 ||plista.com/iframeShowItem.php
 ||pyroactive.de/counter/
 ||rc.aol.de^*/getrcmd.js
+||retrack.q-divisioncdn.de^
 ||retresco.de^*/stats/$third-party
 ||script.idgentertainment.de/gt.js
 ||sec-web.com/stats/
@@ -8924,6 +8960,7 @@ _mongo_stats/
 ||trck.spoteffects.net^
 ||uni-duesseldorf.de/cgi-bin/nph-count?
 ||uni-leipzig.de^*/stats/
+||urtracker.q-sis.de^
 ||veeseo.com^*/url.gif?
 ||veeseo.com^*/view/$image
 ||vertical-n.de/scripts/*/immer_oben.js
@@ -9216,6 +9253,7 @@ _mongo_stats/
 ||imgstat.ameba.jp^$third-party
 ||l.popin.cc^
 ||lcs.livedoor.net^
+||macromill.com/imp/
 ||mofa.go.jp^*/count.cgi?
 ||otoshiana.com/ufo/
 ||rd.rakuten.co.jp^
@@ -9858,7 +9896,6 @@ _mongo_stats/
 ||clvk.viki.io^
 ||cmstrendslog.indiatimes.com^
 ||cmstrendslog.timesnow.tv^
-||cnn.com/pv?
 ||cnt.nicemix.com^
 ||cnt.nuvid.com^
 ||cnt.vivatube.com^
@@ -10004,6 +10041,8 @@ _mongo_stats/
 ||ebay-us.com/fp/
 ||ebay.com/op/t.do?event
 ||ebayobjects.com/*;dc_pixel_url=$image
+||ebaystatic.com^*/agof_survey_
+||ebaystatic.com^*/iam_
 ||ec2-prod-tracker.babelgum.com^
 ||economist.com/geoip.php
 ||ectnews.com/shared/missing.gif?
@@ -11302,6 +11341,7 @@ _mongo_stats/
 ||totalporn.com/videos/tracking/?url=
 ||tottenhamhotspur.com/media/javascript/google/
 ||toyota.com/analytics/
+||toyota.jp/onetag/
 ||tp.ranker.com^
 ||tqn.com/px/?
 ||tracelog.www.alibaba.com^
@@ -12070,6 +12110,7 @@ _mongo_stats/
 ||web.de/pic?
 ||webnews.de^*/loglib.js
 ||webts.adac.de^
+||welt.de/t/js
 ||wer-weiss-was.de/indication/clue_*.gif?
 ||wienerzeitung.at/__webtrends/
 ||wirtschaftspresse.biz/pshb?
@@ -13699,6 +13740,7 @@ _mongo_stats/
 @@||naver.net/wcslog.js$domain=m.tv.naver.com
 ! Latvian
 @@/webtracking/*$domain=pasts.lv
+@@||eveselibaspunkts.lv/js/global/fingerprint2.min.js?
 @@||gjensidige.lv/Content/dev/scripts/analytics.js
 @@||gjensidige.lv/Content/dev/scripts/analytics.min.js
 @@||google-analytics.com/analytics.js$domain=skaties.lv

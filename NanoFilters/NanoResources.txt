@@ -251,21 +251,21 @@ nano-vvvvid.it.js application/javascript
 	function defuse() {
 		var re = /var a=function.*};/;
 		var data = 'var a=function(){vvvvid.advPlayer=null,$(c.playerControlsClass).removeClass("ppad"),e()};';
-		window.vvvvid.cab5 = function(a, b) {
+		vvvvid.cab5 = function(a, b) {
 			this.isAdBlockActive = false;
 			if (b) {
 				b(false);
 			}
 		};
-		var func = window.String(window.vvvvid.models.PlayerObj.prototype.startAdv);
+		var func = String(vvvvid.models.PlayerObj.prototype.startAdv);
 		if (re.test(func)) {
-			window.eval("window[mnsJHnyT] = window.vvvvid.models.PlayerObj.prototype.startAdv = " + func.replace(re, data));
+			eval('window[mnsJHnyT] = vvvvid.models.PlayerObj.prototype.startAdv = ' + func.replace(re, data));
 		}
 	}
-	if (window.vvvvid) {
+	if ( typeof vvvvid === 'object' ) {
 		defuse();
 	} else {
-		window.addEventListener('load', defuse);
+		addEventListener('DOMContentLoaded', defuse);
 	}
 })();
 

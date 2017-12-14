@@ -1056,7 +1056,8 @@ wikia.com##script:inject(abort-on-property-write.js, _sp_)
 ! https://github.com/uBlockOrigin/uAssets/issues/580
 ! https://www.reddit.com/r/uBlockOrigin/comments/7631ww/not_blocking_googles_ads_ip/
 ! https://github.com/uBlockOrigin/uAssets/issues/846
-123movies.net,2ddl.*,arabseed.tv,buzzfil.net,clicknupload.org,ddlvalley.me,entervideo.net,eztv.*,filmvf.cc,ganool.se,go4up.com,icefilms.info,igg-games.com,letmewatchthis.ac,mac-torrents.com,mkvcage.com,openload.ch,pdf-giant.com,readmanga.today,sawlive.tv,sportshd.me,streamfilmzzz.com,streamzzz.online,thevideobee.to,torrentz2.*,tny.ec,uploading.site,uptobox.com,yts.ag,yts.gs,yts.am##script:inject(nowebrtc.js)
+! https://github.com/uBlockOrigin/uAssets/issues/997
+123movies.net,2ddl.*,arabseed.tv,buzzfil.net,clicknupload.org,ddlvalley.me,entervideo.net,eztv.*,filmvf.cc,ganool.se,go4up.com,icefilms.info,igg-games.com,letmewatchthis.ac,mac-torrents.com,mkvcage.com,openload.ch,pdf-giant.com,pelispedia.tv,readmanga.today,sawlive.tv,sportshd.me,streamfilmzzz.com,streamzzz.online,thevideobee.to,torrentz2.*,tny.ec,uploading.site,uptobox.com,yts.ag,yts.gs,yts.am##script:inject(nowebrtc.js)
 
 ! https://twitter.com/BabbyForDays/status/870399439365578752
 mobile.twitter.com##main section ._1_KafmK5--src-app-containers-RichTimeline-cell:has(:scope > div > div > div > div > .YunaQoc2--src-app-components-PromotedIndicator-icon)
@@ -2150,6 +2151,8 @@ vipleague.*##script:inject(addEventListener-defuser.js, /^(click|mousedown|mouse
 livecamtv.me,realcam.me,seelive.me##script:inject(abort-on-property-write.js, _pop)
 fbstreams.me,mlbstream.me,nbastreams.me,nflstreams.me,nhlstreams.me,strikeout.co,vipleague.*##script + [id][style]
 livecamtv.me,realcam.me,seelive.me##style + [id][style]
+! https://forums.lanik.us/viewtopic.php?f=62&t=39344
+mlbstream.me##script:inject(abort-current-inline-script.js, decodeURI, atob)
 
 ! https://github.com/uBlockOrigin/uAssets/pull/705
 trustedreviews.com##body > div#wrapper:style(padding-top: 0px !important;)
@@ -2299,9 +2302,12 @@ lavacdn.xyz##script:inject(abort-on-property-write.js, F3Z9)
 wabetainfo.com#@##adsense
 
 ! https://github.com/reek/anti-adblock-killer/issues/3660
-onitube.com##script:inject(abort-current-inline-script.js, document.createElement, jsc.mgid.com)
 @@||onitube.com^$generichide
 onitube.com###MGWrap130103
+! https://forums.lanik.us/viewtopic.php?p=129416#p129416
+onitube.com##script:inject(abort-on-property-read.js, miner)
+onitube.com##script:inject(setTimeout-defuser.js, newBody, 3000)
+/cdn-cgi/pe/bag2?r[]=*.mgid.com
 
 ! https://forums.lanik.us/viewtopic.php?f=62&t=38653
 radio.at,radio.de,radio.dk,radio.es,radio.fr,radio.it,radio.net,radio.pl,radio.pt,radio.se##script:inject(uabinject-defuser.js)
@@ -2616,7 +2622,7 @@ srt.am##script:inject(abort-on-property-read.js, RunAds)
 srt.am##script:inject(abort-on-property-write.js, _pop)
 srt.am##script:inject(abort-on-property-write.js, Fingerprint2)
 ! AdFly
-adf.ly,atomcurve.com,atominik.com,auto-login-xxx.com,ay.gy,babblecase.com,bitigee.com,bluenik.com,casualient.com,coginator.com,cogismith.com,dataurbia.com,download.replaymod.com,gamecopyworld.click,go.awanpc.me,j.gs,kaitect.com,kializer.com,kibuilder.com,kimechanic.com,microify.com,mmoity.com,picocurl.com,pintient.com,q.gs,quainator.com,quamiller.com,queuecosm.bid,riffhold.com,skamason.com,sostieni.ilwebmaster21.com,tinyical.com,tinyium.com,twineer.com,viahold.com,vializer.com,viwright.com,yabuilder.com,yamechanic.com,yoalizer.com,yobuilder.com,yoineer.com##script:inject(adfly-defuser.js)
+adf.ly,atomcurve.com,atominik.com,auto-login-xxx.com,ay.gy,babblecase.com,bitigee.com,bluenik.com,casualient.com,coginator.com,cogismith.com,dataurbia.com,download.replaymod.com,gamecopyworld.click,go.awanpc.me,j.gs,kaitect.com,kializer.com,kibuilder.com,kimechanic.com,microify.com,mmoity.com,picocurl.com,pintient.com,q.gs,quainator.com,quamiller.com,queuecosm.bid,riffhold.com,skamaker.com,skamason.com,sostieni.ilwebmaster21.com,tinyical.com,tinyium.com,twineer.com,viahold.com,vializer.com,viwright.com,yabuilder.com,yamechanic.com,yoalizer.com,yobuilder.com,yoineer.com##script:inject(adfly-defuser.js)
 
 ! https://forums.lanik.us/viewtopic.php?f=62&t=39252&p=128960#p128838
 ||player.ooyala.com/static/*ad$script,redirect=noopjs,domain=dugout.com
@@ -2981,3 +2987,63 @@ katestube.com##script:inject(abort-on-property-read.js, BetterJsPop)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/979
 gotporn.com##script:inject(abort-on-property-read.js, ExoLoader)
+
+! https://github.com/uBlockOrigin/uAssets/issues/986
+ddmix.net##script:inject(abort-on-property-write.js, miner)
+ddmix.net###publicidaddescarga1
+ddmix.net##a[href^="//s.click.aliexpress.com/"]
+
+! https://github.com/uBlockOrigin/uAssets/issues/883#issuecomment-351542884
+qe.pe##script:inject(abort-on-property-read.js, app_vars.force_disable_adblock)
+qe.pe##script:inject(abort-on-property-read.js, open)
+
+! https://github.com/uBlockOrigin/uAssets/issues/883#issuecomment-351542884
+onlinebee.in##script:inject(abort-on-property-read.js, app_vars.force_disable_adblock)
+||ignitna.info^
+
+! https://github.com/uBlockOrigin/uAssets/issues/992
+||pagead2.googlesyndication.com^$script,important,domain=mypapercraft.net
+mypapercraft.net##.blocker-notice
+mypapercraft.net##.blocker-overlay
+
+! https://github.com/uBlockOrigin/uAssets/issues/994
+@@||beelink.in^$generichide
+
+! https://github.com/uBlockOrigin/uAssets/issues/985
+||livesports.pw/adblock.js$script,first-party,redirect=fuckadblock.js-3.2.0
+@@||cinestrenostv.tv^$generichide
+||cinestrenostv.tv/*ad$image,redirect=1x1-transparent.gif
+||pop.verplusonline.com^$third-party
+
+! https://github.com/uBlockOrigin/uAssets/issues/989
+byetv.org##script:inject(popads.net.js)
+deportesmax.com##script:inject(abort-on-property-write.js, _pop)
+||vip.freelive365.com/adblocker.js$script,redirect=fuckadblock.js-3.2.0,domain=byetv.org
+@@||deportesmax.com^$generichide
+||waframedia16.com^$script,domain=deportesmax.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/991
+69games.xxx##script:inject(window.open-defuser.js)
+69games.xxx##.side_flash
+69games.xxx##a[href^="/ads/"]
+
+! https://github.com/uBlockOrigin/uAssets/issues/993
+@@||common-static.tunnl.com/player/js/ads.js$script,first-party
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=supergames.com|video-static.tunnl.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/801
+*/ads.js$script,important,redirect=noopjs,domain=tune.pk
+tune.pk###tpk-revenue-sharing-program
+
+! https://github.com/uBlockOrigin/uAssets/issues/218
+@@||fwmrm.net/*MTG$script,domain=viafree.no
+||fwmrm.net/ad/$xmlhttprequest,redirect=nooptext,domain=viafree.no|viafree.se
+||freewheel-mtgx-tv.akamaized.net/$media,domain=viafree.no|viafree.se
+
+! https://github.com/uBlockOrigin/uAssets/issues/998
+@@||megatvplay.com/*ads.js$script
+
+! https://github.com/uBlockOrigin/uAssets/issues/996
+arawatch.online##A[href$=".html"][rel="nofollow norefferer noopener"]
+arawatch.online##[id*="ScriptRoot"]
+arawatch.online##a[href="https://vidfast.co"]

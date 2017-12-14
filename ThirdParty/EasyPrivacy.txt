@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Checksum: w4U01/H6VZk6s7t5CuDmOw
-! Version: 201712131601
+! Checksum: 3Mp0Sic1HKMCu9KFJvasWQ
+! Version: 201712142211
 ! The contents of this filter list are fetched from the EasyPrivacy repository: https://github.com/easylist/easylist/tree/master/easyprivacy
 ! Title: EasyPrivacy
-! Last modified: 13 Dec 2017 16:01 UTC
+! Last modified: 14 Dec 2017 22:11 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -42,6 +42,7 @@
 -comscore.
 -criteo.
 -datacollection.
+-dtaectolog-
 -event-tracking.
 -ga-track.
 -gatracker.
@@ -1266,6 +1267,7 @@
 /footerpixel.gif?
 /fora_player_tracking.
 /foresee/*
+/fortvision-fb-web.
 /forumPixLog.
 /FoxAnalyticsExtension.
 /FoxBlueKaiPlugIn.
@@ -6337,6 +6339,7 @@ _mongo_stats/
 ||7x4.fr^$third-party
 ||7x5.fr^$third-party
 ||abcompteur.com^$third-party
+||admo.tv^$third-party
 ||adthletic.com^$third-party
 ||affilizr.com^$third-party
 ||alkemics.com^$third-party
@@ -8293,6 +8296,7 @@ _mongo_stats/
 ||soccer.ru/counter/
 ||socialreader.com^*?event=email_open^$image
 ||sohu.com/stat/
+||sohu.com^*/cookie?
 ||soundcloud.com^*/plays?referer=
 ||sourceforge.net/tracker/$~xmlhttprequest
 ||southafricahome.com/statsmodulev2/
@@ -9007,6 +9011,7 @@ _mongo_stats/
 ||m6web.fr/statsd/
 ||makazi.com/tracker-
 ||neteventsmedia.be/hit.cfm?
+||netreviews.eu/index.php?action=act_access&$third-party
 ||nvc.n1bus-exp.com^
 ||nws.naltis.com^
 ||optinproject.com/rt/visit/
@@ -9280,6 +9285,8 @@ _mongo_stats/
 ! Norwegian
 ||engage-cdn.schibsted.media^
 ||webhit.snd.no^
+! Persian
+||analytics.aasaam.com^
 ! Polish
 ||analytics.greensender.pl^$third-party
 ||cafenews.pl/mpl/static/static.js?
@@ -9393,6 +9400,7 @@ _mongo_stats/
 ||stat.rum.cdnvideo.ru^
 ||stat.sputnik.ru^
 ||stat.tvigle.ru^
+||stats-*.p2pnow.ru^
 ||stats.internet-yadro.com^
 ||stats.seedr.com^
 ||t.pusk.ru^
@@ -9413,7 +9421,6 @@ _mongo_stats/
 ||ulogin.ru/js/stats.js
 ||upstats.yadro.ru^
 ||uptolike.com/widgets/*/imp?
-||vgtrk.com/js/stat.js
 ||viewstat.promoblocks.ru^
 ||wapson.ru/counter.php?
 ||webtrack.biz^$third-party
@@ -13789,6 +13796,7 @@ _mongo_stats/
 @@||matchid.adfox.yandex.ru/?url=$script,domain=ctc.ru
 @@||megafon.ru/static/?files=*/tealeaf.js
 @@||player.fc-zenit.ru/msi/geoip?$xmlhttprequest
+@@||player.vgtrk.com/js/stat.js?
 @@||ssp.rambler.ru/acp/capirs_main.$script,domain=afisha.ru
 @@||ssp.rambler.ru/capirs.js$domain=afisha.ru
 @@||swa.mail.ru/cgi-bin/counters?$script

@@ -233,6 +233,15 @@ nano-remove-element-onready.js application/javascript
 })();
 
 
+# Block inline install on Chromium and chrome, no arguments.
+# Like all other snippets, there is a race condition, not guaranteed to work.
+# Not sure how useful this will be.
+nano-inline-install-defuser.js application/javascript
+(function() {
+	delete chrome.webstore;
+})();
+
+
 # https://github.com/uBlockOrigin/uAssets/issues/881
 nano-hardware-info.js application/javascript
 (function() {

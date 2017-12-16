@@ -35,3 +35,6 @@ onlinemschool.com###oms_left_block
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/390
 vvvvid.it##script:inject(nano-vvvvid-it.js)
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/761
+developpez.com##div:if(:scope > [id^="gabarit_pub"])

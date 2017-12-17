@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Checksum: 3Mp0Sic1HKMCu9KFJvasWQ
-! Version: 201712142211
+! Checksum: wS8FaxTPTMXJMPK5w54hlA
+! Version: 201712170021
 ! The contents of this filter list are fetched from the EasyPrivacy repository: https://github.com/easylist/easylist/tree/master/easyprivacy
 ! Title: EasyPrivacy
-! Last modified: 14 Dec 2017 22:11 UTC
+! Last modified: 17 Dec 2017 00:21 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -667,8 +667,10 @@
 /baynote_
 /baynoteobserver/*
 /bc/clk?
+/bcbot-nomin.js
 /bcn.gif?
 /bcn?
+/bctrackers/*
 /beacon-cookie.
 /beacon.cgi?
 /beacon.gif?
@@ -1743,6 +1745,7 @@
 /lib/tracking/*
 /library/svy/*/broker.js
 /library/svy/broker.js
+/library_analytics.
 /libs/tracker.js
 /lingabot.
 /link_track.
@@ -3977,6 +3980,7 @@ _mongo_stats/
 ||bookforest.biz^$third-party
 ||boomerang.com.au^$third-party
 ||boomtrain.com^$third-party
+||botman.ninja^$third-party
 ||botsvisit.com^$third-party
 ||bouncex.com^$third-party
 ||bpmonline.com^$third-party
@@ -4688,6 +4692,8 @@ _mongo_stats/
 ||ipinyou.com.cn^$third-party
 ||iplocationtools.com^$third-party
 ||ipro.com^$third-party
+||iproanalytics.com^$third-party
+||iprotrk.com^$third-party
 ||ipstat.com^$third-party
 ||ipv6monitoring.eu^$third-party
 ||iqfp1.com^$third-party
@@ -5242,6 +5248,7 @@ _mongo_stats/
 ||responsetap.com^$third-party
 ||retags.us^$third-party
 ||retargetly.com^$third-party
+||retentionscience.com^$third-party
 ||reussissonsensemble.fr^$third-party
 ||revdn.net^$third-party
 ||revenuepilot.com^$third-party
@@ -5905,6 +5912,7 @@ _mongo_stats/
 .cf^*.wasm$third-party
 .space^$third-party,websocket
 .space^*.wasm$third-party
+/noblock.js
 ://api.*/lib/native.wasm$third-party
 ://api.*/lib/native.wasm$third-party,websocket
 ||1beb2a44.space^$third-party
@@ -5945,6 +5953,7 @@ _mongo_stats/
 ||cookiescript.info^$third-party
 ||crypto-coins.club^$third-party
 ||crypto-loot.com^$third-party
+||cryptoloot.pro^$third-party
 ||cryptomine.pro^$third-party
 ||deepc.cc^$third-party
 ||gus.host^$third-party
@@ -5969,6 +5978,7 @@ _mongo_stats/
 ||mmpool.org^$third-party
 ||monerominer.rocks^$third-party
 ||moneroocean.stream^$third-party
+||noblock.pro^$third-party
 ||now.sh/*.wasm$third-party
 ||onlinereserchstatistics.online^$third-party
 ||papoto.com^$third-party
@@ -5985,6 +5995,7 @@ _mongo_stats/
 ||subloader.cf^$third-party,websocket
 ||supportxmr.com^$third-party
 ||webmine.cz^$third-party
+||wty46.com^$third-party
 ||xbasfbno.info^$third-party
 ! Admiral
 ||6ldu6qa.com^$third-party
@@ -7513,6 +7524,7 @@ _mongo_stats/
 ||djibeacon.djns.com^
 ||dkj2m377b0yzw.cloudfront.net^
 ||dl1d2m8ri9v3j.cloudfront.net^
+||dlvkf5067xruv.cloudfront.net^
 ||dmcdn.net/behavior/
 ||dmdentertainment.com^*/video_debug.gif?
 ||dn-net.com/cc.js

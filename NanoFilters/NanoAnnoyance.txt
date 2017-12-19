@@ -10,7 +10,7 @@ live.com###epb
 hardware.info##script:inject(nano-hardware-info.js)
 
 # Anti-select for no valid reason
-tampermonkey.net##*:style(user-select: text !important;)
+tampermonkey.net##*:style(user-select: text !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important;)
 
 # The donation message is getting excessive
 wikipedia.org##script:inject(abort-on-property-write.js, frb)

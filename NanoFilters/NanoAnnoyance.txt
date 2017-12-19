@@ -9,5 +9,8 @@ live.com###epb
 # https://github.com/uBlockOrigin/uAssets/issues/881
 hardware.info##script:inject(nano-hardware-info.js)
 
-# tampermonkey.net
+# Anti-select for no valid reason
 tampermonkey.net##*:style(user-select: text !important;)
+
+# The donation message is getting excessive
+wikipedia.org##script:inject(abort-on-property-write.js, frb)

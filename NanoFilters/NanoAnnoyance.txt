@@ -1,6 +1,6 @@
 # Annoyance filter for Nano Adblocker
 # Cookie notice, intrusive donation message, try browser,
-# anti-copy, hostile anti-right-click, etc
+# anti-copy, hostile anti-select, hostile anti-right-click, etc
 
 # https://github.com/NanoAdblocker/NanoFilters/issues/1
 microsoft.com###epb
@@ -8,3 +8,6 @@ live.com###epb
 
 # https://github.com/uBlockOrigin/uAssets/issues/881
 hardware.info##script:inject(nano-hardware-info.js)
+
+# tampermonkey.net
+tampermonkey.net##*:style(user-select: text !important;)

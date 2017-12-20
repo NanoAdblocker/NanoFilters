@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Checksum: wS8FaxTPTMXJMPK5w54hlA
-! Version: 201712170021
+! Checksum: rL5ntnFbqGZy6tG4kMWo5Q
+! Version: 201712201831
 ! The contents of this filter list are fetched from the EasyPrivacy repository: https://github.com/easylist/easylist/tree/master/easyprivacy
 ! Title: EasyPrivacy
-! Last modified: 17 Dec 2017 00:21 UTC
+! Last modified: 20 Dec 2017 18:31 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -245,6 +245,7 @@
 .tv/log?event
 .tv/t.png?
 .uk/o.gif?
+.uk/pv?
 .uk/t.gif?
 .uk/track?
 .uk/traffic/?
@@ -1294,6 +1295,7 @@
 /ga-custom-vars.
 /ga-explorations.
 /ga-links.js
+/ga-lite.
 /ga-multidomain.
 /ga-script.
 /ga-se-async.js
@@ -1553,6 +1555,7 @@
 /i?stm=*&refr=*&url=
 /ics/2/pview.gif?
 /id?d_visid_ver=
+/iframe-tracker.js
 /iframe.tracker.js
 /iframe_googleAnalytics
 /iframetracker.
@@ -2675,6 +2678,7 @@
 /static-tracking/*$script
 /static/tracking/*
 /statics/analytics.js?
+/statistics-desktop.js
 /statistics-page-view/*
 /statistics.asp?
 /statistics.aspx?profile
@@ -3125,6 +3129,7 @@
 /trk_zbo.
 /trkpixel.gif
 /trkr.js
+/trkr/php?
 /trovit-analytics.js
 /truehits.php?
 /tse/tracking.
@@ -5687,6 +5692,7 @@ _mongo_stats/
 ||tylere.net^$third-party
 ||tynt.com^$third-party
 ||tyxo.com^$third-party
+||tz284.com^$third-party
 ||u5e.com^$third-party
 ||uadx.com^$third-party
 ||ubertags.com^$third-party
@@ -6819,6 +6825,7 @@ _mongo_stats/
 ||estadisticasgratis.es^$third-party
 ||hit.copesa.cl^$third-party
 ||hits.e.cl^$third-party
+||inbenta.com^$third-party
 ||intrastats.com^$third-party
 ||mabaya.com^$third-party
 ||micodigo.com^$third-party
@@ -7436,6 +7443,7 @@ _mongo_stats/
 ||d21o24qxwf7uku.cloudfront.net^
 ||d22v2nmahyeg2a.cloudfront.net^
 ||d23p9gffjvre9v.cloudfront.net^
+||d25ezbwokoefx6.cloudfront.net^
 ||d27s92d8z1yatv.cloudfront.net/js/jquery.jw.analitycs.js
 ||d28g9g3vb08y70.cloudfront.net^
 ||d2d5uvkqie1lr5.cloudfront.net^*/analytics-
@@ -8233,6 +8241,7 @@ _mongo_stats/
 ||reports.maxperview.com^
 ||reports.pagesuite-professional.co.uk^
 ||reports.tstlabs.co.uk^
+||res.rbl.ms^
 ||researchintel.com^$third-party
 ||reverbnation.com/widgets/trk/
 ||rhapsody.com^*/pixel?
@@ -8549,6 +8558,7 @@ _mongo_stats/
 ||track.spots.im^
 ||track.sprinklecontent.com^
 ||track.strife.com^
+||track.tcppu.com^
 ||track.td3x.com^
 ||track.untd.com^
 ||track.vscash.com^
@@ -9636,6 +9646,7 @@ _mongo_stats/
 ||analytics.services.distractify.com^
 ||analytics.skyscanner.net^
 ||analytics.slashdotmedia.com^
+||analytics.spankbang.com^
 ||analytics.teespring.com^
 ||analytics.thenest.com^
 ||analytics.thenewslens.com^
@@ -10634,6 +10645,7 @@ _mongo_stats/
 ||metrics.tbliab.net^
 ||metrics.ted.com^
 ||metrics.washingtonpost.com^
+||metro.co.uk/js/ga-
 ||metro.us/api/trackPage/
 ||metroweekly.com/tools/blog_add_visitor/
 ||mf2fm.com/php/stats.php?
@@ -13453,6 +13465,7 @@ _mongo_stats/
 @@||walmartimages.com/webanalytics/omniture/omniture.jsp$domain=walmart.com
 @@||walmartimages.com/webanalytics/wmStat/wmStat.jsp$domain=walmart.com
 @@||washingtonexaminer.com/s3/wex15/js/analytics.js?$script
+@@||washingtonpost.com/wp-stat/analytics/latest/main.js
 @@||washingtonpost.com/wp-stat/analytics/main.js$domain=subscribe.washingtonpost.com
 @@||wbshop.com/fcgi-bin/iipsrv.fcgi?
 @@||websimages.com/JS/Tracker.js
@@ -13824,6 +13837,7 @@ _mongo_stats/
 @@||cloudfront.net/libs/amplitude-$script,domain=elconfidencial.com
 @@||eldiario.es/static/BBTCore/images/pixel.gif?hash=$image,domain=eldiario.es
 @@||estafeta.com/shared/js/tracking.js
+@@||gruposantander.es^*/scripts/log.js
 @@||metrics.el-mundo.net/b/ss/$image,domain=expansion.com
 @@||segundamano.mx^*/tealium.js
 ! Swedish

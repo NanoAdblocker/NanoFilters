@@ -17,6 +17,9 @@ https://github.com/NanoAdblocker/NanoCore/issues
 ### Screenshots (Required)
 
 
+### Screenshot of console (Required, press `F12` to open the console)
+
+
 ### Reproduction Steps (Optional if trivial)
 <!--
 I cannot read your mind, write down what is in your head!

@@ -112,8 +112,11 @@ nano-setTimeout-booster.js application/javascript
 	if ( isNaN(delay) || !isFinite(delay) ) {
 		delay = 1000;
 	}
-	if ( isNaN(boost) || !isFinite(boost) || boost < 0.02 ) {
+	if ( isNaN(boost) || !isFinite(boost) ) {
 		boost = 0.05;
+	}
+	if ( boost < 0.02 ) {
+		boost = 0.02;
 	}
 	if ( boost > 50 ) {
 		boost = 50;
@@ -145,8 +148,11 @@ nano-setInterval-booster.js application/javascript
 	if ( isNaN(delay) || !isFinite(delay) ) {
 		delay = 1000;
 	}
-	if ( isNaN(boost) || !isFinite(boost) || boost < 0.02 ) {
+	if ( isNaN(boost) || !isFinite(boost) ) {
 		boost = 0.05;
+	}
+	if ( boost < 0.02 ) {
+		boost = 0.02;
 	}
 	if ( boost > 50 ) {
 		boost = 50;

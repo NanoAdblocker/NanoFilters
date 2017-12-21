@@ -94,7 +94,7 @@ nano-debug-hook.js application/javascript
 # delayMatcher - The delay matcher, an integer, defaults to 1000.
 # boostRatio - The delay multiplier when there is a match, 0.5 speeds up by
 # 2 times and 2 slows down by 2 times, defaults to 0.05 or speed up 20 times.
-# Speed up caps at 50 times.
+# Speed up and down both cap at 50 times.
 nano-setTimeout-booster.js application/javascript
 (function() {
 	var z = window.setTimeout,
@@ -114,6 +114,9 @@ nano-setTimeout-booster.js application/javascript
 	}
 	if ( isNaN(boost) || !isFinite(boost) || boost < 0.02 ) {
 		boost = 0.05;
+	}
+	if ( boost > 50 ) {
+		boost = 50;
 	}
 	window.setTimeout = function(a, b) {
 		if ( b === delay && needle.test(a.toString()) ) {
@@ -145,6 +148,9 @@ nano-setInterval-booster.js application/javascript
 	if ( isNaN(boost) || !isFinite(boost) || boost < 0.02 ) {
 		boost = 0.05;
 	}
+	if ( boost > 50 ) {
+		boost = 50;
+	}
 	window.setInterval = function(a, b) {
 		if ( b === delay && needle.test(a.toString()) ) {
 			b *= boost;
@@ -154,6 +160,7 @@ nano-setInterval-booster.js application/javascript
 })();
 
 
+# This is mostly replaced by uBlock Origin's set-constant.js
 # Define a read-only property, 2 required arguments.
 # name - The name of the property, can only handle 1 level (can handle
 # window.test but not window.test1.test2).

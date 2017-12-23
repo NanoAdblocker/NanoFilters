@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Checksum: rL5ntnFbqGZy6tG4kMWo5Q
-! Version: 201712201831
+! Checksum: NroI1InEqkcfb0QedJbXfQ
+! Version: 201712231831
 ! The contents of this filter list are fetched from the EasyPrivacy repository: https://github.com/easylist/easylist/tree/master/easyprivacy
 ! Title: EasyPrivacy
-! Last modified: 20 Dec 2017 18:31 UTC
+! Last modified: 23 Dec 2017 18:31 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -189,6 +189,7 @@
 .io/track?
 .io/w.gif?
 .it/s.gif?
+.jp/pv?
 .jsp/?Log=
 .lms-analytics/
 .me/geoip/
@@ -574,6 +575,8 @@
 /apilog?
 /apitracking.
 /apixel?
+/app/tracking/*
+/app/tracking_
 /appendOmnitureTracking.
 /appier-track-
 /AppMeasurement.js
@@ -688,6 +691,7 @@
 /beaconimg.php?
 /beacons?data=
 /BehaviourCaptureHandler.
+/benchmarketingsmarttag/*
 /betamax_tracker.gif?
 /betamax_tracker.js
 /bg_j.gif?
@@ -2890,6 +2894,7 @@
 /track/visits/?
 /track2.php
 /track;adv
+/track?*&ref=
 /track?browserId
 /track?event=
 /track?name=
@@ -3941,6 +3946,7 @@ _mongo_stats/
 ||belstat.fr^$third-party
 ||belstat.nl^$third-party
 ||benchit.com^$third-party
+||benchtag2.co^$third-party
 ||berg-6-82.com^$third-party
 ||best-top.de^$third-party
 ||bestcontactform.com^$~image,third-party
@@ -6602,6 +6608,7 @@ _mongo_stats/
 ||zt-dst.com^$third-party
 ! Japanese
 ||admatrix.jp^$third-party
+||aid-ad.jp^$third-party
 ||analyticsip.net^$third-party
 ||bb-analytics.jp^$third-party
 ||beanscattering.jp^$third-party
@@ -6619,6 +6626,7 @@ _mongo_stats/
 ||gmodmp.jp^$third-party
 ||hitgraph.jp^$third-party
 ||i2i.jp^$third-party
+||im-apps.net^$third-party
 ||iogous.com^$third-party
 ||japanmetrix.jp^$third-party
 ||keyword-match.com^$third-party
@@ -6627,6 +6635,7 @@ _mongo_stats/
 ||omiki.com^$third-party
 ||owldata.com^$third-party
 ||pagoda56.com^$third-party
+||polymorphicads.jp^$third-party
 ||research-artisan.com^$third-party
 ||rtoaster.jp^$third-party
 ||sibulla.com^$third-party
@@ -8217,6 +8226,8 @@ _mongo_stats/
 ||rackcdn.com^$script,domain=buysubscriptions.com|cbsnews.com|cbssports.com|cnet.com|dailystar.co.uk|express.co.uk|gamerant.com|gamespot.com|giantbomb.com|inyt.com|metacritic.com|metrolyrics.com|page3.com|rotoworld.com|scout.com|sh.st|thesun.co.uk|thesun.ie|thesundaytimes.co.uk|thetimes.co.uk|tv.com|tvguide.com|zdnet.com
 ||rackcdn.com^*/analytics.js
 ||radiocompanion.com/count.php?
+||radiotime.com/Report.ashx?
+||radiotime.com/reports/
 ||ramp.purch.com^
 ||rbl.ms/res/users/tracking/
 ||readcube.com/tracking/
@@ -9282,6 +9293,7 @@ _mongo_stats/
 ||lcs.livedoor.net^
 ||macromill.com/imp/
 ||mofa.go.jp^*/count.cgi?
+||omt.shinobi.jp^
 ||otoshiana.com/ufo/
 ||rd.rakuten.co.jp^
 ||seesaa.jp/ot_square.pl?
@@ -9806,6 +9818,7 @@ _mongo_stats/
 ||bits.wikimedia.org/geoiplookup
 ||blackplanet.com/images/shim.gif
 ||blankfire.com^*_.gif
+||blastingnews.com/?newsid=
 ||blastro.com/log_player_actions.php
 ||bleacherreport.com/api/hit.json?
 ||blekko.com/a/track?
@@ -13071,7 +13084,7 @@ _mongo_stats/
 @@||go.com^*/analytics/tracker.otv.js
 @@||goldbet.com/Scripts/googleAnalytics.js
 @@||goldmansachs.com/a/pg/js/prod/gs-analytics-init.js
-@@||google-analytics.com/analytics.js$domain=afternic.com|allmusic.com|amctv.com|bebo.com|bennysva.com|ch10.co.il|cliphunter.com|daemon-tools.cc|desigual.com|easyjet.com|firehousesubs.com|gamepix.com|greentoe.com|housing.wisc.edu|infogr.am|jackbox.tv|jobs.net|keygames.com|manowthaimordialloc.com.au|maxiclimber.com|orbitum.com|pluto.tv|pure.com|rebtel.com|sbnation.com|sci2.tv|seatgeek.com|stitcher.com|support.amd.com|tagheuer.com.au|tv10play.se|tv3play.se|tv6play.se|tv8play.se|video.pbs.org|vox.com|vpnster.com|weather.gov|westernunion.at|westernunion.be|westernunion.ca|westernunion.ch|westernunion.cl|westernunion.co.jp|westernunion.co.nz|westernunion.co.uk|westernunion.co.za|westernunion.com|westernunion.com.au|westernunion.com.co|westernunion.com.hk|westernunion.com.my|westernunion.com.pe|westernunion.de|westernunion.fr|westernunion.ie|westernunion.it|westernunion.nl|westernunion.ph|westernunion.pl|westernunion.se|westernunion.sg|www.google.com
+@@||google-analytics.com/analytics.js$domain=afternic.com|allmusic.com|amctv.com|bebo.com|bennysva.com|blastingnews.com|ch10.co.il|cliphunter.com|daemon-tools.cc|desigual.com|easyjet.com|firehousesubs.com|gamepix.com|greentoe.com|housing.wisc.edu|infogr.am|jackbox.tv|jobs.net|keygames.com|manowthaimordialloc.com.au|maxiclimber.com|orbitum.com|pluto.tv|pure.com|rebtel.com|sbnation.com|sci2.tv|seatgeek.com|stitcher.com|support.amd.com|tagheuer.com.au|tv10play.se|tv3play.se|tv6play.se|tv8play.se|video.pbs.org|vox.com|vpnster.com|weather.gov|westernunion.at|westernunion.be|westernunion.ca|westernunion.ch|westernunion.cl|westernunion.co.jp|westernunion.co.nz|westernunion.co.uk|westernunion.co.za|westernunion.com|westernunion.com.au|westernunion.com.co|westernunion.com.hk|westernunion.com.my|westernunion.com.pe|westernunion.de|westernunion.fr|westernunion.ie|westernunion.it|westernunion.nl|westernunion.ph|westernunion.pl|westernunion.se|westernunion.sg|www.google.com
 @@||google-analytics.com/collect$xmlhttprequest,domain=content.wargaming.net
 @@||google-analytics.com/cx/api.js$domain=foxnews.com|redfin.com
 @@||google-analytics.com/plugins/ga/inpage_linkid.js$domain=lovehoney.co.uk|maxiclimber.com|opendns.com|openshift.com|vimeo.com|westernunion.at|westernunion.be|westernunion.ca|westernunion.ch|westernunion.cl|westernunion.co.jp|westernunion.co.nz|westernunion.co.uk|westernunion.co.za|westernunion.com|westernunion.com.au|westernunion.com.co|westernunion.com.hk|westernunion.com.my|westernunion.com.pe|westernunion.de|westernunion.fr|westernunion.ie|westernunion.it|westernunion.nl|westernunion.ph|westernunion.pl|westernunion.se|westernunion.sg

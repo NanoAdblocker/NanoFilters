@@ -79,15 +79,6 @@ nano-noopvast-3.0 text/xml
 <VAST version="3.0"></VAST>
 
 
-# Echo a log when script snippets are injected so you can view them from the
-# console. This is for developers only, no arguments.
-# This is just temporary until Nano Logger can handle script snippets injection.
-nano-debug-hook.js application/javascript
-(function() {
-	console.warn('[Nano] Script Snippets Debug Hook :: ' + location.href);
-})();
-
-
 # Speed up or down setTimeout, 3 optional arguments.
 # funcMatcher - The payload matcher, a string literal or a JavaScript RegExp,
 # defaults to match all.
@@ -243,15 +234,6 @@ nano-remove-element-onready.js application/javascript
 	} else {
 		window.addEventListener('DOMContentLoaded', remove);
 	}
-})();
-
-
-# Block inline install on Chromium and Chrome, no arguments.
-# Like all other snippets, there is a race condition, not guaranteed to work.
-# Not sure how useful this will be.
-nano-inline-install-defuser.js application/javascript
-(function() {
-	delete chrome.webstore;
 })();
 
 

@@ -2020,6 +2020,7 @@ fmovies.is##.ads
 ! https://github.com/uBlockOrigin/uAssets/issues/605
 ! https://forums.lanik.us/viewtopic.php?f=62&t=38997
 9anime.*##script:inject(abort-current-inline-script.js, parseInt, tabunder)
+9anime.*##script:inject(abort-current-inline-script.js, String.fromCharCode, /[0-9a-f]{40}..$/)
 @@||9anime.*^$generichide
 9anime.*##.myass
 9anime.*##.pa
@@ -2258,7 +2259,7 @@ trendnew.ml##script:inject(abort-current-inline-script.js, addEventListener, Div
 ! https://www.reddit.com/r/uBlockOrigin/comments/74a9x1/iframe_important_blocking_on_sockshare/
 sockshare.net##script:inject(abort-current-inline-script.js, document.createElement, jsc.mgid.com)
 sockshare.net##script:inject(abort-current-inline-script.js, parseInt, tabunder)
-sockshare.net##script:inject(abort-current-inline-script.js, String.fromCharCode, 676574456c656d656e747342795461674e616d65)
+sockshare.net##script:inject(abort-current-inline-script.js, MutationObserver, 676574456c656d656e747342795461674e616d65)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/741
 @@||demolandia.net^$generichide
@@ -2313,9 +2314,8 @@ hdrezka.ag##script:inject(abort-current-inline-script.js, parseInt, decodeURICom
 apkmirror.com##script:inject(abort-on-property-write.js, ranTwice)
 
 ! https://forums.lanik.us/viewtopic.php?f=62&t=38067
-lavamovies.com##script:inject(abort-current-inline-script.js, MutationObserver, 676574456c656d656e747342795461674e616d65)
-lavamovies.com##script:inject(abort-current-inline-script.js, parseInt, tabunder)
 lavamovies.se##script:inject(abort-current-inline-script.js, parseInt, tabunder)
+lavamovies.se##script:inject(window.open-defuser.js)
 lavacdn.xyz##script:inject(abort-on-property-write.js, F3Z9)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/766
@@ -2326,7 +2326,7 @@ wabetainfo.com#@##adsense
 onitube.com###MGWrap130103
 ! https://forums.lanik.us/viewtopic.php?p=129416#p129416
 onitube.com##script:inject(abort-on-property-read.js, miner)
-onitube.com##script:inject(setTimeout-defuser.js, newBody, 3000)
+onitube.com##script:inject(setTimeout-defuser.js, newBody)
 /cdn-cgi/pe/bag2?r[]=*.mgid.com
 
 ! https://forums.lanik.us/viewtopic.php?f=62&t=38653
@@ -2651,7 +2651,7 @@ srt.am##script:inject(abort-on-property-write.js, Fingerprint2)
 ! AdFly
 adf.ly,atomcurve.com,atominik.com,auto-login-xxx.com,ay.gy,babblecase.com,bitigee.com,bluenik.com,casualient.com,coginator.com,cogismith.com,dataurbia.com,download.replaymod.com,gamecopyworld.click,go.awanpc.me,j.gs,kaitect.com,kializer.com,kibuilder.com,kimechanic.com,microify.com,mmoity.com,picocurl.com,pintient.com,q.gs,quainator.com,quamiller.com,queuecosm.bid,riffhold.com,skamaker.com,skamason.com,sostieni.ilwebmaster21.com,tinyical.com,tinyium.com,twineer.com,viahold.com,vializer.com,viwright.com,yabuilder.com,yamechanic.com,yoalizer.com,yobuilder.com,yoineer.com,yoitect.com##script:inject(adfly-defuser.js)
 ! https://github.com/uBlockOrigin/uAssets/issues/1009#issuecomment-352160776
-123link.co,adbull.me,adshorte.com,bit-url.com,coin.mg,coinb.ink,curs.io,cut-win.com,cutearn.com,cuturlink.com,cutwi.in,cutwin.com,eg4link.com,egy-links.com,infinityurl.co,linkatk.net,linkkawy.com,linkkch.com,lyon.kim,meulink.tk,ourl.io,psl.io,shortzero.com,teqani-plus.com,url.gem-flash.com,veneapp.com##script:inject(abort-on-property-read.js, app_vars.force_disable_adblock)
+123link.co,adbull.me,adshorte.com,bit-url.com,coin.mg,coinb.ink,cut-win.com,cutearn.com,cuturlink.com,cutwi.in,cutwin.com,eg4link.com,egy-links.com,infinityurl.co,linkatk.net,linkkawy.com,linkkch.com,lyon.kim,meulink.tk,ourl.io,psl.io,shortzero.com,teqani-plus.com,url.gem-flash.com,veneapp.com##script:inject(abort-on-property-read.js, app_vars.force_disable_adblock)
 123link.co##script:inject(abort-on-property-read.js, jQuery.adblock)
 cuturlink.com##script:inject(abort-on-property-write.js, Fingerprint2)
 meulink.tk##script:inject(bab-defuser.js)
@@ -2949,8 +2949,8 @@ extremetube.com,spankwire.com##script:inject(abort-on-property-write.js, ppAb)
 adlinkme.com##script:inject(abort-on-property-read.js, app_vars.force_disable_adblock)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/965
-curs.io##script:inject(abort-on-property-read.js, app_vars.force_disable_adblock)
-curs.io##script:inject(window.open-defuser.js)
+curs.io,ecurs.co##script:inject(abort-on-property-read.js, app_vars.force_disable_adblock)
+curs.io,ecurs.co##script:inject(window.open-defuser.js)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/966
 mcfucker.com##script:inject(abort-on-property-write.js, t4PP)
@@ -3020,6 +3020,7 @@ porntube.com##script:inject(abort-on-property-read.js, ExoLoader)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/978
 katestube.com##script:inject(abort-on-property-read.js, BetterJsPop)
+katestube.com##script:inject(abort-on-property-read.js, raSettings)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/979
 gotporn.com##script:inject(abort-on-property-read.js, ExoLoader)
@@ -3453,3 +3454,6 @@ kitguru.net##script:inject(abort-on-property-read.js, anOptions)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1108
 pornktube.com##script:inject(abort-on-property-write.js, __htapop)
+
+! https://github.com/uBlockOrigin/uAssets/issues/1110
+mirole.com##script:inject(bab-defuser.js)

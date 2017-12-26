@@ -168,18 +168,56 @@ nano-define-readonly-property.js application/javascript
 	console.warn('[Nano] Beta Script Snippet Injected :: define-readonly-property');
 	var name = '{{1}}';
 	var data = '{{2}}';
-	var define = function(payload) {
-		// TODO 2017-12-09: What about deeper level?
-		try {
-			Object.defineProperty(window, name, {
-				configurable: false,
-				set: function() {
-					;
-				},
-				get: function() {
-					return payload;
+	var Object = window.Object.bind(window);
+	var descriptor = window.Object.getOwnPropertyDescriptor.bind(window.Object);
+	var defineProperty = window.Object.defineProperty.bind(window.Object);
+	var finalSetter = function() { };
+	var finalGetter = function() {
+		return data;
+	};
+	var trustedSetters = {};
+	var makeProxy = function(parent, chain) {
+		var i = chain.indexOf('.');
+		if ( i === -1 ) {
+			var current = descriptor(parent, chain);
+			if ( !current || current.set !== finalSetter || current.get !== finalGetter ) {
+				defineProperty(parent, chain, {
+					configurable: false,
+					set: finalSetter,
+					get: finalGetter
+				});
+			}
+		} else {
+			var name = chain.slice(0, i);
+			var val = parent[name];
+			chain = chain.substring(i + 1);
+			if ( val instanceof Object ) {
+				makeProxy(val, chain);
+			} else {
+				var current = descriptor(parent, name);
+				if ( !current || !trustedSetters[chain] || trustedSetters[chain] !== current.set ) {
+					var setter = function(value) {
+						if ( value instanceof Object ) {
+							try {
+								makeProxy(value, chain);
+								val = value;
+							} catch ( err ) { }
+						}
+					};
+					trustedSetters[chain] = setter;
+					defineProperty(parent, name, {
+						configurable: false,
+						set: setter,
+						get: function() { return val; }
+					});
 				}
-			});
+			}
+		}
+	};
+	var define = function(payload) {
+		data = payload;
+		try {
+			makeProxy(window, name);
 		} catch ( err ) { }
 	};
 	switch ( data ) {

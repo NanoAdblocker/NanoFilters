@@ -157,10 +157,8 @@ nano-setInterval-booster.js application/javascript
 })();
 
 
-# This is mostly replaced by uBlock Origin's set-constant.js
 # Define a read-only property, 2 required arguments.
-# name - The name of the property, can only handle 1 level (can handle
-# window.test but not window.test1.test2).
+# name - The name chain of the property, use "." to separate levels.
 # nanoSafeValue - The value of the property, for security, it can only
 # be one of: true, false, 1, 0, undefined, noopFunc
 nano-define-readonly-property.js application/javascript

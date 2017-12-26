@@ -170,9 +170,7 @@ nano-define-readonly-property.js application/javascript
 	var descriptor = window.Object.getOwnPropertyDescriptor.bind(window.Object);
 	var defineProperty = window.Object.defineProperty.bind(window.Object);
 	var finalSetter = function() { };
-	var finalGetter = function() {
-		return data;
-	};
+	var finalGetter = function() { return data; };
 	var trustedSetters = {};
 	var makeProxy = function(parent, chain) {
 		var i = chain.indexOf('.');
@@ -224,7 +222,7 @@ nano-define-readonly-property.js application/javascript
 		case '1':		return define(1);
 		case '0':		return define(0);
 		case 'undefined':	return define(undefined);
-		case 'noopFunc':	return define(function() { ; });
+		case 'noopFunc':	return define(function() { });
 		default:		return;
 	}
 })();

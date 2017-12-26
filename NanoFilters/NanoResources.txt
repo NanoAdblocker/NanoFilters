@@ -88,6 +88,8 @@ nano-noopvast-3.0 text/xml
 # Speed up and down both cap at 50 times.
 nano-setTimeout-booster.js application/javascript
 (function() {
+	// Based on uAssets
+	// License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 	var z = window.setTimeout,
 		needle = '{{1}}',
 		delay = parseInt('{{2}}', 10),
@@ -124,6 +126,8 @@ nano-setTimeout-booster.js application/javascript
 # Same as the last one except it is for setInterval instead of setTimeout.
 nano-setInterval-booster.js application/javascript
 (function() {
+	// Based on uAssets
+	// License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 	var z = window.setInterval,
 		needle = '{{1}}',
 		delay = parseInt('{{2}}', 10),
@@ -163,6 +167,8 @@ nano-setInterval-booster.js application/javascript
 # be one of: true, false, 1, 0, undefined, noopFunc
 nano-define-readonly-property.js application/javascript
 (function() {
+	// Based on uAssets
+	// License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 	console.warn('[Nano] Beta Script Snippet Injected :: define-readonly-property');
 	var name = '{{1}}';
 	var data = '{{2}}';

@@ -2,6 +2,9 @@
 
 Script snippets and filters for Nano Adblocker
 
+These resources are designed for Nano Adblocker and may not always work as expected with uBlock Origin out of the box. 
+See [filter incompatibility](https://github.com/NanoAdblocker/NanoCore/blob/master/Notes/FilterIncompatibility.MD) for more details. 
+
 Third party filters were cached on 2017-12-25. Cache will be updated on every 
 release of Nano Adblocker. 
 

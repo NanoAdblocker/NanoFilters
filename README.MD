@@ -23,3 +23,5 @@ Timers and other form of annoyance will be removed if we consider appropriate an
 Tracking are to be handled in EasyPrivacy or uAssets. 
 
 Third party whitelists must be added to `Nano filters – Whitelist`. 
+
+`Nano filters` and `Nano filters - Whitelist` should keep compatibility with uBlock Origin when possible. 

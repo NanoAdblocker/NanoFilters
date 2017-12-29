@@ -25,3 +25,5 @@ Tracking are to be handled in EasyPrivacy or uAssets.
 Third party whitelists must be added to `Nano filters – Whitelist`. 
 
 `Nano filters` and `Nano filters - Whitelist` should keep compatibility with uBlock Origin when possible. 
+
+Deprecated features should never be used. 

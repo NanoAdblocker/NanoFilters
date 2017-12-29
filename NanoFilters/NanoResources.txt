@@ -313,3 +313,16 @@ nano-vvvvid-it.js application/javascript
 	}
 })();
 
+
+# NSFW! https://www.reddit.com/r/camwhorestv/comments/7li9kr/anyone_else_having_problems_with_adblock_on/
+nano-camwhores-tv.js application/javascript
+(function() {
+	window.open = undefined;
+	addEventListener('DOMContentLoaded', function() {
+		var imgs = document.querySelectorAll('img.lazy-load');
+		for ( var img of imgs ) {
+			img.src = img.dataset.original;
+		}
+	});
+})();
+

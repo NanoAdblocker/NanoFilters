@@ -14,3 +14,7 @@ tampermonkey.net##*:style(user-select: text !important; -webkit-user-select: tex
 
 # The donation message is getting excessive, test: https://en.wikipedia.org/wiki/%22Hello,_World!%22_program
 wikipedia.org##script:inject(abort-on-property-write.js, frb)
+
+# https://github.com/uBlockOrigin/uAssets/issues/881#issuecomment-354490943
+jouw.postnl.nl##pnl-cookiebar
+jouw.postnl.nl##.hide-scroll:style(overflow: initial !important;)

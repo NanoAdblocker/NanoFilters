@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Checksum: er201Y7CODykMSQC1Er/Mw
-! Version: 201712251731
+! Checksum: bP2gWSYjyy+8kA093OQ7sQ
+! Version: 201712291711
 ! The contents of this filter list are fetched from the EasyPrivacy repository: https://github.com/easylist/easylist/tree/master/easyprivacy
 ! Title: EasyPrivacy
-! Last modified: 25 Dec 2017 17:31 UTC
+! Last modified: 29 Dec 2017 17:11 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -321,6 +321,7 @@
 /activetrackphp.php?
 /activity-track/?
 /activity.gif?
+/ad-iptracer.
 /ad_1_trans.
 /ad_imp.
 /adam.js
@@ -711,6 +712,7 @@
 /BKVTrack.js
 /blank.gif?*%
 /blank.gif?*&
+/block/pixel?
 /blockstat?
 /blog/traffic/?
 /blogsectiontracking.
@@ -1236,6 +1238,7 @@
 /exittracker.
 /exittraffic.
 /expcount/*
+/extBnr.gif?
 /extendedAnalytics.
 /external-promo-metrics.
 /external-tracking.
@@ -1656,6 +1659,7 @@
 /iplookup.php
 /iporganictrack.
 /ips-invite.iperceptions.com/*
+/iptracer.
 /iqtm.js
 /istat.aspx?
 /ists.tag?
@@ -2319,6 +2323,7 @@
 /pushlog.
 /pv.gif?url
 /pv.txt?
+/pv/new?
 /pv?place=
 /pv?token=
 /pv_count.
@@ -3480,7 +3485,9 @@
 ://sett.*/log.js
 ://sp.*/xyz?$image
 ://tracking.*/beacon/
+;1x1inv=
 ;manifest-analytics.js
+;sz=1x1;ord=
 =&cs_Referer=
 =ATAtracker&
 =get_preroll_cookie&
@@ -5927,9 +5934,11 @@ _mongo_stats/
 ! Mining
 .cf^*.wasm$third-party
 .space^$third-party,websocket
+/lib/cn.wasm$third-party
 /noblock.js
 ://api.*/lib/native.wasm$third-party
 ||1beb2a44.space^$third-party
+||1q2w3.me^$third-party
 ||300ca0d0.space^$third-party
 ||310ca263.space^$third-party
 ||320ca3f6.space^$third-party
@@ -6493,6 +6502,8 @@ _mongo_stats/
 ||dotmetrics.net^$third-party
 ||xclaimwords.net^$third-party
 ! Czech
+||analights.com^$third-party
+||dopc.cz^$third-party
 ||ibillboard.com^$third-party
 ||itop.cz^$third-party
 ||lookit.cz^$third-party
@@ -6502,6 +6513,7 @@ _mongo_stats/
 ||performax.cz^$third-party
 ||pocitadlo.cz^$third-party
 ||programmatic.cz^$third-party
+||semnicneposilejte.cz^$third-party
 ! Danish
 ||agillic.eu^$third-party
 ||andersenit.dk^$third-party
@@ -6725,6 +6737,7 @@ _mongo_stats/
 ||2ip.ua^$third-party
 ||a-counter.com.ua^$third-party
 ||a-counter.kiev.ua^$third-party
+||adx.com.ru^$third-party
 ||announcement.ru^$third-party
 ||apkonline.ru^$third-party
 ||audsp.com^$third-party
@@ -6740,6 +6753,7 @@ _mongo_stats/
 ||countstat.ru^$third-party
 ||cpaevent.ru^$third-party
 ||cszz.ru^$third-party
+||directcrm.ru^$third-party
 ||e-kuzbass.ru^$third-party
 ||exe.bid^$third-party
 ||faststart.ru^$third-party
@@ -6806,6 +6820,7 @@ _mongo_stats/
 ||tpm.pw^$third-party
 ||trbna.com^$third-party
 ||uarating.com^$third-party
+||upravel.com^$third-party
 ||uptolike.com^$third-party
 ||uzrating.com^$third-party
 ||vidigital.ru^$third-party
@@ -9170,7 +9185,9 @@ _mongo_stats/
 ! Croatian
 ||tracking.vid4u.org^
 ! Czech
+||bnr.alza.cz^
 ||counter.cnw.cz^
+||fimg-resp.seznam.cz^
 ||h.imedia.cz^
 ||hit.skrz.cz^
 ||i.imedia.cz^
@@ -9452,6 +9469,7 @@ _mongo_stats/
 ||target.smi2.net^
 ||target.smi2.ru^
 ||tbe.tom.ru^
+||tms-st.cdn.ngenix.net^
 ||top.bur-bur.ru^
 ||top.elec.ru^
 ||top.sec.uz^
@@ -9857,6 +9875,7 @@ _mongo_stats/
 ||broadbandchoices.co.uk/track.js
 ||broadwayworld.com/regionalbug.cfm?
 ||brobible.com/?ACT
+||bulb.76.my^
 ||bulgari.com/bulgari/wireframe_script/BulgariGa.js
 ||business.com/images2/anal.gif?
 ||businessinsider.com/tracker.js
@@ -10802,6 +10821,7 @@ _mongo_stats/
 ||novatech.co.uk^*/tracking?
 ||novell.com^*/metrics.js
 ||novinite.com/tz.php
+||nst.com.my/statistic/
 ||nydailynews.com/tracker.js
 ||nydailynews.com^*/tracker.js
 ||nymag.com/js/2/metrony
@@ -11317,6 +11337,7 @@ _mongo_stats/
 ||t.eharmony.com^
 ||t.hulu.com/beacon/
 ||t.kck.st^
+||t.my.jobs^
 ||t.paypal.com^
 ||t.vimeo.com^
 ||t.wayfair.com^
@@ -12435,6 +12456,7 @@ _mongo_stats/
 ! Czech
 ||kbmg.cz/tracker.js
 ||o2.cz^*-ga_o2cz_bundle.js?
+||stat.novinky.cz^
 ! Dutch
 ||klik.nrc.nl/ping?
 ||logs.ggweb.nl^
@@ -13024,6 +13046,7 @@ _mongo_stats/
 @@||dw.cbsi.com/anonc.js$domain=cnet.com|gamespot.com|giantbomb.com
 @@||dw.cbsi.com/js/dw.js$domain=cnet.com
 @@||dw.com.com/js/dw.js$domain=cbsnews.com|cnet.com|gamespot.com|tv.com
+@@||e2e-comms.pearson.com/osbrowserchecker/prd/thirdPartyCookie.html?$subdocument,domain=pearsonmylabandmastering.com
 @@||ec.atdmt.com/b/$domain=starwoodhotels.com
 @@||ecostream.tv/js/ecos.js
 @@||edgedatg.com/aws/apps/datg/web-player-unity/*/AppMeasurement.js$domain=abc.go.com
@@ -13118,6 +13141,7 @@ _mongo_stats/
 @@||halowars.com/stats/images/Buttons/MapStats.jpg
 @@||harvard.edu/scripts/ga_social_tracking.js
 @@||haystax.com/components/leaflet/heatmap.js
+@@||he.net/images/flags/us.gif?$domain=he.net
 @@||healthcare.gov/marketplace/*/clear.gif?
 @@||hhgregg.com/wcsstore/MadisonsStorefrontAssetStore/javascript/Analytics/AnalyticsTagDataObject.js
 @@||highcharts.com^*/heatmap.js
@@ -13319,6 +13343,7 @@ _mongo_stats/
 @@||popeater.com/traffic/?$script,domain=popeater.com
 @@||popmoney.com^*/jquery.analytics.js
 @@||pp-serve.newsinc.com^*/unitsdata.js?$domain=timesfreepress.com
+@@||primevideo.com/watchlist/ajax/addRemove.html/$xmlhttprequest,domain=primevideo.com
 @@||productads.hlserve.com^$script,domain=argos.co.uk
 @@||propelmedia.com/resources/images/load.gif
 @@||ps.w.org/google-analytics-dashboard-for-wp/assets/
@@ -13601,6 +13626,7 @@ _mongo_stats/
 @@||hammonline.de/statistik/piwik.js
 @@||hermesworld.com/tracking/urchin.js
 @@||heute.de/zdf/flash/eplayer/player.swf?*/cgi-bin/ivw/
+@@||honeybadger.io^*/honeybadger.min.js$domain=clark.de
 @@||hse24.de^*/emos2.js
 @@||imrworldwide.com/novms/*/ggcm*.js$domain=ndr.de|tvnow.de|watchbox.de
 @@||ing-diba.de^*/sitestat.js
@@ -13811,6 +13837,7 @@ _mongo_stats/
 @@||gemius.pl/gstream.js
 @@||kropka.onet.pl^*/onet.js$domain=tvnwarszawa.pl
 @@||ninja.onap.io/ninja-cee.js$domain=olx.pl
+@@||olx.pl^*/js/tracking/ninja.js$domain=olx.pl
 @@||stat24.com/crossdomain.xml$domain=ipla.tv
 @@||wp.pl^*/dot.gif?$xmlhttprequest,domain=open.fm|wp.tv
 ! Portuguese

@@ -16,5 +16,5 @@ tampermonkey.net##*:style(user-select: text !important; -webkit-user-select: tex
 wikipedia.org##script:inject(abort-on-property-write.js, frb)
 
 # https://github.com/uBlockOrigin/uAssets/issues/881#issuecomment-354490943
-jouw.postnl.nl##pnl-cookiebar
 jouw.postnl.nl##.hide-scroll:style(overflow: initial !important;)
+jouw.postnl.nl##pnl-cookiebar

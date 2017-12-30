@@ -63,3 +63,6 @@ avseesee.com##.ads
 camwhores.tv##script:inject(nano-camwhores-tv.js)
 camwhores.tv##body > div:matches-css(z-index: 9999999)
 camwhores.tv##body > a[href^="//"]
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/776
+liquipedia.net##script:inject(abort-on-property-read.js, adonis)

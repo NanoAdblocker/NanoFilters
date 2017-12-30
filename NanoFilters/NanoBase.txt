@@ -6,9 +6,6 @@
 # https://github.com/jspenguin2017/uBlockProtector/issues/756
 /wp-content/plugins/end-of-adblock-cycle/*
 
-# https://github.com/jspenguin2017/uBlockProtector/issues/742
-@@||egarwolin.pl/static/js/ads.js$script,first-party
-
 # https://github.com/jspenguin2017/uBlockProtector/issues/744
 # https://github.com/jspenguin2017/uBlockProtector/issues/745
 @@||blockergame.com^$generichide
@@ -20,15 +17,8 @@ blockersurvive.com,blockergame.com##.ads > .ads-body:style(background: initial !
 ||imasdk.googleapis.com/js/sdkloader/outstream.js$script,redirect=noopjs,domain=squadd.io
 squadd.io###mc-videoads-overlay
 
-# https://www.reddit.com/r/uBlockOrigin/comments/7imqbx/firefox_quantum_working_antiadblockkiller/
-libgen.io##script:inject(setTimeout-defuser.js, ad blocking)
-
 # https://github.com/jspenguin2017/uBlockProtector/issues/752
 wolframclient.net##script:inject(nano-remove-element-onready.js, [data-ad-client^="ca-pub-"])
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/755
-onlinemschool.com##script:inject(abort-on-property-read.js, oms.ads_detect)
-onlinemschool.com###oms_left_block
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/390
 vvvvid.it##script:inject(nano-vvvvid-it.js)
@@ -44,14 +34,19 @@ developpez.com##div:if(:scope > [id^="gabarit_pub"])
 altadefinizione.*##.sm_header.sm_nomobile:if(:scope > a[href*="/HD/play"])
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/760
+||tatumsmolena.com^
 ||cayucosprenter.com^
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/769
-ilgeniodellostreaming.org###playerads
 
 # NSFW! Missed ads, test: http://www.avseesee.com/
 avseesee.com###getadiv
 avseesee.com##.ads
+
+# NSFW! https://www.reddit.com/r/camwhorestv/comments/7li9kr/anyone_else_having_problems_with_adblock_on/
+camwhores.tv##script:inject(nano-camwhores-tv.js)
+camwhores.tv##body > div:matches-css(z-index: 9999999)
+camwhores.tv##body > a[href^="//"]
+
+# ===== Synchronizing to uAssets =====
 
 # https://github.com/NanoAdblocker/NanoFilters/issues/6
 @@||anime-loads.org^$generichide
@@ -59,13 +54,21 @@ avseesee.com##.ads
 # Anti-adblock, test: https://kissanime.co/Anime/Just-Because-.85121/Episode-012?id=141742
 @@||kissanime.co/js/ads.js$script,first-party
 
-# NSFW! https://www.reddit.com/r/camwhorestv/comments/7li9kr/anyone_else_having_problems_with_adblock_on/
-camwhores.tv##script:inject(nano-camwhores-tv.js)
-camwhores.tv##body > div:matches-css(z-index: 9999999)
-camwhores.tv##body > a[href^="//"]
-
 # https://github.com/jspenguin2017/uBlockProtector/issues/776
 liquipedia.net##script:inject(abort-on-property-read.js, adonis)
 
 # https://github.com/reek/anti-adblock-killer/issues/3825
 globalrph.com##script:inject(bab-defuser.js)
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/742
+@@||egarwolin.pl/static/js/ads.js$script,first-party
+
+# https://www.reddit.com/r/uBlockOrigin/comments/7imqbx/firefox_quantum_working_antiadblockkiller/
+libgen.io##script:inject(setTimeout-defuser.js, ad blocking)
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/755
+onlinemschool.com##script:inject(abort-on-property-read.js, oms.ads_detect)
+onlinemschool.com###oms_left_block
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/769
+ilgeniodellostreaming.org###playerads

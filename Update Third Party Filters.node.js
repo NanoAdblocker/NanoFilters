@@ -69,6 +69,10 @@ process.on("unhandledRejection", (err) => {
 
 (async () => {
     const data = {
+        // Download these two first because their server is not very good and breaks sometimes
+        "MalwareDomain0.txt": "https://www.malwaredomainlist.com/hostslist/hosts.txt",
+        "MalwareDomain1.txt": "https://mirror1.malwaredomains.com/files/justdomains",
+
         "PublicSuffix.dat": "https://publicsuffix.org/list/public_suffix_list.dat",
         "uBlockResources.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resources.txt",
 
@@ -84,9 +88,6 @@ process.on("unhandledRejection", (err) => {
         "EasyList.txt": "https://easylist-downloads.adblockplus.org/easylist.txt",
 
         "EasyPrivacy.txt": "https://easylist-downloads.adblockplus.org/easyprivacy.txt",
-
-        "MalwareDomain0.txt": "https://www.malwaredomainlist.com/hostslist/hosts.txt",
-        "MalwareDomain1.txt": "https://mirror1.malwaredomains.com/files/justdomains",
 
         "PeterLowe.txt": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext",
     };

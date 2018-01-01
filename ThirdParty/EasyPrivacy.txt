@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Checksum: bP2gWSYjyy+8kA093OQ7sQ
-! Version: 201712291711
+! Checksum: k7OdNxDpejOHuoNw2SWHtw
+! Version: 201801011741
 ! The contents of this filter list are fetched from the EasyPrivacy repository: https://github.com/easylist/easylist/tree/master/easyprivacy
 ! Title: EasyPrivacy
-! Last modified: 29 Dec 2017 17:11 UTC
+! Last modified: 01 Jan 2018 17:41 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -256,6 +256,7 @@
 .webmetrics.js
 .webstats.
 /!crd_prm!.
+/$file/analytics.
 //feedproxy.*/~r/*$image
 /0.png?ver=
 /0pixel.php?
@@ -987,7 +988,7 @@
 /count.fcgi?
 /count.fgi?
 /count.gif?
-/count.php?nid=
+/count.php?
 /count.png?
 /count/?ad=
 /count/count.cgi?
@@ -2239,6 +2240,7 @@
 /pixel/cv_
 /pixel/img/*
 /pixel/impression/*
+/pixel/stream/*
 /pixel/visit?
 /pixel1/impression.
 /pixel?google_
@@ -2278,7 +2280,6 @@
 /plog?id
 /pluck-tracking.
 /plugins/catman/*
-/plugins/count.php?
 /plugins/stat-dfp/*
 /plugins/status.gif?
 /plugins/userinfo.gif?
@@ -2343,6 +2344,7 @@
 /px?t=
 /px_trans.gif
 /pxa.min.js
+/pxgif/*
 /pxl.cgi?
 /pxlctl.
 /pxls/*
@@ -2726,6 +2728,7 @@
 /stats/adonis_
 /stats/collector.js
 /stats/common/*
+/stats/count.
 /stats/counter.
 /stats/CounterPage.
 /stats/dlcount_
@@ -2778,6 +2781,7 @@
 /store-uniq-client-id?bomuuid=
 /storeAdvImpression.
 /stracking.js
+/stream/log.html?
 /stt/track.
 /stt/track/*
 /stwc-counter/*
@@ -2838,6 +2842,7 @@
 /thirdPartyTagscachebuster.js
 /ThirdPartyTracking.
 /thuzianayltics.
+/ti.gif?slotid=
 /tiara/tracker/*
 /tide_stat.js
 /timeslog.
@@ -3145,6 +3150,7 @@
 /trkr/php?
 /trovit-analytics.js
 /truehits.php?
+/trx?id=
 /tse/tracking.
 /tsrHitCounter.
 /ttt.gif?
@@ -3232,6 +3238,7 @@
 /view-log?
 /view.gif?
 /view_stats.js.php
+/viewcount-service.
 /viewcount.ashx?*&referrer=
 /ViewCounter/*
 /viewcounterjqueryproxy.
@@ -3381,7 +3388,6 @@
 /worldwide_analytics/*
 /wp-click-track/*
 /wp-clickmap/*
-/wp-content/plugins/stats/count.php?
 /wp-content/tracker.
 /wp-counter.php
 /wp-js/analytics.
@@ -3624,6 +3630,7 @@ http://utm.$domain=~utm.md|~utoronto.ca
 ||meetrics.netbb-
 ! Mining
 /c-hive.js
+/c.wasm
 /cloudcoins.js
 /cloudcoins.min.js
 /coinblind.js
@@ -5264,6 +5271,7 @@ _mongo_stats/
 ||relmaxtop.com^$third-party
 ||remarketstats.com^$third-party
 ||rep0pkgr.com^$third-party
+||report-uri.io^$third-party
 ||res-x.com^$third-party
 ||research-tool.com^$third-party
 ||researchnow.co.uk^$third-party
@@ -5319,6 +5327,7 @@ _mongo_stats/
 ||ru4.com^$third-party
 ||rumanalytics.com^$third-party
 ||rumpelstiltskinhead.com^$third-party
+||runtnc.net^$third-party
 ||rztrkr.com^$third-party
 ||s-onetag.com^$third-party
 ||s3s-main.net^$third-party
@@ -5959,8 +5968,11 @@ _mongo_stats/
 ||authedmine.com^$third-party,domain=~coinhive.com
 ||azvjudwr.info^$third-party
 ||bjorksta.men^$third-party
+||cdnfile.xyz^$third-party
 ||chainblock.science^$third-party
+||clod.pw^$third-party
 ||cloudcoins.co^$third-party
+||cndhit.xyz^$third-party
 ||cnhv.co^$third-party
 ||coin-have.com^$third-party
 ||coin-hive.com^$third-party
@@ -5981,13 +5993,19 @@ _mongo_stats/
 ||cryptomine.pro^$third-party
 ||csgocpu.com^$third-party
 ||deepc.cc^$third-party
+||dle-news.pw^$third-party
+||flu.cc^$third-party
+||g-content.bid^$third-party
 ||gus.host^$third-party
+||hallaert.online^$third-party
 ||hashforcash.us^$third-party
 ||hashing.win^$third-party
 ||hodlers.party^$third-party
 ||hodling.faith^$third-party
 ||hodling.party^$third-party
 ||hodling.science^$third-party
+||igg.biz^$third-party
+||jquery-uim.download^$third-party
 ||jroqvbvw.info^$third-party
 ||jsccnn.com^$third-party
 ||jscdndel.com^$third-party
@@ -6005,11 +6023,13 @@ _mongo_stats/
 ||minero-proxy-*.sh^$third-party
 ||minero.pw^$third-party
 ||minexmr.com^$third-party
+||minr.pw^$third-party
 ||mmpool.org^$third-party
 ||monerominer.rocks^$third-party
 ||moneroocean.stream^$third-party
 ||noblock.pro^$third-party
 ||now.sh/*.wasm$third-party
+||nut.cc^$third-party
 ||onlinereserchstatistics.online^$third-party
 ||papoto.com^$third-party
 ||podrltid.info^$third-party
@@ -6021,8 +6041,11 @@ _mongo_stats/
 ||secumine.net^$third-party
 ||siteverification.online^$third-party
 ||siteverification.site^$third-party
+||static-cnt.bid^$third-party
+||statistic.date^$third-party
 ||subloader.cf^$third-party
 ||supportxmr.com^$third-party
+||usa.cc^$third-party
 ||webmine.cz^$third-party
 ||wty46.com^$third-party
 ||xbasfbno.info^$third-party
@@ -8250,7 +8273,6 @@ _mongo_stats/
 ||rackcdn.com/stf.js
 ||rackcdn.com^$script,domain=buysubscriptions.com|cbsnews.com|cbssports.com|cnet.com|dailystar.co.uk|express.co.uk|gamerant.com|gamespot.com|giantbomb.com|inyt.com|metacritic.com|metrolyrics.com|page3.com|rotoworld.com|scout.com|sh.st|thesun.co.uk|thesun.ie|thesundaytimes.co.uk|thetimes.co.uk|tv.com|tvguide.com|zdnet.com
 ||rackcdn.com^*/analytics.js
-||radiocompanion.com/count.php?
 ||radiotime.com/Report.ashx?
 ||radiotime.com/reports/
 ||ramp.purch.com^
@@ -9215,7 +9237,6 @@ _mongo_stats/
 ||ugent.be/js/log.js
 ! Estonian
 ||counter.zone.ee^$third-party
-||log.ee/count.php?
 ! Finnish
 ||inpref.s3.amazonaws.com^$third-party
 ||insight.fonecta.fi^
@@ -9256,7 +9277,6 @@ _mongo_stats/
 ||digiland.it/count.cgi?
 ||diritalia.com^*/seosensor.js
 ||eage.it/count2.php?
-||eageweb.com/count.php?
 ||eageweb.com/count2.php?
 ||eageweb.com/stats.php
 ||encoderfarmced-stats-ns.servicebus.windows.net^
@@ -9531,7 +9551,6 @@ _mongo_stats/
 ||hit.dogannet.tv^
 ! Ukranian
 ||counter.opinion.com.ua^
-||metalportal.com.ua/count.php?
 ||mgz.com.ua/counter.php?
 ||top.zp.ua/counter/
 ! Vietnamese
@@ -9618,6 +9637,7 @@ _mongo_stats/
 ||affiliates.vpn.ht^
 ||afterdawn.com/views.cfm?
 ||agendize.com/analytics.js
+||aggregator.inquisitr.com^
 ||agoda.net/js/abtest/analytics.js
 ||ai.iol.io^
 ||airbnb.*/tracking/
@@ -9933,7 +9953,6 @@ _mongo_stats/
 ||china.com^*/endpage_footer.js
 ||chip.eu^*/pic.gif?
 ||chkpt.zdnet.com^
-||christianpost.com/count.php?
 ||chron.com/javascript/cider/
 ||chud.com/community/p/
 ||chunk.bustle.com^
@@ -10145,7 +10164,6 @@ _mongo_stats/
 ||encrypted.google.*/url?$image
 ||engadget.com/click?
 ||engadget.com/traffic/?
-||engineeringnews.co.za/count.php?
 ||enlightenment.secureshoppingbasket.com^
 ||entensity.net/pages/c.htm
 ||entry-stats.huffingtonpost.com^
@@ -10703,7 +10721,6 @@ _mongo_stats/
 ||military.com/cgi-bin/redlog2.cgi?
 ||military.com/Scripts/mnfooter.js
 ||miniclip.com^*/swhsproxy.swf?
-||miningweekly.com/count.php?
 ||miniurls.co/track/
 ||miniusa.com^*/trackDeeplink.gif?
 ||mint.boingboing.net^
@@ -10954,7 +10971,6 @@ _mongo_stats/
 ||pluto.airbnb.com^*.php?uuid=
 ||pnet.co.za/js/ga.js
 ||pokernews.com/track-views.php?
-||polity.org.za/count.php?
 ||pong.gannettdigital.com^
 ||popcap.com^*/interstitial_zones.js
 ||porndoo.com/lib/ajax/track.php
@@ -11051,7 +11067,6 @@ _mongo_stats/
 ||reporting.theonion.com^
 ||reporting.wilkinsonplus.com^
 ||request.issuu.com^
-||researchchannel.co.za/count.php?
 ||resellerclub.com/helpdesk/visitor/index.php?$image
 ||retrevo.com/m/vm/tracking/
 ||retrevo.com/search/v2/jsp/blank.jsp?
@@ -11605,7 +11620,6 @@ _mongo_stats/
 ||videoplaza.com/proxy/tracker?
 ||videopremium.tv/dev/tr.js
 ||videotracker.washingtonpost.com^
-||vidx.to/php/count.php?
 ||vidxden.com^*/tracker.js
 ||vietnamnet.vn^*/tracking.js
 ||villarenters.com/inttrack.aspx
@@ -12135,7 +12149,6 @@ _mongo_stats/
 ||rwt.reichelt.de^
 ||s.edeka.de^
 ||s.fsphp.t-online.de^
-||salzburg.com/nwas/count.php?
 ||secreta.de/tinc?
 ||shortnews.de/iframes/view_news.cfm?
 ||spiegel.de^*/statistic/
@@ -12604,8 +12617,6 @@ _mongo_stats/
 ||nrk.no^*/stats/
 ||vg.no/stats/
 ||webhit.aftenposten.no^
-! Persian
-||irib.ir/count.php?
 ! Polish
 |http://x.o2.pl^
 ||analytics.gazeta.pl^

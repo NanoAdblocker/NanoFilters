@@ -24,14 +24,14 @@ wolframclient.net##script:inject(nano-remove-element-onready.js, [data-ad-client
 vvvvid.it##script:inject(nano-vvvvid-it.js)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/761
-developpez.com##div:if(:scope > [id^="gabarit_pub"])
+developpez.com##div:has(:scope > [id^="gabarit_pub"])
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/765
 @@||vorek.pl^$generichide
 @@||vorek.pl/*/js/ads.js$script,first-party
 
 # https://gitlab.com/xuhaiyang1234/uBlockProtectorSecretIssues/issues/1
-altadefinizione.*##.sm_header.sm_nomobile:if(:scope > a[href*="/HD/play"])
+altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/760
 ||tatumsmolena.com^
@@ -56,6 +56,9 @@ libgen.io##script:inject(setTimeout-defuser.js, ad blocking)
 @@||rapidvideo.com/js/jquery.min.js$script
 # Fallback rule in case they start putting mining code into jQuery files
 # ||rapidvideo.com^$csp=child-src 'none';frame-src *;worker-src 'none';
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/782
+download.inventivetalent.org##div:has(:scope > div > button.choice-adfly)
 
 # ################################# #
 # #### Pending Synchronization #### #

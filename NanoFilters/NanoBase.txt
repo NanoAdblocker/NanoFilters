@@ -54,6 +54,8 @@ libgen.io##script:inject(setTimeout-defuser.js, ad blocking)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/781
 @@||rapidvideo.com/js/jquery.min.js$script
+# Fallback rule in case they start putting mining code into jQuery files
+# ||rapidvideo.com^$csp=child-src 'none';frame-src *;worker-src 'none';
 
 # ################################# #
 # #### Pending Synchronization #### #

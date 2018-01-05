@@ -729,7 +729,7 @@ energy.de#@##ad_home
 @@||honeybadger.io/*/honeybadger.min.js$script,domain=clark.de
 
 ! https://github.com/uBlockOrigin/uAssets/issues/946
-@@||authedmine.com^$domain=mylink.st
+@@||authedmine.com^$domain=mylink.nu|mylink.st
 
 ! https://github.com/gorhill/uBlock/issues/3321
 @@||livechatinc.com^$generichide
@@ -744,3 +744,17 @@ energy.de#@##ad_home
 
 ! https://github.com/jspenguin2017/uBlockProtector/issues/778
 reyada.com#@#.ads_area
+
+! https://github.com/uBlockOrigin/uAssets/issues/1152#issuecomment-354683032
+@@||ads.adaptv.advertising.com/*einthusan.tv*$xmlhttprequest,domain=imasdk.googleapis.com
+
+! https://forums.lanik.us/viewtopic.php?p=130161#p130161
+||hubspot.com/cta/$third-party,badfilter
+||hscta.net/cta/$third-party,badfilter
+#@#.hs-cta-wrapper
+||no-cache.hubspot.com/cta/default/189007/
+||cta-service-cms2.hubspot.com/ctas/*pid=189007
+||cta-service-cms2.hubspot.com^$third-party,badfilter
+
+! https://github.com/easylist/easylist/issues/815
+||dopc.cz^$third-party,badfilter

@@ -98,12 +98,12 @@ const processResource = async (name, license, srcmap) => {
     const NanoFiltersLicense = "https://github.com/NanoAdblocker/NanoFilters/blob/master/LICENSE";
     const NanoFiltersSrcMapPrefix = "https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoFilters/";
     await Promise.all([
-        await processFilter("NanoBase.txt", NanoFiltersLicense, NanoFiltersSrcMapPrefix + "NanoBase.txt"),
-        await processFilter("NanoAnnoyance.txt", NanoFiltersLicense, NanoFiltersSrcMapPrefix + "NanoAnnoyance.txt"),
-        await processFilter("NanoTimer.txt", NanoFiltersLicense, NanoFiltersSrcMapPrefix + "NanoTimer.txt"),
-        await processFilter("NanoWhitelist.txt", NanoFiltersLicense, NanoFiltersSrcMapPrefix + "NanoWhitelist.txt"),
+        processFilter("NanoBase.txt", NanoFiltersLicense, NanoFiltersSrcMapPrefix + "NanoBase.txt"),
+        processFilter("NanoAnnoyance.txt", NanoFiltersLicense, NanoFiltersSrcMapPrefix + "NanoAnnoyance.txt"),
+        processFilter("NanoTimer.txt", NanoFiltersLicense, NanoFiltersSrcMapPrefix + "NanoTimer.txt"),
+        processFilter("NanoWhitelist.txt", NanoFiltersLicense, NanoFiltersSrcMapPrefix + "NanoWhitelist.txt"),
 
-        await processResource("NanoResources.txt", NanoFiltersLicense, NanoFiltersSrcMapPrefix + "NanoWhitelist.txt"),
+        processResource("NanoResources.txt", NanoFiltersLicense, NanoFiltersSrcMapPrefix + "NanoWhitelist.txt"),
     ]);
 
     console.log("Done");

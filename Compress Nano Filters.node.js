@@ -96,7 +96,7 @@ const processResource = async (name, license, srcmap) => {
 
 (async () => {
     const NanoFiltersLicense = "https://github.com/NanoAdblocker/NanoFilters/blob/master/LICENSE";
-    const NanoFiltersSrcMapPrefix = "https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoFilters/";
+    const NanoFiltersSrcMapPrefix = "https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoFiltersSource/";
     await Promise.all([
         processFilter("NanoBase.txt", NanoFiltersLicense, NanoFiltersSrcMapPrefix + "NanoBase.txt"),
         processFilter("NanoAnnoyance.txt", NanoFiltersLicense, NanoFiltersSrcMapPrefix + "NanoAnnoyance.txt"),

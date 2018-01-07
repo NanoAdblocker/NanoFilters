@@ -55,7 +55,7 @@ const processFilter = async (name, license, srcmap) => {
 /**
  * Process a resource file.
  * @async @function
- * @param {string} name - The name of the filter to process.
+ * @param {string} name - The name of the resource to process.
  * @param {string} license - The link to the license.
  * @param {string} srcmap - The link to the source map.
  */

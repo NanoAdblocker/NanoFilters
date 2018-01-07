@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Checksum: 51VCMe1TwKiqey+oVP3K3A
-! Version: 201801051831
+! Checksum: nqaxzSda9rM00HUO8Kh2FQ
+! Version: 201801071851
 ! The contents of this filter list are fetched from the EasyPrivacy repository: https://github.com/easylist/easylist/tree/master/easyprivacy
 ! Title: EasyPrivacy
-! Last modified: 05 Jan 2018 18:31 UTC
+! Last modified: 07 Jan 2018 18:51 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3655,6 +3655,7 @@ http://utm.$domain=~utm.md|~utoronto.ca
 /xminer.min.js
 /xmr.js
 /xmr.min.js
+?proxy=wss://$script,websocket
 ! Adblock tracking
 -logabpstatus.
 /adb.policy.js

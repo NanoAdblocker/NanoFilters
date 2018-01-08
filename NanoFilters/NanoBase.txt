@@ -29,5 +29,6 @@ stomp.straitstimes.com##.content:if(:scope > div:has-text(Branded Content))
 @@||imgrock.co/js/jquery$script,domain=imgrock.info
 @@||imgrock.co/js/xupload.js$script,domain=imgrock.info
 imgrock.info##script:inject(abort-current-inline-script.js, atob, tabunder)
+imgrock.info##script:inject(abort-on-property-read.js, open)
 firmgoogle.com##script:inject(abort-on-property-write.js, killAdBlock)
 dir50.net##script:inject(bab-defuser.js)

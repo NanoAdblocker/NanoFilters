@@ -60,8 +60,21 @@ libgen.io##script:inject(setTimeout-defuser.js, ad blocking)
 # https://github.com/jspenguin2017/uBlockProtector/issues/782
 download.inventivetalent.org##div:has(:scope > div > button.choice-adfly)
 
+# https://github.com/reek/anti-adblock-killer/issues/3841
+||img.stomp.com.sg/sites/all/themes/stompst/images/placeholder.jpg$image
+stomp.straitstimes.com##.content:if(:scope > div:has-text(Branded Content))
+
 # ################################# #
 # #### Pending Synchronization #### #
 # ################################# #
 
-# Nothing for now...
+# https://github.com/reek/anti-adblock-killer/issues/3846
+@@||imgrock.co/js/jquery$script,domain=imgrock.info
+@@||imgrock.co/js/xupload.js$script,domain=imgrock.info
+imgrock.info##script:inject(abort-current-inline-script.js, atob, tabunder)
+
+# https://github.com/reek/anti-adblock-killer/issues/3848
+firmgoogle.com##script:inject(abort-on-property-write.js, killAdBlock)
+
+# https://github.com/reek/anti-adblock-killer/issues/3850
+dir50.net##script:inject(bab-defuser.js)

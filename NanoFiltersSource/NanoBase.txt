@@ -79,3 +79,10 @@ firmgoogle.com##script:inject(abort-on-property-write.js, killAdBlock)
 
 # https://github.com/reek/anti-adblock-killer/issues/3850
 dir50.net##script:inject(bab-defuser.js)
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/11
+bitcoadz.pw,cryptoadz.win##script:inject(abort-on-property-read.js, app_vars.force_disable_adblock)
+||awdigit.info^
+cryptoadz.win##.banner-inner
+bitcoadz.pw,cryptoskipad.com##.slickModal
+cryptoskipad.com##script:inject(abort-on-property-read.js, open)

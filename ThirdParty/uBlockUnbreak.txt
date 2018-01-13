@@ -748,17 +748,22 @@ reyada.com#@#.ads_area
 ! https://github.com/uBlockOrigin/uAssets/issues/1152#issuecomment-354683032
 @@||ads.adaptv.advertising.com/*einthusan.tv*$xmlhttprequest,domain=imasdk.googleapis.com
 
-! https://forums.lanik.us/viewtopic.php?p=130161#p130161
-||hubspot.com/cta/$third-party,badfilter
-||hscta.net/cta/$third-party,badfilter
-#@#.hs-cta-wrapper
-||no-cache.hubspot.com/cta/default/189007/
-||cta-service-cms2.hubspot.com/ctas/*pid=189007
-||cta-service-cms2.hubspot.com^$third-party,badfilter
-
 ! https://github.com/easylist/easylist/issues/815
 ||dopc.cz^$third-party,badfilter
 
 ! https://github.com/jspenguin2017/uBlockProtector/issues/797
 publicdomainq.net#@#.adsbygoogle
 publicdomainq.net##ins.adsbygoogle
+
+! https://github.com/uBlockOrigin/uAssets/issues/1260
+@@||google.com/ads/js/peitho2/peitho2.min.js$script,domain=testmysite.withgoogle.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/1263
+@@||industrybrains.com^$domain=sendmyway.com
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=39664
+/advertise.$domain=~advertise.apartments.com|~advertise.bingads.microsoft.com|~advertise.directoryofillustration.com|~advertise.isleofskye.com|~advertise.medillsb.com|~advertise.movem.co.uk|~advertise.sphamovingads.com|~engineering.com,badfilter
+/advertise.$domain=~advertise.apartments.com|~advertise.bingads.microsoft.com|~advertise.directoryofillustration.com|~advertise.isleofskye.com|~advertise.medillsb.com|~advertise.movem.co.uk|~advertise.sphamovingads.com|~engineering.com|~advertise.sobihamilton.ca
+
+! https://www.reddit.com/r/uBlockOrigin/comments/7pux07/fmoviesis_login/
+@@||fmovies.is/user/*$xmlhttprequest,first-party

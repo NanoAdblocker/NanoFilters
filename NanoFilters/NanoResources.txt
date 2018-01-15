@@ -242,7 +242,7 @@ nano-remove-element-onready.js application/javascript
 	if ( document.readyState === 'interactive' || document.readyState === 'complete' ) {
 		remove();
 	} else {
-		window.addEventListener('DOMContentLoaded', remove);
+		addEventListener('DOMContentLoaded', remove);
 	}
 })();
 
@@ -293,7 +293,7 @@ nano-camwhores-tv.js application/javascript
    	if ( document.readyState === 'interactive' || document.readyState === 'complete' ) {
 		handler();
 	} else {
-		window.addEventListener('DOMContentLoaded', handler);
+		addEventListener('DOMContentLoaded', handler);
 	}
 })();
 
@@ -308,6 +308,6 @@ nano-marktplaats-nl.js application/javascript
 	if ( document.readyState === 'interactive' || document.readyState === 'complete' ) {
 		handler();
 	} else {
-		window.addEventListener('DOMContentLoaded', handler);
+		addEventListener('DOMContentLoaded', handler);
 	}
 })();

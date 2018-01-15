@@ -11,6 +11,9 @@ microsoft.com,live.com###epb
 # https://github.com/uBlockOrigin/uAssets/issues/881
 hardware.info##script:inject(nano-hardware-info.js)
 
+# https://github.com/uBlockOrigin/uAssets/issues/1275
+marktplaats.nl##script:inject(nano-marktplaats-nl.js)
+
 # Anti-select for no valid reason, test: http://tampermonkey.net/
 tampermonkey.net##*:style(user-select: text !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important;)
 

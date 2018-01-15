@@ -284,10 +284,30 @@ nano-camwhores-tv.js application/javascript
 	try {
 		window.open = undefined;
 	} catch ( err ) { }
-	addEventListener('DOMContentLoaded', function() {
+	var handler = function() {
 		var imgs = document.querySelectorAll('img.lazy-load');
 		for ( var img of imgs ) {
 			img.src = img.dataset.original;
 		}
-	});
+	};
+   	if ( document.readyState === 'interactive' || document.readyState === 'complete' ) {
+		handler();
+	} else {
+		window.addEventListener('DOMContentLoaded', handler);
+	}
+})();
+
+nano-marktplaats-nl.js application/javascript
+(function() {
+	var handler = function() {
+		var form = document.querySelector('form#track-accept');
+		if ( form ) {
+			form.submit();
+		}
+	};
+	if ( document.readyState === 'interactive' || document.readyState === 'complete' ) {
+		handler();
+	} else {
+		window.addEventListener('DOMContentLoaded', handler);
+	}
 })();

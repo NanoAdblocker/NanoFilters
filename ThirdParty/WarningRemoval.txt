@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: EXjMb1zIB04HpPsjhuoCjA
-! Version: 201801131630
+! Checksum: ztu0o3WuXBzSIz9zCMiDMg
+! Version: 201801212110
 ! Title: Adblock Warning Removal List
-! Last modified: 13 Jan 2018 16:30 UTC
+! Last modified: 21 Jan 2018 21:10 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -154,6 +154,7 @@ shadbase.com##img[alt="adblock"]
 ###adblocker_modal_overlay
 ###advertisementjsalert
 ###anti_adblock
+###detectadblock
 ###fnAdblockingOverlay
 ###message_adblock
 ##.AdblockMessage
@@ -193,24 +194,15 @@ shadbase.com##img[alt="adblock"]
 ##.top-bar-adblock
 ##[class][data-sitename][data-header-version] > div[id^="detection-block"]
 !
-streamwatching.fr###adblockplus
 jaitoutcompris.com###antiBlock
-vide-greniers.org###content > #pageContectFull > [id][style^="background-color:"]
-venez.fr###dv_warn_block
 iphonesoft.fr,iphonetweak.fr###msgNoPub
 retinaboys.com###screen_block
-doodle.com##.doodlead
-fan-de-cinema.com##.fancybox-overlay
 ceesty.com,clkme.me,clkmein.com,cllkme.com,corneey.com,destyy.com,festyy.com,gestyy.com,jigbig.tk,newsfortrump.ga,sh.st,shorte.st,skiip.me,skipp.io,viid.me,wiid.me##.information-container
 etr.fr##.no_block
 radiox.com##.notifyjs-corner
-vide-greniers.org##[href="/explications-publicite"]
-tunnl.com##[id^="blockedAddons"]
 papergeek.fr##[id^="padb_widget_"]
 forumdz.com##body .breadcrumb + center > [color="red"] > b
 forum.pcastuces.com##div > [src] + [id] + [class][style^="display: block;"]
-prixdubaril.com##div > div[class^="sweet-"][style]
-phonandroid.com##div[class][style*="none repeat scroll 0% 0%;"]
 bd-sanctuary.com,cine-sanctuary.com,comics-sanctuary.com,manga-sanctuary.com##div[style^="background:#444;"]
 pausecafein.fr###adb-pop
 !
@@ -248,7 +240,6 @@ glav.su##body > div[id]:not([class])[style*="background"][style*="display: block
 sd-company.su###dom_adblock
 webdesign-master.ru###adbd
 vesti-ukr.com###adblockpopup
-mindspace.ru###adblock_screen
 happy-hack.ru###admitad-cookie-check-popup
 wotactions.com###ads_warning
 firebit.net###adv-300 + div[class][align="center"][style^="background-color"]
@@ -280,7 +271,6 @@ tuchkatv.ru##.adb_m
 hentaiz.org,life.ru,mastergrad.com,forum.qrz.ru##.adblock
 exler.ru##.adblock-pls
 zakon.kz##.adblock_alert
-nulled.cc##.adblock_floating_message
 kubik3.ru##.adbs
 print-post.com##.addbl
 24video.xxx##.adt
@@ -297,7 +287,6 @@ rusopen.com##.classblsi.addshr
 www.qrz.ru##.content_row > div[class][-abp-properties="background*z-index"]:not([style])
 smotrisport.online,smotrisport.tv##.dont-add-our-site-pls
 go.mail.ru##.js-adb-msg
-rbcplus.ru##.js-checkad-warning
 themoviebay.ru##.is-danger.notification
 space.utema.ru##.main-content-padding > div[class]:not([itemprop])
 megatest.online##.msg-AdBlock
@@ -308,6 +297,7 @@ radio.yandex.by,radio.yandex.kz,radio.yandex.ru,radio.yandex.ua##.page-root .not
 radio.yandex.by,radio.yandex.kz,radio.yandex.ru,radio.yandex.ua##.page-root .notify *
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##.page-root > .notify
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##.page-root > .notify *
+alexfilm.cc##.panel-primary
 darkteam.net##.pls_rmv
 pythonworld.ru##.pythonworld-contributor
 fanfics.me##.red.nodata

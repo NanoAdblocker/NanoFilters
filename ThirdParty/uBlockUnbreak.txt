@@ -748,9 +748,6 @@ reyada.com#@#.ads_area
 ! https://github.com/uBlockOrigin/uAssets/issues/1152#issuecomment-354683032
 @@||ads.adaptv.advertising.com/*einthusan.tv*$xmlhttprequest,domain=imasdk.googleapis.com
 
-! https://github.com/easylist/easylist/issues/815
-||dopc.cz^$third-party,badfilter
-
 ! https://github.com/jspenguin2017/uBlockProtector/issues/797
 publicdomainq.net#@#.adsbygoogle
 publicdomainq.net##ins.adsbygoogle
@@ -761,9 +758,31 @@ publicdomainq.net##ins.adsbygoogle
 ! https://github.com/uBlockOrigin/uAssets/issues/1263
 @@||industrybrains.com^$domain=sendmyway.com
 
-! https://forums.lanik.us/viewtopic.php?f=64&t=39664
-/advertise.$domain=~advertise.apartments.com|~advertise.bingads.microsoft.com|~advertise.directoryofillustration.com|~advertise.isleofskye.com|~advertise.medillsb.com|~advertise.movem.co.uk|~advertise.sphamovingads.com|~engineering.com,badfilter
-/advertise.$domain=~advertise.apartments.com|~advertise.bingads.microsoft.com|~advertise.directoryofillustration.com|~advertise.isleofskye.com|~advertise.medillsb.com|~advertise.movem.co.uk|~advertise.sphamovingads.com|~engineering.com|~advertise.sobihamilton.ca
-
 ! https://www.reddit.com/r/uBlockOrigin/comments/7pux07/fmoviesis_login/
 @@||fmovies.is/user/*$xmlhttprequest,first-party
+
+! https://github.com/uBlockOrigin/uAssets/issues/1308
+@@||js.center.io^$domain=randpac.com
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=39685
+/adverts.$domain=~adverts.org.ua,badfilter
+/adverts.$domain=~adverts.org.ua|~adverts.ie
+
+! https://github.com/uBlockOrigin/uAssets/issues/1313
+@@||s3.animeflv.com/efire.php$popup,domain=animeflv.net
+
+! https://www.reddit.com/r/uBlockOrigin/comments/7rjzdm/bug_ublock_origin_breaks_shopify_theme/
+@@||shop.pcmag.com^$csp
+
+! https://github.com/uBlockOrigin/uAssets/issues/1316
+||googletagservices.com/tag/js/gpt.js$script,redirect=noopjs,domain=playground.ru
+
+! https://twitter.com/niederhuth/status/954769725371895808
+! To override `/fingerprint.js` from EasyPrivacy
+@@||pnas.org^*/fingerprint.js$script,first-party
+
+! https://www.reddit.com/r/uBlockOrigin/comments/7rwh1a/ublock_preventing_clicks_to_buttons_on_firefox/
+||iworkfor.nsw.gov.au/Scripts/ga.js$script,first-party,redirect=noopjs
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=39742
+wyciwyg://$popup,badfilter

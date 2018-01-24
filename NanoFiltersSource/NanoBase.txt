@@ -62,7 +62,8 @@ download.inventivetalent.org##div:has(:scope > div > button.choice-adfly)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/807
 # https://github.com/NanoAdblocker/NanoFilters/issues/15
-nbcnews.com,msnbc.com##script:inject(abort-on-property-read.js, stop)
+# https://github.com/NanoAdblocker/NanoFilters/issues/20
+msnbc.com,nbcnews.com,today.com##script:inject(abort-on-property-read.js, stop)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/808
 ||browserleaks.com/js/proxy_ab.js$script

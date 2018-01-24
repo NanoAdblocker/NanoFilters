@@ -24,7 +24,7 @@ libgen.io##script:inject(setTimeout-defuser.js, ad blocking)
 @@||egarwolin.pl/static/js/ads.js$script,first-party
 @@||rapidvideo.com/js/jquery.min.js$script
 download.inventivetalent.org##div:has(:scope > div > button.choice-adfly)
-nbcnews.com,msnbc.com##script:inject(abort-on-property-read.js, stop)
+msnbc.com,nbcnews.com,today.com##script:inject(abort-on-property-read.js, stop)
 ||browserleaks.com/js/proxy_ab.js$script
 9anime.ch##.abmsg
 myegy.tv##.disclaimer:has-text(Ad-Blocker)

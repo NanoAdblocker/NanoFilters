@@ -23,3 +23,6 @@ wikipedia.org##script:inject(abort-on-property-write.js, frb)
 # https://github.com/jspenguin2017/uBlockProtector/issues/126
 italiashare.*##script:inject(abort-on-property-write.js, document.onkeydown)
 italiashare.*##script:inject(abort-on-property-write.js, killCopy)
+
+# https://github.com/NanoAdblocker/NanoDefender/issues/12
+rektstack.com##script:inject(abort-on-property-write.js, document.oncontextmenu)

@@ -8,3 +8,4 @@ tampermonkey.net##*:style(user-select: text !important; -webkit-user-select: tex
 wikipedia.org##script:inject(abort-on-property-write.js, frb)
 italiashare.*##script:inject(abort-on-property-write.js, document.onkeydown)
 italiashare.*##script:inject(abort-on-property-write.js, killCopy)
+rektstack.com##script:inject(abort-on-property-write.js, document.oncontextmenu)

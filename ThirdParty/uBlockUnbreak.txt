@@ -34,11 +34,6 @@
 @@||global.fncstatic.com/$script,domain=video.foxnews.com
 ||cdn.krxd.net^$script,redirect=noopjs,domain=video.foxnews.com
 
-# https://github.com/chrisaljoudi/uBlock/issues/141
-# Videos broken on weather.com
-# To counter `tags.tiqcdn.com` in  MVPS
-@@||tags.tiqcdn.com/utag/*.js$script,domain=weather.com
-
 # http://forums.lanik.us/viewtopic.php?f=64&t=17842&sid=46bd7065193153fe46efe816b7cd32c9&start=30#p59663
 # To counter `statcounter.com` in Peter Lowe's, MVPS, Dan Pollock's and hpHosts
 @@||statcounter.com^$~third-party
@@ -100,9 +95,6 @@
 # https://github.com/chrisaljoudi/uBlock/issues/374
 # To counter `2mdn.net` in Peter Lowe's, `s0.2mdn.net` in hpHosts
 @@||s0.2mdn.net/instream/*$object,script,domain=wsmv.com
-
-# https://github.com/chrisaljoudi/uBlock/issues/409
-@@||c.speedtest.net^$~third-party
 
 # To counter Peter Lowe's, hpHosts
 @@||boldchat.com^$~third-party
@@ -784,5 +776,38 @@ publicdomainq.net##ins.adsbygoogle
 ! https://www.reddit.com/r/uBlockOrigin/comments/7rwh1a/ublock_preventing_clicks_to_buttons_on_firefox/
 ||iworkfor.nsw.gov.au/Scripts/ga.js$script,first-party,redirect=noopjs
 
-! https://forums.lanik.us/viewtopic.php?f=64&t=39742
-wyciwyg://$popup,badfilter
+! https://forums.lanik.us/viewtopic.php?f=64&t=39700
+||int.anon-ib.co^$badfilter
+
+! https://www.reddit.com/r/uBlockOrigin/comments/7seigr/video_not_showing_up_because_of_adblock/
+||agkn.com/*/tag.js$script,redirect=noopjs,domain=netd.com
+||dogannet.tv/*/third_party/comscore/*$script,redirect=noopjs,domain=netd.com
+||gemius.pl/gplayer.js$script,redirect=noopjs,domain=netd.com
+||netd.com/js/piwik-plugin.js$script,first-party,redirect=noopjs
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=netd.com
+
+! http://forums.mozillazine.org/viewtopic.php?f=47&t=3037666
+@@||bom.gov.au/*/analytics.js$script,first-party
+
+! https://github.com/uBlockOrigin/uAssets/issues/1367
+@@||static.chartbeat.com/js/chartbeat_video.js$script,domain=nbcwashington.com
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=39819
+! To counter Peter Lowe's `tags.tiqcdn.com`
+@@||tags.tiqcdn.com/utag/*/utag.js$script,domain=cbsnews.com
+
+! https://forums.lanik.us/viewtopic.php?f=64&p=131656
+||gcmgames.com.br/*/google.analytics.trackingcode.js$script,first-party,redirect=noopjs
+
+! https://github.com/uBlockOrigin/uAssets/issues/1444
+@@||visa.com/*/analytics/analytics.js$script,first-party
+@@||visa.com/*/analytics/ntpagetag.js$script,first-party
+
+! https://www.reddit.com/r/uBlockOrigin/comments/7uplsu/tribune_newspapers_changed_something_again/
+||trbas.com^$badfilter
+
+! https://github.com/uBlockOrigin/uAssets/issues/1459
+@@||assets.bbystatic.com/analytics-dotcom/*$script,domain=bestbuy.com
+@@||img.bbystatic.com/BestBuy_US/js/tracking/*$script,domain=bestbuy.com
+@@||nexus.ensighten.com/*/Bootstrap.js$script,domain=bestbuy.com
+@@||d1af033869koo7.cloudfront.net/*/247px.js$script,domain=bestbuy.com

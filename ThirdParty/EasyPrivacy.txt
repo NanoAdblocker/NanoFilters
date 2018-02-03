@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Checksum: PsVG64UBQ5yESQPEt1uLzg
-! Version: 201801212111
+! Checksum: kHNd+BT4hBS6vV9SlP1ZmQ
+! Version: 201802030521
 ! The contents of this filter list are fetched from the EasyPrivacy repository: https://github.com/easylist/easylist/tree/master/easyprivacy
 ! Title: EasyPrivacy
-! Last modified: 21 Jan 2018 21:11 UTC
+! Last modified: 03 Feb 2018 05:21 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -757,6 +757,7 @@
 /buffermetrics/*
 /bugcounter.php?
 /BuiltRegister.aspx?upt=
+/bundle/analytics.
 /bundles/cm.js|
 /bundles/tracciamento?
 /buzz_stats.
@@ -3643,6 +3644,8 @@ http://utm.$domain=~utm.md|~utoronto.ca
 ! Mining
 .ga/*.wasm
 /aj-crypto-miner/*
+/ajcm-inject.
+/ajcryptominer/*
 /bootstrap.wasm$third-party
 /c-hive.js
 /c.wasm
@@ -3656,6 +3659,7 @@ http://utm.$domain=~utm.md|~utoronto.ca
 /cryptonight-worker.js
 /cryptonight.wasm
 /deepMiner.js
+/deepMiner.min.js
 /hash.wasm
 /helper.wasm$third-party
 /inject.js?key=$script
@@ -3669,11 +3673,15 @@ http://utm.$domain=~utm.md|~utoronto.ca
 /noblock.js
 /obfus.min.js
 /projectpoi.min.js
+/webcoin.js
+/webcoin.min.js
+/webxmr.js
 /wproxy$~third-party,websocket
 /xminer.js
 /xminer.min.js
 /xmr.js
 /xmr.min.js
+?proxy*=ws://$script,websocket
 ?proxy*=wss://$script,websocket
 ! Adblock tracking
 -logabpstatus.
@@ -4643,7 +4651,6 @@ _mongo_stats/
 ||hitwebcounter.com^$third-party
 ||hlserve.com^$third-party
 ||homechader.com^$third-party
-||honeybadger.io^$third-party
 ||hopurl.org^$third-party
 ||host-tracker.com^$third-party
 ||hostip.info^$third-party
@@ -5983,8 +5990,10 @@ _mongo_stats/
 .faith^$third-party,websocket
 .fun^$third-party,websocket
 .ga^$third-party,websocket
+.gq^$third-party,websocket
 .men^$third-party,websocket
-.ml^$third-party,websocket
+.ml^$third-party,websocket,domain=~myinterview.com
+.ovh^$third-party,websocket
 .party^$third-party,websocket
 .pro^$third-party,websocket
 .racing^$third-party,websocket
@@ -6015,8 +6024,10 @@ _mongo_stats/
 ||77.162.125.199^$third-party
 ||abc.pema.cl^third-party
 ||ad-miner.com^$third-party
+||adless.io^$third-party
 ||adminer.com^$third-party
 ||afminer.com^$third-party
+||ajplugins.com^$third-party
 ||aleinvest.xyz^$third-party
 ||alemoney.xyz^$third-party
 ||altpool.pro^$third-party
@@ -6030,8 +6041,11 @@ _mongo_stats/
 ||berserkpl.net.pl^$websocket
 ||bewaslac.com^$third-party
 ||biberukalap.com^$third-party
+||bitclub.network^$third-party
+||bitclubnetwork.com^$third-party
 ||bjorksta.men^$third-party
 ||bowithow.com^$third-party
+||byebye.ml^$third-party
 ||c0i8h8ac7e.bid^$third-party
 ||candid.zone^$third-party
 ||cdnfile.xyz^$third-party
@@ -6043,6 +6057,7 @@ _mongo_stats/
 ||coin-have.com^$third-party
 ||coin-hive.com^$third-party
 ||coinblind.com^$third-party
+||coincheck.com^$third-party
 ||coinerra.com^$third-party
 ||coinhive-manager.com^$third-party
 ||coinhive-proxy.party^$third-party
@@ -6051,27 +6066,43 @@ _mongo_stats/
 ||coinlab.biz^$third-party
 ||coinminerz.com^$third-party
 ||coinnebula.com^$third-party
+||coinpirate.cf^$third-party
 ||coinpot.co^$third-party
+||coinwire.eu^$third-party
 ||cookiescript.info^$third-party
+||crypto-coins-now.com^$third-party
 ||crypto-coins.club^$third-party
+||crypto-coins.com^$third-party
+||crypto-coins.info^$third-party
 ||crypto-loot.com^$third-party
+||crypto-webminer.com^$third-party
 ||cryptobara.com^$third-party
 ||cryptoloot.pro^$third-party
 ||cryptomine.pro^$third-party
+||cryptonoter.com^$third-party
 ||csgocpu.com^$third-party
 ||deepc.cc^$third-party
+||devphp.org.ua^$third-party
 ||dle-news.pw^$third-party
 ||dovinate.top^$third-party
+||etnhashpool.tk^$third-party
 ||fastcast.nz^$third-party
 ||fge9vbrzwt.bid^$third-party
+||flare-analytics.com^$third-party
 ||flu.cc^$third-party
+||freecontent.bid^$third-party
 ||g-content.bid^$third-party
+||github.io/*.wasm$third-party
 ||goredirect.party^$third-party
+||greengaming.de^$third-party
 ||gridiogrid.com^$third-party
 ||gus.host^$third-party
 ||hallaert.online^$third-party
+||hashcoin.co^$third-party
 ||hashforcash.us^$third-party
 ||hashing.win^$third-party
+||hashnest.com^$third-party
+||hashzone.io^$third-party
 ||hegrinhar.com^$third-party
 ||hemnes.win^$third-party
 ||hodlers.party^$third-party
@@ -6080,7 +6111,9 @@ _mongo_stats/
 ||hodling.science^$third-party
 ||host.d-ns.ga^$third-party
 ||igg.biz^$third-party
+||igrid.org^$third-party
 ||ingorob.com^$third-party
+||investhash.com^$third-party
 ||jquery-uim.download^$third-party
 ||jroqvbvw.info^$third-party
 ||jsccnn.com^$third-party
@@ -6089,6 +6122,7 @@ _mongo_stats/
 ||jyhfuqoh.info^$third-party
 ||kdowqlpt.info^$third-party
 ||kinoprofi.org^$third-party
+||l33tsite.info^$third-party
 ||listat.biz^$third-party
 ||lmodr.biz^$third-party
 ||mataharirama.xyz^$third-party
@@ -6102,19 +6136,28 @@ _mongo_stats/
 ||minero-proxy-*.sh^$third-party
 ||minero.pw^$third-party
 ||minexmr.com^$third-party
+||mining.best^$third-party
 ||minr.pw^$third-party
 ||mmpool.org^$third-party
 ||monerominer.rocks^$third-party
 ||moneroocean.stream^$third-party
 ||morningdigit.com^$third-party
+||mutuza.win^$third-party
 ||nahnoji.cz^$third-party
+||nfwebminer.com^$third-party
 ||noblock.pro^$third-party
 ||nut.cc^$third-party
+||ogrid.org^$third-party
 ||okeyletsgo.ml^$third-party
 ||onlinereserchstatistics.online^$third-party
+||p2poolmining.com^$third-party
+||p2poolmining.net^$third-party
 ||papoto.com^$third-party
 ||playerassets.info^$third-party
 ||podrltid.info^$third-party
+||pool.hws.ru^$third-party
+||poolmining.eu^$third-party
+||poolmining.net^$third-party
 ||ppoi.org^$third-party
 ||projectpoi.com^$third-party
 ||reasedoper.pw^$third-party
@@ -6131,6 +6174,7 @@ _mongo_stats/
 ||siteverification.online^$third-party
 ||siteverification.site^$third-party
 ||smectapop12.pl^$third-party
+||sparechange.io^$third-party
 ||sparnove.com^$third-party
 ||static-cnt.bid^$third-party
 ||statistic.date^$third-party
@@ -6141,14 +6185,18 @@ _mongo_stats/
 ||tracker.openwebtorrent.com^$third-party
 ||tracker.webtorrent.io^$third-party
 ||ue696vbd9l.bid^$third-party
+||ukp2pool.uk^$third-party
 ||usa.cc^$third-party
 ||vcfs6ip5h6.bid^$third-party
 ||veritrol.com^$third-party
+||vzhjnorkudcxbiy.com^$third-party
 ||webassembly.stream^$third-party
 ||webmine.cz^$third-party
 ||webmine.pro^$third-party
 ||webminepool.com^$third-party
 ||webminepool.tk^$third-party
+||webxmr.com^$third-party
+||whathyx.com^$third-party
 ||wsp.marketgid.com^$third-party
 ||wty46.com^$third-party
 ||xbasfbno.info^$third-party
@@ -11338,7 +11386,6 @@ _mongo_stats/
 ||sovereignbank.com/utils/track.asp
 ||sp.udimg.com^
 ||sp.usatoday.com^
-||spade.twitch.tv^
 ||spanids.dictionary.com^
 ||spanids.reference.com^
 ||spanids.thesaurus.com^
@@ -11576,6 +11623,7 @@ _mongo_stats/
 ||track.slideshare.net^
 ||track.thesaurus.com^
 ||track.ugamezone.com^
+||track.ultimate-guitar.com^
 ||track.webgains.com^
 ||track.websiteceo.com^
 ||track.wildblue.com^
@@ -11948,10 +11996,13 @@ _mongo_stats/
 ||zylom.com^*/tracking_spotlight.js
 ||zytpirwai.net/track/
 ! Mining
-$websocket,xmlhttprequest,domain=a-o.ninja|lewd.ninja|love-drama.pl|oload.info|oload.tv|openload.co|powvideo.net|streamango.com|streamcherry.com|vidfile.net
+$websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|dekoder.ws|fileone.tv|jkanime.net|lewd.ninja|love-drama.pl|movie4k.is|oload.info|oload.tv|openload.co|powvideo.net|streamango.com|streamcherry.com|vidfile.net
 ||2giga.link^*/hive.js
+||cryweb.github.io^
+||crywebber.github.io^
 ||gus.host/coins.js
 ||hive.tubetitties.com^
+||miner.nablabee.com^
 ||rawgit.com/Pocketart/$script,third-party
 ||reactor.cc^*.wasm
 ||vidfile.net^$third-party,websocket,xmlhttprequest
@@ -12962,6 +13013,7 @@ $websocket,xmlhttprequest,domain=a-o.ninja|lewd.ninja|love-drama.pl|oload.info|o
 @@/cdn-cgi/pe/bag2?*skimlinks.js$domain=droid-life.com
 @@/cdn-cgi/pe/bag2?*static.getclicky.com%2Fjs$domain=amazingpics.net
 @@/cdn-cgi/pe/bag2?*yieldbot.intent.js$domain=droid-life.com
+@@/cgi-bin/counter_module?action=list_models$subdocument,~third-party
 @@/wp-content/mu-plugins/google-analytics-for-wordpress/*$script,stylesheet,~third-party
 @@/wp-content/mu-plugins/google-analytics-premium/*$script,stylesheet,~third-party
 @@/wp-content/plugins/google-analytics-dashboard-for-wp/*$script,stylesheet,~third-party
@@ -13267,6 +13319,7 @@ $websocket,xmlhttprequest,domain=a-o.ninja|lewd.ninja|love-drama.pl|oload.info|o
 @@||googletagmanager.com/gtm.js?id=GTM-5D256R&l=aedataLayer^
 @@||googletagservices.com/tag/js/gpt.js$domain=speedtest.net
 @@||gorillanation.com/js/triggertag.js$domain=comingsoon.net|playstationlifestyle.net
+@@||gov.au/Scripts/ga.js$script,~third-party
 @@||grapeshot.co.uk/image-resize/$image
 @@||grapeshot.co.uk/sare-api/
 @@||graphracer.com/js/libs/heatmap.js

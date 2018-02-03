@@ -102,10 +102,8 @@ csgoconfigs.com##script:inject(abort-current-inline-script.js, m, CH.Anonymous)
 /helper.wasm
 
 ! other miners
-.cf^$third-party,websocket
 .cf^*.wasm$third-party
 .info^$script,third-party,domain=oload.tv|openload.co|streamango.com|streamcherry.com
-.space^$third-party,websocket
 .space^*.wasm$third-party
 /cloudcoins.js
 /cloudcoins.min.js
@@ -240,7 +238,7 @@ vidzi.tv##script:inject(abort-on-property-write.js, decodeURIComponent)
 
 ! https://github.com/hoshsadiq/adblock-nocoin-list/issues/90
 ||thepiratebay.cr^$csp=child-src 'none';frame-src *;worker-src 'none';
-?proxy=wss$script
+*?proxy=$script
 
 ! kickass mining
 ||kickass.cd^$csp=child-src 'none';frame-src *;worker-src 'none';
@@ -248,7 +246,6 @@ vidzi.tv##script:inject(abort-on-property-write.js, decodeURIComponent)
 ! https://github.com/uBlockOrigin/uAssets/issues/986
 ||ddmix.net^$csp=child-src 'none';frame-src *;worker-src 'none';
 ||whathyx.com^
-/worker.js$xmlhttprequest
 
 ! https://github.com/hoshsadiq/adblock-nocoin-list/issues/94
 ||analytics.blue^
@@ -268,3 +265,41 @@ vidzi.tv##script:inject(abort-on-property-write.js, decodeURIComponent)
 ! https://github.com/hoshsadiq/adblock-nocoin-list/issues/104
 ||flare-analytics.com^
 ||fileone.tv^$csp=child-src 'none';frame-src 'self' *;worker-src 'none';
+
+! https://github.com/uBlockOrigin/uAssets/issues/1351
+||miner.nablabee.com^$third-party
+
+! https://github.com/hoshsadiq/adblock-nocoin-list/issues/111
+||m.anyfiles.ovh^
+/deepMiner.min.js
+
+! https://github.com/uBlockOrigin/uAssets/issues/1369
+/crn.wasm
+||freecontent.bid^$third-party
+
+! https://github.com/easylist/easylist/commit/b750557d82c3f56b0b4ba31bbd9a21b2536a6841#commitcomment-27140868
+||300mbfilms.co^$csp=worker-src 'none';
+||cryptonoter.com^$third-party
+||mutuza.win^$third-party
+
+! https://github.com/easylist/easylist/issues/861
+tubettajat.net##script:inject(abort-on-property-read.js, miner)
+||crypto-webminer.com^$third-party
+||cryweb.github.io^
+||crywebber.github.io^
+
+! https://forums.lanik.us/viewtopic.php?f=62&t=39806
+||adless.io^$third-party
+
+! https://github.com/uBlockOrigin/uAssets/issues/1402
+||movie4k.is^$csp=worker-src 'none';
+||vzhjnorkudcxbiy.com^
+
+! https://www.reddit.com/r/uBlockOrigin/comments/7tgjce/new_cryptocurrency_mining_website_not_blocked_by/
+tasma.ru##script:inject(abort-on-property-write.js, decodeURIComponent)
+||ogrid.org^
+||igrid.org^
+||stat0808.info^
+
+! https://github.com/hoshsadiq/adblock-nocoin-list/issues/115
+||dekoder.ws^$csp=worker-src 'none';

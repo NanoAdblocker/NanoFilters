@@ -20,8 +20,8 @@ fixed again in NanoFilters.
 Ads will be removed unless it is non-intrusive self-promotion. 
 
 Any form of anti-adblock will be removed unless it is for an automatic mining 
-wall or for ads rewards system. However, aggressive and intrusive 
-anti-adblock notices will be removed regardless of its goal. 
+wall or for ads reward system. However, aggressive and intrusive anti-adblock 
+systems will be removed regardless of their goal. 
 
 Timers and other form of annoyance will be removed if we consider appropriate 
 and if possible. 

@@ -86,7 +86,7 @@ nano-noopvast-3.0 text/xml
 # boostRatio - The delay multiplier when there is a match, 0.5 speeds up by
 # 2 times and 2 slows down by 2 times, defaults to 0.05 or speed up 20 times.
 # Speed up and down both cap at 50 times.
-nano-setTimeout-booster.js application/javascript
+nano2-setTimeout-booster.js application/javascript
 (function() {
 	// Based on uAssets
 	// License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -124,7 +124,7 @@ nano-setTimeout-booster.js application/javascript
 
 
 # Same as the last one except it is for setInterval instead of setTimeout.
-nano-setInterval-booster.js application/javascript
+nano2-setInterval-booster.js application/javascript
 (function() {
 	// Based on uAssets
 	// License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE

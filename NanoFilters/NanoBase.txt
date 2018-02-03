@@ -26,7 +26,7 @@ libgen.io##script:inject(setTimeout-defuser.js, ad blocking)
 download.inventivetalent.org##div:has(:scope > div > button.choice-adfly)
 msnbc.com,nbcnews.com,today.com##script:inject(abort-on-property-read.js, stop)
 ||browserleaks.com/js/proxy_ab.js$script
-9anime.ch##.abmsg
+9anime.*##.abmsg
 myegy.tv##.disclaimer:has-text(Ad-Blocker)
 html-online.com#@#.adBanner
 elespanol.com###adblock_modal

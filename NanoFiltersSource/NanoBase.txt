@@ -6,6 +6,9 @@
 # https://github.com/jspenguin2017/uBlockProtector/issues/756
 /wp-content/plugins/end-of-adblock-cycle/*
 
+# https://github.com/NanoAdblocker/NanoDefender/issues/24
+@@/wp-content/plugins/detect-adblock/js/ads.js
+
 # https://github.com/jspenguin2017/uBlockProtector/issues/744
 # https://github.com/jspenguin2017/uBlockProtector/issues/745
 @@||blockergame.com^$generichide
@@ -109,7 +112,8 @@ link.tl##.mobsplBox
 journaldugeek.com##.banner__content
 
 # https://github.com/NanoAdblocker/NanoDefender/issues/24
-@@/wp-content/plugins/detect-adblock/js/ads.js
+wp-time.com##a[href^="https://goo.gl/"]:has(img)
+wp-time.com###pop-ad-wrap
 
 # ################################# #
 # #### Pending Synchronization #### #

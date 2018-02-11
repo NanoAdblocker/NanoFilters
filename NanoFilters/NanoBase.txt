@@ -1,6 +1,7 @@
 !@pragma nano-license=https://github.com/NanoAdblocker/NanoFilters/blob/master/LICENSE
 !@pragma nano-srcmap=https://raw.githubusercontent.com/NanoAdblocker/NanoFilters/master/NanoFiltersSource/NanoBase.txt
 /wp-content/plugins/end-of-adblock-cycle/*
+@@/wp-content/plugins/detect-adblock/js/ads.js
 @@||blockergame.com^$generichide
 @@||blockersurvive.com^$generichide
 blockersurvive.com,blockergame.com##.ads > .ads-body > .ads-content > div
@@ -40,4 +41,5 @@ dn.pt##.t-pub-inner
 link.tl##.mobsplOverlay
 link.tl##.mobsplBox
 journaldugeek.com##.banner__content
-@@/wp-content/plugins/detect-adblock/js/ads.js
+wp-time.com##a[href^="https://goo.gl/"]:has(img)
+wp-time.com###pop-ad-wrap

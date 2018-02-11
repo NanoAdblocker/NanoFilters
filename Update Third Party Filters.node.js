@@ -51,17 +51,6 @@ const validate = (input) => {
         });
     });
 };
-/**
- * Wait for a specific amount of time.
- * @function
- * @param {integer} [timeout=1000] - The timeout in milliseconds, defaults to 1000.
- * @return {Promise} The promise of this task.
- */
-const delay = (timeout = 1000) => {
-    return new Promise((resolve) => {
-        setTimeout(resolve, timeout);
-    });
-};
 
 process.on("unhandledRejection", (err) => {
     throw err;
@@ -97,7 +86,6 @@ process.on("unhandledRejection", (err) => {
         const localPath = path.join("ThirdParty", key);
         await fetchOne(data[key], fs.createWriteStream(localPath));
         await validate(localPath);
-        await delay();
     }
 
     console.log();

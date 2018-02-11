@@ -621,9 +621,9 @@ orange.fr###o_carrepub:style(height: 1px; margin: 0; min-height: auto; visibilit
 
 ! https://github.com/uBlockOrigin/uAssets/issues/703
 ! https://github.com/easylist/easylist/commit/e626b6840c4d6ab6dbc2c75466d6608c0266fd2e#commitcomment-24532319
-@@||realcam.me/emb*.min.js$script,domain=fbstreams.me|mlbstream.me|nbastreams.me|nflstreams.me|nhlstreams.me|strikeout.co
-@@||livecamtv.me/emb*.min.js$script,domain=fbstreams.me|mlbstream.me|nbastreams.me|nflstreams.me|nhlstreams.me|strikeout.co
-@@||seelive.me/emb*.min.js$script,domain=fbstreams.me|mlbstream.me|nbastreams.me|nflstreams.me|nhlstreams.me|strikeout.co
+@@||realcam.me/emb*.min.js$script,domain=fbstream.io|mlbstream.io|nbastream.io|nflstream.io|nhlstream.io|strikeout.co
+@@||livecamtv.me/emb*.min.js$script,domain=fbstream.io|mlbstream.io|nbastream.io|nflstream.io|nhlstream.io|strikeout.co
+@@||seelive.me/emb*.min.js$script,domain=fbstream.io|mlbstream.io|nbastream.io|nflstream.io|nhlstream.io|strikeout.co
 
 ! https://github.com/uBlockOrigin/uAssets/issues/732
 @@/hello^$xmlhttprequest,domain=speedtest.net 
@@ -812,5 +812,48 @@ publicdomainq.net##ins.adsbygoogle
 @@||nexus.ensighten.com/*/Bootstrap.js$script,domain=bestbuy.com
 @@||d1af033869koo7.cloudfront.net/*/247px.js$script,domain=bestbuy.com
 
-! https://forums.lanik.us/viewtopic.php?f=96&t=39870
-@@||it.dplay.com/*/static/assets/js/components/reporter/google_analytics.js$script,domain=it.dplay.com
+! https://forums.lanik.us/viewtopic.php?f=64&t=39881
+*$websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|akvideo.stream|dekoder.ws|fileone.tv|jkanime.net|leitor.net|lewd.ninja|love-drama.pl|movie4k.is|netlify.com|oload.info|oload.tv|openload.co|powvideo.net|streamango.com|streamcherry.com|vidfile.net,badfilter
+*$websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|akvideo.stream|dekoder.ws|fileone.tv|jkanime.net|leitor.net|lewd.ninja|love-drama.pl|movie4k.is|oload.info|oload.tv|openload.co|powvideo.net|streamango.com|streamcherry.com|vidfile.net
+@@*$websocket,xmlhttprequest,domain=netlify.com
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=39895
+/adpage.$domain=~adpage.com.ua,badfilter
+/adpage.$domain=~adpage.com.ua|~adpage.io
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=39896&p=132012#p132012
+/adbuddy.$badfilter
+/adbuddy.$domain=~adbuddy.be|~adbuddy.beeldstudio.be
+
+! https://github.com/jspenguin2017/uBlockProtector/issues/843
+@@||gemius.pl/xlgemius.js$script,domain=jn.pt
+@@||secure.netscope.marktest.pt/netscope-gemius.js$script,domain=jn.pt
+
+! https://forums.lanik.us/viewtopic.php?p=132049#p132049
+/adsign.$domain=~adsign.no,badfilter
+/adsign.$domain=~adsign.no|~adsign.slack.com
+
+! https://bugzilla.mozilla.org/show_bug.cgi?id=1435533
+@@||adobedtm.com^*/satelliteLib-$script,domain=subaru.com
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=39930&p=132161#p132158
+/intellitext.$domain=~intellitext.com,badfilter
+/intellitext.$domain=~intellitext.com|~intellitext.hu
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=39929#p132157
+/ads6.$badfilter
+/ads6.$domain=~ads6.adesignstudio.eu
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=39932
+@@||cdnjs.cloudflare.com/ajax/libs/crypto-js/*/rollups/$script
+
+! Unbreak art19.com
+! To counter `art19.com` in Peter Lowe's list
+||art19.com^$badfilter
+
+! https://github.com/jspenguin2017/uBlockProtector/issues/848
+@@||gemius.pl/xlgemius.js$script,domain=dn.pt
+@@||marktest.pt/netscope-gemius.js$script,domain=dn.pt
+
+! https://github.com/uBlockOrigin/uAssets/issues/1516
+hintergrundbild.org#@#.ads1

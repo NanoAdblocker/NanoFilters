@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Checksum: O6rEyR0nqmG6gzTBM/T5eg
-! Version: 201802031911
+! Checksum: DkjXijitkScdgKCVs5MbbA
+! Version: 201802110321
 ! The contents of this filter list are fetched from the EasyPrivacy repository: https://github.com/easylist/easylist/tree/master/easyprivacy
 ! Title: EasyPrivacy
-! Last modified: 03 Feb 2018 19:11 UTC
+! Last modified: 11 Feb 2018 03:21 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -42,6 +42,7 @@
 -comscore.
 -criteo.
 -datacollection.
+-dspcookiematching.
 -dtaectolog-
 -event-tracking.
 -ga-track.
@@ -475,6 +476,7 @@
 /analytics.gif?
 /analytics.google.js
 /analytics.html?
+/analytics.init.js
 /analytics.min.
 /analytics.php.
 /analytics.php?
@@ -1097,6 +1099,7 @@
 /didna-pixel-
 /disp_cnt.
 /dispatch.fcgi?
+/diva-analytics.js
 /divolte.js
 /dl_counter.
 /dla_tracker.
@@ -1801,6 +1804,7 @@
 /log.php?id
 /log.php?owa_timestamp=
 /log/ad-
+/log/error?
 /log/event?
 /log/impression/*
 /log/init?
@@ -2404,7 +2408,6 @@
 /redirectexittrack.php?
 /redx/c.gif?
 /ref_analytics.
-/refcount.
 /refer-tracking.
 /referadd?
 /referer.gif?
@@ -3642,6 +3645,8 @@ cgi-bin/counter
 http://utm.$domain=~utm.md|~utoronto.ca
 ||meetrics.netbb-
 ! Mining
+-monero-miner.
+-monero-miner/
 .ga/*.wasm
 /aj-crypto-miner/*
 /ajcm-inject.
@@ -3656,6 +3661,7 @@ http://utm.$domain=~utm.md|~utoronto.ca
 /coinblind_beta.
 /coinhive.min.js
 /coinlab.js
+/crypto-js.
 /cryptonight-worker.js
 /cryptonight.wasm
 /deepMiner.js
@@ -4010,6 +4016,7 @@ _mongo_stats/
 ||betarget.net^$third-party
 ||bettermetrics.co^$third-party
 ||bfoleyinteractive.com^$third-party
+||bidr.io^$third-party
 ||bidswitch.net^$third-party
 ||bigcattracks.com^$third-party
 ||bigmir.net^$third-party
@@ -4104,6 +4111,7 @@ _mongo_stats/
 ||cbtrk.net^$third-party
 ||cccpmo.com^$third-party
 ||ccgateway.net^$third-party
+||cdn-analytics.pl^$third-party
 ||cdnanalytics.xyz^$third-party
 ||cdnmaster.com^$third-party
 ||cdntrf.com^$third-party
@@ -4327,6 +4335,7 @@ _mongo_stats/
 ||dmpxs.com^$third-party
 ||dmtracker.com^$third-party
 ||dmtry.com^$third-party
+||dmxleo.com^$third-party
 ||doclix.com^$third-party
 ||dominocounter.net^$third-party
 ||domodomain.com^$third-party
@@ -4348,6 +4357,7 @@ _mongo_stats/
 ||dtc-v6t.com^$third-party
 ||dti-ranker.com^$third-party
 ||dtscout.com^$third-party
+||dtxngr.com^$third-party
 ||dummy-domain-do-not-change.com^$third-party
 ||dv0.info^$third-party
 ||dwin1.com^$third-party
@@ -5331,6 +5341,7 @@ _mongo_stats/
 ||revsw.net^$third-party
 ||rewardtv.com^$third-party
 ||reztrack.com^$third-party
+||rezync.com^$third-party
 ||rfihub.com^$third-party
 ||rfr-69.com^$third-party
 ||rhinoseo.com^$third-party
@@ -5521,7 +5532,6 @@ _mongo_stats/
 ||spotmx.com^$third-party
 ||spring.de^$third-party
 ||springmetrics.com^$third-party
-||springserve.com^$third-party
 ||sptag.com^$third-party
 ||sptag1.com^$third-party
 ||sptag2.com^$third-party
@@ -6059,12 +6069,14 @@ _mongo_stats/
 ||candid.zone^$third-party
 ||cdnfile.xyz^$third-party
 ||chainblock.science^$third-party
+||clickwith.bid^$third-party
 ||clod.pw^$third-party
 ||cloudcoins.co^$third-party
 ||cndhit.xyz^$third-party
 ||cnhv.co^$third-party
 ||coin-have.com^$third-party
 ||coin-hive.com^$third-party
+||coin-service.com^$third-party
 ||coinblind.com^$third-party
 ||coincheck.com^$third-party
 ||coinerra.com^$third-party
@@ -6097,6 +6109,8 @@ _mongo_stats/
 ||devphp.org.ua^$third-party
 ||dle-news.pw^$third-party
 ||dovinate.top^$third-party
+||duckdns.org^$third-party,websocket
+||easyhash.io^$third-party
 ||etnhashpool.tk^$third-party
 ||evengparme.com^$third-party
 ||fastcast.nz^$third-party
@@ -6108,6 +6122,7 @@ _mongo_stats/
 ||g-content.bid^$third-party
 ||gasolina.ml^$third-party
 ||github.io/*.wasm$third-party
+||github.io^$third-party,websocket
 ||googleanalytcs.com^$third-party
 ||goredirect.party^$third-party
 ||greengaming.de^$third-party
@@ -6142,9 +6157,11 @@ _mongo_stats/
 ||kedtise.com^$third-party
 ||kinoprofi.org^$third-party
 ||l33tsite.info^$third-party
+||ledhenone.com^$third-party
 ||ledinund.com^$third-party
 ||listat.biz^$third-party
 ||lmodr.biz^$third-party
+||marcycoin.org^$third-party
 ||mataharirama.xyz^$third-party
 ||megabanners.cf^$third-party
 ||mercy.ga^$third-party
@@ -6154,15 +6171,19 @@ _mongo_stats/
 ||minemytraffic.com^$third-party
 ||miner.pr0gramm.com^$third-party
 ||minero-proxy-*.sh^$third-party
+||minero.cc^$third-party
 ||minero.pw^$third-party
+||minescripts.info^$third-party
 ||minexmr.com^$third-party
 ||mining.best^$third-party
 ||minr.pw^$third-party
 ||mmpool.org^$third-party
+||monerise.com^$third-party
 ||monerominer.rocks^$third-party
 ||moneroocean.stream^$third-party
 ||morningdigit.com^$third-party
 ||mutuza.win^$third-party
+||nablabee.com^$third-party
 ||nahnoji.cz^$third-party
 ||nathetsof.com^$third-party
 ||nfwebminer.com^$third-party
@@ -6197,7 +6218,6 @@ _mongo_stats/
 ||smectapop12.pl^$third-party
 ||sparechange.io^$third-party
 ||sparnove.com^$third-party
-||stackpathdns.com^$third-party
 ||static-cnt.bid^$third-party
 ||statistic.date^$third-party
 ||subloader.cf^$third-party
@@ -6221,6 +6241,7 @@ _mongo_stats/
 ||webxmr.com^$third-party
 ||whathyx.com^$third-party
 ||witthethim.com^$third-party
+||wp-monero-miner.com^$third-party
 ||wsp.marketgid.com^$third-party
 ||wty46.com^$third-party
 ||xbasfbno.info^$third-party
@@ -10142,7 +10163,7 @@ _mongo_stats/
 ||cl.ly/metrics?
 ||clc.stackoverflow.com^
 ||clck.yandex.com^
-||click.aliexpress.com^
+||click.aliexpress.com^$image,script
 ||click.engage.xbox.com^
 ||click.mmosite.com^
 ||click.udimg.com^
@@ -10362,6 +10383,7 @@ _mongo_stats/
 ||eventlog.jackpot.de^
 ||eventlogger.soundcloud.com^
 ||events.privy.com^
+||events.reddit.com^
 ||events.redditmedia.com^
 ||events.turbosquid.com^
 ||eventtracker.elitedaily.com^
@@ -12020,15 +12042,18 @@ _mongo_stats/
 ||zylom.com^*/tracking_spotlight.js
 ||zytpirwai.net/track/
 ! Mining
-$websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|dekoder.ws|fileone.tv|jkanime.net|lewd.ninja|love-drama.pl|movie4k.is|oload.info|oload.tv|openload.co|powvideo.net|streamango.com|streamcherry.com|vidfile.net
+$websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|akvideo.stream|dekoder.ws|fileone.tv|jkanime.net|leitor.net|lewd.ninja|love-drama.pl|movie4k.is|oload.info|oload.tv|powvideo.net|shrink-service.it|streamango.com|streamcherry.com|vidfile.net
 ||2giga.link^*/hive.js
 ||cryweb.github.io^
 ||crywebber.github.io^
 ||gus.host/coins.js
 ||hive.tubetitties.com^
 ||miner.nablabee.com^
+||piti.bplaced.net^
 ||rawgit.com/Pocketart/$script,third-party
 ||reactor.cc^*.wasm
+||shrink-service.it/js/cM.js
+||stackpathdns.com/assets/javascript/cr.js
 ||vidfile.net^$third-party,websocket,xmlhttprequest
 ! Preliminarily blocking Omniture s_code tracking scripts (versions H.25 - H.25.2) due to breakage (https://adblockplus.org/forum/viewtopic.php?f=10&t=11378)
 ||abc.com/service/gremlin/js/files/s_code.js?$domain=abc.go.com
@@ -13058,7 +13083,7 @@ $websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|dekoder.w
 @@||adobedtm.com^*/mbox-contents-$script,domain=lenovo.com|newyorker.com|oprah.com|pnc.com|vanityfair.com|wired.com
 @@||adobedtm.com^*/s-code-$script
 @@||adobedtm.com^*/satellite-$script
-@@||adobedtm.com^*/satelliteLib-$script,domain=argos.co.uk|collegeboard.org|crackle.com|laredoute.co.uk|laredoute.com|lenovo.com|mastercard.us|nbcnews.com|newyorker.com|oprah.com|pnc.com|realtor.com|redbull.tv|searspartsdirect.com|smooth.com.au|stuff.co.nz|timewarnercable.com|vanityfair.com|wired.com
+@@||adobedtm.com^*/satelliteLib-$script,domain=argos.co.uk|collegeboard.org|crackle.com|laredoute.co.uk|laredoute.com|lenovo.com|mastercard.us|nbcnews.com|newyorker.com|oprah.com|pnc.com|realtor.com|redbull.tv|searspartsdirect.com|smooth.com.au|stuff.co.nz|subaru.com|timewarnercable.com|vanityfair.com|wired.com
 @@||adobetag.com/d2/$script,domain=thestar.com
 @@||adobetag.com^*/amc.js$script
 @@||adobetag.com^*/sitecatalyst.js$domain=hbf.com.au|seattlepi.com|tv.com
@@ -13114,6 +13139,7 @@ $websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|dekoder.w
 @@||att.com/webtrends/scripts/dcs_tag.js
 @@||audi.co.uk^*/js/tracking/$script
 @@||autoscout24.net/unifiedtracking/ivw.js
+@@||avpwidgets.qbrick.com/playplugins/*/ga/ga.min.js$script
 @@||azure.com/api/*/analytics/$~third-party,xmlhttprequest
 @@||azureedge.net/trackmeet-profilepicture/$image,domain=gotrackmeet.com
 @@||azureedge.net^*/eventtracking.js$domain=crimemapping.com
@@ -13251,6 +13277,7 @@ $websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|dekoder.w
 @@||docodoco.jp^*/docodoco?key=$script,domain=nidec-copal-electronics.com
 @@||dopemagazine.com/wp-content/plugins/masterslider/public/assets/css/blank.gif?
 @@||doubleclick.net/activityi;src=$object-subrequest,domain=cicispizza.com
+@@||dplay.com^*/google_analytics.js
 @@||dpm.demdex.net/id?$script,domain=gamespot.com
 @@||dtdc.in/tracking/tracking_results_$subdocument,domain=dtdc.com
 @@||dw.cbsi.com/anonc.js$domain=cnet.com|gamespot.com|giantbomb.com
@@ -13296,6 +13323,7 @@ $websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|dekoder.w
 @@||fls-*.amazon.com^*/aiv-web-player/$xmlhttprequest
 @@||flsenate.gov/Scripts/GoogleAnalytics.js$~third-party
 @@||flurry.com/js/flurry.js$domain=pocketdice.io|slantnews.com
+@@||fncstatic.com^*/visitorapi.js$script,domain=foxbusiness.com|foxnews.com
 @@||focus.ti.com^*/metrics-min.js
 @@||foodnetwork.com^*/analytics.sitecatalyst.js
 @@||freefilefillableforms.com/js/lib/irs/fingerprint.js$~third-party
@@ -13565,6 +13593,7 @@ $websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|dekoder.w
 @@||pshared.5min.com/Scripts/OnePlayer/Loggers/ComScore.StreamSense.js
 @@||pshared.5min.com/Scripts/OnePlayer/Loggers/ComScore.Viewability.js
 @@||push2check.com/stats.php
+@@||qbrick.com/framework/modules/analytics/analytics.min.js$script
 @@||quantcast.com/wp-content/themes/quantcast/$domain=quantcast.com
 @@||quantserve.com/quant.js$domain=apps.facebook.com|caranddriver.com|g4tv.com|nymag.com|salon.com|theblaze.com
 @@||query.petametrics.com^

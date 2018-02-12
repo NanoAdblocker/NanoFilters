@@ -14,9 +14,6 @@ blockersurvive.com,blockergame.com##.ads > .ads-body:style(background: initial !
 ||imasdk.googleapis.com/js/sdkloader/outstream.js$script,redirect=noopjs,domain=squadd.io
 squadd.io###mc-videoads-overlay
 
-# https://github.com/jspenguin2017/uBlockProtector/issues/752
-wolframclient.net##script:inject(nano-remove-element-onready.js, [data-ad-client^="ca-pub-"])
-
 # https://github.com/jspenguin2017/uBlockProtector/issues/390
 vvvvid.it##script:inject(nano-vvvvid-it.js)
 
@@ -101,6 +98,9 @@ dn.pt##.t-pub-inner
 # ################################# #
 # #### Pending Synchronization #### #
 # ################################# #
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/752
+wolframclient.net##script:inject(nano-remove-element-onready.js, [data-ad-client^="ca-pub-"])
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/756
 /wp-content/plugins/end-of-adblock-cycle/*

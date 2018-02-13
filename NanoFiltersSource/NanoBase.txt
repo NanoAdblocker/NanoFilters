@@ -3,6 +3,9 @@
 # Resources, similarly, purging cache of Nano filters also purge cache of Nano
 # Adblocker Extra Resources
 
+# https://github.com/jspenguin2017/uBlockProtector/issues/756
+/wp-content/plugins/end-of-adblock-cycle/*
+
 # https://github.com/jspenguin2017/uBlockProtector/issues/744
 # https://github.com/jspenguin2017/uBlockProtector/issues/745
 @@||blockergame.com^$generichide
@@ -95,15 +98,8 @@ jn.pt##.t-pubbox-inner
 # https://github.com/jspenguin2017/uBlockProtector/issues/848
 dn.pt##.t-pub-inner
 
-# ################################# #
-# #### Pending Synchronization #### #
-# ################################# #
-
 # https://github.com/jspenguin2017/uBlockProtector/issues/752
 wolframclient.net##script:inject(nano-remove-element-onready.js, [data-ad-client^="ca-pub-"])
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/756
-/wp-content/plugins/end-of-adblock-cycle/*
 
 # https://github.com/NanoAdblocker/NanoDefender/issues/25
 coolgames.com###mainContainerVideo:has(#adContainerVideo)
@@ -114,3 +110,9 @@ link.tl##.mobsplBox
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/851
 journaldugeek.com##.banner__content
+
+# ################################# #
+# #### Pending Synchronization #### #
+# ################################# #
+
+# Nothing for now

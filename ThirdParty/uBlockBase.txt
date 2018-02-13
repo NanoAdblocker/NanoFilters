@@ -194,6 +194,8 @@ oload.info,oload.stream,oload.tv,openload.co,streamango.com##script:inject(openl
 openload.co##script:inject(window.open-defuser.js)
 streamango.com##script:inject(abort-on-property-read.js, BetterJsPop)
 streamango.com##script:inject(window.open-defuser.js)
+! https://forums.lanik.us/viewtopic.php?f=64&p=132254
+@@||oloadcdn.net/subtitle/*$xmlhttprequest,domain=openload.co
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=27505
 ! https://github.com/uBlockOrigin/uAssets/issues/1292
@@ -1222,10 +1224,6 @@ download.mokeedev.com##script:inject(setTimeout-defuser.js, alert-danger-enabled
 ! https://github.com/uBlockOrigin/uAssets/issues/278
 pocketnow.com##script:inject(abort-on-property-read.js, InstallTrigger)
 
-! https://github.com/uBlockOrigin/uAssets/issues/282
-cpu-world.com##script:inject(abort-on-property-read.js, CW_AB)
-||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$important,script,domain=cpu-world.com
-
 ! https://github.com/uBlockOrigin/uAssets/issues/240
 ||myadcash.com/video_landing/js/*.js$script,redirect=noopjs,domain=multiup.eu|multiup.org
 ||leadzutw.com^$third-party
@@ -1583,8 +1581,10 @@ randomarchive.com##script:inject(bab-defuser.js)
 @@||hackinformer.com^$generichide
 hackinformer.com##.adsbygoogle:style(max-height: 1px !important;)
 
+! https://github.com/uBlockOrigin/uAssets/issues/282
 ! https://github.com/uBlockOrigin/uAssets/issues/418
-||googlesyndication.com/pagead/js/adsbygoogle.js$important,script,redirect=googlesyndication.com/adsbygoogle.js,domain=wowtoken.info
+||googlesyndication.com/pagead/js/adsbygoogle.js$important,script,redirect=googlesyndication.com/adsbygoogle.js,domain=cpu-world.com|wowtoken.info
+@@||wowtoken.info^$generichide
 
 ! https://github.com/uBlockOrigin/uAssets/issues/422
 ||timesofindia.indiatimes.com/ad-banner$image,redirect=3x2-transparent.png,domain=happytrips.com
@@ -2488,12 +2488,13 @@ allpar.com,antonymsfor.com,bobshideout.com,cheezburger.com,colourlovers.com,dail
 ! https://forums.lanik.us/viewtopic.php?f=62&t=38744
 ! https://github.com/uBlockOrigin/uAssets/issues/810
 ! https://github.com/uBlockOrigin/uAssets/issues/855
-abandonedspaces.com,blacklistednews.com,broadwayworld.com,clashdaily.com,daclips.in,eternallifestyle.com,fullmatchesandshows.com,gorillavid.in,greeningz.com,hyperactivz.com,kiwireport.com,moviepredators.com,movpod.in,netzwelt.de,parentztalk.com,powerofpositivity.com,presidentmommy.com,spiele-umsonst.de,sportsretriever.com,talkwithstranger.com,toptenz.net,travelfuntu.com,vidmax.com,worldation.com##script:inject(abort-current-inline-script.js, atob, TextDecoder)
+abandonedspaces.com,asheepnomore.net,blacklistednews.com,broadwayworld.com,clashdaily.com,daclips.in,eternallifestyle.com,fullmatchesandshows.com,gorillavid.in,greeningz.com,hyperactivz.com,kiwireport.com,moviepredators.com,movpod.in,netzwelt.de,parentztalk.com,powerofpositivity.com,presidentmommy.com,spiele-umsonst.de,sportsretriever.com,talkwithstranger.com,toptenz.net,travelfuntu.com,vidmax.com,wnd.com,worldation.com##script:inject(abort-current-inline-script.js, atob, TextDecoder)
 footyroom.com,izzygames.com,mathwarehouse.com,meta-calculator.com,meta-chart.com,netzwelt.de,pocketnow.com,spiele-umsonst.de##script:inject(abort-on-property-read.js, TextDecoder)
+||jojilabola.com^
+||rizotina.com^
 ! https://forums.lanik.us/viewtopic.php?f=62&t=39280&p=129024#p129024
 readcomics.website##script:inject(abort-on-property-write.js, decodeURIComponent)
 readcomics.website##script:inject(abort-on-property-write.js, Fingerprint2)
-||jojilabola.com^
 
 ! https://forums.lanik.us/viewtopic.php?f=62&t=37406
 sankakucomplex.com##script:inject(popads-dummy.js)
@@ -2666,7 +2667,7 @@ filebebo.com##script:inject(abort-current-inline-script.js, keys, adblockinfo)
 ! pussl-domains
 ||pussl2.com^$script,third-party
 ||pussl3.com^$script,third-party
-||pussl5.com^$script,third-party
+||pussl4.com^$script,third-party
 ||pussl5.com^$script,third-party
 ||pussl7.com^$script,third-party
 ||pussl8.com^$script,third-party
@@ -2825,7 +2826,6 @@ sheshaft.com##script:inject(abort-on-property-read.js, raSettings)
 sheshaft.com##script:inject(popads-dummy.js)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/892
-||imglnka.com^$image,domain=alrincon.com
 ||misslk.com^$image,domain=alrincon.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/893
@@ -3999,7 +3999,6 @@ gozonasports.me###adsdiv
 @@||gestyy.com^$generichide
 @@||clkmein.com^$generichide
 @@||viid.me^$generichide
-@@||cllkme.com^$generichide
 @@||corneey.com^$generichide
 @@||sh.st^$generichide
 @@||skiip.me^$generichide
@@ -4327,7 +4326,6 @@ magnetdl.com##script:inject(window.open-defuser.js)
 magnetdl.com##a[href="/site/vpn/"]
 
 ! https://github.com/jspenguin2017/uBlockProtector/issues/812
-tejikarao.kodaisi.net##script:inject(set-constant.js, AlobaidiDetectAdBlock, true)
 tejikarao.kodaisi.net##script:inject(abort-on-property-write.js, KillAdBlock)
 
 ! katcr tabunder
@@ -4347,8 +4345,10 @@ btdb.to##script:inject(nowebrtc.js)
 alts4free.com##script:inject(noeval.js)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1290
+! https://github.com/jspenguin2017/uBlockProtector/issues/835
 vivads.net##script:inject(abort-on-property-read.js, app_vars.force_disable_adblock)
 vivads.net##script:inject(abort-on-property-read.js, open)
+vivads.net##a[href^="http://vivads.net/ref/"]
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1293
 @@||stadium-live.biz^$generichide
@@ -4828,10 +4828,6 @@ watcheng.tv##script:inject(popads-dummy.js)
 @@||derstandard.at/s/*$image,first-party
 
 ! https://github.com/jspenguin2017/uBlockProtector/issues/835
-vivads.net##script:inject(abort-on-property-read.js, app_vars.force_disable_adblock)
-vivads.net##a[href^="http://vivads.net/ref/"]
-
-! https://github.com/jspenguin2017/uBlockProtector/issues/835
 bits.yt##script:inject(abort-on-property-read.js, app_vars.force_disable_adblock)
 bits.yt##script:inject(abort-on-property-write.js, _pop)
 bits.yt##script:inject(abort-on-property-write.js, adcashMacros)
@@ -4977,7 +4973,7 @@ cut-link.me,digacortador.com,geturls.me,vhb.io##script:inject(abort-on-property-
 cut-link.me,digacortador.com,geturls.me,vhb.io##script:inject(nano-setInterval-booster.js)
 
 ! https://github.com/jspenguin2017/uBlockProtector/issues/850
-@@||eurosport.com^$generichide
+@@*$generichide,domain=eurosport.bg|eurosport.co.uk|eurosport.com|eurosport.cz|eurosport.de|eurosport.dk|eurosport.fi|eurosport.fr|eurosport.hu|eurosport.nl|eurosport.no|eurosport.pl|eurosport.pt|eurosport.ro|eurosport.rs|eurosport.ru|eurosport.se
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1522
 befap.com##script:inject(abort-on-property-read.js, ExoLoader)
@@ -4998,3 +4994,55 @@ go4up.com##img[src="https://cache.go4up.com/assets/img/abutoned.gif"]
 ! https://www.reddit.com/r/uBlockOrigin/comments/7wpk97/cant_block_ad_at_the_bottom_of_readcomiconline/
 readcomiconline.to##script:inject(abort-current-inline-script.js, String.fromCharCode, /\/\*[0-9a-f]{40}\*\//)
 readcomiconline.to##.divCloseBut
+
+! https://github.com/uBlockOrigin/uAssets/issues/1526
+arbwarez.com##script:inject(abort-on-property-read.js, $tieE3)
+
+! https://github.com/uBlockOrigin/uAssets/issues/1527
+@@||hdliveextra-a.akamaihd.net/*/config/ads.js$script,domain=nbcolympics.com
+@@||stream.nbcolympics.com/assets/page/general/ads.js$script,first-party
+
+! https://github.com/NanoAdblocker/NanoDefender/issues/24#issuecomment-364821024
+wp-time.com##a[href^="https://goo.gl/"]:has(img)
+wp-time.com###pop-ad-wrap
+
+! https://github.com/uBlockOrigin/uAssets/issues/1528
+linksocean.net##script:inject(abort-on-property-read.js, app_vars.force_disable_adblock)
+linksocean.net##script:inject(nano-setInterval-booster.js)
+
+! https://github.com/uBlockOrigin/uAssets/issues/1531
+@@||peugeotclub.eu^$generichide
+
+! https://github.com/uBlockOrigin/uAssets/issues/1530
+||amgload.net$xmlhttprequest,domain=animestreams.tv
+||piguiqproxy.com$xmlhttprequest,domain=animestreams.tv
+animestreams.tv##.spu-bg
+animestreams.tv##.spu-box
+! Firefox specific fix
+animestreams.tv##^script:has-text(3f87b0eaddd)
+
+! https://github.com/uBlockOrigin/uAssets/issues/1529
+bc.vc##script:inject(window.open-defuser.js)
+*$subdocument,third-party,domain=bc.vc
+||bc.vc/mload.gif$image
+||smrtrdrct.top^$third-party
+@@||google.com^$subdocument,domain=bc.vc
+
+! https://github.com/NanoAdblocker/NanoDefender/issues/24
+@@/wp-content/plugins/detect-adblock/js/ads.js$script,first-party
+
+! https://github.com/jspenguin2017/uBlockProtector/issues/756
+data-raid-recovery-link.com##script:inject(setTimeout-defuser.js, _creatBait)
+
+! https://github.com/jspenguin2017/uBlockProtector/issues/752
+wolframclient.net##script:inject(setTimeout-defuser.js, detected, 0)
+
+! https://github.com/reek/anti-adblock-killer/issues/3904
+salon.com##script:inject(set-constant.js, adblock, false)
+
+! https://github.com/uBlockOrigin/uAssets/issues/1533
+cut4links.com##script:inject(nano-setInterval-booster.js)
+cut4links.com##script:inject(abort-on-property-read.js, app_vars.force_disable_adblock)
+
+! https://github.com/uBlockOrigin/uAssets/issues/1536
+telolet.in##script:inject(abort-current-inline-script.js, addEventListener, DivTopAd)

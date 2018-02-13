@@ -812,15 +812,6 @@ publicdomainq.net##ins.adsbygoogle
 @@||nexus.ensighten.com/*/Bootstrap.js$script,domain=bestbuy.com
 @@||d1af033869koo7.cloudfront.net/*/247px.js$script,domain=bestbuy.com
 
-! https://forums.lanik.us/viewtopic.php?f=64&t=39881
-*$websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|akvideo.stream|dekoder.ws|fileone.tv|jkanime.net|leitor.net|lewd.ninja|love-drama.pl|movie4k.is|netlify.com|oload.info|oload.tv|openload.co|powvideo.net|streamango.com|streamcherry.com|vidfile.net,badfilter
-*$websocket,xmlhttprequest,domain=300mbfilms.co|a-o.ninja|ajplugins.com|akvideo.stream|dekoder.ws|fileone.tv|jkanime.net|leitor.net|lewd.ninja|love-drama.pl|movie4k.is|oload.info|oload.tv|openload.co|powvideo.net|streamango.com|streamcherry.com|vidfile.net
-@@*$websocket,xmlhttprequest,domain=netlify.com
-
-! https://forums.lanik.us/viewtopic.php?f=64&t=39895
-/adpage.$domain=~adpage.com.ua,badfilter
-/adpage.$domain=~adpage.com.ua|~adpage.io
-
 ! https://forums.lanik.us/viewtopic.php?f=64&t=39896&p=132012#p132012
 /adbuddy.$badfilter
 /adbuddy.$domain=~adbuddy.be|~adbuddy.beeldstudio.be
@@ -857,3 +848,16 @@ publicdomainq.net##ins.adsbygoogle
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1516
 hintergrundbild.org#@#.ads1
+
+! https://forums.lanik.us/viewtopic.php?p=132243#p132243
+@@||crackle.com/*/crypto-js.js$script,first-party
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=39953
+@@||smartpixel.tv^$first-party
+
+! https://github.com/NanoAdblocker/NanoDefender/issues/24#issuecomment-365117795
+@@/cdn-cgi/pe/bag2?*optimizely.com$domain=coindesk.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/1535
+/adstream.$badfilter
+/adstream.$domain=~adstream.com|~adstream.com.ro

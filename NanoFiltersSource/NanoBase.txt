@@ -114,6 +114,9 @@ brainly.co.id##.brn-ads-box
 # https://github.com/jspenguin2017/uBlockProtector/issues/859
 sms-receive.net##script:inject(abort-current-inline-script.js, $, AdBlock Plus)
 
+# https://github.com/NanoAdblocker/NanoFilters/issues/30
+@@||richmond-news.com/gmg/*/js/ads.js$script,first-party
+
 # ################################# #
 # #### Pending Synchronization #### #
 # ################################# #

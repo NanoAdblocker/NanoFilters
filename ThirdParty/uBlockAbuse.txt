@@ -313,4 +313,23 @@ tasma.ru##script:inject(abort-on-property-write.js, decodeURIComponent)
 shrink-service.it##script:inject(abort-on-property-read.js, WebAssembly)
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/7wwejy/cryptojackers_defeat_all_countermeasures/
-*$csp=worker-src 'none',domain=estream.to|streamango.com
+*$csp=worker-src 'none',domain=estream.to|streamango.com|vidto.me
+||tulip18.com^$third-party
+
+! https://github.com/uBlockOrigin/uAssets/pull/818#issuecomment-365770341
+djs.sk,mladipodnikatelia.sk##script:inject(abort-on-property-read.js, miner)
+||pr0gram.org^$third-party
+
+! https://forums.lanik.us/viewtopic.php?f=62&t=39991&p=132468#p132468
+||adfreetv.ch^$csp=child-src 'none';frame-src *;worker-src 'none';
+
+! https://github.com/uBlockOrigin/uAssets/issues/1559
+||hq-porns.com^$csp=child-src 'none';frame-src *;worker-src 'none';
+||staticsfs.host^
+
+! https://github.com/uBlockOrigin/uAssets/issues/1563
+||gofile.io^$csp=child-src 'none';frame-src *;worker-src 'none';
+||gofile.io/js/coinGofile.min.js
+
+! https://www.reddit.com/r/uBlockOrigin/comments/7yudc2/coinhive_getting_through/
+howucan.gr##script:inject(abort-on-property-read.js, miner)

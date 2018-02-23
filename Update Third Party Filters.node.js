@@ -13,6 +13,16 @@ const path = require("path");
 const url = require("url");
 
 /**
+ * The request agent.
+ * @const {Agent}
+ */
+const agent = new https.Agent({
+    keepAlive: true,
+    maxSockets: 1,
+    maxFreeSockets: 1,
+});
+
+/**
  * Fetch one filter.
  * @function
  * @param {string} input - The URL of the filter.
@@ -21,11 +31,16 @@ const url = require("url");
  */
 const fetchOne = (input, output) => {
     return new Promise((resolve, reject) => {
-        https.request(url.parse(input), (res) => {
+        let options = url.parse(input);
+        options.agent = agent;
+
+        let req = https.request(options, (res) => {
             res.pipe(output);
             res.on("end", resolve);
             res.on("error", reject);
-        }).on("error", reject).end();
+        });
+        req.on("error", reject);
+        req.end();
     });
 };
 /**

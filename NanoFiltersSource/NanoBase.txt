@@ -120,6 +120,9 @@ sms-receive.net##script:inject(abort-current-inline-script.js, $, AdBlock Plus)
 # https://github.com/NanoAdblocker/NanoFilters/issues/30
 @@||richmond-news.com/gmg/*/js/ads.js$script,first-party
 
+# https://github.com/jspenguin2017/uBlockProtector/issues/862
+raiplay.it##.tagManagerError
+
 # ################################# #
 # #### Pending Synchronization #### #
 # ################################# #

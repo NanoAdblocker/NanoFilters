@@ -8,9 +8,6 @@ uBlock Origin version that Nano Adblocker uses can be found in About section of 
 For suggestions and bugs, please open issue in NanoCore instead:
 https://github.com/NanoAdblocker/NanoCore/issues
 -->
-### Describe the issue (Required)
-
-
 ### URLs where this issue occurs (Required)
 
 
@@ -18,6 +15,9 @@ https://github.com/NanoAdblocker/NanoCore/issues
 
 
 ### Screenshot of console (Required, press `F12` to open the console)
+
+
+### Describe the issue (Optional if obvious)
 
 
 ### Reproduction Steps (Optional if trivial)

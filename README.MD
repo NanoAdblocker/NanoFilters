@@ -2,35 +2,35 @@
 
 Script snippets and filters for Nano Adblocker
 
-These resources are designed for Nano Adblocker and may not always work as 
-expected with uBlock Origin out of the box. See 
-[filter incompatibility](https://github.com/NanoAdblocker/NanoCore/blob/master/Notes/FilterIncompatibility.MD) 
-for more details. 
+These resources are designed for Nano Adblocker and may not always work as
+expected with uBlock Origin out of the box. See
+[filter syntax](https://github.com/NanoAdblocker/NanoCore/blob/master/notes/filter-syntax.MD)
+for more details.
 
-Third party filters were cached on 2018-02-22. Cache will be updated on every 
-release of Nano Adblocker. 
+Third party filters were cached on 2018-02-22. Cache will be updated on every
+release of Nano Adblocker.
 
-Please open an issue if there is something you want us to know. 
+Please open an issue if there is something you want us to know.
 
 ## Filter Policy
 
-If an issue is taken care by a default (regional) filter, then it will not be 
-fixed again in NanoFilters. 
+If an issue is taken care by a default (regional) filter, then it will not be
+fixed again in NanoFilters.
 
-Ads will be removed unless it is non-intrusive self-promotion. 
+Ads will be removed unless it is non-intrusive self-promotion.
 
-Any form of anti-adblock will be removed unless it is for an automatic mining 
-wall or for ads reward system. However, aggressive and intrusive anti-adblock 
-systems will be removed regardless of their goal. 
+Any form of anti-adblock will be removed unless it is for an automatic mining
+wall or for ads reward system. However, aggressive and intrusive anti-adblock
+systems will be removed regardless of their goal.
 
-Timers and other form of annoyance will be removed if we consider appropriate 
-and if possible. 
+Timers and other form of annoyance will be removed if we consider appropriate
+and if possible.
 
-Tracking are to be handled in EasyPrivacy or uAssets. 
+Tracking are to be handled in EasyPrivacy or uAssets.
 
-Third party whitelists must be added to `Nano filters – Whitelist`. 
+Third party whitelists must be added to `Nano filters – Whitelist`.
 
-`Nano filters` and `Nano filters - Whitelist` should keep compatibility with 
-uBlock Origin when possible. 
+`Nano filters` and `Nano filters - Whitelist` should keep compatibility with
+uBlock Origin when possible.
 
-Deprecated features should never be used. 
+Deprecated features should never be used.

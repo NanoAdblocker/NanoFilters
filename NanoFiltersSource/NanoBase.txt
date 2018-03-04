@@ -137,4 +137,6 @@ fmovies.is,fmovies.se,fmovies.to##.alert-warning:has-text(AdBlock)
 # #### Pending Synchronization #### #
 # ################################# #
 
-# Nothing for now
+# https://github.com/jspenguin2017/uBlockProtector/issues/873
+bittube.me##script:inject(addEventListener-defuser.js, visibilitychange)
+@@||bittube.me/*/js/ads2.js$xmlhttprequest,first-party

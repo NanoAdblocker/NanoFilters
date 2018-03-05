@@ -130,17 +130,18 @@ smods.ru###ab-warning
 # https://github.com/NanoAdblocker/NanoFilters/issues/38
 opengapps.org##.advertisement
 
+# https://github.com/jspenguin2017/uBlockProtector/issues/873
+bittube.me##script:inject(addEventListener-defuser.js, visibilitychange)
+
 # https://github.com/jspenguin2017/uBlockProtector/issues/871
 fmovies.is,fmovies.se,fmovies.to##.alert.alert-warning:has-text(AdBlock)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/875
 userscloud.com##.alert.alert-info:has-text(AdBlock)
 
-# https://github.com/jspenguin2017/uBlockProtector/issues/873
-bittube.me##script:inject(addEventListener-defuser.js, visibilitychange)
-
 # ################################# #
 # #### Pending Synchronization #### #
 # ################################# #
 
-# Nothing for now
+# https://github.com/jspenguin2017/uBlockProtector/issues/875
+@@||usercdn.com^$subdocument,domain=userscloud.com

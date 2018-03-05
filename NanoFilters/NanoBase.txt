@@ -47,6 +47,7 @@ sms-receive.net##script:inject(abort-current-inline-script.js, $, AdBlock Plus)
 raiplay.it##.tagManagerError
 smods.ru###ab-warning
 opengapps.org##.advertisement
+bittube.me##script:inject(addEventListener-defuser.js, visibilitychange)
 fmovies.is,fmovies.se,fmovies.to##.alert.alert-warning:has-text(AdBlock)
 userscloud.com##.alert.alert-info:has-text(AdBlock)
-bittube.me##script:inject(addEventListener-defuser.js, visibilitychange)
+@@||usercdn.com^$subdocument,domain=userscloud.com

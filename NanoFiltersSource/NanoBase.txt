@@ -143,9 +143,6 @@ userscloud.com##.alert.alert-info:has-text(AdBlock)
 # #### Pending Synchronization #### #
 # ################################# #
 
-# https://github.com/jspenguin2017/uBlockProtector/issues/875
-@@||usercdn.com^$subdocument,domain=userscloud.com
-
 # https://github.com/jspenguin2017/uBlockProtector/issues/853
 play.anghami.com##.sideBox:has(.adsbox)
 @@||anghamiwebcdn.akamaized.net/ads.$script,domain=play.anghami.com

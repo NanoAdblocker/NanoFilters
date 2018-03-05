@@ -812,10 +812,6 @@ publicdomainq.net##ins.adsbygoogle
 @@||nexus.ensighten.com/*/Bootstrap.js$script,domain=bestbuy.com
 @@||d1af033869koo7.cloudfront.net/*/247px.js$script,domain=bestbuy.com
 
-! https://forums.lanik.us/viewtopic.php?f=64&t=39896&p=132012#p132012
-/adbuddy.$badfilter
-/adbuddy.$domain=~adbuddy.be|~adbuddy.beeldstudio.be
-
 ! https://github.com/jspenguin2017/uBlockProtector/issues/843
 @@||gemius.pl/xlgemius.js$script,domain=jn.pt
 @@||secure.netscope.marktest.pt/netscope-gemius.js$script,domain=jn.pt
@@ -886,3 +882,43 @@ vhacks.org#@#.sponsor-logo
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=40047&p=132892#p132892
 @@||app.gearset.com/assets/modules/analyze/analyze.js
+
+! https://twitter.com/bcrypt/status/967511582057029632
+! Keep until false positive is fixed at https://www.malwaredomains.com/
+||dailydot.com^$badfilter
+
+! https://forums.lanik.us/viewtopic.php?t=30085
+! Remove only if uBlock Origin adds support to redirection/URL cleanup filter rules
+@@||click.uol.com.br^$first-party
+
+! https://forums.lanik.us/viewtopic.php?t=39996
+@@||adnews.com.br^$first-party
+
+! https://github.com/uBlockOrigin/uAssets/issues/1628
+||player.ooyala.com/*/ad-plugin/pulse.min.js$script,redirect=noopjs,domain=lpga.com
+
+! https://github.com/jspenguin2017/uBlockProtector/issues/869
+@@||gemius.pl/xlgemius.js$script,domain=tsf.pt
+@@||secure.netscope.marktest.pt/netscope-gemius.js$script,domain=tsf.pt
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=40095
+@@||analytics.edgekey.net/html5/akamaihtml5-min.js$script,domain=nhk.or.jp
+
+! https://twitter.com/tomshardware/status/968607805786722305
+||cdn.auth0.com/*/analytics.min.js$script,redirect=noopjs,domain=tomsguide.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/1644
+@@||static.urbia.de/*/gujAd.js$script,first-party
+
+! https://forums.lanik.us/viewtopic.php?p=133318#p133318
+@@||api.opinary.com/poll/*$xmlhttprequest,domain=pressekompass.net
+
+! https://github.com/gorhill/uBlock/issues/3571
+@@||ajax.googleapis.com^$script,domain=fmovies.is|fmovies.se|fmovies.to
+@@||akacdn.ru/assets/$script,domain=fmovies.is|fmovies.se|fmovies.to
+@@||cloudflare.com/*/jquery/$script,domain=fmovies.is|fmovies.se|fmovies.to
+
+! https://github.com/uBlockOrigin/uAssets/issues/1671
+@@||onlinevideoconverter.com/webservice$xmlhttprequest,domain=onlinevideoconverter.com
+@@||onlinevideoconverter.com^$popup,domain=onlinevideoconverter.com
+@@about:blank$popup,domain=onlinevideoconverter.com

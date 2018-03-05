@@ -313,7 +313,7 @@ tasma.ru##script:inject(abort-on-property-write.js, decodeURIComponent)
 shrink-service.it##script:inject(abort-on-property-read.js, WebAssembly)
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/7wwejy/cryptojackers_defeat_all_countermeasures/
-*$csp=worker-src 'none',domain=estream.to|streamango.com|vidto.me
+*$csp=worker-src 'none',domain=estream.to|streamango.com|vidoza.net|vidto.me
 ||tulip18.com^$third-party
 
 ! https://github.com/uBlockOrigin/uAssets/pull/818#issuecomment-365770341
@@ -337,3 +337,10 @@ howucan.gr##script:inject(abort-on-property-read.js, miner)
 ! https://github.com/uBlockOrigin/uAssets/issues/1602
 ||thevideo.*^$csp=worker-src 'none';
 ||interestingz.pw^$third-party
+
+! https://github.com/uBlockOrigin/uAssets/issues/1649
+cloudtime.to,nowvideo.sx,wholecloud.net##script:inject(abort-on-property-read.js, WebAssembly)
+
+! https://github.com/hoshsadiq/adblock-nocoin-list/issues/165
+||onlinevideoconverter.com^$csp=child-src 'none';frame-src *;worker-src 'none';
+||freecontent.*./$script

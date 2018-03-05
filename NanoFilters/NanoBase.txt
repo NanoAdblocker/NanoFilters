@@ -22,7 +22,7 @@ camwhores.tv##body > div:matches-css(z-index: 9999999)
 camwhores.tv##body > a[href^="//"]
 libgen.io##script:inject(setTimeout-defuser.js, ad blocking)
 @@||egarwolin.pl/static/js/ads.js$script,first-party
-@@||rapidvideo.com/js/jquery.min.js$script
+@@||rapidvideo.com/js/jquery.min.js$script,first-party
 download.inventivetalent.org##div:has(:scope > div > button.choice-adfly)
 msnbc.com,nbcnews.com,today.com##script:inject(abort-on-property-read.js, stop)
 ||browserleaks.com/js/proxy_ab.js$script

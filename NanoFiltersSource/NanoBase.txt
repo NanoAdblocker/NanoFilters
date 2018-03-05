@@ -53,7 +53,7 @@ libgen.io##script:inject(setTimeout-defuser.js, ad blocking)
 @@||egarwolin.pl/static/js/ads.js$script,first-party
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/781
-@@||rapidvideo.com/js/jquery.min.js$script
+@@||rapidvideo.com/js/jquery.min.js$script,first-party
 # Fallback rule in case they start putting mining code into jQuery files
 # ||rapidvideo.com^$csp=child-src 'none';frame-src *;worker-src 'none';
 

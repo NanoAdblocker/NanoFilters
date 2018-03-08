@@ -139,6 +139,9 @@ fmovies.is,fmovies.se,fmovies.to##.alert.alert-warning:has-text(AdBlock)
 # https://github.com/jspenguin2017/uBlockProtector/issues/875
 userscloud.com##.alert.alert-info:has-text(AdBlock)
 
+# https://github.com/jspenguin2017/uBlockProtector/issues/877
+webinsider.pl##script:inject(setTimeout-defuser.js, AdBlock)
+
 # ################################# #
 # #### Pending Synchronization #### #
 # ################################# #

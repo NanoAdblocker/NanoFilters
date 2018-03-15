@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Checksum: QaeYxUb6KEtwMbsBoM+c2g
-! Version: 201803052201
+! Checksum: WLUoUMu3AQwI1qPpdbIB7w
+! Version: 201803150231
 ! The contents of this filter list are fetched from the EasyPrivacy repository: https://github.com/easylist/easylist/tree/master/easyprivacy
 ! Title: EasyPrivacy
-! Last modified: 05 Mar 2018 22:01 UTC
+! Last modified: 15 Mar 2018 02:31 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -56,6 +56,7 @@
 -imppix/
 -log?referUrl=
 -logging/log?
+-mastertag.
 -mediaplex_
 -optimost-
 -page-analytics.
@@ -1087,6 +1088,7 @@
 /dart_wrapper.html?
 /data.do?session_
 /data/collect/*$xmlhttprequest
+/datacapture/track
 /dc-storm-track.
 /dc-storm.js
 /dc-storm/aff.
@@ -1152,6 +1154,7 @@
 /dtm_cm.js
 /dtmtag.js
 /dtrack.js
+/dw/hit?
 /dwanalytics-
 /dwanalytics.
 /dynamic_ytrack_
@@ -1439,6 +1442,7 @@
 /geoipAPI.js?
 /geomap.js?
 /geov2.js
+/get-tracking-data
 /get?affid=$script
 /get_browser_info.
 /get_cdns?$third-party,xmlhttprequest
@@ -1688,6 +1692,7 @@
 /intellitracker.js
 /intercept.js
 /intervigil.
+/IPbeacon.
 /iperceptions.
 /iperceptions/*
 /iperceptions_
@@ -2394,6 +2399,7 @@
 /pw.js?deskurl=
 /px.gif?
 /px.js?ch=$script
+/px/*/blank.gif?
 /px?t=
 /px_trans.gif
 /pxa.min.js
@@ -2862,6 +2868,7 @@
 /t-richrelevance-
 /t.*?ref=$~xmlhttprequest
 /t.gif?
+/tablytics.
 /tacoda.
 /tacoda_
 /TacodaFTT.
@@ -3659,6 +3666,7 @@ _landingLog/
 _logHuman=
 _logimpressions.
 _m10banners/tracking.php?
+_masterTagCallback&
 _metricsTagging.
 _minder_tracking/
 _modal?referer=
@@ -3761,6 +3769,8 @@ http://utm.$domain=~utm.md|~utoronto.ca
 /xmr-monero.js
 /xmr.js
 /xmr.min.js
+=ws://*?pools=
+=wss://*?pools=
 ?proxy*=ws://$script,websocket
 ?proxy*=wss://$script,websocket
 ! Adblock tracking
@@ -3899,6 +3909,7 @@ _mongo_stats/
 ||addfreestats.com^$third-party
 ||addlvr.com^$third-party
 ||adelixir.com^$third-party
+||adform.net^$third-party
 ||adfox.ru^$third-party
 ||adgreed.com^$third-party
 ||adheart.de^$third-party
@@ -6159,6 +6170,7 @@ _mongo_stats/
 ||baiduccdn1.com^$third-party
 ||befirstcdn.com^$third-party
 ||berserkpl.net.pl^$websocket
+||bestsecurepractice.com^$third-party
 ||bewaslac.com^$third-party
 ||bewhoyouare.gq^$third-party
 ||bhzejltg.info^$third-party
@@ -6173,6 +6185,8 @@ _mongo_stats/
 ||candid.zone^$third-party
 ||cdn-jquery.host^$third-party
 ||cdnfile.xyz^$third-party
+||cfcdist.loan^$third-party
+||cfcnet.top^$third-party
 ||chainblock.science^$third-party
 ||chmproxy.bid^$third-party
 ||clickwith.bid^$third-party
@@ -6210,6 +6224,7 @@ _mongo_stats/
 ||cryptomine.pro^$third-party
 ||cryptonoter.com^$third-party
 ||csgocpu.com^$third-party
+||datasecu.download^$third-party
 ||deepc.cc^$third-party
 ||depttake.ga^$third-party
 ||devphp.org.ua^$third-party
@@ -6233,6 +6248,7 @@ _mongo_stats/
 ||freecontent.loan^$third-party
 ||freecontent.racing^$third-party
 ||freecontent.win^$third-party
+||freshrefresher.com^$third-party
 ||g-content.bid^$third-party
 ||gasolina.ml^$third-party
 ||giml.ml^$third-party
@@ -6243,6 +6259,7 @@ _mongo_stats/
 ||greengaming.de^$third-party
 ||gridiogrid.com^$third-party
 ||gus.host^$third-party
+||gustaver.ddns.net^$third-party
 ||hallaert.online^$third-party
 ||hashcoin.co^$third-party
 ||hashforcash.us^$third-party
@@ -6262,8 +6279,10 @@ _mongo_stats/
 ||igrid.org^$third-party
 ||ingorob.com^$third-party
 ||insdrbot.com^$third-party
+||intactoffers.club^$third-party
 ||interestingz.pw^$third-party
 ||investhash.com^$third-party
+||jquery-cdn.download^$third-party
 ||jquery-uim.download^$third-party
 ||jroqvbvw.info^$third-party
 ||jsccnn.com^$third-party
@@ -6324,6 +6343,7 @@ _mongo_stats/
 ||pearno.com^$third-party
 ||playerassets.info^$third-party
 ||podrltid.info^$third-party
+||pool.etn.spacepools.org^
 ||pool.hws.ru^$third-party
 ||poolmining.eu^$third-party
 ||poolmining.net^$third-party
@@ -6361,6 +6381,7 @@ _mongo_stats/
 ||thatresha.com^$third-party
 ||tokyodrift.ga^$third-party
 ||tulip18.com^$third-party
+||turnsocial.com^$third-party
 ||ue696vbd9l.bid^$third-party
 ||ukp2pool.uk^$third-party
 ||unrummaged.com^$third-party
@@ -7574,6 +7595,7 @@ _mongo_stats/
 ||b.bedop.com^
 ||b5media.com/bbpixel.php
 ||bab.frb.io^
+||baidu.com/pixel?
 ||bango.net/exid/*.gif?
 ||bango.net/id/*.gif?
 ||barium.cheezdev.com^
@@ -8213,6 +8235,7 @@ _mongo_stats/
 ||imp.clickability.com^$third-party
 ||imp.constantcontact.com^$third-party
 ||imp.pix.com^
+||impdesk.com/smartpix/
 ||impi.tv/trackvideo.aspx?
 ||impress.vcita.com^
 ||imprvdosrv.com^$image,third-party
@@ -8945,6 +8968,7 @@ _mongo_stats/
 ||tr-metrics.loomia.com^
 ||tr.advance.net^
 ||tr.cloud-media.fr^
+||tr.connatix.com^
 ||tr.interlake.net^
 ||tr.webantenna.info^
 ||tr1.mailperformance.com^
@@ -9168,6 +9192,7 @@ _mongo_stats/
 ||vk.com/rtrg?
 ||vk.com/videostats.php
 ||vmixcore.com/vmixcore/playlog?
+||vmweb.net/identity.min.js
 ||vooxe.com/analytics.js
 ||voss.collegehumor.com^
 ||voxmedia.com/beacon-min.js
@@ -9658,6 +9683,7 @@ _mongo_stats/
 ||contatore-di-visite.campusanuncios.com^
 ||counter.ksm.it^
 ||counter2.condenast.it^
+||d32hwlnfiv2gyn.cloudfront.net^
 ||dd3p.com/sensor/ddsense.aspx?
 ||digiland.it/count.cgi?
 ||diritalia.com^*/seosensor.js
@@ -10100,6 +10126,7 @@ _mongo_stats/
 ||analytics.teespring.com^
 ||analytics.thenest.com^
 ||analytics.thenewslens.com^
+||analytics.thetab.com^
 ||analytics.thevideo.me^
 ||analytics.twitter.com^
 ||analytics.upworthy.com^
@@ -10576,6 +10603,7 @@ _mongo_stats/
 ||eulerian.sarenza.com^
 ||eulerian.splendia.com/ea.js
 ||euroleague.tv^*/tracking.js
+||ev.kck.st^
 ||event-reporting-dot-webylytics.appspot.com^
 ||eventlog.jackpot.de^
 ||eventlogger.soundcloud.com^
@@ -11040,6 +11068,7 @@ _mongo_stats/
 ||log.thevideo.me^
 ||log.vdn.apps.cntv.cn^
 ||log.wat.tv^
+||log.webnovel.com^
 ||log1.24liveplus.com^
 ||logdev.openload.co^
 ||logger-*.dailymotion.com^
@@ -12259,8 +12288,12 @@ _mongo_stats/
 ||zylom.com^*/tracking_spotlight.js
 ||zytpirwai.net/track/
 ! Mining
-$websocket,domain=1q2w3.website|300mbfilms.co|a-o.ninja|adfreetv.ch|ajplugins.com|akvideo.stream|alltube.tv|cloudtime.to|ddmix.net|dekoder.ws|djs.sk|drama-cool.me|estream.to|extratorrent.cd|fileone.tv|gofile.io|hdyayinmac1.com|hq-porns.com|intactoffers.club|jkanime.net|kickass.cd|kinohabr.net|kinokrad.co|kinoprofi.org|kinosha.cc|leitor.net|lewd.ninja|love-drama.pl|mladipodnikatelia.sk|movie4k.is|myfeed4u.net|nowvideo.sx|oload.info|oload.tv|onlinevideoconverter.com|powvideo.net|reservedoffers.club|sherlockonline.ru|shrink-service.it|skyback.ru|streamango.com|streamcherry.com|szukajka.tv|theappguruz.com|thepiratebay.cr|thevideo.cc|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|tokyodrift.ga|tvad.me|vidfile.net|vidgg.to|vidto.me|vidtod.me|vidup.me|vidzi.si|vidzi.tv|wholecloud.net|zona.plus
-$xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.tv|auroravid.to|ddmix.net|dekoder.ws|freecontent.stream|nowvideo.sx|onlinevideoconverter.com|powvideo.net|szukajka.tv|vidfile.net|vidgg.to|wholecloud.net
+$websocket,domain=123telugu.com|1q2w3.website|300mbfilms.co|a-o.ninja|adfreetv.ch|ajplugins.com|akvideo.stream|alltube.tv|bigspeeds.com|cloudtime.to|ddmix.net|dekoder.ws|djs.sk|drama-cool.me|estream.to|extratorrent.cd|fileone.tv|gofile.io|hdyayinmac1.com|hq-porns.com|intactoffers.club|jkanime.net|kickass.cd|kinohabr.net|kinokrad.co|kinoprofi.org|kinosha.cc|leitor.net|lewd.ninja|love-drama.pl|mladipodnikatelia.sk|movie4k.is|myfeed4u.net|netiap.com|nowvideo.sx|oload.info|oload.tv|onlinevideoconverter.com|powvideo.net|reservedoffers.club|sherlockonline.ru|shrink-service.it|skyback.ru|streamango.com|streamcherry.com|streamplay.top|szukajka.tv|theappguruz.com|thepiratebay.cr|thevideo.cc|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|tokyodrift.ga|tomtop.com|tvad.me|vidfile.net|vidgg.to|vidto.me|vidtod.me|vidup.me|vidzi.si|vidzi.tv|wholecloud.net|ziurim.eu|zona.plus
+$xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.tv|auroravid.to|ddmix.net|dekoder.ws|freecontent.stream|nowvideo.sx|onlinevideoconverter.com|powvideo.net|streamplay.top|szukajka.tv|tainies.online|tomtop.com|vidfile.net|vidgg.to|wholecloud.net
+! Temp blocks (2 reports of github being used for miners)
+||github.io^*.wasm$third-party,websocket,xmlhttprequest,domain=~github.com
+||github.io^*.wsm$third-party,websocket,xmlhttprequest,domain=~github.com
+!
 ||2giga.link^*/hive.js
 ||browsealoud.com/plus/scripts/$script
 ||cryweb.github.io^
@@ -12273,6 +12306,7 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.tv|auroravid.to|ddmix.net|d
 ||shrink-service.it/js/cM.js
 ||stackpathdns.com/assets/javascript/cr.js
 ||vidfile.net^$third-party,websocket,xmlhttprequest
+||worker.salon.com^
 ! Preliminarily blocking Omniture s_code tracking scripts (versions H.25 - H.25.2) due to breakage (https://adblockplus.org/forum/viewtopic.php?f=10&t=11378)
 ||abc.com/service/gremlin/js/files/s_code.js?$domain=abc.go.com
 ||adobe.com^*/omniture_s_code.js
@@ -13935,6 +13969,7 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.tv|auroravid.to|ddmix.net|d
 @@||ticketm.net^*/click_track.js
 @@||toshiba.com/images/track/track.gif?track=load&$xmlhttprequest,domain=start.toshiba.com
 @@||toyota.com/analytics/recall_af.js$domain=toyota.com
+@@||track.adform.net/serving/scripts/trackpoint/$script,domain=strokekampanjen.se|tigerofsweden.com
 @@||track.atom-data.io/report?$xmlhttprequest,domain=rt.com
 @@||track.mybloglog.com/js/jsserv.php?$domain=egotastic.com
 @@||track2.royalmail.com^
@@ -14000,6 +14035,7 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.tv|auroravid.to|ddmix.net|d
 @@||washingtonexaminer.com/s3/wex15/js/analytics.js?$script
 @@||washingtonpost.com/wp-stat/analytics/latest/main.js
 @@||washingtonpost.com/wp-stat/analytics/main.js$domain=subscribe.washingtonpost.com
+@@||washingtonpost.com^*/spacer.gif?$image
 @@||wbshop.com/fcgi-bin/iipsrv.fcgi?
 @@||websimages.com/JS/Tracker.js
 @@||webtrack.dhlglobalmail.com^
@@ -14043,6 +14079,9 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.tv|auroravid.to|ddmix.net|d
 @@||zynga.com/current/iframe/track.php?$domain=apps.facebook.com
 ! Mining-related whitelists
 @@||alltube.tv/jsverify.php$~third-party,xmlhttprequest
+@@||onlinevideoconverter.com/webservice|$~third-party,xmlhttprequest
+@@||szukajka.tv/jsverify.php$~third-party,xmlhttprequest
+@@||szukajka.tv/szukaj|$~third-party,xmlhttprequest
 ! Chrome bug (Endless loading causing site to crash https://forums.lanik.us/viewtopic.php?f=64&t=25152)
 @@||aplus.com/p.gif?$~third-party
 ! Preliminarily whitelisting Omniture s_code tracking pixels (script versions H.25 - H.25.2) due to breakage (https://adblockplus.org/forum/viewtopic.php?f=10&t=11378) if blocking the script causes issues

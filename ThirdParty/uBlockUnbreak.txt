@@ -409,7 +409,11 @@ kinopoisk.ru###image:style(opacity: 1 !important;)
 
 ! This unbreaks video playback on sfgate.com and other sites
 ! To counter `ensighten.com` in EasyPrivacy
-@@||nexus.ensighten.com/hearst/news/Bootstrap.js$script,domain=ctpost.com|houstonchronicle.com|mysanantonio.com|newstimes.com|seattlepi.com|sfchronicle.com|sfgate.com|timesunion.com
+@@||d29xw9s9x32j3w.cloudfront.net/players/library/*$domain=seattlepi.com|sfgate.com
+@@||ensighten.com/hearst/news/Bootstrap.js$script,domain=ctpost.com|houstonchronicle.com|mysanantonio.com|newstimes.com|seattlepi.com|sfchronicle.com|sfgate.com|timesunion.com
+@@||googleapis.com/js/sdkloader/ima3.js$script,domain=seattlepi.com|sfgate.com
+@@||spotxcdn.com/integration/directsdk/*$script,domain=seattlepi.com|sfgate.com
+@@||spotx.tv/directsdk/*$script,domain=seattlepi.com|sfgate.com
 
 ! https://github.com/gorhill/uBlock/issues/1114
 @@||healthline.com/resources/base/js/util/ga-custom-vars.js$script,domain=healthline.com
@@ -667,9 +671,9 @@ orange.fr###o_carrepub:style(height: 1px; margin: 0; min-height: auto; visibilit
 ! https://github.com/uBlockOrigin/uAssets/issues/791
 @@||global.fncstatic.com/static/*/VisitorAPI.js$script,domain=video.foxbusiness.com
 
-! https://github.com/uBlockOrigin/uAssets/issues/821
+! issues /821 / 1703
 @@||ntn24america.com/*ads$script,first-party
-@@||freegeoip.net/json/*$xmlhttprequest,domain=ntn24america.com
+@@||freegeoip.net/json/*$xmlhttprequest,domain=ntn24america.com|familyallergy.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/820
 @@||google-analytics.com/analytics.js$script,domain=flipagram.com
@@ -834,10 +838,6 @@ publicdomainq.net##ins.adsbygoogle
 ! https://forums.lanik.us/viewtopic.php?f=64&t=39932
 @@||cdnjs.cloudflare.com/ajax/libs/crypto-js/*/rollups/$script
 
-! Unbreak art19.com
-! To counter `art19.com` in Peter Lowe's list
-||art19.com^$badfilter
-
 ! https://github.com/jspenguin2017/uBlockProtector/issues/848
 @@||gemius.pl/xlgemius.js$script,domain=dn.pt
 @@||marktest.pt/netscope-gemius.js$script,domain=dn.pt
@@ -917,8 +917,54 @@ vhacks.org#@#.sponsor-logo
 @@||ajax.googleapis.com^$script,domain=fmovies.is|fmovies.se|fmovies.to
 @@||akacdn.ru/assets/$script,domain=fmovies.is|fmovies.se|fmovies.to
 @@||cloudflare.com/*/jquery/$script,domain=fmovies.is|fmovies.se|fmovies.to
+@@||akacdn.ru/assets/min/public/$stylesheet,domain=fmovies.is|fmovies.se|fmovies.to
+@@||cdnjs.cloudflare.com/$stylesheet,domain=fmovies.is|fmovies.se|fmovies.to
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1671
 @@||onlinevideoconverter.com/webservice$xmlhttprequest,domain=onlinevideoconverter.com
 @@||onlinevideoconverter.com^$popup,domain=onlinevideoconverter.com
 @@about:blank$popup,domain=onlinevideoconverter.com
+
+! https://github.com/jspenguin2017/uBlockProtector/issues/875
+@@||usercdn.com^$subdocument,domain=userscloud.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/1678
+! To counter Peter Lowe's `qualtrics.com`
+@@||qualtrics.com^$first-party
+
+! https://github.com/uBlockOrigin/uAssets/issues/1682
+*/content/libs/comscore/comscore.min.js$script,~third-party,redirect=noopjs
+
+! https://www.reddit.com/r/uBlockOrigin/comments/8371j7/ublockorigin_blocking_the_submit_button_on_my_web/
+@@||cdn.mxpnl.com/libs/mixpanel-*.min.js$script,domain=demandforce.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/1685
+arduino.cc#@#.addthis_toolbox
+
+! https://forums.lanik.us/viewtopic.php?p=133691#p133691
+@@||streamplay.to^*/manifest.mpd$xmlhttprequest
+@@||streamplay.to^*.mp4$xmlhttprequest
+@@||streamplay.to^*.m4s$xmlhttprequest
+@@||google.com/recaptcha/$subdocument,domain=streamplay.top
+
+! https://www.reddit.com/r/uBlockOrigin/comments/83odfj/ublock_breaking_sites_which_lists_should_i/
+||frog.wix.com/da-client$image,redirect=1x1-transparent.gif,domain=deviantart.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/1704#issuecomment-372543282
+@@||bostonglobe.com/js/*/chartbeat.js,dist/*$script,first-party
+
+! https://forums.lanik.us/viewtopic.php?p=133754#p133754
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js?$script,domain=dugout.com
+@@||dugout.com/boxsets/js/videojs.ads.js?$script,first-party
+@@||dugout.com/boxsets/js/prebid_$script,first-party
+
+! https://twitter.com/MartinLarner/status/973570736530083840
+! This fixes navigation bar not responding to click events
+||cdn.assets.cyclingnews.com/*/js-static/require.js$script,first-party
+
+! https://www.reddit.com/r/uBlockOrigin/comments/849wq4/local_papers_website_changed_their_comments_cant/
+||viafoura.co^$badfilter
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=40135
+/netstat.$badfilter
+/netstat.$domain=~netstat.cloud

@@ -142,6 +142,12 @@ userscloud.com##.alert.alert-info:has-text(AdBlock)
 # https://github.com/jspenguin2017/uBlockProtector/issues/877
 webinsider.pl##script:inject(setTimeout-defuser.js, AdBlock)
 
+# Missed ads, test: http://solidity.readthedocs.io/en/v0.4.21/
+readthedocs.io##.ethical-sidebar:has(a[href*="advertising"])
+
+# Missed ads, test: https://www.reddit.com/
+reddit.com##.recommended-link
+
 # ################################# #
 # #### Pending Synchronization #### #
 # ################################# #

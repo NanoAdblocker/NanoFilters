@@ -53,4 +53,5 @@ userscloud.com##.alert.alert-info:has-text(AdBlock)
 webinsider.pl##script:inject(setTimeout-defuser.js, AdBlock)
 readthedocs.io##.ethical-sidebar:has(a[href*="advertising"])
 reddit.com##.recommended-link
+@@||geoip.nekudo.com^$first-party
 clipconverter.cc##script:inject(abort-on-property-read.js, T0P5e)

@@ -148,6 +148,9 @@ readthedocs.io##.ethical-sidebar:has(a[href*="advertising"])
 # Missed ads, test: https://www.reddit.com/
 reddit.com##.recommended-link
 
+# False positive, test: http://geoip.nekudo.com/
+@@||geoip.nekudo.com^$first-party
+
 # ################################# #
 # #### Pending Synchronization #### #
 # ################################# #

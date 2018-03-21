@@ -33,7 +33,7 @@ removed:
 - Hostile anti-copy
 - Hostile anti-select
 - Hostile anti-right-click
-- Hostile anti-unfocus (switching to another tab)
+- Hostile anti-unfocus (like switching to another tab or window)
 - Forced like (a post on social media)
 - Intrusive donation message
 - Cookie wall

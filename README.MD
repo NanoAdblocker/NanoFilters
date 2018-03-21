@@ -17,20 +17,39 @@ Please open an issue if there is something you want us to know.
 If an issue is taken care by a default (regional) filter, then it will not be
 fixed again in NanoFilters.
 
-Ads will be removed unless it is non-intrusive self-promotion.
+Ads will be removed unless:
+- It is non-intrusive, and
+- It only promote first party products (for example, the Android app for your
+  website)
 
-Any form of anti-adblock will be removed unless it is for an automatic mining
-wall or for ads reward system. However, aggressive and intrusive anti-adblock
-systems will be removed regardless of their goal.
+Any form of anti-adblock will be removed unless:
+- It is non-intrusive, and
+- It is for an automatic mining or an ads reward system (the user gets
+  something after watching ads)
 
-Timers and other form of annoyance will be removed if we consider appropriate
-and if possible.
+If we consider appropriate and if possible, these forms of annoyance may be
+removed:
+- Hostile timer
+- Hostile anti-copy
+- Hostile anti-select
+- Hostile anti-right-click
+- Hostile anti-unfocus (switching to another tab)
+- Forced like (a post on social media)
+- Intrusive donation message
+- Cookie wall
+- Fake pay wall (a pay wall is fake if it does not work when JavaScript is
+  disabled in browser settings)
 
-Tracking are to be handled in EasyPrivacy or uAssets.
+Cookie notices are to be handled in Cookiemonster; tracking scripts are to be
+handled in EasyPrivacy or uAssets.
+
+## Filter Quality Guideline
+
+Filter rules should be reasonably fine-grained and efficient.
+
+Deprecated features should never be used.
 
 Third party whitelists must be added to `Nano filters – Whitelist`.
 
 `Nano filters` and `Nano filters - Whitelist` should keep compatibility with
 uBlock Origin when possible.
-
-Deprecated features should never be used.

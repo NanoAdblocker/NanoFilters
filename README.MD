@@ -24,7 +24,7 @@ Ads will be removed unless:
 
 Any form of anti-adblock will be removed unless:
 - It is non-intrusive, and
-- It is for an automatic mining or an ads reward system (the user gets
+- It is for an automatic mining wall or an ads reward system (the user gets
   something after watching ads)
 
 If we consider appropriate and if possible, these forms of annoyance may be

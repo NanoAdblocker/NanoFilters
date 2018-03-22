@@ -17,7 +17,7 @@ Please open an issue if there is something you want us to know.
 If an issue is taken care by a default (regional) filter, then it will not be
 fixed again in NanoFilters.
 
-Ads will be removed unless:
+Ads and ads timer will be removed unless:
 - It is non-intrusive, and
 - It only promote first party products (for example, the Android app for your
   website)
@@ -29,7 +29,6 @@ Any form of anti-adblock will be removed unless:
 
 If we consider appropriate and if possible, these forms of annoyance may be
 removed:
-- Hostile timer
 - Hostile anti-copy
 - Hostile anti-select
 - Hostile anti-right-click

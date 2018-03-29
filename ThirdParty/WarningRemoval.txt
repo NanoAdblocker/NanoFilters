@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: Ru35ZFytKFe69qC/EWRJLA
-! Version: 201803181530
+! Checksum: s43VsDb3CVNs/+hh0Os4Wg
+! Version: 201803292050
 ! Title: Adblock Warning Removal List
-! Last modified: 18 Mar 2018 15:30 UTC
+! Last modified: 29 Mar 2018 20:50 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -217,7 +217,6 @@ ot-boutique.fr#@##publicite
 iwin.com#@##sponsorText
 fairytailmx.com#@##sponsored-ad
 forum.virtualdjing.com#@#.adFrame
-abcbourse.com#@#.adsbox
 dealerdunet.fr#@#.text_ads
 comptoir-info.com#@#.textad
 !
@@ -276,16 +275,20 @@ print-post.com##.addbl
 24video.xxx##.adt
 benfilm.net##.alert-block
 rufilmtv.org##.attention
+mel.fm##.b-ad-space__placeholder
 ixbt.com##.b-blockadblock
 d3.ru##.b-promo__placeholder
 cs-amba.ru##.banka
 electric-house.ru##.blok_forum > div[style]
 audio-hi-fi.ru,electro-sila.ru##.blok_new > div[style]
+tsn.ua##.c-aside-embed
 kinoafisha.info,tvcook.ru##.cat
 autonews.ru,rbc.ru,rbcplus.ru##.checkad_info
 rusopen.com##.classblsi.addshr
 www.qrz.ru##.content_row > div[class][-abp-properties="background*z-index"]:not([style])
 smotrisport.online,smotrisport.tv##.dont-add-our-site-pls
+goha.ru#@#.goha_ads
+goha.ru#@#.goha_ads_acceptable
 themoviebay.ru##.is-danger.notification
 go.mail.ru##.js-adb-msg
 space.utema.ru##.main-content-padding > div[class]:not([itemprop])
@@ -305,10 +308,11 @@ fanfics.me##.red.nodata
 playunturned.ru##.side_left > center
 playunturned.ru##.side_right > center
 objavlenija.respublika.cz##.sweet-alert,.sweet-overlay
-кинокрад.net,xn--80aikhbrhr.net##.warning-adblock-box
+xn--80aikhbrhr.net,кинокрад.net##.warning-adblock-box
 /api/scripts/mainjs?token$script,domain=liveresult.ru
-/forum/docs/requests.js$script,domain=dugtor-deer.pw|nnm-club.lib|nnm-club.me|nnm-club.name|nnmclub.tv|nnm-club.tv|nnmclub.to
+/forum/docs/requests.js$script,domain=dugtor-deer.pw|nnm-club.lib|nnm-club.me|nnm-club.name|nnm-club.tv|nnmclub.to|nnmclub.tv
 /fuckadblock.js$domain=ace-stream.tv
+@@||goha.ru/app/video/adblock.teaser.js|$script,domain=goha.ru
 @@||sports.ru^*/adfox.$xmlhttprequest
 mycrib.ru,piggy-bank.online##[data-type="anti-abp"]
 pic4you.ru,pic5you.ru##body > #bb
@@ -317,6 +321,7 @@ it-enginer.ru##body > #modal[style*="blur"]
 swaego.ru##body > .special-message-wrapper
 ukr.net##body > .yellow-die
 fightnews.info##body > blockquote
+olegon.ru##body > div:not([id]):not([class])[style^="color"][style*="position: fixed; width: 99%"]
 factorio.su##body > div[class][style*="background"][style*="display: block"]
 gdekluet.ru##body > div[class^="stop-block"]
 glav.su##body > div[id]:not([class])[style*="background"][style*="display: block"]
@@ -328,6 +333,7 @@ bychico.net,dyrik.ru,ecosounds.net,fainaidea.com,in-drive.ru,obozrevatel.com,okn
 dugtor.ru##body > noindex
 lostfilm.tv##div[class^="alarm"]
 gismeteo.by,gismeteo.ru##div[class^="stopblock"]
+finfront.ru##div[class^="swal2"]
 sport.rbc.ru##div[data-name="adb_warn_sport"]
 eset-key.ru,politonline.ru,showmehow.ru##div[data-type="anti-abp"]
 savevideo.me##div[id^="ads_notice_"]
@@ -338,6 +344,7 @@ d3.ru##section[data-uid="ad"]
 d3.ru##section[data-uid="extraAd"]
 ph4.ru##table[width][height="90"][style]
 bigpuzzle.ru##td[valign="top"][width="200px"][height="600"] > div[style]
+www.qrz.ru#?#.content_row > div[class]:-abp-has(> .inner > a[href="/help/adblock/"])
 ||adscat.ru^$third-party
 ||animeteatr.ru/a-detector/
 ||avito.ru^*/some-pretty-script.js

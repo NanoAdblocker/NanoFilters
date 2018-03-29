@@ -138,6 +138,18 @@ csgoconfigs.com##script:inject(abort-current-inline-script.js, m, CH.Anonymous)
 ||77.162.125.199^$third-party
 ||ad-miner.com^$third-party
 ||adminer.com^$third-party
+||aeros01.tk^$third-party
+||aeros02.tk^$third-party
+||aeros03.tk^$third-party
+||aeros04.tk^$third-party
+||aeros05.tk^$third-party
+||aeros06.tk^$third-party
+||aeros07.tk^$third-party
+||aeros08.tk^$third-party
+||aeros09.tk^$third-party
+||aeros10.tk^$third-party
+||aeros11.tk^$third-party
+||aeros12.tk^$third-party
 ||afminer.com^$third-party
 ||aleinvest.xyz^$third-party
 ||alemoney.xyz^$third-party
@@ -193,9 +205,6 @@ csgoconfigs.com##script:inject(abort-current-inline-script.js, m, CH.Anonymous)
 ! https://github.com/uBlockOrigin/uAssets/issues/1106
 ||theappguruz.com^$csp=child-src 'none';frame-src 'self' *;worker-src 'none';
 ||theappguruz.com/vendor/composer/installed.js$script
-
-! https://github.com/hoshsadiq/adblock-nocoin-list/issues/80
-powvideo.net##script:inject(abort-on-property-read.js, miner)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1116
 ||d3ahinqqx1dy5v.cloudfront.net^
@@ -259,7 +268,7 @@ vidzi.tv##script:inject(abort-on-property-write.js, decodeURIComponent)
 ||zlx.com.br/assets/playermon.js$script
 
 ! https://github.com/hoshsadiq/adblock-nocoin-list/issues/101
-*$csp=worker-src 'none',domain=a-o.ninja|alltube.tv|lewd.ninja|love-drama.pl|tokyodrift.ga|vidfile.net
+*$csp=worker-src 'none',domain=a-o.ninja|alltube.tv|centrum-dramy.pl|hentai-online.pl|lewd.ninja|love-drama.pl|tokyodrift.ga|vidfile.net
 ||vidfile.net/*.wasm
 /angular8.js
 ||tubetitties.com/worker.js
@@ -355,3 +364,16 @@ cloudtime.to,nowvideo.sx,tomadivx.org,wholecloud.net##script:inject(abort-on-pro
 ! https://github.com/uBlockOrigin/uAssets/issues/1701
 ||bigspeeds.com^$csp=worker-src 'none';
 ||gustaver.ddns.net^$third-party
+
+! https://forums.lanik.us/viewtopic.php?f=90&t=40270
+nxload.com##script:inject(abort-on-property-read.js, miner)
+||cryptaloot.pro^$third-party
+
+! https://github.com/uBlockOrigin/uAssets/issues/1782
+sleeptimer.org##script:inject(abort-on-property-read.js, WebAssembly)
+
+! https://github.com/easylist/easylist/commit/8ef593
+*$csp=worker-src 'none',domain=kinokongo.cc
+
+! https://github.com/uBlockOrigin/uAssets/issues/1826
+*$csp=worker-src 'none',domain=povwideo.net|powvideo.net

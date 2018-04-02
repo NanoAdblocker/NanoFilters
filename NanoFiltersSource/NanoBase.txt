@@ -157,6 +157,9 @@ vizer.tv##.open.adsByVizer.vizerNewBox
 # https://github.com/jspenguin2017/uBlockProtector/issues/895
 multifilemirror.com##.noticeContainer:has-text(Ad-blocking)
 
+# https://github.com/NanoAdblocker/NanoDefender/issues/36
+lequipe.fr##script:inject(abort-on-property-write.js, adback)
+
 # ################################# #
 # #### Pending Synchronization #### #
 # ################################# #

@@ -187,18 +187,22 @@ nano-vvvvid-it.js application/javascript
 	// Based on KAADIVVVV
 	// License: https://github.com/Robotex/KAADIVVVV/blob/master/LICENSE
 	function defuse() {
-		var re = /var a=function.*};/;
-		var data = 'var a=function(){vvvvid.advPlayer=null,$(c.playerControlsClass).removeClass("ppad"),e()};';
-		vvvvid.cab5 = function(a, b) {
-			this.isAdBlockActive = false;
-			if (b) {
-				b(false);
+		var startAdv = function(f, b, e) {
+			var d = this;
+			var c = d.playlistItem.toJSON();
+			if ( ( 'vod_mode' in c ) && ( c.vod_mode & 1 ) === 0 && !vvvvid.user.svodActive() ) {
+				vvvvid.showGenericError('Il video selezionato �� disponibile solo in modalit�� abbonamento.', function() {
+					vvvvid.router.mainView.resetApplication();
+				});
+				return;
 			}
+			if ( !f ) {
+				d.destroyPlayers();
+			}
+			e();
 		};
-		var func = String(vvvvid.models.PlayerObj.prototype.startAdv);
-		if (re.test(func)) {
-			eval('window[mnsJHnyT] = vvvvid.models.PlayerObj.prototype.startAdv = ' + func.replace(re, data));
-		}
+		vvvvid.models.PlayerObj.prototype.startAdv = startAdv;
+		window[mnsJHnyT] = vvvvid.models.PlayerObj.prototype.startAdv;
 	}
 	if ( typeof vvvvid === 'object' ) {
 		defuse();

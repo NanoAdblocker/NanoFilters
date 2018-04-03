@@ -191,7 +191,7 @@ nano-vvvvid-it.js application/javascript
 			var d = this;
 			var c = d.playlistItem.toJSON();
 			if ( ( 'vod_mode' in c ) && ( c.vod_mode & 1 ) === 0 && !vvvvid.user.svodActive() ) {
-				vvvvid.showGenericError('Il video selezionato �� disponibile solo in modalit�� abbonamento.', function() {
+				vvvvid.showGenericError('Il video selezionato e disponibile solo in modalita abbonamento.', function() {
 					vvvvid.router.mainView.resetApplication();
 				});
 				return;

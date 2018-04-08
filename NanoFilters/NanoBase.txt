@@ -53,7 +53,8 @@ userscloud.com##.alert.alert-info:has-text(AdBlock)
 webinsider.pl##script:inject(setTimeout-defuser.js, AdBlock)
 readthedocs.io##.ethical-sidebar:has(a[href*="advertising"])
 reddit.com##.recommended-link
-@@||geoip.nekudo.com^$first-party
+||geoip.nekudo.com^$badfilter
+||geoip.nekudo.com^$third-party
 vizer.tv##.open.adsByVizer.vizerNewBox
 multifilemirror.com##.noticeContainer:has-text(Ad-blocking)
 lequipe.fr##script:inject(abort-on-property-write.js, adback)

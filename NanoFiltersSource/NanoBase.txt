@@ -164,13 +164,13 @@ lequipe.fr##script:inject(abort-on-property-write.js, adback)
 # https://github.com/jspenguin2017/uBlockProtector/issues/903
 masrawy.com###AdBlockerNotif
 
+# Missed ads, test: https://btcmanager.com/the-fiery-asic-debate-engulfs-the-bitcoin-and-monero-communities/
+btcmanager.com##.wpbanners-banner
+btcmanager.com##.advert
+
 # ################################# #
 # #### Pending Synchronization #### #
 # ################################# #
 
 # https://github.com/NanoAdblocker/NanoCore/issues/41
 clipconverter.cc##script:inject(abort-on-property-read.js, T0P5e)
-
-# Missed ads, test: https://btcmanager.com/the-fiery-asic-debate-engulfs-the-bitcoin-and-monero-communities/
-btcmanager.com##.wpbanners-banner
-btcmanager.com##.advert

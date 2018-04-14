@@ -235,7 +235,9 @@ marketwatch.com#@#.advertisement
 @@||google-analytics.com/ga.js$domain=one.co.il
 
 # https://github.com/gorhill/uBlock/issues/1297
-@@||taboola.com^$first-party
+||taboola.com^$badfilter
+||taboola.com^$third-party
+||api.taboola.com^
 
 # https://github.com/gorhill/uBlock/issues/1296
 @@||odb.outbrain.com/crossdomain.xml$object-subrequest
@@ -363,9 +365,6 @@ flightradar24.com#@#.twitter-feed
 
 ! https://github.com/uBlockOrigin/uAssets/issues/148
 @@||media2.intoday.in/aajtak/$script,domain=aajtak.intoday.in|indiatoday.intoday.in
-
-! https://twitter.com/SathyaBhat/status/785727665508487168
-@@||styletagassets.com/vendor/angular-google-analytics.min.js$script,domain=styletag.com
 
 ! https://twitter.com/moritzlost/status/789155425405075456
 @@||app.focalmark.com/bower_components/angulartics-google-analytics/dist/angulartics-ga.min.js$script,first-party
@@ -512,6 +511,9 @@ kinopoisk.ru###image:style(opacity: 1 !important;)
 wetteronline.de#@#[style="width: 100%;"]
 
 ! https://github.com/uBlockOrigin/uAssets/issues/478
+! https://github.com/uBlockOrigin/uAssets/issues/1906
+/google-analytics.$badfilter
+/google-analytics.$third-party
 -google-analytics.$badfilter
 -google-analytics.$third-party
 -google-analytics/$badfilter
@@ -1014,3 +1016,15 @@ onhax.me#@#div p + div[id][class]
 
 ! https://github.com/jspenguin2017/uBlockProtector/issues/884
 @@||gemius.pl/gplayer.js$script,domain=play.tv3.lt
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=40410
+thefreedictionary.com#@#a > img[src^="//img.tfd.com/"]
+
+! https://github.com/uBlockOrigin/uAssets/issues/1907
+@@||ws-na.assoc-amazon.com$image,domain=4tests.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/1954
+@@||ncjrs.gov/fsrscripts/*$first-party
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=40285
+||stg.nytimes.com^$badfilter

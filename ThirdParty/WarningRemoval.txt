@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: nf6pmqZ2krWbt43GArrDtw
-! Version: 201804141530
+! Checksum: R4TWZg3qAfj2oWTVlRtgqg
+! Version: 201804200200
 ! Title: Adblock Warning Removal List
-! Last modified: 14 Apr 2018 15:30 UTC
+! Last modified: 20 Apr 2018 02:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -131,6 +131,7 @@ shadbase.com##img[alt="adblock"]
 @@||trackr.fr/sites/all/themes/contrib/touch/js/miroirs/adwordstracking.js
 @@||universfreebox.com/js/advertisement.js
 @@||uplea.com/js/advertisement.js
+@@||peimg.fr/js/ads.js$script,domain=pubeco.fr
 @@||wamiz.com/css/ads.css
 @@||zagaz.com/img/blogads.css
 !
@@ -231,6 +232,7 @@ usgang.ch###rectangle-wrapper
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_romanian.txt ***
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_russian.txt ***
 delfi.ee###ab--notification-ribbon
+patrioty.org.ua###ad_pu_modal
 webdesign-master.ru###adbd
 vesti-ukr.com###adblockpopup
 happy-hack.ru###admitad-cookie-check-popup
@@ -303,6 +305,7 @@ music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##.page-root > .n
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##.page-root > .notify *
 alexfilm.cc##.panel-primary
 darkteam.net##.pls_rmv
+animedub.ru##.poverh
 pythonworld.ru##.pythonworld-contributor
 fanfics.me##.red.nodata
 101.ru##.showMessageAdBlock
@@ -316,6 +319,7 @@ xn--80aikhbrhr.net,кинокрад.net##.warning-adblock-box
 @@||goha.ru/app/video/adblock.teaser.js|$script,domain=goha.ru
 @@||sports.ru^*/adfox.$xmlhttprequest
 mycrib.ru,piggy-bank.online##[data-type="anti-abp"]
+lr-club.com##a[href="https://adblockplus.org/ru/faq_basics#disable"]
 pic4you.ru,pic5you.ru##body > #bb
 forum.vip-cxema.org##body > #document_modal.modal,#some_ad_block_key_popup
 it-enginer.ru##body > #modal[style*="blur"]

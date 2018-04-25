@@ -2199,9 +2199,9 @@ mcloud.to###jwa
 9anime.*##script:inject(abort-current-inline-script.js, parseInt, tabunder)
 9anime.*##script:inject(abort-current-inline-script.js, String.fromCharCode, /\/\*[0-9a-f]{40}\*\//)
 9anime.is##script:inject(setTimeout-defuser.js, o(), 1)
-9anime.is##script:inject(setTimeout-defuser.js, (), 5000)
 @@||9anime.*^$generichide
 @@||ajax.googleapis.com/ajax/libs/jquery/*$script,domain=9anime.is
+9anime.*###sidebar > .text-center.crop.widget:style(height: 5px !important)
 9anime.*##.myass
 9anime.*##.pa
 9anime.*###playerad
@@ -2219,7 +2219,7 @@ watchcartoonsonline.*##header
 watchcartoonsonline.*##[id*="ScriptRoot"]
 
 ! https://github.com/uBlockOrigin/uAssets/issues/645
-computerbild.de##a[data-downloader-url$="_CB-DL-Manager.exe"]
+computerbild.de##.startdownload > a[data-is-manager-usable="1"]
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/6vsahb/streamcloudeu_doesnt_work_with_ubo/
 streamcloud.eu##.info_notice
@@ -2592,7 +2592,7 @@ postimg.org##^script:has-text(676574456c656d656e747342795461674e616d65)
 101greatgoals.com,ancient-origins.net,biology-online.org,calcalist.co.il,globes.co.il,mako.co.il,reshet.tv,roadracerunner.com,trifind.com,walla.co.il,x17online.com,yad2.co.il,ynet.co.il,yocore.com##script:inject(abort-on-property-write.js, upManager)
 ! https://github.com/uBlockOrigin/uAssets/issues/628
 ! https://www.reddit.com/r/uBlockOrigin/comments/6yqyni/help_persistent_trending_articles_ads_on_website/
-allpar.com,antonymsfor.com,cheezburger.com,colourlovers.com,daily-stuff.com,dietlast.com,downsub.com,ebaumsworld.com,emathhelp.net,genfb.com,getinmybelly.com,grammar.net,igvnews.co.uk,jspuzzles.com,kshowonline.com,nnettle.com,smartchoiceshealthyliving.com,spellcheck.net,spellweb.com,sportspickle.com,tbc.tetrisfb.com,techowiz.com,tetrisfriends.com,the4thofficial.net,thesaurus.net,tworeddots.com,usherald.com,virtualjerusalem.com##script:inject(abort-current-inline-script.js, btoa, upManager)
+allpar.com,antonymsfor.com,cheezburger.com,colourlovers.com,daily-stuff.com,dietlast.com,downsub.com,ebaumsworld.com,emathhelp.net,genfb.com,grammar.net,igvnews.co.uk,jspuzzles.com,kshowonline.com,nnettle.com,smartchoiceshealthyliving.com,spellcheck.net,spellweb.com,sportspickle.com,tbc.tetrisfb.com,techowiz.com,tetrisfriends.com,the4thofficial.net,thesaurus.net,tworeddots.com,usherald.com,virtualjerusalem.com##script:inject(abort-current-inline-script.js, btoa, upManager)
 ! https://github.com/uBlockOrigin/uAssets/issues/776
 ! https://forums.lanik.us/viewtopic.php?f=62&t=38744
 ! https://github.com/uBlockOrigin/uAssets/issues/810
@@ -2601,7 +2601,8 @@ allpar.com,antonymsfor.com,cheezburger.com,colourlovers.com,daily-stuff.com,diet
 ! https://forums.lanik.us/viewtopic.php?f=62&t=40168
 ! https://forums.lanik.us/viewtopic.php?f=62&t=40237&p=133935#p133934
 ! https://github.com/uBlockOrigin/uAssets/issues/1856
-abandonedspaces.com,activistpost.com,allthetests.com,asheepnomore.net,blacklistednews.com,blog-rct.com,bobshideout.com,brain-sharper.com,broadwayworld.com,clashdaily.com,daclips.in,dailygalaxy.com,debka.com,eternallifestyle.com,ffxivguild.com,freebeacon.com,fullmatchesandshows.com,geekycamel.com,gorillavid.in,grammarist.com,greeningz.com,healthyfocus.org,hiphopearly.com,hiphoplately.com,humansarefree.com,hyperactivz.com,jerusalemonline.com,kiwireport.com,miniplay.com,monagiza.com,moviepredators.com,movpod.in,netzwelt.de,ninjajournalist.com,nysun.com,parentztalk.com,pensandpatron.com,popmatters.com,powerofpositivity.com,presidentmommy.com,readarsenal.com,readliverpoolfc.com,readmng.com,seneweb.com,soundreview.org,spellchecker.net,spiele-umsonst.de,sportsretriever.com,talkwithstranger.com,textsfromlastnight.com,theamericanmirror.com,thecelticblog.com,thehornnews.com,timesofisrael.com,topbestalternatives.com,toptenz.net,travelfuntu.com,vidmax.com,walterfootball.com,wnd.com,worldation.com,youtubeonrepeat.com##script:inject(abort-current-inline-script.js, atob, TextDecoder)
+! https://github.com/uBlockOrigin/uAssets/issues/2072
+abandonedspaces.com,activistpost.com,allthetests.com,almasdarnews.com,asheepnomore.net,blacklistednews.com,blog-rct.com,bobshideout.com,brain-sharper.com,broadwayworld.com,clashdaily.com,daclips.in,dailygalaxy.com,debka.com,eternallifestyle.com,ffxivguild.com,freebeacon.com,fullmatchesandshows.com,geekycamel.com,getinmybelly.com,gorillavid.in,grammarist.com,greeningz.com,healthyfocus.org,hiphopearly.com,hiphoplately.com,humansarefree.com,hyperactivz.com,jerusalemonline.com,kiwireport.com,miniplay.com,monagiza.com,moviepredators.com,movpod.in,netzwelt.de,ninjajournalist.com,nysun.com,parentztalk.com,pensandpatron.com,popmatters.com,powerofpositivity.com,presidentmommy.com,readarsenal.com,readliverpoolfc.com,readmng.com,seneweb.com,soundreview.org,spellchecker.net,spiele-umsonst.de,sportsretriever.com,talkwithstranger.com,textsfromlastnight.com,theamericanmirror.com,thecelticblog.com,thehornnews.com,timesofisrael.com,topbestalternatives.com,toptenz.net,travelfuntu.com,vidmax.com,walterfootball.com,wnd.com,worldation.com,youtubeonrepeat.com##script:inject(abort-current-inline-script.js, atob, TextDecoder)
 convert-me.com,dailygalaxy.com,diffen.com,eurweb.com,footyroom.com,izzygames.com,mathwarehouse.com,meta-calculator.com,meta-chart.com,netzwelt.de,nowtheendbegins.com,pocketnow.com,spiele-umsonst.de##script:inject(abort-on-property-read.js, TextDecoder)
 ||akrazappi.com^
 ||gordipucha.com^
@@ -2767,6 +2768,7 @@ brasil247.com##script:inject(bab-defuser.js)
 
 ! https://forums.lanik.us/viewtopic.php?f=62&t=39085
 sendit.cloud##script:inject(window.open-defuser.js)
+sendit.cloud##script:inject(abort-on-property-write.js, Fingerprint2)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/858
 freebytecoin.cf##script:inject(abort-current-inline-script.js, miner, isAdBlockActive)
@@ -4687,6 +4689,7 @@ vipmarathi.com##a[href^="http://adgup.com/Google.php"]
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1317
 rockfile.co##script:inject(abort-on-property-read.js, _0x6b25)
+rockfile.co##script:inject(abort-on-property-read.js, _0x6b20)
 rockfile.co##script:inject(addEventListener-defuser.js, p5, onpropertychange)
 ||rockfile.co/cdn-cgi/apps/head/$script
 
@@ -6328,10 +6331,12 @@ adsurl.co##script:inject(nowebrtc.js)
 ! https://forums.lanik.us/viewtopic.php?f=62&t=40357
 @@*$generichide,domain=boards.net|freeforums.net|proboards.com
 
-! https://forums.lanik.us/viewtopic.php?p=134592#p134592
+! https://github.com/uBlockOrigin/uAssets/issues/2081
 eporner.eu##.vjs-inplayer-container
 eporner.eu##script:inject(popads-dummy.js)
 eporner.eu##script:inject(window.open-defuser.js)
+eporner.com##script:inject(addEventListener-defuser.js, click, trigger)
+eporner.com##script:inject(abort-on-property-read.js, ExoLoader)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1855
 ! https://forums.lanik.us/viewtopic.php?p=134829#p134829
@@ -6885,9 +6890,6 @@ gnula.nu##script:inject(abort-current-inline-script.js, parseInt, tabunder)
 ||best-cdn.pl^
 ||netflare.info^
 
-! https://github.com/uBlockOrigin/uAssets/issues/2072
-almasdarnews.com##script:inject(abort-current-inline-script.js, atob, TextDecoder)
-
 ! https://github.com/uBlockOrigin/uAssets/issues/2076
 overthumbs.com##script:inject(abort-on-property-read.js, raConf)
 overthumbs.com##.ntvAds
@@ -6898,3 +6900,27 @@ xbabe.com##.bnnrs-player
 xbabe.com##.bnnrs-aside
 xbabe.com##.bnnr
 xbabe.com##.bnnrs-bottom
+
+! https://github.com/reek/anti-adblock-killer/issues/4002
+top9space.com##script:inject(abort-on-property-read.js, app_vars.force_disable_adblock)
+top9space.com##script:inject(nano-setInterval-booster.js)
+
+! https://www.camp-firefox.de/forum/viewtopic.php?p=1081244#p1081244
+||akamaihd.net/vod/*$media,redirect=noopmp3-0.1s,domain=7tv.de
+
+! https://github.com/uBlockOrigin/uAssets/issues/2082
+satcesc.com##script:inject(abort-current-inline-script.js, anOptions)
+satcesc.com##script:inject(abort-current-inline-script.js, document.oncontextmenu)
+
+! https://www.reddit.com/r/uBlockOrigin/comments/8eu975/embedded_twitter_posts_being_cropped/
+@@||deadspin.com^$generichide
+
+! https://github.com/uBlockOrigin/uAssets/issues/2085
+pornoreino.com##script:inject(abort-on-property-read.js, ExoLoader)
+pornoreino.com##.banner
+
+! https://forums.lanik.us/viewtopic.php?p=135735#p135735
+atresplayer.com##script:inject(setTimeout-defuser.js, _creatBait)
+
+! https://github.com/uBlockOrigin/uAssets/issues/2088
+animedigitalnetwork.fr##script:inject(set-constant.js, adblocked, false)

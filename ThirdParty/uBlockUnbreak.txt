@@ -487,11 +487,6 @@ kinopoisk.ru###image:style(opacity: 1 !important;)
 ! https://github.com/uBlockOrigin/uAssets/issues/405
 @@||ba.com/cms/global/scripts/applications/tracking/visualsciences.js
 
-! https://forums.lanik.us/viewtopic.php?p=119446#p119446
-! https://github.com/gorhill/uBlock/issues/3272
-! https://github.com/jspenguin2017/uBlockProtector/issues/896
-@@|blob:$domain=gamesradar.com|nydailynews.com|tomsguide.com|tomshardware.com|twitch.tv
-
 ! https://twitter.com/valentindu38001/status/870008589657620484
 @@||cmcm.com/news-republic/js/googleanalytics.js$script
 
@@ -503,9 +498,6 @@ kinopoisk.ru###image:style(opacity: 1 !important;)
 
 ! https://forums.lanik.us/viewtopic.php?p=119959#p119959
 ||news.de/images/$domain=news.de,badfilter
-
-! https://github.com/uBlockOrigin/uAssets/issues/484
-@@|blob:$domain=investopedia.com
 
 ! https://github.com/gorhill/uBlock/issues/2749
 wetteronline.de#@#[style="width: 100%;"]
@@ -526,9 +518,6 @@ wetteronline.de#@#[style="width: 100%;"]
 ! https://twitter.com/Meeea/status/884362097890426881
 ! To counter EasyList France's `||dailymotion.com/cdn/$script`
 @@||dailymotion.com/cdn/manifest/video/$script
-
-! https://github.com/uBlockOrigin/uAssets/issues/503
-@@|blob:$domain=vidlox.tv
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/6mios7/not_allowing_some_sites_to_load_up
 ||lexus.com/lexus-share/js/tracking_omn/s_code.js$script,important,first-party,redirect=noopjs
@@ -1019,9 +1008,6 @@ thefreedictionary.com#@#a > img[src^="//img.tfd.com/"]
 ! https://github.com/uBlockOrigin/uAssets/issues/1954
 @@||ncjrs.gov/fsrscripts/*$first-party
 
-! https://forums.lanik.us/viewtopic.php?f=64&t=40285
-||stg.nytimes.com^$badfilter
-
 ! https://github.com/uBlockOrigin/uAssets/issues/1968#issuecomment-381358444
 @@||cdn.boomtrain.com/analyticstrain/snopes/analyticstrain.min.js$script,domain=snopes.com
 @@||boomtrain.com/identify/resolve$xmlhttprequest,domain=snopes.com
@@ -1043,7 +1029,7 @@ oxforddictionaries.com##.banbox-mini
 @@||cityam.com/assets/js/dfp/dfp.js$script,first-party
 
 ! unbreak sites broken by EasyList uponit filter
-crackberry.com,imore.com,windowscentral.com#@#[style*="background-image:"]
-
-! https://github.com/uBlockOrigin/uAssets/issues/2073
-@@||vidlox.me/embed-$csp,first-party
+@@||ytimg.com^$image,domain=pocketnow.com
+101greatgoals.com,colourlovers.com,crackberry.com,destructoid.com,getinmybelly.com,imore.com,omgcheckitout.com,pocketnow.com,sportspickle.com,vrheads.com,windowscentral.com#@#[style*="background-image:"]
+destructoid.com#@#[src*="base64"]
+destructoid.com#@#[src*="data:"]

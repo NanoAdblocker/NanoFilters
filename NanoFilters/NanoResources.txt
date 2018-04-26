@@ -134,26 +134,11 @@ nano-define-readonly-property.js application/javascript
 	}
 })();
 
-nano-noopvast-2.0 text/xml
+nano-tiny-noopvast-2.0 text/xml
 <VAST version="2.0"></VAST>
 
-nano-noopvast-3.0 text/xml
+nano-tiny-noopvast-3.0 text/xml
 <VAST version="3.0"></VAST>
-
-nano-make-bait-element.js application/javascript
-(function() {
-	var identifier = '{{1}}';
-	var element = document.createElement('div');
-	if ( identifier.charAt(0) === '#' ) {
-		element.id = identifier.substring(1);
-	} else if ( identifier.charAt(0) === '.' ) {
-		element.className = identifier.substring(1);
-	} else {
-		return;
-	}
-	element.style.display = 'none';
-	document.documentElement.appendChild(element);
-})();
 
 nano-click-element-onready.js application/javascript
 (function() {
@@ -172,6 +157,21 @@ nano-click-element-onready.js application/javascript
 	} else {
 		addEventListener('DOMContentLoaded', click);
 	}
+})();
+
+nano-make-bait-element.js application/javascript
+(function() {
+	var identifier = '{{1}}';
+	var element = document.createElement('div');
+	if ( identifier.charAt(0) === '#' ) {
+		element.id = identifier.substring(1);
+	} else if ( identifier.charAt(0) === '.' ) {
+		element.className = identifier.substring(1);
+	} else {
+		return;
+	}
+	element.style.display = 'none';
+	document.documentElement.appendChild(element);
 })();
 
 nano-remove-element-onready.js application/javascript

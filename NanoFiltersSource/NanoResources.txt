@@ -5,7 +5,9 @@
 # overridden, and can be done purposefully when intervention is required
 
 
+# ##########
 # DEPRECATED in favor of noopmp4-1s, can be removed at any time
+# ##########
 nano-noopmp4-1s video/mp4;base64
 AAAAHGZ0eXBNNFYgAAACAGlzb21pc28yYXZjMQAAAAhmcmVlAAAGF21kYXTeBAAAbGliZmFhYyAxLjI4
 AABCAJMgBDIARwAAArEGBf//rdxF6b3m2Ui3lizYINkj7u94MjY0IC0gY29yZSAxNDIgcjIgOTU2Yzhk
@@ -72,7 +74,9 @@ ZHRhAAAAWm1ldGEAAAAAAAAAIWhkbHIAAAAAAAAAAG1kaXJhcHBsAAAAAAAAAAAAAAAALWlsc3QAAAAl
 qXRvbwAAAB1kYXRhAAAAAQAAAABMYXZmNTUuMzMuMTAw
 
 
+# ##########
 # DEPRECATED in favor of set-constant.js, can be removed at any time
+# ##########
 # Define a read-only property, 2 required arguments.
 # name - The name chain of the property, use "." to separate levels.
 # nanoSafeValue - The value of the property, for security, it can only
@@ -146,32 +150,12 @@ nano-define-readonly-property.js application/javascript
 })();
 
 
-nano-noopvast-2.0 text/xml
+nano-tiny-noopvast-2.0 text/xml
 <VAST version="2.0"></VAST>
 
 
-nano-noopvast-3.0 text/xml
+nano-tiny-noopvast-3.0 text/xml
 <VAST version="3.0"></VAST>
-
-
-# Insert an invisible elements onto the page, can be used to dodge baits,
-# 1 required argument.
-# identifier - An identifier, either an id or a class name. Like "#id" or
-# ".class"
-nano-make-bait-element.js application/javascript
-(function() {
-	var identifier = '{{1}}';
-	var element = document.createElement('div');
-	if ( identifier.charAt(0) === '#' ) {
-		element.id = identifier.substring(1);
-	} else if ( identifier.charAt(0) === '.' ) {
-		element.className = identifier.substring(1);
-	} else {
-		return;
-	}
-	element.style.display = 'none';
-	document.documentElement.appendChild(element);
-})();
 
 
 # Click elements when the documents gets ready, 1 required argument.
@@ -197,6 +181,32 @@ nano-click-element-onready.js application/javascript
 })();
 
 
+# ####
+# BETA resource, this resource can change without warning
+# ####
+# Insert an invisible elements onto the page, can be used to dodge baits,
+# 1 required argument.
+# identifier - An identifier, either an id or a class name. Like "#id" or
+# ".class"
+nano-make-bait-element.js application/javascript
+(function() {
+	var identifier = '{{1}}';
+	var element = document.createElement('div');
+	if ( identifier.charAt(0) === '#' ) {
+		element.id = identifier.substring(1);
+	} else if ( identifier.charAt(0) === '.' ) {
+		element.className = identifier.substring(1);
+	} else {
+		return;
+	}
+	element.style.display = 'none';
+	document.documentElement.appendChild(element);
+})();
+
+
+# ####
+# BETA resource, this resource can change without warning
+# ####
 # Remove elements when the documents gets ready, 1 required argument.
 # selector - The selector for elements to remove, must be a plain CSS selector,
 # pseudo-selectors are not supported.
@@ -218,6 +228,11 @@ nano-remove-element-onready.js application/javascript
 		addEventListener('DOMContentLoaded', remove);
 	}
 })();
+
+
+# ########################### #
+# #### Specific Resouces #### #
+# ########################### #
 
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/390

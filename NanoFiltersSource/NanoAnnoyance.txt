@@ -9,7 +9,7 @@
 microsoft.com,live.com,windows.com###epb
 
 # https://github.com/uBlockOrigin/uAssets/issues/881
-hardware.info##script:inject(nano-click-element-onready.js, .cookiecontainer > .cookie > button#decision)
+hardware.info##script:inject(nano-click-element-onready.js, .cookiecontainer > .cookie > button#decision[name="accept"])
 
 # https://github.com/uBlockOrigin/uAssets/issues/1275
 marktplaats.nl##script:inject(nano-click-element-onready.js, form#track-accept > input[type="submit"])

@@ -172,6 +172,7 @@ nano-make-bait-element.js application/javascript
 	document.documentElement.appendChild(element);
 })();
 
+
 # Click elements when the documents gets ready, 1 required argument.
 # selector - The selector for elements to remove, must be a plain CSS selector,
 # pseudo-selectors are not supported.
@@ -194,6 +195,7 @@ nano-click-element-onready.js application/javascript
 	}
 })();
 
+
 # Remove elements when the documents gets ready, 1 required argument.
 # selector - The selector for elements to remove, must be a plain CSS selector,
 # pseudo-selectors are not supported.
@@ -213,16 +215,6 @@ nano-remove-element-onready.js application/javascript
 		remove();
 	} else {
 		addEventListener('DOMContentLoaded', remove);
-	}
-})();
-
-
-# https://github.com/uBlockOrigin/uAssets/issues/881
-nano-hardware-info.js application/javascript
-(function() {
-	if ( !document.cookie.includes('cookiebar=1') ) {
-		document.cookie = 'cookiebar=1; expires=Fri, 31 Dec 2099 23:59:59 GMT; path=/;';
-		location.reload();
 	}
 })();
 
@@ -276,21 +268,3 @@ nano-camwhores-tv.js application/javascript
 		addEventListener('DOMContentLoaded', handler);
 	}
 })();
-
-
-# https://github.com/uBlockOrigin/uAssets/issues/1275
-nano-marktplaats-nl.js application/javascript
-(function() {
-	var handler = function() {
-		var form = document.querySelector('form#track-accept');
-		if ( form ) {
-			form.submit();
-		}
-	};
-	if ( document.readyState === 'interactive' || document.readyState === 'complete' ) {
-		handler();
-	} else {
-		addEventListener('DOMContentLoaded', handler);
-	}
-})();
-

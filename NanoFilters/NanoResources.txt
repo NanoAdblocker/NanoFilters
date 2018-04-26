@@ -193,14 +193,6 @@ nano-remove-element-onready.js application/javascript
 	}
 })();
 
-nano-hardware-info.js application/javascript
-(function() {
-	if ( !document.cookie.includes('cookiebar=1') ) {
-		document.cookie = 'cookiebar=1; expires=Fri, 31 Dec 2099 23:59:59 GMT; path=/;';
-		location.reload();
-	}
-})();
-
 nano-vvvvid-it.js application/javascript
 (function() {
 	// Based on KAADIVVVV
@@ -242,21 +234,6 @@ nano-camwhores-tv.js application/javascript
 		}
 	};
    	if ( document.readyState === 'interactive' || document.readyState === 'complete' ) {
-		handler();
-	} else {
-		addEventListener('DOMContentLoaded', handler);
-	}
-})();
-
-nano-marktplaats-nl.js application/javascript
-(function() {
-	var handler = function() {
-		var form = document.querySelector('form#track-accept');
-		if ( form ) {
-			form.submit();
-		}
-	};
-	if ( document.readyState === 'interactive' || document.readyState === 'complete' ) {
 		handler();
 	} else {
 		addEventListener('DOMContentLoaded', handler);

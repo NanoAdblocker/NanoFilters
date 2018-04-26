@@ -140,7 +140,7 @@ nano-tiny-noopvast-2.0 text/xml
 nano-tiny-noopvast-3.0 text/xml
 <VAST version="3.0"></VAST>
 
-nano-click-element-onready.js application/javascript
+nano-click-elements-onready.js application/javascript
 (function() {
 	var selector = '{{1}}';
 	if ( selector === '' || selector === '{{1}}' ) {
@@ -159,22 +159,7 @@ nano-click-element-onready.js application/javascript
 	}
 })();
 
-nano-make-bait-element.js application/javascript
-(function() {
-	var identifier = '{{1}}';
-	var element = document.createElement('div');
-	if ( identifier.charAt(0) === '#' ) {
-		element.id = identifier.substring(1);
-	} else if ( identifier.charAt(0) === '.' ) {
-		element.className = identifier.substring(1);
-	} else {
-		return;
-	}
-	element.style.display = 'none';
-	document.documentElement.appendChild(element);
-})();
-
-nano-remove-element-onready.js application/javascript
+nano-remove-elements-onready.js application/javascript
 (function() {
 	var selector = '{{1}}';
 	if ( selector === '' || selector === '{{1}}' ) {
@@ -191,6 +176,21 @@ nano-remove-element-onready.js application/javascript
 	} else {
 		addEventListener('DOMContentLoaded', remove);
 	}
+})();
+
+nano-make-bait-element.js application/javascript
+(function() {
+	var identifier = '{{1}}';
+	var element = document.createElement('div');
+	if ( identifier.charAt(0) === '#' ) {
+		element.id = identifier.substring(1);
+	} else if ( identifier.charAt(0) === '.' ) {
+		element.className = identifier.substring(1);
+	} else {
+		return;
+	}
+	element.style.display = 'none';
+	document.documentElement.appendChild(element);
 })();
 
 nano-vvvvid-it.js application/javascript

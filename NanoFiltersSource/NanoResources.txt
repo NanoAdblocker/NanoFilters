@@ -161,7 +161,7 @@ nano-tiny-noopvast-3.0 text/xml
 # Click elements when the documents gets ready, 1 required argument.
 # selector - The selector for elements to remove, must be a plain CSS selector,
 # pseudo-selectors are not supported.
-nano-click-element-onready.js application/javascript
+nano-click-elements-onready.js application/javascript
 (function() {
 	var selector = '{{1}}';
 	if ( selector === '' || selector === '{{1}}' ) {
@@ -177,6 +177,32 @@ nano-click-element-onready.js application/javascript
 		click();
 	} else {
 		addEventListener('DOMContentLoaded', click);
+	}
+})();
+
+
+# ####
+# BETA resource, this resource can change without warning
+# ####
+# Remove elements when the documents gets ready, 1 required argument.
+# selector - The selector for elements to remove, must be a plain CSS selector,
+# pseudo-selectors are not supported.
+nano-remove-elements-onready.js application/javascript
+(function() {
+	var selector = '{{1}}';
+	if ( selector === '' || selector === '{{1}}' ) {
+		return;
+	}
+	var remove = function() {
+		var elements = document.querySelectorAll(selector);
+		for ( var element of elements ) {
+			element.remove();
+		}
+	};
+	if ( document.readyState === 'interactive' || document.readyState === 'complete' ) {
+		remove();
+	} else {
+		addEventListener('DOMContentLoaded', remove);
 	}
 })();
 
@@ -201,32 +227,6 @@ nano-make-bait-element.js application/javascript
 	}
 	element.style.display = 'none';
 	document.documentElement.appendChild(element);
-})();
-
-
-# ####
-# BETA resource, this resource can change without warning
-# ####
-# Remove elements when the documents gets ready, 1 required argument.
-# selector - The selector for elements to remove, must be a plain CSS selector,
-# pseudo-selectors are not supported.
-nano-remove-element-onready.js application/javascript
-(function() {
-	var selector = '{{1}}';
-	if ( selector === '' || selector === '{{1}}' ) {
-		return;
-	}
-	var remove = function() {
-		var elements = document.querySelectorAll(selector);
-		for ( var element of elements ) {
-			element.remove();
-		}
-	};
-	if ( document.readyState === 'interactive' || document.readyState === 'complete' ) {
-		remove();
-	} else {
-		addEventListener('DOMContentLoaded', remove);
-	}
 })();
 
 

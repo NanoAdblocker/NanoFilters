@@ -5,7 +5,7 @@
 # overridden, and can be done purposefully when intervention is required
 
 
-# Not ready for remove, some internal code depends on it ($mp4 option)
+# Deprecated, can be removed at any time
 nano-noopmp4-1s video/mp4;base64
 AAAAHGZ0eXBNNFYgAAACAGlzb21pc28yYXZjMQAAAAhmcmVlAAAGF21kYXTeBAAAbGliZmFhYyAxLjI4
 AABCAJMgBDIARwAAArEGBf//rdxF6b3m2Ui3lizYINkj7u94MjY0IC0gY29yZSAxNDIgcjIgOTU2Yzhk
@@ -172,8 +172,29 @@ nano-make-bait-element.js application/javascript
 	document.documentElement.appendChild(element);
 })();
 
+# Click elements when the documents gets ready, 1 required argument.
+# selector - The selector for elements to remove, must be a plain CSS selector,
+# pseudo-selectors are not supported.
+nano-click-element-onready.js application/javascript
+(function() {
+	var selector = '{{1}}';
+	if ( selector === '' || selector === '{{1}}' ) {
+		return;
+	}
+	var click = function() {
+		var elements = document.querySelectorAll(selector);
+		for ( var element of elements ) {
+			element.click();
+		}
+	};
+	if ( document.readyState === 'interactive' || document.readyState === 'complete' ) {
+		click();
+	} else {
+		addEventListener('DOMContentLoaded', click);
+	}
+})();
 
-# Remove an element when the documents gets ready, 1 required argument.
+# Remove elements when the documents gets ready, 1 required argument.
 # selector - The selector for elements to remove, must be a plain CSS selector,
 # pseudo-selectors are not supported.
 nano-remove-element-onready.js application/javascript
@@ -184,7 +205,7 @@ nano-remove-element-onready.js application/javascript
 	}
 	var remove = function() {
 		var elements = document.querySelectorAll(selector);
-		for ( let element of elements ) {
+		for ( var element of elements ) {
 			element.remove();
 		}
 	};

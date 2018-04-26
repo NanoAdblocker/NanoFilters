@@ -155,6 +155,25 @@ nano-make-bait-element.js application/javascript
 	document.documentElement.appendChild(element);
 })();
 
+nano-click-element-onready.js application/javascript
+(function() {
+	var selector = '{{1}}';
+	if ( selector === '' || selector === '{{1}}' ) {
+		return;
+	}
+	var click = function() {
+		var elements = document.querySelectorAll(selector);
+		for ( var element of elements ) {
+			element.click();
+		}
+	};
+	if ( document.readyState === 'interactive' || document.readyState === 'complete' ) {
+		click();
+	} else {
+		addEventListener('DOMContentLoaded', click);
+	}
+})();
+
 nano-remove-element-onready.js application/javascript
 (function() {
 	var selector = '{{1}}';
@@ -163,7 +182,7 @@ nano-remove-element-onready.js application/javascript
 	}
 	var remove = function() {
 		var elements = document.querySelectorAll(selector);
-		for ( let element of elements ) {
+		for ( var element of elements ) {
 			element.remove();
 		}
 	};

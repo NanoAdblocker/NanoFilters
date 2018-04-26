@@ -5,7 +5,7 @@
 # overridden, and can be done purposefully when intervention is required
 
 
-# Deprecated, can be removed at any time
+# DEPRECATED in favor of noopmp4-1s, can be removed at any time
 nano-noopmp4-1s video/mp4;base64
 AAAAHGZ0eXBNNFYgAAACAGlzb21pc28yYXZjMQAAAAhmcmVlAAAGF21kYXTeBAAAbGliZmFhYyAxLjI4
 AABCAJMgBDIARwAAArEGBf//rdxF6b3m2Ui3lizYINkj7u94MjY0IC0gY29yZSAxNDIgcjIgOTU2Yzhk
@@ -72,14 +72,7 @@ ZHRhAAAAWm1ldGEAAAAAAAAAIWhkbHIAAAAAAAAAAG1kaXJhcHBsAAAAAAAAAAAAAAAALWlsc3QAAAAl
 qXRvbwAAAB1kYXRhAAAAAQAAAABMYXZmNTUuMzMuMTAw
 
 
-nano-noopvast-2.0 text/xml
-<VAST version="2.0"></VAST>
-
-
-nano-noopvast-3.0 text/xml
-<VAST version="3.0"></VAST>
-
-
+# DEPRECATED in favor of set-constant.js, can be removed at any time
 # Define a read-only property, 2 required arguments.
 # name - The name chain of the property, use "." to separate levels.
 # nanoSafeValue - The value of the property, for security, it can only
@@ -151,6 +144,14 @@ nano-define-readonly-property.js application/javascript
 		default:		return;
 	}
 })();
+
+
+nano-noopvast-2.0 text/xml
+<VAST version="2.0"></VAST>
+
+
+nano-noopvast-3.0 text/xml
+<VAST version="3.0"></VAST>
 
 
 # Insert an invisible elements onto the page, can be used to dodge baits,

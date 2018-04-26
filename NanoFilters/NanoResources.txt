@@ -66,12 +66,6 @@ AATYAAAE9AAABRAAAAUjAAAFPwAABVIAAAVuAAAFgQAABZ0AAAWwAAAFzAAABegAAAX7AAAGFwAAAGJ1
 ZHRhAAAAWm1ldGEAAAAAAAAAIWhkbHIAAAAAAAAAAG1kaXJhcHBsAAAAAAAAAAAAAAAALWlsc3QAAAAl
 qXRvbwAAAB1kYXRhAAAAAQAAAABMYXZmNTUuMzMuMTAw
 
-nano-noopvast-2.0 text/xml
-<VAST version="2.0"></VAST>
-
-nano-noopvast-3.0 text/xml
-<VAST version="3.0"></VAST>
-
 nano-define-readonly-property.js application/javascript
 (function() {
 	// Based on uAssets
@@ -139,6 +133,12 @@ nano-define-readonly-property.js application/javascript
 		default:		return;
 	}
 })();
+
+nano-noopvast-2.0 text/xml
+<VAST version="2.0"></VAST>
+
+nano-noopvast-3.0 text/xml
+<VAST version="3.0"></VAST>
 
 nano-make-bait-element.js application/javascript
 (function() {

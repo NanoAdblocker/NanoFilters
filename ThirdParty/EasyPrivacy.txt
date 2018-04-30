@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Checksum: B/Y41xAPnFGVr2kMWHLl6A
-! Version: 201804252241
+! Checksum: g4TcRr+Sg6i9EGgWeK5O4Q
+! Version: 201804302151
 ! The contents of this filter list are fetched from the EasyPrivacy repository: https://github.com/easylist/easylist/tree/master/easyprivacy
 ! Title: EasyPrivacy
-! Last modified: 25 Apr 2018 22:41 UTC
+! Last modified: 30 Apr 2018 21:51 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -446,6 +446,7 @@
 /amazon-affiliate-
 /amdhfp/a.do?param$image
 /amdhfp/t.do?id$image
+/amp-omniture-iframe?
 /amp/amp-analytics-
 /amp_ping/*
 /amplitude-*.js$script
@@ -2447,6 +2448,7 @@
 /pxa.min.js
 /pxgif/*
 /pxl.cgi?
+/pxl.gif?
 /pxlctl.
 /pxls/*
 /pxlspamanalyst-
@@ -3774,7 +3776,7 @@ _wiselog_
 _wreport.fcgi?
 _zag_cookie.
 cgi-bin/counter
-http://utm.$domain=~utm.md|~utoronto.ca
+http://utm.$domain=~utm.edu|~utm.md|~utoronto.ca
 ||meetrics.netbb-
 ! Mining
 -coin-hive/$script
@@ -4084,6 +4086,7 @@ _mongo_stats/
 ||apicit.net^$third-party
 ||apollofind.com^$third-party
 ||app.link^$third-party
+||appared.online^$third-party
 ||appboycdn.com^$third-party
 ||aprtn.com^$third-party
 ||aprtx.com^$third-party
@@ -7691,6 +7694,7 @@ _mongo_stats/
 ||aolanswers.com/wtrack/
 ||aolcdn.com/js/mg2.js
 ||aolcdn.com/omniunih_int.js
+||aolcdn.com^*/beacon.min.js
 ||ape-tagit.timeinc.net^
 ||apester.com/event^
 ||api.awe.sm/stats/$third-party
@@ -9415,6 +9419,7 @@ _mongo_stats/
 ||wunderloop.aol.co.uk^
 ||wvnetworkmedia.org/min/?
 ||x.weather.com^
+||yahoo.co.jp/js/s_retargeting.js
 ||yandex.ru/cycounter?
 ||yapi.awe.sm^$third-party
 ||yarpp.org/pixels/
@@ -9566,6 +9571,7 @@ _mongo_stats/
 ||stats2.algo.at^$third-party
 ||stilanzeigen.net/track/
 ||strongvpn.com/aff/
+||suedtirol.live/slc.js
 ||t.nativendo.de^
 ||t.quisma.com^
 ||tap.idg.de^
@@ -9911,7 +9917,6 @@ _mongo_stats/
 ||userdive.com^$third-party
 ||webtracker.jp^$third-party
 ||yahoo.co.jp/js/retargeting.js
-||yahoo.co.jp/js/s_retargeting.js
 ! Korean
 ||115.84.165.13/wlo/$domain=~seul-go.ip
 ||180.70.93.115/ndmclick/$domain=~daum.ip
@@ -11301,6 +11306,7 @@ _mongo_stats/
 ||microsoft.com/blankpixel.gif
 ||microsoft.com/click/
 ||microsoft.com/collect/
+||microsoft.com/Collector/
 ||microsoft.com/getsilverlight/scripts/silverlight/SilverlightAtlas-MSCOM-Tracking.js
 ||microsoft.com/getsilverlight/scripts/Tracker.js
 ||microsoft.com/library/svy/
@@ -13923,6 +13929,7 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|
 @@||hotwirestatic.com^*/opinionLab.js$domain=hotwire.com
 @@||i.s-microsoft.com/wedcs/ms.js$domain=skype.com
 @@||ibis.com/scripts-*/xtanalyzer_roi.js
+@@||ibm.com/software/reports/compatibility/clarity-reports/js/$script,~third-party
 @@||images-iherb.com/js/ga-pro*.js$domain=iherb.com
 @@||img.en25.com/eloquaimages/clients/PentonMediaInc/$image,domain=windowsitpro.com
 @@||imrworldwide.com/crossdomain.xml$object-subrequest,domain=cc.com|sbs.com.au
@@ -14348,6 +14355,7 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|
 @@||onlinevideoconverter.com/webservice|$~third-party,xmlhttprequest
 @@||szukajka.tv/jsverify.php$~third-party,xmlhttprequest
 @@||szukajka.tv/szukaj|$~third-party,xmlhttprequest
+@@||ws.webcaster.pro^$websocket
 ! Chrome bug (Endless loading causing site to crash https://forums.lanik.us/viewtopic.php?f=64&t=25152)
 @@||aplus.com/p.gif?$~third-party
 ! Preliminarily whitelisting Omniture s_code tracking pixels (script versions H.25 - H.25.2) due to breakage (https://adblockplus.org/forum/viewtopic.php?f=10&t=11378) if blocking the script causes issues
@@ -14611,6 +14619,7 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|
 @@||kataweb.it/wt/wt.js?http$domain=video.repubblica.it
 @@||lastampa.it/modulo/tracciatori/js/nielsen.js
 @@||maxmind.com^*/geoip.js$domain=sportube.tv
+@@||omtrdc.net^*/mbox/json?$xmlhttprequest,domain=vodafone.it
 @@||paginegialle.it/js/shinystat.js
 @@||panorama.it/wp-content/themes/panorama/js/google-nielsen-analytics.js?
 @@||repstatic.it^*/Nielsen.js
@@ -14642,6 +14651,7 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|
 @@||adobedtm.com^*/satelliteLib-$script,domain=laredoute.pl
 @@||gemius.pl/gstream.js
 @@||kropka.onet.pl^*/onet.js$domain=tvnwarszawa.pl
+@@||login.ingbank.pl^*/satelliteLib-$script
 @@||ninja.onap.io/ninja-cee.js$domain=olx.pl
 @@||olx.pl^*/js/tracking/ninja.js$domain=olx.pl
 @@||stat24.com/crossdomain.xml$domain=ipla.tv

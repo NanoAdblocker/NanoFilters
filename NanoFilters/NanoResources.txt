@@ -140,25 +140,6 @@ nano-tiny-noopvast-2.0 text/xml
 nano-tiny-noopvast-3.0 text/xml
 <VAST version="3.0"></VAST>
 
-nano-click-elements-onready.js application/javascript
-(function() {
-	var selector = '{{1}}';
-	if ( selector === '' || selector === '{{1}}' ) {
-		return;
-	}
-	var click = function() {
-		var elements = document.querySelectorAll(selector);
-		for ( var element of elements ) {
-			element.click();
-		}
-	};
-	if ( document.readyState === 'interactive' || document.readyState === 'complete' ) {
-		click();
-	} else {
-		addEventListener('DOMContentLoaded', click);
-	}
-})();
-
 nano-remove-elements-onready.js application/javascript
 (function() {
 	var selector = '{{1}}';
@@ -237,5 +218,24 @@ nano-camwhores-tv.js application/javascript
 		handler();
 	} else {
 		addEventListener('DOMContentLoaded', handler);
+	}
+})();
+
+nanop-click-elements-onready.js application/javascript
+(function() {
+	var selector = '{{1}}';
+	if ( selector === '' || selector === '{{1}}' ) {
+		return;
+	}
+	var click = function() {
+		var elements = document.querySelectorAll(selector);
+		for ( var element of elements ) {
+			element.click();
+		}
+	};
+	if ( document.readyState === 'interactive' || document.readyState === 'complete' ) {
+		click();
+	} else {
+		addEventListener('DOMContentLoaded', click);
 	}
 })();

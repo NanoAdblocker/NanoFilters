@@ -158,29 +158,6 @@ nano-tiny-noopvast-3.0 text/xml
 <VAST version="3.0"></VAST>
 
 
-# Click elements when the documents gets ready, 1 required argument.
-# selector - The selector for elements to remove, must be a plain CSS selector,
-# pseudo-selectors are not supported.
-nano-click-elements-onready.js application/javascript
-(function() {
-	var selector = '{{1}}';
-	if ( selector === '' || selector === '{{1}}' ) {
-		return;
-	}
-	var click = function() {
-		var elements = document.querySelectorAll(selector);
-		for ( var element of elements ) {
-			element.click();
-		}
-	};
-	if ( document.readyState === 'interactive' || document.readyState === 'complete' ) {
-		click();
-	} else {
-		addEventListener('DOMContentLoaded', click);
-	}
-})();
-
-
 # ####
 # BETA resource, this resource can change without warning
 # ####
@@ -282,5 +259,33 @@ nano-camwhores-tv.js application/javascript
 		handler();
 	} else {
 		addEventListener('DOMContentLoaded', handler);
+	}
+})();
+
+
+# ############################# #
+# #### Privileged Resouces #### #
+# ############################# #
+
+
+# Click elements when the documents gets ready, 1 required argument.
+# selector - The selector for elements to remove, must be a plain CSS selector,
+# pseudo-selectors are not supported.
+nanop-click-elements-onready.js application/javascript
+(function() {
+	var selector = '{{1}}';
+	if ( selector === '' || selector === '{{1}}' ) {
+		return;
+	}
+	var click = function() {
+		var elements = document.querySelectorAll(selector);
+		for ( var element of elements ) {
+			element.click();
+		}
+	};
+	if ( document.readyState === 'interactive' || document.readyState === 'complete' ) {
+		click();
+	} else {
+		addEventListener('DOMContentLoaded', click);
 	}
 })();

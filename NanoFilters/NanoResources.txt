@@ -243,3 +243,29 @@ nanop-click-elements-onready.js application/javascript
 		addEventListener('DOMContentLoaded', click);
 	}
 })();
+
+nanop-easy-set-cookie.js application/javascript
+(function() {
+	var guard = '{{nano}}';
+	if ( guard === '{{nano}}' ) {
+		return;
+	}
+	var data = '{{1}}';
+	var path = '{{2}}';
+	var domain = '{{3}}';
+	var secure = '{{4}}';
+	if ( data.indexOf('=') === -1 ) {
+		return;
+	}
+	data += ';max-age=2592000'; // 30 days
+	if ( path !== '' && path !== '{{2}}' ) {
+		data += ';path=' + path;
+	}
+	if ( domain !== '' && domain !== '{{3}}' ) {
+		data += ';domain=' + domain;
+	}
+	if ( secure === 'true' ) {
+		data += ';secure';
+	}
+	document.cookie = data;
+})();

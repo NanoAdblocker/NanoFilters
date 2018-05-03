@@ -186,3 +186,7 @@ kcra.com##script:inject(alert-buster.js)
 
 # https://github.com/NanoAdblocker/NanoCore/issues/41
 clipconverter.cc##script:inject(abort-on-property-read.js, T0P5e)
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/922
+download.ipeenk.com###idblog-adb-enabled
+||cloudfront.net^$domain=download.ipeenk.com

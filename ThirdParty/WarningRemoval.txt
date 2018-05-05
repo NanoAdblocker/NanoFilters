@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: SRim4eGhqosfChF7T9DNlw
-! Version: 201804302150
+! Checksum: 1oQ4Y35sT+FDWzuUTg+Gng
+! Version: 201805050010
 ! Title: Adblock Warning Removal List
-! Last modified: 30 Apr 2018 21:50 UTC
+! Last modified: 05 May 2018 00:10 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -244,6 +244,7 @@ elhow.ru###b-info-wrapper
 ma.by###bodysubcont > div[style^="padding"]:not([id]):not([class])
 delfi.ee###delfiTopBar
 sd-company.su###dom_adblock
+forum.bestflowers.ru###exposeMask
 pastenow.ru###google-block
 blackdesert-info.ru###header > div[style*="z-index"][style*="999999"]
 info-mage.ru###helpme[style="display: block;"]
@@ -313,8 +314,9 @@ playunturned.ru##.side_left > center
 playunturned.ru##.side_right > center
 objavlenija.respublika.cz##.sweet-alert,.sweet-overlay
 xn--80aikhbrhr.net,кинокрад.net##.warning-adblock-box
+forum.bestflowers.ru##.xenOverlay
 /api/scripts/mainjs?token$script,domain=liveresult.ru
-/forum/docs/requests.js$script,domain=dugtor-deer.pw|nontorclub.in.net|nnm-club.lib|nnm-club.me|nnm-club.name|nnm-club.tv|nnmclub.to|nnmclub.tv
+/forum/docs/requests.js$script,domain=nontorclub.in.net|nnm-club.lib|nnm-club.me|nnm-club.name|nnm-club.tv|nnmclub.to|nnmclub.tv
 /fuckadblock.js$domain=ace-stream.tv
 @@||goha.ru/app/video/adblock.teaser.js|$script,domain=goha.ru
 @@||sports.ru^*/adfox.$xmlhttprequest
@@ -323,6 +325,7 @@ lr-club.com##a[href="https://adblockplus.org/ru/faq_basics#disable"]
 pic4you.ru,pic5you.ru##body > #bb
 forum.vip-cxema.org##body > #document_modal.modal,#some_ad_block_key_popup
 it-enginer.ru##body > #modal[style*="blur"]
+ivi.ru##body > .bottom-popup
 swaego.ru##body > .special-message-wrapper
 ukr.net##body > .yellow-die
 fightnews.info##body > blockquote
@@ -333,6 +336,7 @@ glav.su##body > div[id]:not([class])[style*="background"][style*="display: block
 logist.uxxo.ru,newdeaf-online.net,newsland.com##body > div[id]:not([class])[style="display: block;"]
 factorio.su##body > div[id][class][style*="background"][style*="visible"]
 gta.com.ua##body > div[id][style*="background"][style*="visible"]
+portfel.info##body > div[id][style="display: block;"]
 tut.by##body > div[style*="position: fixed;"][style*="right: 0;"]
 bychico.net,dyrik.ru,ecosounds.net,fainaidea.com,in-drive.ru,obozrevatel.com,oknotivi.ru,sandero.ru,tehnobzor.ru##body > div[style*="z-index"][style*="999999"]
 dugtor.ru##body > noindex
@@ -351,6 +355,7 @@ ph4.ru##table[width][height="90"][style]
 bigpuzzle.ru##td[valign="top"][width="200px"][height="600"] > div[style]
 www.qrz.ru#?#.content_row > div[class]:-abp-has(> .inner > a[href="/help/adblock/"])
 ||adscat.ru^$third-party
+||acetv.me/cookie_check.min.js
 ||animeteatr.ru/a-detector/
 ||avito.ru^*/some-pretty-script.js
 ||fairtop.in/template/js/fdetect.js

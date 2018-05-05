@@ -1,9 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: g4TcRr+Sg6i9EGgWeK5O4Q
-! Version: 201804302151
-! The contents of this filter list are fetched from the EasyPrivacy repository: https://github.com/easylist/easylist/tree/master/easyprivacy
+! Checksum: UJwmm5Tef5Jf1sPyz9kiBA
+! Version: 201805050011
 ! Title: EasyPrivacy
-! Last modified: 30 Apr 2018 21:51 UTC
+! Last modified: 05 May 2018 00:11 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -13,7 +12,7 @@
 ! or via e-mail (easylist.subscription@gmail.com).
 !
 !-----------------General tracking systems-----------------!
-! *** Fetched from: https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_general.txt ***
+! *** easylist:easyprivacy/easyprivacy_general.txt ***
 &ctxId=*&pubId=*&clientDT=
 &ctxId=*&pubId=*&objId=
 &event=view&
@@ -183,6 +182,7 @@
 .gif?hit_
 .gif?Log=$~xmlhttprequest
 .gif?pixels=
+.gif?ref=*&ev=
 .gif?track_
 .Google.Tracker.js
 .googleanalytics.js
@@ -696,6 +696,8 @@
 /bcn.gif?
 /bcn?
 /bctrackers/*
+/bdg-analytics.
+/bdg.gif?
 /beacon-cookie.
 /beacon.cgi?
 /beacon.gif?
@@ -3300,6 +3302,7 @@
 /uim.html/*
 /ulpixel.
 /ultra_track/*
+/umg-analytics/*
 /umt.gif?
 /unica.gif?
 /unica.js
@@ -3879,7 +3882,7 @@ _mongo_stats/
 ://top.*/count/cnt.php?
 ://top.*/hit/
 !-----------------Third-party tracking domains-----------------!
-! *** Fetched from: https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_trackingservers.txt ***
+! *** easylist:easyprivacy/easyprivacy_trackingservers.txt ***
 ||0emm.com^$third-party
 ||0tracker.com^$third-party
 ||1-cl0ud.com^$third-party
@@ -6176,6 +6179,7 @@ _mongo_stats/
 ||youmetrix.co.uk^$third-party
 ||your-counter.be^$third-party
 ||youramigo.com^$third-party
+||z444o.com^$third-party
 ||zanox-affiliate.de^$third-party
 ||zanox.com^$third-party
 ||zarget.com^$third-party
@@ -6591,7 +6595,7 @@ _mongo_stats/
 ||ticklesign.com^$third-party
 ||truthfulturn.com^$third-party
 !-----------------International third-party tracking domains-----------------!
-! *** Fetched from: https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_trackingservers_international.txt ***
+! *** easylist:easyprivacy/easyprivacy_trackingservers_international.txt ***
 ! German
 ||123-counter.de^$third-party
 ||12mnkys.com^$third-party
@@ -7446,7 +7450,7 @@ _mongo_stats/
 ! Vietnamese
 ||gostats.vn^$third-party
 !-----------------Third-party tracking services-----------------!
-! *** Fetched from: https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_thirdparty.txt ***
+! *** easylist:easyprivacy/easyprivacy_thirdparty.txt ***
 |http://l2.io/ip.js$third-party
 ||10.122.129.149^$third-party,domain=~search-news-cn.ip
 ||101apps.com/tracker.ashx?
@@ -8704,6 +8708,7 @@ _mongo_stats/
 ||pcrl.co/js/jstracker.min.js
 ||pebed.dm.gg^
 ||peermapcontent.affino.com^
+||penton.com/analytics/
 ||perr.h-cdn.com^$third-party
 ||petitionermaster.appspot.com^
 ||pf.aclst.com^$third-party
@@ -9441,7 +9446,7 @@ _mongo_stats/
 ||zope.net^*/ghs_wa.js
 ||zvsuhljiha-a.akamaihd.net^
 !-----------------International third-party tracking services-----------------!
-! *** Fetched from: https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_thirdparty_international.txt ***
+! *** easylist:easyprivacy/easyprivacy_thirdparty_international.txt ***
 ! German
 ||78.46.19.203^$third-party,domain=~sprueche-zitate.net.ip
 ||adc-srv.net/retargeting.php
@@ -10126,7 +10131,7 @@ _mongo_stats/
 ! Vietnamese
 ||analytics.mecloud.vn^
 !-----------------Individual tracking systems-----------------!
-! *** Fetched from: https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_specific.txt ***
+! *** easylist:easyprivacy/easyprivacy_specific.txt ***
 /fam/view.php?$domain=cnet.com
 /viewtrack/track?$domain=hulu.com
 |blob:$image,domain=jpost.com
@@ -12689,7 +12694,7 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|
 ||wt-safetag.com^$domain=stern.de
 ||xplosion.de^$domain=spiegel.de|stern.de
 !-----------------International individual tracking systems-----------------!
-! *** Fetched from: https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_specific_international.txt ***
+! *** easylist:easyprivacy/easyprivacy_specific_international.txt ***
 ! German
 ||4players.de^*/foreplaypixel.js
 ||85.237.86.50/stat/$domain=bluray-disc.de
@@ -13580,7 +13585,7 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|
 ||ioam.de/?$domain=notebookcheck.com
 ||ioam.de/tx.io?$domain=notebookcheck.com
 !-----------------------Whitelists to fix broken sites------------------------!
-! *** Fetched from: https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_whitelist.txt ***
+! *** easylist:easyprivacy/easyprivacy_whitelist.txt ***
 @@/cdn-cgi/pe/bag2?*geoiplookup$xmlhttprequest,domain=orain.org
 @@/cdn-cgi/pe/bag2?*google-analytics.com%2Fanalytics.js$domain=amypink.de|biznews.com|cryptospot.me|dailycaller.com|droid-life.com|forwardprogressives.com|fpif.org|fullpotentialma.com|geekzone.co.nz|goldsday.com|hoyentec.com|imageupload.co.uk|is-arquitectura.es|lazygamer.net|lingholic.com|mmanews.com|nehandaradio.com|nmac.to|orain.org|tvunblock.com|unilad.co.uk|xrussianteens.com|youngcons.com
 @@/cdn-cgi/pe/bag2?*googleadservices.com$domain=droid-life.com
@@ -13751,6 +13756,7 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|
 @@||clicktale.net/wrb.js$domain=microsoft.com
 @@||clicktale.net^$script,domain=cbc.ca
 @@||clicsante.ca^*/angulartics-google-tag-manager.min.js$domain=clicsante.ca
+@@||cloud.talend.com/api/ipaas/services/analytics/$~third-party,xmlhttprequest
 @@||cloudflare.com/analytics?$domain=cloudflare.com
 @@||cloudflare.com^*/angulartics-google-analytics.min.js$domain=chromeexperiments.com
 @@||cloudflare.com^*/fingerprint2.min.js$domain=saavn.com
@@ -14393,7 +14399,7 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|
 @@||google.*/analytics/js/$~third-party
 @@||gstatic.com^*/analytics.js$domain=google.com
 !----------------Whitelists to fix broken international sites-----------------!
-! *** Fetched from: https://raw.githubusercontent.com/easylist/easylist/master/easyprivacy/easyprivacy_whitelist_international.txt ***
+! *** easylist:easyprivacy/easyprivacy_whitelist_international.txt ***
 ! German
 @@||a.visualrevenue.com/vrs.js$domain=t-online.de
 @@||a.wikia-beacon.com/__track/view?v=v1&c=*&lc=de&lid=62&x=devroniplag&y=$script,domain=vroniplag.wikia.com

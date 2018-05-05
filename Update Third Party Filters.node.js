@@ -73,8 +73,12 @@ process.on("unhandledRejection", (err) => {
 
 (async () => {
     const data = {
-        // Download these two first because their server is not very good and breaks sometimes
-        "MalwareDomain0.txt": "https://www.malwaredomainlist.com/hostslist/hosts.txt",
+        // Download these two first because their server is not very good and
+        // breaks sometimes
+        //
+        // This server is really bad and the filter never changes anyway
+        // Manually update it once a month if possible
+        // "MalwareDomain0.txt": "https://www.malwaredomainlist.com/hostslist/hosts.txt",
         "MalwareDomain1.txt": "https://mirror1.malwaredomains.com/files/justdomains",
 
         "PublicSuffix.dat": "https://publicsuffix.org/list/public_suffix_list.dat",

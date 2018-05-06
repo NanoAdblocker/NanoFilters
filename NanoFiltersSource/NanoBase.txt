@@ -181,7 +181,7 @@ eurogamer.it##script:inject(abort-on-property-read.js, _sp_.mms.startMsg)
 kcra.com##script:inject(alert-buster.js)
 
 # https://github.com/NanoAdblocker/NanoFilters/issues/63
-||cloudfront.net/*.jpg$image,domain=sportsnet.ca
+sportsnet.ca##script:inject(abort-on-property-read.js, uxGuid)
 
 # ################################# #
 # #### Pending Synchronization #### #

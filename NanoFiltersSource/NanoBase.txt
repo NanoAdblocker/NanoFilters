@@ -183,6 +183,9 @@ kcra.com##script:inject(alert-buster.js)
 # https://github.com/NanoAdblocker/NanoFilters/issues/63
 sportsnet.ca##script:inject(abort-on-property-read.js, uxGuid)
 
+# https://github.com/NanoAdblocker/NanoFilters/issues/65
+ekb.dk.ru##script:inject(setTimeout-defuser.js, myBox, 3000)
+
 # ################################# #
 # #### Pending Synchronization #### #
 # ################################# #

@@ -71,5 +71,5 @@ new.torrnado.win##script:inject(set-constant.js, block, false)
 mail.yahoo.com##div[aria-describedby="adblock-upsell-description"]
 clipconverter.cc##script:inject(abort-on-property-read.js, T0P5e)
 !#if env_edge
-businessinsider.com##script:inject(nano-hijack-script-create.js)
+businessinsider.com##script:inject(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
 !#endif

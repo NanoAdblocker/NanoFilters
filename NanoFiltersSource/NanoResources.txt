@@ -158,6 +158,38 @@ nano-tiny-noopvast-3.0 text/xml
 <VAST version="3.0"></VAST>
 
 
+# Patch document.createElement and prevent created script from receiving
+# network error event, 1 required argument
+# url - The URL matcher of the script
+nano-hijack-script-create.js application/javascript
+(function() {
+	var _createElement = document.createElement;
+	var needle = '{{1}}';
+	if ( needle === '' || needle === '{{1}}' ) {
+		needle = '.?';
+	} else if ( needle.length > 2 && needle.startsWith('/') && needle.endsWith('/') ) {
+		needle = needle.slice(1,-1);
+	} else {
+		needle = needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+	}
+	needle = new RegExp(needle);
+	document.createElement = function(name) {
+		var elem = _createElement.apply(this, arguments);
+		if ( name === 'script' ) {
+			elem.addEventListener('error', function(e) {
+				if ( needle.test(elem.src) ) {
+					e.preventDefault();
+					e.stopPropagation();
+					var ev = new Event('load');
+					elem.dispatchEvent(ev);
+				}
+			});
+		}
+		return elem;
+	};
+})();
+
+
 # ####
 # BETA resource, this resource can change without warning
 # ####

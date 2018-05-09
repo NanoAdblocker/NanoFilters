@@ -205,6 +205,6 @@ clipconverter.cc##script:inject(abort-on-property-read.js, T0P5e)
 !#if env_edge
 
 # https://github.com/uBlockOrigin/uAssets/issues/2213
-businessinsider.com##script:inject(abort-current-inline-script.js, document.createElement, setAdblockerCookie)
+businessinsider.com##script:inject(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
 
 !#endif

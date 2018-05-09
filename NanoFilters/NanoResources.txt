@@ -115,8 +115,8 @@ nano-camwhores-tv.js application/javascript
             img.src = img.dataset.original;
         }
     };
-       if ( document.readyState === 'interactive' ||
-            document.readyState === 'complete' ) {
+    if ( document.readyState === 'interactive' ||
+         document.readyState === 'complete' ) {
         handler();
     } else {
         addEventListener('DOMContentLoaded', handler);

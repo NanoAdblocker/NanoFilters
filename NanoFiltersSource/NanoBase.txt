@@ -197,6 +197,8 @@ new.torrnado.win##script:inject(set-constant.js, block, false)
 # https://github.com/uBlockOrigin/uAssets/issues/2213
 # https://github.com/NanoAdblocker/NanoFilters/issues/68
 businessinsider.com##script:inject(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
+businessinsider.com##script:inject(set-constant.js, setAdblockerCookie, noopFunc)
+businessinsider.com##script:inject(nanop-easy-set-cookie.js, __adblocker=false)
 
 !#endif
 # ################################# #

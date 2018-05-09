@@ -70,6 +70,8 @@ ekb.dk.ru##script:inject(setTimeout-defuser.js, myBox, 3000)
 new.torrnado.win##script:inject(set-constant.js, block, false)
 !#if env_edge
 businessinsider.com##script:inject(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
+businessinsider.com##script:inject(set-constant.js, setAdblockerCookie, noopFunc)
+businessinsider.com##script:inject(nanop-easy-set-cookie.js, __adblocker=false)
 !#endif
 mail.yahoo.com##div[aria-describedby="adblock-upsell-description"]
 clipconverter.cc##script:inject(abort-on-property-read.js, T0P5e)

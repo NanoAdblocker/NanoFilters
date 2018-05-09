@@ -189,16 +189,6 @@ ekb.dk.ru##script:inject(setTimeout-defuser.js, myBox, 3000)
 # https://github.com/jspenguin2017/uBlockProtector/issues/927
 new.torrnado.win##script:inject(set-constant.js, block, false)
 
-# ################################# #
-# #### Pending Synchronization #### #
-# ################################# #
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/889
-mail.yahoo.com##div[aria-describedby="adblock-upsell-description"]
-
-# https://github.com/NanoAdblocker/NanoCore/issues/41
-clipconverter.cc##script:inject(abort-on-property-read.js, T0P5e)
-
 # ############################## #
 # #### Edge Specific Filter #### #
 # ############################## #
@@ -208,3 +198,12 @@ clipconverter.cc##script:inject(abort-on-property-read.js, T0P5e)
 businessinsider.com##script:inject(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
 
 !#endif
+# ################################# #
+# #### Pending Synchronization #### #
+# ################################# #
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/889
+mail.yahoo.com##div[aria-describedby="adblock-upsell-description"]
+
+# https://github.com/NanoAdblocker/NanoCore/issues/41
+clipconverter.cc##script:inject(abort-on-property-read.js, T0P5e)

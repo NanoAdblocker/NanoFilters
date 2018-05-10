@@ -224,3 +224,40 @@ nanop-easy-set-cookie.js application/javascript
     }
     document.cookie = data;
 })();
+
+
+# Speed up or down timer, 1 required arguments and 2 optional argument.
+# func - setTimeout or setInterval.
+# matcher - The matcher, default to match everything.
+# ratio - The delay multiplier, default to 0.02 or speed up 50 times.
+nanop-timer-booster.js application/javascript
+(function() {
+    var guard = '{{nano}}';
+    if ( guard === '{{nano}}' ) {
+        return;
+    }
+    var func = '{{1}}';
+    var needle = '{{2}}';
+    var boost = parseFloat('{{3}}');
+    if ( func !== 'setTimeout' && func !== 'setInterval' ) {
+        return;
+    }
+    if ( needle === '' || needle === '{{2}}' ) {
+        needle = '.?';
+    } else if ( needle.charAt(0) === '/' && needle.slice(-1) === '/' ) {
+        needle = needle.slice(1, -1);
+    } else {
+        needle = needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+    needle = new RegExp(needle);
+    if ( isNaN(boost) || !isFinite(boost) ) {
+        boost = 0.02;
+    }
+    var original = window[func];
+    window[func] = function(a, b) {
+        if ( needle.test(a.toString()) || needle.test(b.toString()) ) {
+            b *= boost;
+        }
+        return original.apply(this, arguments);
+    }.bind(window);
+})();

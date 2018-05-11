@@ -68,6 +68,7 @@ kcra.com##script:inject(alert-buster.js)
 sportsnet.ca##script:inject(abort-on-property-read.js, uxGuid)
 ekb.dk.ru##script:inject(setTimeout-defuser.js, myBox, 3000)
 new.torrnado.win##script:inject(set-constant.js, block, false)
+wusa9.com##.fc-pinned-message-container.fc-root
 !#if env_edge
 businessinsider.com##script:inject(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
 businessinsider.com##script:inject(set-constant.js, setAdblockerCookie, noopFunc)

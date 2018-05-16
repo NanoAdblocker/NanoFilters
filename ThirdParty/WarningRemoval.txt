@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: +Ddwhxssfq7KdCDDK+kltg
-! Version: 201805092010
+! Checksum: +Mm8IY/CVYjPD5UQpL8qQQ
+! Version: 201805162140
 ! Title: Adblock Warning Removal List
-! Last modified: 09 May 2018 20:10 UTC
+! Last modified: 16 May 2018 21:40 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -292,7 +292,6 @@ tsn.ua##.c-aside-embed
 kinoafisha.info,tvcook.ru##.cat
 autonews.ru,rbc.ru,rbcplus.ru##.checkad_info
 rusopen.com##.classblsi.addshr
-www.qrz.ru##.content_row > div[class][-abp-properties="background*z-index"]:not([style])
 smotrisport.online,smotrisport.tv##.dont-add-our-site-pls
 goha.ru#@#.goha_ads
 goha.ru#@#.goha_ads_acceptable
@@ -341,7 +340,7 @@ factorio.su##body > div[id][class][style*="background"][style*="visible"]
 gta.com.ua##body > div[id][style*="background"][style*="visible"]
 portfel.info##body > div[id][style="display: block;"]
 tut.by##body > div[style*="position: fixed;"][style*="right: 0;"]
-bychico.net,dyrik.ru,ecosounds.net,fainaidea.com,in-drive.ru,obozrevatel.com,oknotivi.ru,sandero.ru,tehnobzor.ru##body > div[style*="z-index"][style*="999999"]
+1snau.ru,bychico.net,dyrik.ru,ecosounds.net,fainaidea.com,in-drive.ru,obozrevatel.com,oknotivi.ru,sandero.ru,tehnobzor.ru##body > div[style*="z-index"][style*="999999"]
 dugtor.ru##body > noindex
 lostfilm.tv##div[class^="alarm"]
 gismeteo.by,gismeteo.ru##div[class^="stopblock"]
@@ -360,6 +359,7 @@ www.qrz.ru#?#.content_row > div[class]:-abp-has(> .inner > a[href="/help/adblock
 ||adscat.ru^$third-party
 ||acetv.me/cookie_check.min.js
 ||animeteatr.ru/a-detector/
+||anivisual.net/mim*.js|$script,domain=anivisual.net
 ||avito.ru^*/some-pretty-script.js
 ||fairtop.in/template/js/fdetect.js
 ||i140.ru/js/etxm*.js|$script

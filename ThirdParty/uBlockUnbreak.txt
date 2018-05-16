@@ -510,6 +510,9 @@ wetteronline.de#@#[style="width: 100%;"]
 -google-analytics.$third-party
 -google-analytics/$badfilter
 -google-analytics/$third-party
+! https://forums.lanik.us/viewtopic.php?f=64&p=136474
+/ga_setup.js$badfilter
+/ga_setup.js$third-party
 
 ! https://github.com/jspenguin2017/uBlockProtector/issues/349
 @@||facebook.com/*_ad6.$script,first-party
@@ -1034,7 +1037,7 @@ oxforddictionaries.com##.banbox-mini
 101greatgoals.com,colourlovers.com,crackberry.com,destructoid.com,getinmybelly.com,imore.com,mmorpg.com,omgcheckitout.com,pocketnow.com,sportspickle.com,tetrisfriends.com,vrheads.com,windowscentral.com#@#[style*="background-image:"]
 destructoid.com#@#[src*="base64"]
 destructoid.com#@#[src*="data:"]
-the4thofficial.net#@#div > iframe:first-child
+kshowonline.com,the4thofficial.net#@#div > iframe:first-child
 the4thofficial.net#@#[style] > iframe
 the4thofficial.net#@#[style] > [scrolling]
 
@@ -1065,3 +1068,36 @@ wnd.com##[id^=div-gpt-ad-]
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2190
 ||logrocket.com^$badfilter
+
+! https://github.com/uBlockOrigin/uAssets/issues/2084#issuecomment-388105937
+! https://github.com/uBlockOrigin/uAssets/issues/2246
+/\.(watchcartoononline|9anime|memecenter).*\/.*[(&|=|%|/|?)]/$script,badfilter
+/\.(watchcartoononline|9anime|memecenter).*\/.*[(&|=|%|/|?)]/$image,badfilter
+/\.(watchcartoononline|9anime|memecenter).*[a-zA-Z0-9&%=\/?]{30,}/$first-party,script,badfilter
+
+! https://github.com/uBlockOrigin/uAssets/issues/2248
+@@||adobedtm.com^*/satellitelib-$script,domain=sonycrackle.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/1234#issuecomment-388523970
+|https://$script,third-party,xmlhttprequest,domain=animeflv.net|descargasnsn.com|jkanime.net,badfilter
+
+! http://www.trilulilu.ro/ntv-culte-misa
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=trilulilu.ro
+
+! https://twitter.com/andrewvijay/status/995297630371495941
+! These Adguard Mobile procedural cosmetic filters are causing issues
+mobile.twitter.com#@#section[role="region"] > div > div[style^="padding-bottom"] > div[class] > div[class][-ext-has='div.rn-1uif7bo[dir="auto"]']
+mobile.twitter.com#@#._29ahSMvH section.rn-1oszu61 div[class][style*="padding-"] > ._1_KafmK5[-ext-has='svg.YunaQoc2']
+
+! https://forums.lanik.us/viewtopic.php?p=136565#p136565
+@@||openx.tv/embed/$domain=m4ufree.com
+
+! https://forums.lanik.us/viewtopic.php?f=64&p=136602
+||geo.kaloo.ga/json/*$script,redirect=noopjs,domain=telesurtv.net
+
+! https://github.com/uBlockOrigin/uAssets/issues/2295
+@@||bobcat.grahamdigital.com^$image,domain=clickondetroit.com
+
+! unbreak comment section
+! broken by EasyList csp-filter
+@@||androidcentral.com^$csp=script-src 'self' * 'unsafe-inline'

@@ -332,7 +332,7 @@ tasma.ru##script:inject(abort-on-property-write.js, decodeURIComponent)
 shrink-service.it##script:inject(abort-on-property-read.js, WebAssembly)
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/7wwejy/cryptojackers_defeat_all_countermeasures/
-*$csp=worker-src 'none',domain=estream.to|streamango.com|vidoza.net|vidto.me|vidtudu.com
+*$csp=worker-src 'none',domain=estream.to|streamango.com|vidoza.net|vidto.me|vidto.se|vidtudu.com
 ||tulip18.com^$third-party
 
 ! https://github.com/uBlockOrigin/uAssets/pull/818#issuecomment-365770341
@@ -402,3 +402,7 @@ sleeptimer.org##script:inject(abort-on-property-read.js, WebAssembly)
 ||istlandoll.com^
 ||aster18cdn.nl^
 *$csp=worker-src 'none',domain=peliculas-mp4.com
+
+! https://github.com/hoshsadiq/adblock-nocoin-list/issues/223
+||jqrcdn.download^$third-party
+||jqwww.download^$third-party

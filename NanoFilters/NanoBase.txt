@@ -78,5 +78,6 @@ businessinsider.com##script:inject(set-constant.js, _PIANO.setAdblockerCookie, n
 businessinsider.com##script:inject(set-constant.js, setAdblockerCookie, noopFunc)
 businessinsider.com##script:inject(nanop-easy-set-cookie.js, __adblocker=false)
 !#endif
+9anime.*##script:inject(nano-remove-elements-onready.js, .widget.crop)
 mail.yahoo.com##div[aria-describedby="adblock-upsell-description"]
 clipconverter.cc##script:inject(abort-on-property-read.js, T0P5e)

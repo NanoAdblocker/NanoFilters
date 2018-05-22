@@ -72,6 +72,7 @@ wusa9.com##.fc-pinned-message-container.fc-root
 nl.hardware.info###sitearea > div:has-text(adblocker)
 bigspeeds.com##.link-error:has-text(Advertisers)
 ||3dzone.link/wp-content/uploads/2018/05/Disable-Adblock-in-Blogger-Blogs-300x158.png$image
+evworld.com##script:inject(setTimeout-defuser.js, ads, 2000)
 !#if env_edge
 businessinsider.com##script:inject(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
 businessinsider.com##script:inject(set-constant.js, setAdblockerCookie, noopFunc)

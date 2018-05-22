@@ -26,7 +26,6 @@ libgen.io##script:inject(setTimeout-defuser.js, ad blocking)
 download.inventivetalent.org##div:has(:scope > div > button.choice-adfly)
 msnbc.com,nbcnews.com,today.com##script:inject(abort-on-property-read.js, stop)
 ||browserleaks.com/js/proxy_ab.js$script
-9anime.*##.abmsg
 myegy.tv##.disclaimer:has-text(Ad-Blocker)
 html-online.com#@#.adBanner
 elespanol.com###adblock_modal
@@ -78,6 +77,5 @@ businessinsider.com##script:inject(set-constant.js, _PIANO.setAdblockerCookie, n
 businessinsider.com##script:inject(set-constant.js, setAdblockerCookie, noopFunc)
 businessinsider.com##script:inject(nanop-easy-set-cookie.js, __adblocker=false)
 !#endif
-9anime.*##script:inject(nano-remove-elements-onready.js, .widget.crop)
 mail.yahoo.com##div[aria-describedby="adblock-upsell-description"]
 clipconverter.cc##script:inject(abort-on-property-read.js, T0P5e)

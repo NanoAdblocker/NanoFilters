@@ -8,7 +8,7 @@ blockersurvive.com,blockergame.com##.ads > .ads-body > .ads-content > div
 blockersurvive.com,blockergame.com##.ads > .ads-body:style(background: initial !important;)
 ||imasdk.googleapis.com/js/sdkloader/outstream.js$script,redirect=noopjs,domain=squadd.io
 squadd.io###mc-videoads-overlay
-vvvvid.it##script:inject(nano-vvvvid-it.js)
+vvvvid.it##+js(nano-vvvvid-it.js)
 developpez.com##div:has(:scope > [id^="gabarit_pub"])
 @@||vorek.pl^$generichide
 @@||vorek.pl/*/js/ads.js$script,first-party
@@ -17,14 +17,14 @@ altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 ||cayucosprenter.com^
 avseesee.com###getadiv
 avseesee.com##.ads
-camwhores.tv##script:inject(nano-camwhores-tv.js)
+camwhores.tv##+js(nano-camwhores-tv.js)
 camwhores.tv##body > div:matches-css(z-index: 9999999)
 camwhores.tv##body > a[href^="//"]
-libgen.io##script:inject(setTimeout-defuser.js, ad blocking)
+libgen.io##+js(setTimeout-defuser.js, ad blocking)
 @@||egarwolin.pl/static/js/ads.js$script,first-party
 @@||rapidvideo.com/js/jquery.min.js$script,first-party
 download.inventivetalent.org##div:has(:scope > div > button.choice-adfly)
-msnbc.com,nbcnews.com,today.com##script:inject(abort-on-property-read.js, stop)
+msnbc.com,nbcnews.com,today.com##+js(abort-on-property-read.js, stop)
 ||browserleaks.com/js/proxy_ab.js$script
 myegy.tv##.disclaimer:has-text(Ad-Blocker)
 html-online.com#@#.adBanner
@@ -41,43 +41,43 @@ link.tl##.mobsplOverlay
 link.tl##.mobsplBox
 journaldugeek.com##.banner__content
 brainly.co.id##.brn-ads-box
-sms-receive.net##script:inject(abort-current-inline-script.js, $, AdBlock Plus)
+sms-receive.net##+js(abort-current-inline-script.js, $, AdBlock Plus)
 @@||richmond-news.com/gmg/*/js/ads.js$script,first-party
 raiplay.it##.tagManagerError
 smods.ru###ab-warning
 opengapps.org##.advertisement
-bittube.me##script:inject(addEventListener-defuser.js, visibilitychange)
+bittube.me##+js(addEventListener-defuser.js, visibilitychange)
 fmovies.is,fmovies.se,fmovies.to##.alert.alert-warning:has-text(AdBlock)
 userscloud.com##.alert.alert-info:has-text(AdBlock)
-webinsider.pl##script:inject(setTimeout-defuser.js, AdBlock)
+webinsider.pl##+js(setTimeout-defuser.js, AdBlock)
 readthedocs.io##.ethical-sidebar:has(a[href*="advertising"])
 reddit.com##.recommended-link
 ||geoip.nekudo.com^$badfilter
 ||geoip.nekudo.com^$third-party
 vizer.tv##.open.adsByVizer.vizerNewBox
 multifilemirror.com##.noticeContainer:has-text(Ad-blocking)
-lequipe.fr##script:inject(abort-on-property-write.js, adback)
+lequipe.fr##+js(abort-on-property-write.js, adback)
 masrawy.com###AdBlockerNotif
 btcmanager.com##.wpbanners-banner
 btcmanager.com##.advert
 whatsmydns.net##.ad
 ||fosshub.com/index/donateQ$subdocument
-eurogamer.it##script:inject(abort-on-property-read.js, _sp_.mms.startMsg)
-kcra.com##script:inject(alert-buster.js)
-sportsnet.ca##script:inject(abort-on-property-read.js, uxGuid)
-ekb.dk.ru##script:inject(setTimeout-defuser.js, myBox, 3000)
-new.torrnado.win##script:inject(set-constant.js, block, false)
+eurogamer.it##+js(abort-on-property-read.js, _sp_.mms.startMsg)
+kcra.com##+js(alert-buster.js)
+sportsnet.ca##+js(abort-on-property-read.js, uxGuid)
+ekb.dk.ru##+js(setTimeout-defuser.js, myBox, 3000)
+new.torrnado.win##+js(set-constant.js, block, false)
 wusa9.com##.fc-pinned-message-container.fc-root
 ||relyonhorror.com/wp-content/plugins/narcissistic-meeting/
 nl.hardware.info###sitearea > div:has-text(adblocker)
 bigspeeds.com##.link-error:has-text(Advertisers)
 ||3dzone.link/wp-content/uploads/2018/05/Disable-Adblock-in-Blogger-Blogs-300x158.png$image
-evworld.com##script:inject(setTimeout-defuser.js, ads, 2000)
+evworld.com##+js(setTimeout-defuser.js, ads, 2000)
 !#if env_edge
-businessinsider.com##script:inject(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
-businessinsider.com##script:inject(set-constant.js, setAdblockerCookie, noopFunc)
-businessinsider.com##script:inject(nanop-easy-set-cookie.js, __adblocker=false)
+businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
+businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)
+businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 !#endif
 8tracks.com##+js(set-constant.js, App.views.adsView.adblock, false)
 mail.yahoo.com##div[aria-describedby="adblock-upsell-description"]
-clipconverter.cc##script:inject(abort-on-property-read.js, T0P5e)
+clipconverter.cc##+js(abort-on-property-read.js, T0P5e)

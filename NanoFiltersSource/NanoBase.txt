@@ -21,7 +21,7 @@ blockersurvive.com,blockergame.com##.ads > .ads-body:style(background: initial !
 squadd.io###mc-videoads-overlay
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/390
-vvvvid.it##script:inject(nano-vvvvid-it.js)
+vvvvid.it##+js(nano-vvvvid-it.js)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/761
 developpez.com##div:has(:scope > [id^="gabarit_pub"])
@@ -42,12 +42,12 @@ avseesee.com###getadiv
 avseesee.com##.ads
 
 # NSFW! https://www.reddit.com/r/camwhorestv/comments/7li9kr/anyone_else_having_problems_with_adblock_on/
-camwhores.tv##script:inject(nano-camwhores-tv.js)
+camwhores.tv##+js(nano-camwhores-tv.js)
 camwhores.tv##body > div:matches-css(z-index: 9999999)
 camwhores.tv##body > a[href^="//"]
 
 # https://www.reddit.com/r/uBlockOrigin/comments/7imqbx/firefox_quantum_working_antiadblockkiller/
-libgen.io##script:inject(setTimeout-defuser.js, ad blocking)
+libgen.io##+js(setTimeout-defuser.js, ad blocking)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/742
 @@||egarwolin.pl/static/js/ads.js$script,first-party
@@ -63,7 +63,7 @@ download.inventivetalent.org##div:has(:scope > div > button.choice-adfly)
 # https://github.com/jspenguin2017/uBlockProtector/issues/807
 # https://github.com/NanoAdblocker/NanoFilters/issues/15
 # https://github.com/NanoAdblocker/NanoFilters/issues/20
-msnbc.com,nbcnews.com,today.com##script:inject(abort-on-property-read.js, stop)
+msnbc.com,nbcnews.com,today.com##+js(abort-on-property-read.js, stop)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/808
 ||browserleaks.com/js/proxy_ab.js$script
@@ -113,7 +113,7 @@ journaldugeek.com##.banner__content
 brainly.co.id##.brn-ads-box
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/859
-sms-receive.net##script:inject(abort-current-inline-script.js, $, AdBlock Plus)
+sms-receive.net##+js(abort-current-inline-script.js, $, AdBlock Plus)
 
 # https://github.com/NanoAdblocker/NanoFilters/issues/30
 @@||richmond-news.com/gmg/*/js/ads.js$script,first-party
@@ -128,7 +128,7 @@ smods.ru###ab-warning
 opengapps.org##.advertisement
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/873
-bittube.me##script:inject(addEventListener-defuser.js, visibilitychange)
+bittube.me##+js(addEventListener-defuser.js, visibilitychange)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/871
 fmovies.is,fmovies.se,fmovies.to##.alert.alert-warning:has-text(AdBlock)
@@ -137,7 +137,7 @@ fmovies.is,fmovies.se,fmovies.to##.alert.alert-warning:has-text(AdBlock)
 userscloud.com##.alert.alert-info:has-text(AdBlock)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/877
-webinsider.pl##script:inject(setTimeout-defuser.js, AdBlock)
+webinsider.pl##+js(setTimeout-defuser.js, AdBlock)
 
 # Missed ads, test: http://solidity.readthedocs.io/en/v0.4.21/
 readthedocs.io##.ethical-sidebar:has(a[href*="advertising"])
@@ -156,7 +156,7 @@ vizer.tv##.open.adsByVizer.vizerNewBox
 multifilemirror.com##.noticeContainer:has-text(Ad-blocking)
 
 # https://github.com/NanoAdblocker/NanoDefender/issues/36
-lequipe.fr##script:inject(abort-on-property-write.js, adback)
+lequipe.fr##+js(abort-on-property-write.js, adback)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/903
 masrawy.com###AdBlockerNotif
@@ -172,19 +172,19 @@ whatsmydns.net##.ad
 ||fosshub.com/index/donateQ$subdocument
 
 # https://github.com/NanoAdblocker/NanoDefender/issues/39
-eurogamer.it##script:inject(abort-on-property-read.js, _sp_.mms.startMsg)
+eurogamer.it##+js(abort-on-property-read.js, _sp_.mms.startMsg)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/918
-kcra.com##script:inject(alert-buster.js)
+kcra.com##+js(alert-buster.js)
 
 # https://github.com/NanoAdblocker/NanoFilters/issues/63
-sportsnet.ca##script:inject(abort-on-property-read.js, uxGuid)
+sportsnet.ca##+js(abort-on-property-read.js, uxGuid)
 
 # https://github.com/NanoAdblocker/NanoFilters/issues/65
-ekb.dk.ru##script:inject(setTimeout-defuser.js, myBox, 3000)
+ekb.dk.ru##+js(setTimeout-defuser.js, myBox, 3000)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/927
-new.torrnado.win##script:inject(set-constant.js, block, false)
+new.torrnado.win##+js(set-constant.js, block, false)
 
 # https://github.com/NanoAdblocker/NanoFilters/issues/71
 wusa9.com##.fc-pinned-message-container.fc-root
@@ -202,7 +202,7 @@ bigspeeds.com##.link-error:has-text(Advertisers)
 ||3dzone.link/wp-content/uploads/2018/05/Disable-Adblock-in-Blogger-Blogs-300x158.png$image
 
 # https://github.com/uBlockOrigin/uAssets/issues/2343
-evworld.com##script:inject(setTimeout-defuser.js, ads, 2000)
+evworld.com##+js(setTimeout-defuser.js, ads, 2000)
 
 # ############################## #
 # #### Edge Specific Filter #### #
@@ -211,9 +211,9 @@ evworld.com##script:inject(setTimeout-defuser.js, ads, 2000)
 
 # https://github.com/uBlockOrigin/uAssets/issues/2213
 # https://github.com/NanoAdblocker/NanoFilters/issues/68
-businessinsider.com##script:inject(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
-businessinsider.com##script:inject(set-constant.js, setAdblockerCookie, noopFunc)
-businessinsider.com##script:inject(nanop-easy-set-cookie.js, __adblocker=false)
+businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
+businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)
+businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 
 !#endif
 # ################################# #
@@ -227,4 +227,4 @@ businessinsider.com##script:inject(nanop-easy-set-cookie.js, __adblocker=false)
 mail.yahoo.com##div[aria-describedby="adblock-upsell-description"]
 
 # https://github.com/NanoAdblocker/NanoCore/issues/41
-clipconverter.cc##script:inject(abort-on-property-read.js, T0P5e)
+clipconverter.cc##+js(abort-on-property-read.js, T0P5e)

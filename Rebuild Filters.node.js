@@ -48,10 +48,10 @@ const minimizePSL = (raw, license, source) => {
     raw = raw.split(reNewLine);
 
     let out = [
-        "// License: " + license,
-        "// Srouce: " + source,
         "// Expires: 7 days",
         "// Cached: " + (new Date()).toString(),
+        "// License: " + license,
+        "// Srouce: " + source,
     ];
     for (let l of raw) {
         const i = l.indexOf("//");
@@ -83,10 +83,10 @@ const minimizeResource = (raw, license, source) => {
     raw = raw.split(reNewLine);
 
     let out = [
-        "# License: " + license,
-        "# Source: " + source,
         "# Expires: 3 days",
         "# Cached: " + (new Date()).toString(),
+        "# License: " + license,
+        "# Source: " + source,
     ];
     let lastLineEmpty = false;
     for (let l of raw) {
@@ -127,10 +127,10 @@ const minimizeFilter = (raw, title, license, source, expires) => {
     let out = [
         "[Adblock Plus 3.0]",
         "! Title: " + title,
-        "! License: " + license,
-        "! Source: " + source,
         "! Expires: " + expires.toString() + " day",
         "! Cached: " + (new Date()).toString(),
+        "! License: " + license,
+        "! Source: " + source,
     ];
     for (let f of raw) {
         f = f.trim();
@@ -187,10 +187,10 @@ const minimizeHosts = (() => {
         let out = [
             "[Adblock Plus 3.0]",
             "! Title: " + title,
-            "! License: " + license,
-            "! Source: " + source,
             "! Expires: " + expires.toString() + " day",
             "! Cached: " + (new Date()).toString(),
+            "! License: " + license,
+            "! Source: " + source,
         ];
         for (let f of raw) {
             const i = f.indexOf("#");

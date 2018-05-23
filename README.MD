@@ -12,16 +12,6 @@ release of Nano Adblocker.
 
 Please open an issue if there is something you want us to know.
 
-## RawGit Links
-
-```
-https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoBase.txt
-https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoAnnoyance.txt
-https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoWhitelist.txt
-
-https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoResources.txt
-```
-
 ## Filter Policy
 
 If an issue is taken care by a default (regional) filter, then it will not be

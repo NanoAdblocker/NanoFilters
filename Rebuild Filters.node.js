@@ -320,5 +320,19 @@ process.on("unhandledRejection", (err) => {
         ),
     ]);
 
+    await Promise.all([
+        processOne(
+            "../uBlockProtector/uBlockProtectorList.txt",
+            "./NanoMirror/NanoDefenderIntegration.txt",
+            minimizeFilter,
+
+            "Nano Defender Integration",
+            "GPL-3.0",
+            "https://github.com/jspenguin2017/uBlockProtector/tree/master/list",
+            3,
+            true,
+        ),
+    ]);
+
     console.log("Done");
 })();

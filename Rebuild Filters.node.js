@@ -323,7 +323,7 @@ process.on("unhandledRejection", (err) => {
     await Promise.all([
         processOne(
             "../uBlockProtector/uBlockProtectorList.txt",
-            "./NanoMirror/NanoDefenderIntegration.txt",
+            "./NanoMirror/NanoDefender.txt",
             minimizeFilter,
 
             "Nano Defender Integration",

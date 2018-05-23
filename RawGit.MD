@@ -6,4 +6,7 @@ https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoAnnoyanc
 https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoWhitelist.txt
 
 https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoResources.txt
+
+
+https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoMirror/NanoDefender.txt
 ```

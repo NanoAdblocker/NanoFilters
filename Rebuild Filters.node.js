@@ -29,6 +29,11 @@ const now = () => {
 
 
 /**
+ * The warning message about minimized filters should not be modified.
+ * @const {string}
+ */
+const binaryWarning = "This file is a compiled binary, any modification will be overwritten on the next build";
+/**
  * New line splitter.
  * @const {RegExp}
  */
@@ -71,6 +76,7 @@ const minimizePSL = (raw, license, source, cache = true) => {
     }
     out.push("// License: " + license);
     out.push("// Srouce: " + source);
+    out.push("// " + binaryWarning);
 
     for (let l of raw) {
         const i = l.indexOf("//");
@@ -105,6 +111,7 @@ const minimizeResource = (raw, license, source, expires = 3, cache = true) => {
     }
     out.push("# License: " + license);
     out.push("# Source: " + source);
+    out.push("# " + binaryWarning);
 
     let lastLineEmpty = false;
     for (let l of raw) {
@@ -147,6 +154,7 @@ const minimizeFilter = (raw, title, license, source, expires = 1,
     }
     out.push("! License: " + license);
     out.push("! Source: " + source);
+    out.push("! " + binaryWarning);
 
     for (let f of raw) {
         f = f.trim();
@@ -212,6 +220,7 @@ const minimizeHosts = (() => {
         }
         out.push("! License: " + license);
         out.push("! Source: " + source);
+        out.push("! " + binaryWarning);
 
         for (let f of raw) {
             const i = f.indexOf("#");

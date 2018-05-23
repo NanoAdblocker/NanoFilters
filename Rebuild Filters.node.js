@@ -49,7 +49,7 @@ const minimizePSL = (raw, license, source) => {
 
     let out = [
         "// Expires: 7 days",
-        "// Cached: " + (new Date()).toString(),
+        "// Cached: " + (new Date()).toUTCString(),
         "// License: " + license,
         "// Srouce: " + source,
     ];
@@ -84,7 +84,7 @@ const minimizeResource = (raw, license, source) => {
 
     let out = [
         "# Expires: 3 days",
-        "# Cached: " + (new Date()).toString(),
+        "# Cached: " + (new Date()).toUTCString(),
         "# License: " + license,
         "# Source: " + source,
     ];
@@ -128,7 +128,7 @@ const minimizeFilter = (raw, title, license, source, expires) => {
         "[Adblock Plus 3.0]",
         "! Title: " + title,
         "! Expires: " + expires.toString() + " day",
-        "! Cached: " + (new Date()).toString(),
+        "! Cached: " + (new Date()).toUTCString(),
         "! License: " + license,
         "! Source: " + source,
     ];
@@ -188,7 +188,7 @@ const minimizeHosts = (() => {
             "[Adblock Plus 3.0]",
             "! Title: " + title,
             "! Expires: " + expires.toString() + " day",
-            "! Cached: " + (new Date()).toString(),
+            "! Cached: " + (new Date()).toUTCString(),
             "! License: " + license,
             "! Source: " + source,
         ];

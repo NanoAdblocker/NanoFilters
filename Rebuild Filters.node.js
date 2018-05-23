@@ -159,7 +159,7 @@ const minimizeFilter = (raw, title, license, source, expires = 1,
             continue;
         }
         if (
-            f.chatAt(0) === '#' &&
+            f.charAt(0) === '#' &&
             (
                 f.length === 1 ||
                 f.charAt(1) === ' '

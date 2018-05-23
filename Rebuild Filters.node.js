@@ -314,7 +314,10 @@ process.on("unhandledRejection", (err) => {
         processOneNanoFilter("NanoAnnoyance.txt", "Nano filters - Annoyance"),
         processOneNanoFilter("NanoWhitelist.txt", "Nano filters - Whitelist"),
 
-        processOneResource("NanoFiltersSource", "NanoFilters", "NanoResources.txt", false),
+        processOneResource(
+            "NanoFiltersSource", "NanoFilters",
+            "NanoResources.txt", false,
+        ),
     ]);
 
     console.log("Done");

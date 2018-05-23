@@ -4,7 +4,7 @@ Script snippets and filters for Nano Adblocker
 
 These resources are designed for Nano Adblocker and may not always work as
 expected with uBlock Origin out of the box. See
-[filter syntax](https://github.com/NanoAdblocker/NanoCore/blob/master/notes/filter-syntax.MD#filter-syntax)
+[Filter Syntax Differences](https://github.com/NanoAdblocker/NanoDoc/blob/master/en/FilterSyntax.MD)
 for more details.
 
 Third party filters were cached on 2018-05-20. Cache will be updated on every

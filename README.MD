@@ -15,11 +15,11 @@ Please open an issue if there is something you want us to know.
 ## RawGit Links
 
 ```
-https://cdn.rawgit.com/NanoAdblocker/NanoFilters/11816f34/NanoFilters/NanoBase.txt
-https://cdn.rawgit.com/NanoAdblocker/NanoFilters/11816f34/NanoFilters/NanoAnnoyance.txt
-https://cdn.rawgit.com/NanoAdblocker/NanoFilters/11816f34/NanoFilters/NanoWhitelist.txt
+https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoBase.txt
+https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoAnnoyance.txt
+https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoWhitelist.txt
 
-https://cdn.rawgit.com/NanoAdblocker/NanoFilters/11816f34/NanoFilters/NanoResources.txt
+https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoResources.txt
 ```
 
 ## Filter Policy

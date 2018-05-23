@@ -22,6 +22,12 @@ https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoWhitelis
 https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoResources.txt
 ```
 
+click to subscribe it [NanoBase][NanoBase], [NanoAnnoyance][NanoAnnoyance] and [NanoWhitelist][NanoWhitelist]
+
+[NanoBase]: https://subscribe.adblockplus.org/?location=https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoBase.txt&title=Nano%20filters
+[NanoAnnoyance]: https://subscribe.adblockplus.org/?location=https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoAnnoyance.txt&title=Nano%20filters%20-%20Annoyance
+[NanoWhitelist]: https://subscribe.adblockplus.org/?location=https://cdn.rawgit.com/NanoAdblocker/NanoFilters/master/NanoFilters/NanoWhitelist.txt&title=Nano%20filters%20-%20Whitelist
+
 ## Filter Policy
 
 If an issue is taken care by a default (regional) filter, then it will not be

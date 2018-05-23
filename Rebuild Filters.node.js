@@ -17,6 +17,15 @@ const fs = (() => {
         writeFile: util.promisify(ofs.writeFile),
     };
 })();
+/**
+ * Get a string representation of current time.
+ * @function
+ * @return {string} The time string.
+ */
+const now = () => {
+    const d = new Date();
+    return d.toUTCString();
+};
 
 
 /**
@@ -27,7 +36,19 @@ const reNewLine = /\r\n|\n|\r/;
 /**
  * Minimize assets.json.
  * @function
+ *
+ * For all minimization functions, the following parameters may be accepted:
  * @param {string} raw - The raw data.
+ * @param {string} title - The title of the filter.
+ * @param {string} license - The link to the license.
+ * @param {string} source - The link to the source.
+ * @param {integer} [expires=?] - The update interval in days. The default
+ * depends on the function.
+ * @param {boolean} [abp_compat=true] - Whether the generated filter should be
+ * made compatible with Adblock Plus if possible.
+ * @param {boolean} [cache=true] - Whether the current date should be shown.
+ *
+ * All minimization functions returns the minimized data.
  * @return {string} The minimized data.
  */
 const minimizeMeta = (raw) => {
@@ -39,20 +60,18 @@ const minimizeMeta = (raw) => {
 /**
  * Minimize the Public Suffix List.
  * @function
- * @param {string} raw - The raw data.
- * @param {string} license - The link to the license.
- * @param {string} source - The link to the source.
- * @return {string} The minimized data.
  */
-const minimizePSL = (raw, license, source) => {
+const minimizePSL = (raw, license, source, cache = true) => {
     raw = raw.split(reNewLine);
 
-    let out = [
-        "// Expires: 7 days",
-        "// Cached: " + (new Date()).toUTCString(),
-        "// License: " + license,
-        "// Srouce: " + source,
-    ];
+    let out = [];
+    out.push("// Expires: 7 days");
+    if (cache) {
+        out.push("// Cached: " + now());
+    }
+    out.push("// License: " + license);
+    out.push("// Srouce: " + source);
+
     for (let l of raw) {
         const i = l.indexOf("//");
         if (i > -1) {
@@ -67,6 +86,7 @@ const minimizePSL = (raw, license, source) => {
 
         out.push(l);
     }
+
     out.push("");
 
     return out.join("\n");
@@ -74,20 +94,18 @@ const minimizePSL = (raw, license, source) => {
 /**
  * Minimize a resource file.
  * @function
- * @param {string} raw - The raw data.
- * @param {string} license - The link to the license.
- * @param {string} source - The link to the source.
- * @return {string} The minimized data.
  */
-const minimizeResource = (raw, license, source) => {
+const minimizeResource = (raw, license, source, expires = 3, cache = true) => {
     raw = raw.split(reNewLine);
 
-    let out = [
-        "# Expires: 3 days",
-        "# Cached: " + (new Date()).toUTCString(),
-        "# License: " + license,
-        "# Source: " + source,
-    ];
+    let out = [];
+    out.push("# Expires: " + expires.toString() + " days");
+    if (cache) {
+        out.push("# Cached: " + now());
+    }
+    out.push("# License: " + license);
+    out.push("# Source: " + source);
+
     let lastLineEmpty = false;
     for (let l of raw) {
         if (l.startsWith("#")) {
@@ -114,40 +132,45 @@ const minimizeResource = (raw, license, source) => {
 /**
  * Minimize a filter list.
  * @function
- * @param {string} raw - The raw data.
- * @param {string} title - The title of the filter.
- * @param {string} license - The link to the license.
- * @param {string} source - The link to the source map.
- * @param {integer} expires - The update interval in days.
- * @return {string} The minimized data.
  */
-const minimizeFilter = (raw, title, license, source, expires) => {
+const minimizeFilter = (raw, title, license, source, expires = 1,
+    cache = true) => {
+
     raw = raw.split(reNewLine);
 
-    let out = [
-        "[Adblock Plus 3.0]",
-        "! Title: " + title,
-        "! Expires: " + expires.toString() + " day",
-        "! Cached: " + (new Date()).toUTCString(),
-        "! License: " + license,
-        "! Source: " + source,
-    ];
+    let out = [];
+    out.push("[Adblock Plus 3.0]");
+    out.push("! Title: " + title);
+    out.push("! Expires: " + expires.toString() + " days");
+    if (cache) {
+        out.push("! Cached: " + now());
+    }
+    out.push("! License: " + license);
+    out.push("! Source: " + source);
+
     for (let f of raw) {
         f = f.trim();
 
         if (f.length === 0) {
             continue;
         }
-        if (f.startsWith("!") && !f.startsWith("!#")) {
+        if (f.charAt(0) === '!' && f.charAt(1) !== '#') {
             // https://github.com/AdguardTeam/AdguardBrowserExtension/issues/917
             continue;
         }
-        if (f.startsWith("# ") || f === "#") {
+        if (
+            f.chatAt(0) === '#' &&
+            (
+                f.length === 1 ||
+                f.charAt(1) === ' '
+            )
+        ) {
             continue;
         }
 
         out.push(f);
     }
+
     out.push("");
 
     return out.join("\n");
@@ -155,43 +178,41 @@ const minimizeFilter = (raw, title, license, source, expires) => {
 /**
  * Minimize a hosts file.
  * @function
- * @param {string} raw - The raw data.
- * @param {string} title - The title of the filter.
- * @param {string} license - The link to the license.
- * @param {string} source - The link to the source map.
- * @param {integer} expires - The update interval in days.
- * @param {boolean} [abp_compat=true] - Whether Adblock Plus compatible filter
- * should be generated.
- * @return {string} The minimized data.
  */
 const minimizeHosts = (() => {
     const reWhitespace = /\s+/;
 
     const localTest1 = new Set([
-        // reIsLocalhostRedirect
+        // reIsLocalhostRedirect part 1
         "0.0.0.0",
         "broadcasthost",
         "localhost",
         "local",
 
         // reLocalIp
+        "0.0.0.0",
         "127.0.0.1",
         "::1",
         "fe80::1%lo0",
     ]);
+    // reIsLocalhostRedirect part 2
     const localTest2 = /^ip6-\w+$/;
 
-    return (raw, title, license, source, expires, abp_compat = true) => {
+    return (raw, title, license, source, expires = 1, abp_compat = true,
+        cache = true) => {
+
         raw = raw.split(reNewLine);
 
-        let out = [
-            "[Adblock Plus 3.0]",
-            "! Title: " + title,
-            "! Expires: " + expires.toString() + " day",
-            "! Cached: " + (new Date()).toUTCString(),
-            "! License: " + license,
-            "! Source: " + source,
-        ];
+        let out = [];
+        out.push("[Adblock Plus 3.0]");
+        out.push("! Title: " + title);
+        out.push("! Expires: " + expires.toString() + " days");
+        if (cache) {
+            out.push("! Cached: " + now());
+        }
+        out.push("! License: " + license);
+        out.push("! Source: " + source);
+
         for (let f of raw) {
             const i = f.indexOf("#");
             if (i > -1) {
@@ -222,6 +243,7 @@ const minimizeHosts = (() => {
                 }
             }
         }
+
         out.push("");
 
         return out.join("\n");
@@ -235,7 +257,8 @@ const minimizeHosts = (() => {
  * @param {string} inFile - The path to input file.
  * @param {string} outFile - The path to output file.
  * @param {Function} handler - The minimizer.
- * @param {any} args - Arguments to pass into the minimizer.
+ * @param {Array.<Any>} ...args - Arguments to pass into the minimizer
+ * excluding the raw data.
  */
 const processOne = async (inFile, outFile, handler, ...args) => {
     const data = await fs.readFile(inFile, "utf8");
@@ -252,10 +275,12 @@ const processOneNanoFilter = async (name, title) => {
         "./NanoFiltersSource/" + name,
         "./NanoFilters/" + name,
         minimizeFilter,
+
         title,
         "GPL-3.0",
         "https://github.com/NanoAdblocker/NanoFilters/tree/master/NanoFiltersSource/" + name,
         1,
+        false,
     );
 };
 /**
@@ -264,14 +289,17 @@ const processOneNanoFilter = async (name, title) => {
  * @param {string} inDir - The input directory.
  * @param {string} outDir - The output directory.
  * @param {string} name - The file name.
+ * @param {string} cache - The cache parameter for the minimization function.
  */
-const processOneResource = async (inDir, outDir, name) => {
+const processOneResource = async (inDir, outDir, name, cache) => {
     await processOne(
         "./" + inDir + "/" + name,
         "./" + outDir + "/" + name,
         minimizeResource,
         "GPL-3.0",
         "https://github.com/NanoAdblocker/NanoFilters/tree/master/" + inDir + "/" + name,
+        3,
+        cache,
     );
 };
 
@@ -286,9 +314,8 @@ process.on("unhandledRejection", (err) => {
         processOneNanoFilter("NanoAnnoyance.txt", "Nano filters - Annoyance"),
         processOneNanoFilter("NanoWhitelist.txt", "Nano filters - Whitelist"),
 
-        processOneResource("NanoFiltersSource", "NanoFilters", "NanoResources.txt"),
+        processOneResource("NanoFiltersSource", "NanoFilters", "NanoResources.txt", false),
     ]);
 
     console.log("Done");
 })();
-

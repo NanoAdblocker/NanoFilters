@@ -725,7 +725,8 @@ energy.de#@##ad_home
 ! https://github.com/uBlockOrigin/uAssets/issues/946
 ! https://github.com/uBlockOrigin/uAssets/issues/1817
 ! https://github.com/uBlockOrigin/uAssets/issues/2120
-@@||authedmine.com^$domain=dlik.win|ivpaste.com|mylink.li
+! https://github.com/uBlockOrigin/uAssets/issues/2337
+@@||authedmine.com^$domain=dlik.win|ivpaste.com|mylink.li|cutsmile.com
 
 ! https://github.com/gorhill/uBlock/issues/3321
 @@||livechatinc.com^$generichide
@@ -940,11 +941,6 @@ arduino.cc#@#.addthis_toolbox
 @@||dugout.com/boxsets/js/videojs.ads.js?$script,first-party
 @@||dugout.com/boxsets/js/prebid_$script,first-party
 
-! https://twitter.com/MartinLarner/status/973570736530083840
-! This fixes navigation bar not responding to click events
-! https://github.com/uBlockOrigin/uAssets/issues/2107
-@@||google-analytics.com/analytics.js$script,domain=cyclingnews.com
-
 ! https://www.reddit.com/r/uBlockOrigin/comments/849wq4/local_papers_website_changed_their_comments_cant/
 ||viafoura.co^$badfilter
 
@@ -1096,7 +1092,7 @@ mobile.twitter.com#@#._29ahSMvH section.rn-1oszu61 div[class][style*="padding-"]
 ||geo.kaloo.ga/json/*$script,redirect=noopjs,domain=telesurtv.net
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2295
-@@||bobcat.grahamdigital.com^$image,domain=clickondetroit.com
+@@||bobcat.grahamdigital.com^$image,domain=clickondetroit.com|click2houston.com|clickondetroit.com|clickorlando.com|ksat.com|local10.com|news4jax.com|wsls.com
 
 ! unbreak comment section
 ! broken by EasyList csp-filter
@@ -1124,3 +1120,28 @@ mobile.twitter.com#@#._29ahSMvH section.rn-1oszu61 div[class][style*="padding-"]
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/8kh4zc/kotaku_embedded_twitter_images_not_displaying/
 avclub.com,deadspin.com,earther.com,gizmodo.com,jalopnik.com,jezebel.com,kotaku.com,lifehacker.com,splinternews.com,theroot.com,thetakeout.com#@#div[id^="dfp-ad-"]
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=40826
+@@||d1xrtnyoeeet33.cloudfront.net/assets/js/lib/*$script,domain=calgaryherald.com|calgarysun.com|canoe.com|edmontonsun.com|financialpost.com|leaderpost.com|lfpress.com|montrealgazette.com|nationalpost.com|ottawacitizen.com|ottawasun.com|theprovince.com|thestarphoenix.com|torontosun.com|vancouversun.com|windsorstar.com|winnipegsun.com
+
+! https://forums.lanik.us/viewtopic.php?f=90&t=40839
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=deluxemusic.tv
+@@||deluxemusic.tv/*/videojs.ads$script,domain=deluxemusic.tv
+@@||script.ioam.de/iam.js$script,domain=deluxemusic.tv
+
+! https://github.com/uBlockOrigin/uAssets/issues/2353
+@@||cbsistatic.com/*/comscore.streaming.$script,domain=cbsnews.com
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=40851
+||rdsig.yahoo.co.jp^$badfilter
+||rdsig.yahoo.co.jp^$image
+
+! https://github.com/uBlockOrigin/uAssets/issues/2357
+@@||pandora.com/web-version/*_comscore.$script,first-party
+@@||pandora.com/web-version/*_googleAnalytics.$script,first-party
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=40781
+||era.easyvoyage.com^$badfilter
+@@||era.easyvoyage.com/$script,domain=easyvoyage.co.uk|easyvoyage.com|easyviajar.com|easyvoyage.de|easyvols.fr|easyviaggio.com
+@@||cdn.ev.mu/*/jso/ev/core/log.js$script,domain=easyvoyage.co.uk|easyvoyage.com|easyviajar.com|easyvoyage.de|easyviaggio.com
+@@||cdn.ev.mu/*/jso/ev/$script,domain=easyvols.fr

@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: hWjpkm0svdeY4mkLZMJe8Q
-! Version: 201805202250
+! Checksum: kcW2fvVsnEia6BEZ4U6qaw
+! Version: 201805241440
 ! Title: Adblock Warning Removal List
-! Last modified: 20 May 2018 22:50 UTC
+! Last modified: 24 May 2018 14:40 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -233,6 +233,7 @@ usgang.ch###rectangle-wrapper
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_romanian.txt ***
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_russian.txt ***
 delfi.ee###ab--notification-ribbon
+minimultik.ru###abDetected
 patrioty.org.ua###ad_pu_modal
 vesti-ukr.com###adblockpopup
 happy-hack.ru###admitad-cookie-check-popup
@@ -244,6 +245,7 @@ cxem.net###antiAdBlock
 elhow.ru###b-info-wrapper
 webdesign-master.ru###blocka
 ma.by###bodysubcont > div[style^="padding"]:not([id]):not([class])
+pln-pskov.ru###check_ad_block
 helpsetup.ru###d930
 delfi.ee###delfiTopBar
 sd-company.su###dom_adblock
@@ -320,6 +322,7 @@ objavlenija.respublika.cz##.sweet-alert,.sweet-overlay
 xn--80aikhbrhr.net,кинокрад.net##.warning-adblock-box
 forum.bestflowers.ru##.xenOverlay
 /api/scripts/mainjs?token$script,domain=liveresult.ru
+/cookie_check.min.js$domain=acetv.me
 /forum/docs/requests.js$script,domain=nnm-club.lib|nnm-club.me|nnm-club.name|nnm-club.tv|nnmclub.to|nnmclub.tv|nontorclub.in.net
 /fuckadblock.js$domain=ace-stream.tv
 @@||goha.ru/app/video/adblock.teaser.js|$script,domain=goha.ru
@@ -358,7 +361,6 @@ d3.ru##section[data-uid="extraAd"]
 ph4.ru##table[width][height="90"][style]
 bigpuzzle.ru##td[valign="top"][width="200px"][height="600"] > div[style]
 www.qrz.ru#?#.content_row > div[class]:-abp-has(> .inner > a[href="/help/adblock/"])
-||acetv.me/cookie_check.min.js
 ||adscat.ru^$third-party
 ||animeteatr.ru/a-detector/
 ||anivisual.net/mim*.js|$script,domain=anivisual.net

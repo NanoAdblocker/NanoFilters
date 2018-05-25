@@ -81,10 +81,10 @@ androidrepublic.org##.samSupportUs
 globalnews.ca##script:inject(set-constant.js, GNCA_Ad_Support, true)
 socialblade.com##.cas-container
 socialblade.com##.cas-wide-container
+gamepedia.com###bodyContent:style(width: 100% !important;)
 !#if env_edge
 businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
 businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)
 businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 !#endif
-mail.yahoo.com##div[aria-describedby="adblock-upsell-description"]
 clipconverter.cc##+js(abort-on-property-read.js, T0P5e)

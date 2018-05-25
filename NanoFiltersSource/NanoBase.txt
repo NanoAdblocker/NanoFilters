@@ -214,6 +214,9 @@ globalnews.ca##script:inject(set-constant.js, GNCA_Ad_Support, true)
 socialblade.com##.cas-container
 socialblade.com##.cas-wide-container
 
+# https://github.com/uBlockOrigin/uAssets/issues/2113
+gamepedia.com###bodyContent:style(width: 100% !important;)
+
 # ############################## #
 # #### Edge Specific Filter #### #
 # ############################## #
@@ -229,9 +232,6 @@ businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 # ################################# #
 # #### Pending Synchronization #### #
 # ################################# #
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/889
-mail.yahoo.com##div[aria-describedby="adblock-upsell-description"]
 
 # https://github.com/NanoAdblocker/NanoCore/issues/41
 clipconverter.cc##+js(abort-on-property-read.js, T0P5e)

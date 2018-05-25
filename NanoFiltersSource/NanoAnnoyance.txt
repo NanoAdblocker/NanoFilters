@@ -8,14 +8,20 @@ microsoft.com,live.com,windows.com###epb
 # Anti-select for no valid reason, test: http://tampermonkey.net/
 tampermonkey.net##*:style(user-select: text !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important;)
 
-# The donation message is getting excessive, test: https://en.wikipedia.org/wiki/%22Hello,_World!%22_program
-wikipedia.org##+js(abort-on-property-write.js, frb)
-
 # https://github.com/NanoAdblocker/NanoDefender/issues/12
 rektstack.com##+js(abort-on-property-write.js, document.oncontextmenu)
 
+# The donation message is getting excessive, test: https://en.wikipedia.org/wiki/%22Hello,_World!%22_program
+wikipedia.org##+js(abort-on-property-write.js, frb)
+
 # https://github.com/jspenguin2017/uBlockProtector/issues/890
 bizjournals.com##+js(set-constant.js, __page__.isPremium, false)
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/677
+||static.infoglobo.com.br/paywall/*$domain=oglobo.globo.com
+
+# https://github.com/uBlockOrigin/uAssets/issues/2317
+||washingtonpost.com/wp-stat/pwapi/prod/*
 
 # https://github.com/uBlockOrigin/uAssets/issues/881
 hardware.info##+js(nanop-click-elements-onready.js, .cookiecontainer > .cookie > button#decision[name="accept"])

@@ -82,6 +82,7 @@ globalnews.ca##script:inject(set-constant.js, GNCA_Ad_Support, true)
 socialblade.com##.cas-container
 socialblade.com##.cas-wide-container
 gamepedia.com###bodyContent:style(width: 100% !important;)
+@@||dotesports.com/showads.js$script,first-party
 !#if env_edge
 businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
 businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)

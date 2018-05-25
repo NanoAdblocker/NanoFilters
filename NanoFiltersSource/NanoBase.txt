@@ -217,6 +217,9 @@ socialblade.com##.cas-wide-container
 # https://github.com/uBlockOrigin/uAssets/issues/2113
 gamepedia.com###bodyContent:style(width: 100% !important;)
 
+# Anti-adblock, test: https://dotesports.com/league-of-legends/news/new-lol-announcer-pack-phreak-kobe-22899
+@@||dotesports.com/showads.js$script,first-party
+
 # ############################## #
 # #### Edge Specific Filter #### #
 # ############################## #

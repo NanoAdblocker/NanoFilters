@@ -204,6 +204,16 @@ bigspeeds.com##.link-error:has-text(Advertisers)
 # https://github.com/uBlockOrigin/uAssets/issues/2343
 evworld.com##+js(setTimeout-defuser.js, ads, 2000)
 
+# https://github.com/uBlockOrigin/uAssets/issues/2299
+androidrepublic.org##.samSupportUs
+
+# https://github.com/uBlockOrigin/uAssets/issues/2269
+globalnews.ca##script:inject(set-constant.js, GNCA_Ad_Support, true)
+
+# https://github.com/uBlockOrigin/uAssets/issues/2185
+socialblade.com##.cas-container
+socialblade.com##.cas-wide-container
+
 # ############################## #
 # #### Edge Specific Filter #### #
 # ############################## #

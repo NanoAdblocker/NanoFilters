@@ -77,6 +77,10 @@ nl.hardware.info###sitearea > div:has-text(adblocker)
 bigspeeds.com##.link-error:has-text(Advertisers)
 ||3dzone.link/wp-content/uploads/2018/05/Disable-Adblock-in-Blogger-Blogs-300x158.png$image
 evworld.com##+js(setTimeout-defuser.js, ads, 2000)
+androidrepublic.org##.samSupportUs
+globalnews.ca##script:inject(set-constant.js, GNCA_Ad_Support, true)
+socialblade.com##.cas-container
+socialblade.com##.cas-wide-container
 !#if env_edge
 businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
 businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)

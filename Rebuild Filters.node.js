@@ -329,6 +329,11 @@ process.on("unhandledRejection", (err) => {
         ),
     ]);
 
+    if (process.argv.includes("--nano-only")) {
+        console.log("Done");
+        return;
+    }
+
     await Promise.all([
         processOne(
             "../uBlockProtector/uBlockProtectorList.txt",

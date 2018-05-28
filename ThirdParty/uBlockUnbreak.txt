@@ -122,6 +122,8 @@ ovh.strim.io#@##tweets
 # https://github.com/chrisaljoudi/uBlock/issues/602
 # To counter `/ads.css` in EasyList
 @@||css.washingtonpost.com/*/ads.css$stylesheet,~third-party
+! https://github.com/uBlockOrigin/uAssets/issues/2317#issuecomment-391911664
+@@||washingtonpost.com/wp-stat/analytics/*.js$script,domain=subscribe.washingtonpost.com
 
 # https://twitter.com/yo_0/status/559748330390323200
 # To counter `||clickbank.com^` in Dan Pollock's, Peter Lowe's
@@ -1132,16 +1134,23 @@ avclub.com,deadspin.com,earther.com,gizmodo.com,jalopnik.com,jezebel.com,kotaku.
 ! https://github.com/uBlockOrigin/uAssets/issues/2353
 @@||cbsistatic.com/*/comscore.streaming.$script,domain=cbsnews.com
 
-! https://forums.lanik.us/viewtopic.php?f=64&t=40851
-||rdsig.yahoo.co.jp^$badfilter
-||rdsig.yahoo.co.jp^$image
-
 ! https://github.com/uBlockOrigin/uAssets/issues/2357
 @@||pandora.com/web-version/*_comscore.$script,first-party
 @@||pandora.com/web-version/*_googleAnalytics.$script,first-party
 
-! https://forums.lanik.us/viewtopic.php?f=64&t=40781
-||era.easyvoyage.com^$badfilter
-@@||era.easyvoyage.com/$script,domain=easyvoyage.co.uk|easyvoyage.com|easyviajar.com|easyvoyage.de|easyvols.fr|easyviaggio.com
-@@||cdn.ev.mu/*/jso/ev/core/log.js$script,domain=easyvoyage.co.uk|easyvoyage.com|easyviajar.com|easyvoyage.de|easyviaggio.com
-@@||cdn.ev.mu/*/jso/ev/$script,domain=easyvols.fr
+! https://forums.lanik.us/viewtopic.php?f=64&t=40856
+@@||static.criteo.net/js/ld/ld.js$script,domain=coches.net
+
+! https://www.reddit.com/r/belgium/comments/8lv8uw/anyone_else_experiencing_issues_on_vrt_websites/
+@@||cdn.vuplay.co.uk/stats/*/AppMeasurement.js$script,domain=vrt.be
+@@||cdn.vuplay.co.uk/stats/*/VisitorAPI.js$script,domain=vrt.be
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=40478
+@@||flightapi.travix.com/flight$xmlhttprequest,domain=cheaptickets.nl|vayama.com
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=40868
+||v.embed-cdn.com/v8/player.js$script,domain=streamable.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/2390
+://adv.$domain=~adv.co.it|~adv.ee|~adv.gg|~adv.msk.ru|~adv.ru|~adv.vg|~adv.works|~advids.co|~erti.se|~escreverdireito.com|~farapp.com|~forex-tv-online.com|~r7.com|~typeform.com|~welaika.com,badfilter
+://adv.$domain=~adv.co.it|~adv.ee|~adv.gg|~adv.michaelgat.com|~adv.msk.ru|~adv.ru|~adv.vg|~adv.works|~advids.co|~erti.se|~escreverdireito.com|~farapp.com|~forex-tv-online.com|~r7.com|~typeform.com|~welaika.com

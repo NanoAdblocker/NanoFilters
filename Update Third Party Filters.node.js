@@ -55,7 +55,7 @@ const fetchOne = (input, output) => {
                     break;
 
                 default:
-                    throw new Error("Unknown encoding:", encoding);
+                    throw new Error("Unknown encoding: " + encoding);
             }
 
             res.on("end", resolve);

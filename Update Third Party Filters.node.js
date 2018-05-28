@@ -11,6 +11,7 @@ const fs = require("fs");
 const https = require("https");
 const path = require("path");
 const url = require("url");
+const zlib = require("zlib");
 
 /**
  * The request agent.
@@ -32,10 +33,31 @@ const agent = new https.Agent({
 const fetchOne = (input, output) => {
     return new Promise((resolve, reject) => {
         let options = url.parse(input);
+        options.headers = {
+            "Accept-Encoding": "deflate, gzip, identity",
+        };
         options.agent = agent;
 
         let req = https.request(options, (res) => {
-            res.pipe(output);
+            let encoding = res.headers["content-encoding"] || "identity";
+            encoding = encoding.trim().toLowerCase();
+            switch (encoding) {
+                case "identity":
+                    res.pipe(output);
+                    break;
+
+                case "gzip":
+                    res.pipe(zlib.createGunzip()).pipe(output);
+                    break;
+
+                case "deflate":
+                    res.pipe(zlib.createInflate()).pipe(output);
+                    break;
+
+                default:
+                    throw new Error("Unknown encoding:", encoding);
+            }
+
             res.on("end", resolve);
             res.on("error", reject);
         });
@@ -73,12 +95,8 @@ process.on("unhandledRejection", (err) => {
 
 (async () => {
     const data = {
-        // Download these two first because their server is not very good and
-        // breaks sometimes
-        //
-        // This server is really bad and the filter never changes anyway
-        // Manually update it once a month if possible
         // "MalwareDomain0.txt": "https://www.malwaredomainlist.com/hostslist/hosts.txt",
+        "MalwareDomain0.txt": "https://jspenguin.com/NanoAdblocker/AssetsMirror/MalwareDomain0.txt?_=0",
         "MalwareDomain1.txt": "https://mirror1.malwaredomains.com/files/justdomains",
 
         "PublicSuffix.dat": "https://publicsuffix.org/list/public_suffix_list.dat",

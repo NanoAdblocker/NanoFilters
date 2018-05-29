@@ -32,7 +32,8 @@ const now = () => {
  * The warning message about minimized filters should not be modified.
  * @const {string}
  */
-const binaryWarning = "This file is a compiled binary, any modification will be overwritten on the next build";
+const binaryWarning1 = "This file is a compiled binary, do not modify";
+const binaryWarning2 = "All modifications will be overwritten on the next build";
 /**
  * New line splitter.
  * @const {RegExp}
@@ -49,8 +50,6 @@ const reNewLine = /\r\n|\n|\r/;
  * @param {string} source - The link to the source.
  * @param {integer} [expires=?] - The update interval in days. The default
  * depends on the function.
- * @param {boolean} [abp_compat=true] - Whether the generated filter should be
- * made compatible with Adblock Plus if possible.
  * @param {boolean} [cache=true] - Whether the current date should be shown.
  *
  * All minimization functions returns the minimized data.
@@ -76,7 +75,8 @@ const minimizePSL = (raw, license, source, cache = true) => {
     }
     out.push("// License: " + license);
     out.push("// Srouce: " + source);
-    out.push("// " + binaryWarning);
+    out.push("// " + binaryWarning1);
+    out.push("// " + binaryWarning2);
 
     for (let l of raw) {
         const i = l.indexOf("//");
@@ -111,7 +111,8 @@ const minimizeResource = (raw, license, source, expires = 3, cache = true) => {
     }
     out.push("# License: " + license);
     out.push("# Source: " + source);
-    out.push("# " + binaryWarning);
+    out.push("# " + binaryWarning1);
+    out.push("# " + binaryWarning2);
 
     let lastLineEmpty = false;
     for (let l of raw) {
@@ -146,7 +147,7 @@ const minimizeFilter = (raw, title, license, source, expires = 1,
     raw = raw.split(reNewLine);
 
     let out = [];
-    out.push("[Adblock Plus 3.0]");
+    out.push("[Nano Adblocker]");
     out.push("! Title: " + title);
     out.push("! Expires: " + expires.toString() + " days");
     if (cache) {
@@ -154,7 +155,8 @@ const minimizeFilter = (raw, title, license, source, expires = 1,
     }
     out.push("! License: " + license);
     out.push("! Source: " + source);
-    out.push("! " + binaryWarning);
+    out.push("! " + binaryWarning1);
+    out.push("! " + binaryWarning2);
 
     for (let f of raw) {
         f = f.trim();
@@ -206,13 +208,12 @@ const minimizeHosts = (() => {
     // reIsLocalhostRedirect part 2
     const localTest2 = /^ip6-\w+$/;
 
-    return (raw, title, license, source, expires = 1, abp_compat = true,
-        cache = true) => {
+    return (raw, title, license, source, expires = 1, cache = true) => {
 
         raw = raw.split(reNewLine);
 
         let out = [];
-        out.push("[Adblock Plus 3.0]");
+        out.push("[Nano Adblocker]");
         out.push("! Title: " + title);
         out.push("! Expires: " + expires.toString() + " days");
         if (cache) {
@@ -220,7 +221,8 @@ const minimizeHosts = (() => {
         }
         out.push("! License: " + license);
         out.push("! Source: " + source);
-        out.push("! " + binaryWarning);
+        out.push("! " + binaryWarning1);
+        out.push("! " + binaryWarning2);
 
         for (let f of raw) {
             const i = f.indexOf("#");
@@ -245,11 +247,7 @@ const minimizeHosts = (() => {
                     continue;
                 }
 
-                if (abp_compat) {
-                    out.push("||" + d + "^");
-                } else {
-                    out.push(d);
-                }
+                out.push(d);
             }
         }
 

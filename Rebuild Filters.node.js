@@ -164,6 +164,11 @@ const minimizeFilter = (raw, title, license, source, expires = 1,
         if (f.length === 0) {
             continue;
         }
+
+        if (f.charAt(0) === '[') {
+            continue;
+        }
+
         if (
             f.charAt(0) === '!' &&
             (
@@ -174,6 +179,7 @@ const minimizeFilter = (raw, title, license, source, expires = 1,
             // https://github.com/AdguardTeam/AdguardBrowserExtension/issues/917
             continue;
         }
+
         if (
             f.charAt(0) === '#' &&
             (

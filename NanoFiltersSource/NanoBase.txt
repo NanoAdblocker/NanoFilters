@@ -220,6 +220,9 @@ gamepedia.com###bodyContent:style(width: 100% !important;)
 # Anti-adblock, test: https://dotesports.com/league-of-legends/news/new-lol-announcer-pack-phreak-kobe-22899
 @@||dotesports.com/showads.js$script,first-party
 
+# https://github.com/NanoAdblocker/NanoFilters/issues/87
+realcleardefense.com##+js(set-constant.js, warning_widget.check_ad_block_status, noopFunc)
+
 # ############################## #
 # #### Edge Specific Filter #### #
 # ############################## #

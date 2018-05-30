@@ -116,7 +116,7 @@ const minimizeResource = (raw, license, source, expires = 3, cache = true) => {
 
     let lastLineEmpty = false;
     for (let l of raw) {
-        if (l.startsWith("#")) {
+        if (l.charAt(0) === '#') {
             continue;
         }
 

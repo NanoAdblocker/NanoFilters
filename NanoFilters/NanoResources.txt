@@ -107,25 +107,6 @@ nano-vvvvid-it.js application/javascript
     }
 })();
 
-nano-camwhores-tv.js application/javascript
-(function() {
-    try {
-        window.open = undefined;
-    } catch ( err ) { }
-    var handler = function() {
-        var imgs = document.querySelectorAll('img.lazy-load');
-        for ( var img of imgs ) {
-            img.src = img.dataset.original;
-        }
-    };
-    if ( document.readyState === 'interactive' ||
-         document.readyState === 'complete' ) {
-        handler();
-    } else {
-        addEventListener('DOMContentLoaded', handler);
-    }
-})();
-
 nanop-click-elements-onready.js application/javascript
 (function() {
     var guard = '{{nano}}';

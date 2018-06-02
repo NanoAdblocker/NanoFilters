@@ -223,6 +223,9 @@ gamepedia.com###bodyContent:style(width: 100% !important;)
 # https://github.com/NanoAdblocker/NanoFilters/issues/87
 realcleardefense.com##+js(set-constant.js, warning_widget.check_ad_block_status, noopFunc)
 
+# https://github.com/jspenguin2017/uBlockProtector/issues/946
+@@||download.hr/module/detector/adsbygoogle.js$script,first-party
+
 # ############################## #
 # #### Edge Specific Filter #### #
 # ############################## #

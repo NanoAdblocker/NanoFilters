@@ -229,6 +229,9 @@ realcleardefense.com##+js(set-constant.js, warning_widget.check_ad_block_status,
 # https://github.com/uBlockOrigin/uAssets/issues/2443
 brainly.*##.brn-ab-detection-screening
 
+# https://github.com/NanoAdblocker/NanoFilters/issues/94
+techradar.com##script:inject(abort-on-property-read.js, _sp_.mms.startMsg)
+
 # ############################## #
 # #### Edge Specific Filter #### #
 # ############################## #

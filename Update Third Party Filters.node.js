@@ -95,8 +95,7 @@ process.on("unhandledRejection", (err) => {
 
 (async () => {
     const data = {
-        // "MalwareDomain0.txt": "https://www.malwaredomainlist.com/hostslist/hosts.txt",
-        "MalwareDomain0.txt": "https://jspenguin.com/NanoAdblocker/AssetsMirror/MalwareDomain0.txt?_=0",
+        "MalwareDomain0.txt": "https://cdn.rawgit.com/NanoMeow/MDLMirror/master/hosts.txt",
         "MalwareDomain1.txt": "https://mirror1.malwaredomains.com/files/justdomains",
 
         "PublicSuffix.dat": "https://publicsuffix.org/list/public_suffix_list.dat",

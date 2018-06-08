@@ -1,7 +1,7 @@
 [Nano Adblocker]
 ! Title: Nano Defender Integration
 ! Expires: 3 days
-! Cached: Fri, 08 Jun 2018 02:08:24 GMT
+! Cached: Fri, 08 Jun 2018 02:55:51 GMT
 ! License: GPL-3.0
 ! Source: https://github.com/jspenguin2017/uBlockProtector/tree/master/list
 ! This file is a compiled binary, do not modify
@@ -12,13 +12,12 @@
 @@|https://*.moatads.com/*/MoatFreeWheelJSPEM.js*$script
 @@|https://ads.korri.fr/index.js|$script
 @@|http://*.medianetworkinternational.com/js/advertisement.js*$script
-@@|https://imasdk.googleapis.com/js/sdkloader/ima3.js*$script
-@@|http://imasdk.googleapis.com/js/sdkloader/ima3.js*$script
-@@|http://*.v.fwmrm.net/ad/g/*$script,domain=ncaa.com|pga.com|q2.be|vtm.be|ruutu.fi|medialaancdn.be|medialaan.be
+@@|https://imasdk.googleapis.com/js/sdkloader/ima3.js*$script,domain=~fox.com|~motorsport.tv|~pandora.com|~popcornflix.com|~streamable.com|~tv2.dk
+@@|http://imasdk.googleapis.com/js/sdkloader/ima3.js*$script,domain=~fox.com|~motorsport.tv|~pandora.com|~popcornflix.com|~streamable.com|~tv2.dk
 @@|https://*.v.fwmrm.net/ad/g/*$script,domain=ncaa.com|pga.com|q2.be|vtm.be|ruutu.fi|medialaancdn.be|medialaan.be
+@@|http://*.v.fwmrm.net/ad/g/*$script,domain=ncaa.com|pga.com|q2.be|vtm.be|ruutu.fi|medialaancdn.be|medialaan.be
 ||cbsnews.com/news/*/[object%20object]$image,redirect=1x1-transparent.gif
 ||cbsnews.com/news/*/undefined$image,redirect=1x1-transparent.gif
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,important,domain=streamable.com|popcornflix.com|fox.com|tv2.dk|it.motorsport.com
 @@||ads-v-darwin.hulustream.com/published/*.mp4$domain=hulu.com
 ||authedmine.com^$third-party
 @@||authedmine.com^$domain=coinhive.com|filecrypt.cc

@@ -131,6 +131,29 @@ nanop-click-elements-onready.js application/javascript
     }
 })();
 
+nanop-click-elements-onload.js application/javascript
+(function() {
+    var guard = '{{nano}}';
+    if ( guard === '{{nano}}' ) {
+        return;
+    }
+    var selector = '{{1}}';
+    if ( selector === '' || selector === '{{1}}' ) {
+        return;
+    }
+    var click = function() {
+        var elements = document.querySelectorAll(selector);
+        for ( var element of elements ) {
+            element.click();
+        }
+    };
+    if ( document.readyState === 'complete' ) {
+        click();
+    } else {
+        addEventListener('load', click);
+    }
+})();
+
 nanop-easy-set-cookie.js application/javascript
 (function() {
     var guard = '{{nano}}';

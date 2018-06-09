@@ -32,15 +32,15 @@ removed:
 - Hostile anti-copy
 - Hostile anti-select
 - Hostile anti-right-click
-- Hostile anti-unfocus (like switching to another tab or window)
-- Forced like (a post on social media)
+- Hostile anti-blur (switching to another tab or window)
+- Forced like (social locker)
 - Intrusive donation message
 - Cookie wall
 - Fake pay wall (a pay wall is fake if it does not work when JavaScript and/or
   cookies are disabled in browser settings)
 
-Cookie notices are to be handled in Cookiemonster; tracking scripts are to be
-handled in EasyPrivacy.
+Regular cookie notices are to be handled in Cookiemonster; tracking scripts
+are to be handled in EasyPrivacy.
 
 ## Filter Quality Guideline
 

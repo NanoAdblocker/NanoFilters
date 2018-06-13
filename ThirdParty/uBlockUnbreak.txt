@@ -1099,7 +1099,9 @@ mobile.twitter.com#@#._29ahSMvH section.rn-1oszu61 div[class][style*="padding-"]
 
 ! unbreak comment section
 ! broken by EasyList csp-filter
+! https://forums.lanik.us/viewtopic.php?f=64&t=40981
 @@||androidcentral.com^$csp=script-src 'self' * 'unsafe-inline'
+@@||readmng.com^$csp=script-src 'self' * 'unsafe-inline'
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=40769
 @@||flyertalk.com/forum/*/ckeditor/core/log.js$script,first-party
@@ -1188,3 +1190,26 @@ calgarysun.com,canoe.com,edmontonsun.com,financialpost.com,nationalpost.com,otta
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2460#issuecomment-395008661
 motherless.com#@#iframe[style]
+
+! https://bugzilla.mozilla.org/show_bug.cgi?id=1467686
+/log_event?$badfilter
+/log_event?$domain=~youtube.com
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=40973
+@@||static.bbc.co.uk/radio/player/*/script/logger.js$script,domain=bbc.co.uk
+
+! https://forums.lanik.us/viewtopic.php?f=96&t=40978
+forbes.it#@#.ad-row
+
+! https://github.com/uBlockOrigin/uAssets/issues/2518
+@@/stat/counters/*$xmlhttprequest,domain=archive.softwareheritage.org
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=40959
+/advt.$badfilter
+/advt.$domain=~advt.ch
+
+! https://github.com/NanoAdblocker/NanoFilters/issues/98
+@@||api.sbs.com.au/js/tracking/ondemand.js$script,first-party
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=40930
+@@||static-olxeu.akamaized.net^*/js/tracking/ninja.js$script,domain=olx.ua

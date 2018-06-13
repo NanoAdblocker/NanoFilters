@@ -1,5 +1,5 @@
 # Nano Defender Integration
-# This filter list is intended to be used with Nano Defender (a.k.a. uBlock Protector)
+# This filter list is intended to be used with Nano Defender
 # Visit my home page for more information: https://jspenguin2017.github.io/uBlockProtector/
 # This file is a compiled binary, any modification will be overwritten on the next build
 |https://jspenguin.com/uBlockProtector/Solutions/Blocked.php$important
@@ -8,13 +8,12 @@
 @@|https://*.moatads.com/*/MoatFreeWheelJSPEM.js*$script
 @@|https://ads.korri.fr/index.js|$script
 @@|http://*.medianetworkinternational.com/js/advertisement.js*$script
-@@|https://imasdk.googleapis.com/js/sdkloader/ima3.js*$script
-@@|http://imasdk.googleapis.com/js/sdkloader/ima3.js*$script
-@@|http://*.v.fwmrm.net/ad/g/*$script,domain=ncaa.com|pga.com|q2.be|vtm.be|ruutu.fi|medialaancdn.be|medialaan.be
+@@|https://imasdk.googleapis.com/js/sdkloader/ima3.js*$script,domain=~fox.com|~motorsport.tv|~pandora.com|~popcornflix.com|~streamable.com|~tv2.dk
+@@|http://imasdk.googleapis.com/js/sdkloader/ima3.js*$script,domain=~fox.com|~motorsport.tv|~pandora.com|~popcornflix.com|~streamable.com|~tv2.dk
 @@|https://*.v.fwmrm.net/ad/g/*$script,domain=ncaa.com|pga.com|q2.be|vtm.be|ruutu.fi|medialaancdn.be|medialaan.be
+@@|http://*.v.fwmrm.net/ad/g/*$script,domain=ncaa.com|pga.com|q2.be|vtm.be|ruutu.fi|medialaancdn.be|medialaan.be
 ||cbsnews.com/news/*/[object%20object]$image,redirect=1x1-transparent.gif
 ||cbsnews.com/news/*/undefined$image,redirect=1x1-transparent.gif
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,important,domain=streamable.com|popcornflix.com|fox.com|tv2.dk|it.motorsport.com
 @@||ads-v-darwin.hulustream.com/published/*.mp4$domain=hulu.com
 ! Asking for permission does not have an enforced cooldown, can be exploited to make the permission request to be not refusable
 ! More information: https://github.com/uBlockOrigin/uAssets/issues/770
@@ -28,52 +27,6 @@
 /cn.wasm
 ||cqfnvznw.info^
 ||jyhfuqoh.info^
-||d.0emm.com^$third-party
-||d.0emn.com^$third-party
-||d.0enm.com^$third-party
-||d.0fmm.com^$third-party
-||d.0mme.com^$third-party
-||d.1emn.com^$third-party
-||d.1enm.com^$third-party
-||d.2enm.com^$third-party
-||d.3enm.com^$third-party
-||d.4666.ch^$third-party
-||d.8d1f.com^$third-party
-||d.9emn.com^$third-party
-||d.e0mn.com^$third-party
-||d.em0n.com^$third-party
-||d.emn0.com^$third-party
-||d.m80fg.com^$third-party
-||d.mdf91.com^$third-party
-||d.mn0e.com^$third-party
-||d.mpk01.com^$third-party
-||d.ndf81.com^$third-party
-||d.nfd81.com^$third-party
-||d.nn0e.com^$third-party
-||d.rpts.org^$third-party
-||w.0emm.com^$third-party
-||w.0emn.com^$third-party
-||w.0enm.com^$third-party
-||w.0fmm.com^$third-party
-||w.0mme.com^$third-party
-||w.1emn.com^$third-party
-||w.1enm.com^$third-party
-||w.2enm.com^$third-party
-||w.3enm.com^$third-party
-||w.4666.ch^$third-party
-||w.8d1f.com^$third-party
-||w.9emn.com^$third-party
-||w.e0mn.com^$third-party
-||w.em0n.com^$third-party
-||w.emn0.com^$third-party
-||w.m80fg.com^$third-party
-||w.mdf91.com^$third-party
-||w.mn0e.com^$third-party
-||w.mpk01.com^$third-party
-||w.ndf81.com^$third-party
-||w.nfd81.com^$third-party
-||w.nn0e.com^$third-party
-||w.rpts.org^$third-party
 ||googlesyndication.com^$important,domain=short.am|clubedohardware.com.br|receive-a-sms.com
 ||doubleclick.net^$important,domain=aetv.com|history.com|mylifetime.com|receive-a-sms.com
 ||damoh.*$media
@@ -172,8 +125,6 @@ ally.sh,al.ly##+js(popads.net.js)
 ||ooul.tv/contrib/se-aftonbladet/aab/aftonbladet_plugin.js$script,redirect=noopjs,domain=aftonbladet.se
 ||ooul.tv/nocache/se-aftonbladet/aab/aftonbladet_config.js$script,redirect=noopjs,domain=aftonbladet.se
 filechoco.net,keezmovies.com,raptu.com,afreesms.com##+js(noeval.js)
-||rule34hentai.net^$inline-script
-rule34hentai.net###babasbmsgx
 playbb.me#@#div[style^="width:"]
 easyvideo.me#@#div[style^="width:"]
 videowing.me#@#div[style^="width:"]
@@ -237,8 +188,6 @@ animesync.tv##.modal-adblock
 ||active.cache.el-mundo.net/js/*_expansion.js$domain=expansion.com
 watchfree.to##+js(abort-on-property-read.js, UAParser)
 firstonetv.eu,firstone.tv##+js(noeval-if.js, Please disable your Adblocker)
-|https://$third-party,script,domain=streamwoop.tv,badfilter
-|https://$third-party,xmlhttprequest,domain=streamwoop.tv,badfilter
 vooxe.com###blockedAddons
 gentecheesisterealmente.com##+js(abort-on-property-read.js, admaniastchk)
 ||litv.tv/promo/
@@ -256,10 +205,8 @@ kitguru.net#@#div > a[class] > img[src]
 kitguru.net##.gofollow
 vidnow.to###adplayer
 ||gigaleecher.com/templates/plugmod/giga.js$script
-|https://$third-party,script,domain=photobucket.com,badfilter
 diariodenavarra.es###abMsgWrap
 darmowe-pornosy.pl,polskie-aktorki-porno.pl#@#.myTestAd
-|https://$third-party,script,domain=hothardware.com,badfilter
 themarker.com###ad-block-wrapper
 @@||jsuol.com.br/c/detectadblock/$script,domain=uol.com.br,badfilter
 @@*$csp,domain=vidlox.tv
@@ -305,7 +252,6 @@ couponcabin.com###adblocker-reminder
 @@||tubeninja.net/ads.js$first-party
 tlz.de##.ab-shader
 ||v.adfox.ru^$xmlhttprequest,redirect=nooptext,domain=1tv.ru
-|https://$third-party,script,domain=uptobox.com|uptostream.com,badfilter
 1tiny.net##+js(abort-on-property-read.js, jQuery.ready)
 thevideo.me##.notification-adblock
 ||fas.li/js/p.js

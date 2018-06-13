@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: Z5LxiWz1mIV3LeOybssElA
-! Version: 201806070301
+! Checksum: xq7SqylvffIVKujMIAxxSg
+! Version: 201806130311
 ! Title: EasyPrivacy
-! Last modified: 07 Jun 2018 03:01 UTC
+! Last modified: 13 Jun 2018 03:11 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -330,6 +330,7 @@
 /activity-track/?
 /activity.gif?
 /acv?camp=
+/acv?extcmp=
 /acv?utm_
 /ad-blocker-stats.
 /ad-iptracer.
@@ -1030,6 +1031,7 @@
 /conversion_async.
 /convertro.js
 /cookie.crumb
+/cookie.gif?
 /cookie/visitor/*
 /cookie?affiliate
 /Cookie?merchant=
@@ -1636,6 +1638,7 @@
 /HitTracking.
 /hkStatCms/ViewCount?
 /hlog.asp
+/hm.pl?p=
 /hmapxy.js
 /homeCounter.
 /homepage/analytics.
@@ -2210,6 +2213,7 @@
 /odoscope.js
 /oewa_pixel_
 /olx/tracker.
+/om.gif?
 /om_ctrack.
 /om_tracking_
 /omega?ad_
@@ -2396,6 +2400,7 @@
 /pixel/visit?
 /pixel1/impression.
 /pixel?google_
+/pixel?m=
 /pixel?tag=
 /pixel?type=
 /pixel_iframe.
@@ -3429,6 +3434,7 @@
 /uutils.fcg?
 /uvstat.js
 /uxm_tracking.
+/v1/pixel?
 /v4/analytics.
 /v4/analytics/*$~xmlhttprequest
 /v5.3nse.
@@ -4708,6 +4714,7 @@ _mongo_stats/
 ||europuls.net^$third-party
 ||evanetpro.com^$third-party
 ||eventbeacon.ca^$third-party
+||eventcapture03.com^$third-party
 ||eventoptimize.com^$third-party
 ||everestjs.net^$third-party
 ||everesttech.net^$third-party
@@ -5398,6 +5405,7 @@ _mongo_stats/
 ||ometria.com^$third-party
 ||omguk.com^$third-party
 ||omkt.co^$third-party
+||omniconvert.com^$third-party
 ||omtrdc.net^$third-party
 ||onaudience.com^$third-party
 ||ondu.ru^$third-party
@@ -6097,6 +6105,7 @@ _mongo_stats/
 ||unicaondemand.com^$third-party
 ||unknowntray.com^$third-party
 ||upstats.ru^$third-party
+||uptain.de^$third-party
 ||uptimeviewer.com^$third-party
 ||uptracs.com^$third-party
 ||uptrendsdata.com^$third-party
@@ -9133,6 +9142,7 @@ _mongo_stats/
 ||speedtrap.shopdirect.com^
 ||spoods.rce.veeseo.com^
 ||spot.im/api/tracker/
+||spot.im^*/pixel?
 ||spread.ly^*/statistics.php
 ||ssl-images-amazon.com/images/*/common/1x1._*.gif$domain=~amazon.com
 ||st.cdnco.us^
@@ -14832,6 +14842,7 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|
 @@||msecnd.net^*/site-tracker.js$domain=momondo.dk
 @@||tv2.dk/js/adobeanalytics/AppMeasurement.js$script
 ! Dutch
+@@||ad.crwdcntrl.net^$script,domain=rtl.nl
 @@||bundol.nl/skin/*/js/prototype/prototype.js,*/GoogleAnalyticsPlus/
 @@||globecharge.com/images/ping.gif?
 @@||google-analytics.com/analytics.js$domain=vd.nl
@@ -14841,6 +14852,7 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|
 @@||sitestat.com/crossdomain.xml$object-subrequest,domain=abp.nl
 @@||sport.be.msn.com/javascripts/tracking/metriweb/spring.js
 @@||sport.be/javascripts/tracking/metriweb/spring.js
+@@||tags.crwdcntrl.net^$script,domain=rtl.nl
 @@||vplayer.ilsemedia.nl/swf/im_player.swf?$object
 @@||vpro.nl/vpro/htmlplayer/0.3-snapshot/statcounter.js?
 ! Finnish
@@ -14885,7 +14897,7 @@ $xmlhttprequest,domain=a-o.ninja|adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|
 @@||codicefl.shinystat.com/cgi-bin/getswf.cgi?*PolymediaShow$object-subrequest,domain=corriereadriatico.it|ilgazzettino.it|ilmattino.it|ilmessaggero.it|leggo.it|quotidianodipuglia.it
 @@||ensighten.com^*/Bootstrap.js$domain=williamhill.it
 @@||google-analytics.com/analytics.js$domain=carnesvizzera.ch
-@@||googletagmanager.com/gtm.js?$domain=la7.it
+@@||googletagmanager.com/gtm.js?$domain=iphoneitalia.com|la7.it
 @@||imrworldwide.com/novms/*/ggcm*.js$domain=la7.it|sky.it|video.corriere.it
 @@||imrworldwide.com/v60.js$domain=corriereadriatico.it|ilgazzettino.it|ilmattino.it|ilmessaggero.it|leggo.it|quotidianodipuglia.it
 @@||kataweb.it/wt/wt.js?http$domain=video.repubblica.it

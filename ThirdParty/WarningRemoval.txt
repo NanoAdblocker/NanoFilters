@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: WzyqYUS9OtohDkLHg1+bug
-! Version: 201806130310
+! Checksum: mlSmQD2SU0sagTFbxmBwfg
+! Version: 201806210240
 ! Title: Adblock Warning Removal List
-! Last modified: 13 Jun 2018 03:10 UTC
+! Last modified: 21 Jun 2018 02:40 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -287,6 +287,7 @@ print-post.com##.addbl
 24video.xxx##.adt
 rusrek.com##.alert
 benfilm.net##.alert-block
+stroi-help.ru##.alert_warn
 rufilmtv.org##.attention
 mel.fm##.b-ad-space__placeholder
 ixbt.com##.b-blockadblock
@@ -361,6 +362,7 @@ savevideo.me##div[id^="ads_notice_"]
 acomics.ru##div[style*="/design/common/pic/please"]
 pvcalc.ru##div[style^="position:fixed; top:0px; left:0px; opacity: 0.9;"]
 ph4.ru##div[style^="width: 728px; height: 90px;"]
+7sim.net##html > body ~ div
 d3.ru##section[data-uid="ad"]
 d3.ru##section[data-uid="extraAd"]
 ph4.ru##table[width][height="90"][style]
@@ -381,5 +383,6 @@ newkaliningrad.ru#?#div[class]:-abp-has(> h4:-abp-contains(/adblock!/i))
 ||rusnext.ru/advar.js$script
 ||sdamgia.ru/img/blockadblock_
 ||shellcat.ru^$third-party
+||stroi-help.ru/forum/script_new.js
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_slovak.txt ***
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_spanish.txt ***

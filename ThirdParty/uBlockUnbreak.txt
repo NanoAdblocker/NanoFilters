@@ -575,8 +575,10 @@ pythonjobshq.com##script:inject(abort-on-property-read.js, Keen)
 @@||rs-online.com/*/analytics.min.js$script,first-party
 
 ! https://github.com/uBlockOrigin/uAssets/issues/642
+! https://forums.lanik.us/viewtopic.php?p=137800#p137800
 pornhub.com#@#div > [style] iframe[width][height]
 pornhub.com#@#[style] > div > iframe[width]:first-child
+@@||phncdn.com/www-static/js/amateur/amateur-signup.js$script,domain=www.pornhub.com
 
 ! https://github.com/gorhill/uBlock/issues/2893
 @@||assets.adobedtm.com^$script,domain=linkinghub.elsevier.com
@@ -1112,9 +1114,6 @@ mobile.twitter.com#@#._29ahSMvH section.rn-1oszu61 div[class][style*="padding-"]
 ! https://www.bikeforums.net/forum-suggestions-user-assistance/1144311-text-entry-box-doesn-t-show-up-unless-i-disable-ublock-origin.html
 @@||bikeforums.net/*/ckeditor/core/log.js$script,first-party
 
-! https://forums.lanik.us/viewtopic.php?f=64&t=40489
-||threadloom.com^$third-party,badfilter
-
 ! https://github.com/uBlockOrigin/uAssets/issues/2313
 .com/ad/$first-party,domain=~blogs.technet.microsoft.com|~channel4.com|~cspace.com|~linkedin.com|~mediaplex.com|~online.wsj.com,badfilter
 .com/ad/$first-party,domain=~blogs.technet.microsoft.com|~channel4.com|~cspace.com|~linkedin.com|~mediaplex.com|~sitioswebmexi.com|~online.wsj.com
@@ -1204,12 +1203,50 @@ forbes.it#@#.ad-row
 ! https://github.com/uBlockOrigin/uAssets/issues/2518
 @@/stat/counters/*$xmlhttprequest,domain=archive.softwareheritage.org
 
-! https://forums.lanik.us/viewtopic.php?f=64&t=40959
-/advt.$badfilter
-/advt.$domain=~advt.ch
-
 ! https://github.com/NanoAdblocker/NanoFilters/issues/98
 @@||api.sbs.com.au/js/tracking/ondemand.js$script,first-party
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=40930
 @@||static-olxeu.akamaized.net^*/js/tracking/ninja.js$script,domain=olx.ua
+
+! Reported in review section of AMO:
+! "Homedepot.com, cannot load order history"
+! "Frigidaire.com, [...] registration page refused to submit"
+/analytics/analytics.$badfilter
+/analytics/analytics.$third-party
+@@||mxpnl.com/libs/mixpanel-*.min.js$domain=frigidaire.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/2550
+@@||britannica.com^$csp=script-src 'self' * 'unsafe-inline'
+@@|blob:$domain=britannica.com
+britannica.com###md-media-overlay-ad
+
+! https://github.com/uBlockOrigin/uAssets/issues/2552
+@@||cbs.wondershare.com/*pid=
+
+! https://www.reddit.com/r/uBlockOrigin/comments/8rgn1u
+@@||authedmine.com^$domain=sounddrain.net
+! Fix site's attempt at bypassing informed consent
+sounddrain.net##.coinhive-captcha:style(max-width: none !important;)
+
+! https://forums.lanik.us/viewtopic.php?f=96&t=41041
+@@||analytics.edgekey.net$script,domain=hbsmediasetit.deltatre.net
+
+! https://github.com/uBlockOrigin/uAssets/issues/2256#issuecomment-397892203
+! https://github.com/uBlockOrigin/uAssets/issues/2611
+! EasyList filters breaking site functionality
+/^https?:\/\/([0-9a-z\-]+\.)?(9anime|gogoanime|kimcartoon|memecenter|readcomiconline|watchcartoononline)\.[a-z]{2,4}\/(?!(Content|Uploads|static|thumbs|player|wp-content|wp-includes))(.*)/$image,badfilter
+/^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|mangapanda|mangareader|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ss]cripts|[Uu]ploads|[Ii]mages|assets|combined|content|cover|img|static|thumbs|wp-content|wp-includes))(.*)/$first-party,script,badfilter
+/^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ss]cripts|[Uu]ploads|[Ii]mages|assets|combined|content|cover|img|static|thumbs|wp-content|wp-includes))(.*)/$first-party,script,badfilter
+/^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ss]cripts|[Uu]ploads|[Ii]mages|assets|combined|content|cover|img|static|thumbs|wp-content|wp-includes))(.*)/$first-party,script
+/^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|mangapanda|mangareader|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ss]cripts|[Uu]ploads|[Ii]mages|assets|combined|content|cover|img|static|thumbs|wp-content|wp-includes))(.*)/$first-party,image,badfilter
+/^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ss]cripts|[Uu]ploads|[Ii]mages|assets|combined|content|cover|img|static|thumbs|wp-content|wp-includes))(.*)/$first-party,image,badfilter
+/^https?:\/\/([0-9a-z\-]+\.)?(9anime|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ss]cripts|[Uu]ploads|[Ii]mages|assets|combined|content|cover|img|static|thumbs|wp-content|wp-includes))(.*)/$first-party,image
+/^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|mangapanda|mangareader|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ss]cripts|[Uu]ploads|[Ii]mages|assets|combined|content|cover|img|static|thumbs|wp-content|wp-includes))(.*)/$first-party,xmlhttprequest,badfilter
+/^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ss]cripts|[Uu]ploads|[Ii]mages|assets|combined|content|cover|img|static|thumbs|wp-content|wp-includes))(.*)/$first-party,xmlhttprequest,badfilter
+
+! https://github.com/uBlockOrigin/uAssets/issues/2609
+@@||kimcartoon.me/External/RSK$xmlhttprequest,first-party
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=41063
+@@||dniprohotel.ua/templates/*/js/jquery.peelback.js$script,first-party

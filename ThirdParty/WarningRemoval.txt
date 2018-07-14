@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: omk9pc3NZY39MAt5qrFS0g
-! Version: 201806301740
+! Checksum: yt2+AdfLKVJ0Hpn46BCzBA
+! Version: 201807142020
 ! Title: Adblock Warning Removal List
-! Last modified: 30 Jun 2018 17:40 UTC
+! Last modified: 14 Jul 2018 20:20 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -260,7 +260,6 @@ gisclub.tv,teremok.org.ua,webos-forums.ru###mdl_adb
 ostroh.info###modal.modal-bg
 all-episodes.net###odin
 center-yf.ru,lektsii.org,studopedia.org,studopedia.ru,studopedia.su###opaco,#popup
-newkaliningrad.ru###page-wrapper > #panel-wrapper ~ div[class*=" "]:not(#page-buffer)
 kompravda.eu,kp.ru###popapIsBlockedAd
 pb.wtf,piratbit.org,piratbit.ru###result > .request
 mnogoto4ka.ru###sb-site > div[class][style*="z-index"][style*="999999"]
@@ -281,6 +280,7 @@ brazzers-hdx.club##.adblck
 forum.qrz.ru,hentaiz.org,life.ru,mastergrad.com,tvfeed.in##.adblock
 exler.ru##.adblock-pls
 zakon.kz##.adblock_alert
+ogorod.ru##.adblock_popup_warning
 hentaiz.org##.adblocker
 kubik3.ru##.adbs
 print-post.com##.addbl
@@ -299,7 +299,7 @@ audio-hi-fi.ru,electro-sila.ru##.blok_new > div[style]
 rutor1.ru##.box_in > .text > p > font
 tsn.ua##.c-aside-embed
 kinoafisha.info,tvcook.ru##.cat
-autonews.ru,rbc.ru,rbcplus.ru##.checkad_info
+autonews.ru,rbc.ru,rbcplus.ru,sportrbc.ru##.checkad_info
 rusopen.com##.classblsi.addshr
 smotrisport.online,smotrisport.tv##.dont-add-our-site-pls
 goha.ru#@#.goha_ads
@@ -310,6 +310,7 @@ space.utema.ru##.main-content-padding > div[class]:not([itemprop])
 megatest.online##.msg-AdBlock
 ykt.ru##.n-banner--adblocked
 animeland.su,itcats.ru,noadsradio.ru,sharkgame.ru,w10.jeanzzz.ru##.no-adb
+mail.rambler.ru##.notification-warning
 delfi.lv##.notification-widget
 radio.yandex.by,radio.yandex.kz,radio.yandex.ru,radio.yandex.ua##.page-root .notify
 radio.yandex.by,radio.yandex.kz,radio.yandex.ru,radio.yandex.ua##.page-root .notify *
@@ -328,7 +329,7 @@ xn--80aikhbrhr.net,кинокрад.net##.warning-adblock-box
 forum.bestflowers.ru##.xenOverlay
 /api/scripts/mainjs?token$script,domain=liveresult.ru
 /cookie_check.min.js$domain=acetv.me
-/forum/docs/requests.js$script,domain=nnm-club.lib|nnm-club.me|nnm-club.name|nnm-club.tv|nnmclub.to|nnmclub.tv|nontorclub.in.net
+/forum/docs/requests.js$script,domain=nnm-club-me.appspot.com|nnm-club.lib|nnm-club.me|nnm-club.name|nnm-club.tv|nnmclub.to|nnmclub.tv|nontorclub.in.net
 /fuckadblock.js$domain=ace-stream.tv
 @@||goha.ru/app/video/adblock.teaser.js|$script,domain=goha.ru
 @@||sports.ru^*/adfox.$xmlhttprequest
@@ -369,7 +370,8 @@ d3.ru##section[data-uid="extraAd"]
 ph4.ru##table[width][height="90"][style]
 bigpuzzle.ru##td[valign="top"][width="200px"][height="600"] > div[style]
 www.qrz.ru#?#.content_row > div[class]:-abp-has(> .inner > a[href="/help/adblock/"])
-newkaliningrad.ru#?#div[class]:-abp-has(> h4:-abp-contains(/adblock!/i))
+newkaliningrad.ru#?#div[class]:-abp-has(> [class]:-abp-contains(/adblock!/i))
+qaru.site#?#div[class]:-abp-has(> p:-abp-contains(исказить))
 ||adscat.ru^$third-party
 ||animeteatr.ru/a-detector/
 ||anivisual.net/mim*.js|$script,domain=anivisual.net
@@ -381,6 +383,8 @@ newkaliningrad.ru#?#div[class]:-abp-has(> h4:-abp-contains(/adblock!/i))
 ||kontrolnaya-rabota.ru^*/toastr.$script,stylesheet
 ||mhelp.kz/wp-content/plugins/wp-adblock-dedect/
 ||pwnews.net/des/antiblock.js$script
+||qaru.site^$csp=script-src 'self' * data:
+||qaru.site^$csp=style-src 'self' * data:
 ||rusnext.ru/advar.js$script
 ||sdamgia.ru/img/blockadblock_
 ||shellcat.ru^$third-party

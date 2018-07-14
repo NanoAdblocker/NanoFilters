@@ -257,6 +257,9 @@ multifilemirror.com##.blockContainer:has-text(Ad-blocking)
 # https://github.com/NanoAdblocker/NanoFilters/issues/127
 @@||xclient.info/js/adview_*.js$script,first-party
 
+# https://github.com/NanoAdblocker/NanoFilters/issues/132
+||readthedocs.org/api/v2/sustainability/$script,redirect=noopjs
+
 # ############################## #
 # #### Edge Specific Filter #### #
 # ############################## #

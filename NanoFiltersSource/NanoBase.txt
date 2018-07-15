@@ -263,6 +263,9 @@ multifilemirror.com##.blockContainer:has-text(Ad-blocking)
 # https://github.com/NanoAdblocker/NanoFilters/issues/134
 tv.mademyday.com##.blnotice
 
+# https://github.com/jspenguin2017/uBlockProtector/issues/968
+iosgods.com##+js(setTimeout-defuser.js, AdBlocker Detected, 5000)
+
 # ############################## #
 # #### Edge Specific Filter #### #
 # ############################## #

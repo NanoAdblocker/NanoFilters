@@ -99,6 +99,7 @@ multifilemirror.com##.blockContainer:has-text(Ad-blocking)
 @@||xclient.info/js/adview_*.js$script,first-party
 ||readthedocs.org/api/v2/sustainability/$script,redirect=noopjs
 tv.mademyday.com##.blnotice
+iosgods.com##+js(setTimeout-defuser.js, AdBlocker Detected, 5000)
 !#if env_edge
 businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
 businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)

@@ -100,6 +100,7 @@ multifilemirror.com##.blockContainer:has-text(Ad-blocking)
 ||readthedocs.org/api/v2/sustainability/$script,redirect=noopjs
 tv.mademyday.com##.blnotice
 iosgods.com##+js(setTimeout-defuser.js, AdBlocker Detected, 5000)
+captchme.com##script:inject(set-constant.js, CaptchmeState.adb, undefined)
 !#if env_edge
 businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
 businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)

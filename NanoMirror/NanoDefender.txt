@@ -1,7 +1,7 @@
 [Nano Adblocker]
 ! Title: Nano Defender Integration
 ! Expires: 3 days
-! Cached: Sat, 14 Jul 2018 20:31:40 GMT
+! Cached: Tue, 17 Jul 2018 00:12:53 GMT
 ! License: GPL-3.0
 ! Source: https://github.com/jspenguin2017/uBlockProtector/tree/master/list
 ! This file is a compiled binary, do not modify
@@ -15,8 +15,6 @@
 @@|http://*.medianetworkinternational.com/js/advertisement.js*$script
 @@|https://*.v.fwmrm.net/ad/g/*$script,domain=ncaa.com|pga.com|q2.be|vtm.be|ruutu.fi|medialaancdn.be|medialaan.be
 @@|http://*.v.fwmrm.net/ad/g/*$script,domain=ncaa.com|pga.com|q2.be|vtm.be|ruutu.fi|medialaancdn.be|medialaan.be
-||cbsnews.com/news/*/[object%20object]$image,redirect=1x1-transparent.gif
-||cbsnews.com/news/*/undefined$image,redirect=1x1-transparent.gif
 @@||ads-v-darwin.hulustream.com/published/*.mp4$domain=hulu.com
 ||authedmine.com^$third-party
 @@||authedmine.com^$domain=coinhive.com|filecrypt.cc

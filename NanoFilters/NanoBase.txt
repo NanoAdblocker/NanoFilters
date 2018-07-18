@@ -101,6 +101,7 @@ multifilemirror.com##.blockContainer:has-text(Ad-blocking)
 tv.mademyday.com##.blnotice
 iosgods.com##+js(setTimeout-defuser.js, AdBlocker Detected, 5000)
 captchme.com##script:inject(set-constant.js, CaptchmeState.adb, undefined)
+@@||wftrader.com^$generichide
 !#if env_edge
 businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
 businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)

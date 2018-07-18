@@ -269,6 +269,9 @@ iosgods.com##+js(setTimeout-defuser.js, AdBlocker Detected, 5000)
 # https://github.com/uBlockOrigin/uAssets/issues/2924
 captchme.com##script:inject(set-constant.js, CaptchmeState.adb, undefined)
 
+# https://github.com/NanoAdblocker/NanoFilters/issues/139
+@@||wftrader.com^$generichide
+
 # ############################## #
 # #### Edge Specific Filter #### #
 # ############################## #

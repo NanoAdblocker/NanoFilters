@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: IW7PN8CkqDSmlxxNPCywTA
-! Version: 201807142021
+! Checksum: YykAhU/nfaXOnAdt4EDbrA
+! Version: 201807190011
 ! Title: EasyPrivacy
-! Last modified: 14 Jul 2018 20:21 UTC
+! Last modified: 19 Jul 2018 00:11 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -528,6 +528,7 @@
 /analytics/engine/*
 /analytics/events
 /analytics/eventTrack
+/analytics/ga.
 /analytics/ga/*
 /analytics/ga?
 /Analytics/Google.
@@ -840,6 +841,7 @@
 /CaptureStat.
 /cbanalytics.
 /CBM.Tracking.js?
+/cbstats/*
 /cc?a=
 /cclickTracking.
 /ccm_sj?
@@ -1932,6 +1934,7 @@
 /loadJsFingerprint.js
 /locotrack.js
 /log-ads.
+/log-nt/*
 /log-reporter.
 /log-view.
 /Log.ashx?
@@ -2388,6 +2391,7 @@
 /ping/show?
 /ping?h=
 /ping?spacedesc
+/ping?token=
 /ping_g.jsp?
 /ping_hotclick.js
 /pingAlt.php?*&referrer=
@@ -2423,6 +2427,7 @@
 /pixel.cgi?
 /pixel.fingerprint.
 /pixel.gif?
+/pixel.json?
 /pixel.jsp?
 /pixel.php?
 /Pixel.pl?
@@ -2437,6 +2442,7 @@
 /pixel/cv_
 /pixel/img/*
 /pixel/impression/*
+/pixel/js/*
 /pixel/stream/*
 /pixel/visit?
 /pixel1/impression.
@@ -2670,6 +2676,7 @@
 /rot_in.php
 /rpc/log?
 /rr/t?step=
+/rsya-tag-users/*
 /rt_tag.
 /rt_track.
 /rt_track_
@@ -2872,6 +2879,7 @@
 /SpeedTrapInsert.
 /spi.gif?aid=
 /spip.php?page=stats.js
+/spixel.
 /spot.aspx?Log=
 /springmetrics.
 /sptlog.
@@ -4184,6 +4192,7 @@ _mongo_stats/
 ||adunity.com^$third-party
 ||advanced-web-analytics.com^$third-party
 ||advconversion.com^$third-party
+||advertising.com^$third-party
 ||adyapper.com^$third-party
 ||afairweb.com^$third-party
 ||affilae.com^$third-party
@@ -5895,6 +5904,7 @@ _mongo_stats/
 ||smartlook.com^$third-party
 ||smartology.co^$third-party
 ||smartracker.net^$third-party
+||smartsuppchat.com^$third-party
 ||smartzonessva.com^$third-party
 ||smct.co^$third-party
 ||smfsvc.com^$third-party
@@ -9577,7 +9587,6 @@ _mongo_stats/
 ||traffic.acwebconnecting.com^
 ||traffic.belaydevelopment.com^$third-party
 ||traffic.prod.cobaltgroup.com^
-||traffic.pubexchange.com^
 ||traffic.shareaholic.com^
 ||trafficfuelpixel.s3-us-west-2.amazonaws.com^
 ||trakksocial.googlecode.com^$third-party
@@ -11597,6 +11606,7 @@ _mongo_stats/
 ||logdev.openload.co^
 ||logger-*.dailymotion.com^
 ||logger.dailymotion.com^
+||logger.nerdwallet.com^
 ||logger.viki.io^
 ||logging.goodgamestudios.com^
 ||loggingservices.tribune.com^
@@ -13859,6 +13869,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=adfreetv.ch|ddmix.n
 ||stat.russianfood.com^
 ||stat.woman-announce.ru^
 ||stats.lifenews.ru^
+||stats.mos.ru^
 ||superjob.ru/ws/
 ||sync.rambler.ru^
 ||tracker.tiu.ru^
@@ -13880,6 +13891,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=adfreetv.ch|ddmix.n
 ||estadonline.publiguias.cl^
 ||g.siliconweek.es^
 ||hits.antena3.com^
+||pixel.europapress.net^
 ||stats.milenio.com^
 ||t13.cl/hit/
 ||terra.com.mx/js/metricspar_
@@ -14263,7 +14275,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=adfreetv.ch|ddmix.n
 @@||everestjs.net/static/st.js$domain=ford.com
 @@||evernote.com^*/google-analytics-util.js
 @@||evestment.com/api/analytics/$domain=evestment.com
-@@||evidon.com/geo/$domain=etonline.com|popsugar.co.uk
+@@||evidon.com/geo/$domain=comicbook.com|etonline.com|popsugar.co.uk
 @@||expedia.com/minify/siteAnalytics-$script
 @@||expedia.com/static/default/default/scripts/siteAnalytics.js
 @@||expedia.com/static/default/default/scripts/TealeafSDK.js
@@ -14325,7 +14337,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=adfreetv.ch|ddmix.n
 @@||google.com/js/gweb/analytics/$domain=google.com
 @@||google.com/js/gweb/analytics/autotrack.js$domain=gradleplease.appspot.com
 @@||google.com/js/gweb/analytics/doubletrack.js$domain=android.com
-@@||googletagmanager.com/gtm.js?$domain=airasia.com|asus.com|bhaskar.com|broadcom.com|computerworlduk.com|desigual.com|drumstick.com|ebuyer.com|elevationscu.com|gamepix.com|git-tower.com|google.com|itv.com|jobs.net|keygames.com|magicjack.com|moviefone.com|nestio.com|newsy.com|optus.com.au|rebtel.com|rockstargames.com|rollingstone.com|rozetka.com.ua|sixflags.com|support.amd.com|talktalk.co.uk|techradar.com|toto.co.jp|usmagazine.com
+@@||googletagmanager.com/gtm.js?$domain=adsoup.com|airasia.com|asus.com|bhaskar.com|broadcom.com|computerworlduk.com|desigual.com|drumstick.com|ebuyer.com|elevationscu.com|gamepix.com|git-tower.com|google.com|itv.com|jobs.net|keygames.com|magicjack.com|moviefone.com|nestio.com|newsy.com|optus.com.au|rebtel.com|rockstargames.com|rollingstone.com|rozetka.com.ua|sixflags.com|support.amd.com|talktalk.co.uk|techradar.com|toto.co.jp|usmagazine.com
 @@||googletagmanager.com/gtm.js?id=GTM-5D256R&l=aedataLayer^
 @@||googletagservices.com/tag/js/gpt.js$domain=speedtest.net
 @@||gorillanation.com/js/triggertag.js$domain=comingsoon.net|playstationlifestyle.net
@@ -14679,6 +14691,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=adfreetv.ch|ddmix.n
 @@||trutv.com/ui/scripts/coffee/modules/analytics/click-tracker.js$script
 @@||turner.com/cnn/*/video/chartbeat.js$domain=cnn.com
 @@||turner.com^*/aspenanalytics.xml$domain=cnn.com
+@@||tw.cx/c?a=$xmlhttprequest,domain=justwatch.com
 @@||twimg.com/googleanalytics/analytics.js$script,domain=twitter.com
 @@||uefa.com/inc/js/core/projects/statistics/statistics.js?$script
 @@||uefa.com^*/chartbeat-trending-carousel.js
@@ -15127,6 +15140,7 @@ $csp=child-src 'none'; frame-src *; worker-src 'none',domain=adfreetv.ch|ddmix.n
 @@||online.bcs.ru^*/piwik.bcs.js$script
 @@||player.fc-zenit.ru/msi/geoip?$xmlhttprequest
 @@||player.vgtrk.com/js/stat.js?
+@@||rtr-vesti.ru/pvc_cdn/js/stat.js$domain=player.vgtrk.com
 @@||ssp.rambler.ru/acp/capirs_main.$script,domain=afisha.ru
 @@||ssp.rambler.ru/capirs.js$domain=afisha.ru
 @@||swa.mail.ru/cgi-bin/counters?$script

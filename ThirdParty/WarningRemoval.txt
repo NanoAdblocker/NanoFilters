@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: yt2+AdfLKVJ0Hpn46BCzBA
-! Version: 201807142020
+! Checksum: 7UXEQoDLWPmrHQyKBGqJ9A
+! Version: 201807190010
 ! Title: Adblock Warning Removal List
-! Last modified: 14 Jul 2018 20:20 UTC
+! Last modified: 19 Jul 2018 00:10 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -234,6 +234,7 @@ usgang.ch###rectangle-wrapper
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_russian.txt ***
 drive2.ru##a[href][target="_blank"] > img[src][style^="width: 100%; height: auto;"][style*="vertical-align: middle; max-width: 240px;"]
 delfi.ee###ab--notification-ribbon
+scrin.org###ab-message
 minimultik.ru###abDetected
 patrioty.org.ua###ad_pu_modal
 vesti-ukr.com###adblockpopup
@@ -371,7 +372,7 @@ ph4.ru##table[width][height="90"][style]
 bigpuzzle.ru##td[valign="top"][width="200px"][height="600"] > div[style]
 www.qrz.ru#?#.content_row > div[class]:-abp-has(> .inner > a[href="/help/adblock/"])
 newkaliningrad.ru#?#div[class]:-abp-has(> [class]:-abp-contains(/adblock!/i))
-qaru.site#?#div[class]:-abp-has(> p:-abp-contains(исказить))
+qaru.site#?#[class]:-abp-has(> p:-abp-contains(исказить))
 ||adscat.ru^$third-party
 ||animeteatr.ru/a-detector/
 ||anivisual.net/mim*.js|$script,domain=anivisual.net
@@ -384,7 +385,6 @@ qaru.site#?#div[class]:-abp-has(> p:-abp-contains(исказить))
 ||mhelp.kz/wp-content/plugins/wp-adblock-dedect/
 ||pwnews.net/des/antiblock.js$script
 ||qaru.site^$csp=script-src 'self' * data:
-||qaru.site^$csp=style-src 'self' * data:
 ||rusnext.ru/advar.js$script
 ||sdamgia.ru/img/blockadblock_
 ||shellcat.ru^$third-party

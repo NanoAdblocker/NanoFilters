@@ -104,6 +104,7 @@ captchme.com##script:inject(set-constant.js, CaptchmeState.adb, undefined)
 @@||wftrader.com^$generichide
 minijuegos.com###adBlockDisclaimer
 @@||hackintoshzone.com^$generichide
+emurom.net##script:inject(set-constant.js, adblock, 1)
 !#if env_edge
 businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
 businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)

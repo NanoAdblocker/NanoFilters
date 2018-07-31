@@ -106,6 +106,7 @@ minijuegos.com###adBlockDisclaimer
 @@||hackintoshzone.com^$generichide
 emurom.net##script:inject(set-constant.js, adblock, 1)
 9xbuddy.app##script:inject(setTimeout-defuser.js, isDetected, 2000)
+newatlas.com,pgatour.com##script:inject(abort-on-property-read.js, admiral)
 !#if env_edge
 businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
 businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)

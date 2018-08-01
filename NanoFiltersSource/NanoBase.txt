@@ -287,6 +287,10 @@ emurom.net##script:inject(set-constant.js, adblock, 1)
 # https://github.com/jspenguin2017/uBlockProtector/issues/974
 newatlas.com,pgatour.com##script:inject(abort-on-property-read.js, admiral)
 
+# https://github.com/jspenguin2017/uBlockProtector/issues/975
+live.com##div:if(:scope > div > div[class^="__Microsoft_Owa_Adsbar_"])
+live.com##div:if(:scope > div > div > div[id^="owaadbar"])
+
 # ############################## #
 # #### Edge Specific Filter #### #
 # ############################## #

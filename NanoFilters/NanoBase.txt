@@ -107,6 +107,8 @@ minijuegos.com###adBlockDisclaimer
 emurom.net##script:inject(set-constant.js, adblock, 1)
 9xbuddy.app##script:inject(setTimeout-defuser.js, isDetected, 2000)
 newatlas.com,pgatour.com##script:inject(abort-on-property-read.js, admiral)
+live.com##div:if(:scope > div > div[class^="__Microsoft_Owa_Adsbar_"])
+live.com##div:if(:scope > div > div > div[id^="owaadbar"])
 !#if env_edge
 businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
 businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)

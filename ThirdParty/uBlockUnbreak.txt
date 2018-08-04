@@ -1130,6 +1130,8 @@ mobile.twitter.com#@#._29ahSMvH section.rn-1oszu61 div[class][style*="padding-"]
 ! https://github.com/uBlockOrigin/uAssets/issues/3094
 .com/ad/$first-party,domain=~blogs.technet.microsoft.com|~channel4.com|~cspace.com|~linkedin.com|~mediaplex.com|~online.wsj.com,badfilter
 .com/ad/$first-party,domain=~blogs.technet.microsoft.com|~channel4.com|~cspace.com|~imagebam.com|~linkedin.com|~mediaplex.com|~sitioswebmexi.com|~online.wsj.com
+! https://github.com/uBlockOrigin/uAssets/issues/3094
+@@||imagebam.com/assets/js/image_bootstrap.js$script,first-party
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2309
 /.*(\/proxy|\.wasm|\.wsm|\.wa)$/$websocket,xmlhttprequest,domain=~aochagavia.github.io|~edwin0cheng.github.io|github.io|rawgit.com|reactor.cc|sickrage.ca|sorteosrd.com|streamplay.to|tubetitties.com|vidfile.net,badfilter
@@ -1383,3 +1385,10 @@ techadvisor.co.uk#@#.adsbygoogle
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=41319
 @@||innovelsolutions.com/*/tracking/$xmlhttprequest,first-party
+
+! https://www.reddit.com/r/uBlockOrigin/comments/93ztf6/how_to_block_ad_but_still_stream_content/
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=iheartradio.ca
+@@||iheartradio.ca^$generichide
+
+! https://github.com/uBlockOrigin/uAssets/issues/3115
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=umterps.com

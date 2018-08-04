@@ -108,7 +108,7 @@ emurom.net##script:inject(set-constant.js, adblock, 1)
 9xbuddy.app##script:inject(setTimeout-defuser.js, isDetected, 2000)
 newatlas.com,pgatour.com##script:inject(abort-on-property-read.js, admiral)
 live.com##div:if(:scope > div > div[class^="__Microsoft_Owa_Adsbar_"])
-outlook.live.com##div:if(:scope > div > div > div[id^="owaadbar"]:not([class^="__Microsoft_Owa_Adsbar_"]))
+live.com##div:if(:scope > div > div > div[id^="owaadbar"]:not([class^="__Microsoft_Owa_Adsbar_"]))
 @@||s.aolcdn.com/ads/adswrappermsni.js$script,domain=outlook.live.com,badfilter
 @@||acdn.adnxs.com/$script,domain=outlook.live.com,badfilter
 ||punto-informatico.it/app/plugins/blazemedia_adv/

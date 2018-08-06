@@ -38,6 +38,9 @@ derstandard.at##+js(nanop-click-elements-onready.js, section.privacywall-overvie
 # https://github.com/NanoAdblocker/NanoFilters/issues/96
 fortune.com,time.com##+js(nanop-click-elements-onload.js, body.template-gdpr form.gdpr-form > input[type="submit"])
 
+# https://github.com/NanoAdblocker/NanoFilters/issues/160
+vivaldi.com##+js(nanop-click-elements-onready.js, #acceptCookie)
+
 # ################################# #
 # #### Pending Synchronization #### #
 # ################################# #

@@ -302,6 +302,9 @@ live.com##div:if(:scope > div > div > div[id^="owaadbar"]:not([class^="__Microso
 # https://github.com/NanoAdblocker/NanoFilters/issues/161
 wyff4.com##+js(setTimeout-defuser.js, [native code], 500)
 
+# https://github.com/uBlockOrigin/uAssets/issues/3216
+@@||ps3-infos.fr^$generichide
+
 # ############################## #
 # #### Edge Specific Filter #### #
 # ############################## #

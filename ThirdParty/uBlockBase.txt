@@ -940,8 +940,8 @@ latribune.fr##.modal-open:style(overflow: auto !important)
 ! https://github.com/gorhill/uBlock/issues/2039
 ||go.*.com^$domain=kickass.cd
 ||go.*.com^$popup,domain=kickass.cd
-kickass.cd##script:inject(abort-on-property-write.js, Fingerprint2)
-kickass.cd##script:inject(window.open-defuser.js)
+kat.sx,kickass.cd##script:inject(abort-on-property-write.js, Fingerprint2)
+kat.sx,kickass.cd##script:inject(window.open-defuser.js)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/154
 ||usersfiles.com^$inline-script
@@ -1597,10 +1597,6 @@ exrapidleech.info##script:inject(bab-defuser.js)
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=29410#p91041
 *$popup,third-party,domain=anilinkz.tv
-! https://github.com/uBlockOrigin/uAssets/issues/389
-! https://github.com/uBlockOrigin/uAssets/issues/407
-anilinkz.io##script:inject(abort-on-property-write.js, _$_1923)
-anilinkz.io##script:inject(abort-on-property-write.js, Fingerprint2)
 vidstreaming.io##script:inject(noeval.js)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/392
@@ -1843,13 +1839,9 @@ elmundo.es##.disabled-vscroll:style(overflow: auto !important; position: initial
 ! https://rbt.asia/g/thread/63902030/
 4chan.org##script:inject(abort-current-inline-script.js, String.fromCharCode, /\/\*[0-9a-f]{40}\*\//)
 
-! https://github.com/uBlockOrigin/uAssets/issues/467
-iwatchonline.cr,iwatchonline.eu##script:inject(abort-on-property-write.js, Fingerprint2)
-||s3.amazonaws.com^$xmlhttprequest,domain=iwatchonline.cr|iwatchonline.eu
-||ov2ochu.bid^
-
 ! https://github.com/uBlockOrigin/uAssets/issues/470
-xclusivejams.com##script:inject(abort-on-property-read.js, anOptions)
+xclusivejams.com##+js(abort-on-property-read.js, anOptions)
+xclusivejams.com##+js(abort-on-property-write.js, Fingerprint2)
 ||xclusivejams.com/sw.js$script
 ||refuzzlizing.pro^$third-party
 
@@ -5671,8 +5663,10 @@ marvelousga.com##script:inject(abort-current-inline-script.js, $, openNewWindow)
 ||loadshare.org/custom/*/1m_video.mp4$media,domain=1movies.se|1movies.to
 1movies.se,1movies.to###no_po_share
 ! https://github.com/uBlockOrigin/uAssets/issues/1718
+1movies.se##script:inject(abort-current-inline-script.js, decodeURI, getScriptFromCss)
 1movies.se##script:inject(abort-on-property-write.js, Fingerprint2)
 1movies.se##^script:has-text(3f87b0eaddd)
+||1movies.se/sw.js$script,first-party
 ||amgload.net^$xmlhttprequest,redirect=nooptext,domain=1movies.se
 ||piguiqproxy.com^$xmlhttprequest,redirect=nooptext,domain=1movies.se
 1movies.se###a_wrap
@@ -7143,6 +7137,7 @@ asr-games.net##script:inject(abort-current-inline-script.js, document.getElement
 
 ! https://forum.kuketz-blog.de/viewtopic.php?f=29&p=7929
 ! https://github.com/uBlockOrigin/uAssets/issues/845
+||damoh.cinema.de/*$media,redirect=noopmp3-0.1s,domain=cinema.de
 ||damoh.golem.de/*$media,redirect=noopmp3-0.1s,domain=golem.de
 ||damoh.n-tv.de/*$media,redirect=noopmp3-0.1s,domain=n-tv.de
 ||damoh.watchbox.de/*$media,redirect=noopmp3-0.1s,domain=watchbox.de
@@ -9399,6 +9394,7 @@ x265mkv.ws##script:inject(abort-on-property-write.js, anOptions)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2745
 ultimate-catch.eu##script:inject(setTimeout-defuser.js, data-adback, 0)
+ultimate-catch.eu##script:inject(setTimeout-defuser.js, (), adb)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2749
 giveaway-club.com##script:inject(set-constant.js, gcAdsActive, true)
@@ -9606,7 +9602,6 @@ morgenweb.de##script:inject(set-constant.js, blockAdBlock, true)
 ! https://www.reddit.com/r/uBlockOrigin/comments/9013un/ublock_blocks_the_episode_list_from_this_site/
 @@||turkanime.tv^$generichide
 @@||turkanime.tv/ad/$xmlhttprequest,first-party
-mail.ru##script:inject(window.open-defuser.js)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2830
 webcafe.bg##script:inject(set-constant.js, bDetect, true)
@@ -10207,7 +10202,8 @@ javher.com##.affiliateLink
 feetbay.org##script:inject(bab-defuser.js)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3036
-sexwebvideo.me##script:inject(set-constant.js, canRunAds, true)
+sexwebvideo.*##+js(set-constant.js, canRunAds, true)
+sexwebvideo.*##+js(abort-on-property-write.js, popunder_url)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3038
 novelasesp.*##script:inject(addEventListener-defuser.js, load, 2000)
@@ -10538,6 +10534,7 @@ thurrott.com##script:inject(abort-current-inline-script.js, $, adblockDetected)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3177
 @@||myfree-tivi.com^$generichide
+myfree-tivi.com###videoad
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3178
 @@||1me.club^$generichide
@@ -10569,3 +10566,90 @@ icdrama.se##script:inject(set-constant.js, adblock, 1)
 ! https://github.com/uBlockOrigin/uAssets/issues/3181
 file-upload.com##script:inject(setTimeout-defuser.js, nextFunction, 2000)
 file-upload.com##.adsbygoogle
+
+! https://github.com/uBlockOrigin/uAssets/issues/3189
+yify-torrent.org##script:inject(nowebrtc.js)
+
+! https://github.com/uBlockOrigin/uAssets/issues/3190
+@@||tzampa.tv/assets/js/ads.js$xmlhttprequest,first-party
+
+! https://github.com/uBlockOrigin/uAssets/issues/3191
+@@||tailieupro.com^$generichide
+
+! https://github.com/uBlockOrigin/uAssets/issues/3194
+@@||nordpresse.be^$generichide
+
+! https://github.com/uBlockOrigin/uAssets/issues/3196
+@@||hulkpop.net^$generichide
+
+! https://github.com/uBlockOrigin/uAssets/issues/3197
+@@||titulky.com^$generichide
+
+! https://github.com/uBlockOrigin/uAssets/issues/3195
+@@||qbasic.net^$generichide
+@@||pagead2.googlesyndication.com/pagead/$script,domain=qbasic.net
+
+! https://forums.lanik.us/viewtopic.php?f=62&t=41412
+streamdreams.org##script:inject(abort-on-property-write.js, encodeURIComponent)
+
+! https://github.com/uBlockOrigin/uAssets/issues/3200
+@@||wowescape.com^$generichide
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=wowescape.com
+@@||pagead2.googlesyndication.com/pagead/$script,domain=wowescape.com
+@@||googleads.g.doubleclick.net/pagead/*wowescape.com$xmlhttprequest,domain=imasdk.googleapis.com
+@@||youtube.com/get_video?$media,domain=wowescape.com
+
+! https://www.reddit.com/r/uBlockOrigin/comments/96sf7n
+duellinksmeta.com##script:inject(abort-on-property-write.js, checkadb)
+
+! https://github.com/uBlockOrigin/uAssets/issues/3202
+||ah.pe^$popunder
+
+! https://github.com/uBlockOrigin/uAssets/issues/3205
+pornve.com##+js(set-constant.js, frg, 1)
+pornve.com##+js(window.open-defuser.js)
+pornve.com###close-teaser
+
+! https://github.com/uBlockOrigin/uAssets/issues/3214
+seselah.com##+js(abort-on-property-write.js, adBlockDetected)
+
+! https://github.com/uBlockOrigin/uAssets/issues/3213
+||cloudvideoplatform.com/advert.jpg$image,domain=10tv.nana10.co.il,redirect=2x2-transparent.png
+@@||akamai.advsnx.net/CDN/nana10/html5/amsdk.js$script,domain=10tv.nana10.co.il
+
+! https://github.com/uBlockOrigin/uAssets/issues/3212
+@@||venstrike.jimdo.com^$generichide
+
+! https://github.com/uBlockOrigin/uAssets/issues/3211
+@@||programasve.*^$generichide
+
+! https://github.com/uBlockOrigin/uAssets/issues/3208
+@@||maxcheaters.com^$generichide
+||maxcheaters.com/*.gif$image
+
+! https://github.com/uBlockOrigin/uAssets/issues/3210
+||googlesyndication.com/pagead/js/adsbygoogle.js$script,redirect=googlesyndication.com/adsbygoogle.js,domain=insuranceloansonline.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/3206
+@@||mivo.com^$generichide
+
+! https://github.com/uBlockOrigin/uAssets/issues/3209
+afreesms.com##script:inject(bab-defuser.js)
+||googlesyndication.com/pagead/$script,redirect=noopjs,important,domain=afreesms.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/3215
+@@||radiocockpit.fr^$generichide
+*.jpg#$image,domain=radiocockpit.fr,redirect=3x2-transparent.png
+
+! https://github.com/uBlockOrigin/uAssets/issues/3217
+annuaire-bleu.net##+js(setTimeout-defuser.js, adblock, 1000)
+
+! https://github.com/uBlockOrigin/uAssets/issues/3219
+@@||dozenofelites.com^$generichide
+dozenofelites.com##.adsbygoogle
+
+! https://github.com/uBlockOrigin/uAssets/issues/3218
+crash-aerien.aero##+js(bab-defuser.js)
+
+! https://github.com/uBlockOrigin/uAssets/issues/3222
+sportsplays.com##+js(setTimeout-defuser.js, (), undefined)

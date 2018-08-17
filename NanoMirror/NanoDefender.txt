@@ -1,7 +1,7 @@
 [Nano Adblocker]
 ! Title: Nano Defender Integration
 ! Expires: 3 days
-! Cached: Tue, 14 Aug 2018 03:34:50 GMT
+! Cached: Fri, 17 Aug 2018 01:10:04 GMT
 ! License: GPL-3.0
 ! Source: https://github.com/jspenguin2017/uBlockProtector/tree/master/list
 ! This file is a compiled binary, do not modify
@@ -16,13 +16,6 @@
 @@|https://*.v.fwmrm.net/ad/g/*$script,domain=ncaa.com|pga.com|q2.be|vtm.be|ruutu.fi|medialaancdn.be|medialaan.be
 @@|http://*.v.fwmrm.net/ad/g/*$script,domain=ncaa.com|pga.com|q2.be|vtm.be|ruutu.fi|medialaancdn.be|medialaan.be
 @@||ads-v-darwin.hulustream.com/published/*.mp4$domain=hulu.com
-@@||wowescape.com^$generichide,badfilter
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=wowescape.com,badfilter
-@@||pagead2.googlesyndication.com/pagead/$script,domain=wowescape.com,badfilter
-@@||googleads.g.doubleclick.net/pagead/*wowescape.com$xmlhttprequest,domain=imasdk.googleapis.com,badfilter
-@@||youtube.com/get_video?$media,domain=wowescape.com,badfilter
-wowescape.com##+js(setTimeout-defuser.js, document.getElementsByClassName('afs_ads'))
-wowescape.com#@#.afs_ads
 ||authedmine.com^$third-party
 @@||authedmine.com^$domain=coinhive.com|filecrypt.cc
 /coinhive.js

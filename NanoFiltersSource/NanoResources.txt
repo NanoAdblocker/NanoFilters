@@ -170,7 +170,9 @@ nanop-colombiaonline-com.js application/javascript
         ) {
             temp.unshift(document.currentScript);
         }
-        if ( temp.length === 0 ) { return true; }
+        if ( temp.length === 0 ) {
+            return true;
+        }
         for ( var e of temp ) {
             e.setAttribute(magic, 1);
             if ( e.textContent && e.textContent.includes(testScript) ) {
@@ -179,7 +181,9 @@ nanop-colombiaonline-com.js application/javascript
             }
         }
         //
-        if ( script === undefined ) { return true; }
+        if ( script === undefined ) {
+            return true;
+        }
         var prev = script.previousSibling;
         temp = prev;
         while ( temp = temp.previousSibling ) {
@@ -218,7 +222,9 @@ nanop-colombiaonline-com.js application/javascript
     var reStart = /^\/[a-z_]+\.cms/;
     var reEnd = /^ \d{5,} \d{1,2} $/;
     var adsHidder = function() {
-        if ( isInBackground || !document.body ) { return; }
+        if ( isInBackground || !document.body ) {
+            return;
+        }
         var iterator = document.createTreeWalker(
             document.body, NodeFilter.SHOW_COMMENT
         );
@@ -248,9 +254,13 @@ nanop-colombiaonline-com.js application/javascript
             }
         }
     };
+    addEventListener('focus', function() {
+        isInBackground = false;
+    });
+    addEventListener('blur', function() {
+        isInBackground = true;
+    });
     setInterval(adsHidder, 1000);
-    addEventListener('focus', function() { isInBackground = false; });
-    addEventListener('blur', function() { isInBackground = true; });
 })();
 
 

@@ -139,6 +139,121 @@ nano-vvvvid-it.js application/javascript
 })();
 
 
+# ############
+# EXPERIMENTAL resource, limited to privileged filters only for now
+# ############
+# https://github.com/uBlockOrigin/uAssets/issues/247
+# Rule:
+# adageindia.in,bombaytimes.com,businessinsider.in,gadgetsnow.com,gizmodo.in,iamgujarat.com,idiva.com,in.techradar.com,indiatimes.com,lifehacker.co.in,mensxp.com,samayam.com,timesofindia.com##+js(nanop-colombiaonline-com.js)
+nanop-colombiaonline-com.js application/javascript
+(function() {
+    var guard = '{{nano}}';
+    if ( guard === '{{nano}}' ) {
+        return;
+    }
+    // TODO
+    debugger;
+    // TODO
+    var magic = "a" + Math.random().toString(36).substring(2);
+    var testScript = "typeof otab == 'function'";
+    var testComment = /\d{5,} \d{1,2}/;
+    //
+    var getter = function() {
+        var script, temp;
+        //
+        temp = Array.from(document.querySelectorAll(
+            'script:not([src]):not([' + magic + '])'
+        ));
+        if (
+            document.currentScript &&
+            !document.currentScript.hasAttribute(magic)
+        ) {
+            temp.unshift(document.currentScript);
+        }
+        if ( temp.length === 0 ) { return true; }
+        for ( var e of temp ) {
+            e.setAttribute(magic, 1);
+            if ( e.textContent && e.textContent.includes(testScript) ) {
+                script = e;
+                break;
+            }
+        }
+        //
+        if ( script === undefined ) { return true; }
+        var prev = script.previousSibling;
+        temp = prev;
+        while ( temp = temp.previousSibling ) {
+            if (
+                temp.nodeType === Node.COMMENT_NODE &&
+                testComment.test(temp.data)
+            ) {
+                prev.style.setProperty('display', 'none', 'important');
+                return false;
+            }
+        }
+    };
+    //
+    Object.defineProperty(window, "trev", {
+        set: function() { },
+        get: function() {
+            var r;
+            var i = 0;
+            do {
+                try {
+                    r = getter();
+                } catch ( err ) {
+                    // TODO
+                    debugger;
+                    // TODO
+                }
+            } while ( i++, !r && i < 100 );
+            return null;
+        }
+    });
+    addEventListener('load', function() {
+        void trev;
+    });
+    //
+    var isInBackground = false;
+    var reStart = /^\/[a-z_]+\.cms/;
+    var reEnd = /^ \d{5,} \d{1,2} $/;
+    var adsHidder = function() {
+        if ( isInBackground || !document.body ) { return; }
+        var iterator = document.createTreeWalker(
+            document.body, NodeFilter.SHOW_COMMENT
+        );
+        var comment;
+        while ( comment = iterator.nextNode() ) {
+            if ( reStart.test(comment.data) ) {
+                var toHide = [];
+                var prev = comment;
+                while ( prev = prev.previousSibling ) {
+                    if (
+                        prev.nodeType === Node.COMMENT_NODE &&
+                        reEnd.test(prev.data)
+                    ) {
+                        if ( toHide.length < 15 ) {
+                            for ( var e of toHide ) {
+                                try {
+                                    e.style.setProperty(
+                                        'display', 'none', 'important'
+                                    );
+                                } catch ( err ) { }
+                            }
+                        }
+                        break;
+                    }
+                    toHide.push(prev);
+                }
+            }
+        }
+    };
+    setInterval(adsHidder, 1000);
+    addEventListener('focus', function() { isInBackground = false; });
+    addEventListener('blur', function() { isInBackground = true; });
+})();
+
+
 # ############################## #
 # #### Privileged Resources #### #
 # ############################## #

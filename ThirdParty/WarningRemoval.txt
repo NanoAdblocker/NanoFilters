@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: NAiEt6sVmf1fPo/HUgyYUg
-! Version: 201808140100
+! Checksum: gVQy6RDdzr8X692MlS+5Bg
+! Version: 201808250350
 ! Title: Adblock Warning Removal List
-! Last modified: 14 Aug 2018 01:00 UTC
+! Last modified: 25 Aug 2018 03:50 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -261,8 +261,10 @@ poncy.ru###hide-adblock
 kissvk.com###madBlockModal,.modal-backdrop
 gisclub.tv,teremok.org.ua,webos-forums.ru###mdl_adb
 ostroh.info###modal.modal-bg
+7days2die.info###nafikblock
 all-episodes.net###odin
 center-yf.ru,lektsii.org,studopedia.org,studopedia.ru,studopedia.su###opaco,#popup
+forummikrotik.ru###phpbb-ads-ab
 kompravda.eu,kp.ru###popapIsBlockedAd
 pb.wtf,piratbit.org,piratbit.ru###result > .request
 mnogoto4ka.ru###sb-site > div[class][style*="z-index"][style*="999999"]
@@ -308,11 +310,12 @@ smotrisport.online,smotrisport.tv##.dont-add-our-site-pls
 goha.ru#@#.goha_ads
 goha.ru#@#.goha_ads_acceptable
 themoviebay.ru##.is-danger.notification
+ivi.ru##.ivi-footer ~ div[class] > style + div[class]
 go.mail.ru##.js-adb-msg
 space.utema.ru##.main-content-padding > div[class]:not([itemprop])
 megatest.online##.msg-AdBlock
 ykt.ru##.n-banner--adblocked
-animeland.su,itcats.ru,noadsradio.ru,sharkgame.ru,w10.jeanzzz.ru##.no-adb
+animeland.su,itcats.ru,nekto.me,noadsradio.ru,sharkgame.ru,w10.jeanzzz.ru##.no-adb
 mail.rambler.ru##.notification-warning
 delfi.lv##.notification-widget
 radio.yandex.by,radio.yandex.kz,radio.yandex.ru,radio.yandex.ua##.page-root .notify
@@ -342,7 +345,6 @@ lr-club.com##a[href="https://adblockplus.org/ru/faq_basics#disable"]
 pic4you.ru,pic5you.ru##body > #bb
 forum.vip-cxema.org##body > #document_modal.modal,#some_ad_block_key_popup
 it-enginer.ru##body > #modal[style*="blur"]
-ivi.ru##body > .bottom-popup
 swaego.ru##body > .special-message-wrapper
 ukr.net##body > .yellow-die
 in-trend.biz##body > [id][style^="z-index"]

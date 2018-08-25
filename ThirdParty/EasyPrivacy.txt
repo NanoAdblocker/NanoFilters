@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: YPa59OquwitH2jrjjbwvzA
-! Version: 201808140101
+! Checksum: 6gmEMmU0Sjb2kIufO2aHLw
+! Version: 201808250351
 ! Title: EasyPrivacy
-! Last modified: 14 Aug 2018 01:01 UTC
+! Last modified: 25 Aug 2018 03:51 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -2471,7 +2471,7 @@
 /pixel/cv_
 /pixel/img/*
 /pixel/impression/*
-/pixel/js/*
+/pixel/js/*$third-party
 /pixel/stream/*
 /pixel/visit?
 /pixel1/impression.
@@ -6207,6 +6207,7 @@ _mongo_stats/
 ||tracking202.com^$third-party
 ||trackinglabs.com^$third-party
 ||trackkas.com^$third-party
+||trackmytarget.com^$third-party
 ||trackmyweb.net^$third-party
 ||trackset.com^$third-party
 ||tracksy.com^$third-party
@@ -8359,7 +8360,7 @@ _mongo_stats/
 ||cloudapp.net/l/
 ||cloudfront-labs.amazonaws.com^
 ||cloudfront.net*/keywee.min.js
-||cloudfront.net*/sp.js
+||cloudfront.net*/sp.js|
 ||cloudfront.net*/tracker.js
 ||cloudfront.net*/trk.js
 ||cloudfront.net/?a=
@@ -14081,6 +14082,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|alltube.pl|alltube.tv|animeteatr.ru|
 ||24ur.com/bin/player/?mod=statistics&
 ||tracker.azet.sk^
 ! Spanish
+||abc.es/pixel/
 ||analytics.infobae.com^
 ||audiencies.ccma.cat^
 ||bankinter.com/res/img/documento_cargado.gif?
@@ -15385,6 +15387,8 @@ $csp=worker-src 'none',domain=300mbfilms.co|alltube.pl|alltube.tv|animeteatr.ru|
 @@||akamaized.net^*/js/tracking/ninja.js$script,domain=olx.ua
 @@||bemobile.ua/lib/lib.js$domain=tsn.ua
 @@||gemius.pl/gplayer.js$domain=tsn.ua
+@@||googletagmanager.com/gtm.js$script,domain=olx.ua
+@@||ninja.onap.io/ninja-cee.js$script,domain=olx.ua
 @@||uaprom.net/image/blank.gif?$image
 @@||ukrposhta.ua/js/tracking.js
 ! Anti-Adblock

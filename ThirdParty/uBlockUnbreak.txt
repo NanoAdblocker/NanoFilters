@@ -566,7 +566,7 @@ wetteronline.de#@#[style="width: 100%;"]
 @@||audi.co.uk^$first-party,script
 
 ! https://twitter.com/datamafia/status/887743901443866624
-pythonjobshq.com##script:inject(abort-on-property-read.js, Keen)
+pythonjobshq.com##+js(abort-on-property-read.js, Keen)
 
 ! http://forums.mozillazine.org/viewtopic.php?f=38&t=3032369
 @@||hdliveextra-a.akamaihd.net^$domain=nbcsports.com
@@ -988,7 +988,7 @@ arduino.cc#@#.addthis_toolbox
 @@||googletagmanager.com/gtm.js*dataLayer$script,domain=fortune.com
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=40264
-br.de##script:inject(set-constant.js, akamaiDisableServerIpLookup, noopFunc)
+br.de##+js(set-constant.js, akamaiDisableServerIpLookup, noopFunc)
 
 ! To counter `o0bc.com` in Peter Lowe's
 ! unbreaks boston.com
@@ -1042,10 +1042,11 @@ oxforddictionaries.com##.banbox-mini
 
 ! unbreak sites broken by EasyList uponit filter
 ! https://forums.lanik.us/viewtopic.php?f=64&t=40885
+! https://forums.lanik.us/viewtopic.php?f=64&t=41514
 @@||ytimg.com^$image,domain=pocketnow.com
-101greatgoals.com,colourlovers.com,crackberry.com,datpiff.com,destructoid.com,getinmybelly.com,imore.com,mmorpg.com,omgcheckitout.com,pocketnow.com,sportspickle.com,tetrisfriends.com,vrheads.com,windowscentral.com#@#[style*="background-image:"]
+101greatgoals.com,colourlovers.com,crackberry.com,datpiff.com,destructoid.com,getinmybelly.com,imore.com,mmorpg.com,omgcheckitout.com,pocketnow.com,sportspickle.com,tetrisfriends.com,vrheads.com,windowscentral.com,xda-developers.com#@#[style*="background-image:"]
 blacklistednews.com,datpiff.com#@#div > iframe
-destructoid.com#@#[src*="base64"]
+destructoid.com,xda-developers.com#@#[src*="base64"]
 destructoid.com#@#[src*="data:"]
 blacklistednews.com,diffen.com,kshowonline.com,the4thofficial.net#@#div > iframe:first-child
 the4thofficial.net#@#[style] > iframe
@@ -1058,8 +1059,8 @@ the4thofficial.net#@#[style] > [scrolling]
 ||vidtech.cbsinteractive.com/*/tracking/comscore/comscore.streaming.$script,redirect=noopjs,domain=zdnet.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2107
-cyclingnews.com##script:inject(abort-on-property-read.js, MONETIZER101.init)
-cyclingnews.com##script:inject(nano-setTimeout-booster.js, /outboundLink/)
+cyclingnews.com##+js(abort-on-property-read.js, MONETIZER101.init)
+cyclingnews.com##+js(nano-setTimeout-booster.js, /outboundLink/)
 cyclingnews.com##.global-banner
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2112
@@ -1403,3 +1404,12 @@ deezer.com##.ads
 ! https://github.com/uBlockOrigin/uAssets/issues/3304
 |https://$third-party,script,domain=animeflv.net|descargasnsn.com|jkanime.net,badfilter
 |https://$third-party,script,domain=descargasnsn.com|jkanime.net
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=41502
+@@||apply.indeed.com/$subdocument,first-party
+
+! https://github.com/uBlockOrigin/uAssets/issues/1225#issuecomment-416297077
+@@||anyporn.com/key.jsx$script,first-party
+
+! https://github.com/NanoAdblocker/NanoFilters/issues/172#issuecomment-416314453
+@@||static.iqiyi.com/js/player_v1/sdk/*$script,first-party

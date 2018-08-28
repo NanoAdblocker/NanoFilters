@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: 6gmEMmU0Sjb2kIufO2aHLw
-! Version: 201808250351
+! Checksum: pcoiRen2K5MIL0zXo5G/Og
+! Version: 201808280051
 ! Title: EasyPrivacy
-! Last modified: 25 Aug 2018 03:51 UTC
+! Last modified: 28 Aug 2018 00:51 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -59,6 +59,7 @@
 -google-analytics/
 -google-tag-manager/$script
 -imppix/
+-javascript_xiti_
 -log?referUrl=
 -logging/log?
 -mastertag.
@@ -750,6 +751,7 @@
 /beacon/event?
 /beacon/metrics
 /beacon/performance?
+/beacon/portal-lite?
 /beacon/timing?
 /beacon/track/*
 /beacon/vtn_loader.gif?
@@ -2069,6 +2071,7 @@
 /logwebhit.
 /logwriter.php
 /lotame_audiences.
+/loyalty-tracking-
 /lunametrics-
 /lycostrack.js
 /lzdtracker.
@@ -3227,6 +3230,7 @@
 /track;adv
 /track?*&ref=
 /track?browserId
+/track?cb=
 /track?event=
 /track?name=
 /track?referer=
@@ -3425,6 +3429,7 @@
 /TrackingService.js
 /trackingService.min.js
 /trackingService/*
+/trackingVtm.
 /trackIt.js
 /trackit.php?
 /trackit.pl?
@@ -3697,6 +3702,7 @@
 /WebPageEventLogger.
 /webrec/wr.do?
 /WebStat.asmx
+/webstat.js
 /webstat/cei_count.asp?
 /WebStat2.
 /webstat_
@@ -4010,6 +4016,7 @@ _webanalytics.
 _webiq.
 _wiselog_
 _wreport.fcgi?
+_xiti_js-
 _zag_cookie.
 cgi-bin/counter
 http://utm.$domain=~utm.edu|~utm.md|~utoronto.ca
@@ -6067,6 +6074,7 @@ _mongo_stats/
 ||statssheet.com^$third-party
 ||statsw.com^$third-party
 ||statswave.com^$third-party
+||statswebtown.com^$third-party
 ||statsy.net^$third-party
 ||stattooz.com^$third-party
 ||stattrax.com^$third-party
@@ -9770,6 +9778,7 @@ _mongo_stats/
 ||tredir.go.com/capmon/GetDE?$third-party
 ||tree-pixel-log.s3.amazonaws.com^
 ||tremorhub.com^
+||trendmd.com/events
 ||trf.intuitwebsites.com^
 ||triad.technorati.com^
 ||tritondigital.com/lt?sid*&hasads=

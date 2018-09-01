@@ -9,6 +9,10 @@
 # https://github.com/reek/anti-adblock-killer/issues/3659
 /wp-content/plugins/pause-adblocker/*
 
+# https://github.com/NanoMeow/QuickReports/issues/48
+@@||fuckadblock.sitexw.fr^$generichide
+@@||cdnjs.cloudflare.com/ajax/libs/fuckadblock/*/fuckadblock.min.js$script,domain=fuckadblock.sitexw.fr
+
 # https://github.com/NanoAdblocker/NanoFilters/issues/31
 ||fastly.net/js/prebid-$script,redirect=noopjs
 

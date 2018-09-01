@@ -1413,3 +1413,30 @@ deezer.com##.ads
 
 ! https://github.com/NanoAdblocker/NanoFilters/issues/172#issuecomment-416314453
 @@||static.iqiyi.com/js/player_v1/sdk/*$script,first-party
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=41540&p=140243#p140243
+/adfox.$domain=~adfox.hu,badfilter
+/adfox.$domain=~adfox.hu|~adfox.group
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=41498
+||youboranqs01.com^$third-party,badfilter
+
+! https://github.com/uBlockOrigin/uAssets/issues/3363
+@@||usopen.org/AppMeasurement.js$script,first-party
+
+! Reported through email: many Canadian car sites broken because of
+! `d2cmedia.ca` in Peter Lowe's. Examples:
+! https://www.hyundailongueuil.com/neufs/Hyundai-Elantra%20GT-2018.html
+! https://www.complexekia.com/demonstrateurs/Kia-Soul-2018-id7101681.html
+||d2cmedia.ca^$badfilter
+||d2cmedia.ca^$~image
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=41563
+||youbora.com^$third-party,badfilter
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=41562
+@@||tredir.go.com/capmon/$script,domain=disney.com
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=41569
+/ads.css$badfilter
+/ads.css$domain=~espn.com

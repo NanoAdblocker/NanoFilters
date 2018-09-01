@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: pcoiRen2K5MIL0zXo5G/Og
-! Version: 201808280051
+! Checksum: 9Vg6iMM/G0EoWJPZNt+pmQ
+! Version: 201809011951
 ! Title: EasyPrivacy
-! Last modified: 28 Aug 2018 00:51 UTC
+! Last modified: 01 Sep 2018 19:51 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -1927,6 +1927,8 @@
 /LastClick/js?
 /layer_log.php?p=
 /lbi_ga.
+/lead-tracking.
+/lead-tracking/*
 /leadgen/ga.js
 /leadgen_track
 /lib.tailtarget/*
@@ -3463,6 +3465,8 @@
 /trackvisit?
 /TrackVisitors/*
 /tradelab.js
+/traffic-source-cookie.
+/traffic-source-cookie/*
 /traffic.asmx/*
 /traffic/status.gif?
 /traffic/track^
@@ -3718,7 +3722,7 @@
 /webtag.js
 /webtrack.
 /webtracker.
-/webTracking.
+/webTracking.$domain=~webtracking.girard-agediss.com
 /webtracking/*$~subdocument
 /WebTrackingHandler.
 /WebTrackingService.
@@ -3981,6 +3985,7 @@ _pages_tracker.
 _performance_tracker-
 _ping/amp-
 _pix.gif?
+_pixel_db?
 _pixel_test/?
 _pixelmap.js
 _promo_id=
@@ -5927,6 +5932,7 @@ _mongo_stats/
 ||seoradar.ro^$third-party
 ||serious-partners.com^$third-party
 ||serv-ac.com^$third-party
+||servebom.com^$third-party
 ||servestats.com^$third-party
 ||servinator.pw^$third-party
 ||serving-sys.com^$third-party
@@ -7723,6 +7729,7 @@ _mongo_stats/
 ||engageya.com^$third-party
 ||marktest.pt^$third-party
 ||popstats.com.br^$third-party
+||rdstation.com.br^$third-party
 ||sambaads.com^$third-party
 ||tailtarget.com^$third-party
 ||trugaze.io^$third-party
@@ -8225,6 +8232,7 @@ _mongo_stats/
 ||b.bedop.com^
 ||b5media.com/bbpixel.php
 ||bab.frb.io^
+||backstage.funnelenvy.com^
 ||baidu.com/pixel?
 ||bango.net/exid/*.gif?
 ||bango.net/id/*.gif?
@@ -8989,6 +8997,7 @@ _mongo_stats/
 ||livefyre.com/tracking/
 ||livefyre.com^*/tracker.js
 ||livefyre.com^*/tracking/
+||livehelpnow.net/lhn/handler/$image
 ||livehelpnow.net/lhn/jsutil/getinvitationmessage.aspx?
 ||liverail.com/?metric=
 ||liverail.com/track/?
@@ -9598,6 +9607,7 @@ _mongo_stats/
 ||tags.master-perf-tools.com^
 ||tags.newscgp.com^
 ||target.fark.com^
+||target.mixi.media^
 ||targeting.wpdigital.net^
 ||tc.airfrance.com^
 ||te.supportfreecontent.com^
@@ -9666,6 +9676,7 @@ _mongo_stats/
 ||track.mycliplister.com^
 ||track.omg2.com^
 ||track.parse.ly^
+||track.prezna.com^
 ||track.pricespider.com^
 ||track.propelplus.com^
 ||track.qcri.org^

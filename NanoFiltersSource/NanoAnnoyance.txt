@@ -5,6 +5,9 @@
 # https://github.com/NanoAdblocker/NanoFilters/issues/1
 microsoft.com,live.com,windows.com,xbox.com###epb
 
+# Spam bot, tests: https://www.drift.com/ https://www.hubspot.com/
+||driftt.com^$third-party
+
 # Anti-select for no valid reason, test: http://tampermonkey.net/
 tampermonkey.net##*:style(user-select: text !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important;)
 

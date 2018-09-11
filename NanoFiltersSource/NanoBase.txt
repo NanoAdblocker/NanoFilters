@@ -53,8 +53,8 @@ camwhores.tv##body > div.top:has-text(AdBlock)
 camwhores.tv##body > div:matches-css(z-index: 9999999)
 camwhores.tv##body > div:matches-css(z-index: 9999998)
 
-# https://www.reddit.com/r/uBlockOrigin/comments/7imqbx/firefox_quantum_working_antiadblockkiller/
-libgen.io##+js(setTimeout-defuser.js, ad blocking)
+# https://github.com/NanoMeow/QuickReports/issues/74
+libgen.io##+js(setTimeout-defuser.js, (), 500)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/742
 @@||egarwolin.pl/static/js/ads.js$script,first-party

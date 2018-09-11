@@ -28,7 +28,7 @@ avseesee.com##.ads
 camwhores.tv##body > div.top:has-text(AdBlock)
 camwhores.tv##body > div:matches-css(z-index: 9999999)
 camwhores.tv##body > div:matches-css(z-index: 9999998)
-libgen.io##+js(setTimeout-defuser.js, ad blocking)
+libgen.io##+js(setTimeout-defuser.js, (), 500)
 @@||egarwolin.pl/static/js/ads.js$script,first-party
 @@||rapidvideo.com/js/jquery.min.js$script,first-party
 download.inventivetalent.org##div:has(:scope > div > button.choice-adfly)

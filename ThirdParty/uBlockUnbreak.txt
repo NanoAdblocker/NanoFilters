@@ -42,9 +42,10 @@
 @@||global.fncstatic.com/$script,domain=video.foxnews.com
 ||cdn.krxd.net^$script,redirect=noopjs,domain=video.foxnews.com
 
-! http://forums.lanik.us/viewtopic.php?f=64&t=17842&sid=46bd7065193153fe46efe816b7cd32c9&start=30#p59663
+! http://forums.lanik.us/viewtopic.php?f=64&t=17842&start=30#p59663
 ! To counter `statcounter.com` in Peter Lowe's, MVPS, Dan Pollock's and hpHosts
-@@||statcounter.com^$~third-party
+||statcounter.com^$badfilter
+||statcounter.com^$third-party
 
 ! https://github.com/chrisaljoudi/uBlock/issues/166
 ! To counter `liverail.com` in Peter Lowe's, MVPS, and hpHosts
@@ -516,8 +517,11 @@ wetteronline.de#@#[style="width: 100%;"]
 
 ! https://github.com/uBlockOrigin/uAssets/issues/478
 ! https://github.com/uBlockOrigin/uAssets/issues/1906
+! https://www.reddit.com/r/uBlockOrigin/comments/9c6j8u/
 /google-analytics.$badfilter
 /google-analytics.$third-party
+/googleanalytics.js$badfilter
+/googleanalytics.js$third-party
 -google-analytics.$badfilter
 -google-analytics.$third-party
 -google-analytics/$badfilter
@@ -1051,6 +1055,10 @@ destructoid.com#@#[src*="data:"]
 blacklistednews.com,diffen.com,kshowonline.com,the4thofficial.net#@#div > iframe:first-child
 the4thofficial.net#@#[style] > iframe
 the4thofficial.net#@#[style] > [scrolling]
+! https://github.com/uBlockOrigin/uAssets/issues/3388
+xda-developers.com#@#[src*="data:"]
+xda-developers.com#@#[style*="base64"]
+xda-developers.com#@#[style*="data:"]
 
 ! https://github.com/reek/anti-adblock-killer/issues/4010
 @@||google-analytics.com/analytics.js$script,domain=developers.google.com
@@ -1284,6 +1292,9 @@ techadvisor.co.uk#@#.adsbygoogle
 ! https://forums.lanik.us/viewtopic.php?p=138629#p138629
 |https://$xmlhttprequest,domain=dwatchseries.to|swatchseries.to|thewatchseries.ac|unblckd.org|watchseries.sk,badfilter
 @@||swatchseries.to/show/get-tracking-data$xmlhttprequest,first-party
+|https://$third-party,script,domain=dwatchseries.to|swatchseries.to|thewatchseries.ac|unblckd.org|watchseries.sk,badfilter
+||www*.swatchseries.to^$script,badfilter
+|https://$third-party,stylesheet,domain=dwatchseries.to|swatchseries.to|thewatchseries.ac|unblckd.org|watchseries.sk,badfilter
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2852
 @@||cc.naver.com/cc$subdocument,first-party
@@ -1400,6 +1411,7 @@ deezer.com##.ads
 ! https://github.com/uBlockOrigin/uAssets/issues/2333#issuecomment-415652949
 /^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ss]cripts|[Uu]ploads|[Ii]mages|combined|content|cover|img|static|wp-content|wp-includes))(.*)/$first-party,image,badfilter
 /^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ss]cripts|[Uu]ploads|[Ii]mages|combined|content|cover|img|static|wp-content|wp-includes))(.*)/$first-party,xmlhttprequest,badfilter
+/^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ss]cripts|[Uu]ploads|[Ii]mages|combined|content|cover|img|static|wp-content|wp-includes))(.*)/$first-party,script,badfilter
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3304
 |https://$third-party,script,domain=animeflv.net|descargasnsn.com|jkanime.net,badfilter
@@ -1437,6 +1449,22 @@ deezer.com##.ads
 ! https://forums.lanik.us/viewtopic.php?f=64&t=41562
 @@||tredir.go.com/capmon/$script,domain=disney.com
 
-! https://forums.lanik.us/viewtopic.php?f=64&t=41569
-/ads.css$badfilter
-/ads.css$domain=~espn.com
+! https://forums.lanik.us/viewtopic.php?f=64&t=41588
+||smartsuppchat.com^$third-party,badfilter
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=41591
+/adsession.$badfilter
+/adsession.$domain=~adsession.com
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=41612
+@@||discover.com/discover/reporting/AppMeasurement.js$first-party
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=41629
+archive.org#@#.oasad
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=41615
+#@##share_div
+##body:not(#jira) #share_div,fake
+
+! https://github.com/uBlockOrigin/uAssets/issues/2364#issuecomment-420346996
+@@*$media,domain=camwhores.tv

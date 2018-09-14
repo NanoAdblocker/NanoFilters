@@ -332,7 +332,8 @@ shrink-service.it##+js(abort-on-property-read.js, WebAssembly)
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/7wwejy/cryptojackers_defeat_all_countermeasures/
 ! https://github.com/NanoAdblocker/NanoFilters/issues/35#issuecomment-403137195
-*$csp=worker-src 'none',domain=estream.to|flashx.cc|streamango.com|vidoza.net|vidto.me|vidto.se|vidtudu.com
+! https://github.com/uBlockOrigin/uAssets/issues/3244#issuecomment-420854707
+*$csp=worker-src 'none',domain=estream.to|flashx.cc|flashx.co|streamango.com|vidoza.net|vidto.me|vidto.se|vidtudu.com
 ||tulip18.com^$third-party
 
 ! https://github.com/uBlockOrigin/uAssets/pull/818#issuecomment-365770341
@@ -428,3 +429,12 @@ tomadivx.tv##+js(abort-on-property-read.js, WebAssembly)
 ||jshosting.*^
 ||freecontent.*^
 ||hostingcloud.*^
+
+! https://github.com/uBlockOrigin/uAssets/issues/1962#issuecomment-420471103
+descargas2020.com##+js(abort-current-inline-script.js, atob, _0x)
+||money-maker-default.info^
+||money-maker-script.info^
+||service4refresh.info^
+
+! https://github.com/uBlockOrigin/uAssets/issues/3459
+||cinemafacil.com^$csp=worker-src 'none'

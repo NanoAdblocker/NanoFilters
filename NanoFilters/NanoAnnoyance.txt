@@ -13,8 +13,6 @@ wikipedia.org##+js(abort-on-property-write.js, frb)
 bizjournals.com##+js(set-constant.js, __page__.isPremium, false)
 ||static.infoglobo.com.br/paywall/*$domain=oglobo.globo.com
 ||washingtonpost.com/wp-stat/pwapi/prod/*
-knshow.com##+js(addEventListener-defuser.js, /^(?:contextmenu|copy|selectstart)$/)
-knshow.com##+js(abort-on-property-read.js, document.oncontextmenu)
 hardware.info##+js(nanop-click-elements-onready.js, .cookiecontainer > .cookie > button#decision[name="accept"])
 marktplaats.nl##+js(nanop-click-elements-onready.js, form#track-accept > input[type="submit"])
 f1racing.pl##+js(nanop-click-elements-onready.js, a[href="/x-set-cookie/"])

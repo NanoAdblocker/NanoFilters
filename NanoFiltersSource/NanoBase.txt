@@ -357,9 +357,3 @@ businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)
 businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 
 !#endif
-# ################################# #
-# #### Pending Synchronization #### #
-# ################################# #
-
-# https://github.com/NanoAdblocker/NanoCore/issues/41
-clipconverter.cc##+js(abort-on-property-read.js, T0P5e)

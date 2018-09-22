@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: lAV7/VBdBTwfe0nHUfP/LQ
-! Version: 201809142152
+! Checksum: 3w6Ne+5TS8BnwLd49NvApA
+! Version: 201809220032
 ! Title: EasyPrivacy
-! Last modified: 14 Sep 2018 21:52 UTC
+! Last modified: 22 Sep 2018 00:32 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -604,7 +604,7 @@
 /analyticstrain-
 /analyticsUnitaire?
 /analyticsUrlToDataMappings.
-/analyze.js
+/analyze.js^
 /analyzer.gif?
 /analyzer2.
 /anametrix.js
@@ -2727,6 +2727,7 @@
 /roiTrax.
 /rolluptracker_
 /rot_in.php
+/rpc.gif?ac=
 /rpc/log?
 /rpc/preccount?
 /rr/t?step=
@@ -5580,7 +5581,6 @@ _mongo_stats/
 ||ns1p.net^$third-party
 ||nstracking.com^$third-party
 ||nuconomy.com^$third-party
-||nudatasecurity.com^$third-party
 ||nuggad.net^$third-party
 ||nuloox.com^$third-party
 ||numerino.cz^$third-party
@@ -14304,7 +14304,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|alltube.pl|alltube.tv|animeteatr.ru|
 @@||adobedtm.com^*/mbox-contents-$script,domain=lenovo.com|newyorker.com|oprah.com|pnc.com|vanityfair.com|wired.com
 @@||adobedtm.com^*/s-code-$script
 @@||adobedtm.com^*/satellite-$script
-@@||adobedtm.com^*/satelliteLib-$script,domain=argos.co.uk|collegeboard.org|crackle.com|crimewatchdaily.com|directline.com|jeep.com|laredoute.co.uk|laredoute.com|lenovo.com|lowes.com|mastercard.us|monoprice.com|nbcnews.com|newyorker.com|oprah.com|pnc.com|realtor.com|redbull.tv|searspartsdirect.com|smooth.com.au|sonycrackle.com|stuff.co.nz|subaru.com|timewarnercable.com|vanityfair.com|wired.com
+@@||adobedtm.com^*/satelliteLib-$script,domain=argos.co.uk|collegeboard.org|crackle.com|crimewatchdaily.com|directline.com|jeep.com|laredoute.co.uk|laredoute.com|lenovo.com|lowes.com|mastercard.us|mathworks.com|monoprice.com|nbcnews.com|newyorker.com|oprah.com|pnc.com|realtor.com|redbull.tv|searspartsdirect.com|smooth.com.au|sonycrackle.com|stuff.co.nz|subaru.com|timewarnercable.com|vanityfair.com|wired.com
 @@||adobetag.com/d2/$script,domain=thestar.com
 @@||adobetag.com^*/amc.js$script
 @@||adobetag.com^*/sitecatalyst.js$domain=hbf.com.au|seattlepi.com|tv.com
@@ -15019,6 +15019,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|alltube.pl|alltube.tv|animeteatr.ru|
 @@||washingtonpost.com/wp-stat/analytics/main.js$domain=subscribe.washingtonpost.com
 @@||washingtonpost.com^*/spacer.gif?$image
 @@||wbshop.com/fcgi-bin/iipsrv.fcgi?
+@@||wcnc.com/content/libs/comscore/comscore.min.js
 @@||websimages.com/JS/Tracker.js
 @@||webtrack.dhlglobalmail.com^
 @@||webtrends.com^*/events.svc$subdocument,domain=mycokerewards.com

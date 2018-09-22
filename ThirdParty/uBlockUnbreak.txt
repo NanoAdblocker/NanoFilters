@@ -964,9 +964,6 @@ arduino.cc#@#.addthis_toolbox
 /netstat.$badfilter
 /netstat.$domain=~netstat.cloud
 
-! https://github.com/uBlockOrigin/uAssets/issues/1720
-@@||amazon.*^*uedata$image
-
 ! https://forums.lanik.us/viewtopic.php?f=64&t=40233&p=133912#p133911
 ||player.ooyala.com/*/analytics-plugin/$script,redirect=noopjs,domain=nintendo.com
 
@@ -1392,13 +1389,6 @@ techadvisor.co.uk#@#.adsbygoogle
 ! https://forums.lanik.us/viewtopic.php?f=64&t=41483
 @@://adv.gg^$popup
 
-! https://github.com/uBlockOrigin/uAssets/issues/3284
-! https://github.com/uBlockOrigin/uAssets/issues/3290
-@@||deezer.com^$generichide
-@@||sascdn.com^$script,domain=deezer.com
-@@||smartadserver.com^*noadcbk=sas.noad$script,domain=deezer.com
-deezer.com##.ads
-
 ! typo in easylist
 ||n$badfilter
 
@@ -1412,6 +1402,9 @@ deezer.com##.ads
 /^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ss]cripts|[Uu]ploads|[Ii]mages|combined|content|cover|img|static|wp-content|wp-includes))(.*)/$first-party,image,badfilter
 /^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ss]cripts|[Uu]ploads|[Ii]mages|combined|content|cover|img|static|wp-content|wp-includes))(.*)/$first-party,xmlhttprequest,badfilter
 /^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ss]cripts|[Uu]ploads|[Ii]mages|combined|content|cover|img|static|wp-content|wp-includes))(.*)/$first-party,script,badfilter
+/^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ee]xternal|[Ii]mages|[Ss]cripts|[Uu]ploads|ac|assets|combined|content|cov|cover|img|inc|jwplayer|player|playlist-cat-rss|static|thumbs|wp-content|wp-includes)\/)(.*)/$first-party,image,badfilter
+/^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ee]xternal|[Ii]mages|[Ss]cripts|[Uu]ploads|ac|assets|combined|content|cov|cover|img|inc|jwplayer|player|playlist-cat-rss|static|thumbs|wp-content|wp-includes)\/)(.*)/$first-party,script,badfilter
+/^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ee]xternal|[Ii]mages|[Ss]cripts|[Uu]ploads|ac|assets|combined|content|cov|cover|img|inc|jwplayer|player|playlist-cat-rss|static|thumbs|wp-content|wp-includes)\/)(.*)/$first-party,xmlhttprequest,badfilter
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3304
 |https://$third-party,script,domain=animeflv.net|descargasnsn.com|jkanime.net,badfilter
@@ -1486,3 +1479,46 @@ nbcsports.com#@##nbcsports-leaderboard
 
 ! https://twitter.com/tommasobarbugli/status/1040601984624152577
 @@||coolblue.nl^*/ard.png$script,first-party
+
+! https://www.reddit.com/r/uBlockOrigin/comments/9gn4is
+@@||a.4cdn.org/*.json$xmlhttprequest,domain=4chan.org
+
+! https://github.com/uBlockOrigin/uAssets/issues/3516
+@@||cdn.cxense.com/cx.js$script,domain=mega.cl
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=41714
+@@||fusion.ddmcdn.com/app/*/comscore.streaming.$script,domain=destinationamerica.com
+@@||v.fwmrm.net/ad/$script,xmlhttprequest,domain=destinationamerica.com
+@@||src.litix.io/core/*/mux.js$script,domain=destinationamerica.com
+
+! https://github.com/NanoMeow/QuickReports/issues/106
+redtube.com#@#[src*="base64"]
+redtube.com#@#[src*="data:"]
+
+! https://www.reddit.com/r/uBlockOrigin/comments/9h394g/endless_ads_2000_totally_hangs_the_computer/
+@@||googleusercontent.com^$image,domain=kissmanga.com
+
+! https://github.com/NanoMeow/QuickReports/issues/107
+warszawawpigulce.pl#@#.code-block-5, .eklama, #undermenu-block, .code-block-6
+warszawawpigulce.pl##.eklama
+
+! https://github.com/uBlockOrigin/uAssets/issues/3523
+|http://$script,domain=yts.am,badfilter
+|https://$script,domain=yts.am,badfilter
+
+! https://www.reddit.com/r/uBlockOrigin/comments/9hh9kb/pornhub_videos_only_works_after_i_disable_ublock/
+|https://$third-party,script,domain=~feedback.pornhub.com|pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com,badfilter
+
+! https://github.com/uBlockOrigin/uAssets/issues/3532
+@@||ftse.com/Products/*/scripts/analytics_$script,first-party
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=41720
+||dj5ag5n6bpdxo.cloudfront.net^$badfilter
+/adways/*$badfilter
+/adways-$badfilter
+
+! https://github.com/uBlockOrigin/uAssets/issues/3539
+@@||gstatic.com^*/recaptcha/$script
+
+! https://github.com/uBlockOrigin/uAssets/issues/3540
+@@||geoip.nekudo.com/api/*$xmlhttprequest,domain=opentable.com

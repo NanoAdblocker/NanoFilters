@@ -92,7 +92,8 @@
 
 ! https://github.com/chrisaljoudi/uBlock/issues/302
 ! To counter `outbrain.com` in hpHosts
-@@||outbrain.com^$~third-party
+||outbrain.com^$badfilter
+||outbrain.com^$third-party
 
 ! https://github.com/chrisaljoudi/uBlock/issues/336
 ! To counter `flurry.com` in Peter Lowe's, hpHosts, MVPS
@@ -1016,7 +1017,7 @@ onhax.me#@#div p + div[id][class]
 thefreedictionary.com#@#a > img[src^="//img.tfd.com/"]
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1907
-@@||ws-na.assoc-amazon.com$image,domain=4tests.com
+@@||ws-na.assoc-amazon.com^$image,domain=4tests.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1954
 @@||ncjrs.gov/fsrscripts/*$first-party
@@ -1223,7 +1224,7 @@ britannica.com###md-media-overlay-ad
 sounddrain.net##.coinhive-captcha:style(max-width: none !important;)
 
 ! https://forums.lanik.us/viewtopic.php?f=96&t=41041
-@@||analytics.edgekey.net$script,domain=hbsmediasetit.deltatre.net
+@@||analytics.edgekey.net^$script,domain=hbsmediasetit.deltatre.net
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/8vozyp/kimcartoon_isnt_working_at_all_with_ublock/
 ||kimcartoon.me^$script,domain=kimcartoon.me,badfilter
@@ -1389,9 +1390,6 @@ techadvisor.co.uk#@#.adsbygoogle
 ! https://forums.lanik.us/viewtopic.php?f=64&t=41483
 @@://adv.gg^$popup
 
-! typo in easylist
-||n$badfilter
-
 ! https://github.com/NanoAdblocker/NanoCore/issues/201
 @@||nxp.com/*/resources/scripts/analytics/webanalytics.js$script,first-party
 
@@ -1418,10 +1416,6 @@ techadvisor.co.uk#@#.adsbygoogle
 
 ! https://github.com/NanoAdblocker/NanoFilters/issues/172#issuecomment-416314453
 @@||static.iqiyi.com/js/player_v1/sdk/*$script,first-party
-
-! https://forums.lanik.us/viewtopic.php?f=64&t=41540&p=140243#p140243
-/adfox.$domain=~adfox.hu,badfilter
-/adfox.$domain=~adfox.hu|~adfox.group
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=41498
 ||youboranqs01.com^$third-party,badfilter
@@ -1467,10 +1461,6 @@ archive.org#@#.oasad
 @@||d1z2jf7jlzjs58.cloudfront.net/p.js$script,domain=nfl.com
 @@||static.parsely.com/p.js$script,domain=nfl.com
 
-! https://forums.lanik.us/viewtopic.php?f=64&t=41605
-/advertising.$domain=~advertising.berlin-airport.de|~advertising.bulurum.com|~advertising.byhoxby.com|~advertising.dailymotion.com|~advertising.expedia.com|~advertising.lavenir.net|~advertising.mobile.de|~advertising.org.il|~advertising.sevenwestmedia.com.au|~advertising.shpock.com|~advertising.theguardian.com,badfilter
-/advertising.$domain=~advertising.amazon.ca|~advertising.amazon.cn|~advertising.amazon.co.jp|~advertising.amazon.co.uk|~advertising.amazon.com|~advertising.amazon.com.au|~advertising.amazon.com.mx|~advertising.amazon.de|~advertising.amazon.es|~advertising.amazon.fr|~advertising.amazon.in|~advertising.amazon.it|~advertising.berlin-airport.de|~advertising.bulurum.com|~advertising.byhoxby.com|~advertising.dailymotion.com|~advertising.expedia.com|~advertising.lavenir.net|~advertising.mobile.de|~advertising.org.il|~advertising.sevenwestmedia.com.au|~advertising.shpock.com|~advertising.theguardian.com
-
 ! https://forums.lanik.us/viewtopic.php?f=64&t=41670
 nbcsports.com#@##nbcsports-leaderboard
 
@@ -1508,17 +1498,26 @@ warszawawpigulce.pl##.eklama
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/9hh9kb/pornhub_videos_only_works_after_i_disable_ublock/
 |https://$third-party,script,domain=~feedback.pornhub.com|pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com,badfilter
+|https://$image,badfilter,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
+|https://$third-party,image,badfilter,domain=~feedback.pornhub.com|pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
+|https://$third-party,media,badfilter,domain=~feedback.pornhub.com|pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3532
 @@||ftse.com/Products/*/scripts/analytics_$script,first-party
-
-! https://forums.lanik.us/viewtopic.php?f=64&t=41720
-||dj5ag5n6bpdxo.cloudfront.net^$badfilter
-/adways/*$badfilter
-/adways-$badfilter
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3539
 @@||gstatic.com^*/recaptcha/$script
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3540
 @@||geoip.nekudo.com/api/*$xmlhttprequest,domain=opentable.com
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=41758
+|http*://$third-party,image,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123movies.live|123movies.net|123movies.net.ru|123movies.ru|123movies.vc|123moviesfree.com|123movieshd.net|123movieshd.tv|9cartoon.me|animehaven.to|auroravid.to|ay8ou8ohth.com|bitvid.sx|btdb.in|btdb.to|clipconverter.cc|cloudtime.to|cmovieshd.com|divxme.com|downloadming.tv|dropapk.com|flyordie.com|full-pcsoftware.com|halacima.net|hdmusic99.in|hdtv-rls.com|kannadamovies.biz|kissanime.ru|kissmanga.com|livetvcafe.net|movdivx.com|mp3clan.one|nowvideo.li|nowvideo.sx|nowvideo.to|oogh8ot0el.com|otakustream.tv|otorrents.com|putlocker.co|solarmovie.sc|speedvid.net|stream2watch.org|suprafiles.co|thepiratebay.cd|vidto.me|vidtudu.com|wholecloud.net,badfilter
+
+! https://www.reddit.com/r/uBlockOrigin/comments/9hy3s7/mlb_standings_not_working/
+@@||mlbstatic.com/*/AppMeasurement.js$script,domain=mlb.com
+@@||mlbstatic.com/*/VisitorAPI.js$script,domain=mlb.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/1960#issuecomment-424021963
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=kimcartoon.ac
+@@||kimcartoon.ac/themes/vast/videojs.ads.min.js$script,first-party

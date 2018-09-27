@@ -348,6 +348,11 @@ knshow.com##div[id^="div-gpt-ad-"]
 # https://github.com/uBlockOrigin/uAssets/issues/3535
 tvtropes.org##+js(set-constant.js, valid_user, true)
 
+# https://github.com/NanoMeow/QuickReports/issues/117
+@@||justtrucks.com.au^$generichide
+@@||justtrucks.com.au^$image
+justtrucks.com.au##+js(set-constant.js, Drupal.behaviors.detectAdblockers, noopFunc)
+
 # ############################## #
 # #### Edge Specific Filter #### #
 # ############################## #

@@ -328,15 +328,6 @@ zerohedge.com###abd-banner
 # https://github.com/NanoMeow/QuickReports/issues/64
 filmozercy.com##a[href$="filmozercy.com/wspieraj-nasza-prace-wylacz-adblocka"]
 
-# https://github.com/NanoMeow/QuickReports/issues/18
-games2jolly.com###leaderboard_area
-games2jolly.com###leaderboard_area_home
-games2jolly.com##.ads_310_610_sidebar_new
-games2jolly.com##.game_play > div:nth-of-type(1)
-
-# https://github.com/NanoMeow/QuickReports/issues/58
-streamhentaimovies.com##.popmake-overlay
-
 # https://github.com/uBlockOrigin/uAssets/issues/3489
 columbiaspectator.com##+js(setTimeout-defuser.js, ads, 2000)
 
@@ -355,6 +346,20 @@ justtrucks.com.au##+js(set-constant.js, Drupal.behaviors.detectAdblockers, noopF
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/992
 mediafire.com##+js(abort-current-inline-script.js, document.getElementById, adblocker)
+
+# ############# #
+# #### Ads #### #
+# ############# #
+# These should be included in EasyList
+
+# https://github.com/NanoMeow/QuickReports/issues/18
+games2jolly.com###leaderboard_area
+games2jolly.com###leaderboard_area_home
+games2jolly.com##.ads_310_610_sidebar_new
+games2jolly.com##.game_play > div:nth-of-type(1)
+
+# https://github.com/NanoMeow/QuickReports/issues/58
+streamhentaimovies.com##.popmake-overlay
 
 # ############################## #
 # #### Edge Specific Filter #### #

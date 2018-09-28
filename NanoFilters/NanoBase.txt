@@ -123,11 +123,6 @@ tweakers.net##.notificationsContainer:has-text(whitelisten of beleef Tweakers)
 zerohedge.com###abd-banner
 @@||eca-anime.net/advert.js$script,first-party
 filmozercy.com##a[href$="filmozercy.com/wspieraj-nasza-prace-wylacz-adblocka"]
-games2jolly.com###leaderboard_area
-games2jolly.com###leaderboard_area_home
-games2jolly.com##.ads_310_610_sidebar_new
-games2jolly.com##.game_play > div:nth-of-type(1)
-streamhentaimovies.com##.popmake-overlay
 columbiaspectator.com##+js(setTimeout-defuser.js, ads, 2000)
 @@||knshow.com^$generichide
 knshow.com##.adsbygoogle
@@ -137,6 +132,11 @@ tvtropes.org##+js(set-constant.js, valid_user, true)
 @@||justtrucks.com.au^$image
 justtrucks.com.au##+js(set-constant.js, Drupal.behaviors.detectAdblockers, noopFunc)
 mediafire.com##+js(abort-current-inline-script.js, document.getElementById, adblocker)
+games2jolly.com###leaderboard_area
+games2jolly.com###leaderboard_area_home
+games2jolly.com##.ads_310_610_sidebar_new
+games2jolly.com##.game_play > div:nth-of-type(1)
+streamhentaimovies.com##.popmake-overlay
 !#if env_edge
 businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
 businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)

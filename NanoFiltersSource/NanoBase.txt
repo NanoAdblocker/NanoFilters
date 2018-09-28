@@ -353,6 +353,9 @@ tvtropes.org##+js(set-constant.js, valid_user, true)
 @@||justtrucks.com.au^$image
 justtrucks.com.au##+js(set-constant.js, Drupal.behaviors.detectAdblockers, noopFunc)
 
+# https://github.com/jspenguin2017/uBlockProtector/issues/992
+mediafire.com##+js(abort-current-inline-script.js, document.getElementById, adblocker)
+
 # ############################## #
 # #### Edge Specific Filter #### #
 # ############################## #

@@ -136,6 +136,7 @@ tvtropes.org##+js(set-constant.js, valid_user, true)
 @@||justtrucks.com.au^$generichide
 @@||justtrucks.com.au^$image
 justtrucks.com.au##+js(set-constant.js, Drupal.behaviors.detectAdblockers, noopFunc)
+mediafire.com##+js(abort-current-inline-script.js, document.getElementById, adblocker)
 !#if env_edge
 businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
 businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)

@@ -1,10 +1,13 @@
+# ############################################################################ #
+
 # Whitelist for Nano Adblocker
 # No ads will be unblocked but may open some third party connections
 # Used to unbreak websites when no other reasonable solutions exist
 
-# ############################## #
-# #### Edge Specific Filter #### #
-# ############################## #
+# ############################################################################ #
+
+# Rules specific for Edge browser
+
 !#if env_edge
 
 # https://github.com/uBlockOrigin/uAssets/issues/823
@@ -12,3 +15,5 @@
 @@||static.clmbtech.com^$script,domain=businessinsider.in
 
 !#endif
+
+# ############################################################################ #

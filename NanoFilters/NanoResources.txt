@@ -10,70 +10,6 @@ nano-tiny-noopvast-2.0 text/xml
 nano-tiny-noopvast-3.0 text/xml
 <VAST version="3.0"></VAST>
 
-nano-hijack-script-create.js application/javascript
-(function() {
-    var _createElement = document.createElement;
-    var needle = '{{1}}';
-    if ( needle === '' || needle === '{{1}}' ) {
-        needle = '.?';
-    } else if ( needle.length > 2 &&
-                needle.startsWith('/') && needle.endsWith('/') ) {
-        needle = needle.slice(1,-1);
-    } else {
-        needle = needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    }
-    needle = new RegExp(needle);
-    document.createElement = function(name) {
-        var elem = _createElement.apply(this, arguments);
-        if ( name === 'script' ) {
-            elem.addEventListener('error', function(e) {
-                if ( needle.test(elem.src) ) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    var ev = new Event('load');
-                    elem.dispatchEvent(ev);
-                }
-            });
-        }
-        return elem;
-    };
-})();
-
-nano-remove-elements-onready.js application/javascript
-(function() {
-    var selector = '{{1}}';
-    if ( selector === '' || selector === '{{1}}' ) {
-        return;
-    }
-    var remove = function() {
-        var elements = document.querySelectorAll(selector);
-        for ( var element of elements ) {
-            element.remove();
-        }
-    };
-    if ( document.readyState === 'interactive' ||
-         document.readyState === 'complete' ) {
-        remove();
-    } else {
-        addEventListener('DOMContentLoaded', remove);
-    }
-})();
-
-nano-make-bait-element.js application/javascript
-(function() {
-    var identifier = '{{1}}';
-    var element = document.createElement('div');
-    if ( identifier.charAt(0) === '#' ) {
-        element.id = identifier.substring(1);
-    } else if ( identifier.charAt(0) === '.' ) {
-        element.className = identifier.substring(1);
-    } else {
-        return;
-    }
-    element.style.display = 'none';
-    document.documentElement.appendChild(element);
-})();
-
 nano-vvvvid-it.js application/javascript
 (function() {
     // Based on KAADIVVVV
@@ -223,6 +159,70 @@ nanop-colombiaonline-com.js application/javascript
         isInBackground = true;
     });
     setInterval(adsHidder, 1000);
+})();
+
+nano-hijack-script-create.js application/javascript
+(function() {
+    var _createElement = document.createElement;
+    var needle = '{{1}}';
+    if ( needle === '' || needle === '{{1}}' ) {
+        needle = '.?';
+    } else if ( needle.length > 2 &&
+                needle.startsWith('/') && needle.endsWith('/') ) {
+        needle = needle.slice(1,-1);
+    } else {
+        needle = needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+    needle = new RegExp(needle);
+    document.createElement = function(name) {
+        var elem = _createElement.apply(this, arguments);
+        if ( name === 'script' ) {
+            elem.addEventListener('error', function(e) {
+                if ( needle.test(elem.src) ) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    var ev = new Event('load');
+                    elem.dispatchEvent(ev);
+                }
+            });
+        }
+        return elem;
+    };
+})();
+
+nano-remove-elements-onready.js application/javascript
+(function() {
+    var selector = '{{1}}';
+    if ( selector === '' || selector === '{{1}}' ) {
+        return;
+    }
+    var remove = function() {
+        var elements = document.querySelectorAll(selector);
+        for ( var element of elements ) {
+            element.remove();
+        }
+    };
+    if ( document.readyState === 'interactive' ||
+         document.readyState === 'complete' ) {
+        remove();
+    } else {
+        addEventListener('DOMContentLoaded', remove);
+    }
+})();
+
+nano-make-bait-element.js application/javascript
+(function() {
+    var identifier = '{{1}}';
+    var element = document.createElement('div');
+    if ( identifier.charAt(0) === '#' ) {
+        element.id = identifier.substring(1);
+    } else if ( identifier.charAt(0) === '.' ) {
+        element.className = identifier.substring(1);
+    } else {
+        return;
+    }
+    element.style.display = 'none';
+    document.documentElement.appendChild(element);
 })();
 
 nanop-click-elements-onready.js application/javascript

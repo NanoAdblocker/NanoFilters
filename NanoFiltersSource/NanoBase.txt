@@ -1,7 +1,11 @@
+# ############################################################################ #
+
 # Filters for Nano Adblocker
 # Hint: Purging cache of uBlock filters also purge cache of uBlock Origin
 # Resources, similarly, purging cache of Nano filters also purge cache of Nano
 # Adblocker Extra Resources
+
+# ############################################################################ #
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/756
 /wp-content/plugins/end-of-adblock-cycle/*
@@ -168,7 +172,8 @@ lequipe.fr##+js(abort-on-property-write.js, adback)
 # https://github.com/jspenguin2017/uBlockProtector/issues/903
 masrawy.com###AdBlockerNotif
 
-# Missed ads, test: https://btcmanager.com/the-fiery-asic-debate-engulfs-the-bitcoin-and-monero-communities/
+# Missed ads, test:
+# https://btcmanager.com/the-fiery-asic-debate-engulfs-the-bitcoin-and-monero-communities/
 btcmanager.com##.wpbanners-banner
 btcmanager.com##.advert
 
@@ -224,7 +229,8 @@ socialblade.com##.cas-wide-container
 # https://github.com/uBlockOrigin/uAssets/issues/2113
 gamepedia.com###bodyContent:style(width: 100% !important;)
 
-# Anti-adblock, test: https://dotesports.com/league-of-legends/news/new-lol-announcer-pack-phreak-kobe-22899
+# Anti-adblock, test:
+# https://dotesports.com/league-of-legends/news/new-lol-announcer-pack-phreak-kobe-22899
 @@||dotesports.com/showads.js$script,first-party
 
 # https://github.com/NanoAdblocker/NanoFilters/issues/87
@@ -347,10 +353,9 @@ justtrucks.com.au##+js(set-constant.js, Drupal.behaviors.detectAdblockers, noopF
 # https://github.com/jspenguin2017/uBlockProtector/issues/992
 mediafire.com##+js(abort-current-inline-script.js, document.getElementById, adblocker)
 
-# ############# #
-# #### Ads #### #
-# ############# #
-# These should be included in EasyList
+# ############################################################################ #
+
+# Rules that should be included in EasyList
 
 # https://github.com/NanoMeow/QuickReports/issues/18
 games2jolly.com###leaderboard_area
@@ -361,9 +366,10 @@ games2jolly.com##.game_play > div:nth-of-type(1)
 # https://github.com/NanoMeow/QuickReports/issues/58
 streamhentaimovies.com##.popmake-overlay
 
-# ############################## #
-# #### Edge Specific Filter #### #
-# ############################## #
+# ############################################################################ #
+
+# Rules specific for Edge browser
+
 !#if env_edge
 
 # https://github.com/uBlockOrigin/uAssets/issues/2213
@@ -373,3 +379,5 @@ businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)
 businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 
 !#endif
+
+# ############################################################################ #

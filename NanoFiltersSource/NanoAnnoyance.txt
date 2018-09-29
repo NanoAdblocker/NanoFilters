@@ -1,6 +1,10 @@
+# ############################################################################ #
+
 # Annoyance filter for Nano Adblocker
 # Cookie wall, intrusive donation message, try browser,
 # anti-copy, hostile anti-select, hostile anti-right-click, etc
+
+# ############################################################################ #
 
 # https://github.com/NanoAdblocker/NanoFilters/issues/1
 live.com,microsoft.com,office.com,windows.com,xbox.com###epb
@@ -44,9 +48,11 @@ fortune.com,time.com##+js(nanop-click-elements-onload.js, body.template-gdpr for
 # https://github.com/NanoAdblocker/NanoFilters/issues/160
 vivaldi.com##+js(nanop-click-elements-onready.js, #acceptCookie)
 
-# ############################ #
-# #### Experimental Rules #### #
-# ############################ #
+# ############################################################################ #
+
+# Experimental rules
 
 # https://github.com/uBlockOrigin/uAssets/issues/247
 adageindia.in,bombaytimes.com,businessinsider.in,gadgetsnow.com,gizmodo.in,iamgujarat.com,idiva.com,in.techradar.com,indiatimes.com,lifehacker.co.in,mensxp.com,samayam.com,timesofindia.com##+js(nanop-colombiaonline-com.js)
+
+# ############################################################################ #

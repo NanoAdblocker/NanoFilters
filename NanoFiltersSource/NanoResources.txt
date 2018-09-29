@@ -1,9 +1,12 @@
+# ############################################################################ #
+
 # Extra resources for Nano Adblocker
 # Same format as uBlock Origin's resources file
 # Everything should be prefixed with "nano-" to prevent name collision
 # However, collided names will always cause uBlock Origin's resources to be
 # overridden, and can be done purposefully when intervention is required
 
+# ############################################################################ #
 
 nano-tiny-noopvast-2.0 text/xml
 <VAST version="2.0"></VAST>
@@ -12,10 +15,10 @@ nano-tiny-noopvast-2.0 text/xml
 nano-tiny-noopvast-3.0 text/xml
 <VAST version="3.0"></VAST>
 
+# ############################################################################ #
 
-# ####
+
 # BETA resource, this resource can change without warning
-# ####
 # Patch document.createElement and prevent created script from receiving
 # network error event, 1 required argument
 # url - The URL matcher of the script
@@ -76,9 +79,6 @@ nano-remove-elements-onready.js application/javascript
 })();
 
 
-# ####
-# BETA resource, this resource can change without warning
-# ####
 # Insert an invisible elements onto the page, can be used to dodge baits,
 # 1 required argument.
 # identifier - An identifier, either an id or a class name. Like "#id" or
@@ -97,12 +97,9 @@ nano-make-bait-element.js application/javascript
     element.style.display = 'none';
     document.documentElement.appendChild(element);
 })();
+# ############################################################################ #
 
-
-# ############################ #
-# #### Specific Resources #### #
-# ############################ #
-
+# Specific resources
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/390
 nano-vvvvid-it.js application/javascript
@@ -138,6 +135,7 @@ nano-vvvvid-it.js application/javascript
     }
 })();
 
+# ############################################################################ #
 
 # ############
 # EXPERIMENTAL resource, limited to privileged filters only for now
@@ -263,11 +261,10 @@ nanop-colombiaonline-com.js application/javascript
     setInterval(adsHidder, 1000);
 })();
 
+# ############################################################################ #
 
-# ############################## #
-# #### Privileged Resources #### #
-# ############################## #
-# These resources are only available to Nano Adblocker's trusted filters
+# Privileged resources, these are only available to Nano Adblocker's trusted
+# filter lists
 
 
 # Click elements when the documents gets ready, 1 required argument.
@@ -392,3 +389,5 @@ nanop-timer-booster.js application/javascript
         return original.apply(this, arguments);
     }.bind(window);
 })();
+
+# ############################################################################ #

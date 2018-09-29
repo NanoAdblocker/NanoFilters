@@ -353,6 +353,9 @@ justtrucks.com.au##+js(set-constant.js, Drupal.behaviors.detectAdblockers, noopF
 # https://github.com/jspenguin2017/uBlockProtector/issues/992
 mediafire.com##+js(abort-current-inline-script.js, document.getElementById, adblocker)
 
+# https://github.com/NanoMeow/QuickReports/issues/142
+flyertalk.com##+js(abort-current-inline-script.js, $, AdBlock)
+
 # ############################################################################ #
 
 # Rules that should be included in EasyList

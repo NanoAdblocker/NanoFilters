@@ -36,8 +36,8 @@ removed:
 - Forced like (social locker)
 - Intrusive donation message
 - Cookie wall
-- Fake pay wall (a pay wall is fake if it does not work when JavaScript and/or
-  cookies are disabled in browser settings)
+- Fake pay wall and fake login wall (a wall is fake if it does not work when
+  JavaScript and/or cookies are disabled in browser settings)
 
 Regular cookie notices are to be handled in Cookiemonster; tracking scripts
 are to be handled in EasyPrivacy.

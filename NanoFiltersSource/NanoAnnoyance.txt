@@ -49,15 +49,15 @@ tampermonkey.net##*:style(user-select: text !important; -webkit-user-select: tex
 # https://github.com/NanoAdblocker/NanoDefender/issues/12
 rektstack.com##+js(abort-on-property-write.js, document.oncontextmenu)
 
-# The donation message is getting excessive, test: https://en.wikipedia.org/wiki/%22Hello,_World!%22_program
-wikipedia.org##+js(abort-on-property-write.js, frb)
-
 # ############################################################################ #
 
 # Other rules
 
 # https://github.com/NanoAdblocker/NanoFilters/issues/1
 live.com,microsoft.com,office.com,windows.com,xbox.com###epb
+
+# The donation message is getting excessive, test: https://en.wikipedia.org/wiki/%22Hello,_World!%22_program
+wikipedia.org##+js(abort-on-property-write.js, frb)
 
 # Spam bot, tests: https://www.drift.com/ https://www.hubspot.com/
 ||driftt.com^$third-party

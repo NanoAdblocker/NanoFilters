@@ -479,7 +479,8 @@ kinopoisk.ru###image:style(opacity: 1 !important;)
 ! https://twitter.com/WolliWolta/status/867788502729195520
 ! To counter `sumo.com` in Peter Lowe's
 ||sumo.com^$badfilter
-||sumo.com^$third-party
+||sumo.com^$third-party,badfilter
+||sumo.com^$third-party,domain=~dante-ri.hr
 
 ! https://github.com/uBlockOrigin/uAssets/issues/420
 @@||sat.sanoma.fi^$script,domain=xxl.fi
@@ -1326,6 +1327,7 @@ techadvisor.co.uk#@#.adsbygoogle
 ! https://github.com/uBlockOrigin/uAssets/issues/2931
 ! https://github.com/uBlockOrigin/uAssets/issues/2966
 @@||fusion.ddmcdn.com^$script,domain=discovery.com|investigationdiscovery.com|sciencechannel.com
+@@||src.litix.io/core/*/mux.js$script,domain=discovery.com|investigationdiscovery.com|sciencechannel.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3034
 @@||cdn.scarabresearch.com/js/*/scarab-v*.js$script,domain=remixshop.com
@@ -1515,9 +1517,21 @@ warszawawpigulce.pl##.eklama
 |http*://$third-party,image,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123movies.live|123movies.net|123movies.net.ru|123movies.ru|123movies.vc|123moviesfree.com|123movieshd.net|123movieshd.tv|9cartoon.me|animehaven.to|auroravid.to|ay8ou8ohth.com|bitvid.sx|btdb.in|btdb.to|clipconverter.cc|cloudtime.to|cmovieshd.com|divxme.com|downloadming.tv|dropapk.com|flyordie.com|full-pcsoftware.com|halacima.net|hdmusic99.in|hdtv-rls.com|kannadamovies.biz|kissanime.ru|kissmanga.com|livetvcafe.net|movdivx.com|mp3clan.one|nowvideo.li|nowvideo.sx|nowvideo.to|oogh8ot0el.com|otakustream.tv|otorrents.com|putlocker.co|solarmovie.sc|speedvid.net|stream2watch.org|suprafiles.co|thepiratebay.cd|vidto.me|vidtudu.com|wholecloud.net,badfilter
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/9hy3s7/mlb_standings_not_working/
-@@||mlbstatic.com/*/AppMeasurement.js$script,domain=mlb.com
+@@||mlbstatic.com/*/AppMeasurement$script,domain=mlb.com
 @@||mlbstatic.com/*/VisitorAPI.js$script,domain=mlb.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1960#issuecomment-424021963
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=kimcartoon.ac
 @@||kimcartoon.ac/themes/vast/videojs.ads.min.js$script,first-party
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=41793
+@@||backend.worldoftulo.com/$script,domain=barometern.se
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=41807
+reuters.com#@#[src*="reutersmedia.net/resources_"]
+
+! https://github.com/NanoMeow/QuickReports/issues/133
+@@||surveywall-api.survata.com/rest/*$xmlhttprequest,domain=survata.net
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=41840
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=tv2.no

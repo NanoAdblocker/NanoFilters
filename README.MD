@@ -42,6 +42,8 @@ removed:
 Regular cookie notices are to be handled in Cookiemonster; tracking scripts
 are to be handled in EasyPrivacy.
 
+**Note: Annoyance filters are not subscribed by default.**
+
 ## Filter Quality Guideline
 
 Filter rules should be reasonably fine-grained and efficient.

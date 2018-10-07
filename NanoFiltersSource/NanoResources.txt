@@ -96,7 +96,7 @@ nanop-colombiaonline-com.js application/javascript
             return true;
         }
         for ( var e of temp ) {
-            e.setAttribute(magic, 1);
+            e.setAttribute(magic, '');
             if ( e.textContent && e.textContent.includes(testScript) ) {
                 script = e;
                 break;

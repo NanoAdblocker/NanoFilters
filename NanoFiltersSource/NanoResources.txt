@@ -36,7 +36,8 @@ nano-vvvvid-it.js application/javascript
                 !vvvvid.user.svodActive()
             ) {
                 vvvvid.showGenericError(
-                    'Il video selezionato \xE8 disponibile solo in modalit\xE0 abbonamento.',
+                    'Il video selezionato \xE8 disponibile solo in ' +
+                    'modalit\xE0 abbonamento.',
                     function() {
                         vvvvid.router.mainView.resetApplication();
                     }

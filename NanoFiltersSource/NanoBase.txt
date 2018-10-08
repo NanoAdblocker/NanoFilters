@@ -365,6 +365,9 @@ flyertalk.com##+js(abort-current-inline-script.js, $, AdBlock)
 # https://github.com/uBlockOrigin/uAssets/issues/3458
 gecce.com.tr##+js(set-constant.js, fakeadloaded, true)
 
+# https://github.com/NanoMeow/QuickReports/issues/179
+esercizinglese.com,pelisfull.tv##+js(abort-on-property-write.js, adBlockDetected)
+
 # ############################################################################ #
 
 # Rules that should be included in EasyList

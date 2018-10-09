@@ -46,15 +46,8 @@ nano-vvvvid-it.js application/javascript
     }
 })();
 
-nanop-colombiaonline-com.js application/javascript
+nano-colombiaonline-com.js application/javascript
 (function() {
-    var guard = '{{nano}}';
-    if ( guard === '{{nano}}' ) {
-        return;
-    }
-    // TODO
-    debugger;
-    // TODO
     var magic = 'a' + Math.random().toString(36).substring(2);
     var testScript = "typeof otab == 'function'";
     var testComment = /\d{5,} \d{1,2}/;
@@ -106,11 +99,7 @@ nanop-colombiaonline-com.js application/javascript
             do {
                 try {
                     r = getter();
-                } catch ( err ) {
-                    // TODO
-                    debugger;
-                    // TODO
-                }
+                } catch ( err ) { }
             } while ( i++, !r && i < 100 );
             return null;
         }

@@ -1121,8 +1121,9 @@ mobile.twitter.com#@#._29ahSMvH section.rn-1oszu61 div[class][style*="padding-"]
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2313
 ! https://github.com/uBlockOrigin/uAssets/issues/3094
+! https://github.com/uBlockOrigin/uAssets/issues/3659
 .com/ad/$first-party,domain=~blogs.technet.microsoft.com|~channel4.com|~cspace.com|~linkedin.com|~mediaplex.com|~online.wsj.com,badfilter
-.com/ad/$first-party,domain=~blogs.technet.microsoft.com|~channel4.com|~cspace.com|~imagebam.com|~linkedin.com|~mediaplex.com|~sitioswebmexi.com|~online.wsj.com
+.com/ad/$first-party,domain=~blogs.technet.microsoft.com|~channel4.com|~cspace.com|~imagebam.com|~japan-guide.com|~linkedin.com|~mediaplex.com|~sitioswebmexi.com|~online.wsj.com
 ! https://github.com/uBlockOrigin/uAssets/issues/3094
 @@||imagebam.com/assets/js/image_bootstrap.js$script,first-party
 
@@ -1134,7 +1135,10 @@ mobile.twitter.com#@#._29ahSMvH section.rn-1oszu61 div[class][style*="padding-"]
 .wa|$third-party,websocket,xmlhttprequest,domain=github.io|rawgit.com|streamplay.to|tubetitties.com|vidfile.net
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/8kh4zc/kotaku_embedded_twitter_images_not_displaying/
+! https://github.com/uBlockOrigin/uAssets/issues/3680
 avclub.com,deadspin.com,earther.com,gizmodo.com,jalopnik.com,jezebel.com,kotaku.com,lifehacker.com,splinternews.com,theroot.com,thetakeout.com#@#div[id^="dfp-ad-"]
+kotaku.com#@##dfp-ad-2
+kotaku.com#@##dfp-ad-1
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=40826
 @@||d1xrtnyoeeet33.cloudfront.net/assets/js/lib/*$script,domain=calgaryherald.com|calgarysun.com|canoe.com|edmontonsun.com|financialpost.com|leaderpost.com|lfpress.com|montrealgazette.com|nationalpost.com|ottawacitizen.com|ottawasun.com|theprovince.com|thestarphoenix.com|torontosun.com|vancouversun.com|windsorstar.com|winnipegsun.com
@@ -1531,7 +1535,21 @@ warszawawpigulce.pl##.eklama
 reuters.com#@#[src*="reutersmedia.net/resources_"]
 
 ! https://github.com/NanoMeow/QuickReports/issues/133
-@@||surveywall-api.survata.com/rest/*$xmlhttprequest,domain=survata.net
+! https://github.com/NanoMeow/QuickReports/issues/181
+@@||surveywall-api.survata.com^$domain=survata.net
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=41840
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=tv2.no
+
+! https://github.com/NanoMeow/QuickReports/issues/180
+@@||publicwww.com/images/labels$image,first-party
+
+! https://github.com/uBlockOrigin/uAssets/issues/3671
+@@||googletagmanager.com/gtm.js$script,domain=hellofresh.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/3672
+@@||vice.com/*/AdobeAnalyticsSDK$script,first-party
+
+! https://github.com/uBlockOrigin/uAssets/issues/3676
+@@||twitter.com/*/profiles/show/*$xmlhttprequest,first-party
+@@||twitter.com/*/status/*conversation_id$xmlhttprequest,first-party

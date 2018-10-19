@@ -58,7 +58,6 @@ bittube.me##+js(addEventListener-defuser.js, visibilitychange)
 fmovies.is,fmovies.se,fmovies.to##.alert.alert-warning:has-text(AdBlock)
 userscloud.com##.alert.alert-info:has-text(AdBlock)
 webinsider.pl##+js(setTimeout-defuser.js, AdBlock)
-readthedocs.io##.ethical-sidebar:has(a[href*="advertising"])
 reddit.com##.recommended-link
 ||geoip.nekudo.com^$badfilter
 ||geoip.nekudo.com^$third-party
@@ -100,6 +99,7 @@ files.minecraftforge.net##.ad-container
 phillymag.com##.gtp-ad
 multifilemirror.com##.blockContainer:has-text(Ad-blocking)
 @@||xclient.info/js/adview_*.js$script,first-party
+readthedocs.io##.keep-us-sustainable
 ||readthedocs.org/api/v2/sustainability/$script,redirect=noopjs
 tv.mademyday.com##.blnotice
 iosgods.com##+js(setTimeout-defuser.js, AdBlocker Detected, 5000)

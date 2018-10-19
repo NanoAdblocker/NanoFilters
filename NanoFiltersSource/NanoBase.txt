@@ -150,9 +150,6 @@ userscloud.com##.alert.alert-info:has-text(AdBlock)
 # https://github.com/jspenguin2017/uBlockProtector/issues/877
 webinsider.pl##+js(setTimeout-defuser.js, AdBlock)
 
-# Missed ads, test: http://solidity.readthedocs.io/en/v0.4.21/
-readthedocs.io##.ethical-sidebar:has(a[href*="advertising"])
-
 # Missed ads, test: https://www.reddit.com/
 reddit.com##.recommended-link
 
@@ -269,6 +266,9 @@ multifilemirror.com##.blockContainer:has-text(Ad-blocking)
 
 # https://github.com/NanoAdblocker/NanoFilters/issues/127
 @@||xclient.info/js/adview_*.js$script,first-party
+
+# Missed ads, test: http://solidity.readthedocs.io/en/v0.4.21/
+readthedocs.io##.keep-us-sustainable
 
 # https://github.com/NanoAdblocker/NanoFilters/issues/132
 ||readthedocs.org/api/v2/sustainability/$script,redirect=noopjs

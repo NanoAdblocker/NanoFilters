@@ -751,7 +751,7 @@ energy.de#@##ad_home
 ! https://github.com/uBlockOrigin/uAssets/issues/1817
 ! https://github.com/uBlockOrigin/uAssets/issues/2120
 ! https://github.com/uBlockOrigin/uAssets/issues/2337
-@@||authedmine.com^$domain=dlik.win|ivpaste.com|mylink.li|cutsmile.com
+@@||authedmine.com^$domain=ivpaste.com|mylink.li|cutsmile.com
 
 ! https://github.com/gorhill/uBlock/issues/3321
 @@||livechatinc.com^$generichide
@@ -846,9 +846,6 @@ publicdomainq.net##ins.adsbygoogle
 ! https://forums.lanik.us/viewtopic.php?f=64&t=39929#p132157
 /ads6.$badfilter
 /ads6.$domain=~ads6.adesignstudio.eu
-
-! https://forums.lanik.us/viewtopic.php?f=64&t=39932
-@@||cdnjs.cloudflare.com/ajax/libs/crypto-js/*/rollups/$script
 
 ! https://github.com/jspenguin2017/uBlockProtector/issues/848
 @@||gemius.pl/xlgemius.js$script,domain=dn.pt
@@ -1139,6 +1136,10 @@ mobile.twitter.com#@#._29ahSMvH section.rn-1oszu61 div[class][style*="padding-"]
 avclub.com,deadspin.com,earther.com,gizmodo.com,jalopnik.com,jezebel.com,kotaku.com,lifehacker.com,splinternews.com,theroot.com,thetakeout.com#@#div[id^="dfp-ad-"]
 kotaku.com#@##dfp-ad-2
 kotaku.com#@##dfp-ad-1
+! https://www.reddit.com/r/uBlockOrigin/comments/9p41kw
+||x.kinja-static.com/assets/packaged-js/OnionAM.$script,domain=avclub.com|deadspin.com|earther.com|gizmodo.com|jalopnik.com|jezebel.com|kotaku.com|lifehacker.com|splinternews.com|theroot.com|thetakeout.com
+
+
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=40826
 @@||d1xrtnyoeeet33.cloudfront.net/assets/js/lib/*$script,domain=calgaryherald.com|calgarysun.com|canoe.com|edmontonsun.com|financialpost.com|leaderpost.com|lfpress.com|montrealgazette.com|nationalpost.com|ottawacitizen.com|ottawasun.com|theprovince.com|thestarphoenix.com|torontosun.com|vancouversun.com|windsorstar.com|winnipegsun.com
@@ -1338,7 +1339,9 @@ techadvisor.co.uk#@#.adsbygoogle
 @@||recommender.scarabresearch.com/merchants/*$xmlhttprequest,domain=remixshop.com
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/91v4qz
+! https://github.com/NanoMeow/QuickReports/issues/209
 @@||fusion.ddmcdn.com^*/comscore$script,domain=tlc.com
+@@||litix.io/core/*/mux.js$script,domain=tlc.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3051
 @@||js-sec.indexww.com^$script,domain=mashable.com
@@ -1381,10 +1384,6 @@ techadvisor.co.uk#@#.adsbygoogle
 
 ! https://forums.lanik.us/viewtopic.php?p=139656#p139656
 @@||cdn.fluidplayer.com/$script,domain=desixnxx.net
-
-! https://forums.lanik.us/viewtopic.php?p=139673#p139673
-/adshare.$domain=~adshare.tv,badfilter
-/adshare.$domain=~adshare.tv|~echosign.com
 
 ! https://forums.lanik.us/viewtopic.php?f=103&t=40699
 ||fuegodevida.com^$popup,third-party,badfilter
@@ -1538,9 +1537,6 @@ reuters.com#@#[src*="reutersmedia.net/resources_"]
 ! https://github.com/NanoMeow/QuickReports/issues/181
 @@||surveywall-api.survata.com^$domain=survata.net
 
-! https://forums.lanik.us/viewtopic.php?f=64&t=41840
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=tv2.no
-
 ! https://github.com/NanoMeow/QuickReports/issues/180
 @@||publicwww.com/images/labels$image,first-party
 
@@ -1553,3 +1549,41 @@ reuters.com#@#[src*="reutersmedia.net/resources_"]
 ! https://github.com/uBlockOrigin/uAssets/issues/3676
 @@||twitter.com/*/profiles/show/*$xmlhttprequest,first-party
 @@||twitter.com/*/status/*conversation_id$xmlhttprequest,first-party
+
+! https://github.com/NanoMeow/QuickReports/issues/174
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=tubitv.com
+
+! https://forums.lanik.us/viewtopic.php?p=142205#p142205
+||oby.journaldugeek.com^$badfilter
+
+! https://forums.lanik.us/viewtopic.php?f=90&t=35977
+@@|blob:$domain=hdfilme.tv
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=41950
+/adver.$domain=~adver.biz,badfilter
+/adver.$domain=~adver.biz|~adver.media
+
+! https://github.com/uBlockOrigin/uAssets/issues/3718
+@@||adobedtm.com^*/satellitelib-$script,domain=costco.com
+
+! https://adblockplus.org/forum/viewtopic.php?f=10&t=60372&start=0
+@@||mssl.fwmrm.net/p/abc_live/$script,domain=abc.go.com
+@@||v.fwmrm.net/ad/g/1$script,domain=abc.go.com
+@@/VisitorAPI.js$script,domain=abc.go.com
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=41971
+@@||validate.onecount.net/js/all.min.js$script,domain=foreignpolicy.com
+@@||validate.onecount.net/onecount/api/public/$script,domain=foreignpolicy.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/3733
+@@||ajax.googleapis.com^$script,domain=dailywire.com
+@@||soundcloud.com^$script,domain=dailywire.com
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=41984
+@@||savings.bizx.info$domain=sourceforge.net
+@@||bizx.info^$websocket,domain=sourceforge.net
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=41987
+@@||js.spotx.tv/directsdk/$script,domain=bloomberg.com
+@@||spotxcdn.com/integration/directsdk/$script,domain=bloomberg.com
+@@||search.spotxchange.com^$xmlhttprequest,domain=bloomberg.com

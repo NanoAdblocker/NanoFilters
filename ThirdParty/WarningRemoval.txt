@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: Lt6FmNA4L6urY0q9BoAcnQ
-! Version: 201810122110
+! Checksum: n5IcLHNbBI60p4CLVoay6A
+! Version: 201810200410
 ! Title: Adblock Warning Removal List
-! Last modified: 12 Oct 2018 21:10 UTC
+! Last modified: 20 Oct 2018 04:10 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -97,6 +97,7 @@ shadbase.com##img[alt="adblock"]
 ||nikopik.com/wp-content/themes/*/js/nikopik.js
 ||nordpresse.be/wp-content/uploads/$script
 ||nrj.fr/nrj?Page=/rg.fake&
+||pastebin.com/nein/
 ||skyrock.net/img/*/adblock/
 !
 @@/advertisement.js$script,~third-party,domain=fun-animes.fr
@@ -154,6 +155,7 @@ shadbase.com##img[alt="adblock"]
 ###adblock-box
 ###adblock-modal
 ###adblock-msg
+###adblock-notice
 ###adblock-overlay
 ###adblockDetect
 ###adblock_detected
@@ -314,6 +316,7 @@ kinoafisha.info,tvcook.ru##.cat
 autonews.ru,rbc.ru,rbcplus.ru,sportrbc.ru##.checkad_info
 rusopen.com##.classblsi.addshr
 smotrisport.online,smotrisport.tv##.dont-add-our-site-pls
+sergeistrelec.ru#@#.ad_top
 goha.ru#@#.goha_ads
 goha.ru#@#.goha_ads_acceptable
 themoviebay.ru##.is-danger.notification
@@ -386,6 +389,7 @@ d3.ru##section[data-uid="extraAd"]
 ph4.ru##table[width][height="90"][style]
 bigpuzzle.ru##td[valign="top"][width="200px"][height="600"] > div[style]
 www.qrz.ru#?#.content_row > div[class]:-abp-has(> .inner > a[href="/help/adblock/"])
+tproger.ru#?#article.type-post:-abp-has([href="/adblock"])
 newkaliningrad.ru#?#div[class]:-abp-has(> [class]:-abp-contains(/adblock!/i))
 ||adscat.ru^$third-party
 ||animeteatr.ru/a-detector/

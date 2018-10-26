@@ -924,7 +924,9 @@ vhacks.org#@#.sponsor-logo
 @@||cdnjs.cloudflare.com/$stylesheet,domain=fmovies.is|fmovies.se|fmovies.to
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1671
+! https://forums.lanik.us/viewtopic.php?f=64&t=42000
 @@||onlinevideoconverter.com/webservice$xmlhttprequest,domain=onlinevideoconverter.com
+@@||onlinevideoconverter.com/upload$xmlhttprequest,first-party
 @@||onlinevideoconverter.com^$popup,domain=onlinevideoconverter.com
 @@about:blank$popup,domain=onlinevideoconverter.com
 
@@ -1408,6 +1410,7 @@ techadvisor.co.uk#@#.adsbygoogle
 /^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ee]xternal|[Ii]mages|[Ss]cripts|[Uu]ploads|ac|assets|combined|content|cov|cover|img|inc|jwplayer|player|playlist-cat-rss|static|thumbs|wp-content|wp-includes)\/)(.*)/$first-party,image,badfilter
 /^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ee]xternal|[Ii]mages|[Ss]cripts|[Uu]ploads|ac|assets|combined|content|cov|cover|img|inc|jwplayer|player|playlist-cat-rss|static|thumbs|wp-content|wp-includes)\/)(.*)/$first-party,script,badfilter
 /^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ee]xternal|[Ii]mages|[Ss]cripts|[Uu]ploads|ac|assets|combined|content|cov|cover|img|inc|jwplayer|player|playlist-cat-rss|static|thumbs|wp-content|wp-includes)\/)(.*)/$first-party,xmlhttprequest,badfilter
+/^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ee]xternal|[Ii]mages|[Ss]cripts|[Uu]ploads|ac|ajax|assets|combined|content|cov|cover|(img\/bg)|(img\/icon)|inc|jwplayer|player|playlist-cat-rss|static|thumbs|wp-content|wp-includes)\/)(.*)/$first-party,xmlhttprequest,badfilter
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3304
 |https://$third-party,script,domain=animeflv.net|descargasnsn.com|jkanime.net,badfilter
@@ -1559,10 +1562,6 @@ reuters.com#@#[src*="reutersmedia.net/resources_"]
 ! https://forums.lanik.us/viewtopic.php?f=90&t=35977
 @@|blob:$domain=hdfilme.tv
 
-! https://forums.lanik.us/viewtopic.php?f=64&t=41950
-/adver.$domain=~adver.biz,badfilter
-/adver.$domain=~adver.biz|~adver.media
-
 ! https://github.com/uBlockOrigin/uAssets/issues/3718
 @@||adobedtm.com^*/satellitelib-$script,domain=costco.com
 
@@ -1587,3 +1586,44 @@ reuters.com#@#[src*="reutersmedia.net/resources_"]
 @@||js.spotx.tv/directsdk/$script,domain=bloomberg.com
 @@||spotxcdn.com/integration/directsdk/$script,domain=bloomberg.com
 @@||search.spotxchange.com^$xmlhttprequest,domain=bloomberg.com
+
+! https://github.com/easylist/easylist/issues/2103
+@@||go.com/disneyid/responder$subdocument,first-party
+
+! linkdrop.net broken (no captcha)
+@@||ajax.googleapis.com^$script,domain=linkdrop.net
+
+! https://github.com/easylist/easylist/issues/2111
+@@||connect.facebook.*/*/AudienceNetworkPrebid.js$script,domain=cbssports.com
+
+! https://github.com/NanoMeow/QuickReports/issues/235
+@@||javpost.net^$subdocument,domain=javmost.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/2043#issuecomment-432499527
+@@||js.helltraffic.com/fluidplayer/$script,stylesheet,domain=tubewolf.com
+||js.helltraffic.com/fluidplayer/scripts/webvtt.min.js$script,important,domain=tubewolf.com
+tubewolf.com##.bnnrs-player
+tubewolf.com##.bnnr
+
+! https://github.com/uBlockOrigin/uAssets/issues/3794
+@@||chaturbate.com/affiliates/promotools/popup/l6gje/popchaturbaterevshare.js$script,domain=sexanalporn.com
+@@||chaturbate.com^$subdocument,domain=blacksbigwomensexy.com|fastfuckmilf.com|pornoxxxporn.com|sexanalporn.com|xxxuno.com
+@@||xlovecam.com/promo/livechat/$subdocument,domain=pornoxxxporn.com|sexanalporn.com
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=42018
+@@||rd.rakuten.co.jp/*login$domain=rakuten.co.jp
+@@||rd.rakuten.co.jp/*logout$domain=rakuten.co.jp
+
+! https://github.com/uBlockOrigin/uAssets/issues/3791
+@@||coinhive.com^$domain=bff.today
+@@||coinhive.com/lib/coinhive.min.js$script,first-party
+@@||coinhive.com/proxy$websocket,first-party
+
+! https://github.com/uBlockOrigin/uAssets/issues/3800
+@@||wpgdadago.com/AD/$image,first-party
+
+! https://github.com/uBlockOrigin/uAssets/issues/3823
+@@||mm-syringe.com^$script,domain=mysanantonio.com
+
+! https://www.reddit.com/r/uBlockOrigin/comments/9rnaq5/possible_memory_leak/
+@@||utility.rogersmedia.com/utility.js$domain=todaysparent.com

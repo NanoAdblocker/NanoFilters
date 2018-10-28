@@ -18,16 +18,16 @@ blockersurvive.com,blockergame.com##.ads > .ads-body:style(background: initial !
 developpez.com##div:has(:scope > [id^="gabarit_pub"])
 @@||vorek.pl^$generichide
 @@||vorek.pl/*/js/ads.js$script,first-party
-altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
-avseesee.com###getadiv
-avseesee.com##.ads
+@@||egarwolin.pl/static/js/ads.js$script,first-party
+download.inventivetalent.org##div:has(:scope > div > button.choice-adfly)
 camwhores.tv##body > div.top:has-text(AdBlock)
 camwhores.tv##body > div:matches-css(z-index: 9999999)
 camwhores.tv##body > div:matches-css(z-index: 9999998)
 libgen.io##+js(setTimeout-defuser.js, (), 500)
-@@||egarwolin.pl/static/js/ads.js$script,first-party
+altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
+avseesee.com###getadiv
+avseesee.com##.ads
 @@||rapidvideo.com/js/jquery.min.js$script,first-party
-download.inventivetalent.org##div:has(:scope > div > button.choice-adfly)
 msnbc.com,nbcnews.com,today.com##+js(abort-on-property-read.js, stop)
 ||browserleaks.com/js/proxy_ab.js$script
 myegy.tv##.disclaimer:has-text(Ad-Blocker)

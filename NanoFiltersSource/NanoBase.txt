@@ -55,6 +55,24 @@ developpez.com##div:has(:scope > [id^="gabarit_pub"])
 @@||vorek.pl^$generichide
 @@||vorek.pl/*/js/ads.js$script,first-party
 
+# https://github.com/jspenguin2017/uBlockProtector/issues/742
+@@||egarwolin.pl/static/js/ads.js$script,first-party
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/782
+download.inventivetalent.org##div:has(:scope > div > button.choice-adfly)
+
+# NSFW! https://github.com/uBlockOrigin/uAssets/issues/2362
+camwhores.tv##body > div.top:has-text(AdBlock)
+camwhores.tv##body > div:matches-css(z-index: 9999999)
+camwhores.tv##body > div:matches-css(z-index: 9999998)
+
+# ############################################################################ #
+
+# Soft anti-adblock that are also included in uBlock annoyance filter
+
+# https://github.com/NanoMeow/QuickReports/issues/74
+libgen.io##+js(setTimeout-defuser.js, (), 500)
+
 # ############################################################################ #
 
 # Ads
@@ -68,24 +86,14 @@ avseesee.com##.ads
 
 # ############################################################################ #
 
-# NSFW! https://github.com/uBlockOrigin/uAssets/issues/2362
-camwhores.tv##body > div.top:has-text(AdBlock)
-camwhores.tv##body > div:matches-css(z-index: 9999999)
-camwhores.tv##body > div:matches-css(z-index: 9999998)
-
-# https://github.com/NanoMeow/QuickReports/issues/74
-libgen.io##+js(setTimeout-defuser.js, (), 500)
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/742
-@@||egarwolin.pl/static/js/ads.js$script,first-party
+# Unbreak
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/781
 @@||rapidvideo.com/js/jquery.min.js$script,first-party
 # Fallback rule in case they start putting mining code into jQuery files
 # ||rapidvideo.com^$csp=child-src 'none';frame-src *;worker-src 'none';
 
-# https://github.com/jspenguin2017/uBlockProtector/issues/782
-download.inventivetalent.org##div:has(:scope > div > button.choice-adfly)
+# ############################################################################ #
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/807
 # https://github.com/NanoAdblocker/NanoFilters/issues/15

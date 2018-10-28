@@ -428,6 +428,7 @@ live.com##div:if(:scope > div > div[class^="__Microsoft_Owa_Adsbar_"])
 live.com##div:if(:scope > div > div > div[id^="owaadbar"]:not([class^="__Microsoft_Owa_Adsbar_"]))
 
 # https://github.com/uBlockOrigin/uAssets/issues/3911
+# Depends on Nano Defender for now
 @@/wp-content/themes/mts_ad_sense/*
 
 # ############################################################################ #

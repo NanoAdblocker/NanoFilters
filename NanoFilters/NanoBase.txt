@@ -23,16 +23,30 @@ developpez.com##div:has(:scope > [id^="gabarit_pub"])
 @@||egarwolin.pl/static/js/ads.js$script,first-party
 download.inventivetalent.org##div:has(:scope > div > button.choice-adfly)
 myegy.tv##.disclaimer:has-text(Ad-Blocker)
+elespanol.com###adblock_modal
 camwhores.tv##body > div.top:has-text(AdBlock)
 camwhores.tv##body > div:matches-css(z-index: 9999999)
 camwhores.tv##body > div:matches-css(z-index: 9999998)
 libgen.io##+js(setTimeout-defuser.js, (), 500)
+@@||html-online.com^$generichide
 altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 avseesee.com###getadiv
 avseesee.com##.ads
 @@||rapidvideo.com/js/jquery.min.js$script,first-party
-html-online.com#@#.adBanner
-elespanol.com###adblock_modal
+porndig.com#@#.noadblock
+games2jolly.com###leaderboard_area
+games2jolly.com###leaderboard_area_home
+games2jolly.com##.ads_310_610_sidebar_new
+games2jolly.com##.game_play > div:nth-of-type(1)
+streamhentaimovies.com##.popmake-overlay
+!#if env_edge
+businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
+businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)
+businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
+!#endif
+||imasdk.googleapis.com/js/sdkloader/outstream.js$script,redirect=noopjs,domain=squadd.io
+squadd.io###mc-videoads-overlay
+@@/wp-content/themes/mts_ad_sense/*
 redtube.com###ab_banner
 encyclopediadramatica.rs###siteNotice center:has-text(AdBlock)
 funnygames.*#@#.afs_ads
@@ -140,17 +154,3 @@ sabishiidesu.com##+js(abort-on-property-write.js, adBlockDetected)
 gota.io##+js(abort-on-property-read.js, fuckAdBlock)
 ||geekglow.com/wp-content/uploads/*/adblockplus$image
 majorgeeks.com##+js(abort-on-property-read.js, admiral)
-porndig.com#@#.noadblock
-games2jolly.com###leaderboard_area
-games2jolly.com###leaderboard_area_home
-games2jolly.com##.ads_310_610_sidebar_new
-games2jolly.com##.game_play > div:nth-of-type(1)
-streamhentaimovies.com##.popmake-overlay
-!#if env_edge
-businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
-businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)
-businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
-!#endif
-||imasdk.googleapis.com/js/sdkloader/outstream.js$script,redirect=noopjs,domain=squadd.io
-squadd.io###mc-videoads-overlay
-@@/wp-content/themes/mts_ad_sense/*

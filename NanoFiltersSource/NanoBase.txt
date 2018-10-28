@@ -72,6 +72,9 @@ download.inventivetalent.org##div:has(:scope > div > button.choice-adfly)
 # https://github.com/jspenguin2017/uBlockProtector/issues/816
 myegy.tv##.disclaimer:has-text(Ad-Blocker)
 
+# https://github.com/jspenguin2017/uBlockProtector/issues/830
+elespanol.com###adblock_modal
+
 # NSFW! https://github.com/uBlockOrigin/uAssets/issues/2362
 camwhores.tv##body > div.top:has-text(AdBlock)
 camwhores.tv##body > div:matches-css(z-index: 9999999)
@@ -83,6 +86,9 @@ camwhores.tv##body > div:matches-css(z-index: 9999998)
 
 # https://github.com/NanoMeow/QuickReports/issues/74
 libgen.io##+js(setTimeout-defuser.js, (), 500)
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/819
+@@||html-online.com^$generichide
 
 # ############################################################################ #
 
@@ -106,11 +112,53 @@ avseesee.com##.ads
 
 # ############################################################################ #
 
-# https://github.com/jspenguin2017/uBlockProtector/issues/819
-html-online.com#@#.adBanner
+# Unbreak for Adblock Warning Removal List
 
-# https://github.com/jspenguin2017/uBlockProtector/issues/830
-elespanol.com###adblock_modal
+# https://github.com/uBlockOrigin/uAssets/issues/3768
+porndig.com#@#.noadblock
+
+# ############################################################################ #
+
+# Rules that should be included in EasyList
+
+# https://github.com/NanoMeow/QuickReports/issues/18
+games2jolly.com###leaderboard_area
+games2jolly.com###leaderboard_area_home
+games2jolly.com##.ads_310_610_sidebar_new
+games2jolly.com##.game_play > div:nth-of-type(1)
+
+# https://github.com/NanoMeow/QuickReports/issues/58
+streamhentaimovies.com##.popmake-overlay
+
+# ############################################################################ #
+
+# Specific for Edge browser
+
+!#if env_edge
+
+# https://github.com/uBlockOrigin/uAssets/issues/2213
+# https://github.com/NanoAdblocker/NanoFilters/issues/68
+businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
+businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)
+businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
+
+!#endif
+
+# ############################################################################ #
+
+# Synchronizing
+
+# https://github.com/uBlockOrigin/uAssets/issues/3947
+# https://github.com/jspenguin2017/uBlockProtector/issues/746
+||imasdk.googleapis.com/js/sdkloader/outstream.js$script,redirect=noopjs,domain=squadd.io
+squadd.io###mc-videoads-overlay
+
+# https://github.com/uBlockOrigin/uAssets/issues/3911
+@@/wp-content/themes/mts_ad_sense/*
+
+# ############################################################################ #
+
+# Unclassfied
 
 # NSFW! https://github.com/uBlockOrigin/uAssets/issues/642
 redtube.com###ab_banner
@@ -410,51 +458,5 @@ gota.io##+js(abort-on-property-read.js, fuckAdBlock)
 
 # https://github.com/NanoMeow/QuickReports/issues/246
 majorgeeks.com##+js(abort-on-property-read.js, admiral)
-
-# ############################################################################ #
-
-# Unbreak for Adblock Warning Removal List
-
-# https://github.com/uBlockOrigin/uAssets/issues/3768
-porndig.com#@#.noadblock
-
-# ############################################################################ #
-
-# Rules that should be included in EasyList
-
-# https://github.com/NanoMeow/QuickReports/issues/18
-games2jolly.com###leaderboard_area
-games2jolly.com###leaderboard_area_home
-games2jolly.com##.ads_310_610_sidebar_new
-games2jolly.com##.game_play > div:nth-of-type(1)
-
-# https://github.com/NanoMeow/QuickReports/issues/58
-streamhentaimovies.com##.popmake-overlay
-
-# ############################################################################ #
-
-# Specific for Edge browser
-
-!#if env_edge
-
-# https://github.com/uBlockOrigin/uAssets/issues/2213
-# https://github.com/NanoAdblocker/NanoFilters/issues/68
-businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
-businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)
-businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
-
-!#endif
-
-# ############################################################################ #
-
-# Synchronizing
-
-# https://github.com/uBlockOrigin/uAssets/issues/3947
-# https://github.com/jspenguin2017/uBlockProtector/issues/746
-||imasdk.googleapis.com/js/sdkloader/outstream.js$script,redirect=noopjs,domain=squadd.io
-squadd.io###mc-videoads-overlay
-
-# https://github.com/uBlockOrigin/uAssets/issues/3911
-@@/wp-content/themes/mts_ad_sense/*
 
 # ############################################################################ #

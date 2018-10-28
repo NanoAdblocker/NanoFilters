@@ -16,6 +16,9 @@ blockadblock.com##+js(bab-defuser.js)
 @@||fuckadblock.sitexw.fr^$generichide
 @@||cdnjs.cloudflare.com/ajax/libs/fuckadblock/*/fuckadblock.min.js$script,domain=fuckadblock.sitexw.fr
 
+# https://github.com/uBlockOrigin/uAssets/issues/2924
+captchme.com##script:inject(set-constant.js, CaptchmeState.adb, undefined)
+
 # https://github.com/jspenguin2017/uBlockProtector/issues/808
 ||browserleaks.com/js/proxy_ab.js$script
 
@@ -93,6 +96,9 @@ bham.pl##body > div:has-text(UWAGA:)
 # https://github.com/NanoAdblocker/NanoFilters/issues/28
 brainly.co.id##.brn-ads-box
 
+# https://github.com/uBlockOrigin/uAssets/issues/2443
+brainly.*##.brn-ab-detection-screening
+
 # https://github.com/jspenguin2017/uBlockProtector/issues/859
 sms-receive.net##+js(abort-current-inline-script.js, $, AdBlock Plus)
 
@@ -115,7 +121,9 @@ userscloud.com##.alert.alert-info:has-text(AdBlock)
 webinsider.pl##+js(setTimeout-defuser.js, AdBlock)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/895
+# https://github.com/jspenguin2017/uBlockProtector/issues/965
 multifilemirror.com##.noticeContainer:has-text(Ad-blocking)
+multifilemirror.com##.blockContainer:has-text(Ad-blocking)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/903
 masrawy.com###AdBlockerNotif
@@ -140,6 +148,13 @@ bigspeeds.com##.link-error:has-text(Advertisers)
 
 # https://github.com/uBlockOrigin/uAssets/issues/2331
 ||3dzone.link/wp-content/uploads/2018/05/Disable-Adblock-in-Blogger-Blogs-300x158.png$image
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/114
+1fichier.com##.ct_warn
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/132
+readthedocs.io##.keep-us-sustainable
+||readthedocs.org/api/v2/sustainability/$script,redirect=noopjs
 
 # NSFW! https://github.com/uBlockOrigin/uAssets/issues/2362
 camwhores.tv##body > div.top:has-text(AdBlock)
@@ -177,6 +192,72 @@ evworld.com##+js(setTimeout-defuser.js, ads, 2000)
 # https://github.com/uBlockOrigin/uAssets/issues/2299
 androidrepublic.org##.samSupportUs
 
+# https://github.com/uBlockOrigin/uAssets/issues/2269
+globalnews.ca##script:inject(set-constant.js, GNCA_Ad_Support, true)
+
+# https://github.com/uBlockOrigin/uAssets/issues/2185
+@@||socialblade.com^$generichide
+
+# https://github.com/uBlockOrigin/uAssets/issues/2113
+gamepedia.com###bodyContent:style(width: 100% !important;)
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/87
+realcleardefense.com##+js(set-constant.js, warning_widget.check_ad_block_status, noopFunc)
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/947
+@@||myfavoritecontent.com/js/ads.js$script,first-party
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/94
+techradar.com##script:inject(abort-on-property-read.js, _sp_._networkListenerData)
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/104
+xxlmag.com##.brave-bling-overlay
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/105
+mydramalist.com##.spnsr_right
+mydramalist.com##.spnsr-wrapper
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/118
+kimcartoon.me##.top_page_alert
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/120
+files.minecraftforge.net##.ad-container
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/963
+phillymag.com##.gtp-ad
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/127
+xclient.info##+js(set-constant.js, killads, true)
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/134
+tv.mademyday.com##.blnotice
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/968
+iosgods.com##+js(abort-on-property-write.js, CheckAdLoad)
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/139
+@@||wftrader.com^$generichide
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/145
+minijuegos.com###adBlockDisclaimer
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/972
+emurom.net##script:inject(set-constant.js, adblock, 1)
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/973
+9xbuddy.app##script:inject(setTimeout-defuser.js, isDetected, 2000)
+
+# https://github.com/uBlockOrigin/uAssets/issues/1582
+# https://github.com/jspenguin2017/uBlockProtector/issues/974
+# https://github.com/NanoMeow/QuickReports/issues/8
+newatlas.com,pgatour.com,sevenforums.com,theodysseyonline.com##+js(abort-on-property-read.js, admiral)
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/156
+punto-informatico.it##+js(abort-on-property-read.js, blazemedia_adBlock)
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/161
+wyff4.com##+js(setTimeout-defuser.js, [native code], 500)
+
 # ############################################################################ #
 
 # Ads
@@ -203,6 +284,9 @@ lequipe.fr##+js(abort-on-property-write.js, adback)
 # ############################################################################ #
 
 # Unbreak for Adblock Warning Removal List
+
+# https://github.com/uBlockOrigin/uAssets/issues/2989
+@@||hackintoshzone.com^$generichide
 
 # https://github.com/uBlockOrigin/uAssets/issues/3768
 porndig.com#@#.noadblock
@@ -261,109 +345,18 @@ businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 
 # Synchronizing to uAssets
 
-# https://github.com/uBlockOrigin/uAssets/issues/3911
-@@/wp-content/themes/mts_ad_sense/*
-
-# ############################################################################ #
-
-# Unclassfied
-
-# https://github.com/uBlockOrigin/uAssets/issues/2269
-globalnews.ca##script:inject(set-constant.js, GNCA_Ad_Support, true)
-
-# https://github.com/uBlockOrigin/uAssets/issues/2185
-socialblade.com##.cas-container
-socialblade.com##.cas-wide-container
-
-# https://github.com/uBlockOrigin/uAssets/issues/2113
-gamepedia.com###bodyContent:style(width: 100% !important;)
-
-# Anti-adblock, test:
-# https://dotesports.com/league-of-legends/news/new-lol-announcer-pack-phreak-kobe-22899
-@@||dotesports.com/showads.js$script,first-party
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/87
-realcleardefense.com##+js(set-constant.js, warning_widget.check_ad_block_status, noopFunc)
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/947
-@@||myfavoritecontent.com/js/ads.js$script,first-party
-
-# https://github.com/uBlockOrigin/uAssets/issues/2443
-brainly.*##.brn-ab-detection-screening
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/94
-techradar.com##script:inject(abort-on-property-read.js, _sp_._networkListenerData)
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/104
-xxlmag.com##.brave-bling-overlay
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/105
-mydramalist.com##.spnsr_right
-mydramalist.com##.spnsr-wrapper
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/114
-1fichier.com##.ct_warn
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/118
-kimcartoon.me##.top_page_alert
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/120
-files.minecraftforge.net##.ad-container
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/963
-phillymag.com##.gtp-ad
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/965
-multifilemirror.com##.blockContainer:has-text(Ad-blocking)
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/127
-@@||xclient.info/js/adview_*.js$script,first-party
-
-# Missed ads, test: http://solidity.readthedocs.io/en/v0.4.21/
-readthedocs.io##.keep-us-sustainable
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/132
-||readthedocs.org/api/v2/sustainability/$script,redirect=noopjs
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/134
-tv.mademyday.com##.blnotice
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/968
-iosgods.com##+js(setTimeout-defuser.js, AdBlocker Detected, 5000)
-
-# https://github.com/uBlockOrigin/uAssets/issues/2924
-captchme.com##script:inject(set-constant.js, CaptchmeState.adb, undefined)
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/139
-@@||wftrader.com^$generichide
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/145
-minijuegos.com###adBlockDisclaimer
-
-# https://github.com/uBlockOrigin/uAssets/issues/2989
-@@||hackintoshzone.com^$generichide
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/972
-emurom.net##script:inject(set-constant.js, adblock, 1)
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/973
-9xbuddy.app##script:inject(setTimeout-defuser.js, isDetected, 2000)
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/974
-# https://github.com/NanoMeow/QuickReports/issues/8
-newatlas.com,pgatour.com,sevenforums.com##script:inject(abort-on-property-read.js, admiral)
-
 # https://github.com/jspenguin2017/uBlockProtector/issues/975
 live.com##div:if(:scope > div > div[class^="__Microsoft_Owa_Adsbar_"])
 live.com##div:if(:scope > div > div > div[id^="owaadbar"]:not([class^="__Microsoft_Owa_Adsbar_"]))
 @@||s.aolcdn.com/ads/adswrappermsni.js$script,domain=outlook.live.com,badfilter
 @@||acdn.adnxs.com/$script,domain=outlook.live.com,badfilter
 
-# https://github.com/NanoAdblocker/NanoFilters/issues/156
-||punto-informatico.it/app/plugins/blazemedia_adv/
+# https://github.com/uBlockOrigin/uAssets/issues/3911
+@@/wp-content/themes/mts_ad_sense/*
 
-# https://github.com/NanoAdblocker/NanoFilters/issues/161
-wyff4.com##+js(setTimeout-defuser.js, [native code], 500)
+# ############################################################################ #
+
+# Unclassfied
 
 # https://github.com/uBlockOrigin/uAssets/issues/3216
 @@||ps3-infos.fr^$generichide

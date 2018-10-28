@@ -117,6 +117,30 @@ webinsider.pl##+js(setTimeout-defuser.js, AdBlock)
 # https://github.com/jspenguin2017/uBlockProtector/issues/895
 multifilemirror.com##.noticeContainer:has-text(Ad-blocking)
 
+# https://github.com/jspenguin2017/uBlockProtector/issues/903
+masrawy.com###AdBlockerNotif
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/909
+whatsmydns.net##.ad
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/59
+||fosshub.com/index/donateQ$subdocument
+
+# https://github.com/NanoAdblocker/NanoDefender/issues/39
+eurogamer.it##+js(abort-on-property-read.js, _sp_.mms.startMsg)
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/71
+wusa9.com##.fc-pinned-message-container.fc-root
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/75
+nl.hardware.info###sitearea > div:has-text(adblocker)
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/80
+bigspeeds.com##.link-error:has-text(Advertisers)
+
+# https://github.com/uBlockOrigin/uAssets/issues/2331
+||3dzone.link/wp-content/uploads/2018/05/Disable-Adblock-in-Blogger-Blogs-300x158.png$image
+
 # NSFW! https://github.com/uBlockOrigin/uAssets/issues/2362
 camwhores.tv##body > div.top:has-text(AdBlock)
 camwhores.tv##body > div:matches-css(z-index: 9999999)
@@ -134,6 +158,24 @@ libgen.io##+js(setTimeout-defuser.js, (), 500)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/862
 raiplay.it##.tagManagerError
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/63
+sportsnet.ca##+js(abort-on-property-read.js, uxGuid)
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/65
+ekb.dk.ru##+js(setTimeout-defuser.js, myBox, 3000)
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/927
+new.torrnado.win##+js(set-constant.js, block, false)
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/72
+relyonhorror.com##+js(setTimeout-defuser.js, checkAdStatus, 500)
+
+# https://github.com/uBlockOrigin/uAssets/issues/2343
+evworld.com##+js(setTimeout-defuser.js, ads, 2000)
+
+# https://github.com/uBlockOrigin/uAssets/issues/2299
+androidrepublic.org##.samSupportUs
 
 # ############################################################################ #
 
@@ -196,6 +238,11 @@ link.tl##.mobsplBox
 # Missed ads, test: https://www.reddit.com/
 reddit.com##.recommended-link
 
+# Missed ads, test:
+# https://btcmanager.com/the-fiery-asic-debate-engulfs-the-bitcoin-and-monero-communities/
+btcmanager.com##.wpbanners-banner
+btcmanager.com##.advert
+
 # ############################################################################ #
 
 # Specific for Edge browser
@@ -220,56 +267,6 @@ businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 # ############################################################################ #
 
 # Unclassfied
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/903
-masrawy.com###AdBlockerNotif
-
-# Missed ads, test:
-# https://btcmanager.com/the-fiery-asic-debate-engulfs-the-bitcoin-and-monero-communities/
-btcmanager.com##.wpbanners-banner
-btcmanager.com##.advert
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/909
-whatsmydns.net##.ad
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/59
-||fosshub.com/index/donateQ$subdocument
-
-# https://github.com/NanoAdblocker/NanoDefender/issues/39
-eurogamer.it##+js(abort-on-property-read.js, _sp_.mms.startMsg)
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/918
-kcra.com##+js(alert-buster.js)
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/63
-sportsnet.ca##+js(abort-on-property-read.js, uxGuid)
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/65
-ekb.dk.ru##+js(setTimeout-defuser.js, myBox, 3000)
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/927
-new.torrnado.win##+js(set-constant.js, block, false)
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/71
-wusa9.com##.fc-pinned-message-container.fc-root
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/72
-||relyonhorror.com/wp-content/plugins/narcissistic-meeting/
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/75
-nl.hardware.info###sitearea > div:has-text(adblocker)
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/80
-bigspeeds.com##.link-error:has-text(Advertisers)
-
-# https://github.com/uBlockOrigin/uAssets/issues/2331
-||3dzone.link/wp-content/uploads/2018/05/Disable-Adblock-in-Blogger-Blogs-300x158.png$image
-
-# https://github.com/uBlockOrigin/uAssets/issues/2343
-evworld.com##+js(setTimeout-defuser.js, ads, 2000)
-
-# https://github.com/uBlockOrigin/uAssets/issues/2299
-androidrepublic.org##.samSupportUs
 
 # https://github.com/uBlockOrigin/uAssets/issues/2269
 globalnews.ca##script:inject(set-constant.js, GNCA_Ad_Support, true)

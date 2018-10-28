@@ -169,6 +169,11 @@ camwhores.tv##body > div:matches-css(z-index: 9999998)
 
 # Soft anti-adblock that are also included in uBlock annoyance filter
 
+# https://github.com/jspenguin2017/uBlockProtector/issues/975
+# https://github.com/uBlockOrigin/uAssets/issues/3948
+live.com##div:if(:scope > div > div[class^="__Microsoft_Owa_Adsbar_"])
+live.com##div:if(:scope > div > div > div[id^="owaadbar"]:not([class^="__Microsoft_Owa_Adsbar_"]))
+
 # https://github.com/NanoMeow/QuickReports/issues/74
 libgen.io##+js(setTimeout-defuser.js, (), 500)
 
@@ -416,14 +421,5 @@ businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)
 businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 
 !#endif
-
-# ############################################################################ #
-
-# Synchronizing to uAssets
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/975
-# https://github.com/uBlockOrigin/uAssets/issues/3948
-live.com##div:if(:scope > div > div[class^="__Microsoft_Owa_Adsbar_"])
-live.com##div:if(:scope > div > div > div[id^="owaadbar"]:not([class^="__Microsoft_Owa_Adsbar_"]))
 
 # ############################################################################ #

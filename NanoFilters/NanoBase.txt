@@ -56,6 +56,8 @@ readthedocs.io##.keep-us-sustainable
 camwhores.tv##body > div.top:has-text(AdBlock)
 camwhores.tv##body > div:matches-css(z-index: 9999999)
 camwhores.tv##body > div:matches-css(z-index: 9999998)
+live.com##div:if(:scope > div > div[class^="__Microsoft_Owa_Adsbar_"])
+live.com##div:if(:scope > div > div > div[id^="owaadbar"]:not([class^="__Microsoft_Owa_Adsbar_"]))
 libgen.io##+js(setTimeout-defuser.js, (), 500)
 @@||html-online.com^$generichide
 raiplay.it##.tagManagerError
@@ -141,5 +143,3 @@ businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
 businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)
 businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 !#endif
-live.com##div:if(:scope > div > div[class^="__Microsoft_Owa_Adsbar_"])
-live.com##div:if(:scope > div > div > div[id^="owaadbar"]:not([class^="__Microsoft_Owa_Adsbar_"]))

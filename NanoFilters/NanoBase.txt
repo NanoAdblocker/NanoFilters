@@ -5,13 +5,15 @@
 ! Source: https://github.com/NanoAdblocker/NanoFilters/tree/master/NanoFiltersSource/NanoBase.txt
 ! This file is a compiled binary, do not modify
 ! All modifications will be overwritten on the next build
+blockadblock.com##+js(bab-defuser.js)
 @@||fuckadblock.sitexw.fr^$generichide
 @@||cdnjs.cloudflare.com/ajax/libs/fuckadblock/*/fuckadblock.min.js$script,domain=fuckadblock.sitexw.fr
-blockadblock.com##+js(bab-defuser.js)
+||browserleaks.com/js/proxy_ab.js$script
 /wp-content/plugins/end-of-adblock-cycle/*
 /wp-content/plugins/pause-adblocker/*$domain=~roboticsandautomationnews.com
 ||fastly.net/js/prebid-$script,redirect=noopjs
 vvvvid.it##+js(nano-vvvvid-it.js)
+msnbc.com,nbcnews.com,today.com##+js(abort-on-property-read.js, stop)
 @@||blockersurvive.com^$generichide
 blockersurvive.com,blockergame.com##.ads > .ads-body > .ads-content > div
 blockersurvive.com,blockergame.com##.ads > .ads-body:style(background: initial !important;)
@@ -20,6 +22,7 @@ developpez.com##div:has(:scope > [id^="gabarit_pub"])
 @@||vorek.pl/*/js/ads.js$script,first-party
 @@||egarwolin.pl/static/js/ads.js$script,first-party
 download.inventivetalent.org##div:has(:scope > div > button.choice-adfly)
+myegy.tv##.disclaimer:has-text(Ad-Blocker)
 camwhores.tv##body > div.top:has-text(AdBlock)
 camwhores.tv##body > div:matches-css(z-index: 9999999)
 camwhores.tv##body > div:matches-css(z-index: 9999998)
@@ -28,9 +31,6 @@ altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 avseesee.com###getadiv
 avseesee.com##.ads
 @@||rapidvideo.com/js/jquery.min.js$script,first-party
-msnbc.com,nbcnews.com,today.com##+js(abort-on-property-read.js, stop)
-||browserleaks.com/js/proxy_ab.js$script
-myegy.tv##.disclaimer:has-text(Ad-Blocker)
 html-online.com#@#.adBanner
 elespanol.com###adblock_modal
 redtube.com###ab_banner

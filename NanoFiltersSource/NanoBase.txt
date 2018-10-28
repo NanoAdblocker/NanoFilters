@@ -9,12 +9,15 @@
 
 # Anti-adblock demo
 
+# https://github.com/reek/anti-adblock-killer/issues/1666
+blockadblock.com##+js(bab-defuser.js)
+
 # https://github.com/NanoMeow/QuickReports/issues/48
 @@||fuckadblock.sitexw.fr^$generichide
 @@||cdnjs.cloudflare.com/ajax/libs/fuckadblock/*/fuckadblock.min.js$script,domain=fuckadblock.sitexw.fr
 
-# https://github.com/reek/anti-adblock-killer/issues/1666
-blockadblock.com##+js(bab-defuser.js)
+# https://github.com/jspenguin2017/uBlockProtector/issues/808
+||browserleaks.com/js/proxy_ab.js$script
 
 # ############################################################################ #
 
@@ -36,6 +39,11 @@ blockadblock.com##+js(bab-defuser.js)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/390
 vvvvid.it##+js(nano-vvvvid-it.js)
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/807
+# https://github.com/NanoAdblocker/NanoFilters/issues/15
+# https://github.com/NanoAdblocker/NanoFilters/issues/20
+msnbc.com,nbcnews.com,today.com##+js(abort-on-property-read.js, stop)
 
 # ############################################################################ #
 
@@ -60,6 +68,9 @@ developpez.com##div:has(:scope > [id^="gabarit_pub"])
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/782
 download.inventivetalent.org##div:has(:scope > div > button.choice-adfly)
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/816
+myegy.tv##.disclaimer:has-text(Ad-Blocker)
 
 # NSFW! https://github.com/uBlockOrigin/uAssets/issues/2362
 camwhores.tv##body > div.top:has-text(AdBlock)
@@ -94,17 +105,6 @@ avseesee.com##.ads
 # ||rapidvideo.com^$csp=child-src 'none';frame-src *;worker-src 'none';
 
 # ############################################################################ #
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/807
-# https://github.com/NanoAdblocker/NanoFilters/issues/15
-# https://github.com/NanoAdblocker/NanoFilters/issues/20
-msnbc.com,nbcnews.com,today.com##+js(abort-on-property-read.js, stop)
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/808
-||browserleaks.com/js/proxy_ab.js$script
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/816
-myegy.tv##.disclaimer:has-text(Ad-Blocker)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/819
 html-online.com#@#.adBanner

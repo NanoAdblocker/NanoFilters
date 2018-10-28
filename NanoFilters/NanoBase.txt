@@ -24,6 +24,7 @@ developpez.com##div:has(:scope > [id^="gabarit_pub"])
 download.inventivetalent.org##div:has(:scope > div > button.choice-adfly)
 myegy.tv##.disclaimer:has-text(Ad-Blocker)
 elespanol.com###adblock_modal
+encyclopediadramatica.rs###siteNotice center:has-text(AdBlock)
 camwhores.tv##body > div.top:has-text(AdBlock)
 camwhores.tv##body > div:matches-css(z-index: 9999999)
 camwhores.tv##body > div:matches-css(z-index: 9999998)
@@ -44,11 +45,7 @@ businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
 businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)
 businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 !#endif
-||imasdk.googleapis.com/js/sdkloader/outstream.js$script,redirect=noopjs,domain=squadd.io
-squadd.io###mc-videoads-overlay
 @@/wp-content/themes/mts_ad_sense/*
-redtube.com###ab_banner
-encyclopediadramatica.rs###siteNotice center:has-text(AdBlock)
 funnygames.*#@#.afs_ads
 @@||videolab.io^$generichide
 bham.pl##body > div:has-text(UWAGA:)

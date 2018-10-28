@@ -102,6 +102,12 @@ smods.ru###ab-warning
 # https://github.com/NanoAdblocker/NanoFilters/issues/38
 opengapps.org##.advertisement
 
+# https://github.com/jspenguin2017/uBlockProtector/issues/871
+fmovies.*##.alert.alert-warning:has-text(AdBlock)
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/875
+userscloud.com##.alert.alert-info:has-text(AdBlock)
+
 # NSFW! https://github.com/uBlockOrigin/uAssets/issues/2362
 camwhores.tv##body > div.top:has-text(AdBlock)
 camwhores.tv##body > div:matches-css(z-index: 9999999)
@@ -195,12 +201,6 @@ businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 # ############################################################################ #
 
 # Unclassfied
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/871
-fmovies.is,fmovies.se,fmovies.to##.alert.alert-warning:has-text(AdBlock)
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/875
-userscloud.com##.alert.alert-info:has-text(AdBlock)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/877
 webinsider.pl##+js(setTimeout-defuser.js, AdBlock)

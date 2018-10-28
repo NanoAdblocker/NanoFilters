@@ -145,4 +145,6 @@ businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 @@||acdn.adnxs.com/$script,domain=outlook.live.com,badfilter
 live.com##div:if(:scope > div > div[class^="__Microsoft_Owa_Adsbar_"])
 live.com##div:if(:scope > div > div > div[id^="owaadbar"]:not([class^="__Microsoft_Owa_Adsbar_"]))
-@@/wp-content/themes/mts_ad_sense/*
+@@/wp-content/themes/mts_ad_sense/*$first-party
+##.blocker-notice
+##.blocker-overlay

@@ -28,11 +28,17 @@ elespanol.com###adblock_modal
 encyclopediadramatica.rs###siteNotice center:has-text(AdBlock)
 funnygames.*#@#.afs_ads
 bham.pl##body > div:has-text(UWAGA:)
+brainly.co.id##.brn-ads-box
+sms-receive.net##+js(abort-current-inline-script.js, $, AdBlock Plus)
+@@||richmond-news.com/gmg/*/js/ads.js$script,first-party
+smods.ru###ab-warning
+opengapps.org##.advertisement
 camwhores.tv##body > div.top:has-text(AdBlock)
 camwhores.tv##body > div:matches-css(z-index: 9999999)
 camwhores.tv##body > div:matches-css(z-index: 9999998)
 libgen.io##+js(setTimeout-defuser.js, (), 500)
 @@||html-online.com^$generichide
+raiplay.it##.tagManagerError
 altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 @@||rapidvideo.com/js/jquery.min.js$script,first-party
 porndig.com#@#.noadblock
@@ -53,13 +59,6 @@ businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)
 businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 !#endif
 @@/wp-content/themes/mts_ad_sense/*
-brainly.co.id##.brn-ads-box
-sms-receive.net##+js(abort-current-inline-script.js, $, AdBlock Plus)
-@@||richmond-news.com/gmg/*/js/ads.js$script,first-party
-raiplay.it##.tagManagerError
-smods.ru###ab-warning
-opengapps.org##.advertisement
-bittube.me##+js(addEventListener-defuser.js, visibilitychange)
 fmovies.is,fmovies.se,fmovies.to##.alert.alert-warning:has-text(AdBlock)
 userscloud.com##.alert.alert-info:has-text(AdBlock)
 webinsider.pl##+js(setTimeout-defuser.js, AdBlock)

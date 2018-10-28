@@ -87,6 +87,21 @@ funnygames.*#@#.afs_ads
 # https://github.com/NanoAdblocker/NanoDefender/issues/21
 bham.pl##body > div:has-text(UWAGA:)
 
+# https://github.com/NanoAdblocker/NanoFilters/issues/28
+brainly.co.id##.brn-ads-box
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/859
+sms-receive.net##+js(abort-current-inline-script.js, $, AdBlock Plus)
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/30
+@@||richmond-news.com/gmg/*/js/ads.js$script,first-party
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/34
+smods.ru###ab-warning
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/38
+opengapps.org##.advertisement
+
 # NSFW! https://github.com/uBlockOrigin/uAssets/issues/2362
 camwhores.tv##body > div.top:has-text(AdBlock)
 camwhores.tv##body > div:matches-css(z-index: 9999999)
@@ -101,6 +116,9 @@ libgen.io##+js(setTimeout-defuser.js, (), 500)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/819
 @@||html-online.com^$generichide
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/862
+raiplay.it##.tagManagerError
 
 # ############################################################################ #
 
@@ -177,27 +195,6 @@ businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 # ############################################################################ #
 
 # Unclassfied
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/28
-brainly.co.id##.brn-ads-box
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/859
-sms-receive.net##+js(abort-current-inline-script.js, $, AdBlock Plus)
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/30
-@@||richmond-news.com/gmg/*/js/ads.js$script,first-party
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/862
-raiplay.it##.tagManagerError
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/34
-smods.ru###ab-warning
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/38
-opengapps.org##.advertisement
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/873
-bittube.me##+js(addEventListener-defuser.js, visibilitychange)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/871
 fmovies.is,fmovies.se,fmovies.to##.alert.alert-warning:has-text(AdBlock)

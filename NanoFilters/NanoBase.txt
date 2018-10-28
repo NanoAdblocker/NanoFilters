@@ -12,7 +12,7 @@ captchme.com##script:inject(set-constant.js, CaptchmeState.adb, undefined)
 ||browserleaks.com/js/proxy_ab.js$script
 /wp-content/plugins/end-of-adblock-cycle/*
 /wp-content/plugins/pause-adblocker/*$domain=~roboticsandautomationnews.com
-||fastly.net/js/prebid-$script,redirect=noopjs
+||fastly.net/js/prebid-*$script,redirect=noopjs
 vvvvid.it##+js(nano-vvvvid-it.js)
 msnbc.com,nbcnews.com,today.com##+js(abort-on-property-read.js, stop)
 @@||videolab.io^$generichide
@@ -141,8 +141,8 @@ businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
 businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)
 businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 !#endif
-live.com##div:if(:scope > div > div[class^="__Microsoft_Owa_Adsbar_"])
-live.com##div:if(:scope > div > div > div[id^="owaadbar"]:not([class^="__Microsoft_Owa_Adsbar_"]))
 @@||s.aolcdn.com/ads/adswrappermsni.js$script,domain=outlook.live.com,badfilter
 @@||acdn.adnxs.com/$script,domain=outlook.live.com,badfilter
+live.com##div:if(:scope > div > div[class^="__Microsoft_Owa_Adsbar_"])
+live.com##div:if(:scope > div > div > div[id^="owaadbar"]:not([class^="__Microsoft_Owa_Adsbar_"]))
 @@/wp-content/themes/mts_ad_sense/*

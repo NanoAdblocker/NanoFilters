@@ -1,6 +1,7 @@
 # ############################################################################ #
 
-# Filters for Nano Adblocker
+# Base filter for Nano Adblocker
+
 # Hint: Purging cache of uBlock filters also purge cache of uBlock Origin
 # Resources, similarly, purging cache of Nano filters also purge cache of Nano
 # Adblocker Extra Resources
@@ -34,7 +35,7 @@ captchme.com##script:inject(set-constant.js, CaptchmeState.adb, undefined)
 /wp-content/plugins/pause-adblocker/*$domain=~roboticsandautomationnews.com
 
 # https://github.com/NanoAdblocker/NanoFilters/issues/31
-||fastly.net/js/prebid-$script,redirect=noopjs
+||fastly.net/js/prebid-*$script,redirect=noopjs
 
 # ############################################################################ #
 
@@ -365,7 +366,7 @@ porndig.com#@#.noadblock
 
 # ############################################################################ #
 
-# Rules that should be included in EasyList or regional filter
+# Rules that should be included in EasyList or regional filters
 
 # https://github.com/NanoMeow/QuickReports/issues/18
 games2jolly.com###leaderboard_area
@@ -394,8 +395,8 @@ link.tl##.mobsplBox
 # Missed ads, test: https://www.reddit.com/
 reddit.com##.recommended-link
 
-# Missed ads, test:
-# https://btcmanager.com/the-fiery-asic-debate-engulfs-the-bitcoin-and-monero-communities/
+# Missed ads
+# Test: https://btcmanager.com/the-fiery-asic-debate-engulfs-the-bitcoin-and-monero-communities/
 btcmanager.com##.wpbanners-banner
 btcmanager.com##.advert
 
@@ -421,10 +422,10 @@ businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 # Synchronizing to uAssets
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/975
-live.com##div:if(:scope > div > div[class^="__Microsoft_Owa_Adsbar_"])
-live.com##div:if(:scope > div > div > div[id^="owaadbar"]:not([class^="__Microsoft_Owa_Adsbar_"]))
 @@||s.aolcdn.com/ads/adswrappermsni.js$script,domain=outlook.live.com,badfilter
 @@||acdn.adnxs.com/$script,domain=outlook.live.com,badfilter
+live.com##div:if(:scope > div > div[class^="__Microsoft_Owa_Adsbar_"])
+live.com##div:if(:scope > div > div > div[id^="owaadbar"]:not([class^="__Microsoft_Owa_Adsbar_"]))
 
 # https://github.com/uBlockOrigin/uAssets/issues/3911
 @@/wp-content/themes/mts_ad_sense/*

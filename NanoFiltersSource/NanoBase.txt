@@ -422,14 +422,8 @@ businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 # Synchronizing to uAssets
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/975
-@@||s.aolcdn.com/ads/adswrappermsni.js$script,domain=outlook.live.com,badfilter
-@@||acdn.adnxs.com/$script,domain=outlook.live.com,badfilter
+# https://github.com/uBlockOrigin/uAssets/issues/3948
 live.com##div:if(:scope > div > div[class^="__Microsoft_Owa_Adsbar_"])
 live.com##div:if(:scope > div > div > div[id^="owaadbar"]:not([class^="__Microsoft_Owa_Adsbar_"]))
-
-# https://github.com/uBlockOrigin/uAssets/issues/3911
-@@/wp-content/themes/mts_ad_sense/*$first-party
-##.blocker-notice
-##.blocker-overlay
 
 # ############################################################################ #

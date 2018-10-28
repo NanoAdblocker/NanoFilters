@@ -15,8 +15,6 @@ blockadblock.com##+js(bab-defuser.js)
 @@||blockersurvive.com^$generichide
 blockersurvive.com,blockergame.com##.ads > .ads-body > .ads-content > div
 blockersurvive.com,blockergame.com##.ads > .ads-body:style(background: initial !important;)
-||imasdk.googleapis.com/js/sdkloader/outstream.js$script,redirect=noopjs,domain=squadd.io
-squadd.io###mc-videoads-overlay
 vvvvid.it##+js(nano-vvvvid-it.js)
 developpez.com##div:has(:scope > [id^="gabarit_pub"])
 @@||vorek.pl^$generichide
@@ -156,3 +154,6 @@ businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
 businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)
 businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 !#endif
+||imasdk.googleapis.com/js/sdkloader/outstream.js$script,redirect=noopjs,domain=squadd.io
+squadd.io###mc-videoads-overlay
+@@/wp-content/themes/mts_ad_sense/*

@@ -39,10 +39,6 @@ blockadblock.com##+js(bab-defuser.js)
 blockersurvive.com,blockergame.com##.ads > .ads-body > .ads-content > div
 blockersurvive.com,blockergame.com##.ads > .ads-body:style(background: initial !important;)
 
-# https://github.com/jspenguin2017/uBlockProtector/issues/746
-||imasdk.googleapis.com/js/sdkloader/outstream.js$script,redirect=noopjs,domain=squadd.io
-squadd.io###mc-videoads-overlay
-
 # https://github.com/jspenguin2017/uBlockProtector/issues/390
 vvvvid.it##+js(nano-vvvvid-it.js)
 
@@ -421,7 +417,7 @@ streamhentaimovies.com##.popmake-overlay
 
 # ############################################################################ #
 
-# Rules specific for Edge browser
+# Specific for Edge browser
 
 !#if env_edge
 
@@ -432,5 +428,17 @@ businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)
 businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 
 !#endif
+
+# ############################################################################ #
+
+# Synchronizing
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/746
+# https://github.com/uBlockOrigin/uAssets/issues/3947
+||imasdk.googleapis.com/js/sdkloader/outstream.js$script,redirect=noopjs,domain=squadd.io
+squadd.io###mc-videoads-overlay
+
+# https://github.com/uBlockOrigin/uAssets/issues/3911
+@@/wp-content/themes/mts_ad_sense/*
 
 # ############################################################################ #

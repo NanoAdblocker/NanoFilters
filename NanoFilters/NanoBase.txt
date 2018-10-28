@@ -11,11 +11,10 @@ blockadblock.com##+js(bab-defuser.js)
 /wp-content/plugins/end-of-adblock-cycle/*
 /wp-content/plugins/pause-adblocker/*$domain=~roboticsandautomationnews.com
 ||fastly.net/js/prebid-$script,redirect=noopjs
-@@||blockergame.com^$generichide
+vvvvid.it##+js(nano-vvvvid-it.js)
 @@||blockersurvive.com^$generichide
 blockersurvive.com,blockergame.com##.ads > .ads-body > .ads-content > div
 blockersurvive.com,blockergame.com##.ads > .ads-body:style(background: initial !important;)
-vvvvid.it##+js(nano-vvvvid-it.js)
 developpez.com##div:has(:scope > [id^="gabarit_pub"])
 @@||vorek.pl^$generichide
 @@||vorek.pl/*/js/ads.js$script,first-party

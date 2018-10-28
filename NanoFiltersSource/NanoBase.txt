@@ -48,6 +48,9 @@ msnbc.com,nbcnews.com,today.com##+js(abort-on-property-read.js, stop)
 # https://github.com/jspenguin2017/uBlockProtector/issues/839
 @@||videolab.io^$generichide
 
+# https://github.com/NanoAdblocker/NanoCore/issues/142
+vizer.tv##.open.adsByVizer.vizerNewBox
+
 # ############################################################################ #
 
 # Soft anti-adblock
@@ -108,6 +111,12 @@ fmovies.*##.alert.alert-warning:has-text(AdBlock)
 # https://github.com/jspenguin2017/uBlockProtector/issues/875
 userscloud.com##.alert.alert-info:has-text(AdBlock)
 
+# https://github.com/jspenguin2017/uBlockProtector/issues/877
+webinsider.pl##+js(setTimeout-defuser.js, AdBlock)
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/895
+multifilemirror.com##.noticeContainer:has-text(Ad-blocking)
+
 # NSFW! https://github.com/uBlockOrigin/uAssets/issues/2362
 camwhores.tv##body > div.top:has-text(AdBlock)
 camwhores.tv##body > div:matches-css(z-index: 9999999)
@@ -133,6 +142,9 @@ raiplay.it##.tagManagerError
 # https://gitlab.com/xuhaiyang1234/NanoAdblockerSecretIssues/issues/1
 altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 
+# https://github.com/NanoAdblocker/NanoDefender/issues/36
+lequipe.fr##+js(abort-on-property-write.js, adback)
+
 # ############################################################################ #
 
 # Unbreak
@@ -141,6 +153,10 @@ altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 @@||rapidvideo.com/js/jquery.min.js$script,first-party
 # Fallback rule in case they start putting mining code into jQuery files
 # ||rapidvideo.com^$csp=child-src 'none';frame-src *;worker-src 'none';
+
+# False positive, test: http://geoip.nekudo.com/
+||geoip.nekudo.com^$badfilter
+||geoip.nekudo.com^$third-party
 
 # ############################################################################ #
 
@@ -177,6 +193,9 @@ avseesee.com##.ads
 link.tl##.mobsplOverlay
 link.tl##.mobsplBox
 
+# Missed ads, test: https://www.reddit.com/
+reddit.com##.recommended-link
+
 # ############################################################################ #
 
 # Specific for Edge browser
@@ -193,7 +212,7 @@ businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 
 # ############################################################################ #
 
-# Synchronizing
+# Synchronizing to uAssets
 
 # https://github.com/uBlockOrigin/uAssets/issues/3911
 @@/wp-content/themes/mts_ad_sense/*
@@ -201,25 +220,6 @@ businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 # ############################################################################ #
 
 # Unclassfied
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/877
-webinsider.pl##+js(setTimeout-defuser.js, AdBlock)
-
-# Missed ads, test: https://www.reddit.com/
-reddit.com##.recommended-link
-
-# False positive, test: http://geoip.nekudo.com/
-||geoip.nekudo.com^$badfilter
-||geoip.nekudo.com^$third-party
-
-# https://github.com/NanoAdblocker/NanoCore/issues/142
-vizer.tv##.open.adsByVizer.vizerNewBox
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/895
-multifilemirror.com##.noticeContainer:has-text(Ad-blocking)
-
-# https://github.com/NanoAdblocker/NanoDefender/issues/36
-lequipe.fr##+js(abort-on-property-write.js, adback)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/903
 masrawy.com###AdBlockerNotif

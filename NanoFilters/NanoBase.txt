@@ -15,6 +15,7 @@ blockadblock.com##+js(bab-defuser.js)
 vvvvid.it##+js(nano-vvvvid-it.js)
 msnbc.com,nbcnews.com,today.com##+js(abort-on-property-read.js, stop)
 @@||videolab.io^$generichide
+vizer.tv##.open.adsByVizer.vizerNewBox
 @@||blockersurvive.com^$generichide
 blockersurvive.com,blockergame.com##.ads > .ads-body > .ads-content > div
 blockersurvive.com,blockergame.com##.ads > .ads-body:style(background: initial !important;)
@@ -33,6 +34,10 @@ sms-receive.net##+js(abort-current-inline-script.js, $, AdBlock Plus)
 @@||richmond-news.com/gmg/*/js/ads.js$script,first-party
 smods.ru###ab-warning
 opengapps.org##.advertisement
+fmovies.*##.alert.alert-warning:has-text(AdBlock)
+userscloud.com##.alert.alert-info:has-text(AdBlock)
+webinsider.pl##+js(setTimeout-defuser.js, AdBlock)
+multifilemirror.com##.noticeContainer:has-text(Ad-blocking)
 camwhores.tv##body > div.top:has-text(AdBlock)
 camwhores.tv##body > div:matches-css(z-index: 9999999)
 camwhores.tv##body > div:matches-css(z-index: 9999998)
@@ -40,7 +45,10 @@ libgen.io##+js(setTimeout-defuser.js, (), 500)
 @@||html-online.com^$generichide
 raiplay.it##.tagManagerError
 altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
+lequipe.fr##+js(abort-on-property-write.js, adback)
 @@||rapidvideo.com/js/jquery.min.js$script,first-party
+||geoip.nekudo.com^$badfilter
+||geoip.nekudo.com^$third-party
 porndig.com#@#.noadblock
 games2jolly.com###leaderboard_area
 games2jolly.com###leaderboard_area_home
@@ -53,21 +61,13 @@ avseesee.com###getadiv
 avseesee.com##.ads
 link.tl##.mobsplOverlay
 link.tl##.mobsplBox
+reddit.com##.recommended-link
 !#if env_edge
 businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
 businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)
 businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 !#endif
 @@/wp-content/themes/mts_ad_sense/*
-fmovies.is,fmovies.se,fmovies.to##.alert.alert-warning:has-text(AdBlock)
-userscloud.com##.alert.alert-info:has-text(AdBlock)
-webinsider.pl##+js(setTimeout-defuser.js, AdBlock)
-reddit.com##.recommended-link
-||geoip.nekudo.com^$badfilter
-||geoip.nekudo.com^$third-party
-vizer.tv##.open.adsByVizer.vizerNewBox
-multifilemirror.com##.noticeContainer:has-text(Ad-blocking)
-lequipe.fr##+js(abort-on-property-write.js, adback)
 masrawy.com###AdBlockerNotif
 btcmanager.com##.wpbanners-banner
 btcmanager.com##.advert

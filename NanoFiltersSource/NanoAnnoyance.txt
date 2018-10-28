@@ -41,13 +41,6 @@ bizjournals.com##+js(set-constant.js, __page__.isPremium, false)
 
 # ############################################################################ #
 
-# Rules that should be included in uAssets
-
-# https://github.com/NanoAdblocker/NanoDefender/issues/12
-rektstack.com##+js(abort-on-property-write.js, document.oncontextmenu)
-
-# ############################################################################ #
-
 # Other rules
 
 # https://github.com/NanoAdblocker/NanoFilters/issues/1
@@ -56,5 +49,12 @@ live.com,microsoft.com,office.com,windows.com,xbox.com###epb
 # The donation message is getting excessive
 # Test: https://en.wikipedia.org/wiki/%22Hello,_World!%22_program
 wikipedia.org##+js(abort-on-property-write.js, frb)
+
+# ############################################################################ #
+
+# Synchronizing to uAssets
+
+# https://github.com/NanoAdblocker/NanoDefender/issues/12
+rektstack.com##+js(abort-on-property-write.js, document.oncontextmenu)
 
 # ############################################################################ #

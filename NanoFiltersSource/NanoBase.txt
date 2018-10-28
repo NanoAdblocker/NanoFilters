@@ -75,6 +75,9 @@ myegy.tv##.disclaimer:has-text(Ad-Blocker)
 # https://github.com/jspenguin2017/uBlockProtector/issues/830
 elespanol.com###adblock_modal
 
+# https://github.com/jspenguin2017/uBlockProtector/issues/834
+encyclopediadramatica.rs###siteNotice center:has-text(AdBlock)
+
 # NSFW! https://github.com/uBlockOrigin/uAssets/issues/2362
 camwhores.tv##body > div.top:has-text(AdBlock)
 camwhores.tv##body > div:matches-css(z-index: 9999999)
@@ -148,23 +151,12 @@ businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 
 # Synchronizing
 
-# https://github.com/uBlockOrigin/uAssets/issues/3947
-# https://github.com/jspenguin2017/uBlockProtector/issues/746
-||imasdk.googleapis.com/js/sdkloader/outstream.js$script,redirect=noopjs,domain=squadd.io
-squadd.io###mc-videoads-overlay
-
 # https://github.com/uBlockOrigin/uAssets/issues/3911
 @@/wp-content/themes/mts_ad_sense/*
 
 # ############################################################################ #
 
 # Unclassfied
-
-# NSFW! https://github.com/uBlockOrigin/uAssets/issues/642
-redtube.com###ab_banner
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/834
-encyclopediadramatica.rs###siteNotice center:has-text(AdBlock)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/837
 funnygames.*#@#.afs_ads

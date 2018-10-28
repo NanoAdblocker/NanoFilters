@@ -45,6 +45,9 @@ vvvvid.it##+js(nano-vvvvid-it.js)
 # https://github.com/NanoAdblocker/NanoFilters/issues/20
 msnbc.com,nbcnews.com,today.com##+js(abort-on-property-read.js, stop)
 
+# https://github.com/jspenguin2017/uBlockProtector/issues/839
+@@||videolab.io^$generichide
+
 # ############################################################################ #
 
 # Soft anti-adblock
@@ -77,6 +80,12 @@ elespanol.com###adblock_modal
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/834
 encyclopediadramatica.rs###siteNotice center:has-text(AdBlock)
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/837
+funnygames.*#@#.afs_ads
+
+# https://github.com/NanoAdblocker/NanoDefender/issues/21
+bham.pl##body > div:has-text(UWAGA:)
 
 # NSFW! https://github.com/uBlockOrigin/uAssets/issues/2362
 camwhores.tv##body > div.top:has-text(AdBlock)
@@ -133,6 +142,13 @@ games2jolly.com##.game_play > div:nth-of-type(1)
 # https://github.com/NanoMeow/QuickReports/issues/58
 streamhentaimovies.com##.popmake-overlay
 
+# https://github.com/jspenguin2017/uBlockProtector/issues/843
+# https://github.com/jspenguin2017/uBlockProtector/issues/869
+jn.pt,tsf.pt##.t-pubbox-inner
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/848
+dn.pt##.t-pub-inner
+
 # ############################################################################ #
 
 # Specific for Edge browser
@@ -157,25 +173,6 @@ businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 # ############################################################################ #
 
 # Unclassfied
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/837
-funnygames.*#@#.afs_ads
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/839
-@@||videolab.io^$generichide
-
-# https://github.com/NanoAdblocker/NanoDefender/issues/21
-bham.pl##body > div:has-text(UWAGA:)
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/843
-# https://github.com/jspenguin2017/uBlockProtector/issues/869
-jn.pt,tsf.pt##.t-pubbox-inner
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/848
-dn.pt##.t-pub-inner
-
-# https://github.com/NanoAdblocker/NanoDefender/issues/25
-coolgames.com###mainContainerVideo:has(#adContainerVideo)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/835
 link.tl##.mobsplOverlay

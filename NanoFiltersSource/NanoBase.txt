@@ -7,7 +7,7 @@
 
 # ############################################################################ #
 
-# Anti-adblock demo
+# Anti-adblock demos
 
 # https://github.com/reek/anti-adblock-killer/issues/1666
 blockadblock.com##+js(bab-defuser.js)
@@ -156,6 +156,9 @@ bigspeeds.com##.link-error:has-text(Advertisers)
 readthedocs.io##.keep-us-sustainable
 ||readthedocs.org/api/v2/sustainability/$script,redirect=noopjs
 
+# https://github.com/NanoMeow/QuickReports/issues/230
+||geekglow.com/wp-content/uploads/*/adblockplus$image
+
 # NSFW! https://github.com/uBlockOrigin/uAssets/issues/2362
 camwhores.tv##body > div.top:has-text(AdBlock)
 camwhores.tv##body > div:matches-css(z-index: 9999999)
@@ -258,6 +261,75 @@ punto-informatico.it##+js(abort-on-property-read.js, blazemedia_adBlock)
 # https://github.com/NanoAdblocker/NanoFilters/issues/161
 wyff4.com##+js(setTimeout-defuser.js, [native code], 500)
 
+# https://github.com/uBlockOrigin/uAssets/issues/3216
+@@||ps3-infos.fr^$generichide
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/168
+tweakers.net##.notificationsContainer:has-text(whitelisten of beleef Tweakers)
+
+# https://github.com/NanoMeow/QuickReports/issues/32
+@@||motherjones.com/*/ads.js$script,first-party
+
+# https://github.com/NanoMeow/QuickReports/issues/47
+gearside.com##+js(set-constant.js, nebula.session.flags.adblock, undefined)
+
+# https://github.com/NanoMeow/QuickReports/issues/29
+zerohedge.com###abd-banner
+
+# https://github.com/uBlockOrigin/uAssets/issues/3319
+eca-anime.net##+js(abort-current-inline-script.js, document.getElementById, advert-tester)
+
+# https://github.com/uBlockOrigin/uAssets/issues/3489
+columbiaspectator.com##+js(setTimeout-defuser.js, ads, 2000)
+
+# https://github.com/NanoMeow/QuickReports/issues/97
+@@||knshow.com^$generichide
+knshow.com##.adsbygoogle
+knshow.com##div[id^="div-gpt-ad-"]
+
+# https://github.com/uBlockOrigin/uAssets/issues/3535
+tvtropes.org##+js(set-constant.js, valid_user, true)
+
+# https://github.com/NanoMeow/QuickReports/issues/117
+@@||justtrucks.com.au^$generichide
+@@||justtrucks.com.au^$image
+justtrucks.com.au##+js(set-constant.js, Drupal.behaviors.detectAdblockers, noopFunc)
+
+# https://github.com/jspenguin2017/uBlockProtector/issues/992
+mediafire.com##+js(abort-current-inline-script.js, document.getElementById, adblocker)
+mediafire.com##+js(setTimeout-defuser.js, scan, 500)
+
+# https://github.com/NanoMeow/QuickReports/issues/142
+flyertalk.com##+js(abort-current-inline-script.js, $, AdBlock)
+
+# https://github.com/NanoMeow/QuickReports/issues/90
+@@||nyt.com/ads/google/adsbygoogle.js$script,domain=nytimes.com
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/189
+@@||programiz.com^$xmlhttprequest,first-party
+
+# https://github.com/uBlockOrigin/uAssets/issues/3458
+gecce.com.tr##+js(set-constant.js, fakeadloaded, true)
+
+# https://github.com/NanoMeow/QuickReports/issues/179
+esercizinglese.com,pelisfull.tv##+js(abort-on-property-write.js, adBlockDetected)
+masternodes.pro###adblocker
+
+# https://github.com/NanoMeow/QuickReports/issues/182
+ancient.eu##+js(set-constant.js, ADBdetected, noopFunc)
+
+# https://github.com/NanoMeow/QuickReports/issues/189
+foodnetwork.com##.o-AdhesionNotifier
+
+# https://github.com/uBlockOrigin/uAssets/issues/3704
+sabishiidesu.com##+js(abort-on-property-write.js, adBlockDetected)
+
+# https://github.com/NanoMeow/QuickReports/issues/215
+gota.io##+js(abort-on-property-read.js, fuckAdBlock)
+
+# https://github.com/NanoMeow/QuickReports/issues/246
+majorgeeks.com##+js(abort-on-property-read.js, admiral)
+
 # ############################################################################ #
 
 # Ads
@@ -293,7 +365,7 @@ porndig.com#@#.noadblock
 
 # ############################################################################ #
 
-# Rules that should be included in EasyList
+# Rules that should be included in EasyList or regional filter
 
 # https://github.com/NanoMeow/QuickReports/issues/18
 games2jolly.com###leaderboard_area
@@ -327,6 +399,9 @@ reddit.com##.recommended-link
 btcmanager.com##.wpbanners-banner
 btcmanager.com##.advert
 
+# https://github.com/NanoMeow/QuickReports/issues/64
+filmozercy.com##a[href$="filmozercy.com/wspieraj-nasza-prace-wylacz-adblocka"]
+
 # ############################################################################ #
 
 # Specific for Edge browser
@@ -353,83 +428,5 @@ live.com##div:if(:scope > div > div > div[id^="owaadbar"]:not([class^="__Microso
 
 # https://github.com/uBlockOrigin/uAssets/issues/3911
 @@/wp-content/themes/mts_ad_sense/*
-
-# ############################################################################ #
-
-# Unclassfied
-
-# https://github.com/uBlockOrigin/uAssets/issues/3216
-@@||ps3-infos.fr^$generichide
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/168
-tweakers.net##.notificationsContainer:has-text(whitelisten of beleef Tweakers)
-
-# https://github.com/NanoMeow/QuickReports/issues/32
-@@||motherjones.com/wp-content/*/ads.js$script,first-party
-
-# https://github.com/NanoMeow/QuickReports/issues/47
-@@||gearside.com/wp-content/*/show_ads.js$xmlhttprequest,first-party
-
-# https://github.com/NanoMeow/QuickReports/issues/29
-zerohedge.com###abd-banner
-
-# https://github.com/uBlockOrigin/uAssets/issues/3319
-@@||eca-anime.net/advert.js$script,first-party
-
-# https://github.com/NanoMeow/QuickReports/issues/64
-filmozercy.com##a[href$="filmozercy.com/wspieraj-nasza-prace-wylacz-adblocka"]
-
-# https://github.com/uBlockOrigin/uAssets/issues/3489
-columbiaspectator.com##+js(setTimeout-defuser.js, ads, 2000)
-
-# https://github.com/NanoMeow/QuickReports/issues/97
-@@||knshow.com^$generichide
-knshow.com##.adsbygoogle
-knshow.com##div[id^="div-gpt-ad-"]
-
-# https://github.com/uBlockOrigin/uAssets/issues/3535
-tvtropes.org##+js(set-constant.js, valid_user, true)
-
-# https://github.com/NanoMeow/QuickReports/issues/117
-@@||justtrucks.com.au^$generichide
-@@||justtrucks.com.au^$image
-justtrucks.com.au##+js(set-constant.js, Drupal.behaviors.detectAdblockers, noopFunc)
-
-# https://github.com/jspenguin2017/uBlockProtector/issues/992
-mediafire.com##+js(abort-current-inline-script.js, document.getElementById, adblocker)
-
-# https://github.com/NanoMeow/QuickReports/issues/142
-flyertalk.com##+js(abort-current-inline-script.js, $, AdBlock)
-
-# https://github.com/NanoMeow/QuickReports/issues/90
-@@||nyt.com/ads/google/adsbygoogle.js$script,domain=nytimes.com
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/189
-@@||programiz.com^$xmlhttprequest,first-party
-
-# https://github.com/uBlockOrigin/uAssets/issues/3458
-gecce.com.tr##+js(set-constant.js, fakeadloaded, true)
-
-# https://github.com/NanoMeow/QuickReports/issues/179
-esercizinglese.com,pelisfull.tv##+js(abort-on-property-write.js, adBlockDetected)
-masternodes.pro###adblocker
-
-# https://github.com/NanoMeow/QuickReports/issues/182
-ancient.eu##+js(set-constant.js, ADBdetected, noopFunc)
-
-# https://github.com/NanoMeow/QuickReports/issues/189
-foodnetwork.com##.o-AdhesionNotifier
-
-# https://github.com/uBlockOrigin/uAssets/issues/3704
-sabishiidesu.com##+js(abort-on-property-write.js, adBlockDetected)
-
-# https://github.com/NanoMeow/QuickReports/issues/215
-gota.io##+js(abort-on-property-read.js, fuckAdBlock)
-
-# https://github.com/NanoMeow/QuickReports/issues/230
-||geekglow.com/wp-content/uploads/*/adblockplus$image
-
-# https://github.com/NanoMeow/QuickReports/issues/246
-majorgeeks.com##+js(abort-on-property-read.js, admiral)
 
 # ############################################################################ #

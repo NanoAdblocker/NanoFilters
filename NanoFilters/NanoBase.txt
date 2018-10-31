@@ -116,6 +116,7 @@ foodnetwork.com##.o-AdhesionNotifier
 sabishiidesu.com##+js(abort-on-property-write.js, adBlockDetected)
 gota.io##+js(abort-on-property-read.js, fuckAdBlock)
 majorgeeks.com##+js(abort-on-property-read.js, admiral)
+discord.club##+js(abort-current-inline-script.js, document.getElementById, adsChecker)
 altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 lequipe.fr##+js(abort-on-property-write.js, adback)
 @@||rapidvideo.com/js/jquery.min.js$script,first-party

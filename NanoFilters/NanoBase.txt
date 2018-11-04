@@ -118,6 +118,9 @@ gota.io##+js(abort-on-property-read.js, fuckAdBlock)
 majorgeeks.com##+js(abort-on-property-read.js, admiral)
 discord.club##+js(abort-current-inline-script.js, document.getElementById, adsChecker)
 bucketpages.com##+js(setTimeout-defuser.js, #advert-tracker, 500)
+@@||orlygift.com^$generichide
+orlygift.com##.ad-container-responsive
+orlygift.com##div[id^="div-gpt-ad"]
 altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 lequipe.fr##+js(abort-on-property-write.js, adback)
 @@||rapidvideo.com/js/jquery.min.js$script,first-party

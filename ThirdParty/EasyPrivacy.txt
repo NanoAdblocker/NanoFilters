@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: fH9IMvyokmZ/1JLhD1ls2w
-! Version: 201811030022
+! Checksum: UyxFaQByyOyEHGXVoa76HQ
+! Version: 201811100202
 ! Title: EasyPrivacy
-! Last modified: 03 Nov 2018 00:22 UTC
+! Last modified: 10 Nov 2018 02:02 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -407,6 +407,7 @@
 /adrum-
 /adrum.
 /ads/counter.
+/ads/track.
 /ads/track/*
 /ads?cookie_
 /ads_tracker.
@@ -1106,6 +1107,7 @@
 /cookiebean?
 /cookieId.htm
 /CookieLawStats/*
+/CookieManager-bdl?
 /CookieMapping?
 /CookiePingback?
 /CookieSetterAS3.
@@ -1157,6 +1159,7 @@
 /counter_2.php?
 /counter_3.php
 /counter_image.gif?
+/counter_liveinternet.
 /countercgi.
 /countercollector/*
 /counterFooterFlash.
@@ -2014,6 +2017,7 @@
 /livezilla/server.php?request=track&
 /load.gif?
 /load.js.gz?
+/LoadAudienceSegs-
 /loadcounter.
 /loader-counter.
 /loadJsFingerprint.js
@@ -2366,6 +2370,7 @@
 /omniture.do;$image
 /omniture/sphere
 /omniture/tracking.
+/omniture/visitorapi.
 /omnitureAMP.
 /OmnitureAnalytics.
 /OmnitureTracking_$object-subrequest
@@ -2600,6 +2605,7 @@
 /plugins/stat-dfp/*
 /plugins/status.gif?
 /plugins/userinfo.gif?
+/plugins/visitors-traffic-
 /plugins/wordfence/visitor.php?
 /plzcrawlme.js
 /PmsPixel?
@@ -3217,6 +3223,7 @@
 /tagx.js
 /tailtarget.js
 /targetemsecure.
+/targeting/render.
 /taxtag.js
 /tblz_sailthru/*
 /tbuy/tracker/*
@@ -3324,6 +3331,7 @@
 /track/visits/?
 /track2.php
 /track;adv
+/track?*&event=
 /track?*&ref=
 /track?browserId
 /track?cb=
@@ -4331,6 +4339,7 @@ _mongo_stats/
 ||acxiom-online.com^$third-party
 ||acxiomapac.com^$third-party
 ||ad-score.com^$third-party
+||ad.gt^$third-party
 ||adabra.com^$third-party
 ||adalyser.com^$third-party
 ||adblade.com^$third-party
@@ -4812,6 +4821,7 @@ _mongo_stats/
 ||customerconversio.com^$third-party
 ||customerdiscoverytrack.com^$third-party
 ||cux.io^$third-party
+||cvtr.io^$third-party
 ||cxense.com^$third-party
 ||cxt.ms^$third-party
 ||cya2.net^$third-party
@@ -5665,6 +5675,7 @@ _mongo_stats/
 ||nicewii.com^$third-party
 ||niftymaps.com^$third-party
 ||nik.io^$third-party
+||nile.works^$third-party
 ||noowho.com^$third-party
 ||nordicresearch.com^$third-party
 ||notifyvisitors.com^$third-party
@@ -8747,6 +8758,7 @@ _mongo_stats/
 ||d21o24qxwf7uku.cloudfront.net^
 ||d22v2nmahyeg2a.cloudfront.net^
 ||d23p9gffjvre9v.cloudfront.net^
+||d23pi6hvdpcc5i.cloudfront.net^
 ||d25ezbwokoefx6.cloudfront.net^
 ||d27s92d8z1yatv.cloudfront.net/js/jquery.jw.analitycs.js
 ||d28g9g3vb08y70.cloudfront.net^
@@ -10057,6 +10069,7 @@ _mongo_stats/
 ||upt.graphiq.com^
 ||urc.taboolasyndication.com^
 ||userlog.synapseip.tv^
+||usersegment.wpdigital.net^
 ||uservoice.com^*/track.js
 ||userzoom.com/uz.js$third-party
 ||v.giantrealm.com/players/stats.swf?
@@ -10625,6 +10638,7 @@ _mongo_stats/
 ||httdev.it/e/c?
 ||livestats.matrix.it^
 ||log.superweb.ws^
+||logger.kataweb.it^
 ||maxusglobal.it/init.js
 ||mibatech.com/track/
 ||mrwebmaster.it/work/stats.php?
@@ -11339,6 +11353,7 @@ _mongo_stats/
 ||cloudfront.net/vis_opt_no_jquery.js
 ||cls.ichotelsgroup.com^
 ||clvk.viki.io^
+||clyp.it^*/log^
 ||cmap.alibaba.com^
 ||cmstrendslog.indiatimes.com^
 ||cmstrendslog.timesnow.tv^
@@ -13267,6 +13282,7 @@ _mongo_stats/
 ||ws.elance.com^*&referrer=
 ||ws.md/c.png?
 ||ws.yellowpages.ca^
+||wstats.e-wok.tv^
 ||wtk.db.com^
 ||wunderground.com/tag.php
 ||wusstrack.wunderground.com^

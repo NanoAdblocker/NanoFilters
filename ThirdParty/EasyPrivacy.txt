@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: UyxFaQByyOyEHGXVoa76HQ
-! Version: 201811100202
+! Checksum: lWeM3PhRWJ9pumZ9Hwd6vQ
+! Version: 201811172132
 ! Title: EasyPrivacy
-! Last modified: 10 Nov 2018 02:02 UTC
+! Last modified: 17 Nov 2018 21:32 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -326,6 +326,7 @@
 /a.gif?uuid
 /a.logrequest.yolx?
 /a.php?ref=
+/a/analytics/*
 /aa.php?anuid=
 /ablank.gif?
 /abp-analytics.
@@ -381,6 +382,7 @@
 /addstats?callback=
 /addTrackingScripts.
 /adform-tracking.
+/adframestats|
 /adimp?
 /adimppixel/*
 /adinfo?
@@ -1908,6 +1910,7 @@
 /jgs_portal_log_bildschirm.php?
 /jkidd_cookies?
 /join/tracking/*
+/jp-coremetrics-
 /jquery.analytics.js|
 /jquery.google-analytics.
 /jquery.trackstar.
@@ -1931,6 +1934,7 @@
 /js/quantcast-
 /js/sophus/*
 /js/tagging/tagtrack.js
+/js/targeting.js
 /js/tophits_
 /js/tracker.js
 /js/tracking.js
@@ -3406,6 +3410,7 @@
 /trackerGif?
 /TrackerHandler.
 /trackerpixel.js
+/trackers/hp_conversion-
 /trackerstatistik.
 /trackEvent.js?
 /trackEvent.min.js?
@@ -3465,6 +3470,7 @@
 /tracking/epixels.
 /tracking/events?
 /tracking/fingerprint/*
+/tracking/getty/*
 /tracking/impression/*
 /tracking/index.
 /tracking/log.php?
@@ -6842,6 +6848,7 @@ _mongo_stats/
 ||dogrose18.com^$third-party
 ||dovinate.top^$third-party
 ||dronml.ml^$third-party
+||drozdovvalerij0.github.io^
 ||drupalupdates.tk^$third-party
 ||duckdns.org^$third-party,websocket
 ||dugroscaca.com^$third-party
@@ -6916,7 +6923,13 @@ _mongo_stats/
 ||hodling.party^$third-party
 ||hodling.science^$third-party
 ||host.d-ns.ga^$third-party
+||hostingcloud.accountant^$third-party
+||hostingcloud.bid^$third-party
+||hostingcloud.date^$third-party
+||hostingcloud.download^$third-party
 ||hostingcloud.faith^$third-party
+||hostingcloud.loan^$third-party
+||hostingcloud.science^$third-party
 ||hrfziiddxa.ru^$third-party
 ||hydesolo.tk^$third-party
 ||iaheyftbsn.review^$third-party
@@ -6947,6 +6960,16 @@ _mongo_stats/
 ||jsccnn.com^$third-party
 ||jscdndel.com^$third-party
 ||jsecoin.com^$third-party
+||jshosting.bid^$third-party
+||jshosting.date^$third-party
+||jshosting.download^$third-party
+||jshosting.loan^$third-party
+||jshosting.party^$third-party
+||jshosting.racing^$third-party
+||jshosting.review^$third-party
+||jshosting.stream^$third-party
+||jshosting.trade^$third-party
+||jshosting.win^$third-party
 ||junopink.ml^$third-party
 ||jurty.ml^$third-party
 ||jurtym.cf^$third-party
@@ -6957,6 +6980,7 @@ _mongo_stats/
 ||kedtise.com^$third-party
 ||kinoprofi.org^$third-party
 ||kippbeak.cf^$third-party
+||kireevairina959.github.io^$third-party
 ||ksimdw.ru^$third-party
 ||l33tsite.info^$third-party
 ||laferia.cr^$third-party
@@ -7040,8 +7064,10 @@ _mongo_stats/
 ||nfwebminer.com^$third-party
 ||niematego.tk^$third-party
 ||nimiq.watch^$third-party
+||nimiqchain.info^$third-party
 ||nimiqpool.com^$third-party
 ||nimiqtest.net^$third-party
+||nimpool.io^$third-party
 ||nnycrypto.com^$third-party
 ||noblock.pro^$third-party
 ||oei1.gq^$third-party
@@ -7049,10 +7075,13 @@ _mongo_stats/
 ||ogondkskyahxa.ru^$third-party
 ||ogrid.org^$third-party
 ||okeyletsgo.ml^$third-party
+||olecintri.com^$third-party
 ||omine.org^$third-party
 ||onlinereserchstatistics.online^$third-party
+||onvid.club^$third-party
 ||open-hive-server-1.pp.ua^$third-party
 ||openguid.org^$third-party
+||outbrainimg.com^$third-party
 ||oxwwoeukjispema.ru^$third-party
 ||p2poolmining.com^$third-party
 ||p2poolmining.net^$third-party
@@ -7062,6 +7091,7 @@ _mongo_stats/
 ||pdheuryopd.loan^$third-party
 ||pearno.com^$third-party
 ||pertholin.com^$third-party
+||philpool.com^$third-party
 ||play.mix.kinostuff.com^
 ||playerassets.info^$third-party
 ||podrltid.info^$third-party
@@ -7069,6 +7099,7 @@ _mongo_stats/
 ||pool.hws.ru^$third-party
 ||poolmining.eu^$third-party
 ||poolmining.net^$third-party
+||porkypool.com^$third-party
 ||ppoi.org^$third-party
 ||pr0gram.org^$third-party
 ||premiumstats.xyz^$third-party
@@ -7123,6 +7154,7 @@ _mongo_stats/
 ||subloader.cf^$third-party
 ||sumokoin.com^$third-party
 ||supportxmr.com^$third-party
+||sushipool.com^$third-party
 ||svivqrhrh.ru^$third-party
 ||swiftmining.win^$third-party
 ||synconnector.com^$third-party
@@ -7800,6 +7832,7 @@ _mongo_stats/
 ||hiperstat.com^$third-party
 ||hitcountersonline.com^$third-party
 ||imetrix.it^$third-party
+||iolam.it^$third-party
 ||ipfrom.com^$third-party
 ||italianadirectory.com^$third-party
 ||keyxel.com^$third-party
@@ -8411,6 +8444,7 @@ _mongo_stats/
 ||app.pendo.io/data/ptm.gif
 ||app.yesware.com/t/$third-party
 ||appdynamics.com/geo/$third-party
+||appinthestore.com/click/
 ||apple.www.letv.com^
 ||appliedsemantics.com/images/x.gif
 ||appsolutions.com/hitme?$third-party
@@ -8708,6 +8742,7 @@ _mongo_stats/
 ||crowdskout.com^*/page-view
 ||csi.gstatic.com^
 ||csp-collector.appspot.com^
+||csp.archant.co.uk^
 ||ct.eid.co.nz^$third-party
 ||ct.itbusinessedge.com^$third-party
 ||ct.needlive.com^
@@ -10636,6 +10671,8 @@ _mongo_stats/
 ||gazzettaobjects.it^*/tracking/
 ||glomera.com/stats
 ||httdev.it/e/c?
+||iltrovatore.it/vp.htm
+||iol.it^*/clickserver.js
 ||livestats.matrix.it^
 ||log.superweb.ws^
 ||logger.kataweb.it^
@@ -11068,6 +11105,7 @@ _mongo_stats/
 ||analytics.msnbc.msn.com^
 ||analytics.newsinc.com^
 ||analytics.omgpop.com/log
+||analytics.plex.tv^
 ||analytics.posttv.com^
 ||analytics.schoolwires.com^
 ||analytics.services.distractify.com^
@@ -13418,10 +13456,15 @@ $xmlhttprequest,domain=adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|catrumahmi
 ||support.2giga.link^
 ||video.videos.vidto.me^
 ||vidoza.net/*bootstrap.
+||vidoza.net/app.js
 ||vidto.me/*bootstrap.
 ||vidzi.tv/*bootstrap.
 ||wallpoper.com^*/c.js
 ||worker.salon.com^
+! salon.com cpu mining
+@@||content.jwplatform.com^$script,domain=salon.com
+@@||platform.tout.com^$script,domain=salon.com
+|http*://$script,third-party,domain=salon.com
 ! CSP Mining
 $csp=child-src 'none'; frame-src 'self' *; worker-src 'none',domain=fileone.tv|theappguruz.com
 $csp=child-src 'none'; frame-src *; worker-src 'none',domain=adfreetv.ch|ddmix.net|extratorrent.cd|gofile.io|hq-porns.com|intactoffers.club|kickass.cd|myfeed4u.net|reservedoffers.club|skyback.ru|szukajka.tv|thepiratebay.cr|thepiratebay.org|thepiratebay.red|thevideo.cc|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|tvad.me|vidoza.net|vidup.me
@@ -13874,6 +13917,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 ||rtl.be^*/trkfblk.js
 ||rtl.fr/stats/
 ||sa.tf1.fr^
+||secure-stat.canal-plus.com^
 ||sfr.fr/js/pent-stats.jsp
 ||sport365.fr/ea.js
 ||stat.webevolutis.com^
@@ -14739,6 +14783,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 @@||facebook.com/ajax/photos/logging/session_logging.php?$xmlhttprequest
 @@||facebook.com/common/referer_frame.php$subdocument,domain=facebook.com
 @@||faostat3.fao.org^*/google-analytics-manager.js
+@@||fastway.co.nz/Umbraco/Api/Tracking/
 @@||fccbrea.org^*/swfaddress.js
 @@||fifa.com^*/webanalytics.js?
 @@||firstdirect.com^*/logging-code.js
@@ -15479,6 +15524,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 @@||tv2.dk/js/adobeanalytics/AppMeasurement.js$script
 ! Dutch
 @@||ad.crwdcntrl.net^$script,domain=rtl.nl
+@@||analytics.ooyala.com/static/analytics.js$script,domain=humo.be
 @@||bundol.nl/skin/*/js/prototype/prototype.js,*/GoogleAnalyticsPlus/
 @@||globecharge.com/images/ping.gif?
 @@||google-analytics.com/analytics.js$domain=vd.nl

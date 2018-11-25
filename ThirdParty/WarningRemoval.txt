@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: 0uZV5N+GSnK6mKq5UgND4A
-! Version: 201811172140
+! Checksum: zfDx89pychfi+QhEF8KG2A
+! Version: 201811251830
 ! Title: Adblock Warning Removal List
-! Last modified: 17 Nov 2018 21:40 UTC
+! Last modified: 25 Nov 2018 18:30 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -218,6 +218,7 @@ radiox.com##.notifyjs-corner
 papergeek.fr##[id^="padb_widget_"]
 forumdz.com##body .breadcrumb + center > [color="red"] > b
 forum.pcastuces.com##div > [src] + [id] + [class][style^="display: block;"]
+closermag.fr##div[id^="detection-block"]
 bd-sanctuary.com,cine-sanctuary.com,comics-sanctuary.com,manga-sanctuary.com##div[style^="background:#444;"]
 pausecafein.fr###adb-pop
 !
@@ -287,7 +288,6 @@ vsaduidoma.com##.ABD_display_wrapper
 eurabota.com##.abtop
 sprashivalka.com##.ad
 topcraft.ru##.ad-info
-sergeistrelec.ru#@#.ad_top
 cc-fan.ru,cc-fan.tv,cn-fan.ru,fox-fan.ru,goodfon.ru,satsis.info,swordmaster.org##.adb
 vsadu.ru##.adb-block
 andevice.ru,dietdo.ru##.adb-def
@@ -337,7 +337,7 @@ music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##.page-root > .n
 alexfilm.cc##.panel-primary
 darkteam.net##.pls_rmv
 animedub.ru##.poverh
-webdesign-master.ru##.preloader ~ style + div[class] > p
+webdesign-master.ru##.preloader ~ div[class] > p
 pythonworld.ru##.pythonworld-contributor
 fanfics.me##.red.nodata
 101.ru##.showMessageAdBlock
@@ -377,6 +377,7 @@ logist.uxxo.ru,maxpark.com,newdeaf-online.net,newsland.com##body > div[id]:not([
 factorio.su##body > div[id][class][style*="background"][style*="visible"]
 gisher.org##body > div[id][class][style^="display"][style*="position"][style*="z-index"]
 gta.com.ua##body > div[id][style*="background"][style*="visible"]
+sergeistrelec.ru##body > div[id][style^="background"][style*="width: 400px;"]
 portfel.info##body > div[id][style="display: block;"]
 tut.by##body > div[style*="position: fixed;"][style*="right: 0;"]
 1snau.ru,bychico.net,dyrik.ru,ecosounds.net,fainaidea.com,in-drive.ru,musecube.org,obozrevatel.com,oknotivi.ru,pogodnik.com,sandero.ru,tehnobzor.ru##body > div[style*="z-index"][style*="999999"]

@@ -352,4 +352,20 @@ nanop-easy-set-cookie.js application/javascript
 })();
 
 
+# Set a cookie the hard way, 1 required argument.
+# data - The cookie data to set.
+nanop-set-cookie.js application/javascript
+(function() {
+    var guard = '{{nano}}';
+    if ( guard === '{{nano}}' ) {
+        return;
+    }
+    var data = '{{1}}';
+    if ( data.indexOf('=') === -1 ) {
+        return;
+    }
+    document.cookie = data;
+})();
+
+
 # ############################################################################ #

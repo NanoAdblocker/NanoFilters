@@ -274,10 +274,15 @@ nanop-easy-set-cookie.js application/javascript
     var path = '{{2}}';
     var domain = '{{3}}';
     var secure = '{{4}}';
+    var del = '{{5}}';
     if ( data.indexOf('=') === -1 ) {
         return;
     }
-    data += ';max-age=2592000'; // 30 days
+    if ( del === 'true' ) {
+        data += ';max-age=-100';
+    } else {
+        data += ';max-age=2592000'; // 30 days
+    }
     if ( path !== '' && path !== '{{2}}' ) {
         data += ';path=' + path;
     }
@@ -288,36 +293,4 @@ nanop-easy-set-cookie.js application/javascript
         data += ';secure';
     }
     document.cookie = data;
-})();
-
-nanop-timer-booster.js application/javascript
-(function() {
-    var guard = '{{nano}}';
-    if ( guard === '{{nano}}' ) {
-        return;
-    }
-    var func = '{{1}}';
-    var needle = '{{2}}';
-    var boost = parseFloat('{{3}}');
-    if ( func !== 'setTimeout' && func !== 'setInterval' ) {
-        return;
-    }
-    if ( needle === '' || needle === '{{2}}' ) {
-        needle = '.?';
-    } else if ( needle.charAt(0) === '/' && needle.slice(-1) === '/' ) {
-        needle = needle.slice(1, -1);
-    } else {
-        needle = needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    }
-    needle = new RegExp(needle);
-    if ( isNaN(boost) || !isFinite(boost) ) {
-        boost = 0.02;
-    }
-    var original = window[func];
-    window[func] = function(a, b) {
-        if ( needle.test(a.toString()) || needle.test(b.toString()) ) {
-            b *= boost;
-        }
-        return original.apply(this, arguments);
-    }.bind(window);
 })();

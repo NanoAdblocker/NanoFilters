@@ -1,3 +1,3 @@
 @ECHO OFF
-NODE "./Update Third Party Filters.node.js"
+NODE "./Update Third Party Filters.node.js" --all
 PAUSE

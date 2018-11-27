@@ -97,32 +97,38 @@ process.on("unhandledRejection", (err) => {
 });
 
 (async () => {
-    const data = {
-        "MalwareDomain0.txt": "https://raw.githubusercontent.com/NanoMeow/MDLMirror/master/hosts.txt",
-        "MalwareDomain1.txt": "https://mirror1.malwaredomains.com/files/justdomains",
-
-        "PublicSuffix.dat": "https://publicsuffix.org/list/public_suffix_list.dat",
-        "uBlockResources.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resources.txt",
-
-        "NanoDefender.txt": "https://raw.githubusercontent.com/jspenguin2017/uBlockProtector/master/uBlockProtectorList.txt",
-
-        "uBlockBase.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt",
-        "uBlockBadware.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt",
-        "uBlockPrivacy.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt",
-        "uBlockAbuse.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt",
-        "uBlockUnbreak.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt",
-
-        "WarningRemoval.txt": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
-        "EasyList.txt": "https://easylist-downloads.adblockplus.org/easylist.txt",
-
-        "EasyPrivacy.txt": "https://easylist-downloads.adblockplus.org/easyprivacy.txt",
-
-        "PeterLowe.txt": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext",
+    let data = {
+        "../NanoMirror/uBlockResources.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resources.txt",
     };
+
+    if (process.argv.includes("--all")) {
+        data = Object.assign(data, {
+            "MalwareDomain0.txt": "https://raw.githubusercontent.com/NanoMeow/MDLMirror/master/hosts.txt",
+            "MalwareDomain1.txt": "https://mirror1.malwaredomains.com/files/justdomains",
+
+            "PublicSuffix.dat": "https://publicsuffix.org/list/public_suffix_list.dat",
+            "uBlockResources.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resources.txt",
+
+            "NanoDefender.txt": "https://raw.githubusercontent.com/jspenguin2017/uBlockProtector/master/uBlockProtectorList.txt",
+
+            "uBlockBase.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt",
+            "uBlockBadware.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt",
+            "uBlockPrivacy.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt",
+            "uBlockAbuse.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt",
+            "uBlockUnbreak.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt",
+
+            "WarningRemoval.txt": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
+            "EasyList.txt": "https://easylist-downloads.adblockplus.org/easylist.txt",
+
+            "EasyPrivacy.txt": "https://easylist-downloads.adblockplus.org/easyprivacy.txt",
+
+            "PeterLowe.txt": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext",
+        });
+    }
 
     for (let key in data) {
         console.log("Downloading " + data[key] + " to /ThirdParty/" + key + " ...");
-        const localPath = path.join("ThirdParty", key);
+        const localPath = path.resolve("./ThirdParty", key);
         await fetchOne(data[key], fs.createWriteStream(localPath));
         await validate(localPath);
     }

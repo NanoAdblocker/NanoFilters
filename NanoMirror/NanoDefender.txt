@@ -1,7 +1,7 @@
 [Nano Adblocker]
 ! Title: Nano Defender Integration
 ! Expires: 3 days
-! Cached: Tue, 27 Nov 2018 02:34:18 GMT
+! Cached: Wed, 28 Nov 2018 22:27:55 GMT
 ! License: GPL-3.0
 ! Source: https://github.com/jspenguin2017/uBlockProtector/tree/master/list
 ! This file is a compiled binary, do not modify
@@ -12,7 +12,6 @@
 @@|https://*.moatads.com/*/MoatFreeWheelJSPEM.js*$script
 @@|https://ads.korri.fr/index.js|$script
 @@|http://*.medianetworkinternational.com/js/advertisement.js*$script
-@@||ads-v-darwin.hulustream.com/published/*.mp4$domain=hulu.com
 ||authedmine.com^$third-party
 @@||authedmine.com^$domain=coinhive.com|filecrypt.cc
 /coinhive.js
@@ -420,9 +419,6 @@ nbc.com##+js(abort-on-property-read.js, mps._ab)
 sledujserialy.sk##div.w-episode-source > div:has(iframe[src*="ad.php"])
 eurogamer.de##+js(abort-on-property-read.js, _sp_.msg.displayMessage)
 deportesmax.info###wmpu
-hulu.com###banner-ad-container
-hulu.com##.ad-choices
-||ads-v-darwin.hulustream.com^
 msfn.org##.displayGlobalMessage:has-text(ad-blocking)
 theguardian.com##div.site-message:has(a[href^="https://membership.theguardian.com/"])
 theguardian.com##.contributions__epic
@@ -471,7 +467,6 @@ blockads.fivefilters.org###no-blocking:style(display: block !important;)
 @@||globalbesthosting.com^$generichide
 @@||greenocktelegraph.co.uk^$generichide
 @@||hells-hack.com^$generichide
-@@||hulu.com^$generichide
 @@||imleagues.com^$generichide
 @@||leech.ae^$generichide
 @@||libertyunyielding.com^$generichide
@@ -512,7 +507,7 @@ blockads.fivefilters.org###no-blocking:style(display: block !important;)
 ||freewheel-mtgx-tv.akamaized.net^$media,domain=viasatsport.se
 ||fwmrm.net^$image,important,domain=viasatsport.se
 ||fwmrm.net/ad/*$xmlhttprequest,important,redirect=nooptext,domain=viasatsport.se
-@@||moatads.com/*/moatwrapper.js$script,domain=hulu.com|viz.com
+@@||moatads.com/*/moatwrapper.js$script,domain=viz.com
 ||trymask.com/api/$third-party
 @@||adworkmedia.com/gLoader.php?GID=$script,third-party
 @@||adworkmedia.com/gTemplate.php?GID=$subdocument,third-party

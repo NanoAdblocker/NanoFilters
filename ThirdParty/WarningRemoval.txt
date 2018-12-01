@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: Asj0BcZ+tSope5u3FHIlaw
-! Version: 201811270230
+! Checksum: HBOZQfSwJohQLLOo3WMO7w
+! Version: 201812011730
 ! Title: Adblock Warning Removal List
-! Last modified: 27 Nov 2018 02:30 UTC
+! Last modified: 01 Dec 2018 17:30 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -285,6 +285,7 @@ numberempire.com###toplink > h3[style="color: red"]
 ganoderma-mushrooms.com,korrektor.name,varicream.org###turn_advert.adblock
 czx.to###vdl_ctnr
 chipinfo.pro###warning
+scrin.org##.a-overlay
 vsaduidoma.com##.ABD_display_wrapper
 eurabota.com##.abtop
 sprashivalka.com##.ad
@@ -339,6 +340,7 @@ music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##.page-root > .n
 alexfilm.cc##.panel-primary
 darkteam.net##.pls_rmv
 animedub.ru##.poverh
+015.by,023.by,0312.ua,032.ua,0332.ua,0342.ua,0352.ua,0362.ua,0372.ua,0382.ua,0412.ua,04141.com.ua,0432.ua,04563.com.ua,04596.com.ua,04597.com.ua,04598.com.ua,0462.ua,0472.ua,048.ua,04868.com.ua,0512.com.ua,05136.com.ua,05161.com.ua,0522.ua,0532.ua,05366.com.ua,0542.ua,05447.com.ua,0552.ua,056.ua,0564.ua,0566.com.ua,0569.com.ua,057.ua,061.ua,06153.com.ua,0619.com.ua,0623.com.ua,06236.com.ua,06237.com.ua,06239.com.ua,06242.ua,06252.com.ua,06267.com.ua,06272.com.ua,06274.com.ua,06277.com.ua,0629.com.ua,0642.ua,06452.com.ua,0652.ua,0692.ua,1rnd.ru,3652.ru,3654.ru,3849.com.ua,44.ua,4594.com.ua,5692.com.ua,62.ua,6262.com.ua,6264.com.ua,65.media,7232.kz,8422city.ru,anapa.life,angarsk38.ru,bazhopol.ru,city01.am,city41.ru,comores24.com,go01.ru,go11.kz,go212.by,go216.by,go26.ru,go31.ru,go61.ru,godublin.info,golondon.info,goriga.info,gorod3466.ru,gorodarmavir.ru,goroddomodedovo.ru,gorodpushkin.ru,goshymkent.kz,inaktau.kz,inalmaty.kz,inastana.kz,inatyrau.kz,infolyubertsy.ru,inform69.ru,vilniuje.info,yocity12.ru##.pray-container
 webdesign-master.ru##.preloader ~ div[class] > p
 pythonworld.ru##.pythonworld-contributor
 fanfics.me##.red.nodata
@@ -352,12 +354,17 @@ forum.bestflowers.ru##.xenOverlay
 /cookie_check.min.js$domain=acetv.me
 /forum/docs/requests.js$script,domain=nnm-club-me.appspot.com|nnm-club.lib|nnm-club.me|nnm-club.name|nnm-club.tv|nnm-club.ws|nnmclub.to|nnmclub.tv|nontorclub.in.net
 /fuckadblock.js$domain=ace-stream.tv
-@@||content.rbc.medialand.ru/templates_*/ads.gif$image,domain=rbc.ru
+@@/pagead2.$domain=autonews.ru|rbc.ru|sportrbc.ru
+@@||adservice.google.*/adsid/integrator.js$script,domain=autonews.ru|rbc.ru|sportrbc.ru
+@@||content.rbc.medialand.ru/templates_*/ads.gif$image,domain=autonews.ru|rbc.ru|sportrbc.ru
 @@||goha.ru/app/video/adblock.teaser.js|$script,domain=goha.ru
 @@||rbk.ru^*/ads/ads.js?|$script,domain=autonews.ru|rbc.ru|rbcplus.ru|sportrbc.ru
-@@||securepubads.g.doubleclick.net/gampad/ads?$script,domain=rbc.ru
-@@||securepubads.g.doubleclick.net/gpt/pubads_impl_$script,domain=rbc.ru
+@@||securepubads.g.doubleclick.net/gampad/ads?$domain=autonews.ru|rbc.ru|sportrbc.ru
+@@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=autonews.ru|rbc.ru|sportrbc.ru
+@@||tpc.googlesyndication.com^$image,domain=autonews.ru|rbc.ru|sportrbc.ru
 @@||sports.ru^*/adfox.$xmlhttprequest
+@@||target.smi2.net/client/target.js|$script,domain=autonews.ru|rbc.ru|sportrbc.ru
+@@||target.smi2.net/client/ttag.js|$script,domain=autonews.ru|rbc.ru|sportrbc.ru
 mycrib.ru,piggy-bank.online##[data-type="anti-abp"]
 lr-club.com##a[href="https://adblockplus.org/ru/faq_basics#disable"]
 drive2.ru##a[href][target="_blank"] > img[src][style^="width: 100%; height: auto;"][style*="vertical-align: middle; max-width: 240px;"]
@@ -384,7 +391,6 @@ portfel.info##body > div[id][style="display: block;"]
 tut.by##body > div[style*="position: fixed;"][style*="right: 0;"]
 1snau.ru,bychico.net,dyrik.ru,ecosounds.net,fainaidea.com,in-drive.ru,musecube.org,obozrevatel.com,oknotivi.ru,pogodnik.com,sandero.ru,tehnobzor.ru##body > div[style*="z-index"][style*="999999"]
 dugtor.ru##body > noindex
-scrin.org##center > div[id][style="display: block;"]
 lostfilm.tv##div[class^="alarm"]
 gismeteo.by,gismeteo.ru##div[class^="stopblock"]
 finfront.ru##div[class^="swal2"]

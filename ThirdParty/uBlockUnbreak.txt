@@ -197,7 +197,8 @@ ovh.strim.io#@##tweets
 
 ! http://www.wilderssecurity.com/threads/ublock-origin-and-newegg.377014/
 ! Until the fix is in EasyPrivacy
-@@||monetate.net/*$script,domain=www.newegg.com
+! https://github.com/uBlockOrigin/uAssets/issues/4210 Peter Lowe's
+@@||monetate.net/$script,image,domain=newegg.com
 
 ! https://github.com/gorhill/uBlock/issues/372
 @@||googleads.g.doubleclick.net/ads/preferences/getcookie$popup,domain=myaccount.google.com
@@ -1743,8 +1744,8 @@ go.com#@#.has-ad
 @@||hardware.support.eu.playstation.com/assets/js/tracking.js$script,first-party
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=42216
-@@||litix.io/core/$script,domain=velocity.com
-@@||fusion.ddmcdn.com/app/*/comscore.streaming.$script,domain=velocity.com
+@@||litix.io/core/$script,domain=velocity.com|motortrend.com
+@@||fusion.ddmcdn.com/app/*/comscore.streaming.$script,domain=velocity.com|motortrend.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1660#issuecomment-441504263
 @@||cuatro.com/dist/assets/comscore/streamsense$script,first-party
@@ -1764,3 +1765,13 @@ go.com#@#.has-ad
 
 ! https://github.com/uBlockOrigin/uAssets/issues/4197
 @@||adobedtm.com^*/satellitelib-$script,domain=australia.com
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=42233
+@@||playstationlifestyle.net/wp-content/plugins/pb-bwp-minify/*chartbeat$script,first-party
+
+! https://github.com/uBlockOrigin/uAssets/issues/4209
+@@||static.chartbeat.com/js/chartbeat_mab.js$script,domain=ny1.com
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=42243
+/mixpanel.$badfilter
+/mixpanel.$domain=~mixpanel.com

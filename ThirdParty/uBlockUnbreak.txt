@@ -1453,6 +1453,8 @@ techadvisor.co.uk#@#.adsbygoogle
 @@||discover.com/discover/reporting/AppMeasurement.js$first-party
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=41629
+! https://github.com/uBlockOrigin/uAssets/issues/4230
+@@||archive.org/includes/analytics.js$script,first-party
 archive.org#@#.oasad
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=41615
@@ -1635,7 +1637,7 @@ tubewolf.com##.bnnr
 ! https://github.com/uBlockOrigin/uAssets/issues/3894
 @@||wsj.net/*/cxense-candy.js$script,domain=wsj.com
 @@||scdn.cxense.com/cx.$script,domain=wsj.com
-@@||zqtk.net$script,domain=wsj.com
+@@||zqtk.net^$script,domain=wsj.com
 
 ! anime broken player
 @@||gogoanime.to/*/player.js$script
@@ -1701,10 +1703,6 @@ pasteboard.co##+js(set-constant.js, nads.createAd, trueFunc)
 ! https://forums.lanik.us/viewtopic.php?f=64&t=42031
 /advision.$domain=~advision.dk,badfilter
 /advision.$domain=~advision.dk|~advision.cl
-
-! https://forums.lanik.us/viewtopic.php?f=64&t=42054
-/googleads.$badfilter
-/googleads.$domain=~googleads.media|~googleads.blog
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=42103
 @@||amazon-adsystem.com/*/apstag.js$script,domain=walkingdead.fandom.com
@@ -1772,6 +1770,21 @@ go.com#@#.has-ad
 ! https://github.com/uBlockOrigin/uAssets/issues/4209
 @@||static.chartbeat.com/js/chartbeat_mab.js$script,domain=ny1.com
 
-! https://forums.lanik.us/viewtopic.php?f=64&t=42243
-/mixpanel.$badfilter
-/mixpanel.$domain=~mixpanel.com
+! https://github.com/uBlockOrigin/uAssets/issues/4226
+@@||computerworld.com/*/jquery$script,first-party
+
+! https://github.com/uBlockOrigin/uAssets/issues/4242
+@@||web-scripts.vice.com/*/AdobeAnalyticsSDK.min.js$script,domain=viceland.com
+
+! m.avito.ru ublock issues 327
+@@||an.yandex.ru/system/context.js$script,domain=avito.ru
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=42281
+/adtech.$badfilter
+/adtech.$domain=~adtech.md
+
+! https://www.reddit.com/r/uBlockOrigin/comments/a3r5e1/site_not_rendering_properly_with_ublockorigin/
+@@||adverts.ie/css/$stylesheet,first-party
+
+! https://github.com/uBlockOrigin/uAssets/issues/4275
+riderplanet-usa.com#@##ad_1

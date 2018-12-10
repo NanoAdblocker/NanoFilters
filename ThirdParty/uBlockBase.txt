@@ -666,8 +666,8 @@ facebook.com,facebookcorewwwi.onion##.userContentWrapper:has(a[href*="/ads/"])
 ! https://github.com/uBlockOrigin/uAssets/issues/3367
 facebook.com,facebookcorewwwi.onion##[id^="hyperfeed_story_id_"]:has(a[href*="client_token"])
 facebook.com#@#div[id^="hyperfeed_story_id_"]:has(a[href*="utm_campaign"])
-facebook.com,facebookcorewwwi.onion##.userContentWrapper>div div>span>span:has-text(^Suggested Post$)
-facebook.com,facebookcorewwwi.onion##div[id^="hyperfeed_story_id_"]:if(div > span:matches-css(display:none):has(abbr .timestampContent))
+facebook.com,facebookcorewwwi.onion##.userContentWrapper>div div>span>span:has-text(/^Suggested Post$/)
+facebook.com,facebookcorewwwi.onion##div[id^="hyperfeed_story_id_"]:has(div > span:has(abbr .timestampContent):matches-css(display: none))
 
 ! This removes blank space the right-hand side
 mail.yahoo.com###shellcontent:style(right: 0px !important;)
@@ -6333,11 +6333,17 @@ img.yt##+js(abort-on-property-read.js, ExoLoader)
 
 ! https://github.com/jspenguin2017/uBlockProtector/issues/883
 ! https://github.com/jspenguin2017/uBlockProtector/issues/940
+! https://github.com/jspenguin2017/uBlockProtector/issues/959
 dl.ccbluex.net##+js(addEventListener-defuser.js, load, _0x)
 ccbluex.net##+js(set-constant.js, adsBool, true)
 ccbluex.net##+js(set-constant.js, passed, true)
+@@||ccbluex.net^$generichide
 */adsid/integrator.js$script,redirect=noopjs,domain=dl.ccbluex.net
 ||pagead2.googlesyndication.com^$script,redirect=noopjs,domain=dl.ccbluex.net
+@@||googleads.g.doubleclick.net/pagead/html/*$subdocument,domain=dl.ccbluex.net
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=dl.ccbluex.net
+@@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl.js$script,domain=dl.ccbluex.net
+ccbluex.net##[id^="aswift"]
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1708
 thewebflash.com##+js(setTimeout-defuser.js, Adblock, 20)
@@ -7381,7 +7387,10 @@ cartoon8.tv##+js(set-constant.js, check_adblock, true)
 emol.com##+js(abort-on-property-write.js, OA_zones)
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/8dk0dl/foxebook_redirect_ad_only_when_ublock_is_active/
+! https://www.reddit.com/r/uBlockOrigin/comments/a4uzie/how_to_block_on_right_click/
 foxebook.net##+js(abort-current-inline-script.js, atob, tabunder)
+foxebook.net##+js(abort-on-property-read.js, zfgloadedpopup)
+||fuxoasim.link^
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=40530
 0123movies.com##+js(abort-current-inline-script.js, atob, tabunder)
@@ -7402,6 +7411,7 @@ asr-games.net##+js(abort-current-inline-script.js, document.getElementById, unde
 ||damoh.gmx.net/*$media,redirect=noopmp3-0.1s,domain=gmx.net
 ||damoh.golem.de/*$media,redirect=noopmp3-0.1s,domain=golem.de
 ||damoh.n-tv.de/*$media,redirect=noopmp3-0.1s,domain=n-tv.de
+||damoh.rtl.de/*$media,redirect=noopmp3-0.1s,domain=rtl.de
 ||damoh.tvnow.de/*$media,redirect=noopmp3-0.1s,domain=tvnow.de
 ||damoh.watchbox.de/*$media,redirect=noopmp3-0.1s,domain=watchbox.de
 ||damoh.web.de/*$media,redirect=noopmp3-0.1s,domain=web.de
@@ -7763,7 +7773,7 @@ cnnturk.com##+js(set-constant.js, hasAdBlock, false)
 ||portalcentric.net/cdn-cgi/apps/head/$script
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2168
-revivelink.com##+js(abort-current-inline-script.js, atob, tabunder)
+revivelink.com##+js(abort-on-property-read.js, decodeURIComponent)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2169
 kodi-tutorials.uk##+js(bab-defuser.js)
@@ -7907,10 +7917,7 @@ dompl3.info##+js(nowebrtc.js)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2206
 einthusan.tv##+js(setTimeout-defuser.js, AdBlocker, 1000)
-||springserve.com/vast/*einthusan$xmlhttprequest,redirect=nooptext,domain=imasdk.googleapis.com
-!#if env_firefox
 @@||springserve.com/vast/*einthusan$xmlhttprequest,domain=imasdk.googleapis.com
-!#endif
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2211
 bestgore.com##.ai_widget:has-text(Log In)
@@ -9661,12 +9668,6 @@ vipracing.tv##.rj-publi
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2717
 filmix.co##+js(abort-current-inline-script.js, String.fromCharCode, /\/\*[0-9a-f]{40}\*\//)
-
-! https://github.com/jspenguin2017/uBlockProtector/issues/959
-@@||ccbluex.net^$generichide
-@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=dl.ccbluex.net
-@@||pagead2.googlesyndication.com/pagead/js/*/show_ads_impl.js$script,domain=dl.ccbluex.net
-ccbluex.net##[id^="aswift"]
 
 ! https://forums.lanik.us/viewtopic.php?f=62&t=41116
 ! https://github.com/uBlockOrigin/uAssets/issues/4153
@@ -13968,7 +13969,8 @@ channel24.co.za,dailysun.co.za,fin24.com,health24.com,parent24.com,son.co.za,tra
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/9zvrd8/blocking_ad_ovelaying_on_video_player/
 yespornplease.com##+js(abort-on-property-read.js, Date.prototype.toUTCString)
-vshare.io###xxas
+vshare.io##[href^="https://www.brazzersnetwork.com/"]
+||creative.strpjmp.com^
 
 ! https://github.com/uBlockOrigin/uAssets/issues/4183
 @@||couponscorpion.com^$generichide
@@ -13997,7 +13999,8 @@ mrdeepfakes.com##[href*="offer"]
 ||plufdsb.com^
 
 ! https://github.com/NanoMeow/QuickReports/issues/370
-||cdn.zomap.de^$media,redirect=noopmp3-0.1s,domain=prosieben.de
+! https://www.reddit.com/r/uBlockOrigin/comments/a4ms6i/ublock_for_firefoxchrome_not_blocking_video_on/
+||cdn.zomap.de^$media,redirect=noopmp3-0.1s,domain=prosieben.de|prosiebenmaxx.de
 
 ! https://github.com/uBlockOrigin/uAssets/issues/4189
 ||lzrikate.com^
@@ -14454,3 +14457,33 @@ freecoursesite.com##.adsbygoogle
 @@||cdnjs.cloudflare.com/ajax/libs/fuckadblock/*/fuckadblock.min.js$script,domain=blog.sovoboys.net
 @@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=blog.sovoboys.net
 blog.sovoboys.net##[id^="aswift"]
+
+! https://github.com/uBlockOrigin/uAssets/issues/4279
+@@||scubidu.eu^$generichide
+
+! https://github.com/uBlockOrigin/uAssets/issues/4280
+lifeadori.tistory.com##+js(setTimeout-defuser.js, nextFunction, 250)
+
+! https://github.com/uBlockOrigin/uAssets/issues/4281
+root-top.com##+js(abort-on-property-read.js, adblockblock)
+
+! https://www.reddit.com/r/uBlockOrigin/comments/a4ik5w/how_to_remove_antiadblock_from_seriesthaicom/
+series-thai.com##+js(abort-on-property-write.js, adBlockDetected)
+series-thai.com##[href^="https://record.income88.com/"]
+
+! https://github.com/jspenguin2017/uBlockProtector/issues/1008
+nohat.cc##+js(set-constant.js, adblock, 1)
+
+! https://adblockplus.org/forum/viewtopic.php?p=182304#p182304
+nudeselfies.co##+js(abort-on-property-read.js, dataPopUnder)
+||nudeselfies.co/*.gif$image
+
+! https://github.com/NanoMeow/QuickReports/issues/426
+@@||iwatchtheoffice.com^$generichide
+rapid58.com##.banner
+
+! https://github.com/AdguardTeam/AdguardFilters/issues/26709
+komikindo.web.id##+js(addEventListener-defuser.js, load, 2000)
+
+! https://github.com/NanoMeow/QuickReports/issues/427
+tajemnice-swiata.pl##+js(fuckadblock.js-3.2.0)

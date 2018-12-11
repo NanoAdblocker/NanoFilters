@@ -128,6 +128,8 @@ maxedtech.com##+js(set-constant.js, adb, noopFunc)
 polygon.com##+js(abort-on-property-write.js, loadOutbrain)
 @@||topspeed.com^$generichide
 webwereld.nl##+js(set-constant.js, adsAreShown, true)
+sbenny.com##+js(setTimeout-defuser.js, (), 2000)
+forum.sbenny.com##.message-inner:has(.ads)
 altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 @@||rapidvideo.com/js/jquery.min.js$script,first-party
 ||geoip.nekudo.com^$badfilter

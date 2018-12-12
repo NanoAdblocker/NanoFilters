@@ -370,6 +370,9 @@ webwereld.nl##+js(set-constant.js, adsAreShown, true)
 sbenny.com##+js(setTimeout-defuser.js, (), 2000)
 forum.sbenny.com##.message-inner:has(.ads)
 
+# https://github.com/uBlockOrigin/uAssets/issues/4268#issuecomment-446765730
+80beyond.spacestation-online.com##+js(abort-on-property-write.js, adBlockDetected)
+
 # ############################################################################ #
 
 # Ads

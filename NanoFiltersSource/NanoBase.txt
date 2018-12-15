@@ -373,6 +373,9 @@ forum.sbenny.com##.message-inner:has(.ads)
 # https://github.com/uBlockOrigin/uAssets/issues/4268#issuecomment-446765730
 80beyond.spacestation-online.com##+js(abort-on-property-write.js, adBlockDetected)
 
+# https://github.com/NanoMeow/QuickReports/issues/446
+howjsay.com##+js(setTimeout-defuser.js, (), 1500)
+
 # ############################################################################ #
 
 # Ads

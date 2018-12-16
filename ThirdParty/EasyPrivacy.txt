@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: M3XOwuNhfCU0I3Dq91HGYg
-! Version: 201812122352
+! Checksum: ddTbdtUxglZfzO272txMpA
+! Version: 201812160002
 ! Title: EasyPrivacy
-! Last modified: 12 Dec 2018 23:52 UTC
+! Last modified: 16 Dec 2018 00:02 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -190,6 +190,7 @@
 .fr/z.gif?
 .gatracker.
 .gatracking.js
+.gif?*&url=*&banners=
 .gif?ad=
 .gif?event=
 .gif?hit_
@@ -321,6 +322,7 @@
 /__utm.js
 /__varnish_geoip
 /__wsm.gif
+/_bm/abd-
 /_bm/bd-
 /_dts.gif?
 /_lib/ga.js
@@ -584,6 +586,7 @@
 /analytics/newrelic_
 /analytics/p.gif?
 /analytics/pageview.
+/Analytics/Pdp/*
 /analytics/ping^
 /analytics/pv.gif?
 /analytics/report/*
@@ -847,10 +850,12 @@
 /bm-analytics-trk.js
 /bm-analytics/*
 /bm-bam-trk.
+/bms-analytics.
 /bn/tracker/*
 /boomerang-minified-
 /boomerang.js
 /boomLogger.
+/boomr.js
 /boost_stats.
 /botd.gif?
 /bounce_user_tracking-
@@ -1709,6 +1714,7 @@
 /googleanalyze1.
 /googleanalyze2.
 /googletagmanager_backend.js
+/googleTagManagerTrackEvent.
 /googletrack.js
 /googleTracker.
 /googletracker/*
@@ -2693,6 +2699,7 @@
 /ptmd?t=
 /ptrack.
 /pub/as?_ri_=$image
+/pub/imp?
 /pubfooter/js/tracking-
 /pubimppixel/*
 /public/analytics.js
@@ -2705,6 +2712,7 @@
 /pv.gif?1=
 /pv.gif?url
 /pv.txt?
+/pv/?aid=
 /pv/code.asp?
 /pv/new?
 /pv?fe=*&elg=
@@ -3025,6 +3033,7 @@
 /sitetracker21.
 /SiteTrackingGA.
 /sitetrek.js
+/sizes.gif?*=
 /sk1n-async.
 /skstats-
 /skstats_
@@ -3045,6 +3054,7 @@
 /snowplow/*$script
 /social_tracking.
 /socialButtonTracker.
+/SocialSharingTracking.
 /SocialTrack_
 /socialtracking.min.js
 /softclick.js
@@ -3338,6 +3348,7 @@
 /toplytics.js
 /tops-counter?
 /touchclarity/*
+/tp.gif?
 /tpix.gif?
 /tPx.gif?
 /tr.gif?
@@ -3409,6 +3420,7 @@
 /track_proxy?
 /track_social.
 /track_stat?
+/track_video.php?id=
 /track_views.
 /track_visit.
 /track_visit?
@@ -6034,6 +6046,7 @@ _mongo_stats/
 ||researchnow.co.uk^$third-party
 ||reson8.com^$third-party
 ||responsetap.com^$third-party
+||resulticks.com^$third-party
 ||retags.us^$third-party
 ||retargetly.com^$third-party
 ||retargettracker.com^$third-party
@@ -6072,6 +6085,7 @@ _mongo_stats/
 ||roitesting.com^$third-party
 ||roivista.com^$third-party
 ||rollingcounters.com^$third-party
+||roosterfirework.com^$third-party
 ||rpdtrk.com^$third-party
 ||rqtrk.eu^$third-party
 ||rrimpl.com^$third-party
@@ -6173,6 +6187,7 @@ _mongo_stats/
 ||silvergamed.com^$third-party
 ||silverpop.com^$third-party
 ||silverpush.co^$third-party
+||simility.com^$third-party
 ||simpleanalytics.io^$third-party
 ||simpleheatmaps.com^$third-party
 ||simplehitcounter.com^$third-party
@@ -6220,6 +6235,7 @@ _mongo_stats/
 ||smileyhost.net^$third-party
 ||smrk.io^$third-party
 ||smrtlnks.com^$third-party
+||snapdeal.biz^$third-party
 ||sniperlog.ru^$third-party
 ||sniphub.com^$third-party
 ||snoobi.com^$third-party
@@ -9234,6 +9250,7 @@ _mongo_stats/
 ||hypercomments.com/widget/*/analytics.html
 ||i-stats.ieurop.net^
 ||i.s-microsoft.com/wedcs/ms.js
+||i.viafoura.co^
 ||ib.adnxs.com^
 ||ibmcloud.com/collector/
 ||icbdr.com/images/pixel.gif
@@ -9436,6 +9453,9 @@ _mongo_stats/
 ||maxmind.com^*/geoip.js
 ||maxmind.com^*/geoip2.js
 ||mbsvr.net/js/tracker/
+||mc.webvisor.com^
+||mc.webvisor.org^
+||mc.webvisor.ru^
 ||mc.yandex.ru^
 ||mcs.delvenetworks.com^
 ||mcssl.com^*/track.ashx?
@@ -11785,6 +11805,7 @@ _mongo_stats/
 ||flipboard.com/usage?
 ||flipkart.com/ajaxlog/visitIdlog?
 ||flipkart.com/bbeacon.php?
+||flipkart.com^*/collector/
 ||flixist.com/img2.phtml
 ||flixster.com^*/pixels?
 ||fls-*.amazon.*%
@@ -12174,6 +12195,7 @@ _mongo_stats/
 ||livesupport.zol.co.zw/image_tracker.php?
 ||lm.pcworld.com/db/*/1.gif
 ||loc.gov/js/ga.js
+||local.ch/track/
 ||localads-statistics.maps.me^
 ||localmonero.co/static/ga.js
 ||log.data.disney.com^
@@ -13069,6 +13091,7 @@ _mongo_stats/
 ||tab.co.nz/track?
 ||tag-stats.huffpost.com^
 ||tagcommander.laredoute.
+||tags.aljazeera.
 ||tags.msnbc.com^
 ||tags.news.com.au^$script
 ||tags.transportdirect.info^
@@ -13187,6 +13210,7 @@ _mongo_stats/
 ||tracker.redditmedia.com^
 ||tracker.revip.info^
 ||tracker.secretescapes.com^
+||tracker.shopclues.com^
 ||tracker.uprinting.com^
 ||tracker.washtimes.com^
 ||tracker.wordstream.com^
@@ -13768,6 +13792,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 ||citybeat.de/include/cbtracker.
 ||comdirect.de/ccf/img/ecrm2.gif?
 ||commerzbank.de/companion/cnt.php?
+||comparis.ch^*/Tracking/
 ||computerbase.de/api/stats?
 ||computerbild.de/images/pic.gif?
 ||count.merian.de^
@@ -13858,6 +13883,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 ||merkur.de/connector.php?
 ||mikrocontroller.net^*/count_view/
 ||mm.welt.de^
+||mms.blick.ch^
 ||mobilcom-debitel.de/track/
 ||mopo.de/uid/
 ||motor-talk.de/track
@@ -13925,7 +13951,9 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 ||spiegel.de^*/statistic/
 ||sportal.de/js/cf.analytics.js
 ||stargate-planet.de^*counter*/c$image,script
+||statistics.raiffeisen.ch^
 ||statistics.riskommunal.net^
+||stats.autoscout24.ch^
 ||stats.bmw.de^
 ||stats.daserste.de^
 ||stats01.20min.ch^
@@ -13966,12 +13994,14 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 ||ts.otto.de^
 ||ts.rtl.de^
 ||tvcommunity.at/filmpicture.aspx?count=1&
+||twch.20min.ch^
 ||ui-portal.de/brbtpixel/
 ||unser-star-fuer-oslo.de^*/stats.php
 ||vfd2dyn.vodafone.de^
 ||videovalis.tv/tracking/
 ||vip.de^*/tracking.js
 ||viviano.de/cgi-bin/stat_gateway.cgi?
+||vv.ricardo.ch^
 ||wdm.map24.com^
 ||web-track.telekom-dienste.de^
 ||web.de/ivw/cp/

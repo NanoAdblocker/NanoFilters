@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: ddTbdtUxglZfzO272txMpA
-! Version: 201812160002
+! Checksum: 5kQsvMaUZjAuMPN1uCnd9A
+! Version: 201812171342
 ! Title: EasyPrivacy
-! Last modified: 16 Dec 2018 00:02 UTC
+! Last modified: 17 Dec 2018 13:42 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -978,6 +978,7 @@
 /cjtracker2.
 /ckimg_1x1.gif?
 /cklink.gif?
+/cklog.js
 /cl.gif?pvID=
 /clacking.js
 /clarity-*.js
@@ -1373,6 +1374,7 @@
 /empty.js.gif?
 /emstrack.
 /emtj_tracker.
+/end.gif?
 /endpoint/stats.
 /engine/ping?
 /ent_counter?
@@ -3565,6 +3567,7 @@
 /tracking/user_sync_widget?
 /tracking/views/*
 /tracking/widget/*
+/tracking/xhl?
 /tracking/xtcore.
 /tracking202/*
 /Tracking?id=
@@ -3612,6 +3615,7 @@
 /trackingService.min.js
 /trackingService/*
 /trackingVtm.
+/trackinpage.js
 /trackIt.js
 /trackit.php?
 /trackit.pl?
@@ -8411,6 +8415,7 @@ _mongo_stats/
 ||alibaba.com/ts?
 ||alipay.com/service/clear.png?
 ||aliyun.com/actionlog/
+||aliyuncs.com/r.png?
 ||allanalpass.com/track/
 ||alooma.com/track/
 ||alooma.io/track/?
@@ -9584,6 +9589,7 @@ _mongo_stats/
 ||p.po.st/p?t=view&$third-party
 ||p.po.st^*&pub=
 ||p.po.st^*&vguid=
+||p.travelsmarter.net^
 ||p.yotpo.com^
 ||p0.com/1x1
 ||paddle.com^*/analytics.js
@@ -9846,6 +9852,7 @@ _mongo_stats/
 ||spot.im/api/tracker/
 ||spot.im^*/pixel?
 ||spread.ly^*/statistics.php
+||srvmath.com^*/analytics.js
 ||ssl-images-amazon.com/images/*/common/1x1._*.gif$domain=~amazon.com
 ||st.cdnco.us^
 ||stat.boredomtherapy.com^
@@ -13974,7 +13981,9 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 ||topnews.de^*/aws.cgi?
 ||tp.deawm.com^
 ||tr.werkenntwen.de^
+||track.bernerzeitung.ch^
 ||track.cinestar.de^
+||track.derbund.ch^
 ||trackerstatistik.init-ag.de^
 ||tracking.autoscout24.com^
 ||tracking.beilagen-prospekte.de^
@@ -14584,6 +14593,10 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 ||prisjakt.nu/js.php?p=trafikfonden
 ||prod-metro-collector.cloudapp.net^
 ||stat.nyheter24.se^
+! Thai
+||dek-d.com^*/analytic.js
+||ta.sanook.com^
+||thairath.co.th/event/
 ! Turkish
 ||c.gazetevatan.com^
 ||haberler.com/dinamik/

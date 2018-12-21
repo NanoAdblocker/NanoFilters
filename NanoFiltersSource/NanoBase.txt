@@ -395,10 +395,6 @@ altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 # Fallback rule in case they start putting mining code into jQuery files
 # ||rapidvideo.com^$csp=child-src 'none';frame-src *;worker-src 'none';
 
-# False positive, test: http://geoip.nekudo.com/
-||geoip.nekudo.com^$badfilter
-||geoip.nekudo.com^$third-party
-
 # Breakage
 @@||easyweb.td.com/*/loggingService.js$script,first-party
 

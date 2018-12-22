@@ -38,7 +38,10 @@ captchme.com##script:inject(set-constant.js, CaptchmeState.adb, undefined)
 ||fastly.net/js/prebid-*$script,redirect=noopjs
 
 # https://github.com/NanoMeow/QuickReports/issues/366
-||culturedcrayon.com^
+# https://github.com/uBlockOrigin/uAssets/issues/4350
+||culturedcrayon.com^$important
+||dk4ywix.com^$important
+||rebelsubway.com^$important
 
 # ############################################################################ #
 

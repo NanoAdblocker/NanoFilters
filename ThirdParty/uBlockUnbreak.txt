@@ -1780,10 +1780,6 @@ go.com#@#.has-ad
 ! m.avito.ru ublock issues 327
 @@||an.yandex.ru/system/context.js$script,domain=avito.ru
 
-! https://forums.lanik.us/viewtopic.php?f=64&t=42281
-/adtech.$badfilter
-/adtech.$domain=~adtech.md
-
 ! https://www.reddit.com/r/uBlockOrigin/comments/a3r5e1/site_not_rendering_properly_with_ublockorigin/
 @@||adverts.ie/css/$stylesheet,first-party
 
@@ -1795,10 +1791,6 @@ adproceed.com#@#.single-ad
 
 ! https://www.winboard.org/threads/interaktion-auf-website-nicht-moeglich-wwm-trainigslager.250843/
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=wwm.rtl.de
-
-! https://forums.lanik.us/viewtopic.php?f=64&t=42311
-/adboost.$domain=~adboost.io,badfilter
-/adboost.$domain=~adboost.io|~adboost.sellerboost.de
 
 ! Remove `consensu.org` in Peter Lowe's list
 ||consensu.org^$badfilter
@@ -1813,3 +1805,30 @@ hdblog.it#@#a[href^="https://www.amazon."][href*="tag="]
 ! http://forum.canucks.com/topic/388440-pgt-philadelphia-flyers-at-vancouver-canucks-dec-15-2018/?page=2&tab=comments#comment-14661218
 @@||ads.rogersmedia.com/cbc$subdocument,domain=cbc.ca
 @@||doubleclick.net/ssai/event/$xmlhttprequest,domain=players.brightcove.net
+
+! https://github.com/NanoMeow/QuickReports/issues/457#issuecomment-447925751
+gplcanyon.com#@#.adsbygoogle
+
+! https://github.com/NanoMeow/QuickReports/issues/462
+@@||bing.com/$popup,domain=msn.com
+@@||startpage.com^$popup,domain=msn.com
+
+! https://www.reddit.com/r/uBlockOrigin/comments/a7d5to/i_cant_view_reddit_embeds_on_a_website/
+@@||bloomjoy.com^$image,domain=wokesloth.com
+
+! https://forums.lanik.us/viewtopic.php?p=144296#p144296
+://adv.$domain=~adv.cincsys.com|~adv.co.it|~adv.derfunke.at|~adv.ee|~adv.gg|~adv.michaelgat.com|~adv.msk.ru|~adv.ru|~adv.vg|~adv.works|~advids.co|~erti.se|~escreverdireito.com|~farapp.com|~forex-tv-online.com|~r7.com|~typeform.com|~welaika.com,badfilter
+://adv.$domain=~adv.cincsys.com|~adv.co.it|~adv.derfunke.at|~adv.ee|~adv.gg|~adv.michaelgat.com|~adv.msk.ru|~adv.ru|~adv.vg|~adv.works|~advids.co|~erti.se|~escreverdireito.com|~farapp.com|~forex-tv-online.com|~r7.com|~typeform.com|~welaika.com|~adv.cryptonetlabs.it
+
+! https://forums.lanik.us/viewtopic.php?f=90&t=42355
+@@||ticketonline.de^$frame,domain=stage-entertainment.de
+
+! https://github.com/uBlockOrigin/uAssets/issues/4350
+@@||dk4ywix.com^$domain=endocrineweb.com
+@@||rebelsubway.com^$domain=endocrineweb.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/4353#issuecomment-449159137
+@@||cdn.turner.com/cnn/van/resources/*/scripts/vendor/loggly.tracker.js$xhr,domain=trentonian.com
+
+! https://forums.lanik.us/viewtopic.php?p=144333#p144333
+||marketo.com^$badfilter

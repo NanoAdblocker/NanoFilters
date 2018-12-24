@@ -14,6 +14,7 @@ vivaldi.com##+js(nanop-click-elements-onready.js, #acceptCookie)
 bizjournals.com##+js(set-constant.js, __page__.isPremium, false)
 ||static.infoglobo.com.br/paywall/*$domain=oglobo.globo.com
 ||washingtonpost.com/wp-stat/pwapi/prod/*
+||tinypass.com^$domain=businessinsider.com
 live.com,microsoft.com,office.com,windows.com,xbox.com###epb
 wikipedia.org##+js(abort-on-property-write.js, frb)
 rektstack.com##+js(abort-on-property-write.js, document.oncontextmenu)

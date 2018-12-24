@@ -62,9 +62,7 @@ msnbc.com,nbcnews.com,today.com##+js(abort-on-property-read.js, stop)
 vizer.tv##.open.adsByVizer.vizerNewBox
 
 # https://github.com/NanoMeow/QuickReports/issues/474
-semestr.ru#@##idbanner:style(max-height: 41px !important; opacity: 0 !important; pointer-events: none !important)
-semestr.ru#@#.well-google:style(max-height: 41px !important; opacity: 0 !important; pointer-events: none !important)
-semestr.ru#@#div[id^="bn_"]
+math.semestr.ru##+js(setInterval-defuser.js, IsAdBlock, 1000)
 
 # ############################################################################ #
 

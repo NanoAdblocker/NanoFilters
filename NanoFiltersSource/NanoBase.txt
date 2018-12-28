@@ -1,4 +1,4 @@
-# ############################################################################ #
+# ---------------------------------------------------------------------------- #
 
 # Base filter for Nano Adblocker
 
@@ -6,7 +6,7 @@
 # Resources, similarly, purging cache of Nano filters also purge cache of Nano
 # Adblocker Extra Resources
 
-# ############################################################################ #
+# ---------------------------------------------------------------------------- #
 
 # Anti-adblock demos
 
@@ -26,7 +26,7 @@ captchme.com##script:inject(set-constant.js, CaptchmeState.adb, undefined)
 # https://github.com/LiCybora/NanoDefenderFirefox/issues/88
 @@||whoer.net/js/advert.js$script,first-party
 
-# ############################################################################ #
+# ---------------------------------------------------------------------------- #
 
 # Generic anti-adblock
 
@@ -48,7 +48,7 @@ captchme.com##script:inject(set-constant.js, CaptchmeState.adb, undefined)
 ||jamexistence.com^$important
 ||rebelsubway.com^$important
 
-# ############################################################################ #
+# ---------------------------------------------------------------------------- #
 
 # Hard anti-adblock
 
@@ -69,7 +69,7 @@ vizer.tv##.open.adsByVizer.vizerNewBox
 # https://github.com/NanoMeow/QuickReports/issues/474
 math.semestr.ru##+js(setInterval-defuser.js, IsAdBlock, 1000)
 
-# ############################################################################ #
+# ---------------------------------------------------------------------------- #
 
 # Soft anti-adblock
 
@@ -179,7 +179,7 @@ camwhores.tv##body > div.top:has-text(AdBlock)
 camwhores.tv##body > div:matches-css(z-index: 9999999)
 camwhores.tv##body > div:matches-css(z-index: 9999998)
 
-# ############################################################################ #
+# ---------------------------------------------------------------------------- #
 
 # Soft anti-adblock that are also included in uBlock annoyance filter
 
@@ -396,14 +396,14 @@ endocrineweb.com##+js(abort-on-property-read.js, admiral)
 # https://github.com/NanoMeow/QuickReports/issues/505
 @@||soundonsound.com^$generichide
 
-# ############################################################################ #
+# ---------------------------------------------------------------------------- #
 
 # Ads
 
 # https://gitlab.com/xuhaiyang1234/NanoAdblockerSecretIssues/issues/1
 altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 
-# ############################################################################ #
+# ---------------------------------------------------------------------------- #
 
 # Unbreak
 
@@ -415,7 +415,7 @@ altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 # Breakage
 @@||easyweb.td.com/*/loggingService.js$script,first-party
 
-# ############################################################################ #
+# ---------------------------------------------------------------------------- #
 
 # Unbreak for Adblock Warning Removal List
 
@@ -425,7 +425,7 @@ altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 # https://github.com/uBlockOrigin/uAssets/issues/3768
 porndig.com#@#.noadblock
 
-# ############################################################################ #
+# ---------------------------------------------------------------------------- #
 
 # Rules that should be included in EasyList or regional filters
 
@@ -436,7 +436,7 @@ avseesee.com##.ads
 # https://github.com/NanoMeow/QuickReports/issues/64
 filmozercy.com##a[href$="filmozercy.com/wspieraj-nasza-prace-wylacz-adblocka"]
 
-# ############################################################################ #
+# ---------------------------------------------------------------------------- #
 
 # Specific for Edge browser
 
@@ -450,7 +450,7 @@ businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 
 !#endif
 
-# ############################################################################ #
+# ---------------------------------------------------------------------------- #
 
 # Beta testing
 
@@ -463,4 +463,4 @@ hulu.com##.ad-choices
 ||ads-v-darwin.hulustream.com/published/*.mp4$media,redirect=noopmp4-1s,domain=hulu.com
 ||akamaihd.net/prerolls$media,redirect=noopmp4-1s,domain=hulu.com
 
-# ############################################################################ #
+# ---------------------------------------------------------------------------- #

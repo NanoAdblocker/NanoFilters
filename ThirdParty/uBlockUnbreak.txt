@@ -1833,3 +1833,12 @@ gplcanyon.com#@#.adsbygoogle
 ! https://github.com/uBlockOrigin/uAssets/issues/4368#issuecomment-449609583
 /adworks.$domain=~adworks.att.com|~adworks.co.il,badfilter
 /adworks.$domain=~adworks.att.com|~adworks.co.il|~adworks.net
+
+! https://github.com/uBlockOrigin/uAssets/issues/4400
+tecnoriales.win#@#.vertical-ads
+
+! https://github.com/uBlockOrigin/uAssets/issues/4418
+@@||cdn.optimizely.com/public/*$script,domain=nytimes.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/4450
+@@||googletagmanager.com/gtm.js$script,domain=wipliz.com

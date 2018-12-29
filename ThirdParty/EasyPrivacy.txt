@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: hedQ6bkus+vxMj1g19yLwA
-! Version: 201812231432
+! Checksum: RS1EkkfrtSjwIa4VDWJY4Q
+! Version: 201812291702
 ! Title: EasyPrivacy
-! Last modified: 23 Dec 2018 14:32 UTC
+! Last modified: 29 Dec 2018 17:02 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -555,6 +555,7 @@
 /analytics.swf?
 /analytics.v1.js
 /analytics/*satellitelib.js
+/analytics/?event
 /analytics/activity.
 /analytics/analytics.$~xmlhttprequest
 /analytics/call-
@@ -974,6 +975,7 @@
 /check.php?referrer=
 /checkForAdvertorials.
 /checkstat.asp
+/chicken.gif?*=
 /ci-capture.
 /cim_tns/spring.js
 /citycounter.
@@ -2110,6 +2112,7 @@
 /log/p.gif?
 /log/pageview
 /log/report/*
+/log/sentry/*
 /log/web?
 /log2.php?
 /Log?*&adID=
@@ -2815,6 +2818,7 @@
 /referral_tracking.
 /referrer.js
 /referrer.php?*http
+/referrer_invisible.js?
 /referrer_tracking.
 /RefinedAdsTracker.swf
 /refresh_uid?$script
@@ -2965,7 +2969,7 @@
 /send-impressions.html
 /sensor/statistic?
 /sensorsdata-
-/sensorsdata.
+/sensorsdata.$domain=~sensorsdata.cn
 /seo.googleAnalytics-
 /seo.googleAnalytics.
 /seo.tagCommander-
@@ -3162,7 +3166,7 @@
 /statistics.asp?
 /statistics.aspx?profile
 /statistics.html?action=
-/statistics.js?
+/statistics.js?$third-party
 /statistics.php?data=
 /statistics/fab.
 /statistics/ga.
@@ -3283,6 +3287,7 @@
 /t-richrelevance-
 /t.*?ref=$~xmlhttprequest
 /t.gif?
+/t/event.js?
 /t/event?
 /t?referer=
 /tablytics.
@@ -3387,6 +3392,7 @@
 /track.js?screen=
 /track.p?
 /track.php?*&uid=
+/track.php?referrer=
 /track.png?
 /track.srv.
 /track/*&CheckCookieId=
@@ -3494,6 +3500,7 @@
 /TrackerAS3.
 /trackerGif?
 /TrackerHandler.
+/trackerLog.php?
 /trackerpixel.js
 /trackers/hp_conversion-
 /trackerstatistik.
@@ -3657,6 +3664,7 @@
 /trackuity.
 /TrackUser?callback=
 /trackv&tmp=
+/TrackView/*$xmlhttprequest
 /TrackView/?track
 /TrackViews/*
 /trackVisit/*
@@ -3972,6 +3980,7 @@
 /wp-counter.php
 /wp-js/analytics.
 /wp-powerstat/*
+/wp-rum/*
 /wp-slimstat/*
 /wp-useronline/useronline.
 /wp.gif?wpi
@@ -5941,6 +5950,7 @@ _mongo_stats/
 ||plwosvr.net^$third-party
 ||pm0.net^$third-party
 ||pm14.com^$third-party
+||pnstat.com^$third-party
 ||pntra.com^$third-party
 ||pntrac.com^$third-party
 ||pntrs.com^$third-party
@@ -5971,7 +5981,6 @@ _mongo_stats/
 ||promotionengine.com^$third-party
 ||proofpositivemedia.com^$third-party
 ||provenpixel.com^$third-party
-||proxad.net^$third-party
 ||prtracker.com^$third-party
 ||pstats.com^$third-party
 ||psyma-statistics.com^$third-party
@@ -6527,10 +6536,12 @@ _mongo_stats/
 ||triggertag.gorillanation.com^$third-party
 ||triggit.com^$third-party
 ||triptease.io^$third-party
+||triptease.net^$third-party
 ||trkjmp.com^$third-party
 ||trklvs.com^$third-party
 ||trkn.us^$third-party
 ||trksrv44.com^$third-party
+||trmnsite.com^$third-party
 ||trovus.co.uk^$third-party
 ||trs.cn^$third-party
 ||trtl.ws^$third-party
@@ -6603,6 +6614,7 @@ _mongo_stats/
 ||vbanalytics.com^$third-party
 ||vdna-assets.com^$third-party
 ||veduy.com^$third-party
+||vee24.com^$third-party
 ||veille-referencement.com^$third-party
 ||veinteractive.com^$third-party
 ||velaro.com^$third-party
@@ -7784,7 +7796,6 @@ _mongo_stats/
 ||trafit.com^$third-party
 ||tyxo.bg^$third-party
 ! Chinese
-||126.net^$third-party
 ||163yun.com^$third-party
 ||180.76.2.18^$third-party,domain=~baidu.ip
 ||50bang.org^$third-party
@@ -8849,6 +8860,7 @@ _mongo_stats/
 ||conde.io/beacon
 ||condenastdigital.com/content?$third-party
 ||connect.facebook.net/signals/$third-party
+||connect.facebook.net^*/fbds.js$third-party
 ||connect.facebook.net^*/fbevents.js$third-party
 ||contactatonce.com/VisitorContext.aspx?
 ||content.cpcache.com^*/js/ga.js
@@ -9051,6 +9063,7 @@ _mongo_stats/
 ||domodomain.com^*/ddsense.aspx?
 ||doug1izaerwt3.cloudfront.net^
 ||dreamhost.com/*.cgi?$image,third-party
+||drift.com/track
 ||ds-aksb-a.akamaihd.net^
 ||dt.sellpoint.net^
 ||dtym7iokkjlif.cloudfront.net/dough/
@@ -9517,6 +9530,7 @@ _mongo_stats/
 ||metering.pagesuite.com^$third-party
 ||metric.nwsource.com^
 ||metrics-api.librato.com^
+||metrics.api.drift.com^
 ||metrics.brightcove.com^
 ||metrics.chmedia.com^
 ||metrics.ctvdigital.net^
@@ -10138,6 +10152,7 @@ _mongo_stats/
 ||track.written.com^
 ||track.yfret.com^
 ||track.yieldsoftware.com^
+||tracker.affirm.com^
 ||tracker.beezup.com^
 ||tracker.downdetector.com^
 ||tracker.everestnutrition.com^
@@ -10166,6 +10181,7 @@ _mongo_stats/
 ||tracking.allposters.com^
 ||tracking.badgeville.com^$third-party
 ||tracking.bidmizer.com^$third-party
+||tracking.brandmentions.com^
 ||tracking.cmcigroup.com^
 ||tracking.cmjump.com.au^
 ||tracking.dealerwebwatcher.com^
@@ -10208,6 +10224,7 @@ _mongo_stats/
 ||tracking.tradeking.com^
 ||tracking.waterfrontmedia.com^
 ||tracking.worldmedia.net^$third-party
+||tracking1.brandmentions.com^
 ||tracking2.channeladvisor.com^
 ||tracking2.interweave.com^$third-party
 ||trackingapi.cloudapp.net^
@@ -10348,6 +10365,7 @@ _mongo_stats/
 ||webstats.motigo.com^$third-party
 ||webstats.seoinc.com^
 ||webstats.thaindian.com^
+||websuccess-data.com/tracker.js
 ||webterren.com/webdig.js?
 ||webtracker.apicasystem.com^
 ||webtracker.educationconnection.com^
@@ -10734,6 +10752,8 @@ _mongo_stats/
 ||netease.com/beacons/
 ||p.aty.sohu.com^
 ||pos.baidu.com^
+||pstatp.com^*/raven.js
+||pstatp.com^*/ttstatistics.
 ||pv.hd.sohu.com^
 ||pv.sohu.com^
 ||qbox.me/vds.js
@@ -11282,6 +11302,7 @@ _mongo_stats/
 ||analytics.bloomberg.com^
 ||analytics.brave.com^
 ||analytics.ecosia.org^
+||analytics.eip.telegraph.co.uk^
 ||analytics.femalefirst.co.uk^
 ||analytics.global.sky.com^
 ||analytics.go.com^
@@ -11501,6 +11522,7 @@ _mongo_stats/
 ||c.ipaddress.com^
 ||c.microsoft.com^
 ||c.newsinc.com^
+||c.paypal.com^
 ||c.wort-suche.com^
 ||c.x.oanda.com^
 ||c.ypcdn.com^*/webyp?rid=
@@ -12100,6 +12122,7 @@ _mongo_stats/
 ||images.military.com/pixel.gif
 ||imagetwist.com/?op=
 ||imdb.com/rd/?q
+||imdb.com/tr/
 ||imdb.com/twilight/?
 ||imdb.com/video/*/metrics_
 ||imdb.com/video/*metrics?
@@ -13616,6 +13639,7 @@ _mongo_stats/
 ||zap2it.com^*/editorial-partner/
 ||zappos.com/*.cgi?
 ||zappos.com/karakoram/js/main.
+||zappos.com^*/events?
 ||zawya.com/zscripts/ajaxztrack.cfm?
 ||zawya.com^*/logFile.cfm?
 ||zdnet.com/wi?
@@ -14069,6 +14093,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 ||wienerzeitung.at/__webtrends/
 ||wirtschaftspresse.biz/pshb?
 ||wiwo.de/analytics/
+||wlw.de^*/tracking/
 ||xara.hse24.de^
 ||xtranews.de/counter/
 ||zdf.de^*/tracking?
@@ -14331,6 +14356,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 ||tongji.mafengwo.cn^
 ||tongji2.vip.duba.net/__infoc.gif?
 ||top.baidu.com/js/nsclick.js
+||toutiao.com/action_log/
 ||toutiao.com^*/user_log/
 ||tr.discuss.com.hk^
 ||tr.price.com.hk^

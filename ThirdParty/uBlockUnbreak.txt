@@ -749,7 +749,8 @@ msn.com#@#[style*="background-image:"]
 ! https://github.com/uBlockOrigin/uAssets/issues/946
 ! https://github.com/uBlockOrigin/uAssets/issues/1817
 ! https://github.com/uBlockOrigin/uAssets/issues/4368#issuecomment-449583532
-@@||authedmine.com^$domain=4x0.me|ivpaste.com
+! https://github.com/uBlockOrigin/uAssets/issues/4368#issuecomment-450742207
+@@||authedmine.com^$domain=4x0.me|cashperlink.com|ivpaste.com
 
 ! https://github.com/gorhill/uBlock/issues/3321
 @@||livechatinc.com^$generichide
@@ -1617,9 +1618,6 @@ tubewolf.com##.bnnr
 ! https://www.reddit.com/r/uBlockOrigin/comments/9rnaq5/possible_memory_leak/
 @@||utility.rogersmedia.com/utility.js$domain=todaysparent.com
 
-! https://github.com/uBlockOrigin/uAssets/issues/3860
-@@||wpgdadatong.com/AD/*/image/$image,first-party
-
 ! https://github.com/uBlockOrigin/uAssets/issues/3863
 @@||sportranker.com/wp-content/themes/mts_ad_sense/*$stylesheet,script,first-party
 
@@ -1753,9 +1751,6 @@ go.com#@#.has-ad
 @@||telecinco.es/dist/assets/comscore/streamsense$script,first-party
 @@||telecinco.es/dist/assets/omniture/visitorapi.min.js$script,first-party
 
-! https://github.com/uBlockOrigin/uAssets/issues/4197
-@@||adobedtm.com^*/satellitelib-$script,domain=australia.com
-
 ! https://forums.lanik.us/viewtopic.php?f=64&t=42233
 @@||playstationlifestyle.net/wp-content/plugins/pb-bwp-minify/*chartbeat$script,first-party
 
@@ -1842,3 +1837,22 @@ tecnoriales.win#@#.vertical-ads
 
 ! https://github.com/uBlockOrigin/uAssets/issues/4450
 @@||googletagmanager.com/gtm.js$script,domain=wipliz.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/4454
+@@||googletagmanager.com/gtag/js$script,domain=stardock.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/4484
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=classicreload.com
+
+! https://github.com/uBlockOrigin/uAssets/pull/4486
+@@||easyweb.td.com/*/loggingService.js$script,1p
+@@||plugin.intuitcdn.net/ua-parser-js/*/ua-parser.min.js$script,domain=qbo.intuit.com
+
+! bad filters in easylist => blank page #1648
+|http://$script,subdocument,third-party,xmlhttprequest,domain=1movies.is|moviescouch.co|torrentfunk.com,badfilter
+|http://*?$script,xmlhttprequest,domain=1movies.is|moviescouch.co|torrentfunk.com,badfilter
+|https://$script,subdocument,third-party,xmlhttprequest,domain=1movies.is|moviescouch.co|torrentfunk.com,badfilter
+|https://*?$script,xmlhttprequest,domain=1movies.is|moviescouch.co|torrentfunk.com,badfilter
+
+! https://forums.lanik.us/viewtopic.php?p=144632#p144632
+windowscentral.com#@#a[href^="/e?link="]

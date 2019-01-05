@@ -329,9 +329,9 @@ process.on("unhandledRejection", (err) => {
 
 (async () => {
     await Promise.all([
-        processOneNanoFilter("NanoBase.txt", "Nano filters"),
-        processOneNanoFilter("NanoAnnoyance.txt", "Nano filters - Annoyance"),
-        processOneNanoFilter("NanoWhitelist.txt", "Nano filters - Whitelist"),
+        processOneNanoFilter("NanoBase.txt", "Nano Filters"),
+        processOneNanoFilter("NanoAnnoyance.txt", "Nano Filters - Annoyance"),
+        processOneNanoFilter("NanoWhitelist.txt", "Nano Filters - Whitelist"),
 
         processOneResource(
             "NanoFiltersSource", "NanoFilters",

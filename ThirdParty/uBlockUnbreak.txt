@@ -41,6 +41,7 @@
 ! https://github.com/uBlockOrigin/uAssets/issues/729
 @@||global.fncstatic.com/$script,domain=video.foxnews.com
 ||cdn.krxd.net^$script,redirect=noopjs,domain=video.foxnews.com
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=insider.foxnews.com
 
 ! http://forums.lanik.us/viewtopic.php?f=64&t=17842&start=30#p59663
 ! To counter `statcounter.com` in Peter Lowe's, MVPS, Dan Pollock's and hpHosts
@@ -489,7 +490,9 @@ kinopoisk.ru###image:style(opacity: 1 !important;)
 @@||data.edinburghopendata.info^$document
 
 ! https://github.com/uBlockOrigin/uAssets/issues/441
+! https://github.com/easylist/easylist/issues/2586
 ||bbci.co.uk^*/analytics.js$script,redirect=noopjs,domain=bbc.co.uk
+||static.bbc.co.uk/bbcdotcom/*/adverts.js$script,1p,important,redirect=noopjs
 
 ! https://twitter.com/saandstorm/status/873374292968435712
 @@||blizzardwatch.com^*/bw-ads.js$script,first-party
@@ -750,7 +753,8 @@ msn.com#@#[style*="background-image:"]
 ! https://github.com/uBlockOrigin/uAssets/issues/1817
 ! https://github.com/uBlockOrigin/uAssets/issues/4368#issuecomment-449583532
 ! https://github.com/uBlockOrigin/uAssets/issues/4368#issuecomment-450742207
-@@||authedmine.com^$domain=4x0.me|cashperlink.com|ivpaste.com
+! https://github.com/uBlockOrigin/uAssets/issues/4368#issuecomment-451670210
+@@||authedmine.com^$domain=4x0.me|cashperlink.com|ivpaste.com|shrtme.me
 
 ! https://github.com/gorhill/uBlock/issues/3321
 @@||livechatinc.com^$generichide
@@ -931,6 +935,8 @@ vhacks.org#@#.sponsor-logo
 @@about:blank$popup,domain=onlinevideoconverter.com
 
 ! https://github.com/jspenguin2017/uBlockProtector/issues/875
+! https://github.com/jspenguin2017/uBlockProtector/issues/1020
+@@||userscloud.com/js/vendor/core/bootstrap.js$script,1p
 @@||usercdn.com^$subdocument,domain=userscloud.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1682
@@ -1172,6 +1178,9 @@ kotaku.com#@##dfp-ad-1
 calgarysun.com,canoe.com,edmontonsun.com,financialpost.com,nationalpost.com,ottawasun.com,theprovince.com,torontosun.com,winnipegsun.com#@#.adsizewrapper
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2451
+! https://github.com/NanoMeow/QuickReports/issues/546
+@@||sonycrackle.com/vendor/AdManager.js$script,1p
+@@||fwlive.sonycrackle.com/ad/*$script,1p
 @@||imrworldwide.com/novms/*/ggcm*.js$script,domain=sonycrackle.com
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/8nzgpp/1168_expedia_search_results_not_displaying_unless/
@@ -1233,6 +1242,8 @@ sounddrain.net##.coinhive-captcha:style(max-width: none !important;)
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/8vozyp/kimcartoon_isnt_working_at_all_with_ublock/
 ||kimcartoon.me^$script,domain=kimcartoon.me,badfilter
+! https://www.reddit.com/r/uBlockOrigin/comments/ad0ucd/cant_play_video/
+||kimcartoon.to^$csp=script-src 'self' * 'unsafe-inline',badfilter
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2609
 @@||kimcartoon.me/External/RSK$xmlhttprequest,first-party
@@ -1856,3 +1867,50 @@ tecnoriales.win#@#.vertical-ads
 
 ! https://forums.lanik.us/viewtopic.php?p=144632#p144632
 windowscentral.com#@#a[href^="/e?link="]
+
+! https://www.camp-firefox.de/forum/viewtopic.php?p=1101018#p1101018
+@@||laola1.at/?proxy=js/build/layout$script,1p
+
+! newser.com broken search by EasyList
+@@||google.com/afsonline/*$script,domain=newser.com
+
+! https://www.reddit.com/r/uBlockOrigin/comments/ack9ee/video_window_blocked_on_gamepress_site/
+@@||connatix.com^$domain=dragalialost.gamepress.gg
+
+! https://forums.lanik.us/viewtopic.php?p=144724#p144724
+@@||smartclient.com/smartclient/isomorphic/system/modules/ISC_Analytics.js$script,1p
+
+! https://github.com/uBlockOrigin/uAssets/issues/3573#issuecomment-452611187
+|http://$image,script,subdocument,third-party,xmlhttprequest,domain=userscloud.com,badfilter
+|https://$image,script,subdocument,third-party,xmlhttprequest,domain=userscloud.com,badfilter
+
+! https://github.com/uBlockOrigin/uAssets/issues/1241#issuecomment-452568831
+@@||cdn.mg2connext.com^$font,domain=denverpost.com
+
+! https://forums.lanik.us/viewtopic.php?p=144766#p144766
+@@||xhamster.com/videos/$csp,first-party
+
+! https://github.com/uBlockOrigin/uAssets/issues/3703#issuecomment-453920675
+@@||instagram.com^$popup,domain=msn.com
+
+! https://forums.lanik.us/viewtopic.php?p=144832#p144832
+@@||dailymotion.com/embed/video/$frame
+
+! https://github.com/easylist/easylist/issues/2631
+/performancetimer.js$badfilter
+
+! https://github.com/easylist/easylist/issues/2623
+||unblocked.app^$csp=script-src 'self' * 'unsafe-inline',badfilter
+||seedpeer.me^$csp=script-src 'self' 'unsafe-inline',badfilter
+seedpeer.me,seedpeer.unblocked.app##.section.page-content > .container > div > div:has-text(/recommended/i)
+
+! https://github.com/easylist/easylist/issues/2285
+@@||fastwhitecat.com/wp-content/plugins/*-google-tag-manager/$script,1p
+
+! https://github.com/easylist/easylist/issues/1856
+kizi.com##+js(set-constant.js, adblock_active, false)
+@@||imasdk.googleapis.com/js/$script,domain=kizi.com
+
+! To counter `amplitude.com` in Peter Lowe's
+||amplitude.com^$badfilter
+||amplitude.com^$3p

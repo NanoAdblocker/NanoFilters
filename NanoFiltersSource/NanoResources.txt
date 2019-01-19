@@ -210,7 +210,7 @@ nano-hijack-script-create.js application/javascript
 
 # Remove elements when the documents gets ready, 1 required argument.
 # selector - The selector for elements to remove, must be a plain CSS selector,
-# pseudo-selectors are not supported.
+#            pseudo-selectors are not supported.
 nano-remove-elements-onready.js application/javascript
 (function() {
     var selector = '{{1}}';
@@ -235,7 +235,7 @@ nano-remove-elements-onready.js application/javascript
 # Insert an invisible elements onto the page, can be used to dodge baits,
 # 1 required argument.
 # identifier - An identifier, either an id or a class name. Like "#id" or
-# ".class"
+#              ".class"
 nano-make-bait-element.js application/javascript
 (function() {
     var identifier = '{{1}}';
@@ -260,7 +260,7 @@ nano-make-bait-element.js application/javascript
 
 # Click elements when the documents gets ready, 1 required argument.
 # selector - The selector for elements to remove, must be a plain CSS selector,
-# pseudo-selectors are not supported.
+#            pseudo-selectors are not supported.
 nanop-click-elements-onready.js application/javascript
 (function() {
     var guard = '{{nano}}';
@@ -288,7 +288,7 @@ nanop-click-elements-onready.js application/javascript
 
 # Click elements when the documents gets loaded, 1 required argument.
 # selector - The selector for elements to remove, must be a plain CSS selector,
-# pseudo-selectors are not supported.
+#            pseudo-selectors are not supported.
 nanop-click-elements-onload.js application/javascript
 (function() {
     var guard = '{{nano}}';
@@ -319,7 +319,7 @@ nanop-click-elements-onload.js application/javascript
 # domain - Optional, the domain, default to current domain.
 # secure - true or false. Optional, default to false.
 # del    - true or false. Set to true to delete the cookie instead. Optional,
-# default to false.
+#          default to false.
 nanop-easy-set-cookie.js application/javascript
 (function() {
     var guard = '{{nano}}';

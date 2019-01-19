@@ -1411,7 +1411,9 @@ techadvisor.co.uk#@#.adsbygoogle
 ! https://github.com/uBlockOrigin/uAssets/issues/3295
 @@||rapidvideo.com/js/videojs-contrib-hls.min.js$script,first-party
 
+! fix for issues caused by `EasyList` regex for anime sites
 ! https://github.com/uBlockOrigin/uAssets/issues/2333#issuecomment-415652949
+/^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ee]xternal|[Ii]mages|[Ss]cripts|[Uu]ploads|ac|ajax|assets|combined|content|cov|cover|(img\/bg)|(img\/icon)|inc|jwplayer|player|playlist-cat-rss|static|thumbs|wp-content|wp-includes)\/)(.*)/$first-party,script,domain=~animeland.hu
 /^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ee]xternal|[Ii]mages|[Ss]cripts|[Uu]ploads|ac|ajax|assets|combined|content|cov|cover|(img\/bg)|(img\/icon)|inc|jwplayer|player|playlist-cat-rss|static|thumbs|wp-content|wp-includes)\/)(.*)/$first-party,xmlhttprequest,domain=~animeland.hu,badfilter
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3304
@@ -1914,3 +1916,20 @@ kizi.com##+js(set-constant.js, adblock_active, false)
 ! To counter `amplitude.com` in Peter Lowe's
 ||amplitude.com^$badfilter
 ||amplitude.com^$3p
+
+! https://forums.lanik.us/viewtopic.php?p=144882#p144882
+/admedia.$domain=~admedia.co.il,badfilter
+/admedia.$domain=~admedia.co.il|~admedia.net.au
+
+! https://forums.lanik.us/viewtopic.php?p=144884#p144884
+@@||ipinfo.io/?token$xmlhttprequest,domain=webtv.ert.gr
+
+! https://github.com/uBlockOrigin/uAssets/issues/4653
+easyvideo.me,playbb.me#@#div[style^="width:"]
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=42435
+||bitrix.info^$3p,badfilter
+||bitrix.info/ba.js$script
+
+! https://github.com/uBlockOrigin/uAssets/issues/4675
+@@||trbas.com/jive$script,domain=chicagotribune.com

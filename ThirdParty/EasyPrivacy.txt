@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: sFCk4v7E2VWzW6MrUpFQvA
-! Version: 201901170152
+! Checksum: MVYTybwdOOrPxW2flmVdAg
+! Version: 201901190232
 ! Title: EasyPrivacy
-! Last modified: 17 Jan 2019 01:52 UTC
+! Last modified: 19 Jan 2019 02:32 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -377,6 +377,7 @@
 /ad_1_trans.
 /ad_imp.
 /adam.js
+/AdAppSettings/*
 /adb/track.php?
 /adb1.gif?
 /adb_iub.js
@@ -893,6 +894,7 @@
 /btn_tracking_pixel.
 /buffer.pgif?r=
 /buffermetrics/*
+/bug/pic.gif?
 /bugcounter.php?
 /build/tracker.js
 /BuiltRegister.aspx?upt=
@@ -1486,6 +1488,7 @@
 /favcyanalytics?
 /fb-app-tracker.
 /fb-ga-track-
+/fb-pixel-
 /fb-tracking.js
 /fbanalytics/*
 /fbcounter/*
@@ -1611,6 +1614,7 @@
 /gaclicktracking.
 /gaCustom.
 /gadsfuncs.
+/gaEvents.js
 /gaEventTracking.
 /GAFOAWrapper.swf?
 /gaFunction?
@@ -1682,6 +1686,7 @@
 /getsidpixeltag?sid=
 /getThirdPartyTracking?
 /getTotalHits.
+/getViewBeans.action?
 /gifbanner?
 /gifstats.
 /gigyaGAIntegration.
@@ -2341,6 +2346,8 @@
 /mousetrap/mp-embed.
 /mpel/mpel.js
 /mpf-mediator.
+/mpl/mpulse.
+/mpulse.js
 /mpulse.min.js
 /msftaudience.
 /mstartracking/*
@@ -2537,6 +2544,7 @@
 /pagelogger/connector.php?
 /pageloggerobyx.
 /pages/analytics-$script
+/pagestat/*
 /pagestat?
 /PageStatistics/*
 /PageStats.
@@ -3412,7 +3420,9 @@
 /tr.gif?
 /tr/p.gif?
 /tracciamento.php?
+/trace-Update.php?
 /trace?sessionid=
+/traces.php?
 /tracing?aspect=
 /track-action/*
 /track-compiled.js
@@ -3436,6 +3446,7 @@
 /track.srv.
 /track/*&CheckCookieId=
 /track/*&event=
+/track/*&siteurl=
 /track/*?rnd=0.$image
 /track/?site
 /track/a.gif?
@@ -4361,6 +4372,7 @@ http://utm.$domain=~utm.edu|~utm.md|~utoronto.ca
 /facash.
 /hash.wasm
 /helper.wasm$third-party
+/impression_analytics/*
 /inject.js?key=$script
 /jsecoin.*/?
 /lhnhelpouttab-current.min.js
@@ -4384,6 +4396,7 @@ http://utm.$domain=~utm.edu|~utm.md|~utoronto.ca
 /obfus.min.js
 /processor.js
 /projectpoi.min.js
+/rum_analytics/*
 /safelinkconverter.js
 /simple-miner-tweaks/*
 /simple-monero-$script
@@ -5608,6 +5621,7 @@ _mongo_stats/
 ||kameleoon.com^$third-party
 ||kameleoon.eu^$third-party
 ||kampyle.com^$third-party
+||kantartns.lt^$third-party
 ||kaxsdc.com^$third-party
 ||keen.io^$third-party,domain=~keen.github.io|~keen.io
 ||keyade.com^$third-party
@@ -6072,6 +6086,7 @@ _mongo_stats/
 ||predictiveresponse.net^$third-party
 ||prfct.co^$third-party
 ||prnx.net^$third-party
+||pro6e.com^$third-party
 ||proclivitysystems.com^$third-party
 ||profilertracking3.com^$third-party
 ||profilesnitch.com^$third-party
@@ -8206,6 +8221,7 @@ _mongo_stats/
 ||tetigi.com^$third-party
 ||thestat.net^$third-party
 ||trackset.it^$third-party
+||trick17.it^$third-party
 ||ultrastats.it^$third-party
 ||vivistats.com^$third-party
 ||webmeter.ws^$third-party
@@ -8860,6 +8876,7 @@ _mongo_stats/
 ||b-aws.aol.com^
 ||b.bedop.com^
 ||b5media.com/bbpixel.php
+||b8cdn.com^*/analytics.js
 ||bab.frb.io^
 ||backstage.funnelenvy.com^
 ||baidu.com/pixel?
@@ -9684,6 +9701,7 @@ _mongo_stats/
 ||log.outbrain.com^
 ||log.outbrainimg.com^
 ||log.pinterest.com^
+||log.seekda.com^
 ||log000.goo.ne.jp^$third-party
 ||log1.survey.io^
 ||logger.logidea.info^
@@ -12357,6 +12375,7 @@ _mongo_stats/
 ||ign.com/global/analytics/drones.js
 ||iheart.com/tracking/
 ||image.providesupport.com/cmd/
+||imagefap.com/images/yes.gif?
 ||images-amazon.com^*/beacon-$domain=imdb.com
 ||images-amazon.com^*/ClientSideMetricsAUIJavascript*.js
 ||images-amazon.com^*/clog/clog-platform*.js$script
@@ -13479,6 +13498,7 @@ _mongo_stats/
 ||tools.ranker.com^
 ||top.wn.com^
 ||topix.com/t6track/
+||toros.co/collect.php
 ||torrentz.eu/ping?
 ||torrentz.in/ping?
 ||torrentz.li/ping?
@@ -13598,6 +13618,7 @@ _mongo_stats/
 ||trueffect.underarmour.com^
 ||truste.com/common/js/ga.js
 ||truste.com/notice?*consent-track
+||ts.delfi.
 ||tscapeplay.com/msvp.php?
 ||tscapeplay.com/pvim?
 ||tsn.ua/svc/video/stat/
@@ -14889,6 +14910,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 ||trak-analytics.blic.rs^
 ! Slovene
 ||24ur.com/bin/player/?mod=statistics&
+||dnevnik.si/tracker/
 ||tracker.azet.sk^
 ! Spanish
 ||abc.es/pixel/

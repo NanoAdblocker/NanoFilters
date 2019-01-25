@@ -1876,11 +1876,8 @@ windowscentral.com#@#a[href^="/e?link="]
 ! newser.com broken search by EasyList
 @@||google.com/afsonline/*$script,domain=newser.com
 
-! https://www.reddit.com/r/uBlockOrigin/comments/ack9ee/video_window_blocked_on_gamepress_site/
-@@||connatix.com^$domain=dragalialost.gamepress.gg
-
 ! https://forums.lanik.us/viewtopic.php?p=144724#p144724
-@@||smartclient.com/smartclient/isomorphic/system/modules/ISC_Analytics.js$script,1p
+@@/isomorphic/system/modules/ISC_Analytics.js$script,1p
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3573#issuecomment-452611187
 |http://$image,script,subdocument,third-party,xmlhttprequest,domain=userscloud.com,badfilter
@@ -1917,19 +1914,27 @@ kizi.com##+js(set-constant.js, adblock_active, false)
 ||amplitude.com^$badfilter
 ||amplitude.com^$3p
 
-! https://forums.lanik.us/viewtopic.php?p=144882#p144882
-/admedia.$domain=~admedia.co.il,badfilter
-/admedia.$domain=~admedia.co.il|~admedia.net.au
-
 ! https://forums.lanik.us/viewtopic.php?p=144884#p144884
 @@||ipinfo.io/?token$xmlhttprequest,domain=webtv.ert.gr
 
 ! https://github.com/uBlockOrigin/uAssets/issues/4653
 easyvideo.me,playbb.me#@#div[style^="width:"]
 
-! https://forums.lanik.us/viewtopic.php?f=64&t=42435
-||bitrix.info^$3p,badfilter
-||bitrix.info/ba.js$script
-
 ! https://github.com/uBlockOrigin/uAssets/issues/4675
 @@||trbas.com/jive$script,domain=chicagotribune.com
+
+! broken site vidtudu . com
+@@||vidtodo.com^$css,image,domain=vidtudu.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/2391#issuecomment-456055001
+@@||openload.*/embed/$frame,domain=tornadomovies.co
+
+! unbreak gogoanimes
+||gogoanimes.co^$csp=script-src 'self' * disquscdn.com 'unsafe-inline',badfilter
+
+! https://github.com/uBlockOrigin/uAssets/issues/4708
+@@||art19.com^$xhr,domain=merriam-webster.com
+@@||graph.facebook.com^$xhr,domain=merriam-webster.com
+
+! https://www.reddit.com/r/uBlockOrigin/comments/ajdubb/missing_video_player/
+||connatix.com^$badfilter

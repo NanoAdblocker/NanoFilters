@@ -147,6 +147,9 @@ wheel-size.com##+js(set-constant.js, detector_active, true)
 @@||pagead2.googlesyndication.com/pagead/*$image,domain=free-scores.com
 @@||atwiki.jp^$generichide
 gardenista.com##+js(set-constant.js, adsAreBlocked, false)
+||fastly.net/js/prebid$script,redirect=noopjs,domain=spanishdict.com
+@@||freetls.fastly.net/js/_ads$script,domain=spanishdict.com
+spanishdict.com##.ad-wrapper
 altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 @@||rapidvideo.com/js/jquery.min.js$script,first-party
 @@||hackintoshzone.com^$generichide

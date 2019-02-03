@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: hiUpduqAt0jjDAH8jOA6rQ
-! Version: 201901260350
+! Checksum: /YT6+l2j6FzPZN8+rlI+FQ
+! Version: 201902031730
 ! Title: Adblock Warning Removal List
-! Last modified: 26 Jan 2019 03:50 UTC
+! Last modified: 03 Feb 2019 17:30 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -22,6 +22,7 @@
 ##.adblock_msg
 ##.deadblocker-header-bar
 !
+myegy.cc##.disclaimer
 4algeria.com###exposeMask
 4algeria.com##.xenOverlay
 !
@@ -78,6 +79,8 @@ shadbase.com##img[alt="adblock"]
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_finnish.txt ***
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_french.txt ***
 !
+-adblock-notice-
+-adblock-notice/*
 /ad-blocking-advisor/*
 /adblock-notice-
 /adblock-notify-by-bweb/*
@@ -87,7 +90,6 @@ shadbase.com##img[alt="adblock"]
 /adblocker_message_
 /AdblockMessage.
 /antiadblockmsg.
-/simple-adblock-notice/*
 /wp-content/plugins/ad-block-defender/*
 /wp-content/plugins/deadblocker/*
 /wp-content/uploads/an-temp/*$script,stylesheet
@@ -214,6 +216,7 @@ shadbase.com##img[alt="adblock"]
 ##[class][data-sitename][data-header-version] > div[id^="detection-block"]
 !
 jaitoutcompris.com###antiBlock
+developpez.com,developpez.net###encart_droite div[style="display: inline-block; width: 300px; height: 250px"]
 iphonesoft.fr,iphonetweak.fr###msgNoPub
 retinaboys.com###screen_block
 lagrosseradio.com###warn
@@ -225,6 +228,7 @@ forumdz.com##body .breadcrumb + center > [color="red"] > b
 forum.pcastuces.com##div > [src] + [id] + [class][style^="display: block;"]
 closermag.fr##div[id^="detection-block"]
 bd-sanctuary.com,cine-sanctuary.com,comics-sanctuary.com,manga-sanctuary.com##div[style^="background:#444;"]
+developpez.com,developpez.net##div[id^="gabarit_pub"]
 pausecafein.fr###adb-pop
 !
 #@##adblocktest
@@ -267,7 +271,6 @@ helpsetup.ru###d930
 delfi.ee###delfiTopBar
 sd-company.su###dom_adblock
 myshared.ru###download_form > .uk-margin-top[style]
-anime.anidub.com###errormodal
 forum.bestflowers.ru###exposeMask
 gk-stalker.xyz###gkadblock
 pastenow.ru###google-block
@@ -280,6 +283,7 @@ beadeath.dclans.ru###mdl_ctnr
 ostroh.info###modal.modal-bg
 7days2die.info###nafikblock
 all-episodes.net###odin
+mover.uz###oframeplayer > [class][style^="display: block"]
 center-yf.ru,lektsii.org,studopedia.com.ua,studopedia.org,studopedia.ru,studopedia.su###opaco,#popup
 md4u.ru###pagecontent > div[style*="background-color"]
 forummikrotik.ru###phpbb-ads-ab
@@ -302,7 +306,7 @@ vsadu.ru##.adb-block
 andevice.ru,dietdo.ru##.adb-def
 tuchkatv.ru##.adb_m
 brazzers-hdx.club##.adblck
-forum.qrz.ru,hentaiz.org,life.ru,mastergrad.com,tvfeed.in##.adblock
+forum.qrz.ru,hentaiz.org,life.ru,mastergrad.com##.adblock
 exler.ru##.adblock-pls
 zakon.kz##.adblock_alert
 ogorod.ru##.adblock_popup_warning
@@ -363,6 +367,7 @@ forum.bestflowers.ru##.xenOverlay
 /forum/docs/requests.js$script,domain=nnm-club-me.appspot.com|nnm-club.lib|nnm-club.me|nnm-club.ws|nnmclub.to|nontorclub.in.net
 /fuckadblock.js$domain=ace-stream.tv
 @@/pagead2.$domain=autonews.ru|rbc.ru|sportrbc.ru
+@@||anime.anidub.com/ads.js$script,domain=anime.anidub.com
 @@||adservice.google.*/adsid/integrator.js$script,domain=autonews.ru|rbc.ru|sportrbc.ru
 @@||content.rbc.medialand.ru/templates_*/ads.gif$image,domain=autonews.ru|rbc.ru|sportrbc.ru
 @@||goha.ru/app/video/adblock.teaser.js|$script,domain=goha.ru

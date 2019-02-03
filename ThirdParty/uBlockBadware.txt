@@ -1,7 +1,12 @@
-! uBlock -- To block sites known for delivering adware/crapware.
+! Title: uBlock filters – Badware risks
+! Description: For sites documented to put users at risk of installing adware/crapware etc.
+!              The purpose is to at least ensure a user is warned of the risks ahead.
+! Expires: 4 days
+! Licence: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
+! Homepage: https://github.com/uBlockOrigin/uAssets
 !
-! For sites documented to put users at risk of installing adware/crapware etc.
-! The purpose is to at least ensure a user is warned of the risks ahead.
+! GitHub issues: https://github.com/uBlockOrigin/uAssets/issues
+! GitHub pull requests: https://github.com/uBlockOrigin/uAssets/pulls
 !
 ! Each entry has to be well enough sourced, see:
 ! https://github.com/gorhill/uBlock/wiki/Badware-risks
@@ -130,9 +135,27 @@ upload4earn.org##+js(remove-attr.js, checked)
 ||check-now.net^$document
 ||googlo.co^$document
 ||yahoo-news.co^$document
+! https://github.com/uBlockOrigin/uAssets/issues/4201#issuecomment-458340273
+||5qg9ibt1a6.com^$document
+||atreus.hexenschmiede.info^$document
+||axxmtjambo.xyz^$document
+||browsergames2018.com^$document
+||chairgaubsy.com^$document
+||epailseptox.com^$document
+||hentaiplaytime.com^$document
+||jobhelpr.com^$document
+||lameterthenhep.info^$document
+||lavfd.net^$document
+||microsoft.com-repair-windows.live^$document
+||notification-time.com^$document
+||o4uxrk33.com^$document
+||viewmypdf.com^$document
 
 ! https://github.com/uBlockOrigin/uAssets/issues/4236
 ||dnbard.com^$document
 
 ! https://github.com/uBlockOrigin/uAssets/issues/4656
 ||bitcoinqrcodegenerator.win^$document
+
+! streaming-foot.club badware
+||streaming-foot.club^$document

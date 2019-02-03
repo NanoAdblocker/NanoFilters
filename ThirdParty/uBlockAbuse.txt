@@ -1,8 +1,13 @@
-! uBlock Origin -- Resource-abuse filters
+! Title: uBlock filters – Resource abuse
+! Description: To foil sites potentially abusing CPU/bandwidth resources without informed
+!              consent. Any such resource-abuse scripts MUST be opt-in, with complete
+!              informed consent from the visitor.
+! Expires: 4 days
+! Licence: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
+! Homepage: https://github.com/uBlockOrigin/uAssets
 !
-! To foil sites potentially abusing CPU/bandwidth resources without informed
-! consent. Any such resource-abuse scripts MUST be opt-in, with complete
-! informed consent from the visitor.
+! GitHub issues: https://github.com/uBlockOrigin/uAssets/issues
+! GitHub pull requests: https://github.com/uBlockOrigin/uAssets/pulls
 
 ! https://github.com/uBlockOrigin/uAssets/issues/659
 ||edgeno.de^$script,third-party,domain=~edgemesh.com
@@ -463,3 +468,6 @@ onplay.tv##+js(abort-on-property-read.js, Nimiq)
 ! https://github.com/uBlockOrigin/uAssets/issues/4728
 ||torrentrapid.com^$csp=worker-src 'none'
 ||tercabilis.info^
+
+! https://github.com/uBlockOrigin/uAssets/issues/3134#issuecomment-457897773
+*$csp=worker-src 'none',domain=ahoypirate.in|ahoypiratebaai.eu|airproxyproxy.pw|airproxytpb.red|bayception.pw|baypirateproxy.pw|ikwildepiratebay.xyz|indiaproxydl.org|magnetbay.eu|noobnoob.rocks|pietpiraat.org|piratbaypirate.link|pirate.bet|piratebay.tel|piratebay.town|proxyindia.net|superbay.link|thepirate.xyz|thepiratebay.blue|thepiratebay.kiwi|tpb.one|tpb.tw|unblocktheship.org

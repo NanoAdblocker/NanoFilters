@@ -447,9 +447,6 @@ altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 # Fallback rule in case they start putting mining code into jQuery files
 # ||rapidvideo.com^$csp=child-src 'none';frame-src *;worker-src 'none';
 
-# https://github.com/NanoAdblocker/NanoFilters/issues/265
-@@||adserver.pandora.com/haymaker/api/v1/serve/$xhr,domain=pandora.com
-
 # ---------------------------------------------------------------------------- #
 
 # Unbreak for Adblock Warning Removal List

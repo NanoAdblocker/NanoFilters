@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: uBvHvlVb+bhoiRiCNQ0j7g
-! Version: 201902031722
+! Checksum: lLb01A8k7LJ7ajunHtfSjg
+! Version: 201902050332
 ! Title: EasyPrivacy
-! Last modified: 03 Feb 2019 17:22 UTC
+! Last modified: 05 Feb 2019 03:32 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -413,6 +413,7 @@
 /adlogger.
 /adlogger_
 /adloggertracker.
+/adlogue/*
 /adm_tracking.js
 /admantx-
 /admantx.
@@ -428,6 +429,8 @@
 /adonis_event/*
 /adpixel.
 /adplogger/*
+/adpv/*
+/adpv2/*
 /adrum-
 /adrum.
 /adrum_
@@ -2516,6 +2519,7 @@
 /onedot.php?
 /onestat.js
 /onetag/*
+/onetagv2/*
 /onfocus-tag.
 /onlinecount.php
 /onsitegeo.
@@ -2804,6 +2808,7 @@
 /pushlog.
 /pv.gif?1=
 /pv.gif?url
+/pv.php?id=
 /pv.txt?
 /pv/?aid=
 /pv/code.asp?
@@ -4116,6 +4121,7 @@
 /wusage_screen_properties.gif?
 /wv326redirect_
 /WWTracking_
+/wwwcount.cgi?
 /wysistat.js
 /wz_logging.
 /x/x.gif?
@@ -5560,6 +5566,7 @@ _mongo_stats/
 ||ics0.com^$third-party
 ||icstats.nl^$third-party
 ||id-visitors.com^$third-party
+||id5-sync.com^$third-party
 ||ideoclick.com^$third-party
 ||idio.co^$third-party
 ||idtargeting.com^$third-party
@@ -5856,6 +5863,7 @@ _mongo_stats/
 ||micpn.com^$third-party
 ||midas-i.com^$third-party
 ||midkotatraffic.net^$third-party
+||mieru-ca.com^$third-party
 ||millioncounter.com^$third-party
 ||minewhat.com^$third-party
 ||mixpanel.com^$third-party
@@ -8317,8 +8325,10 @@ _mongo_stats/
 ||cosmi.io^$third-party
 ||d-markets.net^$third-party
 ||deteql.net^$third-party
+||digitiminimi.com^$third-party
 ||docodoco.jp^$third-party
 ||e-kaiseki.com^$third-party
+||ebis.ne.jp^$third-party
 ||ec-concier.com^$third-party
 ||ec-optimizer.com^$third-party
 ||eco-tag.jp^$third-party
@@ -8328,6 +8338,7 @@ _mongo_stats/
 ||hitgraph.jp^$third-party
 ||i2ad.jp^$third-party
 ||i2i.jp^$third-party
+||iid-network.jp^$third-party
 ||im-apps.net^$third-party
 ||iogous.com^$third-party
 ||japanmetrix.jp^$third-party
@@ -8336,6 +8347,7 @@ _mongo_stats/
 ||macromill.com^$third-party
 ||marsflag.com^$third-party
 ||mobylog.jp^$third-party
+||n8s.jp^$third-party
 ||omiki.com^$third-party
 ||owldata.com^$third-party
 ||pagoda56.com^$third-party
@@ -8350,6 +8362,7 @@ _mongo_stats/
 ||speee-ad.jp^$third-party
 ||tgknt.com^$third-party
 ||trackfeed.com^$third-party
+||triver.jp^$third-party
 ||ukw.jp^$third-party
 ||wonder-ma.com^$third-party
 ||ziyu.net^$third-party
@@ -8441,6 +8454,7 @@ _mongo_stats/
 ||zontera.com^$third-party
 ! Russian
 ||109.169.66.161^$third-party,domain=~adult-site.ip
+||1dmp.io^$third-party
 ||24log.ru^$third-party
 ||24smi.info^$third-party
 ||2ip.ua^$third-party
@@ -11292,6 +11306,7 @@ _mongo_stats/
 ||shinobi.jp/track?
 ||speee-ad.akamaized.net^
 ||sync.shinobi.jp^
+||torimochi.line-apps.com^
 ||trck.dlpo.jp^
 ||userdive.com^$third-party
 ||webtracker.jp^$third-party
@@ -11388,6 +11403,7 @@ _mongo_stats/
 ||counter.wapstart.ru^
 ||dp.ru/counter.gif?
 ||emoment.net/cnt/
+||error.videonow.ru^
 ||gainings.biz/counter.php?
 ||gde.ru/isapi/tracker.dll?
 ||gnezdo.ru/cgi-bin/$third-party
@@ -12274,6 +12290,7 @@ _mongo_stats/
 ||frontdoor.com/_track?
 ||frstatic.net^*/tracking.js
 ||ft.com/conker/service/pageview?
+||ft.com/ingest?
 ||ft.com^*/ft-tracking.js
 ||fujifilm.com/js/shared/analyzer.js
 ||funbrain.com/a2.gif
@@ -14878,6 +14895,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 ||mtc.nhk.or.jp^
 ||nhk.or.jp^*/bc.js
 ||ppf.rakuten.co.jp^$~script
+||pvtag.yahoo.co.jp^
 ||rakuten.co.jp/gw.js
 ||rdsig.yahoo.co.jp^$image
 ||sankei.co.jp/js/analytics/
@@ -15015,6 +15033,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 ||stats.mos.ru^
 ||superjob.ru/ws/
 ||sync.rambler.ru^
+||tonkosti.ru/go.php?
 ||tracker.tiu.ru^
 ||vedomosti.ru/boom?
 ||vesti.ru/counter/

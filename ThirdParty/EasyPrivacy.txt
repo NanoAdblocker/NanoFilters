@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: lLb01A8k7LJ7ajunHtfSjg
-! Version: 201902050332
+! Checksum: KsMQoyhDpZjq6HybG8OW9w
+! Version: 201902060212
 ! Title: EasyPrivacy
-! Last modified: 05 Feb 2019 03:32 UTC
+! Last modified: 06 Feb 2019 02:12 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -54,6 +54,7 @@
 -dtaectolog-
 -event-tracking.
 -ga-track.
+-ga-tracker.
 -gatracker.
 -geoIP.js
 -google-analytics-
@@ -335,6 +336,7 @@
 /_dts.gif?
 /_lib/ga.js
 /_owa.gif?
+/_sess/script.js
 /_t.gif?url=
 /_topic_stats?
 /_tracking/*
@@ -1476,6 +1478,7 @@
 /eventtracker.js
 /eventtracking-
 /eventtracking.
+/eventtracking/*
 /evercookie.
 /evercookie/*
 /evercookie_
@@ -3330,6 +3333,7 @@
 /stats_blog.js?
 /stats_brand.js
 /stats_clicks.
+/stats_img.png?
 /stats_js.asp?
 /stats_tracker.
 /stats_video_
@@ -6773,6 +6777,7 @@ _mongo_stats/
 ||ultratokensx.com^$third-party
 ||umbel.com^$third-party
 ||unicaondemand.com^$third-party
+||uniqodo.com^$third-party
 ||unknowntray.com^$third-party
 ||upapi.net^$third-party
 ||upstats.ru^$third-party
@@ -9471,6 +9476,7 @@ _mongo_stats/
 ||events.antenna.is^
 ||events.apester.com^
 ||events.bounceexchange.com^
+||events.demoup.com^
 ||events.eyeviewdigital.com^*.gif?r=
 ||events.izooto.com^
 ||events.jotform.com^
@@ -10947,6 +10953,7 @@ _mongo_stats/
 ||tracking.ddd.de^
 ||tracking.emsmobile.de^
 ||tracking.gameforge.de^
+||tracking.gj-mobile-services.de^
 ||tracking.hannoversche.de^
 ||tracking.hi-pi.com^
 ||tracking.ladies.de^
@@ -11338,6 +11345,7 @@ _mongo_stats/
 ||fab.interia.pl^
 ||hit.interia.pl^
 ||liczniki.org/hit.php
+||ppstatic.pl^*/track.js
 ||quartic.pl/quartic.js
 ||scontent.services.tvn.pl^
 ||stats.asp24.pl^
@@ -15210,10 +15218,10 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 @@||adblockanalytics.com/ads.js|
 @@||addgene.org/headers/blat/js/analyze.js
 @@||adidas.com^*/adidasAnalytics.js?
-@@||adobedtm.com^*/mbox-contents-$script,domain=lenovo.com|newyorker.com|oprah.com|pnc.com|vanityfair.com|wired.com
+@@||adobedtm.com^*/mbox-contents-$script,domain=absa.co.za|lenovo.com|newyorker.com|oprah.com|pnc.com|vanityfair.com|wired.com
 @@||adobedtm.com^*/s-code-$script
 @@||adobedtm.com^*/satellite-$script
-@@||adobedtm.com^*/satelliteLib-$script,domain=argos.co.uk|collegeboard.org|crackle.com|crimewatchdaily.com|directline.com|jeep.com|laredoute.co.uk|laredoute.com|lenovo.com|lowes.com|mastercard.us|mathworks.com|monoprice.com|nbcnews.com|newyorker.com|oprah.com|pnc.com|realtor.com|redbull.tv|searspartsdirect.com|smooth.com.au|sonycrackle.com|stuff.co.nz|subaru.com|timewarnercable.com|trip-planner.australia.com|vanityfair.com|wired.com
+@@||adobedtm.com^*/satelliteLib-$script,domain=absa.co.za|argos.co.uk|collegeboard.org|crackle.com|crimewatchdaily.com|directline.com|jeep.com|laredoute.co.uk|laredoute.com|lenovo.com|lowes.com|mastercard.us|mathworks.com|monoprice.com|nbcnews.com|newyorker.com|oprah.com|pnc.com|realtor.com|redbull.tv|searspartsdirect.com|smooth.com.au|sonycrackle.com|stuff.co.nz|subaru.com|timewarnercable.com|trip-planner.australia.com|vanityfair.com|wired.com
 @@||adobetag.com/d2/$script,domain=thestar.com
 @@||adobetag.com^*/amc.js$script
 @@||adobetag.com^*/sitecatalyst.js$domain=hbf.com.au|seattlepi.com|tv.com
@@ -15708,7 +15716,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 @@||omtrdc.net/crossdomain.xml$domain=crackle.com
 @@||omtrdc.net/settings/$object-subrequest,domain=crackle.com
 @@||omtrdc.net^*/mbox/ajax?$script,domain=swisscom.ch
-@@||omtrdc.net^*/mbox/json?$xmlhttprequest,domain=argos.co.uk|att.com|swisscom.ch|t-mobile.com
+@@||omtrdc.net^*/mbox/json?$xmlhttprequest,domain=absa.co.za|argos.co.uk|att.com|swisscom.ch|t-mobile.com
 @@||omtrdc.net^*/mbox/standard?$script,domain=ancestry.co.uk|ancestry.com|ancestry.com.au|ancestry.it|blogtalkradio.com|swisscom.ch
 @@||ooyala.com/3rdparty/comscore_$object-subrequest,domain=livetvcafe.net|player.complex.com
 @@||ooyala.com/crossdomain.xml$object-subrequest

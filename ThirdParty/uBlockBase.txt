@@ -1418,6 +1418,7 @@ gelbooru.com#@#center > a[href]
 thedoujin.com,xbooru.com##+js(abort-current-inline-script.js, ExoLoader)
 realbooru.com,xbooru.com##+js(addEventListener-defuser.js, DOMContentLoaded, newcontent.innerHTML)
 rule34.xxx##+js(abort-on-property-read.js, newcontent)
+rule34.xxx##a[href*=".html"]
 ! https://github.com/uBlockOrigin/uAssets/issues/1080
 xbooru.com##+js(abort-on-property-write.js, ads_priv)
 xbooru.com##a[href^="https://xbooru.com/c.html"]
@@ -5018,7 +5019,9 @@ mylust.com##+js(abort-on-property-read.js, ExoLoader.addZone)
 mylust.com##.fp-bnr
 
 ! https://forums.lanik.us/viewtopic.php?f=62&t=39765
+! https://github.com/uBlockOrigin/uAssets/issues/4806
 deepbrid.com##+js(abort-current-inline-script.js, document.getElementById, undefined)
+deepbrid.com##+js(set-constant.js, adsenseadBlock, noopFunc)
 
 ! https://forums.lanik.us/viewtopic.php?f=62&t=39763
 @@||bemetal.net^$generichide
@@ -16570,3 +16573,20 @@ adflly.com##.adsbygoogle
 elibit.cc##+js(abort-on-property-read.js, app_vars.force_disable_adblock)
 elibit.cc##+js(abort-on-property-read.js, open)
 elibit.cc##+js(abort-on-property-write.js, _pop)
+
+! https://github.com/NanoMeow/QuickReports/issues/642
+@@||wholicab.com^$generichide
+wholicab.com##.adsbygoogle
+
+! https://github.com/NanoMeow/QuickReports/issues/643
+surviviohacks.com##+js(set-constant.js, $tieE3, true)
+
+! https://github.com/uBlockOrigin/uAssets/issues/4807
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=gigaleecher.com|leechking.com|xuxon.com
+@@||gigaleecher.com^$generichide
+@@||xuxon.com^$generichide
+@@||leechking.com^$generichide
+
+! https://github.com/jspenguin2017/uBlockProtector/issues/1035
+teknorizen.*##+js(set-constant.js, safelink.adblock, false)
+jagoanssh.com##+js(addEventListener-defuser.js, load, onload)

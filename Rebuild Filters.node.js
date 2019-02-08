@@ -35,6 +35,11 @@ const now = () => {
 const binaryWarning1 = "This file is a compiled binary, do not modify";
 const binaryWarning2 = "All modifications will be overwritten on the next build";
 /**
+ * License strings.
+ * @const {string}
+ */
+const licenseString = "See source for license and credits";
+/**
  * New line splitter.
  * @const {RegExp}
  */
@@ -296,7 +301,7 @@ const processOneNanoFilter = async (name, title) => {
         minimizeFilter,
 
         title,
-        "GPL-3.0",
+        licenseString,
         "https://github.com/NanoAdblocker/NanoFilters/tree/master/NanoFiltersSource/" + name,
         1,
         false,
@@ -315,7 +320,7 @@ const processOneResource = async (inDir, outDir, name, cache) => {
         "./" + inDir + "/" + name,
         "./" + outDir + "/" + name,
         minimizeResource,
-        "GPL-3.0",
+        licenseString,
         "https://github.com/NanoAdblocker/NanoFilters/tree/master/" + inDir + "/" + name,
         3,
         cache,
@@ -351,7 +356,7 @@ process.on("unhandledRejection", (err) => {
             minimizeFilter,
 
             "Nano Defender Integration",
-            "GPL-3.0",
+            licenseString,
             "https://github.com/jspenguin2017/uBlockProtector/tree/master/list",
             3,
             true,

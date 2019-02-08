@@ -155,6 +155,7 @@ gardenista.com##+js(set-constant.js, adsAreBlocked, false)
 spanishdict.com##.ad-wrapper
 windowscentral.com##.swal-modal, .swal-overlay
 randaris.app##.adblock-box
+vox.com##+js(setTimeout-defuser.js, adsBlocked)
 altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 @@||rapidvideo.com/js/jquery.min.js$script,first-party
 @@||hackintoshzone.com^$generichide

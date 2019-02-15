@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: AIwsq716xvkwJXHwHzm5OQ
-! Version: 201902060220
+! Checksum: 4ELNLo0aDHlgPjOVy3ZhwA
+! Version: 201902150311
 ! Title: Adblock Warning Removal List
-! Last modified: 06 Feb 2019 02:20 UTC
+! Last modified: 15 Feb 2019 03:11 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -166,6 +166,7 @@ shadbase.com##img[alt="adblock"]
 ###adblocker_announce
 ###adblocker_message
 ###adblocker_modal_overlay
+###adblockinfo
 ###ads-blocked
 ###advertisementjsalert
 ###anti_adblock
@@ -215,6 +216,7 @@ shadbase.com##img[alt="adblock"]
 ##.top-bar-adblock
 ##[class][data-sitename][data-header-version] > div[id^="detection-block"]
 !
+wamiz.com###adblocker
 jaitoutcompris.com###antiBlock
 developpez.com,developpez.net###encart_droite div[style="display: inline-block; width: 300px; height: 250px"]
 iphonesoft.fr,iphonetweak.fr###msgNoPub
@@ -288,6 +290,7 @@ center-yf.ru,lektsii.org,studopedia.com.ua,studopedia.org,studopedia.ru,studoped
 md4u.ru###pagecontent > div[style*="background-color"]
 forummikrotik.ru###phpbb-ads-ab
 kompravda.eu,kp.ru###popapIsBlockedAd
+math-prosto.ru###requestShutOfBlocker
 pb.wtf,piratbit.org,piratbit.ru###result > .request
 mnogoto4ka.ru###sb-site > div[class][style*="z-index"][style*="999999"]
 professorweb.ru###submain > div[class^="a"][style]
@@ -305,6 +308,7 @@ cc-fan.tv,cn-fan.tv,fox-fan.tv,goodfon.ru,satsis.info,swordmaster.org##.adb
 vsadu.ru##.adb-block
 andevice.ru,dietdo.ru##.adb-def
 tuchkatv.ru##.adb_m
+besplatka.ua##.adBl
 brazzers-hdx.club##.adblck
 forum.qrz.ru,hentaiz.org,life.ru,mastergrad.com##.adblock
 exler.ru##.adblock-pls
@@ -313,9 +317,11 @@ ogorod.ru##.adblock_popup_warning
 hentaiz.org##.adblocker
 kubik3.ru##.adbs
 print-post.com##.addbl
+ideya-biznesa.ru##.admania_adblock_detector
 24video.xxx##.adt
 rusrek.com##.alert
 benfilm.net##.alert-block
+2ip.me,2ip.ua##.alert-mess > .row
 stroi-help.ru##.alert_warn
 ria.ru##.antiblock
 rufilmtv.org##.attention
@@ -355,14 +361,13 @@ animedub.ru##.poverh
 webdesign-master.ru##.preloader ~ div[class] > p
 pythonworld.ru##.pythonworld-contributor
 fanfics.me##.red.nodata
-2ip.ua##.row > .block-mess > .row
 101.ru##.showMessageAdBlock
 playunturned.ru##.side_left > center
 playunturned.ru##.side_right > center
 objavlenija.respublika.cz##.sweet-alert,.sweet-overlay
+kinoprofi.net##.warning-adblock
 xn--80aikhbrhr.net,кинокрад.net##.warning-adblock-box
 forum.bestflowers.ru##.xenOverlay
-/api/scripts/mainjs?token$script,domain=liveresult.ru
 /cookie_check.min.js$domain=acetv.me
 /forum/docs/requests.js$script,domain=nnm-club-me.appspot.com|nnm-club.lib|nnm-club.me|nnm-club.ws|nnmclub.to|nontorclub.in.net
 /fuckadblock.js$domain=ace-stream.tv

@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: 4ELNLo0aDHlgPjOVy3ZhwA
-! Version: 201902150311
+! Checksum: VDBOXXZqoSCsI1XHVM2b0Q
+! Version: 201902231921
 ! Title: Adblock Warning Removal List
-! Last modified: 15 Feb 2019 03:11 UTC
+! Last modified: 23 Feb 2019 19:21 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -82,6 +82,7 @@ shadbase.com##img[alt="adblock"]
 -adblock-notice-
 -adblock-notice/*
 /ad-blocking-advisor/*
+/adbl_dtct.
 /adblock-notice-
 /adblock-notify-by-bweb/*
 /adblock-warning-teaser/*
@@ -90,6 +91,8 @@ shadbase.com##img[alt="adblock"]
 /adblocker_message_
 /AdblockMessage.
 /antiadblockmsg.
+/blockadblock.js
+/blockadblock.min.js
 /wp-content/plugins/ad-block-defender/*
 /wp-content/plugins/deadblocker/*
 /wp-content/uploads/an-temp/*$script,stylesheet
@@ -170,6 +173,8 @@ shadbase.com##img[alt="adblock"]
 ###ads-blocked
 ###advertisementjsalert
 ###anti_adblock
+###detection-block
+###detection-block-overlay
 ###detectadblock
 ###fnAdblockingOverlay
 ###message_adblock
@@ -299,6 +304,7 @@ numberempire.com###toplink > h3[style="color: red"]
 ganoderma-mushrooms.com,korrektor.name,varicream.org###turn_advert.adblock
 czx.to###vdl_ctnr
 chipinfo.pro###warning
+sport-express.ru##.a-notice
 scrin.org##.a-overlay
 vsaduidoma.com##.ABD_display_wrapper
 eurabota.com##.abtop
@@ -336,13 +342,13 @@ rutor1.ru##.box_in > .text > p > font
 tsn.ua##.c-aside-embed
 kanobu.ru##.c-moneyPlace_empty
 kinoafisha.info,tvcook.ru##.cat
-autonews.ru,rbc.ru,rbcplus.ru,sportrbc.ru##.checkad_info
 rusopen.com##.classblsi.addshr
 smotrisport.online,smotrisport.tv##.dont-add-our-site-pls
 goha.ru#@#.goha_ads
 goha.ru#@#.goha_ads_acceptable
 themoviebay.ru##.is-danger.notification
 ivi.ru##.ivi-footer ~ div[class] > style + div[class]
+doctorrouter.ru##.jgcabd-container
 go.mail.ru##.js-adb-msg
 space.utema.ru##.main-content-padding > div[class]:not([itemprop])
 megatest.online##.msg-AdBlock
@@ -371,18 +377,9 @@ forum.bestflowers.ru##.xenOverlay
 /cookie_check.min.js$domain=acetv.me
 /forum/docs/requests.js$script,domain=nnm-club-me.appspot.com|nnm-club.lib|nnm-club.me|nnm-club.ws|nnmclub.to|nontorclub.in.net
 /fuckadblock.js$domain=ace-stream.tv
-@@/pagead2.$domain=autonews.ru|rbc.ru|sportrbc.ru
 @@||anime.anidub.com/ads.js$script,domain=anime.anidub.com
-@@||adservice.google.*/adsid/integrator.js$script,domain=autonews.ru|rbc.ru|sportrbc.ru
-@@||content.rbc.medialand.ru/templates_*/ads.gif$image,domain=autonews.ru|rbc.ru|sportrbc.ru
 @@||goha.ru/app/video/adblock.teaser.js|$script,domain=goha.ru
-@@||rbk.ru^*/ads/ads.js?|$script,domain=autonews.ru|rbc.ru|rbcplus.ru|sportrbc.ru
-@@||securepubads.g.doubleclick.net/gampad/ads?$domain=autonews.ru|rbc.ru|sportrbc.ru
-@@||securepubads.g.doubleclick.net/gpt/pubads_impl_$domain=autonews.ru|rbc.ru|sportrbc.ru
-@@||tpc.googlesyndication.com^$image,domain=autonews.ru|rbc.ru|sportrbc.ru
 @@||sports.ru^*/adfox.$xmlhttprequest
-@@||target.smi2.net/client/target.js|$script,domain=autonews.ru|rbc.ru|sportrbc.ru
-@@||target.smi2.net/client/ttag.js|$script,domain=autonews.ru|rbc.ru|sportrbc.ru
 mycrib.ru,piggy-bank.online##[data-type="anti-abp"]
 lr-club.com##a[href="https://adblockplus.org/ru/faq_basics#disable"]
 drive2.ru##a[href][target="_blank"] > img[src][style^="width: 100%; height: auto;"][style*="vertical-align: middle; max-width: 240px;"]
@@ -409,6 +406,7 @@ portfel.info##body > div[id][style="display: block;"]
 tut.by##body > div[style*="position: fixed;"][style*="right: 0;"]
 1snau.ru,bychico.net,dyrik.ru,ecosounds.net,in-drive.ru,musecube.org,obozrevatel.com,oknotivi.ru,pogodnik.com,sandero.ru,tehnobzor.ru,turbominer.ru##body > div[style*="z-index"][style*="9999"]
 dugtor.ru##body > noindex
+kinopad.net##div[class^="adblock-warning"]
 lostfilm.tv##div[class^="alarm"]
 gismeteo.by,gismeteo.ru##div[class^="stopblock"]
 finfront.ru##div[class^="swal2"]

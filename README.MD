@@ -12,7 +12,7 @@ release of Nano Adblocker.
 
 Please open an issue if there is something you want us to know.
 
-## Filter Policy
+## Filters Policy
 
 If an issue is taken care by a default (regional) filter, then it will not be
 fixed again in NanoFilters.

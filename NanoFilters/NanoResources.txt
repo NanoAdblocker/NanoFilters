@@ -15,29 +15,11 @@ nano-vvvvid-it.js application/javascript
     // Based on KAADIVVVV
     // License: https://github.com/Robotex/KAADIVVVV/blob/master/LICENSE
     function defuse() {
-        var startAdv = function(f, b, e) {
-            var d = this;
-            var c = d.playlistItem.toJSON();
-            if (
-                ( 'vod_mode' in c ) && ( c.vod_mode & 1 ) === 0 &&
-                !vvvvid.user.svodActive()
-            ) {
-                vvvvid.showGenericError(
-                    'Il video selezionato \xE8 disponibile solo in ' +
-                    'modalit\xE0 abbonamento.',
-                    function() {
-                        vvvvid.router.mainView.resetApplication();
-                    }
-                );
-                return;
-            }
-            if ( !f ) {
-                d.destroyPlayers();
-            }
-            e();
+        var checkAdv = function() {
+            this.hasAdv = false;
         };
-        vvvvid.models.PlayerObj.prototype.startAdv = startAdv;
-        window[mnsJHnyT] = vvvvid.models.PlayerObj.prototype.startAdv;
+        vvvvid.models.PlayerObj.prototype.checkAdv = checkAdv;
+        window[wnbshgd] = vvvvid.models.PlayerObj.prototype.checkAdv;
     }
     if ( typeof vvvvid === 'object' ) {
         defuse();

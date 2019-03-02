@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: ZtLawcSdGUqTC4dRqfq//g
-! Version: 201902231922
+! Checksum: 7290P9/h0EuTawPgVqST4w
+! Version: 201903021842
 ! Title: EasyPrivacy
-! Last modified: 23 Feb 2019 19:22 UTC
+! Last modified: 02 Mar 2019 18:42 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -66,6 +66,7 @@
 -javascript_xiti_
 -kameleoon.js
 -kameleoon.min.js
+-krux-tag/
 -log?referUrl=
 -logging/log?
 -mastertag.
@@ -93,6 +94,7 @@
 -tracking/ga-
 -tracking?referrer=
 -trackingScript.
+-universal-analytics/
 -xtcore.js
 .AdmPixelsCacheController?
 .analysis.pv.
@@ -635,6 +637,7 @@
 /Analytics/Tracking.
 /analytics/tracking/*
 /analytics/track|
+/Analytics/UniqueEndUser?
 /analytics/urlTracker.
 /analytics/v1/*$domain=~my.leadpages.net
 /analytics/video_$domain=~twitch.tv
@@ -1452,6 +1455,7 @@
 /ev/co/*?eventid=
 /event-log/*
 /event-report?*&uid=
+/event-tracking.
 /event-tracking.js
 /event.cgi?
 /event.gif?
@@ -2108,6 +2112,7 @@
 /kontera.js
 /konterayahoooo.
 /kooomo.tracker.
+/krux-pixel.
 /krux.js
 /ktrace/ktrace$script
 /l1v.ly/*$third-party
@@ -2233,6 +2238,8 @@
 /logger.ashx?
 /logger.dll/*
 /logger.pageperf?
+/logger.performance?
+/logger.screensize?
 /logger/*&referer=
 /logger/?et=
 /logger/?referer=
@@ -2857,6 +2864,7 @@
 /pzn/proxysignature
 /qa-tracker.
 /qlitics.js
+/qqcreporter.
 /qtracker-
 /QualtricsSurvey.
 /quant.js
@@ -3053,6 +3061,7 @@
 /sdctag.
 /sdctag1.js
 /sdctag2.js
+/sdp-tagcollector.
 /sdxp1/dru4/meta?_hc=
 /searchIgnite.
 /searchMetric.
@@ -3097,6 +3106,7 @@
 /set-cookie.gif?
 /set_cookie.php?
 /set_tracking.js
+/setbucket?signature=
 /SETCOOKAFF.
 /setcooki.
 /setcookie.php?
@@ -3513,6 +3523,7 @@
 /track/*&event=
 /track/*&siteurl=
 /track/*?rnd=0.$image
+/track/?s=
 /track/?site
 /track/a.gif?
 /track/aggregate?
@@ -4233,6 +4244,7 @@
 ;sz=1x1;ord=
 =&cs_Referer=
 =ATAtracker&
+=event&*_ads%
 =get_preroll_cookie&
 =getSideStats&
 =googleanalytics_
@@ -5350,6 +5362,7 @@ _mongo_stats/
 ||fastonlineusers.com^$third-party
 ||fastwebcounter.com^$third-party
 ||fathomseo.com^$third-party
+||fbgpnk.com^$third-party
 ||fcs.ovh^$third-party
 ||fdxstats.xyz^$third-party
 ||feathr.co^$third-party
@@ -5844,7 +5857,6 @@ _mongo_stats/
 ||marketo.net^$third-party
 ||marketshot.com^$third-party
 ||marketshot.fr^$third-party
-||markitondemand.com^$third-party
 ||maropost.com^$third-party
 ||martianstats.com^$third-party
 ||maryneallynndyl.com^$third-party
@@ -5886,6 +5898,7 @@ _mongo_stats/
 ||metricsdirect.com^$third-party
 ||meyersdalebixby.com^$third-party
 ||mezzobit.com^$third-party
+||mfadsrvr.com^$third-party
 ||mialbj6.com^$third-party
 ||micpn.com^$third-party
 ||midas-i.com^$third-party
@@ -6014,6 +6027,7 @@ _mongo_stats/
 ||nile.works^$third-party
 ||noowho.com^$third-party
 ||nordicresearch.com^$third-party
+||northstartravelmedia.com^$third-party
 ||notifyvisitors.com^$third-party
 ||novately.com^$third-party
 ||nowinteract.com^$third-party
@@ -6831,6 +6845,7 @@ _mongo_stats/
 ||usuarios-online.com^$third-party
 ||v12group.com^$third-party
 ||v3cdn.net^$third-party
+||va-endpoint.com^$third-party
 ||valaffiliates.com^$third-party
 ||valuedopinions.co.uk^$third-party
 ||vantage-media.net^$third-party
@@ -8633,11 +8648,14 @@ _mongo_stats/
 ||adsettings.com^$third-party
 ||adten.eu^$third-party
 ||adtlgc.com^$third-party
+||adtr.io^$third-party
 ||adtraction.com^$third-party
 ||bonnieradnetwork.se^$third-party
 ||brandmetrics.com^$third-party
 ||citypaketet.se^$third-party
+||cssrvsync.com^$third-party
 ||dep-x.com^$third-party
+||lwadm.com^$third-party
 ||myvisitors.se^$third-party
 ||prospecteye.com^$third-party
 ||publish-int.se^$third-party
@@ -8648,6 +8666,7 @@ _mongo_stats/
 ||tns-sifo.se^$third-party
 ||vastpaketet.se^$third-party
 ||webserviceaward.com^$third-party
+||yieldbird.com^$third-party
 ! Thai
 ||d-stats.com^$third-party
 ||tracker.stats.in.th^$third-party
@@ -9328,6 +9347,7 @@ _mongo_stats/
 ||d23p9gffjvre9v.cloudfront.net^
 ||d23pi6hvdpcc5i.cloudfront.net^
 ||d24cze5sab2jwg.cloudfront.net^
+||d24rtvkqjwgutp.cloudfront.net^
 ||d25ezbwokoefx6.cloudfront.net^
 ||d27s92d8z1yatv.cloudfront.net/js/jquery.jw.analitycs.js
 ||d28g9g3vb08y70.cloudfront.net^
@@ -9373,6 +9393,7 @@ _mongo_stats/
 ||d3r7h55ola878c.cloudfront.net^
 ||d3rmnwi2tssrfx.cloudfront.net^
 ||d3s7ggfq1s6jlj.cloudfront.net^
+||d3sbxpiag177w8.cloudfront.net^
 ||d3tglifpd8whs6.cloudfront.net^
 ||d4ax0r5detcsu.cloudfront.net^
 ||d6jkenny8w8yo.cloudfront.net^
@@ -9996,6 +10017,7 @@ _mongo_stats/
 ||observer.ip-label.net^
 ||ocp.cnettv.com^*/Request.jsp?
 ||octopart-analytics.com^$third-party
+||oda.markitondemand.com^
 ||oddcast.com/event.php?$object-subrequest
 ||odnaknopka.ru/stat.js
 ||offermatica.intuit.com^
@@ -11244,6 +11266,7 @@ _mongo_stats/
 ! Italian
 ||91.196.216.64^
 ||alice.it/cnt/
+||analytics.competitoor.com^
 ||analytics.digitouch.it^
 ||analytics.ettoredelnegro.pro^
 ||analytics.linkwelove.com^
@@ -15251,7 +15274,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 @@||about-australia.com/*/clickheat.js
 @@||accorhotels.com^*/xtanalyzer_roi.js
 @@||ad.crwdcntrl.net^$object-subrequest,domain=ap.org|newsinc.com
-@@||ad.crwdcntrl.net^$script,domain=cityam.com|investopedia.com
+@@||ad.crwdcntrl.net^$script,domain=investopedia.com
 @@||ad.zanox.com/ppc/$subdocument,domain=wisedock.at|wisedock.co.uk|wisedock.com|wisedock.de|wisedock.eu
 @@||adblockanalytics.com/ads.js|
 @@||addgene.org/headers/blat/js/analyze.js

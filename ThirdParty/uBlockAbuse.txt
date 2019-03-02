@@ -33,10 +33,6 @@
 ! https://github.com/uBlockOrigin/uAssets/issues/746
 ||2giga.link^*hive$script
 
-! https://github.com/hoshsadiq/adblock-nocoin-list/issues/32
-||ppoi.org^$third-party
-||projectpoi.com^$third-party
-
 ! https://github.com/uBlockOrigin/uAssets/pull/748
 ||webmine.cz^$third-party
 
@@ -71,8 +67,6 @@
 ! https://www.bleepingcomputer.com/news/security/cryptojacking-script-found-in-live-help-widget-impacts-around-1-500-sites/
 ! https://publicwww.com/websites/%22lhnhelpouttab-current.min.js%22/
 /lhnhelpouttab-current.min.js
-! https://blog.malwarebytes.com/cybercrime/2017/11/persistent-drive-by-cryptomining-coming-to-a-browser-near-you/
-||hatevery.info^$third-party
 
 ! https://github.com/hoshsadiq/adblock-nocoin-list/issues/59
 csgoconfigs.com##+js(abort-current-inline-script.js, m, CH.Anonymous)
@@ -250,9 +244,6 @@ vidzi.tv##+js(abort-on-property-write.js, decodeURIComponent)
 ! https://github.com/hoshsadiq/adblock-nocoin-list/issues/90
 ||thepiratebay.cr^$csp=child-src 'none';frame-src *;worker-src 'none';
 *?proxy=$script
-
-! kickass mining
-||kickass.cd^$csp=child-src 'none';frame-src *;worker-src 'none';
 
 ! https://github.com/uBlockOrigin/uAssets/issues/986
 ||ddmix.net^$csp=child-src 'none';frame-src *;worker-src 'none';

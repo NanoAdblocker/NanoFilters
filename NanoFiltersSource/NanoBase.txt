@@ -14,8 +14,10 @@
 blockadblock.com##+js(bab-defuser.js)
 
 # https://github.com/NanoMeow/QuickReports/issues/48
+# https://github.com/NanoMeow/QuickReports/issues/597
 @@||fuckadblock.sitexw.fr^$generichide
-@@||cdnjs.cloudflare.com/ajax/libs/fuckadblock/*/fuckadblock.min.js$script,domain=fuckadblock.sitexw.fr
+@@||fuckadblock.sitexw.fr^$xhr,1p
+@@/fuckadblock.*.js$script,domain=fuckadblock.sitexw.fr
 
 # https://github.com/uBlockOrigin/uAssets/issues/2924
 captchme.com##script:inject(set-constant.js, CaptchmeState.adb, undefined)
@@ -24,10 +26,10 @@ captchme.com##script:inject(set-constant.js, CaptchmeState.adb, undefined)
 ||browserleaks.com/js/proxy_ab.js$script
 
 # https://github.com/LiCybora/NanoDefenderFirefox/issues/88
-@@||whoer.net/js/advert.js$script,first-party
+@@||whoer.net/js/advert.js$script,1p
 
 # https://github.com/NanoMeow/QuickReports/issues/60
-@@||detectadblock.com/dfp.js$script,first-party
+@@||detectadblock.com/dfp.js$script,1p
 
 # ---------------------------------------------------------------------------- #
 
@@ -93,10 +95,10 @@ developpez.com##div:has(:scope > [id^="gabarit_pub"])
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/765
 @@||vorek.pl^$generichide
-@@||vorek.pl/*/js/ads.js$script,first-party
+@@||vorek.pl/*/js/ads.js$script,1p
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/742
-@@||egarwolin.pl/static/js/ads.js$script,first-party
+@@||egarwolin.pl/static/js/ads.js$script,1p
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/782
 download.inventivetalent.org##div:has(:scope > div > button.choice-adfly)
@@ -126,7 +128,7 @@ brainly.*##.brn-ab-detection-screening
 sms-receive.net##+js(abort-current-inline-script.js, $, AdBlock Plus)
 
 # https://github.com/NanoAdblocker/NanoFilters/issues/30
-@@||richmond-news.com/gmg/*/js/ads.js$script,first-party
+@@||richmond-news.com/gmg/*/js/ads.js$script,1p
 
 # https://github.com/NanoAdblocker/NanoFilters/issues/34
 smods.ru###ab-warning
@@ -234,7 +236,7 @@ gamepedia.com###bodyContent:style(width: 100% !important;)
 realcleardefense.com##+js(set-constant.js, warning_widget.check_ad_block_status, noopFunc)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/947
-@@||myfavoritecontent.com/js/ads.js$script,first-party
+@@||myfavoritecontent.com/js/ads.js$script,1p
 
 # https://github.com/NanoAdblocker/NanoFilters/issues/94
 techradar.com##script:inject(abort-on-property-read.js, _sp_._networkListenerData)
@@ -333,7 +335,7 @@ flyertalk.com##+js(abort-current-inline-script.js, $, AdBlock)
 @@||nyt.com/ads/google/adsbygoogle.js$script,domain=nytimes.com
 
 # https://github.com/NanoAdblocker/NanoFilters/issues/189
-@@||programiz.com^$xmlhttprequest,first-party
+@@||programiz.com^$xhr,1p
 
 # https://github.com/uBlockOrigin/uAssets/issues/3458
 gecce.com.tr##+js(set-constant.js, fakeadloaded, true)
@@ -458,7 +460,7 @@ altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 # Unbreak
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/781
-@@||rapidvideo.com/js/jquery.min.js$script,first-party
+@@||rapidvideo.com/js/jquery.min.js$script,1p
 # Fallback rule in case they start putting mining code into jQuery files
 # ||rapidvideo.com^$csp=child-src 'none';frame-src *;worker-src 'none';
 

@@ -184,9 +184,6 @@ camwhores.tv##body > div.top:has-text(AdBlock)
 camwhores.tv##body > div:matches-css(z-index: 9999999)
 camwhores.tv##body > div:matches-css(z-index: 9999998)
 
-# https://github.com/NanoMeow/QuickReports/issues/729
-yellowbridge.com##+js(setTimeout-defuser.js, .style.backgroundImage, 0)
-
 # ---------------------------------------------------------------------------- #
 
 # Soft anti-adblock that are also included in uBlock annoyance filter
@@ -445,6 +442,9 @@ androidcentral.com##.swal-overlay
 # https://github.com/NanoMeow/QuickReports/issues/713
 @@||eppingforestguardian.co.uk^$generichide
 eppingforestguardian.co.uk##.dfp-ad
+
+# https://github.com/uBlockOrigin/uAssets/issues/4947
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,domain=yellowbridge.com
 
 # ---------------------------------------------------------------------------- #
 

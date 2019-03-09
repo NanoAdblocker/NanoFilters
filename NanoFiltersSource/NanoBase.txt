@@ -79,6 +79,9 @@ vizer.tv##.open.adsByVizer.vizerNewBox
 # https://github.com/NanoMeow/QuickReports/issues/474
 math.semestr.ru##+js(setInterval-defuser.js, IsAdBlock, 1000)
 
+# https://github.com/NanoMeow/QuickReports/issues/735
+gamekult.com##+js(abort-on-property-read.js, SmartWallSDK)
+
 # ---------------------------------------------------------------------------- #
 
 # Soft anti-adblock
@@ -188,9 +191,6 @@ camwhores.tv##body > div:matches-css(z-index: 9999998)
 
 # https://github.com/NanoAdblocker/NanoFilters/issues/282
 imore.com##.swal-overlay
-
-# https://github.com/NanoMeow/QuickReports/issues/735
-gamekult.com##+js(abort-on-property-read.js, SmartWallSDK)
 
 # ---------------------------------------------------------------------------- #
 

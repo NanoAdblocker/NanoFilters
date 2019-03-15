@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: zm7+qAEDUPOz+8wpTCTWxQ
-! Version: 201903090442
+! Checksum: mf7MFdQYyBNJJD2V6oR5oA
+! Version: 201903150252
 ! Title: EasyPrivacy
-! Last modified: 09 Mar 2019 04:42 UTC
+! Last modified: 15 Mar 2019 02:52 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -763,6 +763,7 @@
 /audiweb.js
 /audsci.js
 /autotag.
+/autotrack.carbon.js
 /autotrack.js
 /AutoTracker.js
 /aux/collect?
@@ -1159,6 +1160,7 @@
 /ComScorePlugin.
 /ComScoreSWF.
 /condenet-metric.
+/config/analytics.js
 /configuration-stat.js
 /connect_counter.js
 /contador.gif?
@@ -1269,6 +1271,7 @@
 /csi?v=2&s=
 /csi?v=3&s=
 /csm/analytics;
+/csp_log?
 /ctr_tracking.
 /ctrack?
 /ctrl.gif?ref=
@@ -2190,6 +2193,7 @@
 /log/pageview
 /log/report/*
 /log/sentry/*
+/log/ux_analytics^
 /log/web?
 /log2.php?
 /Log?*&adID=
@@ -2483,6 +2487,7 @@
 /NitroCookies.js
 /njs.gif?
 /nLoggerJB_
+/nm/itracking?
 /nm_ga_bottom.
 /nm_ga_top_
 /nm_tr_combined-min.js
@@ -2580,6 +2585,7 @@
 /owa.tracker-combined-min.js
 /ox_stats.
 /oxtracker.
+/packaged-js/trackers.
 /packed.analytics.
 /page-analytics.
 /page-track.
@@ -2788,6 +2794,7 @@
 /popupCookieWriter.
 /popuplog/*
 /post-tracking/*
+/postcounter.php?
 /postlog?
 /postview.gif?
 /powercount.
@@ -2945,6 +2952,7 @@
 /report?event_
 /report_visit.
 /reporting/analytics.js
+/reporting/campaignresolution/?
 /request_tracker+
 /RequestTrackerServlet?
 /RequestVideoTag.
@@ -3618,6 +3626,7 @@
 /tracker/track?
 /tracker/tracker-$domain=~bugs.chromium.org
 /tracker/tracker.js
+/tracker/trackView?
 /tracker2.js
 /tracker?*=
 /tracker_activityStream.
@@ -3939,6 +3948,7 @@
 /vglnk.js
 /vgwort/*
 /video-ga.js
+/video.counters.js
 /video_count.php?
 /videoanalytic/*
 /videoAnalytics.
@@ -4283,6 +4293,7 @@
 ?log=stats&
 ?log=stats-
 ?log_visibility=
+?mf_referrer=
 ?pvid=*&pn=
 ?rand=*&blk=
 ?rand=*&ref_
@@ -4327,6 +4338,7 @@ _clicktrack.asp?
 _clickTracking.
 _ComScore.
 _contar_imp.php?
+_Crstatistics.js
 _directtrack.js
 _effectivemeasure_tag.js
 _effectLog-
@@ -4357,6 +4369,8 @@ _logHuman=
 _logimpressions.
 _loginlog.php?
 _m10banners/tracking.php?
+_marquage/js/xtcore.
+_marquage_xiti.
 _masterTagCallback&
 _metric_collect.
 _metricsTagging.
@@ -4678,6 +4692,7 @@ _mongo_stats/
 ||adku.com^$third-party
 ||admantx.com^$third-party
 ||admaster.com.cn^$third-party
+||admetric.io^$third-party
 ||admitad.com^$third-party
 ||admother.com^$third-party
 ||adobedtm.com^$third-party
@@ -4961,6 +4976,7 @@ _mongo_stats/
 ||calltrk.com^$third-party
 ||campaigncog.com^$third-party
 ||canddi.com^$third-party
+||canlytics.com^$third-party
 ||canopylabs.com^$third-party
 ||caphyon-analytics.com^$third-party
 ||captify.co.uk^$third-party
@@ -5671,7 +5687,6 @@ _mongo_stats/
 ||invoca.solutions^$third-party
 ||iocnt.net^$third-party
 ||ionmvdpifz.com^$third-party
-||ip-api.com^$third-party
 ||ip-label.net^$third-party
 ||ip2location.com^$third-party
 ||ip2map.com^$third-party
@@ -6116,6 +6131,7 @@ _mongo_stats/
 ||p.l1v.ly^$third-party
 ||p.raasnet.com^$third-party
 ||p0.raasnet.com^$third-party
+||p2r14.com^$third-party
 ||pa-oa.com^$third-party
 ||pagefair.com^$third-party
 ||pages05.net^$third-party
@@ -6843,6 +6859,7 @@ _mongo_stats/
 ||userreport.com^$third-party
 ||users-api.com^$third-party
 ||usuarios-online.com^$third-party
+||uuxnwoevyb.com^$third-party
 ||v12group.com^$third-party
 ||v3cdn.net^$third-party
 ||va-endpoint.com^$third-party
@@ -7559,12 +7576,10 @@ _mongo_stats/
 ||poolmining.eu^$third-party
 ||poolmining.net^$third-party
 ||porkypool.com^$third-party
-||ppoi.org^$third-party
 ||pr0gram.org^$third-party
 ||premiumstats.xyz^$third-party
 ||presjots.ga^$third-party
 ||proj2018.xyz^$third-party
-||projectpoi.com^$third-party
 ||proofly.win^$third-party
 ||pzoifaum.info^$third-party
 ||rand.com.ru^
@@ -8891,6 +8906,7 @@ _mongo_stats/
 ||analytics.closealert.com^
 ||analytics.cmg.net^
 ||analytics.codigo.se^
+||analytics.cohesionapps.com^
 ||analytics.conmio.com^
 ||analytics.convertlanguage.com^
 ||analytics.cynapse.com^
@@ -9360,6 +9376,7 @@ _mongo_stats/
 ||d2kyy9hvbrzkgn.cloudfront.net^
 ||d2nq0f8d9ofdwv.cloudfront.net/track.js
 ||d2nxi61n77zqpl.cloudfront.net^
+||d2o5idwacg3gyw.cloudfront.net^
 ||d2o67tzzxkqap2.cloudfront.net^
 ||d2oh4tlt9mrke9.cloudfront.net^
 ||d2pxb4n3f9klsc.cloudfront.net^
@@ -9745,6 +9762,7 @@ _mongo_stats/
 ||inq.com^*/onEvent?_
 ||insight.mintel.com^$third-party
 ||insights.gravity.com^
+||insights.plista.com^$third-party
 ||insitez.blob.core.windows.net^
 ||insnw.net/assets/dsc/dsc.fingerprint-
 ||insnw.net/instart/js/instart.js
@@ -9808,6 +9826,7 @@ _mongo_stats/
 ||lela.com/api/v2/tracking.js
 ||letv.com/cloud_pl/
 ||letv.com/env/
+||licdn.com/*.gif?rnd=
 ||licensing.bitmovin.com^
 ||lift.acquia.com^
 ||ligatus.com/push/url.gif?
@@ -9866,6 +9885,7 @@ _mongo_stats/
 ||logging.carambo.la^
 ||logging.prefixbox.com^
 ||loggingapi.spingo.com^
+||loglady.skypicker.com^
 ||logs.spilgames.com^
 ||logs.thebloggernetwork.com^
 ||logs.vmixcore.com^
@@ -10069,6 +10089,7 @@ _mongo_stats/
 ||peermapcontent.affino.com^
 ||penton.com/analytics/
 ||performance.typekit.net^$third-party
+||performgroup.com/metrics/
 ||perr.h-cdn.com^$third-party
 ||petitionermaster.appspot.com^
 ||pf.aclst.com^$third-party
@@ -10819,7 +10840,6 @@ _mongo_stats/
 ||woolik.com^*^tracker^
 ||wordpress.com/geo/
 ||worldssl.net/reporting.js$third-party
-||wp-stat.s3.amazonaws.com^
 ||wpdigital.net/metrics/
 ||ws.amazon.com/widgets/*=gettrackingid|
 ||wsb.aracert.com^
@@ -11398,6 +11418,7 @@ _mongo_stats/
 ||fab.interia.pl^
 ||hit.interia.pl^
 ||liczniki.org/hit.php
+||pixel.homebook.pl^
 ||ppstatic.pl^*/track.js
 ||quartic.pl/quartic.js
 ||scontent.services.tvn.pl^
@@ -12170,7 +12191,10 @@ _mongo_stats/
 ||domaintools.com/buffer.pgif?
 ||domaintools.com/tracker.php
 ||dominos.co.uk^*/universal.html?
+||dropbox.com/alternate_
 ||dropbox.com/el/?b=open:
+||dropbox.com/log/
+||dropbox.com/log_
 ||dropbox.com/web_timing_log
 ||drpeterjones.com/stats/
 ||dsm.com^*/searchenginetracking.js
@@ -12391,7 +12415,6 @@ _mongo_stats/
 ||geo.play.it^
 ||geo.theawesomer.com^
 ||geo.yahoo.com^
-||geoapi.indiatimes.com^
 ||geobeacon.ign.com^
 ||geoip-lookup.vice.com^
 ||geoip.al.com^
@@ -12447,7 +12470,7 @@ _mongo_stats/
 ||google.*/logxhraction?
 ||google.*/stats?frame=
 ||google.com/appserve/mkt/img/*.gif
-||google.com/log?
+||google.com/log?$~xmlhttprequest
 ||google.com/reader/logging?
 ||google.com/stream_204?
 ||google.com/support/webmasters/api/metrics?$script
@@ -12648,7 +12671,6 @@ _mongo_stats/
 ||kelkoo.co.uk^*/tracker/
 ||kelkoo.com/kk_track?
 ||kg.aws.mashable.com^
-||kickass.cd/analytics.js
 ||kiks.yandex.
 ||killerstartups.com^*/adsensev
 ||kinesisproxy.hearstlabs.com^
@@ -12730,6 +12752,7 @@ _mongo_stats/
 ||log.webnovel.com^
 ||log1.24liveplus.com^
 ||logdev.openload.co^
+||logg.kiwi.com^
 ||logger-*.dailymotion.com^
 ||logger.dailymotion.com^
 ||logger.nerdwallet.com^
@@ -12760,6 +12783,7 @@ _mongo_stats/
 ||maps.nokia.com^*/tracking.c.js
 ||marketgid.com/c?
 ||marketing.alibaba.com^
+||marketing.dropbox.com^
 ||marketing.kalahari.net^
 ||marketing.nodesource.com^
 ||marriott.com^*/Bootstrap.js
@@ -12909,6 +12933,7 @@ _mongo_stats/
 ||net-a-porter.com/intl/trackpage.nap?
 ||net.haier.com^
 ||netflix.com/beacons?*&ssizeCat=*&vsizeCat=
+||netflix.com/customerevents/
 ||netflix.com/EpicCounter?
 ||netflix.com/ichnaea/log
 ||netflix.com/LogCustomerEvent?
@@ -13341,6 +13366,7 @@ _mongo_stats/
 ||slack.com/beacon/
 ||slack.com/clog/track/
 ||slacker.com/beacon/page/$image
+||slant.co/js/track.min.js
 ||slashdot.org/images/js.gif?$image
 ||slashdot.org/purple.gif
 ||slashgear.com/stats/
@@ -14118,7 +14144,7 @@ _mongo_stats/
 ||zytpirwai.net/track/
 ! Mining
 $subdocument,third-party,domain=estream.to
-$websocket,domain=123moviesgo.nl|123movieshub.asia|123movieshub.cx|123telugu.com|1q2w3.website|2giga.link|300mbfilms.co|7tors.com|adfreetv.ch|ajplugins.com|akvideo.stream|alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.net|bigspeeds.com|biter.tv|bitvid.sx|bmovie123.me|bmoviego.me|bmovies123.me|btstors.com|bypassed.ws|byter.tv|catrumahminimalis.me|centrum-dramy.pl|cinemafacil.com|clipwatching.com|cloudtime.to|cmovieshd.nl|coinfaucet.eu|coinhub.win|coinminingonline.com|crictime.com|crictime.is|ddmix.net|dekoder.ws|deltabit.co|descargas2020.com|djs.sk|dragonballzpolo.blogspot.com|drama-cool.me|estream.nu|estream.to|estream.xyz|extratorrent.cd|fbmovies.org|fileone.tv|filmstreamvk.site|flashx.cc|flashx.co|flashx.sx|flashx.to|flashx.tv|flashx.ws|fmoviesgo.me|fruitstreams.com|gofile.io|gomovie123.me|gomovies123.me|hdvid.life|hdvid.tv|hdvid.xyz|hdyayinmac1.com|hentai-online.pl|hq-porns.com|hqq.tv|hqq.watch|ianimes.co|idope.tv|ifrp.xyz|intactoffers.club|jkanime.net|kickass.cd|kinohabr.net|kinokongo.cc|kinokrad.co|kinoprofi.org|kinosha.cc|kinostuff.com|lafmacun.net|leitor.net|leon08.tk|leon12.tk|leon16.tk|lewd.ninja|logovo.net|love-drama.pl|mladipodnikatelia.sk|monero-miner.com|movie4k.is|mp3free.pw|myeffect.net|myfeed4u.net|netiap.com|nowvideo.sx|oload.info|oload.tv|onlinevideoconverter.com|onvid.club|onvid.fun|onvid.online|onvid.pw|onvid.xyz|openload.co|openloed.co|pebx.pl|potomy.ru|povw1deo.com|povwideo.net|powvideo.cc|powvideo.net|protect-iframe.com|proxyportal.eu|reactor.cc|reservedoffers.club|rus.ec|seventorrents.cc|severita-service.ru|sherlockonline.ru|shrink-service.it|skyback.ru|skytorrents.co|skytorrents.me|sleeptimer.org|sorteosrd.com|stream247.me|streamango.com|streambeam.io|streamcherry.com|streamplay.me|streamplay.to|streamplay.top|szukajka.tv|tainies.online|theappguruz.com|thepiratebay.cr|thepiratebay.org|thepiratebay.red|thepiratebay.rocks|thevideo.cc|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|thevideo.website|tokyodrift.ga|tomadivx.tv|tubetitties.com|tvad.me|unblockall.org|unblocked.gdn|vidfile.net|vidgg.to|vidoza.net|vidto.me|vidto.se|vidtod.me|vidtodo.com|vidtodo.me|vidtodo.pro|vidtudu.com|vidup.io|vidup.me|vidup.tv|vidzi.si|vidzi.tv|void.cat|wallpoper.com|watch-free.co|watchfreemovies.tv|wearesaudis.net|wholecloud.net|wwtors.com|xmovies8.nl|ya3ale.com|yazilir.com|zenexplayer.com|ziurim.eu|zona.plus
+$websocket,domain=123moviesgo.nl|123movieshub.asia|123movieshub.cx|123telugu.com|1q2w3.website|2giga.link|300mbfilms.co|7tors.com|adfreetv.ch|ajplugins.com|akvideo.stream|alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.net|bigspeeds.com|biter.tv|bitvid.sx|bmovie123.me|bmoviego.me|bmovies123.me|btstors.com|bypassed.ws|byter.tv|catrumahminimalis.me|centrum-dramy.pl|cinemafacil.com|clipwatching.com|cloudtime.to|cmovieshd.nl|coinfaucet.eu|coinhub.win|coinminingonline.com|crictime.com|crictime.is|ddmix.net|dekoder.ws|deltabit.co|descargas2020.com|djs.sk|dragonballzpolo.blogspot.com|drama-cool.me|estream.nu|estream.to|estream.xyz|extratorrent.cd|fbmovies.org|fileone.tv|filmstreamvk.site|flashx.cc|flashx.co|flashx.sx|flashx.to|flashx.tv|flashx.ws|fmoviesgo.me|fruitstreams.com|gofile.io|gomovie123.me|gomovies123.me|hdvid.life|hdvid.tv|hdvid.xyz|hdyayinmac1.com|hentai-online.pl|hq-porns.com|hqq.tv|hqq.watch|ianimes.co|idope.tv|ifrp.xyz|intactoffers.club|jkanime.net|kinohabr.net|kinokongo.cc|kinokrad.co|kinoprofi.org|kinosha.cc|kinostuff.com|lafmacun.net|leitor.net|leon08.tk|leon12.tk|leon16.tk|lewd.ninja|logovo.net|love-drama.pl|mladipodnikatelia.sk|monero-miner.com|movie4k.is|mp3free.pw|myeffect.net|myfeed4u.net|netiap.com|nowvideo.sx|oload.info|oload.tv|onlinevideoconverter.com|onvid.club|onvid.fun|onvid.online|onvid.pw|onvid.xyz|openload.co|openloed.co|pebx.pl|potomy.ru|povw1deo.com|povwideo.net|powvideo.cc|powvideo.net|protect-iframe.com|proxyportal.eu|reactor.cc|reservedoffers.club|rus.ec|seventorrents.cc|severita-service.ru|sherlockonline.ru|shrink-service.it|skyback.ru|skytorrents.co|skytorrents.me|sleeptimer.org|sorteosrd.com|stream247.me|streamango.com|streambeam.io|streamcherry.com|streamplay.me|streamplay.to|streamplay.top|szukajka.tv|tainies.online|theappguruz.com|thepiratebay.cr|thepiratebay.org|thepiratebay.red|thepiratebay.rocks|thevideo.cc|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|thevideo.website|tokyodrift.ga|tomadivx.tv|tubetitties.com|tvad.me|unblockall.org|unblocked.gdn|vidfile.net|vidgg.to|vidoza.net|vidto.me|vidto.se|vidtod.me|vidtodo.com|vidtodo.me|vidtodo.pro|vidtudu.com|vidup.io|vidup.me|vidup.tv|vidzi.si|vidzi.tv|void.cat|wallpoper.com|watch-free.co|watchfreemovies.tv|wearesaudis.net|wholecloud.net|wwtors.com|xmovies8.nl|ya3ale.com|yazilir.com|zenexplayer.com|ziurim.eu|zona.plus
 $xmlhttprequest,domain=adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|catrumahminimalis.me|ddmix.net|dekoder.ws|estream.to|flashx.cc|freecontent.stream|leon08.tk|leon12.tk|leon16.tk|myeffect.net|nowvideo.sx|onlinevideoconverter.com|povw1deo.com|povwideo.net|powvideo.cc|powvideo.net|sleeptimer.org|sorteosrd.com|streambeam.io|streamplay.top|szukajka.tv|tainies.online|vidfile.net|vidgg.to|wholecloud.net
 ! regex !
 /([0-9]{1,3}\.){3}[0-9]{1,3}.*(\/proxy|\.wasm|\.wsm|\.wa)$/$third-party,websocket
@@ -14157,8 +14183,8 @@ $xmlhttprequest,domain=adfreetv.ch|alltube.pl|alltube.tv|auroravid.to|catrumahmi
 |http*://$script,third-party,domain=salon.com
 ! CSP Mining
 $csp=child-src 'none'; frame-src 'self' *; worker-src 'none',domain=fileone.tv|theappguruz.com
-$csp=child-src 'none'; frame-src *; worker-src 'none',domain=adfreetv.ch|ddmix.net|extratorrent.cd|gofile.io|hq-porns.com|intactoffers.club|kickass.cd|myfeed4u.net|reservedoffers.club|skyback.ru|szukajka.tv|thepiratebay.cr|thepiratebay.org|thepiratebay.red|thevideo.cc|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|tvad.me|vidoza.net|vidup.me
-$csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv|animeteatr.ru|bigspeeds.com|biter.tv|byter.tv|centrum-dramy.pl|cinemafacil.com|coinhub.win|crictime.com|crictime.is|dekoder.ws|deltabit.co|descargas2020.com|estream.nu|estream.to|estream.xyz|filmonet.com|filmstreamvk.site|flashx.cc|300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.net|bigspeeds.com|biter.tv|bypassed.ws|byter.tv|centrum-dramy.pl|cinemafacil.com|clipwatching.com|coinfaucet.eu|coinhub.win|crictime.com|crictime.is|dekoder.ws|deltabit.co|descargas2020.com|estream.nu|estream.to|estream.xyz|filmonet.com|filmstreamvk.site|flashx.cc|flashx.co|flashx.sx|flashx.to|flashx.tv|flashx.ws|hdvid.life|hdvid.tv|hdvid.xyz|hentai-online.pl|hqq.tv|hqq.watch|ianimes.co|kinostuff.com|kinokongo.cc|lewd.ninja|love-drama.pl|movie4k.is|pebx.pl|potomy.ru|proxyportal.eu|povw1deo.com|povwideo.net|powvideo.cc|powvideo.net|reactor.cc|salon.com|severita-service.ru|sickrage.ca|sorteosrd.com|tokyodrift.ga|tomadivx.tv|unblockall.org|unblocked.gdn|vidfile.net|vidto.me|vidto.se|vidtod.me|vidtodo.com|vidtodo.me|vidtodo.pro|vidtudu.com|wallpoper.com|wearesaudis.net|ya3ale.com|yazilir.com|zenexplayer.com|ziurim.eu|flashx.co|flashx.sx|flashx.to|flashx.tv|flashx.ws|hdvid.life|hdvid.tv|hdvid.xyz|hentai-online.pl|hqq.tv|hqq.watch|ianimes.co|kinokongo.cc|kinostuff.com|lewd.ninja|love-drama.pl|movie4k.is|potomy.ru|povw1deo.com|povwideo.net|powvideo.net|reactor.cc|salon.com|sickrage.ca|sorteosrd.com|tokyodrift.ga|tomadivx.tv|vidfile.net|vidto.me|vidto.se|vidtod.me|vidtodo.com|vidtodo.me|vidtodo.pro|vidtudu.com|wearesaudis.net|ya3ale.com|zenexplayer.com|ziurim.eu
+$csp=child-src 'none'; frame-src *; worker-src 'none',domain=adfreetv.ch|ddmix.net|extratorrent.cd|gofile.io|hq-porns.com|intactoffers.club|myfeed4u.net|reservedoffers.club|skyback.ru|szukajka.tv|thepiratebay.cr|thepiratebay.org|thepiratebay.red|thevideo.cc|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|tvad.me|vidoza.net|vidup.me
+$csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.net|bigspeeds.com|biter.tv|bypassed.ws|byter.tv|centrum-dramy.pl|cinemafacil.com|clipwatching.com|coinfaucet.eu|coinhub.win|crictime.com|crictime.is|dekoder.ws|deltabit.co|descargas2020.com|estream.nu|estream.to|estream.xyz|filmonet.com|filmstreamvk.site|flashx.cc|flashx.co|flashx.sx|flashx.to|flashx.tv|flashx.ws|hdvid.life|hdvid.tv|hdvid.xyz|hentai-online.pl|hqq.tv|hqq.watch|ianimes.co|kinokongo.cc|kinostuff.com|lewd.ninja|love-drama.pl|movie4k.is|pebx.pl|potomy.ru|povw1deo.com|povwideo.net|powvideo.cc|powvideo.net|proxyportal.eu|reactor.cc|salon.com|severita-service.ru|sickrage.ca|sorteosrd.com|tokyodrift.ga|tomadivx.tv|unblockall.org|unblocked.gdn|vidfile.net|vidto.me|vidto.se|vidtod.me|vidtodo.com|vidtodo.me|vidtodo.pro|vidtudu.com|wallpoper.com|wearesaudis.net|ya3ale.com|yazilir.com|zenexplayer.com|ziurim.eu
 ! Preliminarily blocking Omniture s_code tracking scripts (versions H.25 - H.25.2) due to breakage (https://adblockplus.org/forum/viewtopic.php?f=10&t=11378)
 ||abc.com/service/gremlin/js/files/s_code.js?$domain=abc.go.com
 ||adobe.com^*/omniture_s_code.js
@@ -14315,6 +14341,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 ||boss.berlinonline.de^
 ||braunschweiger-zeitung.de/stats/
 ||brigitte.de/pv?
+||bt.mediaimpact.de^
 ||bz-berlin.de/_stats/
 ||c.perlentaucher.de^
 ||c.t-online.de^
@@ -15339,6 +15366,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 @@||atdmt.com^*/direct*01$domain=sprint.com
 @@||atlanticbb.net/images/track/track.gif?$xmlhttprequest
 @@||atpworldtour.com/assets/js/util/googleAnalytics.js
+@@||att.com/scripts/adobe/virtual/detm-container-hdr.js
 @@||att.com/webtrends/scripts/dcs_tag.js
 @@||audi.co.uk^*/js/tracking/$script
 @@||autoscout24.net/unifiedtracking/ivw.js
@@ -15499,9 +15527,9 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 @@||dw.cbsi.com/js/dw.js$domain=cnet.com
 @@||dw.com.com/js/dw.js$domain=cbsnews.com|cnet.com|gamespot.com|tv.com
 @@||e2e-comms.pearson.com/osbrowserchecker/prd/thirdPartyCookie.html?$subdocument,domain=pearsonmylabandmastering.com
-@@||ec.atdmt.com/b/$domain=starwoodhotels.com
 @@||ecostream.tv/js/ecos.js
 @@||edgedatg.com/aws/apps/datg/web-player-unity/*/AppMeasurement.js$domain=abc.go.com
+@@||edgedatg.com^*/VisitorAPI.js$domain=disneynow.go.com
 @@||edgesuite.net/crossdomain.xml$object-subrequest,domain=sbs.com.au
 @@||egencia.com/pubspec/scripts/include/omnitureAnalytics.js
 @@||egencia.com/pubspec/scripts/include/siteanalytics_include.js
@@ -15624,6 +15652,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 @@||imwx.com/jsRollup?$script,domain=weather.com
 @@||inazuma.co/campaign/js/heatmap.js$domain=monopoly.mcdonalds.co.uk
 @@||infowars.com/videojs-event-tracking/dist/videojs-event-tracking.js
+@@||infra.lync.com/Scheduler/Scripts/aria-web-telemetry-$script,~third-party
 @@||innovelsolutions.com^*/tracking/$~third-party
 @@||inpref.com/frosmo.xdm.html?$subdocument
 @@||inpref.com/messageApi?$xmlhttprequest
@@ -15830,6 +15859,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 @@||ps.w.org/google-analytics-dashboard-for-wp/assets/
 @@||pshared.5min.com/Scripts/OnePlayer/Loggers/ComScore.StreamSense.js
 @@||pshared.5min.com/Scripts/OnePlayer/Loggers/ComScore.Viewability.js
+@@||puch-ersatzteile.at^*/google-analytics.min.js
 @@||push2check.com/stats.php
 @@||qbrick.com/framework/modules/analytics/analytics.min.js$script
 @@||quantcast.com/wp-content/themes/quantcast/$domain=quantcast.com
@@ -15892,6 +15922,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 @@||sportsgrid.com/decor/javascript/magnify_stats.js
 @@||spot.im/api/tracker/spot/$xmlhttprequest,domain=rt.com
 @@||springriverchronicle.com/shared-content/art/tncms/tracking.js$domain=springriverchronicle.com
+@@||src.fedoraproject.org/static/issues_stats.js?
 @@||star-telegram.com/mistats/sites/dfw/startelegram.js
 @@||startclass.com/ga.$script,xmlhttprequest
 @@||statcounter.com/chart.php?$script
@@ -15987,8 +16018,6 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 @@||vidible.tv^*/ComScore.StreamSense.js
 @@||vidible.tv^*/ComScore.Viewability.js
 @@||vidtech.cbsinteractive.com^*/AkamaiAnalytics.swf$domain=kuathletics.com|mutigers.com|okstate.com
-@@||view.atdmt.com^*/iview/$domain=starwoodhotels.com
-@@||view.atdmt.com^*/view/$domain=starwoodhotels.com
 @@||virtualearth.net/webservices/v1/LoggingService/$script
 @@||virtualearth.net^*/LoggingService.svc/Log?$script,domain=bing.com|spatialbuzz.com
 @@||virusdesk.kaspersky.com/Resources/js/analytics.js$script
@@ -16309,6 +16338,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 @@||k-ruokakauppa.fi/fi/static/js/counter.js$domain=k-ruokakauppa.fi
 @@||lekane.net/lekane/dialogue-tracking.js?$script
 @@||op.fi/creditcalculator/js/analytics.js?$script
+@@||power.fi/Umbraco/Api/Tracking/$xmlhttprequest
 @@||qbrick.com^*/ga.min.js$domain=iltalehti.fi
 ! Greek
 @@||stats.e-go.gr/rx.asp?$object-subrequest,domain=megatv.com

@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: XCP2k4/bfKS+u0emiqrUAg
-! Version: 201903090441
+! Checksum: 29D0tmGWGvB+GCPejGKAhQ
+! Version: 201903150301
 ! Title: Adblock Warning Removal List
-! Last modified: 09 Mar 2019 04:41 UTC
+! Last modified: 15 Mar 2019 03:01 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -182,6 +182,7 @@ shadbase.com##img[alt="adblock"]
 ##.AdblockMessage
 ##.AdblockMessage_msg
 ##.ad-alert-wrapper
+##.ad-block-detected
 ##.ad-block-enabled
 ##.ad-block-message
 ##.ad-blocked
@@ -229,6 +230,7 @@ developpez.com,developpez.net###encart_droite div[style="display: inline-block; 
 iphonesoft.fr,iphonetweak.fr###msgNoPub
 retinaboys.com###screen_block
 lagrosseradio.com###warn
+journaldugeek.com##.banner__content
 ceesty.com,clkme.me,clkmein.com,cllkme.com,corneey.com,destyy.com,festyy.com,gestyy.com,jigbig.tk,newsfortrump.ga,sh.st,shorte.st,skiip.me,skipp.io,viid.me,wiid.me##.information-container
 etr.fr##.no_block
 radiox.com##.notifyjs-corner
@@ -266,6 +268,7 @@ delfi.ee###ab--notification-ribbon
 minimultik.ru###abDetected
 patrioty.org.ua###ad_pu_modal
 mambaru###adblock-in-browser
+dressupmix.ru,teensgames.ru###adblock_popup
 vesti-ukr.com###adblockpopup
 happy-hack.ru###admitad-cookie-check-popup
 wotactions.com###ads_warning
@@ -382,7 +385,7 @@ forum.bestflowers.ru##.xenOverlay
 @@||anime.anidub.com/ads.js$script,domain=anime.anidub.com
 @@||goha.ru/app/video/adblock.teaser.js|$script,domain=goha.ru
 @@||sports.ru^*/adfox.$xmlhttprequest
-mycrib.ru,piggy-bank.online##[data-type="anti-abp"]
+auto62rus.ru,eset-key.ru,mycrib.ru,piggy-bank.online,politonline.ru,showmehow.ru##[data-type="anti-abp"]
 lr-club.com##a[href="https://adblockplus.org/ru/faq_basics#disable"]
 drive2.ru##a[href][target="_blank"] > img[src][style^="width: 100%; height: auto;"][style*="vertical-align: middle; max-width: 240px;"]
 pic4you.ru,pic5you.ru##body > #bb
@@ -397,6 +400,7 @@ in-trend.biz##body > [id][style^="z-index"]
 fightnews.info##body > blockquote
 torrnado.win##body > div > .a-overlay
 olegon.ru##body > div:not([id]):not([class])[style^="color"][style*="position: fixed; width: 99%"]
+rp5.by,rp5.kz,rp5.ru,rp5.ua##body > div:not([id]):not([class])[style^="position"][style*="background"][style*="z-index"]
 factorio.su##body > div[class][style*="background"][style*="display: block"]
 gdekluet.ru##body > div[class^="stop-block"]
 glav.su##body > div[id]:not([class])[style*="background"][style*="display: block"]
@@ -413,13 +417,13 @@ kinopad.net##div[class^="adblock-warning"]
 lostfilm.tv##div[class^="alarm"]
 gismeteo.by,gismeteo.ru##div[class^="stopblock"]
 finfront.ru##div[class^="swal2"]
-eset-key.ru,politonline.ru,showmehow.ru##div[data-type="anti-abp"]
 savevideo.me##div[id^="ads_notice_"]
 forvk.space##div[id^="block"][style*="display: block;"]
 acomics.ru##div[style*="/design/common/pic/please"]
 abc-people.com##div[style*="background-color"][style*="position"][style*="z-index"]
 pvcalc.ru##div[style^="position:fixed; top:0px; left:0px; opacity: 0.9;"]
 ph4.ru##div[style^="width: 728px; height: 90px;"]
+bdmbase.ru##html > .q1
 7sim.net##html > body ~ div
 d3.ru##section[data-uid="ad"]
 d3.ru##section[data-uid="extraAd"]
@@ -428,6 +432,7 @@ bigpuzzle.ru##td[valign="top"][width="200px"][height="600"] > div[style]
 tproger.ru#?#article.type-post:-abp-has([href="/adblock"])
 www.qrz.ru#?#.content_row > div[class]:-abp-has(> .inner > a[href="/help/adblock/"])
 ||adscat.ru^$third-party
+||allnorilsk.ru/js/adb.js
 ||animeteatr.ru/a-detector/
 ||anivisual.net/mim*.js|$script,domain=anivisual.net
 ||avito.ru^*/some-pretty-script.js

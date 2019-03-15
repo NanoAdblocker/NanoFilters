@@ -662,7 +662,9 @@ orange.fr###o_carrepub:style(height: 1px; margin: 0; min-height: auto; visibilit
 @@||analytics.logsss.com^$script,domain=dresslily.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/791
+@@||dpm.demdex.net/id?*AdobeOrg&$xhr,domain=foxbusiness.com
 @@||global.fncstatic.com/static/*/VisitorAPI.js$script,domain=video.foxbusiness.com
+@@||smetrics.foxbusiness.com/id?*AdobeOrg&$xhr,1p
 
 ! issues /821 / 1703
 @@||ntn24america.com/*ads$script,first-party
@@ -1478,6 +1480,8 @@ warszawawpigulce.pl##.eklama
 |http*://$third-party,image,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123movies.live|123movies.net|123movies.net.ru|123movies.ru|123movies.vc|123moviesfree.com|123movieshd.net|123movieshd.tv|9cartoon.me|animehaven.to|auroravid.to|ay8ou8ohth.com|bitvid.sx|btdb.in|btdb.to|clipconverter.cc|cloudtime.to|cmovieshd.com|divxme.com|downloadming.tv|dropapk.com|flyordie.com|full-pcsoftware.com|halacima.net|hdmusic99.in|hdtv-rls.com|kannadamovies.biz|kissanime.ru|kissmanga.com|livetvcafe.net|movdivx.com|mp3clan.one|nowvideo.li|nowvideo.sx|nowvideo.to|oogh8ot0el.com|otakustream.tv|otorrents.com|putlocker.co|solarmovie.sc|speedvid.net|stream2watch.org|suprafiles.co|thepiratebay.cd|vidto.me|vidtudu.com|wholecloud.net,badfilter
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/9hy3s7/mlb_standings_not_working/
+! https://github.com/NanoMeow/QuickReports/issues/810
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=mlb.com
 @@||mlbstatic.com/*/AppMeasurement$script,domain=mlb.com
 @@||mlbstatic.com/*/VisitorAPI.js$script,domain=mlb.com
 
@@ -1837,6 +1841,10 @@ windowscentral.com#@#a[href^="/e?link="]
 ||unblocked.app^$csp=script-src 'self' * 'unsafe-inline',badfilter
 ||seedpeer.me^$csp=script-src 'self' 'unsafe-inline',badfilter
 seedpeer.me,seedpeer.unblocked.app##.section.page-content > .container > div > div:has-text(/recommended/i)
+||unblocked.pet^$csp=script-src 'self' * 'unsafe-inline',badfilter
+seedpeer.unblocked.pet##.title:has-text(/recommended/i):xpath(..)
+||seedpeer.unblocked.*^$frame,1p
+||seedpeer.me^$frame,1p
 
 ! https://github.com/easylist/easylist/issues/2285
 @@||fastwhitecat.com/wp-content/plugins/*-google-tag-manager/$script,1p
@@ -2036,14 +2044,10 @@ nypost.com,pagesix.com#@#.recirc
 ! https://forums.lanik.us/viewtopic.php?f=64&t=42677
 @@||s2.coinmarketcap.com^$image
 
-! https://github.com/uBlockOrigin/uAssets/issues/1234#issuecomment-467910110
-! https://github.com/uBlockOrigin/uAssets/commit/b9f59ab1dd43045327bf9e66c46248671bebaac7#commitcomment-32551449
 ! https://github.com/uBlockOrigin/uAssets/issues/3304
-|https://$third-party,script,domain=descargasnsn.com|jkanime.net
-|https://$third-party,script,domain=animeflv.net|descargasnsn.com|jkanime.net,badfilter
-|https://$third-party,xmlhttprequest,domain=descargasnsn.com|jkanime.net
-|https://$third-party,xmlhttprequest,domain=animeflv.net|descargasnsn.com|jkanime.net,badfilter
 @@/https?:\/\/.*[=|&|%|#|+].*/$popup,domain=animeflv.net
+|https://$third-party,script,domain=animeflv.net|descargasnsn.com|jkanime.net,badfilter
+|https://$third-party,xmlhttprequest,domain=animeflv.net|descargasnsn.com|jkanime.net,badfilter
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=42683
 thewirecutter.com#@#.callout
@@ -2056,10 +2060,6 @@ thewirecutter.com#@#.deals-love
 
 ! https://github.com/NanoMeow/QuickReports/issues/730
 @@||load.sumome.com^$script,domain=beewits.com
-
-! https://forums.lanik.us/viewtopic.php?f=64&t=42690&p=146040#p146040
-/adboost.$domain=~adboost.io|~adboost.sellerboost.de,badfilter
-/adboost.$domain=~adboost.io|~adboost.sellerboost.de|~adboost.se
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5035
 ||reutersmedia.net/resources/r/?m=$image,badfilter
@@ -2099,10 +2099,6 @@ maniac.de#@#.td-ad-background-link
 ! https://forums.lanik.us/viewtopic.php?f=64&t=42718&p=146190#p146190
 ||production.airswap.io^$badfilter
 
-! https://forums.lanik.us/viewtopic.php?f=64&t=42720
-/adflow.$domain=~adflow.io|~adflow.marketing|~adflow.pl,badfilter
-/adflow.$domain=~adflow.com.au|~adflow.io|~adflow.marketing|~adflow.pl
-
 ! https://github.com/uBlockOrigin/uAssets/issues/5076
 @@||oceano.uy/scripts/libraries/clappr/clappr-vast-ads-master/dist/vast-ads.min.js$script,1p
 
@@ -2111,3 +2107,31 @@ maniac.de#@#.td-ad-background-link
 
 ! https://github.com/easylist/easylist/issues/2942
 @@||pro.ip-api.com/json/*$xhr,domain=aljazeera.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/5087
+@@||geoapi.indiatimes.com/$script,1p
+
+! https://github.com/easylist/easylist/issues/2998
+@@||puch-ersatzteile.at/static/*/Magento_GoogleAnalytics/*$script,1p
+
+! https://github.com/uBlockOrigin/uAssets/issues/5102#issuecomment-471467033
+readmng.com#@#[style] > iframe
+readmng.com#@#div > iframe:first-child
+
+! https://forums.lanik.us/viewtopic.php?p=146309#p146309
+theinventory.com#@#.commerce-inset
+
+! https://github.com/uBlockOrigin/uAssets/issues/5114
+@@||att.com/scripts/adobe/virtual/detm-container-hdr.js$script,1p
+
+! https://github.com/abp-filters/abp-filters-anti-cv/issues/102#issuecomment-472241581
+@@||static1.dmcdn.net/playerv5/*$script,domain=laprovence.com
+
+! https://github.com/uBlockOrigin/uAssets/commit/10ab25bfc9583416bffc29af065fbf3c74cab5e6#commitcomment-32733032
+|https://$third-party,script,domain=29443kmq.video|xmoviesforyou.com,badfilter
+
+! https://github.com/uBlockOrigin/uAssets/issues/5125
+@@||adobedtm.com^*/satellitelib-$script,domain=papers.ssrn.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/5127
+@@||cdn.taplytics.com/taplytics.min.js$script,domain=es.wallapop.com

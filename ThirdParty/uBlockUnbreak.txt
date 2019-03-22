@@ -163,10 +163,6 @@ ovh.strim.io#@##tweets
 ||quantcast.com^$badfilter
 ||quantcast.com^$third-party
 
-! Chrome store feedback: "on gaana.com it blocks the site"
-! To counter `_social_tracking.` in EasyPrivacy
-@@||css5.gaanacdn.com/minify-*/min/?$script,domain=gaana.com
-
 ! https://twitter.com/Urre/status/572742363069714432
 ! To counter `/keen.min.js` in EasyPrivacy
 @@||keen.github.io/*/keen.min.js$~third-party
@@ -765,10 +761,6 @@ publicdomainq.net##ins.adsbygoogle
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1316
 ||googletagservices.com/tag/js/gpt.js$script,redirect=noopjs,domain=playground.ru|radio-canada.ca|tvguide.com
-
-! https://twitter.com/niederhuth/status/954769725371895808
-! To override `/fingerprint.js` from EasyPrivacy
-@@||pnas.org^*/fingerprint.js$script,first-party
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/7rwh1a/ublock_preventing_clicks_to_buttons_on_firefox/
 ||iworkfor.nsw.gov.au/Scripts/ga.js$script,first-party,redirect=noopjs
@@ -1474,7 +1466,9 @@ warszawawpigulce.pl##.eklama
 @@||geoip.nekudo.com/api/*$xmlhttprequest,domain=opentable.com
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=41758
+! https://www.reddit.com/r/uBlockOrigin/comments/b2elfc/ublock_not_allowing_page_to_load_kissmanga/
 |http*://$third-party,image,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123movies.live|123movies.net|123movies.net.ru|123movies.ru|123movies.vc|123moviesfree.com|123movieshd.net|123movieshd.tv|9cartoon.me|animehaven.to|auroravid.to|ay8ou8ohth.com|bitvid.sx|btdb.in|btdb.to|clipconverter.cc|cloudtime.to|cmovieshd.com|divxme.com|downloadming.tv|dropapk.com|flyordie.com|full-pcsoftware.com|halacima.net|hdmusic99.in|hdtv-rls.com|kannadamovies.biz|kissanime.ru|kissmanga.com|livetvcafe.net|movdivx.com|mp3clan.one|nowvideo.li|nowvideo.sx|nowvideo.to|oogh8ot0el.com|otakustream.tv|otorrents.com|putlocker.co|solarmovie.sc|speedvid.net|stream2watch.org|suprafiles.co|thepiratebay.cd|vidto.me|vidtudu.com|wholecloud.net,badfilter
+|http*://$third-party,image,domain=123movies-proxy.ru|123movies.cz|123movies.gs|123movies.is|123movies.live|123movies.net|123movies.net.ru|123movies.ru|123movies.vc|123moviesfree.com|123movieshd.net|123movieshd.tv|9cartoon.me|animehaven.to|auroravid.to|ay8ou8ohth.com|btdb.in|btdb.to|clipconverter.cc|cmovieshd.com|divxme.com|downloadming.tv|dropapk.com|flyordie.com|full-pcsoftware.com|halacima.net|hdmusic99.in|hdtv-rls.com|kissanime.ru|kissmanga.com|livetvcafe.net|movdivx.com|mp3clan.one|ocean0fgames.com|oogh8ot0el.com|otakustream.tv|otorrents.com|putlocker.co|rgmechanicsgames.com|solarmovie.sc|speedvid.net|stream2watch.org|suprafiles.co|the123movies.org|thepiratebay.cd|vidto.me|vidtudu.com|wholecloud.net,badfilter
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/9hy3s7/mlb_standings_not_working/
 ! https://github.com/NanoMeow/QuickReports/issues/810
@@ -1643,6 +1637,9 @@ wildsnow.com#@##ad-container
 |https://$third-party,script,domain=damimage.com|dimtus.com|imagedecode.com|imageteam.org|imgadult.com|imgclick.net|imgdew.com|imgdew.pw|imgdrive.net|imgkings.com|imgmaid.net|imgmaze.com|imgmaze.pw|imgnemo.com|imgoutlet.com|imgrock.info|imgrock.net|imgstudio.org|imgtaxi.com|imgtown.net|imgtown.pw|imgtrex.com|imgview.net|imgview.pw|imgwallet.com|ironimg.net,badfilter
 |https://$third-party,image,domain=damimage.com|dimtus.com|imagedecode.com|imageteam.org|imgadult.com|imgclick.net|imgdew.com|imgdew.pw|imgdrive.net|imgkings.com|imgmaid.net|imgmaze.com|imgmaze.pw|imgnemo.com|imgoutlet.com|imgrock.info|imgrock.net|imgstudio.org|imgtaxi.com|imgtown.net|imgtown.pw|imgtrex.com|imgview.net|imgview.pw|imgwallet.com|ironimg.net,badfilter
 |https://$third-party,image,domain=damimage.com|dimtus.com|imagedecode.com|imageteam.org|imgadult.com|imgclick.net|imgdew.com|imgdew.pw|imgdrive.net|imgkings.com|imgmaid.net|imgmaze.com|imgmaze.pw|imgnemo.com|imgoutlet.com|imgrock.co|imgrock.info|imgrock.net|imgstudio.org|imgtaxi.com|imgtown.net|imgtown.pw|imgtrex.com|imgview.net|imgview.pw|imgwallet.com|ironimg.net,badfilter
+|https://$third-party,image,domain=damimage.com|dimtus.com|imagedecode.com|imageteam.org|imgadult.com|imgclick.net|imgdew.com|imgdew.pw|imgdrive.net|imgkings.com|imgmaze.com|imgmaze.pw|imgoutlet.com|imgrock.info|imgrock.net|imgrock.pw|imgstudio.org|imgtaxi.com|imgtown.net|imgtown.pw|imgview.net|imgview.pw|imgwallet.com,badfilter
+|https://$third-party,script,domain=damimage.com|dimtus.com|imagedecode.com|imageteam.org|imgadult.com|imgclick.net|imgdew.com|imgdew.pw|imgdrive.net|imgkings.com|imgmaze.com|imgmaze.pw|imgoutlet.com|imgrock.info|imgrock.net|imgrock.pw|imgstudio.org|imgtaxi.com|imgtown.net|imgtown.pw|imgview.net|imgview.pw|imgwallet.com,badfilter
+@@||imgview.pw^$generichide
 ! https://github.com/uBlockOrigin/uAssets/issues/4993
 @@||imgdew.com/js/*$script,domain=imgdew.pw
 
@@ -1976,9 +1973,6 @@ tasteofhome.com#@#.ad-wrapper
 ! https://github.com/uBlockOrigin/uAssets/issues/4909
 @@||adobedtm.com^*/satellitelib-$script,domain=virginmobile.ca
 
-! https://github.com/uBlockOrigin/uAssets/issues/4957
-@@||squirrelhands.com^$domain=nbcnews.com
-
 ! https://forums.lanik.us/viewtopic.php?f=64&t=42649
 ://ads.$domain=~ads.ac.uk|~ads.adstream.com.ro|~ads.am|~ads.bigbom.com|~ads.colombiaonline.com|~ads.comeon.com|~ads.elcarado.com|~ads.google.com|~ads.harvard.edu|~ads.lapalingo.com|~ads.lordlucky.com|~ads.mobilebet.com|~ads.msstate.edu|~ads.nc|~ads.nimses.com|~ads.quasaraffiliates.com|~ads.red|~ads.route.cc|~ads.sk|~ads.socialtheater.com|~ads.toplayaffiliates.com|~ads.viksaffiliates.com|~ads.watson.ch|~ads.xtribeapp.com|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~seriouswheels.com,badfilter
 ://ads.$domain=~ads.ac.uk|~ads.adstream.com.ro|~ads.am|~ads.bigbom.com|~ads.colombiaonline.com|~ads.comeon.com|~ads.dev.int.revelian.com|~ads.elcarado.com|~ads.google.com|~ads.harvard.edu|~ads.lapalingo.com|~ads.lordlucky.com|~ads.mobilebet.com|~ads.msstate.edu|~ads.nc|~ads.nimses.com|~ads.quasaraffiliates.com|~ads.red|~ads.route.cc|~ads.sk|~ads.socialtheater.com|~ads.toplayaffiliates.com|~ads.viksaffiliates.com|~ads.watson.ch|~ads.xtribeapp.com|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~seriouswheels.com
@@ -2060,6 +2054,7 @@ thewirecutter.com#@#.deals-love
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5035
 ||reutersmedia.net/resources/r/?m=$image,badfilter
+||s2.reutersmedia.net/*&$image,badfilter
 
 ! https://github.com/uBlockOrigin/uAssets/issues/4138#issuecomment-468804688
 ||track.rediff.com^$badfilter
@@ -2102,24 +2097,12 @@ maniac.de#@#.td-ad-background-link
 ! https://github.com/easylist/easylist/issues/2935
 @@||src.fedoraproject.org/static/issues_stats.js$script,1p
 
-! https://github.com/easylist/easylist/issues/2942
-@@||pro.ip-api.com/json/*$xhr,domain=aljazeera.com
-
-! https://github.com/uBlockOrigin/uAssets/issues/5087
-@@||geoapi.indiatimes.com/$script,1p
-
 ! https://github.com/easylist/easylist/issues/2998
 @@||puch-ersatzteile.at/static/*/Magento_GoogleAnalytics/*$script,1p
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5102#issuecomment-471467033
 readmng.com#@#[style] > iframe
 readmng.com#@#div > iframe:first-child
-
-! https://forums.lanik.us/viewtopic.php?p=146309#p146309
-theinventory.com#@#.commerce-inset
-
-! https://github.com/uBlockOrigin/uAssets/issues/5114
-@@||att.com/scripts/adobe/virtual/detm-container-hdr.js$script,1p
 
 ! https://github.com/abp-filters/abp-filters-anti-cv/issues/102#issuecomment-472241581
 @@||static1.dmcdn.net/playerv5/*$script,domain=laprovence.com
@@ -2151,3 +2134,23 @@ theinventory.com#@#.commerce-inset
 ! https://forums.lanik.us/viewtopic.php?p=146451#p146451
 |https://$third-party,script,domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world,badfilter
 |https://$third-party,stylesheet,domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world,badfilter
+
+! https://github.com/uBlockOrigin/uAssets/issues/5160
+! To counter Peter Lowe's `qualtrics.com`
+@@||qualtrics.com^$first-party
+
+! https://github.com/NanoMeow/QuickReports/issues/9#issuecomment-473751320
+|https://$xmlhttprequest,domain=pornhub.com|redtube.com|redtube.com.br|tube8.com|tube8.es|tube8.fr|youporn.com|youporngay.com,badfilter
+|https://$third-party,xmlhttprequest,domain=destructoid.com|diffen.com|divxatope1.com|dreamfilm.se|dumpaday.com|dwatchseries.to|episodetube.com|episodetube.net|fastpic.ru|fileone.tv|filme-streamz.com|filmlinks4u.is|firstforwomen.com|firstrowau.eu|firstrowus1.eu|flash-x.tv|flashsx.tv|flashx.co|flashx.me|flashx.run|flashx.tv|flashx1.tv|flashxx.tv|fmovies.to|fmovies.world|free-torrent.org|free-torrent.pw|free-torrents.org|free-torrents.pw|freewarefiles.com|gamenguide.com|genfb.com|gofirstrow.eu|gomovies.sc|gorillavid.in|gsmarena.com|hdvid.life|hdvid.tv|hdvid.xyz|health-weekly.net|homerun.re|i4u.com|ifirstrow.eu|ifirstrowit.eu|imagefap.com|instanonymous.com|investopedia.com|itechpost.com|izismile.com|jewsnews.co.il|keepvid.com|kino-streamz.com|kiplinger.com|kshowonline.com|lifehacklane.com|livecricketz.org|livescience.com|lolcounter.com|megaup.net|mobilenapps.com|mobipicker.com|movies123.xyz|movies4stream.com|movpod.in|myfeed4u.me|myfeed4u.net|mylivecricket.org|natureworldnews.com|navbug.com|ncscooper.com|newpct.com|newsarama.com|newseveryday.com|newtvworld.com|nowfeed2all.eu|okceleb.com|oloadcdn.net|olympicstreams.me|omgwhut.com|onvid.club|onvid.fun|onvid.online|onvid.pw|onvid.xyz|onwatchseries.to|openload.co|openload.pw|opensubtitles.org|otakustream.tv|parentherald.com|pcgames-download.net|playbill.com|pocketnow.com|pornhub.com|postimg.org|powvideo.net|pwinsider.com|qaafa.com|rapidvideo.com|reservedoffers.club|rinf.com|roadracerunner.com|salefiles.com|scienceworldreport.com|sgvideos.net|shorte.st|skidrowcrack.com|snoopfeed.com|stream-tv-series.net|stream-tv2.to|stream2watch.cc|streamazone.com|streamgaroo.com|strikeout.co|strikeout.me|strikeout.mobi|teamliquid.net|technobuffalo.com|the123movies.org|the4thofficial.net|thefreethoughtproject.com|thevideo.me|thinkinghumanity.com|todayshealth.buzz|tomsguide.com|tomshardware.co.uk|tomshardware.com|tomsitpro.com|toptenz.net|torrentz2.eu|tribune.com.pk|trifind.com|tune.pk|tv-series.me|uberhavoc.com|universityherald.com|usherald.com|vcpost.com|vidhd.club|vidhd.icu|vidhd.pw|vidmax.com|vidoza.net|vidtodo.com|vidzi.online|vidzi.si|vidzi.tv|viewmixed.com|viid.me|vipbox.bz|vipbox.is|vipbox.sx|vipbox.tv|vipboxeu.co|vipboxoc.co|vipboxtv.me|vipleague.ch|vipleague.co|vipleague.is|vipleague.me|vipleague.mobi|vipleague.se|vipleague.sx|vipleague.tv|vipleague.ws|vipstand.is|viralands.com|vrheads.com|watchepisodes-tv.com|watchseries.li|webfirstrow.eu|wholecloud.net|whydontyoutrythis.com|wrestlinginc.com|wrestlingnews.co|xda-developers.com|xilfy.com|yourtailorednews.com|yourtango.com,badfilter
+
+! https://github.com/NanoAdblocker/NanoFilters/issues/287
+@@||google-analytics.com/analytics.js$script,domain=linetv.tw
+
+! https://github.com/easylist/easylist/issues/3096
+||intercom.io^$badfilter
+
+! https://adblockplus.org/forum/viewtopic.php?f=10&t=64912&p=186950#p186950
+@@||guyhollaway.co.uk^$generichide
+
+! breakage caused by Yavli-filters in EasyList
+@@||youtube.com/yts/jsbin/*$script,domain=breathecast.com|classicalite.com|crossmap.com|hallels.com|newseveryday.com|returnofkings.com

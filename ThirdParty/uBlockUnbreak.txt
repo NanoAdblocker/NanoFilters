@@ -1271,6 +1271,8 @@ techadvisor.co.uk#@#.adsbygoogle
 @@||jsonip.com^$xmlhttprequest,domain=djs-jpn.ga
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2890
+! https://github.com/NanoMeow/QuickReports/issues/865
+||src.litix.io/core/*/mux.js$script,redirect=noopjs,domain=kanald.com.tr
 @@||gatr.hit.gemius.pl/gplayer.js$script,domain=kanald.com.tr
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2912
@@ -1909,8 +1911,13 @@ xtube.com#@#[style*="height: 330px;"]
 ! https://github.com/NanoMeow/QuickReports/issues/632
 ! https://forums.lanik.us/viewtopic.php?p=145217#p145217
 ! https://forums.lanik.us/viewtopic.php?f=64&t=42673&p=145936#p145933
-@@||marketo.com/js/forms2/js/forms2.min.js$script,domain=gitlab.com|snowflake.com|conjur.org
-@@||marketo.com/index.php/form/$script,domain=gitlab.com|snowflake.com|conjur.org
+! https://github.com/uBlockOrigin/uAssets/issues/5246#issuecomment-478177132
+! https://github.com/uBlockOrigin/uAssets/issues/5246#issuecomment-478181113
+@@||marketo.com/js/forms2/js/forms2.min.js$script,3p
+@@||marketo.com/index.php/form/$script,3p
+@@||marketo.com/js/forms2/*$css,domain=bettercloud.com
+! https://github.com/uBlockOrigin/uAssets/issues/5246
+@@||munchkin.marketo.net/munchkin.js$badfilter
 
 ! https://github.com/uBlockOrigin/uAssets/issues/4784#issuecomment-459778667
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=chicagotribune.com|mcall.com
@@ -2036,7 +2043,7 @@ nypost.com,pagesix.com#@#.recirc
 @@||s2.coinmarketcap.com^$image
 
 ! https://github.com/uBlockOrigin/uAssets/issues/3304
-@@/https?:\/\/.*[=|&|%|#|+].*/$popup,domain=animeflv.net
+@@/https?:\/\/.*[=|&|%|#|+].*/$popup,domain=animeflv.net|jkanime.net
 |https://$third-party,script,domain=animeflv.net|descargasnsn.com|jkanime.net,badfilter
 |https://$third-party,xmlhttprequest,domain=animeflv.net|descargasnsn.com|jkanime.net,badfilter
 
@@ -2158,3 +2165,35 @@ readmng.com#@#div > iframe:first-child
 ! https://forums.lanik.us/viewtopic.php?p=146547#p146547
 ||hdpass.club^$third-party,badfilter
 seriehd.video#@#.player
+
+! broken video https://www.jpost.com/Israel-News/Culture/Fauda-to-tackle-Hamas-tunnels-in-Season-3-583824
+jpost.com#@#[src*="blob:"]
+
+! https://github.com/NanoMeow/QuickReports/issues/872
+ebay.com#@#li.s-item:has(.s-item__title-tag)
+
+! https://github.com/uBlockOrigin/uAssets/issues/1720#issuecomment-476358518
+@@||amazon.*/*uedata$image,1p
+
+! https://www.reddit.com/r/uBlockOrigin/comments/b6tqfi/wwwagileanin_is_blocked_by_ublock_origin/
+||agilean.in^$badfilter
+
+! https://github.com/uBlockOrigin/uAssets/issues/4225#issuecomment-477979069
+||1337x.to^$csp=script-src 'self' 'unsafe-inline',badfilter
+||1337x.st^$csp=script-src 'self' 'unsafe-inline',badfilter
+||x1337x.eu^$csp=script-src 'self' 'unsafe-inline',badfilter
+||x1337x.se^$csp=script-src 'self' 'unsafe-inline',badfilter
+||x1337x.ws^$csp=script-src 'self' 'unsafe-inline',badfilter
+
+! https://www.reddit.com/r/uBlockOrigin/comments/b3a03i/pictures_blocked/
+||kaleva.fi*/smart_ads$badfilter
+
+! https://github.com/NanoMeow/QuickReports/issues/893
+@@||analytics.edgekey.net/ma_library/javascript/javascript_malibrary.js$script,domain=nhk.or.jp
+
+! https://forums.lanik.us/viewtopic.php?p=146765#p146765
+/adcase.$badfilter
+/adcase.$domain=~adcase.ru
+
+! https://www.reddit.com/r/uBlockOrigin/comments/b7dh6s/cant_change_stlyes_on_4chan_with_ubo_active/
+@@||4cdn.org^$script,domain=4chan.org

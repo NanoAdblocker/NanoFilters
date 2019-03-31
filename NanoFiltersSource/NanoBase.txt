@@ -22,9 +22,6 @@ blockadblock.com##+js(bab-defuser.js)
 # https://github.com/uBlockOrigin/uAssets/issues/2924
 captchme.com##script:inject(set-constant.js, CaptchmeState.adb, undefined)
 
-# https://github.com/NanoAdblocker/NanoFilters/issues/292
-||browserleaks.com/js/proxy.js$script
-
 # https://github.com/LiCybora/NanoDefenderFirefox/issues/88
 @@||whoer.net/js/advert.js$script,1p
 

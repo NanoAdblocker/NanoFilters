@@ -56,3 +56,17 @@ Third party whitelists must be added to `Nano filters – Whitelist`.
 
 `Nano filters` and `Nano filters - Whitelist` should keep compatibility with
 uBlock Origin when possible.
+
+## Special Websites
+
+Some websites are special, and has different filters policies applied to them.
+Domains that these modified policies apply to will be explicitly listed.
+
+### User Generated Draft Web Pages
+
+Ads, ads timers, anti-adblock, and annoyance will not be removed for user
+generated contents.
+
+```
+codepen.io
+```

@@ -64,8 +64,8 @@ below.
 
 ### Caches and Archives
 
-Ads, ads timers, anti-adblock, and annoyance will not be removed for archived
-contents.
+Issues related to ads, ads timers, anti-adblock, and annoyance will not be
+fixed if they only affects archived contents.
 
 ```
 web.archive.org
@@ -74,8 +74,8 @@ webcache.googleusercontent.com
 
 ### User Generated Draft Web Pages
 
-Ads, ads timers, anti-adblock, and annoyance will not be removed for user
-generated contents.
+Issues related to ads, ads timers, anti-adblock, and annoyance will not be
+fixed if they only affects user generated contents.
 
 ```
 codepen.io

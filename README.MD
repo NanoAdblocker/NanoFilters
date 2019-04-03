@@ -59,8 +59,17 @@ uBlock Origin when possible.
 
 ## Special Websites
 
-Some websites are special, and has different filters policies applied to them.
-Domains that these modified policies apply to will be explicitly listed.
+Modified versions of the filters policy above will be applied to domains listed
+below.
+
+### Cache and Archives
+
+Ads, ads timers, anti-adblock, and annoyance will not be removed for archived
+contents.
+
+```
+web.archive.org
+```
 
 ### User Generated Draft Web Pages
 

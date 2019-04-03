@@ -62,13 +62,14 @@ uBlock Origin when possible.
 Modified versions of the filters policy above will be applied to domains listed
 below.
 
-### Cache and Archives
+### Caches and Archives
 
 Ads, ads timers, anti-adblock, and annoyance will not be removed for archived
 contents.
 
 ```
 web.archive.org
+webcache.googleusercontent.com
 ```
 
 ### User Generated Draft Web Pages

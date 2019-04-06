@@ -18,6 +18,42 @@ nano-tiny-noopvast-3.0 text/xml
 <VAST version="3.0"></VAST>
 
 
+# Assign a variable when the document gets ready, 2 required arguments.
+# chain - The property chain.
+# value - The value to assign, must be 'null', 'true', or 'false'.
+nano-assign-variable-onready.js application/javascript
+(function() {
+    var chain = '{{1}}';
+    var value = '{{2}}';
+    if ( chain === '' || chain === '{{1}}' ) {
+        return;
+    }
+    if ( value === 'null' ) {
+        value = null;
+    } else if ( value === 'true' ) {
+        value = true;
+    } else if ( value === 'false' ) {
+        value = false;
+    } else {
+        return;
+    }
+    var assign = function() {
+        var parent = window;
+        chain = chain.split('.');
+        for ( var i = 0; i < chain.length - 1; i++ ) {
+            parent = parent[chain[i]];
+        }
+        parent[chain[chain.length - 1]] = value;
+    };
+    if ( document.readyState === 'interactive' ||
+         document.readyState === 'complete' ) {
+        assign();
+    } else {
+        addEventListener('DOMContentLoaded', assign);
+    }
+})();
+
+
 # ---------------------------------------------------------------------------- #
 
 # Specific resources
@@ -193,7 +229,7 @@ nano-hijack-script-create.js application/javascript
 })();
 
 
-# Remove elements when the documents gets ready, 1 required argument.
+# Remove elements when the document gets ready, 1 required argument.
 # selector - The selector for elements to remove, must be a plain CSS selector,
 #            pseudo-selectors are not supported.
 nano-remove-elements-onready.js application/javascript
@@ -243,7 +279,7 @@ nano-make-bait-element.js application/javascript
 # filter lists
 
 
-# Click elements when the documents gets ready, 1 required argument.
+# Click elements when the document gets ready, 1 required argument.
 # selector - The selector for elements to remove, must be a plain CSS selector,
 #            pseudo-selectors are not supported.
 nanop-click-elements-onready.js application/javascript
@@ -271,7 +307,7 @@ nanop-click-elements-onready.js application/javascript
 })();
 
 
-# Click elements when the documents gets loaded, 1 required argument.
+# Click elements when the document gets loaded, 1 required argument.
 # selector - The selector for elements to remove, must be a plain CSS selector,
 #            pseudo-selectors are not supported.
 nanop-click-elements-onload.js application/javascript

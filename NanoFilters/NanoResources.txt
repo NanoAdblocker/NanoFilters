@@ -10,6 +10,38 @@ nano-tiny-noopvast-2.0 text/xml
 nano-tiny-noopvast-3.0 text/xml
 <VAST version="3.0"></VAST>
 
+nano-assign-variable-onready.js application/javascript
+(function() {
+    var chain = '{{1}}';
+    var value = '{{2}}';
+    if ( chain === '' || chain === '{{1}}' ) {
+        return;
+    }
+    if ( value === 'null' ) {
+        value = null;
+    } else if ( value === 'true' ) {
+        value = true;
+    } else if ( value === 'false' ) {
+        value = false;
+    } else {
+        return;
+    }
+    var assign = function() {
+        var parent = window;
+        chain = chain.split('.');
+        for ( var i = 0; i < chain.length - 1; i++ ) {
+            parent = parent[chain[i]];
+        }
+        parent[chain[chain.length - 1]] = value;
+    };
+    if ( document.readyState === 'interactive' ||
+         document.readyState === 'complete' ) {
+        assign();
+    } else {
+        addEventListener('DOMContentLoaded', assign);
+    }
+})();
+
 nano-vvvvid-it.js application/javascript
 (function() {
     // Based on KAADIVVVV

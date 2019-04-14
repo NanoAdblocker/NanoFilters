@@ -192,4 +192,4 @@ hulu.com##.ad-choices
 ||ads-e-darwin.hulustream.com/published/*.mp4$media,redirect=noopmp4-1s,domain=hulu.com
 ||ads-v-darwin.hulustream.com/published/*.mp4$media,redirect=noopmp4-1s,domain=hulu.com
 ||akamaihd.net/prerolls$media,redirect=noopmp4-1s,domain=hulu.com
-gamerevolution.com#@#+js(abort-on-property-read.js, Date.now)
+gamerevolution.com#@#+js(abort-on-property-read.js, Date.prototype.toUTCString)

@@ -1,7 +1,7 @@
 [Nano Adblocker]
 ! Title: Nano Defender Integration
 ! Expires: 3 days
-! Cached: Sat, 06 Apr 2019 19:15:16 GMT
+! Cached: Sun, 14 Apr 2019 05:06:36 GMT
 ! License: See source for license and credits
 ! Source: https://github.com/jspenguin2017/uBlockProtector/tree/master/list
 ! This file is a compiled binary, do not modify
@@ -14,6 +14,7 @@
 @@|http://*.medianetworkinternational.com/js/advertisement.js*$script
 @@||vd.l.qq.com/proxyhttp$xhr,domain=sports.qq.com|v.qq.com
 ani.gamer.com.tw##body > div:has(a[href="https://goo.gl/PmkwWS"])
+@@||gamersclub.com.br/js/ads.js$script,1p
 ||authedmine.com^$third-party
 @@||authedmine.com^$domain=coinhive.com|filecrypt.cc
 /coinhive.js

@@ -1,4 +1,4 @@
-# ---------------------------------------------------------------------------- #
+# ------------------------------------------------------------------------------------------------------------------- #
 
 # Base filter for Nano Adblocker
 
@@ -6,7 +6,7 @@
 # Resources, similarly, purging cache of Nano filters also purge cache of Nano
 # Adblocker Extra Resources
 
-# ---------------------------------------------------------------------------- #
+# ------------------------------------------------------------------------------------------------------------------- #
 
 # Anti-adblock demos
 
@@ -28,7 +28,7 @@ captchme.com##script:inject(set-constant.js, CaptchmeState.adb, undefined)
 # https://github.com/NanoMeow/QuickReports/issues/60
 @@||detectadblock.com/dfp.js$script,1p
 
-# ---------------------------------------------------------------------------- #
+# ------------------------------------------------------------------------------------------------------------------- #
 
 # Generic anti-adblock
 
@@ -68,7 +68,7 @@ captchme.com##script:inject(set-constant.js, CaptchmeState.adb, undefined)
 ||unbecominghall.com^$important
 ||unequalbrake.com^$important
 
-# ---------------------------------------------------------------------------- #
+# ------------------------------------------------------------------------------------------------------------------- #
 
 # Hard anti-adblock
 
@@ -86,7 +86,7 @@ vizer.tv##.open.adsByVizer.vizerNewBox
 # https://github.com/NanoMeow/QuickReports/issues/474
 math.semestr.ru##+js(setInterval-defuser.js, IsAdBlock, 1000)
 
-# ---------------------------------------------------------------------------- #
+# ------------------------------------------------------------------------------------------------------------------- #
 
 # Soft anti-adblock
 
@@ -196,7 +196,7 @@ camwhores.tv##body > div:matches-css(z-index: 9999998)
 # https://github.com/NanoAdblocker/NanoFilters/issues/282
 imore.com##.swal-overlay
 
-# ---------------------------------------------------------------------------- #
+# ------------------------------------------------------------------------------------------------------------------- #
 
 # Soft anti-adblock that are also included in uBlock annoyance filter
 # License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
@@ -473,14 +473,14 @@ ruwix.com##+js(setTimeout-defuser.js, NoAd, 8000)
 @@||byggahus.se^$generichide
 byggahus.se###ad-zone-panorama
 
-# ---------------------------------------------------------------------------- #
+# ------------------------------------------------------------------------------------------------------------------- #
 
 # Ads
 
 # https://gitlab.com/xuhaiyang1234/NanoAdblockerSecretIssues/issues/1
 altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 
-# ---------------------------------------------------------------------------- #
+# ------------------------------------------------------------------------------------------------------------------- #
 
 # Unbreak
 
@@ -489,7 +489,7 @@ altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 # Fallback rule in case they start putting mining code into jQuery files
 # ||rapidvideo.com^$csp=child-src 'none';frame-src *;worker-src 'none';
 
-# ---------------------------------------------------------------------------- #
+# ------------------------------------------------------------------------------------------------------------------- #
 
 # Unbreak for Adblock Warning Removal List
 
@@ -499,7 +499,7 @@ altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 # https://github.com/uBlockOrigin/uAssets/issues/3768
 porndig.com#@#.noadblock
 
-# ---------------------------------------------------------------------------- #
+# ------------------------------------------------------------------------------------------------------------------- #
 
 # Rules that should be included in EasyList or regional filters
 
@@ -510,7 +510,7 @@ avseesee.com##.ads
 # https://github.com/NanoMeow/QuickReports/issues/64
 filmozercy.com##a[href$="filmozercy.com/wspieraj-nasza-prace-wylacz-adblocka"]
 
-# ---------------------------------------------------------------------------- #
+# ------------------------------------------------------------------------------------------------------------------- #
 
 # Specific for Edge browser
 
@@ -524,7 +524,7 @@ businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
 
 !#endif
 
-# ---------------------------------------------------------------------------- #
+# ------------------------------------------------------------------------------------------------------------------- #
 
 # Beta testing
 
@@ -537,11 +537,11 @@ hulu.com##.ad-choices
 ||ads-v-darwin.hulustream.com/published/*.mp4$media,redirect=noopmp4-1s,domain=hulu.com
 ||akamaihd.net/prerolls$media,redirect=noopmp4-1s,domain=hulu.com
 
-# ---------------------------------------------------------------------------- #
+# ------------------------------------------------------------------------------------------------------------------- #
 
 # Synchronizing to upstream
 
 # https://github.com/NanoMeow/QuickReports/issues/1003
 gamerevolution.com#@#+js(abort-on-property-read.js, Date.prototype.toUTCString)
 
-# ---------------------------------------------------------------------------- #
+# ------------------------------------------------------------------------------------------------------------------- #

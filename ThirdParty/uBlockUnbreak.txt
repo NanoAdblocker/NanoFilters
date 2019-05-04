@@ -1301,6 +1301,7 @@ techadvisor.co.uk#@#.adsbygoogle
 ! https://github.com/uBlockOrigin/uAssets/issues/2333#issuecomment-415652949
 /^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ee]xternal|[Ii]mages|[Ss]cripts|[Uu]ploads|ac|ajax|assets|combined|content|cov|cover|(img\/bg)|(img\/icon)|inc|jwplayer|player|playlist-cat-rss|static|thumbs|wp-content|wp-includes)\/)(.*)/$first-party,script,domain=~animeland.hu
 /^https?:\/\/([0-9a-z\-]+\.)?(9anime|animeland|animenova|animeplus|animetoon|animewow|gamestorrent|goodanime|gogoanime|igg-games|kimcartoon|memecenter|readcomiconline|toonget|toonova|watchcartoononline)\.[a-z]{2,4}\/(?!([Ee]xternal|[Ii]mages|[Ss]cripts|[Uu]ploads|ac|ajax|assets|combined|content|cov|cover|(img\/bg)|(img\/icon)|inc|jwplayer|player|playlist-cat-rss|static|thumbs|wp-content|wp-includes)\/)(.*)/$first-party,xmlhttprequest,domain=~animeland.hu,badfilter
+@@||kimcartoon.cc/ajax-get-link-stream/*$xhr,1p
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=41502
 @@||apply.indeed.com/$subdocument,first-party
@@ -2256,3 +2257,30 @@ kzstock.blogspot.com#@##ad-target
 ! https://www.reddit.com/r/uBlockOrigin/comments/bhvh0m/sooo_i_went_to_this_site_in_if_i_click_on/
 @@||googletagmanager.com/gtag/js$script,domain=quickcode.co
 @@||dev.visualwebsiteoptimizer.com/*.quickcode.co*login$script,domain=quickcode.co
+
+! https://github.com/NanoMeow/QuickReports/issues/485
+|https://$third-party,image,domain=ffmovies.ru,badfilter
+|https://$third-party,script,domain=ffmovies.ru,badfilter
+! https://github.com/NanoMeow/QuickReports/issues/1116#issuecomment-488169220
+|https://$third-party,image,domain=ffmovies.ru|fmovies.io|fmovies.is|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world,badfilter
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=42965
+||olx.com.br^*/lurker.$badfilter
+
+! https://github.com/uBlockOrigin/uAssets/issues/5479
+@@||cdn.amplitude.com/libs/amplitude-*.gz.js$script,domain=elconfidencial.com
+
+! https://github.com/easylist/easylist/issues/3352
+||stackpathdns.com^$image,domain=boomsbeat.com|dramastars.com|enstarz.com|foreverymom.com|hngn.com|itechpost.com|kpopstarz.com|latinpost.com|natureworldnews.com|parentherald.com|readysethealth.com|realtytoday.com|sciencetimes.com|sportsworldreport.com|universityherald.com|vcpost.com|youthhealthmag.com,badfilter
+
+! https://github.com/uBlockOrigin/uAssets/issues/5483
+videos.giga.de#@#+js(set-constant.js, String.prototype.charCodeAt, trueFunc)
+
+! https://github.com/NanoMeow/QuickReports/issues/1117
+@@||cdn.gotraffic.net^$domain=bloomberg.com
+
+! https://forums.lanik.us/viewtopic.php?p=147310#p147310
+||hawk.pcgamer.com^$badfilter
+
+! https://github.com/uBlockOrigin/uAssets/issues/5499
+@@||viu.tv/assets/js/comScore.*.min.js$script,1p

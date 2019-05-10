@@ -26,7 +26,8 @@ Ads and ads timer will be removed unless:
 Any form of anti-adblock will be removed unless:
 - It is non-intrusive, and
 - It is for an automatic mining wall, an ads reward system (the user gets
-  something after watching ads), or an advertiser dashboard
+  something after watching ads), an advertiser dashboard, or an analytics
+  dashboard
 
 If we consider appropriate and if possible, these forms of annoyance may be
 removed:

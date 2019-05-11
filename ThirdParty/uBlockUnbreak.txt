@@ -425,6 +425,7 @@ kinopoisk.ru###image:style(opacity: 1 !important;)
 ! https://github.com/uBlockOrigin/uAssets/issues/478
 ! https://github.com/uBlockOrigin/uAssets/issues/1906
 ! https://www.reddit.com/r/uBlockOrigin/comments/9c6j8u/
+! https://github.com/uBlockOrigin/uAssets/issues/5531
 /google-analytics.$badfilter
 /google-analytics.$third-party
 /googleanalytics.js$badfilter
@@ -433,6 +434,8 @@ kinopoisk.ru###image:style(opacity: 1 !important;)
 -google-analytics.$third-party
 -google-analytics/$badfilter
 -google-analytics/$third-party
+/google-analytics.$script,badfilter
+/google-analytics.$script,third-party
 ! https://forums.lanik.us/viewtopic.php?f=64&p=136474
 /ga_setup.js$badfilter
 /ga_setup.js$third-party
@@ -2284,3 +2287,49 @@ videos.giga.de#@#+js(set-constant.js, String.prototype.charCodeAt, trueFunc)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5499
 @@||viu.tv/assets/js/comScore.*.min.js$script,1p
+
+! https://www.reddit.com/r/uBlockOrigin/comments/bl1bhn/need_assistance_whitelisting_a_commentsection/
+||jpost.com^$csp=script-src 'self' 'unsafe-inline' http: https: blob:,badfilter
+||jpost.com^$csp=script-src 'self' 'unsafe-inline' 'unsafe-eval' http: https: blob:
+
+! https://www.reddit.com/r/uBlockOrigin/comments/bl24wp/readcomiconline_issues/
+@@||readcomiconline.to/$xhr,1p
+
+! https://github.com/NanoMeow/QuickReports/issues/1160
+@@||adobedtm.com^*/satellitelib-$script,domain=skysportaustria.at
+
+! https://github.com/uBlockOrigin/uAssets/issues/5533
+||miniusa.com/etc/designs/mini/js/vendor/tracking/*$script,1p,redirect=noopjs
+
+! https://www.reddit.com/r/uBlockOrigin/comments/blgisr/cannot_click_through_to_video_on_nhlcom/
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=nhl.com
+||static.adsafeprotected.com/vans-adapter-google-ima.js$script,redirect=noopjs,domain=nhl.com
+
+! https://github.com/NanoAdblocker/NanoFilters/issues/323
+@@||d8rk54i4mohrb.cloudfront.net/js/video.js$script,domain=forbes.com
+
+! https://github.com/easylist/easylist/issues/3369
+/^https?:\/\/.*\/.*[(php|?|=)].*/$first-party,image,domain=4tube.com|anysex.com|badjojo.com|extremetube.com|hotpornfile.org|keezmovies.com|mofosex.com|motherless.com|pornobae.com|pornoreino.com|pussyspace.com|shameless.com|spankwire.com|xnxx-sexfilme.com|youjizz.com|yourlust.com,badfilter
+
+! scrolling broken drstevenlin .com
+drstevenlin.com##html:style(overflow: auto !important;)
+
+! https://www.reddit.com/r/uBlockOrigin/comments/bmiul0/how_to_remove_a_domain_from_malware_domain_list/
+||womenslabour.org^$badfilter
+
+! https://github.com/uBlockOrigin/uAssets/issues/5559
+tele5.de##.break-ads
+
+! https://forums.lanik.us/viewtopic.php?p=147357#p147357
+||exoclick.com^$document,badfilter
+||exoclick.com^$badfilter
+@@||exoclick.com/privacy-and-cookies-policy/*$popup
+
+! https://github.com/NanoMeow/QuickReports/issues/1185
+@@||googletagmanager.com/gtag/js$script,domain=hentaifox.com
+
+! https://forums.lanik.us/viewtopic.php?f=103&t=43005
+@@||amazon-adsystem.com/*/apstag.js$script,domain=telecinco.es|cuatro.com|factoriadeficcion.com|boing.es|energytv.es|divinity.es|bemad.es
+
+! https://www.reddit.com/r/uBlockOrigin/comments/bn4tlv/having_to_disabling_ubo_and_refreshing_to_acces/
+@@||cdn.tsyndicate.com/sdk/$script,domain=hpjav.tv

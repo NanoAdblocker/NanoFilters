@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: sRdOFLSXn+1Qe7sREQk4Qg
-! Version: 201905041850
+! Checksum: TwqOTueWmGziC/aEMzOnWA
+! Version: 201905110430
 ! Title: Adblock Warning Removal List
-! Last modified: 04 May 2019 18:50 UTC
+! Last modified: 11 May 2019 04:30 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -12,16 +12,19 @@
 !
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_arabic.txt ***
 !
+/adb_script/*
 /deadblocker/*
 /mod_ablockdetector/*
 !
 @@||cdn.egy.best/static/global/js/adblock.js$script
+@@||play.bokracdn.run/v2/adsjs/ads.js$script,~third-party
 !
 ###adblock_screen
 ###adblock_message
 ##.adblockInfo
 ##.adblock_floating_message
 ##.adblock_msg
+##.ads-block-warning
 ##.deadblocker-header-bar
 !
 myegy.cc##.disclaimer
@@ -91,6 +94,7 @@ shadbase.com##img[alt="adblock"]
 /adblock-notice-
 /adblock-notify-by-bweb/*
 /adblock-warning-teaser/*
+/adblock_alerter.
 /adblock_gate/images/animated.gif?
 /adblock_notify.js
 /adblocker_message_
@@ -98,6 +102,7 @@ shadbase.com##img[alt="adblock"]
 /antiadblockmsg.
 /blockadblock.js
 /blockadblock.min.js
+/disable-adblock.
 /wp-content/plugins/ad-block-defender/*
 /wp-content/plugins/deadblocker/*
 /wp-content/uploads/an-temp/*$script,stylesheet
@@ -163,6 +168,7 @@ shadbase.com##img[alt="adblock"]
 ###adb-enabled
 ###adb-enabled3
 ###adb-warning
+###adbcontainer-popup
 ###adblock-alert
 ###adblock-box
 ###adblock-modal
@@ -175,6 +181,7 @@ shadbase.com##img[alt="adblock"]
 ###adblocker_message
 ###adblocker_modal_overlay
 ###adblockinfo
+###adbpopup
 ###ads-blocked
 ###advertisementjsalert
 ###anti_adblock
@@ -182,6 +189,7 @@ shadbase.com##img[alt="adblock"]
 ###detection-block-overlay
 ###detectadblock
 ###fnAdblockingOverlay
+###js-popup-blocker
 ###message_adblock
 ##.AdblockMessage
 ##.AdblockMessage_msg
@@ -283,7 +291,6 @@ elhow.ru###b-info-wrapper
 rockstargame.su###baduser
 ma.by###bodysubcont > div[style^="padding"]:not([id]):not([class])
 pln-pskov.ru###check_ad_block
-helpsetup.ru###d930
 delfi.ee###delfiTopBar
 sd-company.su###dom_adblock
 myshared.ru###download_form > .uk-margin-top[style]
@@ -450,6 +457,7 @@ bigpuzzle.ru##td[valign="top"][width="200px"][height="600"] > div[style]
 ||avito.ru^*/some-pretty-script.js
 ||fainaidea.com/wp-content/uploads/*/*?ver=$script,stylesheet,domain=fainaidea.com
 ||fairtop.in/template/js/fdetect.js
+||helpsetup.ru/home/solnisko.php
 ||i140.ru/js/etxm*.js|$script
 ||ipprof.ru/wp-content/plugins/ad-blocking-advisor/
 ||kontrolnaya-rabota.ru^*/fuckadblock.js$script

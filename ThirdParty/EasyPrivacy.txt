@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: CuX4m95AZYLd6uadlJcG2w
-! Version: 201905120101
+! Checksum: B/UQ7t8KmiJy1MtW7dvuAQ
+! Version: 201905122112
 ! Title: EasyPrivacy
-! Last modified: 12 May 2019 01:01 UTC
+! Last modified: 12 May 2019 21:12 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -361,6 +361,7 @@
 /aa.php?anuid=
 /ablank.gif?
 /abp-analytics.
+/abp.gif?
 /abppx-*.gif?
 /aby.gif?
 /ac.fcgi?
@@ -406,6 +407,7 @@
 /add_page_view?
 /add_stats
 /add_utm_links.
+/addEvent?action=
 /additional.php?res_width=$script
 /addLinker.js
 /addLinkerEvents-ga.
@@ -600,6 +602,7 @@
 /analytics/?event
 /analytics/activity.
 /analytics/analytics.$~xmlhttprequest
+/analytics/beacons/*
 /analytics/call-
 /analytics/cms/*
 /analytics/collect_
@@ -716,6 +719,7 @@
 /api/pixel?
 /api/stat?
 /api/tracking/*
+/api/v1/metrics
 /api/v1/stat?
 /api/x.gif?
 /apilog?
@@ -1777,6 +1781,7 @@
 /glb-pv-min.js
 /glbltrackjs.
 /global-analytics.js
+/global/analytics/*
 /global/ga.js?
 /global/tracker.
 /globalpagetracking.js
@@ -2517,6 +2522,7 @@
 /newsstat/*
 /newstat/*
 /newstatsinc.
+/next_analytics.
 /nextPerformanceRetargeting.
 /nielsen.htm
 /nielsen.js
@@ -5560,6 +5566,7 @@ _mongo_stats/
 ||fruitflan.com^$third-party
 ||fsd2.digital^$third-party
 ||fshka.com^$third-party
+||fstrk.net^$third-party
 ||ftbpro.com^$third-party
 ||fueldeck.com^$third-party
 ||fugetech.com^$third-party
@@ -6737,7 +6744,6 @@ _mongo_stats/
 ||storygize.net^$third-party
 ||streamsend.com^$third-party
 ||streem.com.au^$third-party
-||stripe.network^$third-party
 ||stripedcollar.net^$third-party
 ||stroeerdigitalmedia.de^$third-party
 ||strossle.it^$third-party
@@ -9681,6 +9687,7 @@ _mongo_stats/
 ||event.loyalty.bigdoor.com^$third-party
 ||event.previewnetworks.com^
 ||event.trove.com^
+||eventapi.libring.com^
 ||eventful.com/apps/generic/$image,third-party
 ||eventgateway.soundcloud.com^
 ||eventlog.inspsearch.com^
@@ -9760,6 +9767,7 @@ _mongo_stats/
 ||ftimg.net/js/log.js?
 ||fullstory.com/s/fs.js$third-party
 ||future-fie-assets.co.uk^
+||futurecdn.net^*/abp.js
 ||fwix.com/ref.js
 ||fwix.com^*/trackclicks_
 ||fyre.co^*/tracking/
@@ -12291,6 +12299,7 @@ _mongo_stats/
 ||coursera.org/wf/open?
 ||coveritlive.com/1/sts/view?
 ||cpt.itv.com^
+||cr-eec.etp-prod.com^$xmlhttprequest,domain=crunchyroll.com
 ||cracked.com/tracking/
 ||crackle.com/tracking/
 ||creativecommons.org/elog/
@@ -13142,6 +13151,7 @@ _mongo_stats/
 ||nola.com/cgi-bin/stats/
 ||nola.com/content/*/tracklinks.js
 ||nola.com/dhtml/stats/
+||nordstrom.com/log
 ||nova.pub/track.php?
 ||novatech.co.uk^*/tracking?
 ||novell.com^*/metrics.js

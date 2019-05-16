@@ -8,8 +8,10 @@ expected with uBlock Origin out of the box. See
 for more details.
 
 Third party filters were cached on 2019-05-12. Cache will be updated on every
-release of Nano Adblocker. Third party filters may have their own licenses,
-view filter headers for more information.
+release of Nano Adblocker.
+
+Third party filters may have their own licenses, view filter headers for more
+information.
 
 Please open an issue if there is something you want us to know.
 

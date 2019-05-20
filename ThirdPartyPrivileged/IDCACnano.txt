@@ -1,5 +1,5 @@
 ! Title: I don't care about cookies Nano expansion
-! Version: 20May2019v1
+! Version: 20May2019v2
 ! Expires: 7 days
 ! Homepage: https://github.com/DandelionSprout/adfilt
 ! Support: https://github.com/DandelionSprout/adfilt/issues
@@ -11,8 +11,6 @@
 ! For the homepage of the repository where this list is hosted, visit https://github.com/NanoAdblocker/NanoFilters
 !
 ! In case you haven't done so already, make sure to subscribe to the official IDCAC list at https://www.kiboke-studio.hr/i-dont-care-about-cookies/abp/ as well.
-!
-! Important note: The "nanop-easy-set-cookie.js" entries are known to sometimes not get along with the official I Don't Care About Cookies extension, such as on Fandom.com. Therefore you should only use either this list or the extension.
 
 aceandtate.com##+js(nanop-easy-set-cookie.js, cookieconsent_status=allow)
 agroneo.com##+js(nanop-easy-set-cookie.js, consent=yes)
@@ -37,9 +35,11 @@ dwell.com##+js(nanop-easy-set-cookie.js, gdpr=1)
 eneba.com##+js(nanop-easy-set-cookie.js, GDPR=1)
 enviam.de##+js(nanop-easy-set-cookie.js, dws01-level=2)
 esea.net##+js(nanop-easy-set-cookie.js, cookie_consent=1)
-euroclear.com##+js(nanop-easy-set-cookie.js, cc_necessary=true', 'cc_functional=true)
+euroclear.com##+js(nanop-easy-set-cookie.js, cc_necessary=true)
+euroclear.com##+js(nanop-easy-set-cookie.js, cc_functional=true)
 ezys.lt##+js(nanop-easy-set-cookie.js, cookie-consent=3)
-fandom.com##+js(nanop-easy-set-cookie.js, tracking-opt-in-status=accepted', 'tracking-opt-in-version=2)
+fandom.com##+js(nanop-easy-set-cookie.js, tracking-opt-in-status=accepted)
+fandom.com##+js(nanop-easy-set-cookie.js, tracking-opt-in-version=2)
 favre-leuba.com##+js(nanop-easy-set-cookie.js, seenCookieBar=true)
 fightful.com##+js(nanop-easy-set-cookie.js, gdpr_popup_hide=checked)
 foodetective.co##+js(nanop-easy-set-cookie.js, cookiesAgreement=accepted)
@@ -54,7 +54,8 @@ iper.it##+js(nanop-easy-set-cookie.js, eu_cookie_consent=1)
 jisc-collections.ac.uk##+js(nanop-easy-set-cookie.js, cookies_accepted=true)
 jow.fr##+js(nanop-easy-set-cookie.js, CNIL=OK)
 kalenderwoche.de##+js(nanop-easy-set-cookie.js, cookiepolicy=0)
-kitchenplanner.ikea.com##+js(nanop-easy-set-cookie.js, EnableGlobalLicenseAgreement=2015-04-01', 'HideCookieAgreementBanner=true)
+kitchenplanner.ikea.com##+js(nanop-easy-set-cookie.js, EnableGlobalLicenseAgreement=2015-04-01)
+kitchenplanner.ikea.com##+js(nanop-easy-set-cookie.js, HideCookieAgreementBanner=true)
 klassikradio.de##+js(nanop-easy-set-cookie.js, CookiePolicyAccepted=true)
 lendo.se##+js(nanop-easy-set-cookie.js, seenCookieBanner=true)
 letssingit.com,lyricsbox.com##+js(nanop-easy-set-cookie.js, cookieconsent=1111)
@@ -71,17 +72,20 @@ ordina.nl,ordina.com,werkenbijordina.nl##+js(nanop-easy-set-cookie.js, AllowCook
 payscale.com##+js(nanop-easy-set-cookie.js, accept-cookie=yes)
 pee.place##+js(nanop-easy-set-cookie.js, gdprconsent=1)
 pekao.com.pl##+js(nanop-easy-set-cookie.js, gdprAgreed=true)
-picmonkey.com##+js(nanop-easy-set-cookie.js, pm_cookie_consent=1', 'termsOfUse=0)
+picmonkey.com##+js(nanop-easy-set-cookie.js, pm_cookie_consent=1)
+picmonkey.com##+js(nanop-easy-set-cookie.js, termsOfUse=0)
 pinterest.*##+js(nanop-easy-set-cookie.js, euCookieBanner=true)
 poolia.se##+js(nanop-easy-set-cookie.js, cookiePolicyAccepted=1)
-proximustv.be,tmz.com,sap.com##+js(nanop-easy-set-cookie.js, notice_preferences=2:', 'notice_gdpr_prefs=0,1,2:)
+proximustv.be,tmz.com,sap.com##+js(nanop-easy-set-cookie.js, notice_preferences=2:)
+proximustv.be,tmz.com,sap.com##+js(nanop-easy-set-cookie.js, notice_gdpr_prefs=0,1,2:)
 quandoo.at##+js(nanop-easy-set-cookie.js, quandoo_cookie_policy=accepted)
 quick.be##+js(nanop-easy-set-cookie.js, cookie-policy-accepted=1)
 qz.com##+js(nanop-easy-set-cookie.js, gdpr=true)
 radio.juke.nl##+js(nanop-easy-set-cookie.js, talpa-radio_cookie-consent=true)
 region-villach.at##+js(nanop-easy-set-cookie.js, app_accept_cookies=true)
 reimageplus.com##+js(nanop-easy-set-cookie.js, cookie_accepted=1)
-researchgate.net##+js(nanop-easy-set-cookie.js, cc=1', 'cookieconsent_dismissed=true)
+researchgate.net##+js(nanop-easy-set-cookie.js, cc=1)
+researchgate.net##+js(nanop-easy-set-cookie.js, cookieconsent_dismissed=true)
 royaldesign.no##+js(nanop-easy-set-cookie.js, cookiesAccepted=1)
 sfendocrino.org##+js(nanop-easy-set-cookie.js, name1=the_cookie)
 shop.sailboatowners.com##+js(nanop-easy-set-cookie.js, consent=00)

@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: Kf8dBclsUbAG1JBRCKg7ZQ
-! Version: 201905182130
+! Checksum: rkOfR06OK6XGnvOZaRpmvg
+! Version: 201905240230
 ! Title: Adblock Warning Removal List
-! Last modified: 18 May 2019 21:30 UTC
+! Last modified: 24 May 2019 02:30 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -29,7 +29,10 @@
 !
 myegy.cc##.disclaimer
 4algeria.com###exposeMask
+chahid4u.tk###unblocker
 4algeria.com##.xenOverlay
+!
+shahid4u.club#@#.adsBox
 !
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_chinese.txt ***
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_czech.txt ***
@@ -101,8 +104,7 @@ shadbase.com##img[alt="adblock"]
 /adblocker_message_
 /AdblockMessage.
 /antiadblockmsg.
-/blockadblock.js
-/blockadblock.min.js
+/blockadblock.$script
 /disable-adblock.
 /wp-content/plugins/ad-block-defender/*
 /wp-content/plugins/deadblocker/*
@@ -194,8 +196,10 @@ shadbase.com##img[alt="adblock"]
 ###fnAdblockingOverlay
 ###js-popup-blocker
 ###message_adblock
+###notify-adblock
 ##.AdblockMessage
 ##.AdblockMessage_msg
+##.ad-alert-message-text
 ##.ad-alert-wrapper
 ##.ad-block-detected
 ##.ad-block-enabled
@@ -399,7 +403,7 @@ kinoprofi.net##.warning-adblock
 xn--80aikhbrhr.net,кинокрад.net##.warning-adblock-box
 forum.bestflowers.ru##.xenOverlay
 /cookie_check.min.js$domain=acetv.me
-/forum/docs/requests.js$script,domain=nnm-club-me.appspot.com|nnm-club.lib|nnm-club.me|nnm-club.ws|nnmclub.to|nontorclub.in.net
+/forum/docs/requests.js$script,domain=nnm-club.lib|nnm-club.me|nnm-club.ws|nnmclub.ro|nnmclub.to|nontorclub.in.net
 /fuckadblock.js$domain=ace-stream.tv
 @@||an.yandex.ru/jstracer?aab_detect=$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
 @@||anime.anidub.com/ads.js$script,domain=anime.anidub.com

@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: vgXR/oxpXMcQON2zfBQThg
-! Version: 201905182131
+! Checksum: PyCeJ9nx/xPQlBDEeJqF7g
+! Version: 201905240232
 ! Title: EasyPrivacy
-! Last modified: 18 May 2019 21:31 UTC
+! Last modified: 24 May 2019 02:32 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -566,6 +566,7 @@
 /analytics-efukt.
 /analytics-event-
 /analytics-event.
+/analytics-gcp.
 /analytics-ingress-
 /analytics-js.
 /analytics-js/*
@@ -1528,6 +1529,7 @@
 /events.gif?
 /events/*?event=
 /events/capture?
+/events?_trigger=
 /events?data=
 /events?rpId=
 /eventtracker.js
@@ -2319,7 +2321,6 @@
 /logHandler.
 /LogImpression.
 /LogImpression?
-/loglevel.js
 /logLoad/?
 /LogMediaClick?
 /logo.gif?a=
@@ -2385,6 +2386,7 @@
 /mediateGA.js
 /megacounter/*
 /mendelstats.
+/merise.gif?
 /meta-analytics/*
 /meta-tracker/*
 /metatraffic/track.asp?
@@ -2563,6 +2565,7 @@
 /NNAnalytics/*
 /NNAnalyticsWPSites.
 /no-impression.gif?
+/nofastat.
 /notifications/analytics
 /np?log=
 /npssurvey.
@@ -4093,6 +4096,7 @@
 /visit_pixel?
 /visit_tracking.
 /VisitCounter.
+/VisitLog.asmx
 /visitor-event?
 /Visitor.aspx?
 /visitor.cgi?aff
@@ -5659,6 +5663,7 @@ _mongo_stats/
 ||gostats.org^$third-party
 ||gostats.ro^$third-party
 ||govmetric.com^$third-party
+||granify.com^$third-party
 ||grapheffect.com^$third-party
 ||gravity4.com^$third-party
 ||grepdata.com^$third-party
@@ -6383,6 +6388,7 @@ _mongo_stats/
 ||ptrk-wn.com^$third-party
 ||publicidees.com^$third-party
 ||publishflow.com^$third-party
+||pubstack.io^$third-party
 ||pulleymarketing.com^$third-party
 ||pulselog.com^$third-party
 ||pulsemaps.com^$third-party
@@ -6954,6 +6960,7 @@ _mongo_stats/
 ||truehits.in.th^$third-party
 ||truehits1.gits.net.th^$third-party
 ||truoptik.com^$third-party
+||trustedform.com^$third-party
 ||tscapeplay.com^$third-party
 ||tscounter.com^$third-party
 ||tsk4.com^$third-party
@@ -9183,6 +9190,7 @@ _mongo_stats/
 ||ask.com^*/i.gif?
 ||assoc-amazon.*^e/ir?t=$image
 ||asterpix.com/tagcloudview/
+||async-px.dynamicyield.com^$third-party
 ||atdmt.com/action/
 ||atdmt.com/iaction/
 ||atdmt.com/jaction/
@@ -9737,6 +9745,7 @@ _mongo_stats/
 ||eventtracker.videostrip.com^$third-party
 ||eveonline.com/redir.asp$third-party
 ||evgnet.com/beacon/
+||evidon.com/pub/tag.js
 ||eviesays.com/js/analytics/
 ||evri.com/analytics/
 ||evt.collarity.com^$image
@@ -11273,6 +11282,7 @@ _mongo_stats/
 ||btstats.devtribu.fr^
 ||calotag.com^$third-party
 ||cdn-analytics.ladmedia.fr^
+||cdn-files.prsmedia.fr^*/xiti/
 ||cloudfront.net^$script,domain=gentside.com
 ||compteur.websiteout.net^
 ||d3eokk6ya562p5.cloudfront.net^
@@ -12921,7 +12931,6 @@ _mongo_stats/
 ||linkedin.com/analytics/
 ||linkedin.com/platform-telemetry/
 ||linkedin.com^*/collect
-||linkedin.com^*/track
 ||linkedin.com^*/tracking
 ||linkpuls.idg.no^
 ||linuxtoday.com/hqxapi/
@@ -13309,6 +13318,7 @@ _mongo_stats/
 ||pixel.archive.
 ||pixel.buzzfeed.com^
 ||pixel.digitalspy.co.uk^
+||pixel.dorehernowi.pro^
 ||pixel.facebook.com^
 ||pixel.honestjohn.co.uk^
 ||pixel.klout.com^
@@ -15523,6 +15533,7 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 @@/cdn-cgi/pe/bag2?*static.getclicky.com%2Fjs$domain=amazingpics.net
 @@/cdn-cgi/pe/bag2?*yieldbot.intent.js$domain=droid-life.com
 @@/cgi-bin/counter_module?action=list_models$subdocument,~third-party
+@@/wp-content/mu-plugins/google-analytics-dashboard-for-wp/*$script,stylesheet,~third-party
 @@/wp-content/mu-plugins/google-analytics-for-wordpress/*$script,stylesheet,~third-party
 @@/wp-content/mu-plugins/google-analytics-premium/*$script,stylesheet,~third-party
 @@/wp-content/plugins/google-analytics-dashboard-for-wp/*$script,stylesheet,~third-party
@@ -16635,6 +16646,8 @@ $csp=worker-src 'none',domain=300mbfilms.co|akvideo.stream|alltube.pl|alltube.tv
 @@||ubibanca.com^*/TrackingService.js
 @@||video.repubblica.it^*/nielsen.js
 @@||webcenter.tiscali.it/distribuzione/_script/audience_science.js$domain=mail.tiscali.it
+! Bosnian
+@@||googletagmanager.com/gtag/js$script,domain=klix.ba
 ! Indonesian
 @@||detik.com/urchin.js
 ! Japanese

@@ -543,7 +543,9 @@ porndig.com#@#.noadblock
 
 # NSFW! Missed ads, test: http://www.avseesee.com/
 avseesee.com###getadiv
+avseesee.com##iframe[src*="top.fadama.com"]
 avseesee.com##.ads
+avseesee.com##.right:has(:scope > .content > .ads)
 
 # https://github.com/NanoMeow/QuickReports/issues/64
 filmozercy.com##a[href$="filmozercy.com/wspieraj-nasza-prace-wylacz-adblocka"]

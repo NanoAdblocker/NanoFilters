@@ -194,7 +194,9 @@ altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 @@||hackintoshzone.com^$generichide
 porndig.com#@#.noadblock
 avseesee.com###getadiv
+avseesee.com##iframe[src*="top.fadama.com"]
 avseesee.com##.ads
+avseesee.com##.right:has(:scope > .content > .ads)
 filmozercy.com##a[href$="filmozercy.com/wspieraj-nasza-prace-wylacz-adblocka"]
 !#if env_edge
 businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)

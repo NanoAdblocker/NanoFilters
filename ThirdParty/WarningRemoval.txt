@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: Pw/fc5x8iVePjTowyZL7kQ
-! Version: 201905250050
+! Checksum: cBfroB0ccDRYIvou019z8A
+! Version: 201906011910
 ! Title: Adblock Warning Removal List
-! Last modified: 25 May 2019 00:50 UTC
+! Last modified: 01 Jun 2019 19:10 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -234,6 +234,7 @@ shadbase.com##img[alt="adblock"]
 ##.dispositifAdblockMessageBox
 ##.fuckYouAdBlock
 ##.fuckYouAdBlock2
+##.js-ad-whitelist-notice
 ##.js-checkad-warning
 ##.kill-adblock-container
 ##.noadblock
@@ -245,7 +246,7 @@ shadbase.com##img[alt="adblock"]
 !
 wamiz.com###adblocker
 jaitoutcompris.com###antiBlock
-developpez.com,developpez.net###encart_droite div[style="display: inline-block; width: 300px; height: 250px"]
+developpez.com,developpez.net###encart_droite div[style^="display: inline-block; width: 300px;"]
 iphonesoft.fr,iphonetweak.fr###msgNoPub
 retinaboys.com###screen_block
 lagrosseradio.com###warn
@@ -264,6 +265,7 @@ pausecafein.fr###adb-pop
 #@##adblocktest
 !
 dbz-fantasy.com#@##adTeaser
+fstore.biz#@##adblockinfo
 dz-android.com,freeiphone.fr,hommedumatch.fr,jetetroll.com,testious.com#@##adsense
 debrideurstream.fr#@##pubdirecte
 ot-boutique.fr#@##publicite
@@ -368,6 +370,7 @@ tsn.ua##.c-aside-embed
 kanobu.ru##.c-moneyPlace_empty
 kinoafisha.info,tvcook.ru##.cat
 rusopen.com##.classblsi.addshr
+ppc.world##.detected-block-modal
 smotrisport.online,smotrisport.tv##.dont-add-our-site-pls
 goha.ru#@#.goha_ads
 goha.ru#@#.goha_ads_acceptable
@@ -375,6 +378,7 @@ themoviebay.ru##.is-danger.notification
 ivi.ru##.ivi-footer ~ div[class] > style + div[class]
 doctorrouter.ru##.jgcabd-container
 go.mail.ru##.js-adb-msg
+ppc.world##.js-detected-block
 space.utema.ru##.main-content-padding > div[class]:not([itemprop])
 megatest.online##.msg-AdBlock
 ykt.ru##.n-banner--adblocked
@@ -405,6 +409,11 @@ forum.bestflowers.ru##.xenOverlay
 /cookie_check.min.js$domain=acetv.me
 /forum/docs/requests.js$script,domain=nnm-club.lib|nnm-club.me|nnm-club.ws|nnmclub.ro|nnmclub.to|nontorclub.in.net
 /fuckadblock.js$domain=ace-stream.tv
+@@||cc-fan.tv/*.js|$script,domain=cc-fan.tv|cn-fan.tv|fox-fan.tv|nf-fan.tv
+@@||cn-fan.tv/*.js|$script,domain=cc-fan.tv|cn-fan.tv|fox-fan.tv|nf-fan.tv
+@@||fox-fan.tv/*.js|$script,domain=cc-fan.tv|cn-fan.tv|fox-fan.tv|nf-fan.tv
+@@||nf-fan.tv/*.js|$script,domain=cc-fan.tv|cn-fan.tv|fox-fan.tv|nf-fan.tv
+@@||mult.love/*.js|$script,domain=cc-fan.tv|cn-fan.tv|fox-fan.tv|nf-fan.tv
 @@||an.yandex.ru/jstracer?aab_detect=$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
 @@||anime.anidub.com/ads.js$script,domain=anime.anidub.com
 @@||goha.ru/app/video/adblock.teaser.js|$script,domain=goha.ru

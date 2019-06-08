@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: cBfroB0ccDRYIvou019z8A
-! Version: 201906011910
+! Checksum: CS8V0OJGNC10hVa1Pnsm3g
+! Version: 201906080250
 ! Title: Adblock Warning Removal List
-! Last modified: 01 Jun 2019 19:10 UTC
+! Last modified: 08 Jun 2019 02:50 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -126,6 +126,7 @@ shadbase.com##img[alt="adblock"]
 !
 @@||abcbourse.com/scripts/ads.js$script,~third-party
 @@||ausujet.com/skins/common/ads.js
+@@||cdncontent.wakanim.tv/scripts/dist/ads.js$script,~third-party
 @@||cyberdean.fr/js/advertisement.js
 @@||dbz-fantasy.com/ads.css
 @@||dev-dyod.fr/styles/ads.css
@@ -415,7 +416,7 @@ forum.bestflowers.ru##.xenOverlay
 @@||nf-fan.tv/*.js|$script,domain=cc-fan.tv|cn-fan.tv|fox-fan.tv|nf-fan.tv
 @@||mult.love/*.js|$script,domain=cc-fan.tv|cn-fan.tv|fox-fan.tv|nf-fan.tv
 @@||an.yandex.ru/jstracer?aab_detect=$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
-@@||anime.anidub.com/ads.js$script,domain=anime.anidub.com
+@@||anidub.com/ads.js|$script,domain=anidub.com
 @@||goha.ru/app/video/adblock.teaser.js|$script,domain=goha.ru
 @@||sports.ru^*/adfox.$xmlhttprequest
 auto62rus.ru,eset-key.ru,mycrib.ru,piggy-bank.online,politonline.ru,showmehow.ru##[data-type="anti-abp"]
@@ -425,6 +426,7 @@ tproger.ru#?#article.type-post:-abp-has([href="/adblock"])
 pic4you.ru,pic5you.ru##body > #bb
 forum.vip-cxema.org##body > #document_modal.modal,#some_ad_block_key_popup
 it-enginer.ru##body > #modal[style*="blur"]
+dominus.kiev.ua##body > #myModal
 nnm-club-me.appspot.com,nnm-club.lib,nnm-club.me,nnm-club.ws,nnmclub.to,nontorclub.in.net##body > .request
 newkaliningrad.ru##body > .soclinks + script + div[class]:not([id])
 swaego.ru##body > .special-message-wrapper
@@ -489,5 +491,6 @@ bigpuzzle.ru##td[valign="top"][width="200px"][height="600"] > div[style]
 ||sea-man.org/adb_script/
 ||shellcat.ru^$third-party
 ||stroi-help.ru/forum/script_new.js
+||vazhno.ru/cdn-cgi/apps/head/*.js
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_slovak.txt ***
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_spanish.txt ***

@@ -514,7 +514,7 @@ pythonjobshq.com##+js(abort-on-property-read.js, Keen)
 ! https://github.com/uBlockOrigin/uAssets/issues/3998
 ! https://github.com/uBlockOrigin/uAssets/issues/4831
 ! https://github.com/uBlockOrigin/uAssets/issues/5133
-@@||cdn.ampproject.org/*/amp-geo-$script,domain=pilotonline.com|richmond.com|amp.tmz.com|amp.usatoday.com|watchdog.org
+@@||cdn.ampproject.org/*/amp-geo-$script,domain=koat.com|pilotonline.com|richmond.com|amp.tmz.com|amp.usatoday.com|watchdog.org
 
 ! https://github.com/uBlockOrigin/uAssets/issues/648
 @@/blockadblock.$script,domain=blockadblock.com
@@ -576,6 +576,7 @@ orange.fr###o_carrepub:style(height: 1px; margin: 0; min-height: auto; visibilit
 
 ! https://github.com/uBlockOrigin/uAssets/issues/750
 @@||citi.com/cards/*/tracking.js$script
+@@|blob:$popup,domain=citi.com
 
 ! https://github.com/gorhill/uBlock/issues/3138
 @@||fbcdn.net/safe_image.php?$image,domain=facebook.com
@@ -2424,3 +2425,40 @@ calgaryherald.com#@#.local-branding
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=43091
 ||scroll.com^$third-party,badfilter
+
+! https://github.com/NanoMeow/QuickReports/issues/1321
+@@||cdn.cdn000.club/js/loadjs.min.js$script,domain=vipstand.se
+
+! https://github.com/uBlockOrigin/uAssets/issues/5722
+@@||cdnjs.cloudflare.com/ajax/libs/jquery/*$script,domain=openloed.co
+
+! https://github.com/uBlockOrigin/uAssets/issues/2070#issuecomment-498000989
+@@/video-js.swf$object,1p
+
+! player broken http://www. digi24. ro/live/digi24
+@@||scdn.cxense.com/cx.js$script,domain=digi24.ro
+
+! https://github.com/easylist/easylist/issues/3567
+/prism.js$badfilter
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=43104&p=148044#p148040
+! https://forums.lanik.us/viewtopic.php?f=64&t=43114
+@@||imasdk.googleapis.com/pal/sdkloader/pal.js$script,domain=animalplanet.com|investigationdiscovery.com
+@@||fusion.ddmcdn.com/*/comscore.streaming$script,domain=animalplanet.com|investigationdiscovery.com
+@@||src.litix.io/core/2/mux.js$script,domain=animalplanet.com|investigationdiscovery.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/5764
+@@||ebates.com/dist/static/*/analytics/*$script,1p
+@@||rakuten.com/dist/static/*/analytics/*$script,1p
+
+! #1589 csp filters breaking injecting filters / pages
+@@*$csp,domain=100percentfedup.com|activistpost.com|alfonzorachel.com|allenbwest.com|allenwestrepublic.com|allthingsvegas.com|americanewshub.com|americasfreedomfighters.com|appleeats.com|barbwire.com|bb4sp.com|bestfunnyjokes4u.com|bighealthreport.com|bigleaguepolitics.com|bizpacreview.com|boomsbeat.com|breakingfirst.com|bugout.news|bulletsfirst.net|buzzlamp.com|canadafreepress.com|celebrity-gossip.net|cheapism.com|cheatsheet.com|chicksonright.com|clashamerica.com|clashdaily.com|classicalite.com|collapse.news|comicallyincorrect.com|constitution.com|craigjames.com|creepybasement.com|cyberwar.news|dailyheadlines.net|dailysurge.com|damnlol.com|deneenborelli.com|designbump.com|directexpose.com|eaglerising.com|enstarz.com|evil.news|faithit.com|firstinfreedomdaily.com|fitnessconnoisseur.com|foreverymom.com|freedom.news|freedomdaily.com|freedomforce.com|freedomoutpost.com|funnyand.com|gamer4k.com|glitch.news|godfatherpolitics.com|gopocalypse.org|grammarist.com|greatamericanrepublic.com|guardianlv.com|guns.news|hackspirit.com|hautereport.com|hispolitica.com|hngn.com|icepop.com|ifyouonlynews.com|infowars.com|instigatornews.com|intellectualconservative.com|itechpost.com|janmorganmedia.com|jobsnhire.com|joeforamerica.com|juicerhead.com|justdiy.com|kdramastars.com|keepandbear.com|knowledgedish.com|kpopstarz.com|lastresistance.com|latinpost.com|legalinsurrection.com|liberty.news|libertyunyielding.com|lidblog.com|lifebuzz.com|madworldnews.com|millionpictures.co|moneyversed.com|musictimes.com|natural.news|naturalblaze.com|naturalsociety.com|natureworldnews.com|o4anews.com|opednews.com|patriotoutdoornews.com|pjmedia.com|politicalcowboy.com|politicaloutcast.com|politichicks.com|practicallyviral.com|profitconfidential.com|quirlycues.com|readysethealth.com|realmomsrealreviews.com|realtytoday.com|redhotchacha.com|redmaryland.com|reverbpress.com|reviveusa.com|rightwingtribune.com|rollingout.com|sciencetimes.com|shark-tank.com|shedthoselbs.com|slender.news|sonsoflibertymedia.com|sportsworldnews.com|sportsworldreport.com|stupid.news|supercheats.com|survivalnation.com|sweepstakesfanatics.com|techconsumer.com|telexplorer.com.ar|terezowens.com|thealternativedaily.com|theblacksphere.net|theboredmind.com|thedesigninspiration.com|thefreethoughtproject.com|thegatewaypundit.com|thehayride.com|thelastlineofdefense.org|thelibertydaily.com|themattwalshblog.com|thepoke.co.uk|thepolitistick.com|therealside.com|threepercenternation.com|tiebreaker.com|tosavealife.com|twisted.news|universityherald.com|vcpost.com|videogamesblogger.com|viralnova.com|visiontoamerica.com|wakingtimes.com|westernjournalism.com|worldlifestyle.com|xtribune.com|youngcons.com|youthhealthmag.com
+@@||addictinginfo.*^$csp,1p
+
+! https://github.com/uBlockOrigin/uAssets/issues/5768
+@@||d24n15hnbwhuhn.cloudfront.net/libs/amplitude-$script,domain=gethuman.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/5784
+@@||cdn.intergi.com/pageos/pageos.js$script,domain=abcya.com
+@@||cdn.playwire.com/bolt*/*$image,domain=abcya.com
+@@||cdn.playwire.com/bolt*/js/zeus/*/frame/admgr$script,1p

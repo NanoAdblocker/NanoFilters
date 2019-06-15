@@ -24,6 +24,9 @@ fortune.com,time.com##+js(nanop-click-elements-onload.js, body.template-gdpr for
 # https://github.com/NanoAdblocker/NanoFilters/issues/160
 vivaldi.com##+js(nanop-click-elements-onready.js, #acceptCookie)
 
+# https://github.com/NanoAdblocker/NanoFilters/issues/358
+cookies.buienradar.nl##+js(nanop-click-elements-onready.js, form[action="https://cookieservice.rtl.nl/consent"] > input.accept-button[type="submit"])
+
 # ------------------------------------------------------------------------------------------------------------------- #
 
 # Fake pay walls and fake login walls

@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: CS8V0OJGNC10hVa1Pnsm3g
-! Version: 201906080250
+! Checksum: sOTSWUmz8u3bVO/mBfkMTA
+! Version: 201906150310
 ! Title: Adblock Warning Removal List
-! Last modified: 08 Jun 2019 02:50 UTC
+! Last modified: 15 Jun 2019 03:10 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -104,6 +104,7 @@ shadbase.com##img[alt="adblock"]
 /adblocker_message_
 /AdblockMessage.
 /antiadblockmsg.
+/blockAndInf.js
 /blockadblock.$script
 /disable-adblock.
 /wp-content/plugins/ad-block-defender/*
@@ -125,6 +126,7 @@ shadbase.com##img[alt="adblock"]
 @@/noadblock-nice-message/assets/js/ads.js?$script,~third-party
 !
 @@||abcbourse.com/scripts/ads.js$script,~third-party
+@@||animedigitalnetwork.fr/templates/*/js/advertising.min.js?$script,~third-party
 @@||ausujet.com/skins/common/ads.js
 @@||cdncontent.wakanim.tv/scripts/dist/ads.js$script,~third-party
 @@||cyberdean.fr/js/advertisement.js
@@ -150,6 +152,7 @@ shadbase.com##img[alt="adblock"]
 @@||penducado.com/styles/ads.css
 @@||presse-algerie.net/js/ads.js$script
 @@||primfx.com/js/ads.js|$script,~third-party
+@@||proxy.ads.canalplus-bo.net/web/undefined/v1/adserver/info/?asset=*&channel=$xmlhttprequest,domain=www.mycanal.fr
 @@||ps3-infos.fr/adsense/openads/ads/ads.js
 @@||ptitchef.com/js/ads.js
 @@||static.koreus.com/js/advert.js
@@ -158,6 +161,7 @@ shadbase.com##img[alt="adblock"]
 @@||universfreebox.com/js/advertisement.js
 @@||uplea.com/js/advertisement.js
 @@||peimg.fr/js/ads.js$script,domain=pubeco.fr
+@@||v.fwmrm.net/ad/g/1?$xmlhttprequest,domain=www.mycanal.fr
 @@||wamiz.com/css/ads.css
 @@||zagaz.com/img/blogads.css
 !
@@ -227,6 +231,7 @@ shadbase.com##img[alt="adblock"]
 ##.adblock_floating_message
 ##.adblocker-message
 ##.adblocker-wrap
+##.ads-block-warning
 ##.counterAdblocks
 ##.deadblocker-header-bar
 ##.deadblocker-header-bar-inner
@@ -265,8 +270,10 @@ pausecafein.fr###adb-pop
 !
 #@##adblocktest
 !
+tf1.fr#@#.ad-placement
 dbz-fantasy.com#@##adTeaser
 fstore.biz#@##adblockinfo
+tf1.fr#@#.adsbox
 dz-android.com,freeiphone.fr,hommedumatch.fr,jetetroll.com,testious.com#@##adsense
 debrideurstream.fr#@##pubdirecte
 ot-boutique.fr#@##publicite
@@ -298,7 +305,6 @@ firebit.info###adv-300 + div[class][align="center"][style^="background-color"]
 novostroy-m.ru###advert_result
 cxem.net###antiAdBlock
 elhow.ru###b-info-wrapper
-rockstargame.su###baduser
 ma.by###bodysubcont > div[style^="padding"]:not([id]):not([class])
 pln-pskov.ru###check_ad_block
 delfi.ee###delfiTopBar
@@ -485,7 +491,7 @@ bigpuzzle.ru##td[valign="top"][width="200px"][height="600"] > div[style]
 ||nnm-club.ws/forum/docs/requests.js
 ||olegon.ru/jscookie.js
 ||pwnews.net/des/antiblock.js$script
-||rockstargame.su/adb_script/
+||rockstargame.su/adb_script
 ||rusnext.ru/advar.js$script
 ||sdamgia.ru/img/blockadblock_
 ||sea-man.org/adb_script/

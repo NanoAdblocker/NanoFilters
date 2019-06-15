@@ -541,6 +541,10 @@ techonthenet.com##.bottom_slot
 techonthenet.com##.left_slot
 techonthenet.com##.hidden-print.row
 
+# https://github.com/uBlockOrigin/uAssets/issues/5317
+autoblog.com##.modal, .modal-backdrop
+autoblog.com##body:style(overflow-x: hidden !important; overflow-y: scroll !important;)
+
 # ------------------------------------------------------------------------------------------------------------------- #
 
 # Ads

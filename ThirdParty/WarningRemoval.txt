@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: VopjI8NodidkTEZm63crqw
-! Version: 201906162010
+! Checksum: 1e7aiU5dlmhbgtEn/FJFQA
+! Version: 201906190220
 ! Title: Adblock Warning Removal List
-! Last modified: 16 Jun 2019 20:10 UTC
+! Last modified: 19 Jun 2019 02:20 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -99,6 +99,7 @@ shadbase.com##img[alt="adblock"]
 /adblock-notify-by-bweb/*
 /adblock-warning-teaser/*
 /adblock_alerter.
+/adblock_alerter/*
 /adblock_gate/images/animated.gif?
 /adblock_notify.js
 /adblocker_message_
@@ -107,14 +108,18 @@ shadbase.com##img[alt="adblock"]
 /blockAndInf.js
 /blockadblock.$script
 /disable-adblock.
+/inc/antiblock.
 /wp-content/plugins/ad-block-defender/*
 /wp-content/plugins/deadblocker/*
 /wp-content/uploads/an-temp/*$script,stylesheet
 /SvgAdblockDetected/*
+_adblock_killer.
 !
 ||bdgest.com/js/site.js?
 ||cmath.fr/images/fond2.gif
 ||cmath.fr/images/fondsticky.gif
+||developpez.com/template/*.jpg$xmlhttprequest
+||developpez.net/template/*.jpg$xmlhttprequest
 ||ed-protect.org/cdn-cgi/apps/head/
 ||gameblog.fr/images/ablock/
 ||nikopik.com/wp-content/themes/*/js/nikopik.js
@@ -184,6 +189,7 @@ shadbase.com##img[alt="adblock"]
 ###adblock-msg
 ###adblock-notice
 ###adblock-overlay
+###adblock-warning
 ###adblockDetect
 ###adblock_detected
 ###adblocker_announce
@@ -199,6 +205,7 @@ shadbase.com##img[alt="adblock"]
 ###detection-block-overlay
 ###detectadblock
 ###fnAdblockingOverlay
+###fondAdblock
 ###js-popup-blocker
 ###message_adblock
 ###notify-adblock
@@ -252,7 +259,6 @@ shadbase.com##img[alt="adblock"]
 !
 wamiz.com###adblocker
 jaitoutcompris.com###antiBlock
-developpez.com,developpez.net###encart_droite div[style^="display: inline-block; width: 300px;"]
 iphonesoft.fr,iphonetweak.fr###msgNoPub
 retinaboys.com###screen_block
 lagrosseradio.com###warn
@@ -265,7 +271,6 @@ forumdz.com##body .breadcrumb + center > [color="red"] > b
 forum.pcastuces.com##div > [src] + [id] + [class][style^="display: block;"]
 closermag.fr##div[id^="detection-block"]
 bd-sanctuary.com,cine-sanctuary.com,comics-sanctuary.com,manga-sanctuary.com##div[style^="background:#444;"]
-developpez.com,developpez.net##div[id^="gabarit_pub"]
 pausecafein.fr###adb-pop
 !
 #@##adblocktest

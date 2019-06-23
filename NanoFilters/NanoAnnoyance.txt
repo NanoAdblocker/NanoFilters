@@ -5,6 +5,7 @@
 ! Source: https://github.com/NanoAdblocker/NanoFilters/tree/master/NanoFiltersSource/NanoAnnoyance.txt
 ! This file is a compiled binary, do not modify
 ! All modifications will be overwritten on the next build
+mapy.geoportal.gov.pl##+js(nanop-easy-set-cookie.js, regulationsAccepted=true)
 hardware.info##+js(nanop-click-elements-onready.js, .cookiecontainer > .cookie > button#decision[name="accept"])
 marktplaats.nl##+js(nanop-click-elements-onready.js, form#track-accept > input[type="submit"])
 f1racing.pl##+js(nanop-click-elements-onready.js, a[href="/x-set-cookie/"])

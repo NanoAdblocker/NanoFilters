@@ -6,6 +6,9 @@
 
 # Cookie walls
 
+# https://github.com/NanoAdblocker/NanoFilters/issues/278
+mapy.geoportal.gov.pl##+js(nanop-easy-set-cookie.js, regulationsAccepted=true)
+
 # https://github.com/uBlockOrigin/uAssets/issues/881
 hardware.info##+js(nanop-click-elements-onready.js, .cookiecontainer > .cookie > button#decision[name="accept"])
 

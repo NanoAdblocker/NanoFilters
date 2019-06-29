@@ -1778,7 +1778,7 @@ easyvideo.me,playbb.me#@#div[style^="width:"]
 tomsguide.com#@#.widget-ads
 
 ! https://github.com/uBlockOrigin/uAssets/issues/4760
-@@||static.sunmedia.tv/integrations/*$script,domain=api.gooru.live|periodistadigital.tv
+@@||static.sunmedia.tv/integrations/*$script,domain=api.gooru.live|elespanol.com|periodistadigital.tv
 
 ! https://github.com/uBlockOrigin/uAssets/issues/4761
 @@||cdnjs.cloudflare.com/ajax/libs/fingerprintjs2/*/fingerprint2.min.js$script,domain=jiosaavn.com
@@ -1952,10 +1952,6 @@ thewirecutter.com#@#.deals-love
 ! https://github.com/NanoMeow/QuickReports/issues/730
 @@||load.sumome.com^$script,domain=beewits.com
 
-! https://github.com/uBlockOrigin/uAssets/issues/5035
-||reutersmedia.net/resources/r/?m=$image,badfilter
-||s2.reutersmedia.net/*&$image,badfilter
-
 ! https://github.com/uBlockOrigin/uAssets/issues/4138#issuecomment-468804688
 ||track.rediff.com^$badfilter
 
@@ -2027,10 +2023,6 @@ readmng.com#@#div > iframe:first-child
 ! https://www.reddit.com/r/uBlockOrigin/comments/b1udi2/eztvio_select_show_dropdown_blocked/
 |https://$script,domain=eztv.ag|eztv.io|eztv.tf|eztv.yt,badfilter
 ||eztv.io^$csp=script-src 'self' 'unsafe-inline',badfilter
-
-! https://forums.lanik.us/viewtopic.php?p=146451#p146451
-|https://$third-party,script,domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world,badfilter
-|https://$third-party,stylesheet,domain=fmovies.is|fmovies.se|fmovies.taxi|fmovies.to|fmovies.today|fmovies.world,badfilter
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5160
 ! To counter Peter Lowe's `qualtrics.com`
@@ -2241,9 +2233,6 @@ videos.giga.de#@#+js(set-constant.js, String.prototype.charCodeAt, trueFunc)
 ! https://github.com/NanoAdblocker/NanoFilters/issues/323
 @@||d8rk54i4mohrb.cloudfront.net/js/video.js$script,domain=forbes.com
 
-! https://github.com/easylist/easylist/issues/3369
-/^https?:\/\/.*\/.*[(php|?|=)].*/$first-party,image,domain=4tube.com|anysex.com|badjojo.com|extremetube.com|hotpornfile.org|keezmovies.com|mofosex.com|motherless.com|pornobae.com|pornoreino.com|pussyspace.com|shameless.com|spankwire.com|xnxx-sexfilme.com|youjizz.com|yourlust.com,badfilter
-
 ! scrolling broken drstevenlin .com
 drstevenlin.com##html:style(overflow: auto !important;)
 
@@ -2275,9 +2264,6 @@ torrentfunk.com#@#div[style*="padding:"]
 
 ! https://forums.lanik.us/viewtopic.php?p=147492#p147492
 ||cheezburger.com^$csp=script-src 'self' 'unsafe-eval' 'unsafe-inline' data: *.youtube.com *.ytimg.com *.google-analytics.com *.facebook.net *.complex.com *.b2c.com *.chartbeat.com *.chzbgr.com *.scorecardresearch.com *.air.tv *.quantserve.com *.optimizely.com *.cheezburger.com *.quantcount.com *.newrelic.com *.spot.im,badfilter
-
-! https://github.com/easylist/EasyListHebrew/issues/323
-@@||cdn.ampproject.org/amp4ads$script,domain=themarker.com
 
 ! https://github.com/NanoMeow/QuickReports/issues/1217
 @@||api.perfops.net/analytics/dns/data$xhr,domain=dnsperf.com
@@ -2349,7 +2335,6 @@ downloadsource.*##.date:not(dt):style(display: block !important;)
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=live.antena3.ro
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=43073&p=147868#p147852
-@@||adv.cr^$popup
 ://adv.$domain=~adv.bet|~adv.cincsys.com|~adv.co.it|~adv.cryptonetlabs.it|~adv.derfunke.at|~adv.ee|~adv.gg|~adv.michaelgat.com|~adv.msk.ru|~adv.ru|~adv.vg|~adv.works|~adv.yomiuri.co.jp|~advids.co|~erti.se|~escreverdireito.com|~farapp.com|~forex-tv-online.com|~r7.com|~typeform.com|~welaika.com,badfilter
 ://adv.$domain=~adv.bet|~adv.cincsys.com|~adv.co.it|~adv.cr|~adv.cryptonetlabs.it|~adv.derfunke.at|~adv.ee|~adv.gg|~adv.michaelgat.com|~adv.msk.ru|~adv.ru|~adv.vg|~adv.works|~adv.yomiuri.co.jp|~advids.co|~erti.se|~escreverdireito.com|~farapp.com|~forex-tv-online.com|~r7.com|~typeform.com|~welaika.com
 
@@ -2420,10 +2405,6 @@ larena.it#@#.v3_horz-banner
 ! https://forums.lanik.us/viewtopic.php?p=148227#p148227
 |https://$third-party,subdocument,domain=topeuropix.net,badfilter
 
-! https://forums.lanik.us/viewtopic.php?f=64&t=43148
-@@||portal.autotrader.co.uk/*/advert/$xhr,1p
-@@||autotrader.co.uk/json/*advert$xhr,1p
-
 ! https://github.com/uBlockOrigin/uAssets/issues/5652#issuecomment-502710048
 |https://$third-party,subdocument,domain=cmovieshd.net,badfilter
 ||hostingcoupon.coupons^$3p
@@ -2456,3 +2437,33 @@ carbuzz.com##.cb-post-block__comments:style(padding-bottom: 0 !important;)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5726#issuecomment-503789864
 queerpride.de#@#.category-advertorial
+
+! https://github.com/NanoAdblocker/NanoFilters/issues/366
+@@||10minuteschool.com/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-download-tracker.js$1p
+
+! https://github.com/uBlockOrigin/uAssets/issues/5878
+@@||doubleclick.net/gampad/*$script,domain=lavoz.com.ar
+@@||doubleclick.net/gpt/$script,domain=lavoz.com.ar
+@@||googletagservices.com/tag/js/gpt.js$script,domain=lavoz.com.ar
+@@||storage.googleapis.com/adcase.io/dist/*$script,domain=lavoz.com.ar
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=43204&p=148464#p148463
+/advertising-$domain=~abramarketing.com|~advertising-direct.com|~advertising-factory.de|~microsoft.com|~outbrain.com|~yellowimages.com,badfilter
+/advertising-$domain=~abramarketing.com|~advertising-direct.com|~advertising-excellence.com|~advertising-factory.de|~microsoft.com|~outbrain.com|~yellowimages.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/5880
+||madmimi.com^$badfilter
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=43205
+/adver.$domain=~adver.biz|~adver.media,badfilter
+/adver.$domain=~adver.biz|~adver.by|~adver.media
+
+! https://github.com/uBlockOrigin/uAssets/issues/5883#issuecomment-506627456
+@@||cloudfront.net/ad/*-small-*$image,domain=ispot.tv
+@@||cloudfront.net/img/*$image,domain=ispot.tv
+
+! https://github.com/uBlockOrigin/uAssets/issues/5883
+@@||discordapp.net/external/*$image,domain=discordapp.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/5886
+@@||yottaa.net/*/scripts/eventtracking/*$script,domain=containerstore.com

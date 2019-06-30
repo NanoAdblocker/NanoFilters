@@ -42,6 +42,19 @@ nano-assign-variable-onready.js application/javascript
     }
 })();
 
+nano-grant-fake-notification.js application/javascript
+(function() {
+    Notification = function() { };
+    Notification.permission = 'default';
+    Notification.requestPermission = function(callback) {
+        Notification.permission = 'grante';
+        if ( callback ) {
+            setTimeout(callback, 0, 'granted');
+        };
+        return Promise.resolve('granted');
+    };
+})();
+
 nano-vvvvid-it.js application/javascript
 (function() {
     // Based on KAADIVVVV

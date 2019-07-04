@@ -1,8 +1,8 @@
 [Adblock Plus 1.1]
-! Checksum: 3OtgCewrNlL2H5eyozNMBA
-! Version: 201906291711
+! Checksum: BGqEwND4Od1gLb2Zjgc8Pg
+! Version: 201907040321
 ! Title: EasyPrivacy
-! Last modified: 29 Jun 2019 17:11 UTC
+! Last modified: 04 Jul 2019 03:21 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -722,6 +722,7 @@
 /api/pixel?
 /api/stat?
 /api/tracking/*
+/api/v1/collector
 /api/v1/metrics
 /api/v1/stat?
 /api/x.gif?
@@ -1639,6 +1640,7 @@
 /ft/hit/*
 /FTTrack2.js
 /g-track/*
+/g2insights.
 /g=analytics&
 /g_track.php?
 /ga*.js?PID=
@@ -3410,6 +3412,7 @@
 /stats.gif?
 /stats.hitbox.com/*
 /stats.php?*http
+/stats.php?format=
 /stats.php?type=
 /stats.php?uri=
 /stats/*?category=$image
@@ -7946,6 +7949,7 @@ _mongo_stats/
 ||jewelcheese.com^$third-party
 ||lizardslaugh.com^$third-party
 ||mowfruit.com^$third-party
+||nervoussummer.com^$third-party
 ||petiteumbrella.com^$third-party
 ||photographpan.com^$third-party
 ||pietexture.com^$third-party
@@ -8693,7 +8697,6 @@ _mongo_stats/
 ||nsaudience.pl^$third-party
 ||p071qmn.com^$third-party
 ||pushdom.co^$third-party
-||quartic.pl^$third-party
 ||rejestr.org^$third-party
 ||spolecznosci.net^$third-party
 ||stat.4u.pl^$third-party
@@ -9344,6 +9347,7 @@ _mongo_stats/
 ||bufferapp.com/wf/open?upn=$third-party
 ||bumpin.com^*/analytics.html
 ||business.sharedcount.com^$third-party
+||buybox.click/analytics.js
 ||buzzbox.buzzfeed.com^
 ||bzgint.com/CUNCollector/
 ||bzpics.com/jslib/st.js?
@@ -10233,6 +10237,7 @@ _mongo_stats/
 ||msecnd.net/jscripts/HA-$script
 ||msecnd.net/scripts/a/ai.0.js
 ||msecnd.net/scripts/jsll-
+||mshcdn.com/assets/metrics-
 ||mtrcs.samba.tv^
 ||mts.mansion.com^$third-party
 ||mtvnservices.com/aria/uuid.html
@@ -10394,6 +10399,7 @@ _mongo_stats/
 ||pixhosting.com/ct/jct.php?
 ||planet49.com/log/
 ||platform.communicatorcorp.com^$third-party
+||platform.iteratehq.com^$third-party
 ||platform.twitter.com/impressions.js$third-party
 ||player.ooyala.com/errors/report?
 ||playtomic.com/Tracker/
@@ -11698,6 +11704,7 @@ _mongo_stats/
 ||liczniki.org/hit.php
 ||pixel.homebook.pl^
 ||ppstatic.pl^*/track.js
+||rec.quartic.pl^
 ||scontent.services.tvn.pl^
 ||stats.asp24.pl^
 ||stats.media.onet.pl^
@@ -12148,6 +12155,7 @@ _mongo_stats/
 ||avstop.com^*/poll.gif?
 ||axa.com/elements/js/wreport.js
 ||azfamily.com/images/pixel.gif
+||azureedge.net/prod/1.0/fp.min.js$domain=mercurynews.com
 ||b-aws.techcrunch.com^
 ||b.huffingtonpost.com^
 ||b.imwx.com^
@@ -13761,6 +13769,7 @@ _mongo_stats/
 ||sp.press-citizen.com^
 ||sp.pressconnects.com^
 ||sp.publicopiniononline.com^
+||sp.pushsquare.com^
 ||sp.redding.com^
 ||sp.reporternews.com^
 ||sp.rgj.com^
@@ -14487,7 +14496,7 @@ $xmlhttprequest,domain=alltube.pl|alltube.tv|auroravid.to|catrumahminimalis.me|d
 ! CSP Mining
 $csp=child-src 'none'; frame-src 'self' *; worker-src 'none',domain=fileone.tv|theappguruz.com
 $csp=child-src 'none'; frame-src *; worker-src 'none',domain=ddmix.net|extratorrent.cd|gofile.io|hq-porns.com|intactoffers.club|myfeed4u.net|skyback.ru|szukajka.tv|thepiratebay.cr|thepiratebay.org|thepiratebay.red|thevideo.ch|thevideo.io|thevideo.me|thevideo.us|tvad.me|vidoza.net|vidup.me
-$csp=worker-src 'none',domain=akvideo.stream|alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.net|bigspeeds.com|biter.tv|bypassed.ws|byter.tv|centrum-dramy.pl|cinemafacil.com|clipwatching.com|coinfaucet.eu|coinhub.win|crictime.com|crictime.is|dekoder.ws|deltabit.co|descargas2020.com|estream.to|estream.xyz|filmonet.com|filmstreamvk.site|flashx.cc|flashx.co|flashx.sx|flashx.to|flashx.tv|flashx.ws|hdvid.life|hdvid.tv|hdvid.xyz|hentai-online.pl|hqq.watch|ianimes.co|kinokongo.cc|kinostuff.com|lewd.ninja|love-drama.pl|movie4k.is|pebx.pl|potomy.ru|povw1deo.com|powvideo.cc|powvideo.net|proxyportal.eu|reactor.cc|salon.com|severita-service.ru|sickrage.ca|sorteosrd.com|tomadivx.tv|unblockall.org|unblocked.gdn|vidfile.net|vidtodo.com|vidtodo.me|vidtodo.pro|wallpoper.com|wearesaudis.net|ya3ale.com|yazilir.com|zenexplayer.com
+$csp=worker-src 'none',domain=alltube.pl|alltube.tv|animeteatr.ru|annuaire-bleu.net|bigspeeds.com|biter.tv|bypassed.ws|byter.tv|centrum-dramy.pl|cinemafacil.com|clipwatching.com|coinfaucet.eu|coinhub.win|crictime.com|crictime.is|dekoder.ws|deltabit.co|descargas2020.com|estream.to|estream.xyz|filmonet.com|filmstreamvk.site|flashx.cc|flashx.co|flashx.sx|flashx.to|flashx.tv|flashx.ws|hdvid.life|hdvid.tv|hdvid.xyz|hentai-online.pl|hqq.watch|ianimes.co|kinokongo.cc|kinostuff.com|lewd.ninja|love-drama.pl|movie4k.is|pebx.pl|potomy.ru|povw1deo.com|powvideo.cc|powvideo.net|proxyportal.eu|reactor.cc|salon.com|severita-service.ru|sickrage.ca|sorteosrd.com|tomadivx.tv|unblockall.org|unblocked.gdn|vidfile.net|vidtodo.com|vidtodo.me|vidtodo.pro|wallpoper.com|wearesaudis.net|ya3ale.com|yazilir.com|zenexplayer.com
 ! Preliminarily blocking Omniture s_code tracking scripts (versions H.25 - H.25.2) due to breakage (https://adblockplus.org/forum/viewtopic.php?f=10&t=11378)
 ||abc.com/service/gremlin/js/files/s_code.js?$domain=abc.go.com
 ||adobe.com^*/omniture_s_code.js

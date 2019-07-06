@@ -234,12 +234,9 @@ imgdew.pw##.adbwarning
 # Soft anti-adblock that are also included in uBlock annoyance filter
 # License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 
-# https://github.com/jspenguin2017/uBlockProtector/issues/975
 # https://github.com/uBlockOrigin/uAssets/issues/3948
-@@||s.aolcdn.com/ads/adswrappermsni.js$script,domain=outlook.live.com
-@@||acdn.adnxs.com/$script,domain=outlook.live.com
-live.com##div:if(:scope > div > div[class^="__Microsoft_Owa_Adsbar_"])
-live.com##div:if(:scope > div > div > div[id^="owaadbar"]:not([class^="__Microsoft_Owa_Adsbar_"]))
+# https://github.com/NanoMeow/QuickReports/issues/525
+outlook.live.com##a[href="https://windows.microsoft.com/outlook/ad-free-outlook"]:nth-ancestor(4)
 
 # https://github.com/NanoMeow/QuickReports/issues/74
 libgen.io##+js(setTimeout-defuser.js, (), 500)

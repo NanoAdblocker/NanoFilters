@@ -202,9 +202,6 @@ eurogamer.it##+js(abort-on-property-read.js, _sp_.mms.startMsg)
 # https://github.com/NanoAdblocker/NanoFilters/issues/71
 wusa9.com##.fc-pinned-message-container.fc-root
 
-# https://github.com/NanoAdblocker/NanoFilters/issues/75
-nl.hardware.info###sitearea > div:has-text(adblocker)
-
 # https://github.com/NanoAdblocker/NanoFilters/issues/80
 bigspeeds.com##.link-error:has-text(Advertisers)
 
@@ -571,7 +568,7 @@ surviv.io##+js(abort-on-property-write.js, adBlockDetected)
 surviv.io###ad-block-left
 
 # https://github.com/NanoMeow/QuickReports/issues/1508
-nl.hardware.info##body > div:nth-of-type(1) > div
+nl.hardware.info##body > div:nth-of-type(1) > div:has-text(adblocker)
 nl.hardware.info##.sidebar_right_bottom
 nl.hardware.info##.sidebar_right_top
 

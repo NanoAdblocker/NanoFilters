@@ -77,7 +77,6 @@ whatsmydns.net##.ad
 ||fosshub.com/index/donateQ$subdocument
 eurogamer.it##+js(abort-on-property-read.js, _sp_.mms.startMsg)
 wusa9.com##.fc-pinned-message-container.fc-root
-nl.hardware.info###sitearea > div:has-text(adblocker)
 bigspeeds.com##.link-error:has-text(Advertisers)
 ||3dzone.link/wp-content/uploads/2018/05/Disable-Adblock-in-Blogger-Blogs-300x158.png$image
 readthedocs.io##.keep-us-sustainable
@@ -216,7 +215,7 @@ anisearch.com#@##bannerads
 @@||abola.pt/Scripts/advertisement.js$script,1p
 surviv.io##+js(abort-on-property-write.js, adBlockDetected)
 surviv.io###ad-block-left
-nl.hardware.info##body > div:nth-of-type(1) > div
+nl.hardware.info##body > div:nth-of-type(1) > div:has-text(adblocker)
 nl.hardware.info##.sidebar_right_bottom
 nl.hardware.info##.sidebar_right_top
 altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])

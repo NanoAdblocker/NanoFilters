@@ -2458,14 +2458,29 @@ queerpride.de#@#.category-advertorial
 ! https://github.com/uBlockOrigin/uAssets/issues/5883
 @@||discordapp.net/external/*$image,domain=discordapp.com
 
-! https://github.com/uBlockOrigin/uAssets/issues/5886
-@@||yottaa.net/*/scripts/eventtracking/*$script,domain=containerstore.com
-
-! https://github.com/uBlockOrigin/uAssets/issues/5891 & lne .es
-@@||farodevigo.es/*/videojs-contrib-ads/videojs.ads.min.js$xhr,1p
-@@||lne.es/*/videojs-contrib-ads/videojs.ads.min.js$xhr,1p
+! https://github.com/uBlockOrigin/uAssets/issues/5891 Prensa Ibérica 360
+@@||estaticos.*/elementosWeb/ew/js/multimedia/player/videojs-contrib-ads/videojs.ads.min.js$xhr,domain=diaridegirona.cat|diariodeibiza.es|diariodemallorca.es|diarioinformacion.com|eldia.es|emporda.info|farodevigo.es|laopinioncoruna.es|laopiniondemalaga.es|laopiniondemurcia.es|laopiniondezamora.es|laprovincia.es|levante-emv.com|lne.es|mallorcazeitung.es|regio7.cat|superdeporte.es
 
 ! https://github.com/NanoMeow/QuickReports/issues/1444
 @@||video.a4g.com/www/delivery/video.php$script,domain=bestescapegames.com
 bestescapegames.com##.add_div3
 bestescapegames.com##.add_divbig
+
+! https://github.com/easylist/easylist/issues/3727
+@@||inpref.s3.amazonaws.com/sites/kauppahalli$script,domain=kauppahalli24.fi
+@@||kauppahalli24_fi_api.frosmo.com^$xhr,domain=kauppahalli24.fi
+
+! https://github.com/NanoMeow/QuickReports/issues/1477
+||assets.adobedtm.com/launch-$script,important,domain=bellinghamherald.com|bnd.com|bradenton.com|centredaily.com|charlotteobserver.com|elnuevoherald.com|fresnobee.com|heraldonline.com|heraldsun.com|idahostatesman.com|islandpacket.com|kansas.com|kansascity.com|kentucky.com|ledger-enquirer.com|macon.com|mcclatchydc.com|mercedsunstar.com|miamiherald.com|modbee.com|myrtlebeachonline.com|newsobserver.com|sacbee.com|sanluisobispo.com|star-telegram.com|sunherald.com|theolympian.com|thenewstribune.com|thestate.com|tri-cityherald.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/5936
+@@||media.nintendo.com/share/include/*/js/tracking/*$script,1p
+
+! https://github.com/uBlockOrigin/uAssets/issues/5943
+@@||adobedtm.com^*/satellitelib-$script,domain=auspost.com.au
+
+! https://github.com/easylist/easylist/issues/3749
+@@||cdn.geni.us/snippet.min.js$script,domain=pcmonitors.info
+
+! https://github.com/NanoMeow/QuickReports/issues/1498
+||t.st/video/js/ads.js$script,redirect=noopjs,domain=thestreet.com

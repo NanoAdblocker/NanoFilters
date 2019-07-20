@@ -30,6 +30,12 @@ vivaldi.com##+js(nanop-click-elements-onready.js, #acceptCookie)
 # https://github.com/NanoAdblocker/NanoFilters/issues/358
 cookies.buienradar.nl##+js(nanop-click-elements-onready.js, form[action="https://cookieservice.rtl.nl/consent"] > input.accept-button[type="submit"])
 
+# https://github.com/NanoAdblocker/NanoFilters/issues/374
+nl.hardware.info##+js(nanop-click-elements-onready.js, .cookie-wall__cookie-container button[name="accept"])
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/374
+tweakers.net##+js(nanop-click-elements-onready.js, #cookieAcceptForm button[value="accept"])
+
 # ------------------------------------------------------------------------------------------------------------------- #
 
 # Fake pay walls and fake login walls

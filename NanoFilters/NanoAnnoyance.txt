@@ -13,6 +13,8 @@ derstandard.at##+js(nanop-click-elements-onready.js, section.privacywall-overvie
 fortune.com,time.com##+js(nanop-click-elements-onload.js, body.template-gdpr form.gdpr-form > input[type="submit"])
 vivaldi.com##+js(nanop-click-elements-onready.js, #acceptCookie)
 cookies.buienradar.nl##+js(nanop-click-elements-onready.js, form[action="https://cookieservice.rtl.nl/consent"] > input.accept-button[type="submit"])
+nl.hardware.info##+js(nanop-click-elements-onready.js, .cookie-wall__cookie-container button[name="accept"])
+tweakers.net##+js(nanop-click-elements-onready.js, #cookieAcceptForm button[value="accept"])
 bizjournals.com##+js(set-constant.js, __page__.isPremium, false)
 ||static.infoglobo.com.br/paywall/*$domain=oglobo.globo.com
 ||washingtonpost.com/wp-stat/pwapi/prod/*

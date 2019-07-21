@@ -2484,3 +2484,17 @@ bestescapegames.com##.add_divbig
 
 ! https://github.com/NanoMeow/QuickReports/issues/1498
 ||t.st/video/js/ads.js$script,redirect=noopjs,domain=thestreet.com
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=43289
+|http*://$third-party,xmlhttprequest,domain=stream2watch.ws,badfilter
+@@||cdn.jsdelivr.net^$script,domain=stream2watch.ws
+
+! https://www.reddit.com/r/uBlockOrigin/comments/cetv3v/
+@@||cpt-static.gannettdigital.com/*-comscore$xhr
+
+! https://github.com/uBlockOrigin/uAssets/issues/5986
+@@||en25.com/*/DELOITTECENTRALEUROPELIMITED/*$image,css,script,domain=register.deloittece.com
+
+! https://github.com/NanoMeow/QuickReports/issues/1540
+@@||securepubads.g.doubleclick.net/gpt/pubads_impl$script,domain=gamespot.com
+@@||securepubads.g.doubleclick.net/tag/js/gpt.js$script,domain=gamespot.com

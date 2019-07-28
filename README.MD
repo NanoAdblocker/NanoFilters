@@ -39,7 +39,7 @@ removed:
 - Hostile anti-blur (switching to another tab or window)
 - Forced like (social locker)
 - Intrusive donation message
-- Cookie wall
+- Cookie wall where the user has no other choice than accept all
 - Fake pay wall and fake login wall (a wall is fake if it does not work when
   JavaScript and/or cookies are disabled in browser settings)
 

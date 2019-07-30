@@ -588,6 +588,12 @@ nl.hardware.info##.sidebar_right_top
 # https://github.com/NanoMeow/QuickReports/issues/1588
 @@||independent.ie^$generichide
 
+# https://github.com/uBlockOrigin/uAssets/issues/5979
+# https://github.com/NanoMeow/QuickReports/issues/1544
+neowin.net##+js(abort-on-property-read.js, _sp_.mms.startMsg)
+neowin.net##[class^="sp_veil"]
+neowin.net##[id^="sp_message_panel_id"]
+
 # ------------------------------------------------------------------------------------------------------------------- #
 
 # Ads

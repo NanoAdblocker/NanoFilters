@@ -120,6 +120,13 @@ vizer.tv##.open.adsByVizer.vizerNewBox
 # https://github.com/NanoMeow/QuickReports/issues/474
 math.semestr.ru##+js(setInterval-defuser.js, IsAdBlock, 1000)
 
+# https://github.com/NanoMeow/QuickReports/issues/920
+@@||mobilinks.info^$generichide
+mobilinks.info##ins.adsbygoogle
+mobilinks.info##+js(nano-setInterval-booster.js)
+mobilinks.info###custom_html-2:has-text(ADs)
+mobilinks.info##div > span:has-text(AdBlock)
+
 # ------------------------------------------------------------------------------------------------------------------- #
 
 # Soft anti-adblock

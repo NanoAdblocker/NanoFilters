@@ -21,7 +21,8 @@ If an issue is taken care by a default (regional) filter, then it will not be
 fixed again in NanoFilters.
 
 Ads and ads timer will be removed unless:
-- It is non-intrusive, and
+- It is non-intrusive,
+- It is shown to all users, and
 - It only promote first party products (for example, the Android app for your
   website)
 

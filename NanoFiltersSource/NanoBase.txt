@@ -630,6 +630,15 @@ altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 
 # ------------------------------------------------------------------------------------------------------------------- #
 
+# Ads that are also included in uBlock annoyance filter
+# License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
+
+# https://github.com/NanoMeow/QuickReports/issues/1396
+@@||wired.com^$generichide
+wired.com##.ad
+
+# ------------------------------------------------------------------------------------------------------------------- #
+
 # Unbreak
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/781

@@ -246,6 +246,11 @@ teemo.gg##section:has(:scope > div.alert:has-text(adblock))
 # https://github.com/NanoMeow/QuickReports/issues/1772
 smashboards.com##.funboxWrapper:has(#noticeMain)
 
+# https://github.com/NanoMeow/QuickReports/issues/1780
+@@||belfasttelegraph.co.uk^$generichide
+belfasttelegraph.co.uk##.adsbygoogle
+belfasttelegraph.co.uk##.advert
+
 # ------------------------------------------------------------------------------------------------------------------- #
 
 # Soft anti-adblock that are also included in uBlock annoyance filter

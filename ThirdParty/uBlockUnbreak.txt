@@ -2680,3 +2680,20 @@ cadlinecommunity.co.uk#@#.sidebar_advert
 
 ! https://github.com/easylist/easylist/issues/3942
 ||pmdstatic.net^$third-party,badfilter
+
+! https://github.com/NanoMeow/QuickReports/issues/1767
+@@||cdn.vuplay.co.uk/stats/adobe/*/VisitorAPI.js$script,domain=radioplus.be
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=43445
+@@||hmhco.com/one/js/conf/trackjs.config.$xmlhttprequest,script
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=43463
+@@||techpowerup.com/img/$image,1p
+techpowerup.com##figure
+
+! https://github.com/uBlockOrigin/uAssets/issues/2870#issuecomment-528066013
+@@||api.infowarsmedia.com/videojs-event-tracking/$script,1p
+|https://$third-party,script,domain=infowars.com,badfilter
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=43465&p=149584#p149583
+maaikeschrijftop.nl#@#a[href^="https://tc.tradetracker.net/"]

@@ -1,35 +1,47 @@
-/**
- * Update all third party filters.
- */
+// ----------------------------------------------------------------------------------------------------------------- //
+
+// Nano Filters - Script snippets and filters for Nano Adblocker
+// Copyright (C) 2018-2019  Nano Core 2 contributors
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+// ----------------------------------------------------------------------------------------------------------------- //
+
+// Download third party filters update
+
+// ----------------------------------------------------------------------------------------------------------------- //
+
 "use strict";
 
-/**
- * Load modules.
- * @const {Module}
- */
 const fs = require("fs");
 const https = require("https");
 const path = require("path");
 const url = require("url");
 const zlib = require("zlib");
 
-/**
- * The request agent.
- * @const {Agent}
- */
+// ----------------------------------------------------------------------------------------------------------------- //
+
 const agent = new https.Agent({
     keepAlive: true,
     maxSockets: 1,
     maxFreeSockets: 1,
 });
 
-/**
- * Fetch one filter.
- * @function
- * @param {string} input - The URL of the filter.
- * @param {WriteStream} output - A write stream to write response to.
- * @return {Promise} The promise of this task.
- */
+// input  - Url
+// output - Write stream
+//
+// Returns the promise for this task
 const fetchOne = (input, output) => {
     return new Promise((resolve, reject) => {
         let options = url.parse(input);
@@ -68,12 +80,10 @@ const fetchOne = (input, output) => {
         req.end();
     });
 };
-/**
- * Validate one filter, check if it is obviously wrong.
- * @function
- * @param {string} input - The path to the filter to check
- * @return {Promise} The promise of this task.
- */
+
+// input - Path to filter file
+//
+// Returns the promise for this task
 const validate = (input) => {
     return new Promise((resolve, reject) => {
         fs.readFile(input, "utf8", (err, data) => {
@@ -92,9 +102,13 @@ const validate = (input) => {
     });
 };
 
+// ----------------------------------------------------------------------------------------------------------------- //
+
 process.on("unhandledRejection", (err) => {
     throw err;
 });
+
+// ----------------------------------------------------------------------------------------------------------------- //
 
 (async () => {
     let data = {
@@ -103,6 +117,18 @@ process.on("unhandledRejection", (err) => {
 
     if (process.argv.includes("--all")) {
         data = Object.assign(data, {
+
+            // ----------------------------------------------------------------------------------------------------- //
+
+            // Download these first because the server sometimes error out and I have yet to implement retry
+
+            "WarningRemoval.txt": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
+            "EasyList.txt": "https://easylist-downloads.adblockplus.org/easylist.txt",
+
+            "EasyPrivacy.txt": "https://easylist-downloads.adblockplus.org/easyprivacy.txt",
+
+            // ----------------------------------------------------------------------------------------------------- //
+
             "MalwareDomain0.txt": "https://raw.githubusercontent.com/NanoMeow/MDLMirror/master/hosts.txt",
             "MalwareDomain1.txt": "https://mirror1.malwaredomains.com/files/justdomains",
 
@@ -117,12 +143,10 @@ process.on("unhandledRejection", (err) => {
             "uBlockAbuse.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt",
             "uBlockUnbreak.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt",
 
-            "WarningRemoval.txt": "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
-            "EasyList.txt": "https://easylist-downloads.adblockplus.org/easylist.txt",
-
-            "EasyPrivacy.txt": "https://easylist-downloads.adblockplus.org/easyprivacy.txt",
-
             "PeterLowe.txt": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=1&mimetype=plaintext",
+
+            // ----------------------------------------------------------------------------------------------------- //
+
         });
     }
 
@@ -136,3 +160,5 @@ process.on("unhandledRejection", (err) => {
     console.log();
     console.log("Done");
 })();
+
+// ----------------------------------------------------------------------------------------------------------------- //

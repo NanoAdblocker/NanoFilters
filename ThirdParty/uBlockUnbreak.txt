@@ -2688,8 +2688,9 @@ cadlinecommunity.co.uk#@#.sidebar_advert
 @@||hmhco.com/one/js/conf/trackjs.config.$xmlhttprequest,script
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=43463
-@@||techpowerup.com/img/$image,1p
-techpowerup.com##figure
+||techpowerup.com^$first-party,image,badfilter
+techpowerup.com###page > .sidebar > figure
+techpowerup.com##[rel="nofollow external"]
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2870#issuecomment-528066013
 @@||api.infowarsmedia.com/videojs-event-tracking/$script,1p
@@ -2697,3 +2698,9 @@ techpowerup.com##figure
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=43465&p=149584#p149583
 maaikeschrijftop.nl#@#a[href^="https://tc.tradetracker.net/"]
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=43469&p=149630#p149630
+techradar.com#@#a[href^="https://amazon."][href*="tag="]
+
+! https://github.com/uBlockOrigin/uAssets/issues/6257
+@@||game-cdn.poki.*^$frame,1p

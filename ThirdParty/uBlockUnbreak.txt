@@ -13,11 +13,11 @@
 ! https://github.com/chrisaljoudi/uBlock/issues/119
 ! https://github.com/chrisaljoudi/uBlock/issues/940
 ! To counter `google-analytics.com` in Peter Lowe's list
-@@||google-analytics.com^$domain=avianca.com|jackbox.tv|newegg.com
+@@||google-analytics.com^$domain=avianca.com|newegg.com
 
 ! From Chrome store: "Go to site http://www.vd.nl/ ... links from dropdown top menu do not work"
 ! To counter Dan Pollock's, hpHosts, MVPS, Peter Lowe's
-@@||google-analytics.com/analytics.js$script,domain=burodecredito.com.mx|vd.nl
+@@||google-analytics.com/analytics.js$script,domain=burodecredito.com.mx
 
 ! https://github.com/gorhill/uBlock/issues/1164
 ! GA plugins are pulled if and only if `analytics.js` was already allowed in
@@ -38,6 +38,7 @@
 ! https://github.com/NanoMeow/QuickReports/issues/1636
 ||2mdn.net/instream/video/client.js$script,redirect=noopjs,domain=video.foxnews.com
 ||cdn.krxd.net^$script,redirect=noopjs,domain=video.foxnews.com
+@@||akamaihd.net/player/*/akamai/amp/prebid/*$script,domain=static.foxnews.com
 @@||global.fncstatic.com/$script,domain=video.foxnews.com
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=insider.foxnews.com
 
@@ -483,7 +484,7 @@ pythonjobshq.com##+js(abort-on-property-read.js, Keen)
 ! https://github.com/uBlockOrigin/uAssets/issues/3998
 ! https://github.com/uBlockOrigin/uAssets/issues/4831
 ! https://github.com/uBlockOrigin/uAssets/issues/5133
-@@||cdn.ampproject.org/*/amp-geo-$script,domain=koat.com|pilotonline.com|richmond.com|amp.tmz.com|tucson.com|amp.usatoday.com|watchdog.org
+@@||cdn.ampproject.org/*/amp-geo-$script,domain=bozemandailychronicle.com|engadget.com|koat.com|pilotonline.com|richmond.com|amp.tmz.com|tucson.com|amp.usatoday.com|watchdog.org
 
 ! https://github.com/uBlockOrigin/uAssets/issues/648
 @@/blockadblock.$script,domain=blockadblock.com
@@ -606,8 +607,8 @@ energy.de#@##ad_home
 @@||adobedtm.com/*/satelliteLib-$script,domain=kia.ca
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=37974
-@@||dpm.demdex.net/id$script,domain=espn.com
-@@||w88.espn.com/id$script,first-party
+@@||espncdn.com/redesign/*/js/espn-analytics.js$script,domain=espn.com
+@@||registerdisney.go.com/*/responder/responder.js$script,domain=espn.com
 ! fix video player
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=espn.com
 
@@ -922,8 +923,10 @@ xda-developers.com#@#[style*="data:"]
 @@||2mdn.net/instream/html5/ima3.js$script,domain=zdnet.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2107
+! https://github.com/uBlockOrigin/uAssets/issues/6284
 cyclingnews.com##+js(abort-on-property-read.js, MONETIZER101.init)
 cyclingnews.com##+js(nano-setTimeout-booster.js, /outboundLink/)
+@@||googletagmanager.com/gtm.js$script,domain=cyclingnews.com
 cyclingnews.com##.global-banner
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2112
@@ -979,11 +982,11 @@ mobile.twitter.com#@#._29ahSMvH section.rn-1oszu61 div[class][style*="padding-"]
 @@||imagebam.com/assets/js/image_bootstrap.js$script,first-party
 
 ! https://github.com/uBlockOrigin/uAssets/issues/2309
-/.*(\/proxy|\.wasm|\.wsm|\.wa)$/$websocket,xmlhttprequest,domain=~aochagavia.github.io|~edwin0cheng.github.io|github.io|rawgit.com|reactor.cc|sickrage.ca|sorteosrd.com|streamplay.to|tubetitties.com|vidfile.net,badfilter
-/proxy|$third-party,websocket,xmlhttprequest,domain=github.io|rawgit.com|streamplay.to|tubetitties.com|vidfile.net
-.wasm|$third-party,websocket,xmlhttprequest,domain=github.io|rawgit.com|streamplay.to|tubetitties.com|vidfile.net
-.wsm|$third-party,websocket,xmlhttprequest,domain=github.io|rawgit.com|streamplay.to|tubetitties.com|vidfile.net
-.wa|$third-party,websocket,xmlhttprequest,domain=github.io|rawgit.com|streamplay.to|tubetitties.com|vidfile.net
+/.*(\/proxy|\.wasm|\.wsm|\.wa)$/$websocket,xmlhttprequest,domain=reactor.cc|sickrage.ca|sorteosrd.com|streamplay.to,badfilter
+/proxy|$websocket,xmlhttprequest,domain=reactor.cc|sickrage.ca|sorteosrd.com|streamplay.to
+.wasm|$websocket,xmlhttprequest,domain=reactor.cc|sickrage.ca|sorteosrd.com|streamplay.to
+.wsm|$websocket,xmlhttprequest,domain=reactor.cc|sickrage.ca|sorteosrd.com|streamplay.to
+.wa|$websocket,xmlhttprequest,domain=reactor.cc|sickrage.ca|sorteosrd.com|streamplay.to
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/8kh4zc/kotaku_embedded_twitter_images_not_displaying/
 ! https://github.com/uBlockOrigin/uAssets/issues/3680
@@ -2520,7 +2523,6 @@ bestescapegames.com##.add_divbig
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/chll4h/ublock_still_continues_to_block_readcomiconlineto/
 ||readcomiconline.to^$csp=script-src 'self' 'unsafe-inline' *.disquscdn.com *.facebook.net *.twitter.com disqus.com,badfilter
-||readcomiconline.to^$csp=script-src 'self' 'unsafe-inline' *.disquscdn.com *.facebook.net *.twitter.com *.disqus.com
 ||readcomiconline.to/scripts/customjavascript.js$badfilter
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5999
@@ -2681,14 +2683,7 @@ cadlinecommunity.co.uk#@#.sidebar_advert
 ! https://github.com/easylist/easylist/issues/3942
 ||pmdstatic.net^$third-party,badfilter
 
-! https://github.com/NanoMeow/QuickReports/issues/1767
-@@||cdn.vuplay.co.uk/stats/adobe/*/VisitorAPI.js$script,domain=radioplus.be
-
-! https://forums.lanik.us/viewtopic.php?f=64&t=43445
-@@||hmhco.com/one/js/conf/trackjs.config.$xmlhttprequest,script
-
 ! https://forums.lanik.us/viewtopic.php?f=64&t=43463
-||techpowerup.com^$first-party,image,badfilter
 techpowerup.com###page > .sidebar > figure
 techpowerup.com##[rel="nofollow external"]
 
@@ -2704,3 +2699,67 @@ techradar.com#@#a[href^="https://amazon."][href*="tag="]
 
 ! https://github.com/uBlockOrigin/uAssets/issues/6257
 @@||game-cdn.poki.*^$frame,1p
+
+! https://github.com/uBlockOrigin/uAssets/issues/6262
+||api.stopad.io/link/*/pixel$image,1p,redirect=1x1.gif
+
+! https://github.com/uBlockOrigin/uAssets/issues/6267
+@@||yimg.com/ss/rapid$script,domain=aol.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/6270
+@@||sibo.nl/catalogus/de/files/html/static/analytics.js$script,1p
+
+! https://github.com/uBlockOrigin/uAssets/issues/6272
+@@||motika.com.mk/wp-content/plugins/ajax-hits-counter/$xhr,1p
+||motika.com.mk/reklam$image
+
+! https://forums.lanik.us/viewtopic.php?p=149677#p149677
+agar.io#@##openfl-content
+agar.io#@##openfl-overlay
+
+! https://www.reddit.com/r/uBlockOrigin/comments/d2b40o/help_why_ublock_breaks_my_website/
+@@||cdn.onesignal.com/sdks/OneSignalSDK.js$script,xhr,domain=elazizi.com
+
+! https://forums.lanik.us/viewtopic.php?p=149687#p149687
+||ampproject.org^*/ww.js$badfilter
+
+! https://github.com/uBlockOrigin/uAssets/issues/6282
+@@||d2wzl9lnvjz3bh.cloudfront.net/frosmo.easy.js$script,domain=tally-weijl.com
+@@||inpref.com/productApi$xhr
+@@||frosmo.com/tally-weijl-product-listing/$xhr,domain=tally-weijl.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/6288
+||clustrmaps.com^$image,redirect=32x32-transparent.png,domain=motls.blogspot.com
+
+! https://www.reddit.com/r/uBlockOrigin/comments/d3mrfr/how_to_unblock_ebay_sponsored_listings/
+ebay.com#@#li.s-item:has(span:has-text(SPONSORED))
+
+! play buttom missing http://hkfree.asianfans .net/watch-online/girlie-days/ep-19-c-sub
+asianfans.net#@##videoAd
+
+! https://forums.lanik.us/viewtopic.php?p=149745#p149745
+@@||full-serie.com^$domain=full-serie.net
+
+! https://github.com/uBlockOrigin/uAssets/issues/6304
+@@||e-dnevnik.skole.hr^$generichide
+
+! https://www.reddit.com/r/uBlockOrigin/comments/cxhr9u/ublock_origin_1220_is_out/f0catse/
+! https://forums.lanik.us/viewtopic.php?p=149797#p149797
+@@||viafoura.*^$script,domain=20minutes.fr
+@@||rcijeux.fr/game/20minutes/$subdocument,domain=20minutes.fr
+
+! https://github.com/NanoMeow/QuickReports/issues/1858
+bing.com#@##b_results > li *:has(span:has-text(Ad))
+bing.com#@#.b_mhdr
+
+! https://github.com/NanoMeow/QuickReports/issues/283
+@@||opgg-static.akamaized.net/*/tracker.js$script,domain=op.gg
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=43515#p149828
+||trustedform.com^$third-party,badfilter
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=43520&p=149857#p149847
+@@||3p.ampproject.net/*/f.js$script,domain=ampproject.net
+
+! https://forums.lanik.us/viewtopic.php?p=149839#p149839
+@@||expert-adwords.com/wp-content/$1p

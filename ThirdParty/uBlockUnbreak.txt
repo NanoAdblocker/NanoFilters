@@ -1884,8 +1884,8 @@ tasteofhome.com#@#.ad-wrapper
 @@||adobedtm.com^*/satellitelib-$script,domain=virginmobile.ca
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=42649
-://ads.$domain=~ads.ac.uk|~ads.adstream.com.ro|~ads.am|~ads.bigbom.com|~ads.brave.com|~ads.buscaempresas.co|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.dollartree.com|~ads.elcarado.com|~ads.google.com|~ads.harvard.edu|~ads.lapalingo.com|~ads.lordlucky.com|~ads.microsoft.com|~ads.mobilebet.com|~ads.msstate.edu|~ads.nc|~ads.nimses.com|~ads.pinterest.com|~ads.quasaraffiliates.com|~ads.red|~ads.route.cc|~ads.safi-gmbh.ch|~ads.sk|~ads.socialtheater.com|~ads.taboola.com|~ads.toplayaffiliates.com|~ads.viksaffiliates.com|~ads.watson.ch|~ads.xtribeapp.com|~ads.yahoosmallbusiness.com|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~seriouswheels.com,badfilter
-://ads.$domain=~ads.ac.uk|~ads.adstream.com.ro|~ads.am|~ads.bigbom.com|~ads.brave.com|~ads.buscaempresas.co|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.dev.int.revelian.com|~ads.dollartree.com|~ads.elcarado.com|~ads.google.com|~ads.harvard.edu|~ads.lapalingo.com|~ads.lordlucky.com|~ads.microsoft.com|~ads.mobilebet.com|~ads.msstate.edu|~ads.nc|~ads.nimses.com|~ads.pinterest.com|~ads.quasaraffiliates.com|~ads.red|~ads.route.cc|~ads.safi-gmbh.ch|~ads.sk|~ads.socialtheater.com|~ads.taboola.com|~ads.toplayaffiliates.com|~ads.viksaffiliates.com|~ads.watson.ch|~ads.xtribeapp.com|~ads.yahoosmallbusiness.com|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~seriouswheels.com
+://ads.$domain=~ads.ac.uk|~ads.adstream.com.ro|~ads.am|~ads.bigbom.com|~ads.brave.com|~ads.buscaempresas.co|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.dollartree.com|~ads.elcarado.com|~ads.google.com|~ads.harvard.edu|~ads.lapalingo.com|~ads.lordlucky.com|~ads.microsoft.com|~ads.mobilebet.com|~ads.msstate.edu|~ads.nc|~ads.nimses.com|~ads.pinterest.com|~ads.quasaraffiliates.com|~ads.red|~ads.route.cc|~ads.safi-gmbh.ch|~ads.sk|~ads.snapchat.com|~ads.socialtheater.com|~ads.taboola.com|~ads.toplayaffiliates.com|~ads.viksaffiliates.com|~ads.watson.ch|~ads.xtribeapp.com|~ads.yahoosmallbusiness.com|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~seriouswheels.com,badfilter
+://ads.$domain=~ads.ac.uk|~ads.adstream.com.ro|~ads.am|~ads.bigbom.com|~ads.brave.com|~ads.buscaempresas.co|~ads.colombiaonline.com|~ads.comeon.com|~ads.cvut.cz|~ads.dev.int.revelian.com|~ads.dollartree.com|~ads.elcarado.com|~ads.google.com|~ads.harvard.edu|~ads.lapalingo.com|~ads.lordlucky.com|~ads.microsoft.com|~ads.mobilebet.com|~ads.msstate.edu|~ads.nc|~ads.nimses.com|~ads.pinterest.com|~ads.quasaraffiliates.com|~ads.red|~ads.route.cc|~ads.safi-gmbh.ch|~ads.sk|~ads.snapchat.com|~ads.socialtheater.com|~ads.taboola.com|~ads.toplayaffiliates.com|~ads.viksaffiliates.com|~ads.watson.ch|~ads.xtribeapp.com|~ads.yahoosmallbusiness.com|~badassembly.com|~caravansforsale.co.uk|~fusac.fr|~memo2.nl|~reempresa.org|~seriouswheels.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/4973
 ||fox5dc.com/html/js/endplay/analytics/ga.js$script,redirect=noopjs,domain=fox5dc.com
@@ -2536,6 +2536,8 @@ bestescapegames.com##.add_divbig
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=43317&p=148934#p148933
 marca.com#@#.content-ad
+! https://github.com/NanoMeow/QuickReports/issues/1922
+@@||api.unidadeditorial.es/sports/v1/events/*$xhr
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=43318&p=148940#p148939
 @@||googleapis.com/xxx-mightyparty.appspot.com/$third-party,xhr,script,frame
@@ -2614,9 +2616,6 @@ msn.com#@#iframe:not([src])
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=43381
 @@||advertisers.adgoal.de^$1p
-
-! https://forums.lanik.us/viewtopic.php?f=64&t=43331#p149005
-||fast.appcues.com^$badfilter
 
 ! https://github.com/NanoMeow/QuickReports/issues/1668
 @@||alicdn.com/*/tracker$script,domain=lazada.com.my
@@ -2720,9 +2719,6 @@ agar.io#@##openfl-overlay
 ! https://www.reddit.com/r/uBlockOrigin/comments/d2b40o/help_why_ublock_breaks_my_website/
 @@||cdn.onesignal.com/sdks/OneSignalSDK.js$script,xhr,domain=elazizi.com
 
-! https://forums.lanik.us/viewtopic.php?p=149687#p149687
-||ampproject.org^*/ww.js$badfilter
-
 ! https://github.com/uBlockOrigin/uAssets/issues/6282
 @@||d2wzl9lnvjz3bh.cloudfront.net/frosmo.easy.js$script,domain=tally-weijl.com
 @@||inpref.com/productApi$xhr
@@ -2758,8 +2754,33 @@ bing.com#@#.b_mhdr
 ! https://forums.lanik.us/viewtopic.php?f=64&t=43515#p149828
 ||trustedform.com^$third-party,badfilter
 
-! https://forums.lanik.us/viewtopic.php?f=64&t=43520&p=149857#p149847
-@@||3p.ampproject.net/*/f.js$script,domain=ampproject.net
+! https://github.com/uBlockOrigin/uAssets/commit/69bced5eba64f7960acaa5fa85df06958fb64a93#commitcomment-35179436
+twitter.com#@#article[role="article"]:has-text(Promoted)
 
-! https://forums.lanik.us/viewtopic.php?p=149839#p149839
-@@||expert-adwords.com/wp-content/$1p
+! https://github.com/uBlockOrigin/uAssets/issues/6331
+@@||ekstat.com/js/ek$script,domain=eksisozluk.com
+
+! To counter the adswizz filter in Peter Lowe's list
+||adswizz.com^$badfilter
+||adswizz.com^$3p
+
+! https://www.reddit.com/r/uBlockOrigin/comments/d6zbqv/login_popup_for_disqus_being_blocked/
+@@||disqus.com/next/login/$popup
+
+! whitelisting recaptcha .net
+@@||recaptcha.net/recaptcha/
+
+! https://github.com/NanoMeow/QuickReports/issues/1893
+*$third-party,script,domain=sankakucomplex.com,badfilter
+
+! https://github.com/uBlockOrigin/uAssets/issues/6334
+||rtl.de/pf/resources/js/videotracking.min.js$script,redirect=noopjs,first-party
+
+! https://github.com/uBlockOrigin/uAssets/issues/6338
+@@||gstatic.com/*/adwords/partnerspublic/partners_public_*/partners/main.dart.js$script
+
+! https://www.reddit.com/r/uBlockOrigin/comments/d8uc9z/remove_peter_lowes_list_from_company_ublock/f1ed6id/
+@@||en25.com^$image,domain=eloquaeditors.com
+
+! https://forums.lanik.us/viewtopic.php?f=64&t=42619&p=150005#p145636
+@@||c.paypal.com/da/r/fb.js$script

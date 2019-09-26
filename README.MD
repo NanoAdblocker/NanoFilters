@@ -7,7 +7,7 @@ expected with uBlock Origin out of the box. See
 [Filter Syntax Differences](https://github.com/NanoAdblocker/NanoDoc/blob/master/en/FilterSyntax.MD)
 for more details.
 
-Third party filters were cached on 2019-09-21. Cache will be updated on every
+Third party filters were cached on 2019-09-26. Cache will be updated on every
 release of Nano Adblocker.
 
 Third party filters may have their own licenses, view filter headers for more

@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: tyJ/PcISiArnLpJvXs0vpA
-! Version: 201909262100
+! Checksum: EUJjSdLdXbiAg6wXUxScCA
+! Version: 201910112200
 ! Title: Adblock Warning Removal List
-! Last modified: 26 Sep 2019 21:00 UTC
+! Last modified: 11 Oct 2019 22:00 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 !
@@ -158,6 +158,7 @@ _adblock_killer.
 @@||manga-news.com/js/advert.js$script
 @@||numerama.com/ads.js
 @@||pagerank.fr/js*/advert.js?$script
+@@||ams.cdn.arkadiumhosted.com/assets/arena-4/arena/heap/advertisements.js$script,domain=jeux.lemonde.fr
 @@||penducado.com/styles/ads.css
 @@||presse-algerie.net/js/ads.js$script
 @@||primfx.com/js/ads.js|$script,~third-party
@@ -256,6 +257,7 @@ _adblock_killer.
 ##.js-checkad-warning
 ##.kill-adblock-container
 ##.noadblock
+##.remove-adblock-msg
 ##.svg-adblock-full
 ##.svg-adblock-full--box
 ##.test-adblock-overlay
@@ -389,7 +391,8 @@ mel.fm##.b-ad-space__placeholder
 ixbt.com##.b-blockadblock
 d3.ru##.b-promo__placeholder
 cs-amba.ru##.banka
-it-actual.ru##.blok > div[class^="bl-"]
+medical-club.net##.blocker-notice,.blocker-overlay
+it-actual.ru##.blokn
 electric-house.ru##.blok_forum > div[style]
 audio-hi-fi.ru,electro-sila.ru##.blok_new > div[style]
 rutor1.ru##.box_in > .text > p > font
@@ -428,6 +431,7 @@ fanfics.me##.red.nodata
 101.ru##.showMessageAdBlock
 playunturned.ru##.side_left > center
 playunturned.ru##.side_right > center
+qaru.site##.similar.a[style]
 l-a-w.ru,mhelp.kz##.swal2-container
 objavlenija.respublika.cz##.sweet-alert,.sweet-overlay
 kinoafisha.ua##.turn-off-add-block-text
@@ -477,7 +481,7 @@ dugtor.ru##body > noindex
 www.qrz.ru#?#div[class]:-abp-has(> .inner > a[href="/help/adblock/"])
 blackdesert-info.ru##div[class][style*="z-index"][style*="999999;"][style*="background"][style*="rgb"]
 megogo.net,megogo.ru##div[class^="adBlockBanner"]
-kinopad.net,playtor.tv##div[class^="adblock-warning"]
+freerutor.com,imgrutor.com,playtor.tv##div[class^="adblock-warning"]
 game2day.ru##div[class^="adblock_"]
 lostfilm.tv##div[class^="alarm"]
 gismeteo.by,gismeteo.ru##div[class^="stopblock"]
@@ -511,7 +515,7 @@ bigpuzzle.ru##td[valign="top"][width="200px"][height="600"] > div[style]
 ||nnm-club.ws/forum/docs/requests.js
 ||olegon.ru/jscookie.js
 ||pwnews.net/des/antiblock.js$script
-||rockstargame.su/adb_script
+||rockstargame.su/adb_script$script
 ||rusnext.ru/advar.js$script
 ||sdamgia.ru/img/blockadblock_
 ||sea-man.org/adb_script/

@@ -693,6 +693,10 @@ pureinfotech.com##+js(aopw, ai_adb_overlay)
 # https://github.com/NanoMeow/QuickReports/issues/2154
 nakedcapitalism.com##+js(aopw, ABD)
 
+# https://github.com/NanoMeow/QuickReports/issues/2240
+foxnews.com##:xpath(//*[contains(text(),"blocking software")]/../../..)
+/google-funding-choices.js$script,domain=foxnews.com,important
+
 # ------------------------------------------------------------------------------------------------------------------- #
 
 # Ads

@@ -379,5 +379,10 @@ gamemod.pro,taigameandroid.asia##[href*="//appandroider.com"]
 ||tomorrowwillbehotmaybe.com^
 ||wiilberedmodels.com^
 
-! https://www.reddit.com/r/uBlockOrigin/comments/dgbhxe/how_block_httpwwwapplecomoptimizemaclive_on_mac/
-||apple.com-optimize-mac.live^$all
+! https://github.com/uBlockOrigin/uAssets/issues/6452
+||apple.com-*.live^
+
+! some badware testing around
+||aprileclean.com^$all
+||pc-scan.website^$all
+||cobalten.com^$all

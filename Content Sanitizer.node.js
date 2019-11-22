@@ -40,8 +40,8 @@ const sanitizeOne = (input) => {
                 for (let i = 0; i < lines.length; i++) {
                     const line = lines[i];
                     if (reSanitizer.test(line)) {
-                        console.log("Content Sanitizer: Removed line '" + line + "'");
-                        lines[i] = "# Line removed by content sanitizer";
+                        lines[i] = "# Line Removed by Content Sanitizer";
+                        console.log("Content Sanitizer: Removed Line '" + line + "'");
                     } else {
                         lines[i] = line.trim();
                     }

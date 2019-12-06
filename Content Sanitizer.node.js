@@ -28,7 +28,7 @@ const fs = require("fs");
 
 // ----------------------------------------------------------------------------------------------------------------- //
 
-const reSanitizer = /\b\x6C\x61\x74\x61\x6D\b/i;
+const reSanitizer = /\x6C\x61\x74\x61\x6D\b/i;
 
 const sanitizeOne = (input) => {
     return new Promise((resolve, reject) => {

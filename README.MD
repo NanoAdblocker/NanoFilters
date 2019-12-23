@@ -26,7 +26,7 @@ Ads and ads timer will be removed unless:
 - It only promote first party products (for example, the Android app for your
   website)
 
-Any form of anti-adblock (friendly or hostile logic that detects the presense
+Any form of anti-adblock (hostile or friendly logic that detects the presense
 of adblockers) will be removed unless:
 - It is non-intrusive, and
 - It is for an automatic mining wall, an ads reward system (the user gets

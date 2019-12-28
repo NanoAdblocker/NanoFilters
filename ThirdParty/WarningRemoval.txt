@@ -1,10 +1,11 @@
 [Adblock Plus 2.0]
-! Checksum: 7znhEZtJuQauKQB4oXGhkg
-! Version: 201911090430
+! Checksum: lxlhVEFU6by1wXzO1glMmQ
+! Version: 201912281930
 ! Title: Adblock Warning Removal List
-! Last modified: 09 Nov 2019 04:30 UTC
+! Last modified: 28 Dec 2019 19:30 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
+! Licence: https://easylist.to/pages/licence.html
 !
 ! Please report any unblocked obtrusive anti adblock messages or problems
 ! in the forums (https://forums.lanik.us/) or via e-mail (easylist.subscription+anti@gmail.com).
@@ -108,6 +109,7 @@ shadbase.com##img[alt="adblock"]
 /adblock_alerter/*
 /adblock_gate/images/animated.gif?
 /adblock_notify.js
+/adblocker/modal.
 /adblocker_message_
 /AdblockMessage.
 /antiadblockmsg.
@@ -115,6 +117,7 @@ shadbase.com##img[alt="adblock"]
 /blockadblock.$script
 /disable-adblock.
 /inc/antiblock.
+/nonAdBlock/*
 /testAB.bundle.
 /wp-content/plugins/ad-block-defender/*
 /wp-content/plugins/deadblocker/*
@@ -135,7 +138,7 @@ _adblock_killer.
 ||skyrock.net/img/*/adblock/
 !
 @@/ads.js$script,~third-party,domain=abcbourse.com|action-sociale.org|anime-vf.fr|impactmangas.fr|presse-algerie.net|primfx.com|undernews.fr
-@@/advertisement.js$script,~third-party,domain=fun-animes.fr|macupload.net|upload.ac
+@@/advertisement.js$script,~third-party,domain=fun-animes.fr|macupload.net|majorgeeks.com|upload.ac
 @@/noadblock-nice-message/assets/js/ads.js?$script,~third-party
 !
 @@||animedigitalnetwork.fr/templates/*/js/advertising.min.js?$script,~third-party
@@ -144,7 +147,6 @@ _adblock_killer.
 @@||cyberdean.fr/js/advertisement.js
 @@||dbz-fantasy.com/ads.css
 @@||forums.macg.co/js/audentio/funbox/advertisement.js
-@@||france.carbu.com/templates/media/js/ads.js$script
 @@||frandroid.com/ads.js
 @@||free-reseau.fr/css/publicite.css|$stylesheet
 @@||fusacq.com/javascript/advertising.js|$script
@@ -155,7 +157,6 @@ _adblock_killer.
 @@||jeuxvideo-live.com/js/ads.js
 @@||ktu.sv2.biz/sv3/advertisement.js
 @@||larvf.com/js/ads.js
-@@||macg.co/js/audentio/funbox/advertisement.js
 @@||manga-news.com/js/advert.js$script
 @@||numerama.com/ads.js
 @@||pagerank.fr/js*/advert.js?$script
@@ -167,7 +168,6 @@ _adblock_killer.
 @@||static.koreus.com/js/advert.js
 @@||cdn4.tennistemple.com/js/advert.js|$script,~third-party
 @@||universfreebox.com/js/advertisement.js
-@@||uplea.com/js/advertisement.js
 @@||peimg.fr/js/ads.js$script,domain=pubeco.fr
 @@||v.fwmrm.net/ad/g/1?$xmlhttprequest,domain=www.mycanal.fr
 @@||wamiz.com/css/ads.css
@@ -194,6 +194,7 @@ _adblock_killer.
 ###adblock-overlay
 ###adblock-warning
 ###adblockDetect
+###adblockWrap
 ###adblock_detected
 ###adblocker_announce
 ###adblocker_message
@@ -211,9 +212,12 @@ _adblock_killer.
 ###fondAdblock
 ###js-popup-blocker
 ###message_adblock
+###modal-adblocker
 ###notify-adblock
+##.AdblockBanner
 ##.AdblockMessage
 ##.AdblockMessage_msg
+##.BrokenAd
 ##.ad-alert-message-text
 ##.ad-alert-wrapper
 ##.ad-block-detected
@@ -222,7 +226,10 @@ _adblock_killer.
 ##.ad-blocked
 ##.ad-blocker-warning
 ##.ad-blocking-advisor-wrapper
+##.ad_block_detected
 ##.ad_blocker
+##.adBlock-banner
+##.adBlockDetectModal
 ##.adBlockDetectedSign
 ##.adBlockNotification
 ##.adBlockNotificationOverlay
@@ -283,10 +290,8 @@ pausecafein.fr###adb-pop
 !
 #@##adblocktest
 !
-tf1.fr#@#.ad-placement
 dbz-fantasy.com#@##adTeaser
 fstore.biz#@##adblockinfo
-tf1.fr#@#.adsbox
 dz-android.com,freeiphone.fr,hommedumatch.fr,jetetroll.com,testious.com#@##adsense
 debrideurstream.fr#@##pubdirecte
 ot-boutique.fr#@##publicite
@@ -306,6 +311,7 @@ usgang.ch###rectangle-wrapper
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_latvian.txt ***
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_romanian.txt ***
 ! *** antiadblockfilters:antiadblockfilters/antiadblock_russian.txt ***
+##.adblock-stop
 delfi.ee###ab--notification-ribbon
 minimultik.ru###abDetected
 patrioty.org.ua###ad_pu_modal
@@ -328,6 +334,7 @@ rusnext.ru###detectAdblock
 sd-company.su###dom_adblock
 myshared.ru###download_form > .uk-margin-top[style]
 forum.bestflowers.ru###exposeMask
+internet-law.ru###fab-enabled
 gk-stalker.xyz###gkadblock
 pastenow.ru###google-block
 gamesubject.com###headb
@@ -345,7 +352,7 @@ rbkgames.com###norris-detector
 all-episodes.net###odin
 mover.uz###oframeplayer > [class][style^="display: block"]
 filmix.cc,filmix.co,filmix.ink,filmix.site,filmix.today###oframeplayer > pjsdiv[style^="position: absolute; left:"][style*="display: block; visibility: visible;"] ~ pjsdiv[style^="position: absolute; left:"][style*="pointer-events: none; display: block; visibility:"]
-center-yf.ru,lektsii.org,studopedia.com.ua,studopedia.org,studopedia.ru,studopedia.su###opaco,#popup
+filmix.cc,filmix.co,filmix.ink,filmix.site,filmix.today#?##oframeplayer > pjsdiv[style^="position: absolute; left:"][style*="display: block; visibility: visible;"]:-abp-contains(/adblock/i)
 md4u.ru###pagecontent > div[style*="background-color"]
 alensat.org,forummikrotik.ru###phpbb-ads-ab
 kompravda.eu,kp.ru###popapIsBlockedAd
@@ -394,7 +401,7 @@ cs-amba.ru##.banka
 medical-club.net##.blocker-notice,.blocker-overlay
 electric-house.ru##.blok_forum > div[style]
 audio-hi-fi.ru,electro-sila.ru##.blok_new > div[style]
-it-actual.ru##.blokn
+it-actual.ru##.blznok
 rutor1.ru##.box_in > .text > p > font
 tsn.ua##.c-aside-embed
 kanobu.ru##.c-moneyPlace_empty
@@ -404,6 +411,7 @@ ppc.world##.detected-block-modal
 smotrisport.online,smotrisport.tv##.dont-add-our-site-pls
 goha.ru#@#.goha_ads
 goha.ru#@#.goha_ads_acceptable
+dropmefiles.com.ua##.intro
 themoviebay.ru##.is-danger.notification
 ivi.ru##.ivi-footer ~ div[class] > style + div[class]
 doctorrouter.ru##.jgcabd-container
@@ -421,6 +429,7 @@ music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##.page-root > .n
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua##.page-root > .notify *
 alexfilm.cc##.panel-primary
 darkteam.net##.pls_rmv
+izmailov.tv##.popupBlock
 newnavitel.blogspot.com##.post-body > div[dir] > div[dir] > h1#result
 animedub.ru##.poverh
 015.by,023.by,0312.ua,032.ua,0332.ua,0342.ua,0352.ua,0362.ua,0372.ua,0382.ua,0412.ua,04141.com.ua,0432.ua,04563.com.ua,04596.com.ua,04597.com.ua,04598.com.ua,0462.ua,0472.ua,048.ua,04868.com.ua,0512.com.ua,05136.com.ua,05161.com.ua,0522.ua,0532.ua,05366.com.ua,0542.ua,05447.com.ua,0552.ua,056.ua,0564.ua,0566.com.ua,0569.com.ua,057.ua,061.ua,06153.com.ua,0619.com.ua,0623.com.ua,06236.com.ua,06237.com.ua,06239.com.ua,06242.ua,06252.com.ua,06267.com.ua,06272.com.ua,06274.com.ua,06277.com.ua,0629.com.ua,0642.ua,06452.com.ua,0652.ua,0692.ua,1rnd.ru,3652.ru,3654.ru,3849.com.ua,44.ua,4594.com.ua,5692.com.ua,62.ua,6262.com.ua,6264.com.ua,65.media,7232.kz,8422city.ru,anapa.life,angarsk38.ru,bazhopol.ru,city01.am,city41.ru,comores24.com,go01.ru,go11.kz,go212.by,go216.by,go26.ru,go31.ru,go61.ru,godublin.info,golondon.info,goriga.info,gorod3466.ru,gorodarmavir.ru,goroddomodedovo.ru,gorodpushkin.ru,goshymkent.kz,inaktau.kz,inalmaty.kz,inastana.kz,inatyrau.kz,infolyubertsy.ru,inform69.ru,mega.dp.ua,vilniuje.info,yocity12.ru##.pray-container
@@ -444,7 +453,6 @@ forum.bestflowers.ru##.xenOverlay
 @@||an.yandex.ru/jstracer?aab_detect=$xmlhttprequest,domain=yandex.by|yandex.kz|yandex.ru|yandex.ua
 @@||anidub.com/ads.js|$script,domain=anidub.com
 @@||goha.ru/app/video/adblock.teaser.js|$script,domain=goha.ru
-@@||googleads.g.doubleclick.net/pagead/$xmlhttprequest,domain=filmix.cc|filmix.co|filmix.ink|filmix.site|filmix.today
 @@||sports.ru^*/adfox.$xmlhttprequest
 i.factor.ua##[data-place-block]
 auto62rus.ru,eset-key.ru,mycrib.ru,piggy-bank.online,politonline.ru,showmehow.ru##[data-type="anti-abp"]
@@ -469,7 +477,7 @@ katalog-aktsii.ru,rp5.by,rp5.kz,rp5.ru,rp5.ua,vikings-warofclans.ru##body > div:
 factorio.su##body > div[class][style*="background"][style*="display: block"]
 gdekluet.ru##body > div[class^="stop-block"]
 glav.su##body > div[id]:not([class])[style*="background"][style*="display: block"]
-logist.uxxo.ru,maxpark.com,meteoservice.ru,newdeaf-online.net,newsland.com,pawno-info.ru,scrin.org,smolensk-auto.ru##body > div[id]:not([class])[style="display: block;"]
+fastpic.ru,logist.uxxo.ru,maxpark.com,meteoservice.ru,newdeaf-online.net,newsland.com,pawno-info.ru,scrin.org,smolensk-auto.ru##body > div[id]:not([class])[style="display: block;"]
 factorio.su##body > div[id][class][style*="background"][style*="visible"]
 gaming.co.ua##body > div[id][class][style*="z-index"][style*="9999"],body > div[id][class][style*="z-index"][style*="9999"] + div[class][style*="z-index"][style*="9999"]
 gisher.news##body > div[id][class][style^="display"][style*="position"][style*="z-index"]
@@ -492,6 +500,7 @@ savevideo.me##div[id^="ads_notice_"]
 forvk.space##div[id^="block"][style*="display: block;"]
 acomics.ru##div[style*="/design/common/pic/please"]
 abc-people.com##div[style*="background-color"][style*="position"][style*="z-index"]
+online.anidub.com#?#div[style^="position: fixed;"]:-abp-has(> h3:-abp-contains(Обнаружена блокировка рекламы))
 pvcalc.ru##div[style^="position:fixed; top:0px; left:0px; opacity: 0.9;"]
 ph4.ru##div[style^="width: 728px; height: 90px;"]
 bdmbase.ru##html > .q1

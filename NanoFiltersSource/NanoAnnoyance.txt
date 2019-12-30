@@ -58,6 +58,13 @@ bizjournals.com##+js(set-constant.js, __page__.isPremium, false)
 
 # ------------------------------------------------------------------------------------------------------------------- #
 
+# Hostile anti-copy, anti-select, anti-right-click, anti-hotkey, and anti-blur
+
+# https://github.com/NanoMeow/QuickReports/issues/2596
+kawanfilm21.online##+js(nano-assign-variable-onready, document.onselectstart, null)
+
+# ------------------------------------------------------------------------------------------------------------------- #
+
 # Other rules
 
 # https://github.com/NanoMeow/QuickReports/issues/852
@@ -69,13 +76,6 @@ live.com,microsoft.com,office.com,windows.com,xbox.com###epb
 # The donation message is getting excessive
 # Test: https://en.wikipedia.org/wiki/%22Hello,_World!%22_program
 wikipedia.org##+js(abort-on-property-write.js, frb)
-
-# ------------------------------------------------------------------------------------------------------------------- #
-
-# Anti-select, anti-right-click, anti-hotkey
-
-# https://github.com/NanoMeow/QuickReports/issues/2596
-kawanfilm21.online##+js(nano-assign-variable-onready, document.onselectstart, null)
 
 # ------------------------------------------------------------------------------------------------------------------- #
 

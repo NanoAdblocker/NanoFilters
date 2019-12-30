@@ -38,6 +38,7 @@ removed:
 - Hostile anti-copy
 - Hostile anti-select
 - Hostile anti-right-click
+- Hostile anti-hotkey
 - Hostile anti-blur (switching to another tab or window)
 - Forced like (social locker)
 - Intrusive donation message

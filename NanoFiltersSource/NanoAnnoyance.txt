@@ -72,6 +72,13 @@ wikipedia.org##+js(abort-on-property-write.js, frb)
 
 # ------------------------------------------------------------------------------------------------------------------- #
 
+# Anti-select, anti-right-click, anti-hotkey
+
+# https://github.com/NanoMeow/QuickReports/issues/2596
+kawanfilm21.online##+js(nano-assign-variable-onready, document.onselectstart, null)
+
+# ------------------------------------------------------------------------------------------------------------------- #
+
 # Synchronizing to upstream
 
 # https://github.com/NanoAdblocker/NanoDefender/issues/12

@@ -821,20 +821,6 @@ bitblokes.de##a[href^="https://go.nordvpn.net/aff_c?"]
 
 # ------------------------------------------------------------------------------------------------------------------- #
 
-# Specific for Edge browser
-
-!#if env_edge
-
-# https://github.com/uBlockOrigin/uAssets/issues/2213
-# https://github.com/NanoAdblocker/NanoFilters/issues/68
-businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
-businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)
-businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
-
-!#endif
-
-# ------------------------------------------------------------------------------------------------------------------- #
-
 # Beta testing
 
 # https://github.com/NanoAdblocker/NanoFilters/issues/97
@@ -849,5 +835,7 @@ hulu.com##.ad-choices
 # ------------------------------------------------------------------------------------------------------------------- #
 
 # Synchronizing to upstream
+
+# Nothing for now...
 
 # ------------------------------------------------------------------------------------------------------------------- #

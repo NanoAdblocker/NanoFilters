@@ -314,11 +314,6 @@ bitblokes.de###ga_sub_single_wrap
 bitblokes.de###sidebar-ads-single
 bitblokes.de###adscale_down
 bitblokes.de##a[href^="https://go.nordvpn.net/aff_c?"]
-!#if env_edge
-businessinsider.com##+js(set-constant.js, _PIANO.setAdblockerCookie, noopFunc)
-businessinsider.com##+js(set-constant.js, setAdblockerCookie, noopFunc)
-businessinsider.com##+js(nanop-easy-set-cookie.js, __adblocker=false)
-!#endif
 @@||hulu.com^$generichide
 hulu.com###banner-ad-container
 hulu.com##.ad-choices

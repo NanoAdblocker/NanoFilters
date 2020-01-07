@@ -119,7 +119,6 @@ beinsports.com,dumpert.nl,haberturk.com##+js(abort-current-inline-script.js, Uin
 mizonatv.com##.aviso-publicidad-sup
 solarmovie.fun##.hhotnews:has-text(AdBlocker)
 outlook.live.com##a[href="https://windows.microsoft.com/outlook/ad-free-outlook"]:nth-ancestor(4)
-libgen.io##+js(setTimeout-defuser.js, (), 500)
 @@||html-online.com^$generichide
 raiplay.it##.tagManagerError
 sportsnet.ca##+js(abort-on-property-read.js, uxGuid)
@@ -296,6 +295,7 @@ forum.nlmod.net##+js(acis, document.createElement, adblock)
 insidermonkey.com##+js(aopr, ABD)
 venea.net##+js(aeld, , ads)
 thumpertalk.com##+js(cookie-remover, tt4_detectadblock_time)
+libgen.*##+js(nostif, appendMessage)
 altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 ||mail-ads.google.com^
 bing.com##+js(nano-remove-elements-onready, #b_results > .b_ad)

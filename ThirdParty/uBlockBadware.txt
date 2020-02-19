@@ -23,12 +23,8 @@
 ! 2012-02-17: http://neosting.net/logiciels/01net-et-softonic-ajoutent-aussi-un-installeur-publicitaire.html
 ||01net.com/telecharger/$document
 
-! https://github.com/uBlockOrigin/uAssets/issues/42
-! 2015-05-04: http://www.randombrick.de/downloads-von-chip-de-ueber-den-chip-installer-vermeiden/
-! 2015-04-??: http://anleitung.trojaner-board.de/chip-installer
 ! https://github.com/uBlockOrigin/uAssets/issues/6587
-chip.de##[href^="javascript:"]
-chip.de##.download_button:has-text(Kostenlos)
+||chip.de/n_downloader/*$document
 
 ! 2015-03-11: http://blog.emsisoft.com/2015/03/11/mind-the-pup-top-download-portals-to-avoid/
 ! 2015-01-21: http://www.howtogeek.com/207692/yes-every-freeware-download-site-is-serving-crapware-heres-the-proof/
@@ -81,9 +77,6 @@ chip.de##.download_button:has-text(Kostenlos)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/1943
 ||securetoolext.com^$document
-
-! https://github.com/NanoAdblocker/NanoFilters/issues/99
-upload.ac##+js(remove-attr.js, checked, #chkIsAdd)
 
 ! https://github.com/HandyUserscripts/AntiAdware/issues/52
 upload4earn.org##+js(remove-attr.js, checked)
@@ -262,13 +255,16 @@ majorgeeks.com##b:has(a[target^="reimage"])
 2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##.nfc-bottom-right:has-text(Reimage)
 2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##a:has-text(Reimage)
 2-spyware.com,novirus.uk,faravirus.ro,uirusu.jp,virusi.hr,wubingdu.cn,avirus.hu,ioys.gr,odstranitvirus.cz,tanpavirus.web.id,utanvirus.se,virukset.fi,losvirus.es,virusler.info.tr,semvirus.pt,lesvirus.fr,senzavirus.it,dieviren.de,viruset.no,usunwirusa.pl,zondervirus.nl,bedynet.ru,virusai.lt,virusi.bg,viirused.ee,udenvirus.dk##.quick-download-button-text
+! https://windowsloop.com/network-adapters-shortcut/
+windowsloop.com##.wl-prakatana
+||reimageplus.com^$doc
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5187
 ||check-prizes-now2.life^$document
 
 ! Lapsed domains that once hosted adblock lists, several of whom are now used for bad purposes
 ! https://github.com/uBlockOrigin/uAssets/issues/5307
-||adblock.gjtech.net^$document
+||gjtech.net^$document
 ||spam404bl.com^$document
 ||securemecca.com^$document
 ||hufilter.hu^$document
@@ -447,4 +443,27 @@ howtoremove.guide###gray_de
 ||browser-update.*.top^
 
 ! https://github.com/uBlockOrigin/uAssets/pull/6757
-||katie.tncrun.net^$all
+||tncrun.net^$all
+
+! https://github.com/NanoMeow/QuickReports/issues/2772
+||d3125zvx5yi5sj.cloudfront.net^$all
+
+! https://github.com/NanoMeow/QuickReports/issues/2813
+||mp3hub.com^$document
+
+! thepiratebay3 .com bad
+thepiratebay3.com^$all
+
+! https://github.com/uBlockOrigin/uAssets/issues/6906
+##[href^="http://www.FriendlyDuck.com/"]
+
+! sportspf.com => badware
+||gadgetexclusivegifts.xyz^$all
+
+! hentaimx => badware
+||hentaimx.com^$all
+
+! https://github.com/uBlockOrigin/uAssets/issues/6544#issuecomment-586763083
+||procdnvids.net^
+||prostream.to^
+||storageplay.net^

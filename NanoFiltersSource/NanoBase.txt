@@ -30,6 +30,8 @@ captchme.com##script:inject(set-constant.js, CaptchmeState.adb, undefined)
 # https://github.com/NanoMeow/QuickReports/issues/3112
 canyoublockit.com##section:has-text(Advertisement)
 
+# End Anti-adblock demos
+
 # ------------------------------------------------------------------------------------------------------------------- #
 
 # Generic anti-adblock
@@ -130,6 +132,8 @@ canyoublockit.com##section:has-text(Advertisement)
 ||unbecominghall.com^$important
 ||unequalbrake.com^$important
 
+# End generic anti-adblock
+
 # ------------------------------------------------------------------------------------------------------------------- #
 
 # Hard anti-adblock
@@ -154,6 +158,8 @@ mobilinks.info##ins.adsbygoogle
 mobilinks.info##+js(nano-setInterval-booster.js)
 mobilinks.info###custom_html-2:has-text(ADs)
 mobilinks.info##div > span:has-text(AdBlock)
+
+# End hard anti-adblock
 
 # ------------------------------------------------------------------------------------------------------------------- #
 
@@ -308,9 +314,12 @@ solarmovie.fun##.hhotnews:has-text(AdBlocker)
 mdlinx.com##+js(nostif, show)
 mdlinx.com##.dfp-ad-outer
 
+# End soft anti-adblock
+
 # ------------------------------------------------------------------------------------------------------------------- #
 
 # Soft anti-adblock that are also included in uBlock annoyance filter
+#
 # License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 
 # https://github.com/uBlockOrigin/uAssets/issues/3948
@@ -793,6 +802,8 @@ queer.pl##.box-adv
 # https://github.com/NanoMeow/QuickReports/issues/3176
 radarbox24.com##+js(nostif, ads)
 
+# End soft anti-adblock that are also included in uBlock annoyance filter
+
 # ------------------------------------------------------------------------------------------------------------------- #
 
 # Ads
@@ -806,14 +817,19 @@ altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 # https://github.com/NanoAdblocker/NanoFilters/issues/439
 bing.com##+js(nano-remove-elements-onready, #b_results > .b_ad)
 
+# End ads
+
 # ------------------------------------------------------------------------------------------------------------------- #
 
 # Ads that are also included in uBlock annoyance filter
+#
 # License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
 
 # https://github.com/NanoMeow/QuickReports/issues/1396
 @@||wired.com^$generichide
 wired.com##.ad
+
+# End ads that are also included in uBlock annoyance filter
 
 # ------------------------------------------------------------------------------------------------------------------- #
 
@@ -823,6 +839,8 @@ wired.com##.ad
 @@||rapidvideo.com/js/jquery.min.js$script,1p
 # Fallback rule in case they start putting mining code into jQuery files
 # ||rapidvideo.com^$csp=child-src 'none';frame-src *;worker-src 'none';
+
+# End unbreak
 
 # ------------------------------------------------------------------------------------------------------------------- #
 
@@ -837,6 +855,8 @@ porndig.com#@#.noadblock
 # https://github.com/MajkiIT/polish-ads-filter/issues/13683
 @@||onnetwork.tv/adblock_notify.js$script
 
+# End unbreak for Adblock Warning Removal List
+
 # ------------------------------------------------------------------------------------------------------------------- #
 
 # Unbreak for Chromium built-in adblocker
@@ -844,6 +864,8 @@ porndig.com#@#.noadblock
 # https://github.com/NanoMeow/QuickReports/issues/2149
 teknosafe.kertashitam.com###blockblockA
 teknosafe.kertashitam.com###blockblockB:style(visibility: visible !important; display: block !important;)
+
+# End unbreak for Chromium built-in adblocker
 
 # ------------------------------------------------------------------------------------------------------------------- #
 
@@ -866,6 +888,8 @@ bitblokes.de###sidebar-ads-single
 bitblokes.de###adscale_down
 bitblokes.de##a[href^="https://go.nordvpn.net/aff_c?"]
 
+# End rules that should be included in EasyList or regional filters
+
 # ------------------------------------------------------------------------------------------------------------------- #
 
 # Beta testing
@@ -879,10 +903,14 @@ hulu.com##.ad-choices
 ||ads-v-darwin.hulustream.com/published/*.mp4$media,redirect=noopmp4-1s,domain=hulu.com
 ||akamaihd.net/prerolls$media,redirect=noopmp4-1s,domain=hulu.com
 
+# End beta testing
+
 # ------------------------------------------------------------------------------------------------------------------- #
 
 # Synchronizing to upstream
 
 # Nothing for now...
+
+# End synchronizing to upstream
 
 # ------------------------------------------------------------------------------------------------------------------- #

@@ -7,7 +7,7 @@
 
 # ------------------------------------------------------------------------------------------------------------------- #
 
-# Specific for Edge browser
+# Specific for legacy Edge browser
 
 !#if env_edge
 
@@ -17,11 +17,15 @@
 
 !#endif
 
+# End specific for legacy Edge browser
+
 # ------------------------------------------------------------------------------------------------------------------- #
 
 # Beta testing
 
 # https://github.com/NanoAdblocker/NanoFilters/issues/97
 @@||moatads.com/*/moatwrapper.js$script,domain=hulu.com
+
+# End beta testing
 
 # ------------------------------------------------------------------------------------------------------------------- #

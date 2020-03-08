@@ -26,6 +26,8 @@ Ads and ads timer will be removed unless:
 - It only promote first party products (for example, the Android app for your
   website)
 
+Forced notifications will be removed if possible.
+
 Any form of anti-adblock (hostile or friendly logic that detects the presense
 of adblockers) will be removed unless:
 - It is non-intrusive, and

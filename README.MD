@@ -72,8 +72,8 @@ below.
 
 ### Caches and Archives
 
-Issues related to ads, ads timers, anti-adblock, and annoyance will not be
-fixed if they only affect archived contents.
+Issues related to ads, ads timers, forced notifications, anti-adblock, and
+annoyance will not be fixed if they only affect archived contents.
 
 ```
 web.archive.org
@@ -82,8 +82,8 @@ webcache.googleusercontent.com
 
 ### User Generated Draft Web Pages
 
-Issues related to ads, ads timers, anti-adblock, and annoyance will not be
-fixed if they only affect user generated contents.
+Issues related to ads, ads timers, forced notifications, anti-adblock, and
+annoyance will not be fixed if they only affect user generated contents.
 
 ```
 codepen.io

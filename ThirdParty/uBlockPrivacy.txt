@@ -172,9 +172,6 @@ old.reddit.com##+js(remove-attr.js, data-outbound-url)
 ! https://github.com/uBlockOrigin/uAssets/pull/5997
 ||docs.google.com/*/logImpressions?$xhr,redirect=nooptext,domain=docs.google.com
 
-! https://github.com/uBlockOrigin/uAssets/issues/5795#issuecomment-500244236
-||browser-update.org^$3p
-
 ! https://github.com/uBlockOrigin/uAssets/issues/6538
 liberation.fr,officedepot.fr,oui.sncf##+js(acis, document.createElement, '.js')
 sfr.fr##+js(aopr, _oEa)
@@ -183,3 +180,10 @@ sfr.fr##+js(aopr, _oEa)
 brillen.de##+js(acis, document.createElement, 'script')
 ||marketing.net.*^$1p
 ||sw88.espn.com^
+
+! thesaurus.com / dictionary.com Adblock detection
+dictionary.com,thesaurus.com##+js(aopr, adDetection)
+
+! https://usefathom.com/
+||usefathom.com^$3p
+||usesfathom.com^$3p

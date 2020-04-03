@@ -187,3 +187,20 @@ dictionary.com,thesaurus.com##+js(aopr, adDetection)
 ! https://usefathom.com/
 ||usefathom.com^$3p
 ||usesfathom.com^$3p
+
+! https://github.com/uBlockOrigin/uAssets/issues/7118
+||vidtech.cbsinteractive.com^*/tracking/$script,redirect=noop.js,important
+
+! https://www.reddit.com/r/uBlockOrigin/comments/fqjltj/podcast_advert/
+||telemetry.art19.com^
+
+! https://github.com/uBlockOrigin/uAssets/issues/7178
+!#if env_chromium
+||carsensor.net/usedcar/modules/clicklog_$xhr,1p,important,redirect=noop.txt
+!#endif
+
+! https://github.com/AdguardTeam/AdguardFilters/issues/50338
+||tracker.520call.me^
+
+! https://forums.lanik.us/viewtopic.php?p=153915#p153915
+||googletagmanager.com/gtm.js$important,script,redirect=noopjs,domain=tv-asahi.co.jp

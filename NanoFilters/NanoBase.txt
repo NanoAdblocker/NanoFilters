@@ -327,13 +327,14 @@ altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 bing.com##+js(nano-remove-elements-onready, #b_results > .b_ad)
 @@||wired.com^$generichide
 wired.com##.ad
-@@||downdetector.com/*/javascript/adscript.js$script
 @@||rapidvideo.com/js/jquery.min.js$script,1p
 @@||hackintoshzone.com^$generichide
 porndig.com#@#.noadblock
 @@||onnetwork.tv/adblock_notify.js$script
 teknosafe.kertashitam.com###blockblockA
 teknosafe.kertashitam.com###blockblockB:style(visibility: visible !important; display: block !important;)
+@@||downdetector.com/*/javascript/adscript.js$script
+@@||my.postnord.no/api/tracking/$xhr,1p
 avseesee.com###getadiv
 avseesee.com##iframe[src*="top.fadama.com"]
 avseesee.com##.ads

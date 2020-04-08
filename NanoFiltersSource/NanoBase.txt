@@ -858,9 +858,6 @@ wired.com##.ad
 
 # Unbreak
 
-# https://github.com/NanoMeow/QuickReports/issues/3448
-@@||downdetector.com/*/javascript/adscript.js$script
-
 # https://github.com/jspenguin2017/uBlockProtector/issues/781
 @@||rapidvideo.com/js/jquery.min.js$script,1p
 # Fallback rule in case they start putting mining code into jQuery files
@@ -892,6 +889,18 @@ teknosafe.kertashitam.com###blockblockA
 teknosafe.kertashitam.com###blockblockB:style(visibility: visible !important; display: block !important;)
 
 # End unbreak for Chromium built-in adblocker
+
+# ------------------------------------------------------------------------------------------------------------------- #
+
+# Rules that should be included in uBlock Filters Unbreak
+
+# https://github.com/NanoMeow/QuickReports/issues/3448
+@@||downdetector.com/*/javascript/adscript.js$script
+
+# https://github.com/NanoAdblocker/NanoFilters/issues/473
+@@||my.postnord.no/api/tracking/$xhr,1p
+
+# End rules that should be included in uBlock Filters Unbreak
 
 # ------------------------------------------------------------------------------------------------------------------- #
 

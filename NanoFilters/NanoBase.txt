@@ -325,6 +325,7 @@ full-anime.fr##+js(acis, document.getElementById, adblock)
 altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 ||mail-ads.google.com^
 bing.com##+js(nano-remove-elements-onready, #b_results > .b_ad)
+yts.mx##.nbox-bordered:has-text(Download only with VPN)
 @@||wired.com^$generichide
 wired.com##.ad
 @@||rapidvideo.com/js/jquery.min.js$script,1p

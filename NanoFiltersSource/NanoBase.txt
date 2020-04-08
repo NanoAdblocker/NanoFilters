@@ -840,6 +840,9 @@ altadefinizione.*##.sm_header.sm_nomobile:has(:scope > a[href*="/HD/play"])
 # https://github.com/NanoAdblocker/NanoFilters/issues/439
 bing.com##+js(nano-remove-elements-onready, #b_results > .b_ad)
 
+# https://github.com/NanoAdblocker/NanoFilters/issues/456
+yts.mx##.nbox-bordered:has-text(Download only with VPN)
+
 # End ads
 
 # ------------------------------------------------------------------------------------------------------------------- #

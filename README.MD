@@ -60,10 +60,7 @@ Filter rules should be reasonably fine-grained and efficient.
 
 Deprecated features should never be used.
 
-Third party whitelists must be added to `Nano filters – Whitelist`.
-
-`Nano filters` and `Nano filters - Whitelist` should keep compatibility with
-uBlock Origin when possible.
+`Nano filters` should keep compatibility with uBlock Origin when possible.
 
 ## Special Websites
 

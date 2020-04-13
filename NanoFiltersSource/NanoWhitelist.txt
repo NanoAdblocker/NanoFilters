@@ -2,8 +2,7 @@
 
 # Whitelist for Nano Adblocker
 
-# No ads will be unblocked but may open some third party connections
-# Used to unbreak websites when no other reasonable solutions exist
+# Deprecated, use the base filter instead
 
 # ------------------------------------------------------------------------------------------------------------------- #
 
@@ -18,14 +17,5 @@
 !#endif
 
 # End specific for legacy Edge browser
-
-# ------------------------------------------------------------------------------------------------------------------- #
-
-# Beta testing
-
-# https://github.com/NanoAdblocker/NanoFilters/issues/97
-@@||moatads.com/*/moatwrapper.js$script,domain=hulu.com
-
-# End beta testing
 
 # ------------------------------------------------------------------------------------------------------------------- #

@@ -320,6 +320,9 @@ solarmovie.fun##.hhotnews:has-text(AdBlocker)
 mdlinx.com##+js(nostif, show)
 mdlinx.com##.dfp-ad-outer
 
+# https://github.com/NanoMeow/QuickReports/issues/525
+outlook.live.com##[aria-label="advertisement"]:upward(3)
+
 # End soft anti-adblock
 
 # ------------------------------------------------------------------------------------------------------------------- #
@@ -327,10 +330,6 @@ mdlinx.com##.dfp-ad-outer
 # Soft anti-adblock that are also included in uBlock annoyance filter
 #
 # License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
-
-# https://github.com/uBlockOrigin/uAssets/issues/3948
-# https://github.com/NanoMeow/QuickReports/issues/525
-outlook.live.com##a[href="https://windows.microsoft.com/outlook/ad-free-outlook"]:upward(4)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/819
 @@||html-online.com^$generichide

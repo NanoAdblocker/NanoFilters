@@ -890,6 +890,15 @@ wired.com##.ad
 
 # ------------------------------------------------------------------------------------------------------------------- #
 
+# Unbreak for UserCSS related issues
+
+# https://github.com/NanoMeow/QuickReports/issues/3807
+downloadsource.*##body #content .date:not(dt):style(display: block !important;)
+
+# End unbreak for UserCSS related issues
+
+# ------------------------------------------------------------------------------------------------------------------- #
+
 # Unbreak for Adblock Warning Removal List
 
 # https://github.com/uBlockOrigin/uAssets/issues/2989

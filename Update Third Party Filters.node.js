@@ -152,7 +152,7 @@ const validateInclude = (input) => {
                         }
 
                         if (parts[1].includes("/")) {
-                            reject(new Error("Include Statement Contains Unexpected Character: '" + line + "'"));
+                            reject(new Error("Include Statement Contains Unexpected Characters: '" + line + "'"));
                             return;
                         }
 

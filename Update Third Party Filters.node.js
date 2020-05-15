@@ -82,6 +82,30 @@ const fetchOne = (input, output) => {
 };
 
 // input - Path to filter file
+// from  - What to replace
+// to    - What to replace with
+//
+// Returns the promise for this task
+const patchInclude = (input, from, to) => {
+    return new Promise((resolve, reject) => {
+        fs.readFile(input, "utf8", (err, data) => {
+            if (err) {
+                reject(err);
+            } else {
+                data = data.replace(from, to);
+                fs.writeFile(input, data, "utf8", (err) => {
+                    if (err) {
+                        reject(err);
+                    } else {
+                        resolve();
+                    }
+                });
+            }
+        });
+    });
+};
+
+// input - Path to filter file
 //
 // Returns the promise for this task
 const validate = (input) => {
@@ -102,6 +126,54 @@ const validate = (input) => {
     });
 };
 
+// input - Path to filter file
+//
+// Returns the promise for this task
+const validateInclude = (input) => {
+    return new Promise((_, reject) => {
+        fs.readFile(input, "utf8", (err, data) => {
+            if (err) {
+                reject(err);
+            } else {
+                const lines = data.split("\n");
+                const tasks = [];
+                for (let line of lines) {
+                    line = line.trim();
+
+                    if (line.length === 0)
+                        continue;
+
+                    if (line.startsWith("!#include")) {
+                        const parts = line.split(" ");
+
+                        if (parts.length !== 2) {
+                            reject(new Error("Invalid Include Statement: '" + line + "'"));
+                            return;
+                        }
+
+                        if (parts[1].includes("/")) {
+                            reject(new Error("Include Statement Contains Unexpected Character: '" + line + "'"));
+                            return;
+                        }
+
+                        const subfilter = path.resolve(path.dirname(input), parts[1]);
+                        tasks.push(new Promise((resolve, reject) => {
+                            fs.exists(subfilter, (exists) => {
+                                if (exists) {
+                                    resolve();
+                                } else {
+                                    reject(new Error("Subfilter Missing: '" + subfilter + "'"));
+                                }
+                            });
+                        }));
+                    }
+                }
+                return Promise.all(tasks);
+            }
+        });
+    });
+};
+
 // ----------------------------------------------------------------------------------------------------------------- //
 
 process.on("unhandledRejection", (err) => {
@@ -111,12 +183,12 @@ process.on("unhandledRejection", (err) => {
 // ----------------------------------------------------------------------------------------------------------------- //
 
 (async () => {
-    let data = {
+    const data = {
         "../NanoMirror/uBlockResources.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resources.txt",
     };
 
     if (process.argv.includes("--all")) {
-        data = Object.assign(data, {
+        Object.assign(data, {
 
             // ----------------------------------------------------------------------------------------------------- //
 
@@ -138,6 +210,7 @@ process.on("unhandledRejection", (err) => {
             "NanoDefender.txt": "https://raw.githubusercontent.com/jspenguin2017/uBlockProtector/master/uBlockProtectorList.txt",
 
             "uBlockBase.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt",
+            "uBlockBase2020.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2020.txt",
             "uBlockBadware.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt",
             "uBlockPrivacy.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt",
             "uBlockAbuse.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt",
@@ -150,11 +223,22 @@ process.on("unhandledRejection", (err) => {
         });
     }
 
-    for (let key in data) {
+    for (const key in data) {
         console.log("Downloading " + data[key] + " to /ThirdParty/" + key + " ...");
         const localPath = path.resolve("./ThirdParty", key);
         await fetchOne(data[key], fs.createWriteStream(localPath));
         await validate(localPath);
+    }
+
+    for (const key in data) {
+        if (key === "uBlockBase.txt") {
+            await patchInclude(
+                path.resolve("./ThirdParty", key),
+                "!#include filters-2020.txt",
+                "!#include uBlockBase2020.txt",
+            );
+        }
+        await validateInclude(data);
     }
 
     console.log();

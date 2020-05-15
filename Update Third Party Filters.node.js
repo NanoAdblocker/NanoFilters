@@ -130,7 +130,7 @@ const validate = (input) => {
 //
 // Returns the promise for this task
 const validateInclude = (input) => {
-    return new Promise((_, reject) => {
+    return new Promise((resolve, reject) => {
         fs.readFile(input, "utf8", (err, data) => {
             if (err) {
                 reject(err);
@@ -168,7 +168,7 @@ const validateInclude = (input) => {
                         }));
                     }
                 }
-                return Promise.all(tasks);
+                Promise.all(tasks).then(resolve);
             }
         });
     });
@@ -231,14 +231,10 @@ process.on("unhandledRejection", (err) => {
     }
 
     for (const key in data) {
-        if (key === "uBlockBase.txt") {
-            await patchInclude(
-                path.resolve("./ThirdParty", key),
-                "!#include filters-2020.txt",
-                "!#include uBlockBase2020.txt",
-            );
-        }
-        await validateInclude(data);
+        const localPath = path.resolve("./ThirdParty", key);
+        if (key === "uBlockBase.txt")
+            await patchInclude(localPath, "!#include filters-2020.txt", "!#include uBlockBase2020.txt");
+        await validateInclude(localPath);
     }
 
     console.log();

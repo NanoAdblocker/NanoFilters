@@ -15,23 +15,23 @@
 ! strict blocking, yet the site will render properly if a user still decide to
 ! go ahead.
 
-! 2014-10-22: http://assiste.com/01Net.html
-! 2013-03-25: http://www.malekal.com/2011/07/09/pctutotuto4pc-association-avec-01net/
-! 2012-10-31: http://www.journaldunet.com/solutions/dsi/des-malwares-sur-telecharger-com-01net-1012.shtml
-! 2012-10-30: http://www.lesnumeriques.com/appli-logiciel/telecharger-depuis-01net-nuit-gravement-a-sante-pc-n26763.html
-! 2012-06-17: http://www.malekal.com/2012/06/17/01net-pc-optimizer-pour-ne-pas-optimiser-son-pc/
-! 2012-02-17: http://neosting.net/logiciels/01net-et-softonic-ajoutent-aussi-un-installeur-publicitaire.html
+! 2014-10-22: https://assiste.com/01Net.html
+! 2013-03-25: https://www.malekal.com/pctutotuto4pc-association-avec-01net/
+! 2012-10-31: https://www.journaldunet.com/solutions/dsi/des-malwares-sur-telecharger-com-01net-1012.shtml
+! 2012-10-30: https://www.lesnumeriques.com/appli-logiciel/telecharger-depuis-01net-nuit-gravement-a-sante-pc-n26763.html
+! 2012-06-17: https://www.malekal.com/01net-pc-optimizer-pour-ne-pas-optimiser-son-pc/
+! 2012-02-17: http://neosting.net/logiciels/01net-et-softonic-ajoutent-aussi-un-installeur-publicitaire.html (Dead page)
 ||01net.com/telecharger/$document
 
 ! https://github.com/uBlockOrigin/uAssets/issues/6587
-||chip.de/n_downloader/*$document
+chip.de##+js(aeld, , params)
 
-! 2015-03-11: http://blog.emsisoft.com/2015/03/11/mind-the-pup-top-download-portals-to-avoid/
-! 2015-01-21: http://www.howtogeek.com/207692/yes-every-freeware-download-site-is-serving-crapware-heres-the-proof/
-! 2015-01-11: http://www.howtogeek.com/198622/heres-what-happens-when-you-install-the-top-10-download.com-apps/
-! 2012-06-27: http://insecure.org/news/download-com-fiasco.html
-! 2011-12-05: http://seclists.org/nmap-announce/2011/5
-! 2011-08-22: http://www.extremetech.com/computing/93504-download-com-wraps-downloads-in-bloatware-lies-about-motivations
+! 2015-03-11: https://blog.emsisoft.com/en/12678/mind-the-pup-top-download-portals-to-avoid/
+! 2015-01-21: https://www.howtogeek.com/207692/yes-every-freeware-download-site-is-serving-crapware-heres-the-proof/
+! 2015-01-11: https://www.howtogeek.com/198622/heres-what-happens-when-you-install-the-top-10-download.com-apps/
+! 2012-06-27: https://insecure.org/news/download-com-fiasco.html
+! 2011-12-05: https://seclists.org/nmap-announce/2011/5
+! 2011-08-22: https://www.extremetech.com/computing/93504-download-com-wraps-downloads-in-bloatware-lies-about-motivations
 ! https://github.com/uBlockOrigin/uAssets/issues/926
 ! ||download.cnet.com^$document
 
@@ -40,7 +40,7 @@
 ! 2013-12-10: https://blog.whitehatsec.com/why-com-com-should-scare-you/
 ||com.com^$document
 
-! 2015-06-18: http://www.information-age.com/industry/software/123459675/hotbed-malware-another-blow-sourceforge-google-discovers-588-pages-malicious-software
+! 2015-06-18: https://www.information-age.com/hotbed-malware-another-blow-sourceforge-google-discovers-588-pages-malicious-software-123459675/
 ! 2015-06-02: https://blog.l0cal.com/2015/06/02/what-happened-to-sourceforge/
 ! 2015-05-28: http://libregraphicsworld.org/blog/entry/anatomy-of-sourceforge-gimp-controversy
 ! 2015-05-17: http://lifehacker.com/antiadware-gets-rid-of-bundled-crapware-on-popular-down-1702818594
@@ -79,7 +79,7 @@
 ||securetoolext.com^$document
 
 ! https://github.com/HandyUserscripts/AntiAdware/issues/52
-upload4earn.org##+js(remove-attr.js, checked)
+upload4earn.org##+js(ra, checked)
 
 ! https://github.com/gorhill/uBlock/wiki/Badware-risks#ublockorg
 ||ublock.org^$document
@@ -327,7 +327,7 @@ windowsloop.com##.wl-prakatana
 ||ay8ou8ohth.com^$document
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5638
-1tvv.ru,2012-drakon.ru,2012-god.ru,2015-god-kozy.ru,alterprogs.ru,bike-pro.ru,bilsh.com,careers.ua,daily-news.com.ua,darksound.ru,dengiua.com,diplom4rabota.ru,dynamo-kiev.com,electronika.spb.ru,faxnews.ru,fond-sovest.ru,fotochki.com,gamesnice.ru,glashataj.info,god-zmei.ru,godkota.ru,godkozy.ru,gogofiles.net,gorod-zlatoust.ru,great-income.ru,gsm-csb.ru,guitar-love.ru,healthystyle.info,huaweiclub.ru,i-no.ru,igeek.ru,intell.in.ua,jampo.com.ua,jusonline.ru,kaspianchoob.com,livegif.ru,lock-omsk.ru,marafonec.com,maxigame.su,mcomp.org,mediahouse.com.ua,miptic.ru,mir-kliparta.ru,mobile-novinki.ru,myimperia.ru,nakapote.com,nb-yanao.ru,neodrive.ru,nepoleno.ru,newsdnya.ru,newsinmir.com,nokia-lifestyle.ru,novoden.ru,obzh.ru,onegadget.ru,orbita-lviv.com,pingola.ru,pokemongo-go.ru,pravpost.org.ua,rao-ees.ru,ratnet.od.ua,remontidekor.ru,softgaz.ru,sosedi2015.ru,spletnius.ru,stuffed.ru,submarine.od.ua,sup-idea.com,supreme2.ru,tic.com.ua,tipslife.ru,topicnews.net,turmouse.ru,uralmtk.ru,usetrans.com,v2013.ru,vhoru.com.ua,vkulake.com,vnebi.com,vremechko.org,vremyamn.ru,webrecepty.info,amurutro.ru,ap7.ru,gadgetblog.ru,globalomsk.ru,obzh.ru,yuriblog.ru,zakryma.ru,zamanula.ru,zheltaya.ru##+js(abort-on-property-read.js, document.getElementById)
+1tvv.ru,2012-drakon.ru,2012-god.ru,2015-god-kozy.ru,alterprogs.ru,bike-pro.ru,bilsh.com,careers.ua,daily-news.com.ua,darksound.ru,dengiua.com,diplom4rabota.ru,dynamo-kiev.com,electronika.spb.ru,faxnews.ru,fond-sovest.ru,fotochki.com,gamesnice.ru,glashataj.info,god-zmei.ru,godkota.ru,godkozy.ru,gogofiles.net,gorod-zlatoust.ru,great-income.ru,gsm-csb.ru,guitar-love.ru,healthystyle.info,huaweiclub.ru,i-no.ru,igeek.ru,intell.in.ua,jampo.com.ua,jusonline.ru,kaspianchoob.com,livegif.ru,lock-omsk.ru,marafonec.com,maxigame.su,mcomp.org,mediahouse.com.ua,miptic.ru,mir-kliparta.ru,mobile-novinki.ru,myimperia.ru,nakapote.com,nb-yanao.ru,neodrive.ru,nepoleno.ru,newsdnya.ru,newsinmir.com,nokia-lifestyle.ru,novoden.ru,obzh.ru,onegadget.ru,orbita-lviv.com,pingola.ru,pokemongo-go.ru,pravpost.org.ua,rao-ees.ru,ratnet.od.ua,remontidekor.ru,softgaz.ru,sosedi2015.ru,spletnius.ru,stuffed.ru,submarine.od.ua,sup-idea.com,supreme2.ru,tic.com.ua,tipslife.ru,topicnews.net,turmouse.ru,uralmtk.ru,usetrans.com,v2013.ru,vhoru.com.ua,vkulake.com,vnebi.com,vremechko.org,vremyamn.ru,webrecepty.info,amurutro.ru,ap7.ru,gadgetblog.ru,globalomsk.ru,obzh.ru,yuriblog.ru,zakryma.ru,zamanula.ru,zheltaya.ru##+js(aopr, document.getElementById)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5805
 ||newsfile.club^$document

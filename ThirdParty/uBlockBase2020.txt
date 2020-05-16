@@ -784,6 +784,7 @@ tubxporn.com##+js(aopr, exoJsPop101)
 sythe.org##+js(acis, $, adblocker)
 sythe.org##+js(acis, document.getElementsByTagName, adblocker)
 sythe.org##[href*=".php"]
+sythe.org##[target="_blank"]
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/54747
 mangareddit.com##+js(nostif, visibility, 1500)
@@ -1323,3 +1324,38 @@ sonline.pro##+js(window.open-defuser)
 
 ! https://github.com/NanoMeow/QuickReports/issues/3859
 xda-developers.com##+js(rc, twig-body)
+
+! https://github.com/AdguardTeam/AdguardFilters/issues/55517
+britannica.com##+js(acis, document.createElement, admiral)
+
+! https://forums.lanik.us/viewtopic.php?f=62&t=44685
+@@||hiphopa.net^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/7416
+@@||imedikament.de^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/7415
+@@||laufpix.de^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/7418
+vosfemmes.com,voyeurfrance.net##+js(set, is_adblocked, false)
+
+! https://github.com/uBlockOrigin/uAssets/issues/7419
+sms-anonyme.net##+js(nowebrtc)
+@@||sms-anonyme.net^$ghide
+sms-anonyme.net##.adsbygoogle
+
+! https://forums.lanik.us/viewtopic.php?f=62&t=44686
+abs-cbn.com##+js(set, aBlock, null)
+
+! https://github.com/AdguardTeam/AdguardFilters/issues/55553
+dubsstreamz.com##+js(nosiif, visibility, 1000)
+
+! https://github.com/uBlockOrigin/uAssets/issues/7422
+cardsubs.com##+js(aeld, load, 2000)
+
+! https://github.com/NanoMeow/QuickReports/issues/3869
+lapagna.com##+js(nosiif, visibility, 1000)
+
+! https://github.com/NanoMeow/QuickReports/issues/3870
+*$script,redirect-rule=noopjs,domain=suarawonuasultra.com

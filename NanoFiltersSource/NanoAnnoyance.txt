@@ -59,15 +59,6 @@ bizjournals.com##+js(set-constant.js, __page__.isPremium, false)
 
 # ------------------------------------------------------------------------------------------------------------------- #
 
-# Hostile anti-copy, anti-select, anti-right-click, anti-hotkey, and anti-blur
-
-# https://github.com/NanoMeow/QuickReports/issues/2596
-kawanfilm21.online##+js(nano-assign-variable-onready, document.onselectstart, null)
-
-# End hostile anti-copy, anti-select, anti-right-click, anti-hotkey, and anti-blur
-
-# ------------------------------------------------------------------------------------------------------------------- #
-
 # Other rules
 
 # https://github.com/NanoMeow/QuickReports/issues/852

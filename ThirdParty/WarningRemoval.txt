@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: Tq79Cxi6vvm6VMK449qu6w
-! Version: 202005261840
+! Checksum: oowWjchicH4UBOO/v4uroQ
+! Version: 202006071640
 ! Title: Adblock Warning Removal List
-! Last modified: 26 May 2020 18:40 UTC
+! Last modified: 07 Jun 2020 16:40 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -109,6 +109,7 @@ shadbase.com##img[alt="adblock"]
 /adblock_alerter/*
 /adblock_gate/images/animated.gif?
 /adblock_notify.js
+/adblocker-detected.
 /adblocker/modal.
 /adblocker_message_
 /AdblockMessage.
@@ -208,6 +209,7 @@ _adblock_killer.
 ###adsblocker_detected
 ###advertisementjsalert
 ###anti_adblock
+###box-adblocker-wrap
 ###detection-block
 ###detection-block-overlay
 ###detectadblock
@@ -395,6 +397,7 @@ nevasport.ru##.adblock-notify
 exler.ru##.adblock-pls
 ##.adblock-stop
 zakon.kz##.adblock_alert
+tassbiz.ru##.adblock_notif
 ogorod.ru##.adblock_popup_warning
 hentaiz.org##.adblocker
 kubik3.ru##.adbs
@@ -499,7 +502,7 @@ daz3d.ru,portfel.info##body > div[id][style="display: block;"]
 igorchernomoretz.com##body > div[id^="ab"]
 igorchernomoretz.com##body > div[id^="ab"] + div[style*="cursor"]
 tut.by##body > div[style*="position: fixed;"][style*="right: 0;"]
-1snau.ru,bychico.net,dyrik.ru,ecosounds.net,in-drive.ru,inforpost.com,musecube.org,obozrevatel.com,oknotivi.ru,pogodnik.com,sandero.ru,tehnobzor.ru,turbominer.ru##body > div[style*="z-index"][style*="9999"]
+1snau.ru,bychico.net,dyrik.ru,ecosounds.net,in-drive.ru,inforpost.com,musecube.org,obozrevatel.com,oknotivi.ru,pogodnik.com,sandero.ru,turbominer.ru##body > div[style*="z-index"][style*="9999"]
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua,music.yandex.uz##body > div[style^="min-height"] > .notify
 music.yandex.by,music.yandex.kz,music.yandex.ru,music.yandex.ua,music.yandex.uz##body > div[style^="min-height"] > .notify *
 drive2.ru#?#div[class]:-abp-has(> div[id][class] > a[href] > img[src^="https://avatars.mds.yandex.net/get-adfox-content/"])

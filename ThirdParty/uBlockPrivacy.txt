@@ -127,7 +127,6 @@ architecturaldigest.com,arstechnica.com,bonappetit.com,brides.com,cntraveler.com
 ! rma-api.gravity.com before being redirected back to the expected 1st-party
 ! content.
 ||secure-api.gravity.com/*/api/intelligence
-||b-ssl.grvcdn.com/moth-min.js
 
 ! pubexchange.com: "The traffic exchange network"
 ! Examples of pages using it:
@@ -208,3 +207,6 @@ dictionary.com,thesaurus.com##+js(aopr, adDetection)
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/gc42jw/wstreamvideo_asking_me_to_disable_ubo/
 ||tracker.cdnbye.com^
+
+! https://github.com/uBlockOrigin/uAssets/pull/4961
+||the-japan-news.com/modules/js/lib/fgp/fingerprint2.js$script,redirect=fingerprint2.js,important

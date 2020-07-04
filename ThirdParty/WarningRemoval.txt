@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: oowWjchicH4UBOO/v4uroQ
-! Version: 202006071640
+! Checksum: O4C4rgCw20IZ4TkJT810yg
+! Version: 202007041610
 ! Title: Adblock Warning Removal List
-! Last modified: 07 Jun 2020 16:40 UTC
+! Last modified: 04 Jul 2020 16:10 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -342,6 +342,7 @@ piratia.su###block-warning
 gisher.org###blockadbenabled
 ma.by###bodysubcont > div[style^="padding"]:not([id]):not([class])
 ucoin.net###bottom-notice
+sdamgia.ru##center[style="color:red; font-size:16px"]
 pln-pskov.ru###check_ad_block
 delfi.ee###delfiTopBar
 rusnext.ru###detectAdblock
@@ -426,6 +427,7 @@ ppc.world##.detected-block-modal
 smotrisport.online,smotrisport.tv##.dont-add-our-site-pls
 goha.ru#@#.goha_ads
 goha.ru#@#.goha_ads_acceptable
+the-village.com.ua##.infoA
 dropmefiles.com.ua,dropmefiles.net##.intro
 themoviebay.ru##.is-danger.notification
 ivi.ru##.ivi-footer ~ div[class] > style + div[class]
@@ -492,7 +494,6 @@ olegon.ru##body > div:not([id]):not([class])[style^="color"][style*="position: f
 finget.ru,katalog-aktsii.ru,rp5.by,rp5.kz,rp5.ru,rp5.ua,vikings-warofclans.ru##body > div:not([id]):not([class])[style^="position"][style*="background"][style*="z-index"]
 factorio.su##body > div[class][style*="background"][style*="display: block"]
 gdekluet.ru##body > div[class^="stop-block"]
-glav.su##body > div[id]:not([class])[style*="background"][style*="display: block"]
 fastpic.ru,logist.uxxo.ru,maxpark.com,meteoservice.ru,newdeaf-online.net,newsland.com,pawno-info.ru,scrin.org,smolensk-auto.ru##body > div[id]:not([class])[style="display: block;"]
 factorio.su##body > div[id][class][style*="background"][style*="visible"]
 gaming.co.ua,pingvin.pro##body > div[id][class][style*="z-index"][style*="9999"],body > div[id][class][style*="z-index"][style*="9999"] + div[class][style*="z-index"][style*="9999"]
@@ -514,8 +515,10 @@ game2day.ru##div[class^="adblock_"]
 lostfilm.tv##div[class^="alarm"]
 gismeteo.by,gismeteo.ru##div[class^="stopblock"]
 finfront.ru##div[class^="swal2"]
+pr-cy.ru##div[id^="aabb"]
 savevideo.me##div[id^="ads_notice_"]
 forvk.space##div[id^="block"][style*="display: block;"]
+glav.su##div[id^="js-abd-"]
 acomics.ru##div[style*="/design/common/pic/please"]
 abc-people.com##div[style*="background-color"][style*="position"][style*="z-index"]
 photoshop-online.biz##div[style="display:inline-block;width:728px;height:140px"]
@@ -549,7 +552,6 @@ bigpuzzle.ru##td[valign="top"][width="240px"][height="600"]
 ||pwnews.net/des/antiblock.js$script
 ||rockstargame.su/adb_script$script
 ||rusnext.ru/advar.js$script
-||sdamgia.ru/img/blockadblock_
 ||sea-man.org/adb_script/
 ||shellcat.ru^$third-party
 ||stroi-help.ru/forum/script_new.js

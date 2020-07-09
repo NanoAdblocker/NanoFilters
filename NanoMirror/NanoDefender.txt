@@ -1,7 +1,7 @@
 [Nano Adblocker]
 ! Title: Nano Defender Integration
 ! Expires: 3 days
-! Cached: Sat, 04 Jul 2020 16:15:37 GMT
+! Cached: Thu, 09 Jul 2020 00:12:48 GMT
 ! License: See source for license and credits
 ! Source: https://github.com/jspenguin2017/uBlockProtector/tree/master/list
 ! This file is a compiled binary, do not modify
@@ -285,7 +285,6 @@ warforum.cz###popwrapper
 ||ad.kisscartoon.*^$important
 randaris-anime.net##.advert1
 randaris-anime.net##.adblock-box
-reviewmeta.com##.ad_gu_tr
 androidsage.com##+js(abort-on-property-read.js, blckad)
 bento.de,pcgamer.com##+js(abort-on-property-read.js, _sp_.mms)
 cwseed.com##+js(abort-on-property-read.js, wc.url)
@@ -398,7 +397,6 @@ fakeporn.tv##+js(setTimeout-defuser.js, innerText)
 fakeporn.tv##+js(abort-on-property-write.js, prPuShown)
 bigbtc.win##+js(abort-on-property-read.js, ad_block_test)
 @@/adguard.$domain=github.com
-reviewmeta.com##+js(setTimeout-defuser.js, adsbygoogle)
 askleo.com##[class^="askleo_adblock1"]
 ||mope.io/img/blocked.png$image,first-party
 geektyper.com###itemz

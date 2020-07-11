@@ -201,8 +201,7 @@ process.on("unhandledRejection", (err) => {
 
             // ----------------------------------------------------------------------------------------------------- //
 
-            "MalwareDomain0.txt": "https://raw.githubusercontent.com/NanoMeow/MDLMirror/master/hosts.txt",
-            "MalwareDomain1.txt": "https://mirror1.malwaredomains.com/files/justdomains",
+            "MalwareDomain2.txt": "https://gitlab.com/curben/urlhaus-filter/raw/master/urlhaus-filter-online.txt",
 
             "PublicSuffix.dat": "https://publicsuffix.org/list/public_suffix_list.dat",
             "uBlockResources.txt": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resources.txt",

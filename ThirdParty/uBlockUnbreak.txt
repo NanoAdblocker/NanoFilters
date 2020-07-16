@@ -3141,7 +3141,6 @@ dziennikbaltycki.pl,dzienniklodzki.pl,dziennikpolski24.pl,dziennikzachodni.pl,ec
 
 ! fix atresplayer.com broken video player
 @@||assets.adobedtm.com/*-source.min.js$script,domain=atresplayer.com
-@@||assets.adobedtm.com/extensions/*/AppMeasurement.min.js$script,domain=atresplayer.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/6990
 ||blockadblock.com^$badfilter
@@ -3829,3 +3828,21 @@ saltspringexchange.com#@#.single-ad
 
 ! https://github.com/NanoMeow/QuickReports/issues/4290
 @@||front.usereserva.com/libraries/*/GTM.min.js$script,1p
+
+! https://github.com/NanoMeow/QuickReports/issues/4302
+|https://$xmlhttprequest,3p,domain=putlocker.style,badfilter
+
+! https://www.reddit.com/r/uBlockOrigin/comments/hp7cm8/
+@@||fhi.no^$cname
+
+! https://github.com/uBlockOrigin/uAssets/issues/7664
+||logsss.com^$badfilter
+
+! https://github.com/uBlockOrigin/uAssets/issues/7666
+@@||google.*^$cname
+
+! https://forums.lanik.us/viewtopic.php?f=62&t=44917
+/ads1.$badfilter
+
+! https://forums.lanik.us/viewtopic.php?p=155693#p155693
+@@||geoip-db.com/jsonp/*$script,domain=justchill.site

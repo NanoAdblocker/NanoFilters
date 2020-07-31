@@ -19,7 +19,7 @@ adzsafe.com##+js(noeval.js)
 @@/fuckadblock.*.js$script,domain=fuckadblock.sitexw.fr
 
 # https://github.com/uBlockOrigin/uAssets/issues/2924
-captchme.com##script:inject(set-constant.js, CaptchmeState.adb, undefined)
+captchme.com##+js(set-constant.js, CaptchmeState.adb, undefined)
 
 # https://github.com/LiCybora/NanoDefenderFirefox/issues/88
 @@||whoer.net/js/advert.js$script,1p
@@ -371,7 +371,7 @@ evworld.com##+js(setTimeout-defuser.js, ads, 2000)
 androidrepublic.org##.samSupportUs
 
 # https://github.com/uBlockOrigin/uAssets/issues/2269
-globalnews.ca##script:inject(set-constant.js, GNCA_Ad_Support, true)
+globalnews.ca##+js(set-constant.js, GNCA_Ad_Support, true)
 
 # https://github.com/uBlockOrigin/uAssets/issues/2185
 @@||socialblade.com^$generichide
@@ -386,7 +386,7 @@ realcleardefense.com##+js(set-constant.js, warning_widget.check_ad_block_status,
 @@||myfavoritecontent.com/js/ads.js$script,1p
 
 # https://github.com/NanoAdblocker/NanoFilters/issues/94
-techradar.com##script:inject(abort-on-property-read.js, _sp_._networkListenerData)
+techradar.com##+js(abort-on-property-read.js, _sp_._networkListenerData)
 
 # https://github.com/NanoAdblocker/NanoFilters/issues/104
 xxlmag.com##.brave-bling-overlay
@@ -420,10 +420,10 @@ iosgods.com##+js(abort-on-property-write.js, CheckAdLoad)
 minijuegos.com###adBlockDisclaimer
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/972
-emurom.net##script:inject(set-constant.js, adblock, 1)
+emurom.net##+js(set-constant.js, adblock, 1)
 
 # https://github.com/jspenguin2017/uBlockProtector/issues/973
-9xbuddy.app##script:inject(setTimeout-defuser.js, isDetected, 2000)
+9xbuddy.app##+js(setTimeout-defuser.js, isDetected, 2000)
 
 # https://github.com/uBlockOrigin/uAssets/issues/1582
 # https://github.com/jspenguin2017/uBlockProtector/issues/974

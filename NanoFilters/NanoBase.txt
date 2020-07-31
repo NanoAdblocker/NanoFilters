@@ -10,7 +10,7 @@ adzsafe.com##+js(noeval.js)
 @@||fuckadblock.sitexw.fr^$generichide
 @@||fuckadblock.sitexw.fr^$xhr,1p
 @@/fuckadblock.*.js$script,domain=fuckadblock.sitexw.fr
-captchme.com##script:inject(set-constant.js, CaptchmeState.adb, undefined)
+captchme.com##+js(set-constant.js, CaptchmeState.adb, undefined)
 @@||whoer.net/js/advert.js$script,1p
 @@||detectadblock.com/dfp.js$script,1p
 canyoublockit.com##section:has-text(Advertisement)
@@ -148,12 +148,12 @@ new.torrnado.win##+js(set-constant.js, block, false)
 relyonhorror.com##+js(setTimeout-defuser.js, checkAdStatus, 500)
 evworld.com##+js(setTimeout-defuser.js, ads, 2000)
 androidrepublic.org##.samSupportUs
-globalnews.ca##script:inject(set-constant.js, GNCA_Ad_Support, true)
+globalnews.ca##+js(set-constant.js, GNCA_Ad_Support, true)
 @@||socialblade.com^$generichide
 gamepedia.com###bodyContent:style(width: 100% !important;)
 realcleardefense.com##+js(set-constant.js, warning_widget.check_ad_block_status, noopFunc)
 @@||myfavoritecontent.com/js/ads.js$script,1p
-techradar.com##script:inject(abort-on-property-read.js, _sp_._networkListenerData)
+techradar.com##+js(abort-on-property-read.js, _sp_._networkListenerData)
 xxlmag.com##.brave-bling-overlay
 mydramalist.com##.spnsr_right
 mydramalist.com##.spnsr-wrapper
@@ -165,8 +165,8 @@ tv.mademyday.com##.blnotice
 iosgods.com##+js(abort-on-property-write.js, CheckAdLoad)
 @@||wftrader.com^$generichide
 minijuegos.com###adBlockDisclaimer
-emurom.net##script:inject(set-constant.js, adblock, 1)
-9xbuddy.app##script:inject(setTimeout-defuser.js, isDetected, 2000)
+emurom.net##+js(set-constant.js, adblock, 1)
+9xbuddy.app##+js(setTimeout-defuser.js, isDetected, 2000)
 newatlas.com,pgatour.com,sevenforums.com,theodysseyonline.com##+js(abort-on-property-read.js, admiral)
 punto-informatico.it##+js(abort-on-property-read.js, blazemedia_adBlock)
 wyff4.com##+js(setTimeout-defuser.js, [native code], 500)

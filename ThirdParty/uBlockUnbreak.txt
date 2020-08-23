@@ -2014,8 +2014,8 @@ downloadsource.*##.date:not(dt):style(display: block !important;)
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=antena3.ro
 
 ! https://forums.lanik.us/viewtopic.php?f=64&t=43073&p=147868#p147852
-://adv.$domain=~adv.bet|~adv.cincsys.com|~adv.co.it|~adv.cpa-api.ru|~adv.cryptonetlabs.it|~adv.derfunke.at|~adv.design|~adv.ec|~adv.ee|~adv.gg|~adv.michaelgat.com|~adv.msk.ru|~adv.rest|~adv.ru|~adv.tools|~adv.trinet.ru|~adv.vg|~adv.works|~adv.yomiuri.co.jp|~advids.co|~erti.se|~escreverdireito.com|~farapp.com|~forex-tv-online.com|~pracuj.pl|~r7.com|~typeform.com|~welaika.com,badfilter
-://adv.$domain=~adv.bet|~adv.cincsys.com|~adv.co.it|~adv.cpa-api.ru|~adv.cr|~adv.cryptonetlabs.it|~adv.derfunke.at|~adv.design|~adv.ec|~adv.ee|~adv.gg|~adv.michaelgat.com|~adv.msk.ru|~adv.rest|~adv.ru|~adv.tools|~adv.trinet.ru|~adv.vg|~adv.works|~adv.yomiuri.co.jp|~advids.co|~erti.se|~escreverdireito.com|~farapp.com|~forex-tv-online.com|~pracuj.pl|~r7.com|~typeform.com|~welaika.com
+://adv.$domain=~adv.bet|~adv.cincsys.com|~adv.co.it|~adv.cpa-api.ru|~adv.cryptonetlabs.it|~adv.derfunke.at|~adv.design|~adv.ec|~adv.ee|~adv.gg|~adv.michaelgat.com|~adv.msk.ru|~adv.neosystem.co.uk|~adv.rest|~adv.ru|~adv.tools|~adv.trinet.ru|~adv.vg|~adv.works|~adv.yomiuri.co.jp|~advids.co|~erti.se|~escreverdireito.com|~farapp.com|~forex-tv-online.com|~pracuj.pl|~r7.com|~typeform.com|~welaika.com,badfilter
+://adv.$domain=~adv.bet|~adv.cincsys.com|~adv.co.it|~adv.cpa-api.ru|~adv.cr|~adv.cryptonetlabs.it|~adv.derfunke.at|~adv.design|~adv.ec|~adv.ee|~adv.gg|~adv.michaelgat.com|~adv.msk.ru|~adv.neosystem.co.uk|~adv.rest|~adv.ru|~adv.tools|~adv.trinet.ru|~adv.vg|~adv.works|~adv.yomiuri.co.jp|~advids.co|~erti.se|~escreverdireito.com|~farapp.com|~forex-tv-online.com|~pracuj.pl|~r7.com|~typeform.com|~welaika.com
 
 ! https://github.com/uBlockOrigin/uAssets/issues/5688
 ||amazonaws.com^*/funders-$domain=globalvoices.org,badfilter
@@ -3701,6 +3701,8 @@ mirrorace.com#@#.uk-button-secondary
 
 ! https://github.com/uBlockOrigin/uAssets/issues/7706
 verizon.com##+js(set, newPageViewSpeedtest, noopFunc)
+! Verizon chat broken (https://www.verizon.com/support/contact-us/)
+@@||tags.tiqcdn.com/utag/vzw/main/$script,domain=verizon.com
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/i02d2c/
 @@||tags.tiqcdn.com/utag/godaddy/$script,domain=godaddy.com
@@ -3809,3 +3811,12 @@ hubblespacetelescope.blogspot.com#@#.vertical-ads
 
 ! https://github.com/uBlockOrigin/uAssets/issues/7784
 @@||track.rundschau-online.de/cre-1.0/tracking/$script,1p
+
+! https://github.com/NanoMeow/QuickReports/issues/4540
+@@||officedepot.co.cr/*/js/analyticsmediator.js$script,1p
+
+! https://github.com/uBlockOrigin/uAssets/issues/7801
+@@||tags.tiqcdn.com/utag/*/utag$script,domain=eprice.it
+
+! https://forums.lanik.us/viewtopic.php?f=103&t=45053
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=cdnmedia.tv

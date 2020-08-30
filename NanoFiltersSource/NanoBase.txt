@@ -344,11 +344,6 @@ outlook.live.com##[aria-label="advertisement"]:upward(3)
 # https://github.com/NanoAdblocker/NanoFilters/issues/525
 uploadship.com##.pageErrors:has-text(AdBlock):upward(center)
 
-# https://github.com/NanoMeow/QuickReports/issues/4598
-thingiverse.com##+js(set, blockedElement.className, null)
-thingiverse.com##[class^="AdBlockDetect"]
-thingiverse.com##[class^="DownloadingModal"]:style(padding: 0px !important;)
-
 # End soft anti-adblock
 
 # ------------------------------------------------------------------------------------------------------------------- #

@@ -145,9 +145,6 @@ mdlinx.com##.dfp-ad-outer
 outlook.live.com##a[href="https://windows.microsoft.com/outlook/ad-free-outlook"]:upward(4)
 outlook.live.com##[aria-label="advertisement"]:upward(3)
 uploadship.com##.pageErrors:has-text(AdBlock):upward(center)
-thingiverse.com##+js(set, blockedElement.className, null)
-thingiverse.com##[class^="AdBlockDetect"]
-thingiverse.com##[class^="DownloadingModal"]:style(padding: 0px !important;)
 @@||html-online.com^$generichide
 raiplay.it##.tagManagerError
 sportsnet.ca##+js(abort-on-property-read.js, uxGuid)

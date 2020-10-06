@@ -1,3 +1,7 @@
+# Important Announcements Regarding Recent Changes
+
+Please read important announcements here: https://github.com/NanoAdblocker/NanoCore/issues/362
+
 # Nano Filters
 
 Script snippets and filters for Nano Adblocker
